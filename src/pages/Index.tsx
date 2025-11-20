@@ -144,7 +144,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              De ce să alegi clinica Medstom din Piatra Neamț
+              De ce să alegi cabinetul stomatologic Medstom din Piatra Neamț
             </h2>
             <p className="text-lg text-text-custom">
               Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată? <strong>Zâmbetul tău!</strong>
