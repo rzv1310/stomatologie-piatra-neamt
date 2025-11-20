@@ -1,0 +1,137 @@
+import { Link } from "react-router-dom";
+import { Phone, MapPin, Clock, Facebook } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* About */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Medstom Clinic</h3>
+            <p className="text-sm opacity-90 mb-4">
+              Clinică stomatologică modernă în Piatra Neamț, cu 20 de ani de experiență în tratamente dentare de calitate.
+            </p>
+            <a
+              href="https://www.facebook.com/medstomclinic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-sm hover:text-accent transition-colors"
+            >
+              <Facebook className="h-5 w-5 mr-2" />
+              Urmărește-ne pe Facebook
+            </a>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Legături rapide</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-accent transition-colors">
+                  Acasă
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii" className="hover:text-accent transition-colors">
+                  Servicii stomatologice
+                </Link>
+              </li>
+              <li>
+                <Link to="/despre" className="hover:text-accent transition-colors">
+                  Despre noi
+                </Link>
+              </li>
+              <li>
+                <Link to="/tarife" className="hover:text-accent transition-colors">
+                  Tarife
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-accent transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Servicii</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/servicii/implant-dentar" className="hover:text-accent transition-colors">
+                  Implant dentar
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/estetica-dentara" className="hover:text-accent transition-colors">
+                  Estetică dentară
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/ortodontie" className="hover:text-accent transition-colors">
+                  Ortodonție
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/stomatologie-copii" className="hover:text-accent transition-colors">
+                  Stomatologie copii
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/urgente" className="hover:text-accent transition-colors">
+                  Urgențe stomatologice
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                <span>Strada 1 Decembrie 1918 58A, Piatra Neamț 615200</span>
+              </li>
+              <li className="flex items-center">
+                <Phone className="h-5 w-5 mr-2 flex-shrink-0" />
+                <a href="tel:+40333630005" className="hover:text-accent transition-colors">
+                  +40 333 630 005
+                </a>
+              </li>
+              <li className="flex items-start">
+                <Clock className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                <div>
+                  <div>Luni - Vineri</div>
+                  <div>09:00 - 19:00</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm">
+          <p className="opacity-90">
+            © {new Date().getFullYear()} Medstom Clinic. Toate drepturile rezervate.
+          </p>
+          <div className="mt-2 space-x-4">
+            <Link to="/politica-cookies" className="hover:text-accent transition-colors">
+              Politica cookies
+            </Link>
+            <Link to="/termeni-conditii" className="hover:text-accent transition-colors">
+              Termeni și condiții
+            </Link>
+            <Link to="/politica-confidentialitate" className="hover:text-accent transition-colors">
+              Politica de confidențialitate
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
