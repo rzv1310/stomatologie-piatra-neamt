@@ -93,14 +93,8 @@ const Index = () => {
                 Îți spunem exact ce ai nevoie. Nimic în plus.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <Link to="/contact">
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8">
-                    Programează-te acum
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
                 <a href="tel:+40333630005">
-                  <Button size="lg" variant="outline" className="text-lg px-8">
+                  <Button size="lg" className="bg-accent text-accent-foreground text-lg px-8 hover:bg-accent">
                     <Phone className="mr-2 h-5 w-5" />
                     033 363 0005
                   </Button>
