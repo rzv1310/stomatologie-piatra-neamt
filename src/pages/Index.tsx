@@ -291,12 +291,12 @@ const Index = () => {
               <div className="text-sm opacity-90">Pacienți tratați</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">15</div>
-              <div className="text-sm opacity-90">Specialiști în echipă</div>
+              <div className="text-4xl font-bold mb-2">CT Dentar</div>
+              <div className="text-sm opacity-90">CBCT Vatech Green X16</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">1M€</div>
-              <div className="text-sm opacity-90">Investiție în tehnologie</div>
+              <div className="text-4xl font-bold mb-2">Laborator</div>
+              <div className="text-sm opacity-90">de tehnică dentară digital</div>
             </div>
           </div>
         </div>
