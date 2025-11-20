@@ -313,11 +313,11 @@ const Index = () => {
           <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold mb-2">{yearsCount}+</div>
-              <div className="text-sm opacity-90">Ani de experiență</div>
+              <div className="text-sm opacity-90">ani de experiență</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">{patientsCount.toLocaleString('ro-RO')}+</div>
-              <div className="text-sm opacity-90">Pacienți tratați</div>
+              <div className="text-sm opacity-90">pacienți tratați</div>
             </div>
             <div>
               <h2 className="text-4xl font-bold mb-2 text-primary-foreground">CT Dentar</h2>
