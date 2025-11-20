@@ -1,12 +1,352 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
+  const services = [
+    {
+      title: "Implant dentar",
+      description: "Dinți ficși în 24h cu tehnologie digitală avansată",
+      icon: "🦷",
+      link: "/servicii/implant-dentar"
+    },
+    {
+      title: "Estetică dentară",
+      description: "Fațete ceramice și albire profesională pentru zâmbetul perfect",
+      icon: "✨",
+      link: "/servicii/estetica-dentara"
+    },
+    {
+      title: "Ortodonție",
+      description: "Aparate dentare fixe și Spark pentru alinierea dinților",
+      icon: "📐",
+      link: "/servicii/ortodontie"
+    },
+    {
+      title: "Stomatologie copii",
+      description: "Tratamente gentle pentru cei mici, în siguranță și confort",
+      icon: "👶",
+      link: "/servicii/stomatologie-copii"
+    },
+    {
+      title: "Urgențe stomatologice",
+      description: "Durerea nu așteaptă. Nici noi. Sună acum!",
+      icon: "🚨",
+      link: "/servicii/urgente"
+    },
+    {
+      title: "Endodonție la microscop",
+      description: "Tratamente de canal precise cu tehnologie avansată",
+      icon: "🔬",
+      link: "/servicii/stomatologie-generala"
+    }
+  ];
+
+  const whyChooseUs = [
+    "Tehnologie de ultimă generație (+1 milion € investiți)",
+    "Echipă de 15 specialiști cu experiență internațională",
+    "Laborator propriu de tehnică dentară integrat",
+    "Rezultate rapide - majoritatea tratamentelor în 24-48h",
+    "20 de ani de experiență și mii de pacienți mulțumiți",
+    "4 cabinete ultradotate cu echipament modern"
+  ];
+
+  const testimonials = [
+    {
+      name: "Nicolae Lazar",
+      text: "Profesionalism şi seriozitate, lucrări în siguranţă, personal calificat şi drăguț. Am găsit în sfârşit un cabinet unde același medic execută toate lucrările de la anestezie până la implant dentar. RECOMAND!!!!!!",
+      rating: 5
+    },
+    {
+      name: "Irina",
+      text: "Servicii PROFESIONALE ca în București la preturi mai mici ca în Iași! Cel mai bun anestezic, NU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
+      rating: 5
+    }
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="bg-hero py-20 lg:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-heading">
+              Stomatologie în Piatra Neamț pentru întreaga familie
+            </h1>
+            <p className="text-xl lg:text-2xl mb-8 text-text-custom max-w-3xl mx-auto">
+              În clinica noastră avem o singură prioritate: <strong>Rezultatele!</strong> Nu promisiuni. REZULTATE. Îți spunem exact ce ai nevoie. Nimic în plus.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link to="/contact">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8">
+                  Programează-te acum
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <a href="tel:+40333630005">
+                <Button size="lg" variant="outline" className="text-lg px-8">
+                  <Phone className="mr-2 h-5 w-5" />
+                  033 363 0005
+                </Button>
+              </a>
+            </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm">
+              <div className="flex items-center">
+                <Clock className="h-5 w-5 mr-2 text-primary" />
+                <span>Luni-Vineri 09:00-19:00</span>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-primary" />
+                <span>Str. 1 Decembrie 1918 58A</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-12 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">20+</div>
+              <div className="text-sm opacity-90">Ani de experiență</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">10,000+</div>
+              <div className="text-sm opacity-90">Pacienți tratați</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">15</div>
+              <div className="text-sm opacity-90">Specialiști în echipă</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">1M€</div>
+              <div className="text-sm opacity-90">Investiție în tehnologie</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Urgency CTA */}
+      <section className="py-16 bg-destructive text-destructive-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              URGENȚĂ STOMATOLOGICĂ ÎN PIATRA NEAMȚ
+            </h2>
+            <p className="text-xl mb-6">
+              Durerea nu așteaptă. Nici noi.
+            </p>
+            <p className="text-lg mb-8">
+              Abces dentar? Carie dureroasă? Nu poți dormi de 3 nopți? În timp ce alte clinici îți dau programare peste 2 săptămâni, noi avem un singur răspuns:
+            </p>
+            <a href="tel:+40333630005">
+              <Button size="lg" variant="secondary" className="text-lg px-8">
+                <Phone className="mr-2 h-5 w-5" />
+                Sună Acum pentru Urgențe
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              De ce să alegi clinica Medstom din Piatra Neamț
+            </h2>
+            <p className="text-lg text-text-custom">
+              Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată? <strong>Zâmbetul tău!</strong>
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {whyChooseUs.map((reason, index) => (
+              <Card key={index} className="border-primary/20">
+                <CardContent className="p-6 flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <p className="text-text-custom">{reason}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              Servicii stomatologice principale
+            </h2>
+            <p className="text-lg text-text-custom max-w-2xl mx-auto">
+              Tratamente moderne complete, de la prevenție la reabilitări complexe
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Link key={index} to={service.link}>
+                <Card className="h-full hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40">
+                  <CardContent className="p-6">
+                    <div className="text-5xl mb-4">{service.icon}</div>
+                    <h3 className="text-xl font-semibold mb-2 text-heading">{service.title}</h3>
+                    <p className="text-text-custom mb-4">{service.description}</p>
+                    <div className="flex items-center text-primary font-medium">
+                      Află mai mult
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link to="/servicii">
+              <Button size="lg" variant="outline">
+                Vezi toate serviciile
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
+              De ce facem asta?
+            </h2>
+            <div className="space-y-4 text-lg text-text-custom">
+              <p>
+                Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
+              </p>
+              <p>
+                Pentru că preferăm 1000 de pacienți fericiți decât 100 captivi.
+              </p>
+              <p>
+                Pentru că știm că ne vei trimite alți 10 pacienți când vei vedea rezultatele.
+              </p>
+            </div>
+            <div className="mt-8 p-6 bg-card border-l-4 border-primary rounded-lg">
+              <p className="text-xl font-semibold text-heading">
+                Majoritatea clinicilor îți repară dinții. <br />
+                <span className="text-primary">Noi îți reparăm viața.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              Părerea pacienților noștri contează
+            </h2>
+            <p className="text-lg text-text-custom">
+              De-a lungul anilor, am avut onoarea să tratăm mii de pacienți
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-primary/20">
+                <CardContent className="p-6">
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 text-accent fill-accent" />
+                    ))}
+                  </div>
+                  <p className="text-text-custom mb-4 italic">"{testimonial.text}"</p>
+                  <p className="font-semibold text-heading">{testimonial.name}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Preview */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              Echipă de medici stomatologi cu experiență
+            </h2>
+            <p className="text-lg text-text-custom mb-8">
+              15 specialiști cu formare în Europa și Emiratele Arabe Unite
+            </p>
+            <Link to="/despre">
+              <Button size="lg" className="bg-accent hover:bg-accent/90">
+                Cunoaște echipa
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              Programări rapide – online sau telefonic
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Dacă ai citit până aici și nu acționezi, peste 6 luni vei fi în același loc. Garantat.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
+                <Button size="lg" variant="secondary" className="text-lg px-8">
+                  Programare online
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <a href="tel:+40333630005">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                  <Phone className="mr-2 h-5 w-5" />
+                  033 363 0005
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              Localizare clinică stomatologică în Piatra Neamț
+            </h2>
+            <p className="text-lg text-text-custom">
+              Strada 1 Decembrie 1918 58A, Piatra Neamț 615200
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+              <div className="text-center text-muted-foreground">
+                <MapPin className="h-12 w-12 mx-auto mb-4" />
+                <p>Hartă Google Maps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };
