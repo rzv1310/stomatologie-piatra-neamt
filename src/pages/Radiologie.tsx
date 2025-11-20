@@ -117,10 +117,10 @@ const Radiologie = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Radiologie Dentară și Imagistică 3D în Piatra Neamț
             </h1>
-            <p className="text-xl mb-8">
+            <p className="text-xl mb-8 text-white">
               CBCT Vatech Green X16 pentru diagnostic de precizie și planificare digitală. Vedem exact ce nu se poate vedea cu ochiul liber.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

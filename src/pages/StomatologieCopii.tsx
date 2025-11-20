@@ -172,10 +172,10 @@ const StomatologieCopii = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Stomatologie pentru Copii în Piatra Neamț
             </h1>
-            <p className="text-xl mb-8">
+            <p className="text-xl mb-8 text-white">
               Pedodonție cu dragoste și răbdare. Transformăm vizita la dentist într-o aventură plăcută pentru cei mici. Prima vizită fără frică, zâmbete sănătoase pe viață.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
