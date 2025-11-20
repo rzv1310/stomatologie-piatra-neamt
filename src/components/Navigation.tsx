@@ -90,7 +90,7 @@ const Navigation = () => {
             <a href="tel:+40333630005">
               <Button variant="default" className="bg-accent hover:bg-accent/90">
                 <Phone className="mr-2 h-4 w-4" />
-                033 363 0005
+                0333 630 005
               </Button>
             </a>
           </div>
@@ -155,7 +155,7 @@ const Navigation = () => {
               <a href="tel:+40333630005" className="px-4">
                 <Button variant="default" className="w-full bg-accent hover:bg-accent/90">
                   <Phone className="mr-2 h-4 w-4" />
-                  033 363 0005
+                  0333 630 005
                 </Button>
               </a>
             </div>

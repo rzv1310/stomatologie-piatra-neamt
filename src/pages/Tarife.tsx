@@ -240,7 +240,7 @@ const Tarife = () => {
               </Link>
               <a href="tel:+40333630005">
                 <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  033 363 0005
+                  0333 630 005
                 </Button>
               </a>
             </div>
