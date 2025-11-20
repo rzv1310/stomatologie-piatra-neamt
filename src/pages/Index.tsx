@@ -58,13 +58,13 @@ const Index = () => {
     {
       title: "Ortodonție",
       description: "Aparate dentare fixe și Spark pentru alinierea dinților",
-      link: "/servicii/ortodontie",
+      link: "/servicii/ortodontie-piatra-neamt",
       image: serviceOrtodontie
     },
     {
       title: "Stomatologie copii",
       description: "Tratamente gentle pentru cei mici, în siguranță și confort",
-      link: "/servicii/stomatologie-copii",
+      link: "/servicii/stomatologie-copii-piatra-neamt",
       image: serviceCopii
     },
     {

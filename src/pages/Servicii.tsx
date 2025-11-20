@@ -62,7 +62,7 @@ const Servicii = () => {
         "Lucrări pe implanturi",
         "Proteze fixe și hibride"
       ],
-      link: "/servicii/protetica"
+      link: "/servicii/protetica-piatra-neamt"
     },
     {
       title: "Implantologie",
@@ -86,7 +86,7 @@ const Servicii = () => {
         "Frenectomie",
         "Gingivectomie"
       ],
-      link: "/servicii/chirurgie"
+      link: "/servicii/chirurgie-orala"
     },
     {
       title: "Parodontologie",
@@ -97,7 +97,7 @@ const Servicii = () => {
         "Operații cu lambou",
         "Regenerare osoasă ghidată"
       ],
-      link: "/servicii/parodontologie"
+      link: "/servicii/parodontologie-piatra-neamt"
     },
     {
       title: "Ortodonție și Ortopedie Dento-Facială",
@@ -109,7 +109,7 @@ const Servicii = () => {
         "Gutieră de contenție",
         "Tratament ortodontic interceptiv la copii"
       ],
-      link: "/servicii/ortodontie"
+      link: "/servicii/ortodontie-piatra-neamt"
     },
     {
       title: "Stomatologie Copii (Pedodonție)",
@@ -120,7 +120,7 @@ const Servicii = () => {
         "Controlul anxietății la copii",
         "Pulpotomii și pulpectomii la copii"
       ],
-      link: "/servicii/stomatologie-copii"
+      link: "/servicii/stomatologie-copii-piatra-neamt"
     },
     {
       title: "Radiologie Dentară și Imagistică",
@@ -132,7 +132,7 @@ const Servicii = () => {
         "Tomografie Computerizată (CBCT)",
         "Imagistică digitală 3D"
       ],
-      link: "/servicii/radiologie"
+      link: "/servicii/radiologie-dentara-piatra-neamt"
     },
     {
       title: "Urgențe Stomatologice",
