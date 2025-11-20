@@ -45,7 +45,7 @@ const Index = () => {
       image: serviceUrgente
     },
     {
-      title: "Endodonție la microscop",
+      title: "Endodonție sub microscop",
       description: "Tratamente de canal precise cu tehnologie avansată",
       link: "/servicii/stomatologie-generala",
       image: serviceEndodontie
