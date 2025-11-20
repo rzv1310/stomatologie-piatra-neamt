@@ -60,6 +60,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Servicii</h3>
             <ul className="space-y-2 text-sm text-white">
               <li>
+                <Link to="/servicii/endodontie-piatra-neamt" className="hover:text-accent transition-colors">
+                  Endodonție
+                </Link>
+              </li>
+              <li>
                 <Link to="/servicii/implant-dentar" className="hover:text-accent transition-colors">
                   Implant dentar
                 </Link>
@@ -72,6 +77,31 @@ const Footer = () => {
               <li>
                 <Link to="/servicii/ortodontie-piatra-neamt" className="hover:text-accent transition-colors">
                   Ortodonție
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/profilaxie" className="hover:text-accent transition-colors">
+                  Profilaxie
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/protetica-piatra-neamt" className="hover:text-accent transition-colors">
+                  Protetică dentară
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/chirurgie-orala" className="hover:text-accent transition-colors">
+                  Chirurgie orală
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/parodontologie-piatra-neamt" className="hover:text-accent transition-colors">
+                  Parodontologie
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicii/radiologie-dentara-piatra-neamt" className="hover:text-accent transition-colors">
+                  Radiologie dentară
                 </Link>
               </li>
               <li>
