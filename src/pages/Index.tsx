@@ -11,37 +11,31 @@ const Index = () => {
     {
       title: "Implant dentar",
       description: "Dinți ficși în 24h cu tehnologie digitală avansată",
-      icon: "🦷",
       link: "/servicii/implant-dentar"
     },
     {
       title: "Estetică dentară",
       description: "Fațete ceramice și albire profesională pentru zâmbetul perfect",
-      icon: "✨",
       link: "/servicii/estetica-dentara"
     },
     {
       title: "Ortodonție",
       description: "Aparate dentare fixe și Spark pentru alinierea dinților",
-      icon: "📐",
       link: "/servicii/ortodontie"
     },
     {
       title: "Stomatologie copii",
       description: "Tratamente gentle pentru cei mici, în siguranță și confort",
-      icon: "👶",
       link: "/servicii/stomatologie-copii"
     },
     {
       title: "Urgențe stomatologice",
       description: "Durerea nu așteaptă. Nici noi. Sună acum!",
-      icon: "🚨",
       link: "/servicii/urgente"
     },
     {
       title: "Endodonție la microscop",
       description: "Tratamente de canal precise cu tehnologie avansată",
-      icon: "🔬",
       link: "/servicii/stomatologie-generala"
     }
   ];
@@ -188,7 +182,6 @@ const Index = () => {
               <Link key={index} to={service.link}>
                 <Card className="h-full hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40">
                   <CardContent className="p-6">
-                    <div className="text-5xl mb-4">{service.icon}</div>
                     <h3 className="text-xl font-semibold mb-2 text-heading">{service.title}</h3>
                     <p className="text-text-custom mb-4">{service.description}</p>
                     <div className="flex items-center text-primary font-medium">
