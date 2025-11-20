@@ -260,10 +260,10 @@ const Index = () => {
       <section className="py-20 bg-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce facem asta?
             </h2>
-            <div className="space-y-4 text-lg text-black">
+            <div className="space-y-4 text-lg text-white">
               <p className="font-bold">
                 Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
               </p>
@@ -275,9 +275,9 @@ const Index = () => {
               </p>
             </div>
             <div className="mt-8 p-6 bg-card border-l-4 border-white rounded-lg">
-              <p className="text-xl font-semibold text-foreground">
+              <p className="text-xl font-semibold text-white">
                 Majoritatea clinicilor îți repară dinții. <br />
-                <span className="text-accent">Noi îți reparăm viața!</span>
+                <span className="text-white">Noi îți reparăm viața!</span>
               </p>
             </div>
           </div>
