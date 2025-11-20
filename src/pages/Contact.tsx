@@ -240,7 +240,7 @@ const Contact = () => {
               <CardContent className="p-0">
                 <div className="aspect-video w-full">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.5!2d26.3651!3d46.9304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b468b0c0b0c0c0%3A0x0!2sStrada%201%20Decembrie%201918%2058A%2C%20Piatra%20Neam%C8%9B%20615200!5e0!3m2!1sen!2sro!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -254,7 +254,7 @@ const Contact = () => {
             </Card>
             <div className="text-center mt-6">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Strada+1+Decembrie+1918+58A,+Piatra+Neamț+615200"
+                href="https://maps.app.goo.gl/bdybD18DhPFw35fi7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
