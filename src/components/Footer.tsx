@@ -8,25 +8,25 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Medstom Clinic</h3>
-            <p className="text-sm opacity-90 mb-4">
+            <h3 className="text-xl font-bold mb-4 text-white">Medstom Clinic</h3>
+            <p className="text-sm text-white mb-4">
               Clinică stomatologică modernă în Piatra Neamț, cu 20 de ani de experiență în tratamente dentare de calitate.
             </p>
             <a
               href="https://www.facebook.com/medstomclinic"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-sm hover:text-accent transition-colors"
+              className="inline-flex items-center text-sm text-white hover:text-accent transition-colors"
             >
-              <Facebook className="h-5 w-5 mr-2" />
+              <Facebook className="h-5 w-5 mr-2 text-white" />
               Urmărește-ne pe Facebook
             </a>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legături rapide</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg font-semibold mb-4 text-white">Legături rapide</h3>
+            <ul className="space-y-2 text-sm text-white">
               <li>
                 <Link to="/" className="hover:text-accent transition-colors">
                   Acasă
@@ -57,8 +57,8 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Servicii</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg font-semibold mb-4 text-white">Servicii</h3>
+            <ul className="space-y-2 text-sm text-white">
               <li>
                 <Link to="/servicii/implant-dentar" className="hover:text-accent transition-colors">
                   Implant dentar
@@ -89,20 +89,20 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact</h3>
+            <ul className="space-y-3 text-sm text-white">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
                 <span>Strada 1 Decembrie 1918 58A, Piatra Neamț 615200</span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-2 flex-shrink-0" />
+                <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
                 <a href="tel:+40333630005" className="hover:text-accent transition-colors">
                   +40 333 630 005
                 </a>
               </li>
               <li className="flex items-start">
-                <Clock className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                <Clock className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
                 <div>
                   <div>Luni - Vineri</div>
                   <div>09:00 - 19:00</div>
@@ -114,10 +114,10 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm">
-          <p className="opacity-90">
+          <p className="text-white">
             © {new Date().getFullYear()} Medstom Clinic. Toate drepturile rezervate.
           </p>
-          <div className="mt-2 space-x-4">
+          <div className="mt-2 space-x-4 text-white">
             <Link to="/politica-cookies" className="hover:text-accent transition-colors">
               Politica cookies
             </Link>
