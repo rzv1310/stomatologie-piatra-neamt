@@ -267,7 +267,7 @@ const Index = () => {
               <p className="font-bold">
                 Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
               </p>
-              <p className="font-bold">
+              <p className="font-bold text-white">
                 Pentru că preferăm 1000 de pacienți fericiți, nu 100 captivi, care se întorc mereu cu aceleași probleme.
               </p>
               <p className="font-bold">
