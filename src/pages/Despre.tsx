@@ -282,13 +282,13 @@ const Despre = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-16 bg-accent text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4 text-white">
               Vrei să cunoști echipa în persoană?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8 text-white">
               Programează o consultație și descoperă diferența unei echipe dedicate rezultatelor tale
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -299,7 +299,7 @@ const Despre = () => {
                 </Button>
               </Link>
               <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
                   0333 630 005
                 </Button>
               </a>
