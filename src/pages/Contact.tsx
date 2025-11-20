@@ -94,7 +94,7 @@ const Contact = () => {
               <Card className="border-primary/20">
                 <CardContent className="p-6 space-y-6">
                   <div className="flex items-start space-x-4">
-                    <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Adresa clinicii</h3>
                       <p className="text-text-custom">Strada 1 Decembrie 1918 58A</p>
@@ -103,7 +103,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <Phone className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Telefon</h3>
                       <a href="tel:+40333630005" className="text-primary hover:underline text-lg font-medium">
@@ -114,7 +114,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <Clock className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Program de lucru</h3>
                       <p className="text-text-custom">Luni - Vineri</p>

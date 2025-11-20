@@ -49,22 +49,22 @@ const Despre = () => {
 
   const values = [
     {
-      icon: <Award className="h-12 w-12 text-primary" />,
+      icon: <Award className="h-12 w-12 text-accent" />,
       title: "Excelență",
       description: "20 de ani de experiență și inovație continuă în stomatologie"
     },
     {
-      icon: <Users className="h-12 w-12 text-primary" />,
+      icon: <Users className="h-12 w-12 text-accent" />,
       title: "Echipă completă",
       description: "15 specialiști dedicați - medici, tehnicieni și asistenți"
     },
     {
-      icon: <TrendingUp className="h-12 w-12 text-primary" />,
+      icon: <TrendingUp className="h-12 w-12 text-accent" />,
       title: "Formare continuă",
       description: "Perfecționări în Europa și Emiratele Arabe Unite"
     },
     {
-      icon: <Target className="h-12 w-12 text-primary" />,
+      icon: <Target className="h-12 w-12 text-accent" />,
       title: "Rezultate garantate",
       description: "Nu promisiuni. REZULTATE. Zero durere, zero stres"
     }

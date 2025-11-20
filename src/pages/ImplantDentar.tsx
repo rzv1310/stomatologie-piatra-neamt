@@ -134,7 +134,7 @@ const ImplantDentar = () => {
                 "Reabilitări orale complete"
               ].map((item, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <p className="text-text-custom">{item}</p>
                 </div>
               ))}
@@ -181,21 +181,21 @@ const ImplantDentar = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="text-center border-primary/20">
                 <CardContent className="p-6">
-                  <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h3 className="font-semibold mb-2 text-heading">Rapiditate</h3>
                   <p className="text-sm text-text-custom">Dinți ficși în 24-48h pentru majoritatea cazurilor</p>
                 </CardContent>
               </Card>
               <Card className="text-center border-primary/20">
                 <CardContent className="p-6">
-                  <Award className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <Award className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h3 className="font-semibold mb-2 text-heading">Experiență</h3>
                   <p className="text-sm text-text-custom">20 ani experiență, primii cu Fast & Fixed în regiune</p>
                 </CardContent>
               </Card>
               <Card className="text-center border-primary/20">
                 <CardContent className="p-6">
-                  <CheckCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <CheckCircle className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h3 className="font-semibold mb-2 text-heading">Tehnologie</h3>
                   <p className="text-sm text-text-custom">CBCT, CAD/CAM, laborator propriu integrat</p>
                 </CardContent>
@@ -204,7 +204,7 @@ const ImplantDentar = () => {
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <p className="text-text-custom text-lg">{benefit}</p>
                 </div>
               ))}
