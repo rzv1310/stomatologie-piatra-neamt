@@ -10,6 +10,9 @@ import Profilaxie from "./pages/Profilaxie";
 import EsteticaDentara from "./pages/EsteticaDentara";
 import StomatologieGenerala from "./pages/StomatologieGenerala";
 import Protetica from "./pages/Protetica";
+import Chirurgie from "./pages/Chirurgie";
+import Parodontologie from "./pages/Parodontologie";
+import Radiologie from "./pages/Radiologie";
 import Ortodontie from "./pages/Ortodontie";
 import StomatologieCopii from "./pages/StomatologieCopii";
 import Urgente from "./pages/Urgente";
@@ -37,9 +40,9 @@ const App = () => (
           <Route path="/servicii/ortodontie" element={<Ortodontie />} />
           <Route path="/servicii/stomatologie-copii" element={<StomatologieCopii />} />
           <Route path="/servicii/urgente" element={<Urgente />} />
-          <Route path="/servicii/chirurgie" element={<ImplantDentar />} />
-          <Route path="/servicii/parodontologie" element={<ImplantDentar />} />
-          <Route path="/servicii/radiologie" element={<ImplantDentar />} />
+          <Route path="/servicii/chirurgie" element={<Chirurgie />} />
+          <Route path="/servicii/parodontologie" element={<Parodontologie />} />
+          <Route path="/servicii/radiologie" element={<Radiologie />} />
           <Route path="/tarife" element={<Tarife />} />
           <Route path="/despre" element={<Despre />} />
           <Route path="/contact" element={<Contact />} />
