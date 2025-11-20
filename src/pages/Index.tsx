@@ -137,11 +137,11 @@ const Index = () => {
               </div>
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 mr-2 text-primary" />
+                  <Clock className="h-5 w-5 mr-2 text-accent" />
                   <span>Luni-Vineri 09:00-19:00</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="h-5 w-5 mr-2 text-primary" />
+                  <MapPin className="h-5 w-5 mr-2 text-accent" />
                   <span>Str. 1 Decembrie 1918 58A</span>
                 </div>
               </div>
