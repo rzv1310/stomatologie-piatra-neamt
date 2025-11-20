@@ -116,16 +116,16 @@ const Index = () => {
       </section>
 
       {/* Urgency CTA */}
-      <section className="py-16 bg-accent text-accent-foreground">
+      <section className="py-16 bg-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
               URGENȚĂ STOMATOLOGICĂ ÎN PIATRA NEAMȚ
             </h2>
-            <p className="text-xl mb-6">
+            <p className="text-xl mb-6 text-white">
               Durerea nu așteaptă. Nici noi.
             </p>
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 text-white">
               Abces dentar? Carie dureroasă? Nu poți dormi de 3 nopți? În timp ce alte clinici îți dau programare peste 2 săptămâni, noi avem un singur răspuns:
             </p>
             <a href="tel:+40333630005">
