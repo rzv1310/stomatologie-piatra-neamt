@@ -36,13 +36,13 @@ const App = () => (
           <Route path="/servicii/profilaxie" element={<Profilaxie />} />
           <Route path="/servicii/estetica-dentara" element={<EsteticaDentara />} />
           <Route path="/servicii/endodontie-piatra-neamt" element={<StomatologieGenerala />} />
-          <Route path="/servicii/protetica" element={<Protetica />} />
-          <Route path="/servicii/ortodontie" element={<Ortodontie />} />
-          <Route path="/servicii/stomatologie-copii" element={<StomatologieCopii />} />
+          <Route path="/servicii/protetica-piatra-neamt" element={<Protetica />} />
+          <Route path="/servicii/ortodontie-piatra-neamt" element={<Ortodontie />} />
+          <Route path="/servicii/stomatologie-copii-piatra-neamt" element={<StomatologieCopii />} />
           <Route path="/servicii/urgente" element={<Urgente />} />
-          <Route path="/servicii/chirurgie" element={<Chirurgie />} />
-          <Route path="/servicii/parodontologie" element={<Parodontologie />} />
-          <Route path="/servicii/radiologie" element={<Radiologie />} />
+          <Route path="/servicii/chirurgie-orala" element={<Chirurgie />} />
+          <Route path="/servicii/parodontologie-piatra-neamt" element={<Parodontologie />} />
+          <Route path="/servicii/radiologie-dentara-piatra-neamt" element={<Radiologie />} />
           <Route path="/tarife" element={<Tarife />} />
           <Route path="/despre" element={<Despre />} />
           <Route path="/contact" element={<Contact />} />

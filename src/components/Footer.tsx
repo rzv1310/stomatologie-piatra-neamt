@@ -70,12 +70,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/servicii/ortodontie" className="hover:text-accent transition-colors">
+                <Link to="/servicii/ortodontie-piatra-neamt" className="hover:text-accent transition-colors">
                   Ortodonție
                 </Link>
               </li>
               <li>
-                <Link to="/servicii/stomatologie-copii" className="hover:text-accent transition-colors">
+                <Link to="/servicii/stomatologie-copii-piatra-neamt" className="hover:text-accent transition-colors">
                   Stomatologie copii
                 </Link>
               </li>
