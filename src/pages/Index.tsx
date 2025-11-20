@@ -391,11 +391,29 @@ const Index = () => {
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
-            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="h-12 w-12 mx-auto mb-4" />
-                <p>Hartă Google Maps</p>
-              </div>
+            <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localizare Medstom Clinic Piatra Neamț"
+              />
+            </div>
+            <div className="text-center mt-6">
+              <a 
+                href="https://maps.app.goo.gl/bdybD18DhPFw35fi7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <MapPin className="mr-2 h-5 w-5" />
+                  Deschide în Google Maps
+                </Button>
+              </a>
             </div>
           </div>
         </div>
