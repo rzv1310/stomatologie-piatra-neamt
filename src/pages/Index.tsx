@@ -183,7 +183,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              Servicii stomatologice principale
+              Servicii stomatologice
             </h2>
             <p className="text-lg text-text-custom max-w-2xl mx-auto">
               Tratamente moderne complete, de la prevenție la reabilitări complexe
