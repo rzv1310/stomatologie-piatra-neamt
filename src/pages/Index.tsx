@@ -47,12 +47,12 @@ const Index = () => {
   ];
 
   const whyChooseUs = [
-    "Tehnologie de ultimă generație (+1 milion € investiți)",
-    "Echipă de 15 specialiști cu experiență internațională",
-    "Laborator propriu de tehnică dentară integrat",
-    "Rezultate rapide - majoritatea tratamentelor în 24-48h",
-    "20 de ani de experiență și mii de pacienți mulțumiți",
-    "4 cabinete ultradotate cu echipament modern"
+    "Scapi de grija \"Oare iese bine?\" - tratamentele tale sunt planificate digital.",
+    "Nu mai pierzi timp și bani pe drumuri - Radiografii, CT dentar, planul și lucrările se rezolvă în același loc, într-un flux rapid, gândit pentru confortul tău.",
+    "Ai rezultate rapide – în loc să aștepți săptămâni, în 24-48 de ore poți să mănânci și să zâmbești din nou fără jenă.",
+    "Spui \"adio\" durerii - tehnologie de ultimă generație pentru tratamente fără durere.",
+    "Știi mereu pe mâna cui este zâmbetul tău - ai acces la o echipă completă de specialiști și nu vei fi plimbat dintr-o parte în alta pentru fiecare problemă.",
+    "La Medstom NU ești „doar încă un pacient\" - Ești sprijinit pas cu pas și vei avea claritate încă de la prima vizită!"
   ];
 
   const testimonials = [
