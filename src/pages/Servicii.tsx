@@ -177,7 +177,7 @@ const Servicii = () => {
                   <ul className="space-y-2 mb-6">
                     {service.services.map((item, idx) => (
                       <li key={idx} className="text-sm text-text-custom flex items-start">
-                        <span className="text-primary mr-2">•</span>
+                        <span className="text-accent mr-2">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
