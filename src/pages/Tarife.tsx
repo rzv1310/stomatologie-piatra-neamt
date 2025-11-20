@@ -162,8 +162,8 @@ const Tarife = () => {
                   <Table>
                     <TableHeader>
                       <TableRow>
-                        <TableHead className="w-2/3">Serviciu</TableHead>
-                        <TableHead className="text-right">Preț</TableHead>
+                        <TableHead className="w-2/3 text-accent font-bold">Serviciu</TableHead>
+                        <TableHead className="text-right text-accent font-bold">Preț</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
