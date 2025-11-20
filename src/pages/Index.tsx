@@ -5,38 +5,50 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import teamHero from "@/assets/team-hero.webp";
+import serviceImplant from "@/assets/service-implant.jpg";
+import serviceEstetica from "@/assets/service-estetica.jpg";
+import serviceOrtodontie from "@/assets/service-ortodontie.jpg";
+import serviceCopii from "@/assets/service-copii.jpg";
+import serviceUrgente from "@/assets/service-urgente.jpg";
+import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
   const services = [
     {
       title: "Implant dentar",
       description: "Dinți ficși în 24h cu tehnologie digitală avansată",
-      link: "/servicii/implant-dentar"
+      link: "/servicii/implant-dentar",
+      image: serviceImplant
     },
     {
       title: "Estetică dentară",
       description: "Fațete ceramice și albire profesională pentru zâmbetul perfect",
-      link: "/servicii/estetica-dentara"
+      link: "/servicii/estetica-dentara",
+      image: serviceEstetica
     },
     {
       title: "Ortodonție",
       description: "Aparate dentare fixe și Spark pentru alinierea dinților",
-      link: "/servicii/ortodontie"
+      link: "/servicii/ortodontie",
+      image: serviceOrtodontie
     },
     {
       title: "Stomatologie copii",
       description: "Tratamente gentle pentru cei mici, în siguranță și confort",
-      link: "/servicii/stomatologie-copii"
+      link: "/servicii/stomatologie-copii",
+      image: serviceCopii
     },
     {
       title: "Urgențe stomatologice",
       description: "Durerea nu așteaptă. Nici noi. Sună acum!",
-      link: "/servicii/urgente"
+      link: "/servicii/urgente",
+      image: serviceUrgente
     },
     {
       title: "Endodonție la microscop",
       description: "Tratamente de canal precise cu tehnologie avansată",
-      link: "/servicii/stomatologie-generala"
+      link: "/servicii/stomatologie-generala",
+      image: serviceEndodontie
     }
   ];
 
@@ -180,11 +192,16 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Link key={index} to={service.link}>
-                <Card className="h-full hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 text-heading">{service.title}</h3>
-                    <p className="text-text-custom mb-4">{service.description}</p>
-                    <div className="flex items-center text-primary font-medium">
+                <Card className="h-full hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                    style={{ backgroundImage: `url(${service.image})` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <CardContent className="p-6 relative z-10">
+                    <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
+                    <p className="text-white/90 mb-4">{service.description}</p>
+                    <div className="flex items-center text-accent font-medium">
                       Află mai mult
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
