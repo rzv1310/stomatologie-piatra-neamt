@@ -76,7 +76,14 @@ const Index = () => {
       <section className="bg-hero py-20 lg:py-32">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-            <div className="text-center lg:text-left">
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+              <img 
+                src={teamHero} 
+                alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț" 
+                className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
+              />
+            </div>
+            <div className="text-center lg:text-left order-1 lg:order-2">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 text-heading">
                 Stomatologie în Piatra Neamț pentru întreaga familie
               </h1>
@@ -107,13 +114,6 @@ const Index = () => {
                   <span>Str. 1 Decembrie 1918 58A</span>
                 </div>
               </div>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src={teamHero} 
-                alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț" 
-                className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
-              />
             </div>
           </div>
         </div>
