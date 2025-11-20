@@ -81,14 +81,14 @@ const Despre = () => {
       />
 
       {/* Hero */}
-      <section className="bg-hero py-16 lg:py-24">
+      <section className="bg-accent py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Despre clinica stomatologică Medstom Piatra Neamț
             </h1>
-            <p className="text-xl text-text-custom">
-              20 de ani de excelență în stomatologie - Echipă de specialiști dedicați transformării zâmbetelor și vieților pacienților noștri
+            <p className="text-xl text-white italic">
+              Suntem dedicați transformării zâmbetelor și vieților pacienților noștri
             </p>
           </div>
         </div>
