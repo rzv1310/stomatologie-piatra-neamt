@@ -264,13 +264,13 @@ const Index = () => {
               De ce facem asta?
             </h2>
             <div className="space-y-4 text-lg text-black">
-              <p>
+              <p className="font-bold">
                 Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
               </p>
-              <p>
+              <p className="font-bold">
                 Pentru că preferăm 1000 de pacienți fericiți, nu 100 captivi, care se întorc mereu cu aceleași probleme.
               </p>
-              <p>
+              <p className="font-bold">
                 Pentru că știm că ne vei trimite alți 10 pacienți când vei vedea rezultatele.
               </p>
             </div>
