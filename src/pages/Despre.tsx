@@ -150,15 +150,15 @@ const Despre = () => {
                 <h3 className="text-2xl font-bold mb-4 text-heading">CE PRIMEȘTI LA NOI:</h3>
                 <ul className="space-y-3 text-lg text-text-custom">
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
+                    <span className="text-accent mr-3">✓</span>
                     <span><strong>Echipă completă:</strong> medici, asistenți și tehnicieni dentari sub același acoperiș.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
+                    <span className="text-accent mr-3">✓</span>
                     <span><strong>Expertiză în:</strong> implanturi dentare, coroane, fațete, ortodonție și chirurgie.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
+                    <span className="text-accent mr-3">✓</span>
                     <span><strong>Soluții permanente,</strong> nu reparații temporare.</span>
                   </li>
                 </ul>
