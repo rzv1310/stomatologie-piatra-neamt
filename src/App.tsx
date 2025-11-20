@@ -6,6 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Servicii from "./pages/Servicii";
 import ImplantDentar from "./pages/ImplantDentar";
+import Profilaxie from "./pages/Profilaxie";
+import EsteticaDentara from "./pages/EsteticaDentara";
+import StomatologieGenerala from "./pages/StomatologieGenerala";
+import Protetica from "./pages/Protetica";
+import Ortodontie from "./pages/Ortodontie";
+import StomatologieCopii from "./pages/StomatologieCopii";
+import Urgente from "./pages/Urgente";
 import Tarife from "./pages/Tarife";
 import Despre from "./pages/Despre";
 import Contact from "./pages/Contact";
@@ -23,15 +30,15 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/servicii" element={<Servicii />} />
           <Route path="/servicii/implant-dentar" element={<ImplantDentar />} />
-          <Route path="/servicii/stomatologie-generala" element={<ImplantDentar />} />
-          <Route path="/servicii/estetica-dentara" element={<ImplantDentar />} />
-          <Route path="/servicii/ortodontie" element={<ImplantDentar />} />
-          <Route path="/servicii/stomatologie-copii" element={<ImplantDentar />} />
-          <Route path="/servicii/urgente" element={<ImplantDentar />} />
-          <Route path="/servicii/protetica" element={<ImplantDentar />} />
+          <Route path="/servicii/profilaxie" element={<Profilaxie />} />
+          <Route path="/servicii/estetica-dentara" element={<EsteticaDentara />} />
+          <Route path="/servicii/stomatologie-generala" element={<StomatologieGenerala />} />
+          <Route path="/servicii/protetica" element={<Protetica />} />
+          <Route path="/servicii/ortodontie" element={<Ortodontie />} />
+          <Route path="/servicii/stomatologie-copii" element={<StomatologieCopii />} />
+          <Route path="/servicii/urgente" element={<Urgente />} />
           <Route path="/servicii/chirurgie" element={<ImplantDentar />} />
           <Route path="/servicii/parodontologie" element={<ImplantDentar />} />
-          <Route path="/servicii/profilaxie" element={<ImplantDentar />} />
           <Route path="/servicii/radiologie" element={<ImplantDentar />} />
           <Route path="/tarife" element={<Tarife />} />
           <Route path="/despre" element={<Despre />} />
