@@ -15,7 +15,7 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const services = [
-    { name: "Stomatologie generală", href: "/servicii/stomatologie-generala" },
+    { name: "Endodonție", href: "/servicii/stomatologie-generala" },
     { name: "Implant dentar", href: "/servicii/implant-dentar" },
     { name: "Estetică dentară", href: "/servicii/estetica-dentara" },
     { name: "Ortodonție", href: "/servicii/ortodontie" },
