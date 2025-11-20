@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import teamHero from "@/assets/team-hero.webp";
 
 const Index = () => {
   const services = [
@@ -74,36 +75,45 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-hero py-20 lg:py-32">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-heading">
-              Stomatologie în Piatra Neamț pentru întreaga familie
-            </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-text-custom max-w-3xl mx-auto">
-              În clinica noastră avem o singură prioritate: <strong>Rezultatele!</strong> Nu promisiuni. REZULTATE. Îți spunem exact ce ai nevoie. Nimic în plus.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8">
-                  Programează-te acum
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="text-lg px-8">
-                  <Phone className="mr-2 h-5 w-5" />
-                  033 363 0005
-                </Button>
-              </a>
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 text-heading">
+                Stomatologie în Piatra Neamț pentru întreaga familie
+              </h1>
+              <p className="text-xl lg:text-2xl mb-8 text-text-custom">
+                În clinica noastră avem o singură prioritate: <strong>Rezultatele!</strong> Nu promisiuni. REZULTATE. Îți spunem exact ce ai nevoie. Nimic în plus.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8">
+                    Programează-te acum
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <a href="tel:+40333630005">
+                  <Button size="lg" variant="outline" className="text-lg px-8">
+                    <Phone className="mr-2 h-5 w-5" />
+                    033 363 0005
+                  </Button>
+                </a>
+              </div>
+              <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
+                <div className="flex items-center">
+                  <Clock className="h-5 w-5 mr-2 text-primary" />
+                  <span>Luni-Vineri 09:00-19:00</span>
+                </div>
+                <div className="flex items-center">
+                  <MapPin className="h-5 w-5 mr-2 text-primary" />
+                  <span>Str. 1 Decembrie 1918 58A</span>
+                </div>
+              </div>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center">
-                <Clock className="h-5 w-5 mr-2 text-primary" />
-                <span>Luni-Vineri 09:00-19:00</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="h-5 w-5 mr-2 text-primary" />
-                <span>Str. 1 Decembrie 1918 58A</span>
-              </div>
+            <div className="flex justify-center lg:justify-end">
+              <img 
+                src={teamHero} 
+                alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț" 
+                className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
+              />
             </div>
           </div>
         </div>
