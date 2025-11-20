@@ -228,7 +228,7 @@ const Index = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
               De ce facem asta?
             </h2>
-            <div className="space-y-4 text-lg text-foreground">
+            <div className="space-y-4 text-lg text-black">
               <p>
                 Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
               </p>
