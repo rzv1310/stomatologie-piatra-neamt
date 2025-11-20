@@ -153,7 +153,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {whyChooseUs.map((reason, index) => (
-              <Card key={index} className="border-accent">
+              <Card key={index} className="border-accent shadow-md">
                 <CardContent className="p-6 flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <p className="text-text-custom">{reason}</p>
