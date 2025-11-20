@@ -268,7 +268,7 @@ const Index = () => {
                 Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
               </p>
               <p>
-                Pentru că preferăm 1000 de pacienți fericiți decât 100 captivi.
+                Pentru că preferăm 1000 de pacienți fericiți, nu 100 captivi, care se întorc mereu cu aceleași probleme.
               </p>
               <p>
                 Pentru că știm că ne vei trimite alți 10 pacienți când vei vedea rezultatele.
