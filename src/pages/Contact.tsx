@@ -72,7 +72,7 @@ const Contact = () => {
               Contact & Programări Dentist Piatra Neamț
             </h1>
             <p className="text-xl text-text-custom">
-              Contactează-ne pentru o programare sau pentru orice întrebare. Suntem aici pentru tine!
+              Apelează-ne pentru orice întrebare. Dacă suntem foarte ocupați, te sunăm noi inapoi în câteva minute!
             </p>
           </div>
         </div>
