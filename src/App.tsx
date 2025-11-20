@@ -35,7 +35,7 @@ const App = () => (
           <Route path="/servicii/implant-dentar" element={<ImplantDentar />} />
           <Route path="/servicii/profilaxie" element={<Profilaxie />} />
           <Route path="/servicii/estetica-dentara" element={<EsteticaDentara />} />
-          <Route path="/servicii/stomatologie-generala" element={<StomatologieGenerala />} />
+          <Route path="/servicii/endodontie-piatra-neamt" element={<StomatologieGenerala />} />
           <Route path="/servicii/protetica" element={<Protetica />} />
           <Route path="/servicii/ortodontie" element={<Ortodontie />} />
           <Route path="/servicii/stomatologie-copii" element={<StomatologieCopii />} />
