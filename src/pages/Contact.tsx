@@ -238,16 +238,32 @@ const Contact = () => {
             </div>
             <Card className="border-primary/20 overflow-hidden">
               <CardContent className="p-0">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <div className="text-center text-muted-foreground p-8">
-                    <MapPin className="h-16 w-16 mx-auto mb-4" />
-                    <p className="text-lg mb-2">Hartă Google Maps</p>
-                    <p className="text-sm">Clinica este situată în zona centrală a orașului</p>
-                    <p className="text-sm">Parcare disponibilă în apropiere</p>
-                  </div>
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.5!2d26.3651!3d46.9304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b468b0c0b0c0c0%3A0x0!2sStrada%201%20Decembrie%201918%2058A%2C%20Piatra%20Neam%C8%9B%20615200!5e0!3m2!1sen!2sro!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Locație Medstom Clinic"
+                  />
                 </div>
               </CardContent>
             </Card>
+            <div className="text-center mt-6">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Strada+1+Decembrie+1918+58A,+Piatra+Neamț+615200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg" className="gap-2">
+                  <MapPin className="h-5 w-5" />
+                  Deschide în Google Maps
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
