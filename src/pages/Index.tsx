@@ -147,7 +147,8 @@ const Index = () => {
               De ce să alegi cabinetul stomatologic Medstom din Piatra Neamț
             </h2>
             <p className="text-lg text-text-custom">
-              Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată? <strong>Zâmbetul tău!</strong>
+              Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată?<br />
+              <strong>Zâmbetul tău!</strong>
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
