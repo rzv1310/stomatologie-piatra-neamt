@@ -125,7 +125,7 @@ const Index = () => {
             <p className="text-xl mb-6 text-white">
               Durerea nu așteaptă. Nici noi.
             </p>
-            <p className="text-lg mb-8 text-white">
+            <p className="text-lg mb-8 text-foreground">
               Abces dentar? Carie dureroasă? Nu poți dormi de 3 nopți? În timp ce alte clinici îți dau programare peste 2 săptămâni, noi avem un singur răspuns:
             </p>
             <a href="tel:+40333630005">
