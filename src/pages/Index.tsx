@@ -222,13 +222,13 @@ const Index = () => {
       </section>
 
       {/* Value Proposition */}
-      <section className="py-20 bg-section-alt">
+      <section className="py-20 bg-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
               De ce facem asta?
             </h2>
-            <div className="space-y-4 text-lg text-text-custom">
+            <div className="space-y-4 text-lg text-foreground">
               <p>
                 Pentru că am investit +1 milion € în tehnologie, ca să lucrăm de 3x mai rapid.
               </p>
@@ -239,10 +239,10 @@ const Index = () => {
                 Pentru că știm că ne vei trimite alți 10 pacienți când vei vedea rezultatele.
               </p>
             </div>
-            <div className="mt-8 p-6 bg-card border-l-4 border-primary rounded-lg">
-              <p className="text-xl font-semibold text-heading">
+            <div className="mt-8 p-6 bg-card border-l-4 border-white rounded-lg">
+              <p className="text-xl font-semibold text-foreground">
                 Majoritatea clinicilor îți repară dinții. <br />
-                <span className="text-primary">Noi îți reparăm viața.</span>
+                <span className="text-white">Noi îți reparăm viața.</span>
               </p>
             </div>
           </div>
