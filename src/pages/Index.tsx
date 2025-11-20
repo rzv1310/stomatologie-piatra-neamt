@@ -115,32 +115,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2">20+</div>
-              <div className="text-sm opacity-90">Ani de experiență</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">10,000+</div>
-              <div className="text-sm opacity-90">Pacienți tratați</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">15</div>
-              <div className="text-sm opacity-90">Specialiști în echipă</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">1M€</div>
-              <div className="text-sm opacity-90">Investiție în tehnologie</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Urgency CTA */}
-      <section className="py-16 bg-destructive text-destructive-foreground">
+      <section className="py-16 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -278,6 +254,30 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-12 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">20+</div>
+              <div className="text-sm opacity-90">Ani de experiență</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">10,000+</div>
+              <div className="text-sm opacity-90">Pacienți tratați</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">15</div>
+              <div className="text-sm opacity-90">Specialiști în echipă</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">1M€</div>
+              <div className="text-sm opacity-90">Investiție în tehnologie</div>
+            </div>
           </div>
         </div>
       </section>
