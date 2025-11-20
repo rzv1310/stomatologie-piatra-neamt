@@ -107,7 +107,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border">
+          <div className="lg:hidden py-4 border-t border-border max-h-[80vh] overflow-y-auto">
             <div className="flex flex-col space-y-4">
               <Link
                 to="/"
@@ -118,7 +118,7 @@ const Navigation = () => {
               </Link>
               <div className="px-4">
                 <div className="font-semibold mb-2">Servicii</div>
-                <div className="flex flex-col space-y-2 ml-4 max-h-[50vh] overflow-y-auto">
+                <div className="flex flex-col space-y-2 ml-4">
                   {services.map((service) => (
                     <Link
                       key={service.href}
