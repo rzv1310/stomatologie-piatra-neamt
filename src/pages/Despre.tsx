@@ -300,7 +300,7 @@ const Despre = () => {
               </Link>
               <a href="tel:+40333630005">
                 <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                  033 363 0005
+                  0333 630 005
                 </Button>
               </a>
             </div>

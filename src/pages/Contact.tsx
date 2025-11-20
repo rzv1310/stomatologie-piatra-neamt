@@ -107,7 +107,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Telefon</h3>
                       <a href="tel:+40333630005" className="text-primary hover:underline text-lg font-medium">
-                        +40 333 630 005
+                        0333 630 005
                       </a>
                       <p className="text-sm text-text-custom mt-1">Pentru urgențe și programări</p>
                     </div>
@@ -217,7 +217,7 @@ const Contact = () => {
                 <a href="tel:+40333630005">
                   <Button variant="outline" className="mt-2">
                     <Phone className="mr-2 h-4 w-4" />
-                    033 363 0005
+                    0333 630 005
                   </Button>
                 </a>
               </div>
