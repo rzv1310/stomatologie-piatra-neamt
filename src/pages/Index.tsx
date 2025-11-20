@@ -212,7 +212,7 @@ const Index = () => {
           </div>
           <div className="text-center mt-12">
             <Link to="/servicii">
-              <Button size="lg" variant="outline">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Vezi toate serviciile
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
