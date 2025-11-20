@@ -165,10 +165,10 @@ const Urgente = () => {
               <AlertCircle className="mr-2 h-5 w-5" />
               <span className="font-semibold">Urgențe Stomatologice</span>
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Urgențe Dentare în Piatra Neamț
             </h1>
-            <p className="text-xl mb-8">
+            <p className="text-xl mb-8 text-white">
               Durerea de dinți nu așteaptă. Nici noi. Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.
             </p>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8">
