@@ -19,6 +19,11 @@ const Navigation = () => {
     { name: "Implant dentar", href: "/servicii/implant-dentar" },
     { name: "Estetică dentară", href: "/servicii/estetica-dentara" },
     { name: "Ortodonție", href: "/servicii/ortodontie" },
+    { name: "Profilaxie", href: "/servicii/profilaxie" },
+    { name: "Protetică dentară", href: "/servicii/protetica" },
+    { name: "Chirurgie orală", href: "/servicii/chirurgie" },
+    { name: "Parodontologie", href: "/servicii/parodontologie" },
+    { name: "Radiologie dentară", href: "/servicii/radiologie" },
     { name: "Stomatologie copii", href: "/servicii/stomatologie-copii" },
     { name: "Urgențe stomatologice", href: "/servicii/urgente" },
   ];
