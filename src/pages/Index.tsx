@@ -355,10 +355,10 @@ const Index = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               Programări rapide – online sau telefonic
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8 text-white">
               Dacă ai citit până aici și nu acționezi, peste 6 luni vei fi în același loc. Garantat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
