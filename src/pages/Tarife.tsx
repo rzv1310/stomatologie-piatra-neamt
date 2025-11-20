@@ -128,10 +128,10 @@ const Tarife = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
-              Tarife stomatologie Piatra Neamț
+              Prețuri Stomatologie Piatra Neamț
             </h1>
             <p className="text-xl text-text-custom">
-              Prețuri transparente și competitive pentru servicii stomatologice de calitate superioară
+              Tarife transparente și corecte pentru servicii stomatologice premium
             </p>
           </div>
         </div>
