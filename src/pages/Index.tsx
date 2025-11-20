@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCounter } from "@/hooks/use-counter";
+import { useState, useEffect, useRef } from "react";
 import teamHero from "@/assets/team-hero.webp";
 import serviceImplant from "@/assets/service-implant.jpg";
 import serviceEstetica from "@/assets/service-estetica.jpg";
@@ -13,6 +15,33 @@ import serviceUrgente from "@/assets/service-urgente.jpg";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
+  const [isStatsVisible, setIsStatsVisible] = useState(false);
+  const statsRef = useRef<HTMLDivElement>(null);
+
+  const yearsCount = useCounter(20, 5000, isStatsVisible);
+  const patientsCount = useCounter(10000, 5000, isStatsVisible);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsStatsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, []);
+
   const services = [
     {
       title: "Implant dentar",
@@ -281,13 +310,13 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-12 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">20+</div>
+              <div className="text-4xl font-bold mb-2">{yearsCount}+</div>
               <div className="text-sm opacity-90">Ani de experiență</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">10,000+</div>
+              <div className="text-4xl font-bold mb-2">{patientsCount.toLocaleString('ro-RO')}+</div>
               <div className="text-sm opacity-90">Pacienți tratați</div>
             </div>
             <div>
