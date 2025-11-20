@@ -161,6 +161,14 @@ const Index = () => {
               </Card>
             ))}
           </div>
+          <div className="text-center mt-12">
+            <a href="tel:+40333630005">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8">
+                <Phone className="mr-2 h-5 w-5" />
+                Vreau Stomatolog!
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
