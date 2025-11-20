@@ -131,7 +131,7 @@ const Index = () => {
                 <a href="tel:+40333630005">
                   <Button size="lg" className="bg-accent text-accent-foreground text-lg px-8 hover:bg-accent">
                     <Phone className="mr-2 h-5 w-5" />
-                    033 363 0005
+                    0333 630 005
                   </Button>
                 </a>
               </div>
@@ -200,7 +200,7 @@ const Index = () => {
             <a href="tel:+40333630005">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8">
                 <Phone className="mr-2 h-5 w-5" />
-                Vreau Stomatolog!
+                0333 630 005
               </Button>
             </a>
           </div>
@@ -371,7 +371,7 @@ const Index = () => {
               <a href="tel:+40333630005">
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                   <Phone className="mr-2 h-5 w-5" />
-                  033 363 0005
+                  0333 630 005
                 </Button>
               </a>
             </div>
