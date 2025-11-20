@@ -50,7 +50,7 @@ const Navigation = () => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Servicii</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4">
+                    <ul className="grid w-[400px] gap-3 p-4 max-h-[70vh] overflow-y-auto">
                       {services.map((service) => (
                         <li key={service.href}>
                           <NavigationMenuLink asChild>
@@ -118,7 +118,7 @@ const Navigation = () => {
               </Link>
               <div className="px-4">
                 <div className="font-semibold mb-2">Servicii</div>
-                <div className="flex flex-col space-y-2 ml-4">
+                <div className="flex flex-col space-y-2 ml-4 max-h-[50vh] overflow-y-auto">
                   {services.map((service) => (
                     <Link
                       key={service.href}
