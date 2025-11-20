@@ -40,7 +40,7 @@ const Servicii = () => {
         "Inlay/Onlay/Overlay din ceramică sau compozit",
         "Restaurări complexe"
       ],
-      link: "/servicii/stomatologie-generala"
+      link: "/servicii/endodontie-piatra-neamt"
     },
     {
       title: "Endodonție",
@@ -50,7 +50,7 @@ const Servicii = () => {
         "Retratament endodontic",
         "Managementul urgențelor endodontice"
       ],
-      link: "/servicii/stomatologie-generala"
+      link: "/servicii/endodontie-piatra-neamt"
     },
     {
       title: "Protetică Dentară",
