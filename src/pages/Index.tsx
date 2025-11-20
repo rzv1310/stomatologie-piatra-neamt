@@ -247,7 +247,7 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/tarife">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground border border-white">
                 Mergi la Prețuri
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
