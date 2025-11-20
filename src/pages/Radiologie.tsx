@@ -301,27 +301,27 @@ const Radiologie = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce radiologie la Medstom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="text-5xl mb-4">🏆</div>
-                <h3 className="text-xl font-semibold mb-3">CBCT Vatech Green X16</h3>
-                <p className="opacity-90">Tehnologie premium cu radiații minime</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">CBCT Vatech Green X16</h3>
+                <p className="opacity-90 text-white">Tehnologie premium cu radiații minime</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">💻</div>
-                <h3 className="text-xl font-semibold mb-3">Software avansat</h3>
-                <p className="opacity-90">Planificare digitală 3D pentru implanturi</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Software avansat</h3>
+                <p className="opacity-90 text-white">Planificare digitală 3D pentru implanturi</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">⚡</div>
-                <h3 className="text-xl font-semibold mb-3">Rezultate imediate</h3>
-                <p className="opacity-90">Imagini disponibile instant pentru evaluare</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Rezultate imediate</h3>
+                <p className="opacity-90 text-white">Imagini disponibile instant pentru evaluare</p>
               </div>
             </div>
           </div>

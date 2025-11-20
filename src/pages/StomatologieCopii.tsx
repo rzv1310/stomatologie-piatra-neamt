@@ -377,27 +377,27 @@ const StomatologieCopii = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce copiii iubesc să vină la Medstom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="text-5xl mb-4">🎈</div>
-                <h3 className="text-xl font-semibold mb-3">Atmosferă prietenoasă</h3>
-                <p className="opacity-90">Cabinet colorat și jucării pentru o experiență plăcută</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Atmosferă prietenoasă</h3>
+                <p className="opacity-90 text-white">Cabinet colorat și jucării pentru o experiență plăcută</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">🏆</div>
-                <h3 className="text-xl font-semibold mb-3">Răsplătim curajul</h3>
-                <p className="opacity-90">Fiecare vizită vine cu diplomă și surprize</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Răsplătim curajul</h3>
+                <p className="opacity-90 text-white">Fiecare vizită vine cu diplomă și surprize</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">💙</div>
-                <h3 className="text-xl font-semibold mb-3">Pedodont cu experiență</h3>
-                <p className="opacity-90">Specialist dedicat cu dragoste pentru copii</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Pedodont cu experiență</h3>
+                <p className="opacity-90 text-white">Specialist dedicat cu dragoste pentru copii</p>
               </div>
             </div>
           </div>
