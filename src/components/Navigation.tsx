@@ -43,7 +43,7 @@ const Navigation = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link to="/" className="px-4 py-2 text-foreground hover:text-primary transition-colors">
-                    Acasă
+                    Stomatologie Piatra Neamț
                   </Link>
                 </NavigationMenuItem>
 
@@ -114,7 +114,7 @@ const Navigation = () => {
                 className="px-4 py-2 hover:bg-muted rounded-md transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Acasă
+                Stomatologie Piatra Neamț
               </Link>
               <div className="px-4">
                 <div className="font-semibold mb-2">Servicii</div>
