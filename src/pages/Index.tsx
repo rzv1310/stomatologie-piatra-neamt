@@ -275,9 +275,9 @@ const Index = () => {
               </p>
             </div>
             <div className="mt-8 p-6 bg-card border-l-4 border-white rounded-lg">
-              <p className="text-xl font-semibold text-white">
-                Majoritatea clinicilor îți repară dinții. <br />
-                <span className="text-white">Noi îți reparăm viața!</span>
+              <p className="text-xl font-semibold">
+                <span className="text-black">Majoritatea clinicilor îți repară dinții.</span> <br />
+                <span className="text-accent">Noi îți reparăm viața!</span>
               </p>
             </div>
           </div>
