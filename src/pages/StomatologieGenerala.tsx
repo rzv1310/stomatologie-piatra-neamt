@@ -256,27 +256,27 @@ const StomatologieGenerala = () => {
       </section>
 
       {/* Why Microscope */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce microscop dentar?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="text-5xl mb-4">🔬</div>
-                <h3 className="text-xl font-semibold mb-3">Magnificare până la 25x</h3>
-                <p className="opacity-90">Vedem detalii imposibil de observat cu ochiul liber</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Magnificare până la 25x</h3>
+                <p className="opacity-90 text-white">Vedem detalii imposibil de observat cu ochiul liber</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">🎯</div>
-                <h3 className="text-xl font-semibold mb-3">Precizie maximă</h3>
-                <p className="opacity-90">Tratament precis care păstrează structura dentară sănătoasă</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Precizie maximă</h3>
+                <p className="opacity-90 text-white">Tratament precis care păstrează structura dentară sănătoasă</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">✅</div>
-                <h3 className="text-xl font-semibold mb-3">Rate de succes {'>'} 95%</h3>
-                <p className="opacity-90">Rezultate superioare comparativ cu metodele tradiționale</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Rate de succes {'>'} 95%</h3>
+                <p className="opacity-90 text-white">Rezultate superioare comparativ cu metodele tradiționale</p>
               </div>
             </div>
           </div>

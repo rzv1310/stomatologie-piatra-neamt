@@ -311,27 +311,27 @@ const Chirurgie = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce chirurgie la Medstom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="text-5xl mb-4">🏥</div>
-                <h3 className="text-xl font-semibold mb-3">Sală chirurgicală dedicată</h3>
-                <p className="opacity-90">Spațiu special amenajat cu sterilizare maximă</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Sală chirurgicală dedicată</h3>
+                <p className="opacity-90 text-white">Spațiu special amenajat cu sterilizare maximă</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">📸</div>
-                <h3 className="text-xl font-semibold mb-3">CBCT 3D</h3>
-                <p className="opacity-90">Planificare precisă a intervențiilor chirurgicale</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">CBCT 3D</h3>
+                <p className="opacity-90 text-white">Planificare precisă a intervențiilor chirurgicale</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">👨‍⚕️</div>
-                <h3 className="text-xl font-semibold mb-3">Chirurgi experimentați</h3>
-                <p className="opacity-90">Peste 20 de ani de experiență în chirurgie orală</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Chirurgi experimentați</h3>
+                <p className="opacity-90 text-white">Peste 20 de ani de experiență în chirurgie orală</p>
               </div>
             </div>
           </div>

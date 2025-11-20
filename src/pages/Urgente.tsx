@@ -325,27 +325,27 @@ const Urgente = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce să alegi Medstom pentru urgențe?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="text-5xl mb-4">⚡</div>
-                <h3 className="text-xl font-semibold mb-3">Răspuns rapid</h3>
-                <p className="opacity-90">Te primim în aceeași zi pentru urgențe</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Răspuns rapid</h3>
+                <p className="opacity-90 text-white">Te primim în aceeași zi pentru urgențe</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">🏥</div>
-                <h3 className="text-xl font-semibold mb-3">Echipament complet</h3>
-                <p className="opacity-90">Toate instrumentele pentru orice urgență</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Echipament complet</h3>
+                <p className="opacity-90 text-white">Toate instrumentele pentru orice urgență</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">💊</div>
-                <h3 className="text-xl font-semibold mb-3">Management al durerii</h3>
-                <p className="opacity-90">Analgezii eficiente și tratament nedureros</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Management al durerii</h3>
+                <p className="opacity-90 text-white">Analgezii eficiente și tratament nedureros</p>
               </div>
             </div>
           </div>

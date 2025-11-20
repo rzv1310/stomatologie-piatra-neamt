@@ -260,27 +260,27 @@ const Protetica = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               De ce Medstom pentru protetica dentară?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="text-5xl mb-4">🏭</div>
-                <h3 className="text-xl font-semibold mb-3">Laborator propriu</h3>
-                <p className="opacity-90">Control total asupra calității și termene rapide</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Laborator propriu</h3>
+                <p className="opacity-90 text-white">Control total asupra calității și termene rapide</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">💻</div>
-                <h3 className="text-xl font-semibold mb-3">Tehnologie CAD/CAM</h3>
-                <p className="opacity-90">Design digital pentru precizie maximă</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Tehnologie CAD/CAM</h3>
+                <p className="opacity-90 text-white">Design digital pentru precizie maximă</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">💎</div>
-                <h3 className="text-xl font-semibold mb-3">Materiale premium</h3>
-                <p className="opacity-90">Zirconiu și ceramică de cea mai înaltă calitate</p>
+                <h3 className="text-xl font-semibold mb-3 text-white">Materiale premium</h3>
+                <p className="opacity-90 text-white">Zirconiu și ceramică de cea mai înaltă calitate</p>
               </div>
             </div>
           </div>
