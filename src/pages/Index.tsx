@@ -88,7 +88,9 @@ const Index = () => {
                 Stomatologie în Piatra Neamț pentru întreaga familie
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-text-custom">
-                În clinica noastră avem o singură prioritate: <strong>Rezultatele!</strong> Nu promisiuni. REZULTATE. Îți spunem exact ce ai nevoie. Nimic în plus.
+                În clinica noastră avem o singură prioritate: <strong>Rezultatele!</strong><br />
+                Nu promisiuni. REZULTATE.<br />
+                Îți spunem exact ce ai nevoie. Nimic în plus.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
                 <Link to="/contact">
