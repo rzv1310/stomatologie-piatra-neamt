@@ -286,7 +286,7 @@ const Despre = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">
-              Vrei să cunoști echipa în persoană?
+              Vino să ne cunoaștem!
             </h2>
             <p className="text-xl mb-8 text-white">
               Programează o consultație și descoperă diferența unei echipe dedicate rezultatelor tale
