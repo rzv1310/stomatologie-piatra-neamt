@@ -11,7 +11,7 @@ import serviceImplant from "@/assets/service-implant.jpg";
 import serviceEstetica from "@/assets/service-estetica.jpg";
 import serviceOrtodontie from "@/assets/service-ortodontie.jpg";
 import serviceCopii from "@/assets/service-copii.jpg";
-import serviceUrgente from "@/assets/service-urgente.jpg";
+import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
@@ -68,10 +68,10 @@ const Index = () => {
       image: serviceCopii
     },
     {
-      title: "Urgențe stomatologice",
-      description: "Durerea nu așteaptă. Nici noi. Sună acum!",
-      link: "/servicii/urgente",
-      image: serviceUrgente
+      title: "Radiologie Dentară",
+      description: "Radiografii digitale și CT dentar CBCT pentru diagnosticare precisă",
+      link: "/servicii/radiologie-dentara-piatra-neamt",
+      image: serviceRadiologie
     },
     {
       title: "Endodonție sub microscop",
