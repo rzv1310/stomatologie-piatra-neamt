@@ -42,16 +42,16 @@ const UrgenteDentare = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         
+        <Breadcrumbs 
+          items={[
+            { label: "Acasă", href: "/" },
+            { label: "Blog", href: "/blog" },
+            { label: "Urgențe Dentare" }
+          ]}
+        />
+        
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
-            <Breadcrumbs 
-              items={[
-                { label: "Acasă", href: "/" },
-                { label: "Blog", href: "/blog" },
-                { label: "Urgențe Dentare" }
-              ]}
-              className="mb-6"
-            />
             <h1 className="text-4xl lg:text-5xl font-bold text-white max-w-4xl">
               Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic
             </h1>

@@ -42,16 +42,16 @@ const AlbireDentara = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         
+        <Breadcrumbs 
+          items={[
+            { label: "Acasă", href: "/" },
+            { label: "Blog", href: "/blog" },
+            { label: "Albire Dentară" }
+          ]}
+        />
+        
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
-            <Breadcrumbs 
-              items={[
-                { label: "Acasă", href: "/" },
-                { label: "Blog", href: "/blog" },
-                { label: "Albire Dentară" }
-              ]}
-              className="mb-6"
-            />
             <h1 className="text-4xl lg:text-5xl font-bold text-white max-w-4xl">
               Albire dentară profesională în Piatra Neamț | Opțiuni, prețuri și rezultate
             </h1>
