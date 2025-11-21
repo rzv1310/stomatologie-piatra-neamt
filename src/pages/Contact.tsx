@@ -97,8 +97,7 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Adresa clinicii</h3>
-                      <p className="text-text-custom">Strada 1 Decembrie 1918 58A</p>
-                      <p className="text-text-custom">Piatra Neamț 615200</p>
+                      <p className="text-text-custom">Strada Ana Ipătescu 9, Piatra Neamț 610120</p>
                     </div>
                   </div>
 
@@ -233,7 +232,7 @@ const Contact = () => {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4 text-heading">Cum ajungi la clinică</h2>
               <p className="text-lg text-text-custom">
-                Strada 1 Decembrie 1918 58A, Piatra Neamț 615200
+                Strada Ana Ipătescu 9, Piatra Neamț 610120
               </p>
             </div>
             <Card className="border-primary/20 overflow-hidden">

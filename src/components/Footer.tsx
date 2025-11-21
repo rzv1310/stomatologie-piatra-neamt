@@ -16,7 +16,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-white mb-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
-                <span>Strada 1 Decembrie 1918 58A, Piatra Neamț 615200</span>
+                <span>Strada Ana Ipătescu 9, Piatra Neamț 610120</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
