@@ -111,6 +111,290 @@ const ImplantDentar = () => {
         </div>
       </section>
 
+      {/* Pricing Tables */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center text-heading">
+              Prețuri Implant Dentar
+            </h2>
+            
+            {/* Individual Implants */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold mb-6 text-heading">Implantologie</h3>
+              <Card className="border-primary/20">
+                <CardContent className="p-6">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="text-heading">Serviciu</TableHead>
+                        <TableHead className="text-heading">Brand</TableHead>
+                        <TableHead className="text-right text-heading">Preț</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell className="font-medium text-text-custom">Implant dentar</TableCell>
+                        <TableCell className="text-text-custom">Bredent</TableCell>
+                        <TableCell className="text-right font-semibold text-text-custom">3.000 lei</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="font-medium text-text-custom">Implant dentar</TableCell>
+                        <TableCell className="text-text-custom">MegaGen</TableCell>
+                        <TableCell className="text-right font-semibold text-text-custom">2.500 lei</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="font-medium text-text-custom">Implant dentar</TableCell>
+                        <TableCell className="text-text-custom">JD Dental Implants</TableCell>
+                        <TableCell className="text-right font-semibold text-text-custom">2.000 lei</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Fast and Fixed Packages */}
+            <div className="mb-8">
+              <h3 className="text-2xl font-semibold mb-6 text-heading">Dinți ficși în 24 ore Piatra Neamț</h3>
+              
+              {/* Bredent Packages */}
+              <div className="mb-8">
+                <h4 className="text-xl font-semibold mb-4 text-accent">Fast and Fixed Bredent</h4>
+                <Card className="border-primary/20">
+                  <CardContent className="p-6">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="text-heading">Pachet</TableHead>
+                          <TableHead className="text-right text-heading">Preț</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-text-custom">4 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">17.500 lei</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-text-custom">6 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">23.000 lei</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-text-custom">8 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">29.500 lei</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* MegaGen Packages */}
+              <div className="mb-8">
+                <h4 className="text-xl font-semibold mb-4 text-accent">All-on-4 MegaGen</h4>
+                <Card className="border-primary/20">
+                  <CardContent className="p-6">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="text-heading">Pachet</TableHead>
+                          <TableHead className="text-right text-heading">Preț</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-text-custom">4 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">13.000 lei</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-text-custom">6 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">19.500 lei</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-text-custom">8 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">26.000 lei</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* JD Dental Packages */}
+              <div>
+                <h4 className="text-xl font-semibold mb-4 text-accent">All-on-4 JD Dental Implants</h4>
+                <Card className="border-primary/20">
+                  <CardContent className="p-6">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="text-heading">Pachet</TableHead>
+                          <TableHead className="text-right text-heading">Preț</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-text-custom">4 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">9.900 lei</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-text-custom">6 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">14.900 lei</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-text-custom">8 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-text-custom">19.900 lei</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <a href="tel:+40333630005" className="text-accent hover:text-accent/90 text-xl font-semibold">
+                +40 333 630 005
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What is Dental Implant */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-heading">Ce este implantul dentar</h2>
+            <div className="prose prose-lg text-text-custom">
+              <p>
+                Implantul dentar este o rădăcină artificială din titan care se integrează în osul maxilar și servește ca bază solidă pentru dinți noi. Este cea mai avansată și durabilă soluție pentru înlocuirea dinților lipsă.
+              </p>
+              <p>
+                Spre deosebire de protezele mobile sau podurile dentare clasice, implanturile nu necesită șlefuirea dinților sănătoși vecini și oferă stabilitate și confort comparabile cu dinții naturali.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* When Recommended */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-heading">Când este recomandat implantul dentar</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                "Lipsă unuia sau mai multor dinți",
+                "Proteze mobile instabile și incomode",
+                "Atrofia osoasă din cauza lipsei dinților",
+                "Dorința de dinți ficși și estetici",
+                "Necesitatea de a păstra dinții sănătoși vecini",
+                "Reabilitări orale complete"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-text-custom">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Treatment Steps */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center text-heading">
+              Etapele tratamentului la clinica Medstom
+            </h2>
+            <div className="space-y-6">
+              {steps.map((step, index) => (
+                <Card key={index} className="border-primary/20">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold mb-2 text-heading">{step.title}</h3>
+                        <p className="text-text-custom">{step.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Medstom */}
+      <section className="py-20 bg-section-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center text-heading">
+              De ce să alegi implant dentar în Piatra Neamț la Medstom
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card className="text-center border-primary/20">
+                <CardContent className="p-6">
+                  <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
+                  <h3 className="font-semibold mb-2 text-heading">Rapiditate</h3>
+                  <p className="text-sm text-text-custom">Dinți ficși în 24-48h pentru majoritatea cazurilor</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-primary/20">
+                <CardContent className="p-6">
+                  <Award className="h-12 w-12 text-accent mx-auto mb-4" />
+                  <h3 className="font-semibold mb-2 text-heading">Experiență</h3>
+                  <p className="text-sm text-text-custom">20 ani experiență, primii cu Fast & Fixed în regiune</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-primary/20">
+                <CardContent className="p-6">
+                  <CheckCircle className="h-12 w-12 text-accent mx-auto mb-4" />
+                  <h3 className="font-semibold mb-2 text-heading">Tehnologie</h3>
+                  <p className="text-sm text-text-custom">CBCT, CAD/CAM, laborator propriu integrat</p>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="space-y-4">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-text-custom text-lg">{benefit}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center text-heading">
+              Întrebări frecvente despre implant dentar
+            </h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border border-primary/20 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-heading hover:text-primary">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-text-custom">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-accent">
         <div className="container mx-auto px-4">
