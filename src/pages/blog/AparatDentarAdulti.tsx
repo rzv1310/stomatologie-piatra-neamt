@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const AparatDentarAdulti = () => {
   const faqs = [
@@ -32,8 +33,28 @@ const AparatDentarAdulti = () => {
     }
   ];
 
+  const ArticleSchema = useSEOSchema({
+    type: 'BlogPosting',
+    canonical: '/blog/aparat-dentar-adulti',
+    article: {
+      headline: "Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?",
+      description: "Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine.",
+      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      datePublished: "2025-01-20",
+      dateModified: "2025-01-20"
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/blog/aparat-dentar-adulti',
+    faqs: faqs
+  });
+
   return (
     <>
+      {ArticleSchema}
+      {FAQSchema}
       <Helmet>
         <title>Aparat Dentar pentru Adulți Piatra Neamț | Metalic, Ceramic sau Invisalign</title>
         <meta name="description" content="Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine." />

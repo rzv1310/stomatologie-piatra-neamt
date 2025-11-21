@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const PrimaVizitaCopil = () => {
   const faqs = [
@@ -32,8 +33,28 @@ const PrimaVizitaCopil = () => {
     }
   ];
 
+  const ArticleSchema = useSEOSchema({
+    type: 'BlogPosting',
+    canonical: '/blog/prima-vizita-copil-dentist',
+    article: {
+      headline: "Cum pregătești copilul pentru prima vizită la dentist",
+      description: "Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului.",
+      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      datePublished: "2025-01-20",
+      dateModified: "2025-01-20"
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/blog/prima-vizita-copil-dentist',
+    faqs: faqs
+  });
+
   return (
     <>
+      {ArticleSchema}
+      {FAQSchema}
       <Helmet>
         <title>Cum Pregătești Copilul pentru Prima Vizită la Dentist | Ghid pentru Părinți</title>
         <meta name="description" content="Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului." />

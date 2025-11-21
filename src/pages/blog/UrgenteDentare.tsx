@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const UrgenteDentare = () => {
   const faqs = [
@@ -32,8 +33,28 @@ const UrgenteDentare = () => {
     }
   ];
 
+  const ArticleSchema = useSEOSchema({
+    type: 'BlogPosting',
+    canonical: '/blog/urgente-dentare',
+    article: {
+      headline: "Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic",
+      description: "Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist.",
+      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      datePublished: "2025-01-20",
+      dateModified: "2025-01-20"
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/blog/urgente-dentare',
+    faqs: faqs
+  });
+
   return (
     <>
+      {ArticleSchema}
+      {FAQSchema}
       <Helmet>
         <title>Urgențe Dentare - Dinte Rupt, Plombă Căzută | Prim Ajutor Dentar</title>
         <meta name="description" content="Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist." />

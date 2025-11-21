@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Parodontoza = () => {
   const faqs = [
@@ -32,8 +33,28 @@ const Parodontoza = () => {
     }
   ];
 
+  const ArticleSchema = useSEOSchema({
+    type: 'BlogPosting',
+    canonical: '/blog/parodontoza',
+    article: {
+      headline: "Ai dinți care se mișcă? Cum recunoști și tratezi parodontoza, pas cu pas",
+      description: "Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp.",
+      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      datePublished: "2025-01-20",
+      dateModified: "2025-01-20"
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/blog/parodontoza',
+    faqs: faqs
+  });
+
   return (
     <>
+      {ArticleSchema}
+      {FAQSchema}
       <Helmet>
         <title>Parodontoză - Simptome, Tratament și Prevenție | Dinți Care Se Mișcă</title>
         <meta name="description" content="Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp." />
