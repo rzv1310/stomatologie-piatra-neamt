@@ -27,7 +27,7 @@ const AlbireDentara = () => {
       answer: "Da, însă este important să discutăm despre sensibilitatea ta înainte de tratament. Putem adapta protocolul de albire și putem folosi produse desensibilizante pentru a minimiza disconfortul."
     },
     {
-      question: "Toate dinții se albesc la fel?",
+      question: "Toți dinții se albesc la fel?",
       answer: "Nu, decolorările de pe dinții naturali răspund foarte bine la albire, dar coroana dentară, plombele și fațetele nu își schimbă culoarea. De aceea, evaluăm întâi situația și discutăm așteptările realiste."
     }
   ];
