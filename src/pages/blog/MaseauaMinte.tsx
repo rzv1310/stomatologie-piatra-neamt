@@ -120,6 +120,15 @@ const MaseauaMinte = () => {
                 Ajută la masticație și poate servi drept suport pentru lucrări protetice în viitor.
               </p>
 
+              <div className="flex justify-center my-8">
+                <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
+                  <a href="tel:0333630005">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Sună acum: 0333 630 005
+                  </a>
+                </Button>
+              </div>
+
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Când măseaua de minte TREBUIE scoasă - semnale de alarmă
               </h2>

@@ -117,6 +117,15 @@ const AparatDentarAdulti = () => {
                 </ul>
               </div>
 
+              <div className="flex justify-center my-8">
+                <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
+                  <a href="tel:0333630005">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Sună acum: 0333 630 005
+                  </a>
+                </Button>
+              </div>
+
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
                 2. Aparat dentar ceramic (estetic)
               </h3>
