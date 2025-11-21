@@ -223,7 +223,7 @@ const UrgenteDentare = () => {
               <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-600 dark:border-yellow-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">⚠️ NU face aceste greșeli:</h4>
                 <ul className="list-disc pl-6 text-foreground">
-                  <li>NU încerca să montezi plomba înapoi cu lipici sau alte adezivi casnici</li>
+                  <li>NU încerca să montezi plomba înapoi cu lipici sau alți adezivi casnici</li>
                   <li>NU folosi guma de mestecat ca "plombă temporară" - se lipește și agravează situația</li>
                   <li>NU amâna vizita la dentist - "poate aștepta" devine rapid "urgență cu dureri"</li>
                   <li>NU mesteca pe acea parte chiar dacă nu doare</li>
