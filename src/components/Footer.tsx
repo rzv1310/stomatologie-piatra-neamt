@@ -155,6 +155,22 @@ const Footer = () => {
             <Link to="/politica-confidentialitate" className="hover:text-accent transition-colors">
               Politica de confidențialitate
             </Link>
+            <a 
+              href="https://anpc.ro/ce-este-sal/" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              ANPC – SAL
+            </a>
+            <a 
+              href="https://consumer-redress.ec.europa.eu/index_ro" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              ANPC – SOL
+            </a>
           </div>
         </div>
       </div>
