@@ -48,13 +48,13 @@ const TermeniConditii = () => {
                     >
                       https://stomatologiepiatraneamt.ro/
                     </a>
-                    {" "}(denumit în continuare "Termeni și Condiții") stabilește care sunt condițiile în care orice persoană poate vizita ori accesa site-ul www.implantdentarpiatraneamt.ro, ori poate utiliza în orice mod serviciile oferite prin intermediul site-ului.
+                    {" "}(denumit în continuare "Termeni și Condiții") stabilește care sunt condițiile în care orice persoană poate vizita ori accesa site-ul www.stomatologiepiatraneamt.ro, ori poate utiliza în orice mod serviciile oferite prin intermediul site-ului.
                   </p>
                   <p className="text-foreground leading-relaxed mt-4">
                     Încă de la început Administratorul face cunoscut utilizatorului faptul că acesta nu își asumă obligația și nu garantează implicit sau expres pentru conținutul de orice fel al Site-ului, sau pentru întreg conținutul oferit de către Utilizatori. Administratorul Site-ului va face toate eforturile rezonabile pentru a asigura acuratețea și încrederea în Site și va încerca să corecteze erorile și omisiunile cât mai repede posibil.
                   </p>
                   <p className="text-foreground leading-relaxed mt-4">
-                    Prin "Termeni și Condiții", administratorul transmite către utilizator faptul că: Prin "site" se înțelege în continuare site-ul de internet www.implantdentarpiatraneamt.ro
+                    Prin "Termeni și Condiții", administratorul transmite către utilizator faptul că: Prin "site" se înțelege în continuare site-ul de internet www.stomatologiepiatraneamt.ro
                   </p>
                   <p className="text-foreground leading-relaxed mt-4 font-semibold">
                     Neacceptarea acestor "termeni și condiții" atrage obligația utilizatorului de a părăsi și de a înceta accesarea site-ului.
