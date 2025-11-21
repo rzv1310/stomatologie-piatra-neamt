@@ -20,8 +20,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const ImplantDentar = () => {
+  const pricingSection = useIntersectionObserver();
+  const whatIsSection = useIntersectionObserver();
+  const whenRecommendedSection = useIntersectionObserver();
+  const stepsSection = useIntersectionObserver();
+  const whyChooseSection = useIntersectionObserver();
+  const faqSection = useIntersectionObserver();
+
   const benefits = [
     "Dinți ficși în 24-48h cu încărcare imediată",
     "Tehnologie digitală avansată pentru precizie maximă",
@@ -112,7 +120,12 @@ const ImplantDentar = () => {
       </section>
 
       {/* Pricing Tables */}
-      <section className="py-20 bg-section-alt">
+      <section 
+        ref={pricingSection.ref}
+        className={`py-20 bg-section-alt transition-all duration-700 ${
+          pricingSection.isVisible ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-heading">
@@ -262,7 +275,12 @@ const ImplantDentar = () => {
       </section>
 
       {/* What is Dental Implant */}
-      <section className="py-20">
+      <section 
+        ref={whatIsSection.ref}
+        className={`py-20 transition-all duration-700 ${
+          whatIsSection.isVisible ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-heading">Ce este implantul dentar</h2>
@@ -279,7 +297,12 @@ const ImplantDentar = () => {
       </section>
 
       {/* When Recommended */}
-      <section className="py-20 bg-primary">
+      <section 
+        ref={whenRecommendedSection.ref}
+        className={`py-20 bg-primary transition-all duration-700 ${
+          whenRecommendedSection.isVisible ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-white">Când este recomandat implantul dentar</h2>
@@ -303,7 +326,12 @@ const ImplantDentar = () => {
       </section>
 
       {/* Treatment Steps */}
-      <section className="py-20">
+      <section 
+        ref={stepsSection.ref}
+        className={`py-20 transition-all duration-700 ${
+          stepsSection.isVisible ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-heading">
@@ -331,7 +359,12 @@ const ImplantDentar = () => {
       </section>
 
       {/* Why Choose Medstom */}
-      <section className="py-20 bg-section-alt">
+      <section 
+        ref={whyChooseSection.ref}
+        className={`py-20 bg-section-alt transition-all duration-700 ${
+          whyChooseSection.isVisible ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-heading">
@@ -373,7 +406,12 @@ const ImplantDentar = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
+      <section 
+        ref={faqSection.ref}
+        className={`py-20 transition-all duration-700 ${
+          faqSection.isVisible ? 'animate-fade-in' : 'opacity-0'
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-heading">
