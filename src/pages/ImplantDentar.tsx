@@ -361,35 +361,35 @@ const ImplantDentar = () => {
       {/* Why Choose Medstom */}
       <section 
         ref={whyChooseSection.ref}
-        className={`py-20 bg-section-alt transition-all duration-700 ${
+        className={`py-20 bg-primary transition-all duration-700 ${
           whyChooseSection.isVisible ? 'animate-fade-in' : 'opacity-0'
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center text-heading">
+            <h2 className="text-3xl font-bold mb-12 text-center text-white">
               De ce să alegi implant dentar în Piatra Neamț la Medstom
             </h2>
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="text-center border-primary/20">
+              <Card className="text-center border-primary/20 bg-white/10">
                 <CardContent className="p-6">
                   <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2 text-heading">Rapiditate</h3>
-                  <p className="text-sm text-text-custom">Dinți ficși în 24-48h pentru majoritatea cazurilor</p>
+                  <h3 className="font-semibold mb-2 text-white">Rapiditate</h3>
+                  <p className="text-sm text-white">Dinți ficși în 24-48h pentru majoritatea cazurilor</p>
                 </CardContent>
               </Card>
-              <Card className="text-center border-primary/20">
+              <Card className="text-center border-primary/20 bg-white/10">
                 <CardContent className="p-6">
                   <Award className="h-12 w-12 text-accent mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2 text-heading">Experiență</h3>
-                  <p className="text-sm text-text-custom">20 ani experiență, primii cu Fast & Fixed în regiune</p>
+                  <h3 className="font-semibold mb-2 text-white">Experiență</h3>
+                  <p className="text-sm text-white">20 ani experiență, primii cu Fast & Fixed în regiune</p>
                 </CardContent>
               </Card>
-              <Card className="text-center border-primary/20">
+              <Card className="text-center border-primary/20 bg-white/10">
                 <CardContent className="p-6">
                   <CheckCircle className="h-12 w-12 text-accent mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2 text-heading">Tehnologie</h3>
-                  <p className="text-sm text-text-custom">CBCT, CAD/CAM, laborator propriu integrat</p>
+                  <h3 className="font-semibold mb-2 text-white">Tehnologie</h3>
+                  <p className="text-sm text-white">CBCT, CAD/CAM, laborator propriu integrat</p>
                 </CardContent>
               </Card>
             </div>
@@ -397,7 +397,7 @@ const ImplantDentar = () => {
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-text-custom text-lg">{benefit}</p>
+                  <p className="text-white text-lg">{benefit}</p>
                 </div>
               ))}
             </div>
