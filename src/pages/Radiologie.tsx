@@ -89,7 +89,7 @@ const Radiologie = () => {
 
   const faqs = [
     {
-      question: "Este sigur CBCT-ul? Cât de multe radiații primesc?",
+      question: "Este sigur CBCT-ul? Câte radiații primesc?",
       answer: "CBCT-ul modern emite radiații semnificativ mai reduse decât tomografiile medicale clasice (CT). Doza este comparabilă cu 4-6 radiografii panoramice. La Medstom folosim aparatul CBCT Vatech Green X16 cu tehnologie de reducere a dozei, menținând calitatea imaginii la nivel înalt. Beneficiile diagnostice depășesc cu mult riscurile minime."
     },
     {

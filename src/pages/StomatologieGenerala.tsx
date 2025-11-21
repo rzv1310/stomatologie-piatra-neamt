@@ -96,7 +96,7 @@ const StomatologieGenerala = () => {
     {
       number: "06",
       title: "Restaurare finală",
-      description: "Reconst ruim dintele cu obturație sau coroană pentru funcționalitate completă"
+      description: "Reconstruim dintele cu obturație sau coroană pentru funcționalitate completă"
     }
   ];
 
