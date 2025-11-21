@@ -132,7 +132,7 @@ const Contact = () => {
                     Urgențe stomatologice
                   </h3>
                   <p className="text-text-custom mb-4">
-                    Pentru urgențe dentare (dureri severe, abcese, traumatisme), sunați la numărul de mai sus. Vom face tot posibilul să vă primim în aceeași zi.
+                    Pentru urgențe dentare (dureri severe, abcese, traumatisme), sunați la numărul de mai jos. Vom face tot posibilul să vă primim în aceeași zi.
                   </p>
                   <a href="tel:+40333630005">
                     <Button className="w-full bg-accent hover:bg-accent/90">
