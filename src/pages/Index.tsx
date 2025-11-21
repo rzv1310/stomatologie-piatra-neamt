@@ -915,8 +915,8 @@ const Index = () => {
                 </Card>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="-bottom-16 left-1/3 -translate-x-1/2 md:left-2 md:top-1/2 md:bottom-auto md:-translate-y-1/2 md:translate-x-0 bg-primary hover:bg-primary/90 text-white border-primary" />
-            <CarouselNext className="-bottom-16 right-1/3 translate-x-1/2 md:right-2 md:top-1/2 md:bottom-auto md:-translate-y-1/2 md:translate-x-0 bg-primary hover:bg-primary/90 text-white border-primary" />
+            <CarouselPrevious className="left-2 md:-left-12 bg-primary hover:bg-primary/90 text-white border-primary" />
+            <CarouselNext className="right-2 md:-right-12 bg-primary hover:bg-primary/90 text-white border-primary" />
           </Carousel>
           
           {/* Carousel Indicators */}
