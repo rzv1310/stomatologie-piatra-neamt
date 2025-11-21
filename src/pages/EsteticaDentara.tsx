@@ -4,11 +4,19 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import esteticaHero from "@/assets/service-estetica.jpg";
 
 const EsteticaDentara = () => {
+  const pricingData = [
+    { service: "Fațetă Ceramică EMAX", price: "1700 lei" },
+    { service: "Fațetă integral ceramică feldspatică VIP", price: "2000 lei" },
+    { service: "Albire dentară premium cu LAMPĂ BEYOND® POLUS® Advanced", price: "1000 lei" },
+    { service: "Albire endodontică per dinte / ședință", price: "250 lei" }
+  ];
+
   const benefits = [
     {
       title: "Zâmbet perfect",
@@ -146,8 +154,42 @@ const EsteticaDentara = () => {
         </div>
       </section>
 
+      {/* Pricing Table */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-heading">
+              Prețuri estetică dentară
+            </h2>
+            <Card className="border-primary/20">
+              <CardContent className="p-0">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="text-heading font-semibold">Serviciu</TableHead>
+                      <TableHead className="text-right text-heading font-semibold">Preț</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pricingData.map((item, index) => (
+                      <TableRow key={index}>
+                        <TableCell className="text-text-custom">{item.service}</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
+            <p className="text-center text-text-custom mt-4 text-sm">
+              *Prețurile sunt orientative și pot varia în funcție de complexitatea cazului
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* What is Dental Aesthetics */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">

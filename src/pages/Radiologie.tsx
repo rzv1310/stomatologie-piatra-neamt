@@ -4,11 +4,20 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import radiologieHero from "@/assets/service-radiologie.jpg";
 
 const Radiologie = () => {
+  const pricingData = [
+    { service: "Radiografie dentară panoramică (OPG) digitală", price: "100 lei" },
+    { service: "Tomografie / CT dentar parțial digital", price: "200 lei" },
+    { service: "Tomografie / CT dentar arcadă digital", price: "300 lei" },
+    { service: "Tomografie / CT dentar total digital", price: "500 lei" },
+    { service: "Teleradiografie", price: "100 lei" }
+  ];
+
   const radiologyServices = [
     {
       title: "Radiografie panoramică (OPG)",
@@ -149,8 +158,42 @@ const Radiologie = () => {
         </div>
       </section>
 
+      {/* Pricing Table */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-heading">
+              Prețuri radiologie dentară digitală
+            </h2>
+            <Card className="border-primary/20">
+              <CardContent className="p-0">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="text-heading font-semibold">Serviciu</TableHead>
+                      <TableHead className="text-right text-heading font-semibold">Preț</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pricingData.map((item, index) => (
+                      <TableRow key={index}>
+                        <TableCell className="text-text-custom">{item.service}</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
+            <p className="text-center text-text-custom mt-4 text-sm">
+              *Prețurile sunt standard pentru investigații digitale
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Radiology Services */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">

@@ -4,11 +4,27 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import stomatologieHero from "@/assets/service-stomatologie-generala.jpg";
 
 const StomatologieGenerala = () => {
+  const pricingData = [
+    { category: "Terapie dentară", items: [
+      { service: "Obturație colet", price: "150-200 lei" },
+      { service: "Obturație grad I", price: "170 lei" },
+      { service: "Obturație grad II", price: "220 lei" },
+      { service: "Obturație grad III", price: "300-400 lei" }
+    ]},
+    { category: "Endodonție la microscop", items: [
+      { service: "Tratament monoradicular cu/fără microscop", price: "200-400 lei" },
+      { service: "Tratament pluriradicular cu/fără microscop", price: "350-550 lei" },
+      { service: "Retratament monoradicular la microscop", price: "550 lei" },
+      { service: "Retratament pluriradicular la microscop", price: "700 lei" }
+    ]}
+  ];
+
   const services = [
     {
       title: "Tratament carii dentare",
@@ -151,8 +167,47 @@ const StomatologieGenerala = () => {
         </div>
       </section>
 
+      {/* Pricing Table */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-heading">
+              Prețuri stomatologie generală și endodonție
+            </h2>
+            {pricingData.map((category, idx) => (
+              <div key={idx} className="mb-8">
+                <h3 className="text-2xl font-semibold mb-4 text-heading">{category.category}</h3>
+                <Card className="border-primary/20">
+                  <CardContent className="p-0">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="text-heading font-semibold">Serviciu</TableHead>
+                          <TableHead className="text-right text-heading font-semibold">Preț</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {category.items.map((item, index) => (
+                          <TableRow key={index}>
+                            <TableCell className="text-text-custom">{item.service}</TableCell>
+                            <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+            <p className="text-center text-text-custom mt-4 text-sm">
+              *Prețurile sunt orientative și pot varia în funcție de complexitatea cazului
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">

@@ -4,11 +4,24 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import chirurgieHero from "@/assets/service-chirurgie.jpg";
 
 const Chirurgie = () => {
+  const pricingData = [
+    { service: "Extracție dinte parodontotic", price: "100 lei" },
+    { service: "Extracție monoradicular", price: "150 lei" },
+    { service: "Extracție pluriradicular", price: "200-250 lei" },
+    { service: "Extracție molar de minte", price: "300-400 lei" },
+    { service: "Extracție rest radicular", price: "200 lei" },
+    { service: "Adiție osoasă mică (1-2 elemente)", price: "2000-2500 lei" },
+    { service: "Adiție osoasă mare (3-6 elemente)", price: "3000-3500 lei" },
+    { service: "Sinus Lift Extern", price: "de la 4000 lei" },
+    { service: "Sinus Lift Intern", price: "de la 2000 lei" }
+  ];
+
   const surgicalServices = [
     {
       title: "Extracții dentare",
@@ -170,8 +183,42 @@ const Chirurgie = () => {
         </div>
       </section>
 
+      {/* Pricing Table */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-heading">
+              Prețuri chirurgie dentară
+            </h2>
+            <Card className="border-primary/20">
+              <CardContent className="p-0">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="text-heading font-semibold">Serviciu</TableHead>
+                      <TableHead className="text-right text-heading font-semibold">Preț</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pricingData.map((item, index) => (
+                      <TableRow key={index}>
+                        <TableCell className="text-text-custom">{item.service}</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
+            <p className="text-center text-text-custom mt-4 text-sm">
+              *Prețurile sunt orientative și pot varia în funcție de complexitatea cazului
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Surgical Services */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
