@@ -38,7 +38,16 @@ const PoliticaCookies = () => {
               <Card>
                 <CardContent className="pt-6">
                   <p className="text-foreground leading-relaxed">
-                    Această politică se referă la cookie-urile folosite pe site-ul <strong>stomatologiepiatraneamt.ro</strong>. Prin utilizarea acestui site, ești de acord cu utilizarea cookie-urilor în condițiile descrise mai jos.
+                    Această politică se referă la cookie-urile folosite pe site-ul{" "}
+                    <a 
+                      href="https://stomatologiepiatraneamt.ro" 
+                      className="font-semibold text-primary hover:text-primary/80 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      stomatologiepiatraneamt.ro
+                    </a>
+                    . Prin utilizarea acestui site, ești de acord cu utilizarea cookie-urilor în condițiile descrise mai jos.
                   </p>
                 </CardContent>
               </Card>
