@@ -77,6 +77,11 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2 text-sm text-white">
               <li>
+                <Link to="/servicii/tratament-carii" className="hover:text-accent transition-colors">
+                  Odontoterapie
+                </Link>
+              </li>
+              <li>
                 <Link to="/servicii/endodontie-piatra-neamt" className="hover:text-accent transition-colors">
                   Endodonție
                 </Link>
