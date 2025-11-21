@@ -92,7 +92,8 @@ const ImplantDentar = () => {
         ]}
       />
 
-      {/* Hero */}
+      <main className="flex-1">
+        {/* Hero */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -459,6 +460,7 @@ const ImplantDentar = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

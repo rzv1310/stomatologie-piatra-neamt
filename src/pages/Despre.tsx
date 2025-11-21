@@ -80,7 +80,8 @@ const Despre = () => {
         ]}
       />
 
-      {/* Hero */}
+      <main className="flex-1">
+        {/* Hero */}
       <section className="bg-accent py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -307,6 +308,7 @@ const Despre = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
