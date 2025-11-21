@@ -16,7 +16,6 @@ const Navigation = () => {
 
   const services = [
     { name: "Endodonție", href: "/servicii/endodontie-piatra-neamt" },
-    { name: "Implant dentar", href: "/servicii/implant-dentar" },
     { name: "Estetică dentară", href: "/servicii/estetica-dentara" },
     { name: "Ortodonție", href: "/servicii/ortodontie-piatra-neamt" },
     { name: "Profilaxie", href: "/servicii/profilaxie" },
@@ -26,6 +25,7 @@ const Navigation = () => {
     { name: "Radiologie dentară", href: "/servicii/radiologie-dentara-piatra-neamt" },
     { name: "Stomatologie copii", href: "/servicii/stomatologie-copii-piatra-neamt" },
     { name: "Urgențe stomatologice", href: "/servicii/urgente" },
+    { name: "Implant dentar", href: "/servicii/implant-dentar" },
   ];
 
   return (
