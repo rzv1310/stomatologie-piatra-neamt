@@ -23,6 +23,7 @@ import Despre from "./pages/Despre";
 import Contact from "./pages/Contact";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import TermeniConditii from "./pages/TermeniConditii";
+import PoliticaConfidentialitate from "./pages/PoliticaConfidentialitate";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -54,6 +55,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/politica-cookies" element={<PoliticaCookies />} />
           <Route path="/termeni-conditii" element={<TermeniConditii />} />
+          <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
