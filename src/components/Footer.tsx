@@ -70,6 +70,11 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  Sitemap
+                </a>
+              </li>
             </ul>
           </div>
 
