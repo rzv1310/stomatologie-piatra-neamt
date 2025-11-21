@@ -279,10 +279,10 @@ const ImplantDentar = () => {
       </section>
 
       {/* When Recommended */}
-      <section className="py-20 bg-section-alt">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-heading">Când este recomandat implantul dentar</h2>
+            <h2 className="text-3xl font-bold mb-6 text-white">Când este recomandat implantul dentar</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Lipsă unuia sau mai multor dinți",
@@ -294,7 +294,7 @@ const ImplantDentar = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-text-custom">{item}</p>
+                  <p className="text-white">{item}</p>
                 </div>
               ))}
             </div>
