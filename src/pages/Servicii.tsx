@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -214,6 +215,12 @@ const Servicii = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
+      <Breadcrumbs
+        items={[
+          { label: "Stomatologie Piatra Neamț", href: "/" },
+          { label: "Servicii" }
+        ]}
+      />
 
       {/* Hero */}
       <section className="bg-hero py-16 lg:py-24">
