@@ -99,11 +99,6 @@ const Blog = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {articles.map((article) => (
                 <Card key={article.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                  <img 
-                    src={article.image} 
-                    alt={article.title}
-                    className="w-full h-48 object-cover"
-                  />
                   <CardContent className="p-6">
                     <h2 className="text-xl font-bold text-foreground mb-3 line-clamp-2">
                       {article.title}
