@@ -89,7 +89,7 @@ const EsteticaDentara = () => {
 
   const faqs = [
     {
-      question: "Cât de albe pot deveni dinții mei?",
+      question: "Cât de albi pot deveni dinții mei?",
       answer: "Albirea profesională poate îmbunătăți culoarea dinților cu 6-8 nuanțe. Rezultatul depinde de culoarea inițială și de tipul de decolorare. La consultație evaluăm potențialul de albire specific cazului tău."
     },
     {
