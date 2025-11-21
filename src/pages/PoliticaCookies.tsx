@@ -10,7 +10,7 @@ const PoliticaCookies = () => {
       <Navigation />
       <Breadcrumbs
         items={[
-          { label: "Acasă", href: "/" },
+          { label: "Stomatologie Piatra Neamț", href: "/" },
           { label: "Politica Cookies" },
         ]}
       />

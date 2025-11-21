@@ -11,7 +11,7 @@ const TermeniConditii = () => {
       <Navigation />
       <Breadcrumbs
         items={[
-          { label: "Acasă", href: "/" },
+          { label: "Stomatologie Piatra Neamț", href: "/" },
           { label: "Termeni și Condiții" },
         ]}
       />
