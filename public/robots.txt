@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://medstomclinic.ro/sitemap.xml
+Sitemap: https://stomatologiepiatraneamt.ro/sitemap.xml
