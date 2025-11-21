@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import profilaxieImg from "@/assets/service-profilaxie.jpg";
 import esteticaImg from "@/assets/service-estetica.jpg";
 import endodontieImg from "@/assets/service-endodontie.jpg";
@@ -18,6 +19,57 @@ import urgenteImg from "@/assets/service-urgente.jpg";
 import stomatologieGeneralaImg from "@/assets/service-stomatologie-generala.jpg";
 
 const Servicii = () => {
+  const faqs = [
+    {
+      question: "De ce este importantă profilaxia regulată?",
+      answer: "Profilaxia previne bolile dentare și reduce costurile viitoare. Controalele regulate detectează problemele în stadii incipiente când sunt mai ușor de tratat."
+    },
+    {
+      question: "Care este diferența între fațete și coroane estetice?",
+      answer: "Fațetele acoperă doar fața vizibilă a dintelui și necesită șlefuire minimă, în timp ce coroanele înconjoară întregul dinte și sunt indicate când acesta este deteriorat semnificativ."
+    },
+    {
+      question: "Cum știu dacă am o carie care necesită tratament?",
+      answer: "Semnele includ sensibilitate la rece/cald/dulce, durere la mestec sau pete vizibile pe dinți. La consultație putem detecta cariile chiar și în stadii timpurii prin examinare și radiografii."
+    },
+    {
+      question: "Când este necesar tratamentul de canal?",
+      answer: "Când nervul dintelui este inflamat sau infectat din cauza cariei profunde, traumatismelor sau fisurilor. Tratamentul salvează dintele care altfel ar trebui extras."
+    },
+    {
+      question: "Ce tipuri de proteze dentare există?",
+      answer: "Avem proteze fixe (coroane, punți) și proteze mobile (totale sau parțiale, scheletate). Alegerea depinde de câți dinți lipsesc și de starea dinților rămași."
+    },
+    {
+      question: "Cât durează vindecarea după inserarea unui implant?",
+      answer: "Osteointegrarea (fuziunea implantului cu osul) durează 2-6 luni, dar în majoritatea cazurilor ofertim dinți provizorii imediat sau în 24-48 ore."
+    },
+    {
+      question: "Extracția dintelui este singura soluție în chirurgie orală?",
+      answer: "Nu! Chirurgia orală include și proceduri de salvare a dinților (rezecții apicale), pregătire pentru implanturi, îndepărtarea chisturilor și corectarea țesuturilor moi."
+    },
+    {
+      question: "Ce este boala parodontală și cum se tratează?",
+      answer: "Este inflamația gingiilor și a osului care susține dinții, cauzată de bacterii. Se tratează prin igienizare profesională profundă, chiuretaj și în cazuri severe, chirurgie parodontală."
+    },
+    {
+      question: "Pot face ortodonție și ca adult?",
+      answer: "Absolut! Nu există limită de vârstă pentru ortodonție. Adulții pot beneficia de aparate estetice sau alignere transparente pentru un tratament discret."
+    },
+    {
+      question: "La ce vârstă trebuie adus copilul la dentist?",
+      answer: "Prima vizită se recomandă la 1 an sau când erupe primul dinț. Controalele regulate de la vârstă fragedă previn problemele și ajută copilul să se obișnuiască cu dentistul."
+    },
+    {
+      question: "De ce am nevoie de radiografie dentară?",
+      answer: "Radiografiile detectează probleme invizibile cu ochiul liber: carii între dinți, infecții la rădăcină, probleme osoase, dinți incluși. Sunt esențiale pentru diagnostic precis."
+    },
+    {
+      question: "Ce fac în caz de urgență stomatologică în afara programului?",
+      answer: "Sunați la 0333 630 005. Avem servicii de urgență pentru dureri acute, traumatisme dentare, abcese și alte situații care necesită intervenție imediată."
+    }
+  ];
+
   const services = [
     {
       title: "Profilaxie și Igienizare",
@@ -210,6 +262,29 @@ const Servicii = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center text-heading">
+              Întrebări frecvente despre serviciile noastre
+            </h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border border-primary/20 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-accent">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-text-custom pt-2">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
