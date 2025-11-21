@@ -4,11 +4,21 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import profilaxieHero from "@/assets/service-profilaxie.jpg";
 
 const Profilaxie = () => {
+  const pricingData = [
+    { service: "Consultație și plan de tratament", price: "Gratuită" },
+    { service: "Detartraj cu ultrasunete + periaj profesional", price: "200 - 300 lei" },
+    { service: "Air-flow (Prophy-jet)", price: "150 - 250 lei" },
+    { service: "Detartraj complet + Air-flow + fluorizare", price: "350 - 450 lei" },
+    { service: "Sigilare șanțuri (per dinte)", price: "80 - 120 lei" },
+    { service: "Fluorizare profesională", price: "50 - 100 lei" }
+  ];
+
   const benefits = [
     {
       title: "Prevenție eficientă",
@@ -115,6 +125,40 @@ const Profilaxie = () => {
                 </Button>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Table */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-heading">
+              Prețuri profilaxie și igienizare
+            </h2>
+            <Card className="border-primary/20">
+              <CardContent className="p-0">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="text-heading font-semibold">Serviciu</TableHead>
+                      <TableHead className="text-right text-heading font-semibold">Preț</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pricingData.map((item, index) => (
+                      <TableRow key={index}>
+                        <TableCell className="text-text-custom">{item.service}</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
+            <p className="text-center text-text-custom mt-4 text-sm">
+              *Prețurile sunt orientative și pot varia în funcție de complexitatea cazului
+            </p>
           </div>
         </div>
       </section>
