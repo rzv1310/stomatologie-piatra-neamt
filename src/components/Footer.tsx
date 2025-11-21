@@ -8,7 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About & Contact */}
           <div>
-            <h2 className="text-xl font-bold mb-4 text-white">Stomatologie Piatra Neamț</h2>
+            <h2 className="text-xl font-bold mb-4 text-white">
+              <Link to="/" className="hover:text-accent transition-colors">
+                Stomatologie Piatra Neamț
+              </Link>
+            </h2>
             <ul className="space-y-3 text-sm text-white mb-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
@@ -41,11 +45,6 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4 text-white">Legături rapide</h2>
             <ul className="space-y-2 text-sm text-white">
-              <li>
-                <Link to="/" className="hover:text-accent transition-colors">
-                  Stomatologie Piatra Neamț
-                </Link>
-              </li>
               <li>
                 <Link to="/servicii" className="hover:text-accent transition-colors">
                   Servicii stomatologice
