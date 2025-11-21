@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, Tren
 import { Link } from "react-router-dom";
 import { useCounter } from "@/hooks/use-counter";
 import { useState, useEffect, useRef } from "react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import teamHero from "@/assets/team-hero.webp";
 import serviceImplant from "@/assets/service-implant.jpg";
 import serviceEstetica from "@/assets/service-estetica.jpg";
@@ -422,6 +423,487 @@ const Index = () => {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQs Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              Întrebări frecvente despre serviciile noastre
+            </h2>
+            <p className="text-lg text-text-custom">
+              Răspunsuri la cele mai comune întrebări ale pacienților noștri
+            </p>
+          </div>
+          <Carousel className="max-w-5xl mx-auto">
+            <CarouselContent>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Detartraj cu ultrasunete și periaj profesional</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De ce am nevoie de detartraj, dacă mă spăl zilnic pe dinți?</h3>
+                        <p className="text-text-custom text-sm">Periajul de acasă nu reușește să îndepărteze complet tartrul și placa bacteriană întărită; detartrajul cu ultrasunete curăță zonele greu accesibile și previne gingivita și parodontoza.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât de des este recomandat detartrajul?</h3>
+                        <p className="text-text-custom text-sm">În general, la 6–12 luni, în funcție de cât de repede se depune tartrul și de recomandarea medicului dentist.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Detartrajul doare sau zgârie dinții?</h3>
+                        <p className="text-text-custom text-sm">Nu doare, poate fi doar ușor neplăcut; ultrasunetele sparg depunerile de tartru, nu smalțul dintelui.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Air-flow (prophy-jet)</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce este tratamentul Air-flow și la ce mă ajută?</h3>
+                        <p className="text-text-custom text-sm">Air-flow folosește un jet de apă, aer și particule fine de pulbere pentru a curăța petele superficiale și placa moale, lăsând dinții mai curați și mai netezi.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Air-flow înlocuiește detartrajul cu ultrasunete?</h3>
+                        <p className="text-text-custom text-sm">Nu, Air-flow completează detartrajul; el nu îndepărtează tartrul dur, ci curăță și lustruiește suprafața dinților.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Air-flow albește dinții?</h3>
+                        <p className="text-text-custom text-sm">Nu este un tratament de albire, dar poate face dinții să pară mai albi prin îndepărtarea petelor de cafea, ceai, vin sau tutun.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Sigilări dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce sunt sigilările dentare și de ce ar avea nevoie copilul meu de ele?</h3>
+                        <p className="text-text-custom text-sm">Sigilările sunt straturi subțiri de material aplicate pe suprafața măselelor pentru a împiedica resturile alimentare și bacteriile să se depună în șanțuri, reducând riscul de carii.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">La ce vârstă se fac sigilările?</h3>
+                        <p className="text-text-custom text-sm">De obicei, după erupția măselelor definitive (în jur de 6–7 ani și apoi 11–13 ani), dar medicul stabilește momentul ideal.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Sigilările dor sau necesită anestezie?</h3>
+                        <p className="text-text-custom text-sm">Nu, sigilarea este o procedură non-invazivă, fără durere și fără freză, de obicei bine tolerată de copii.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Fațete dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce sunt fațetele dentare și ce probleme pot corecta pentru mine?</h3>
+                        <p className="text-text-custom text-sm">Fațetele sunt foițe subțiri aplicate pe fața vizibilă a dinților, care pot corecta culoarea, forma, mici spații sau ușoare aliniamente inestetice.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Fațetele îmi strică dinții naturali?</h3>
+                        <p className="text-text-custom text-sm">Este necesară o șlefuire minimă, controlată, a smalțului; medicul îți explică exact cât și dacă ești un bun candidat pentru fațete.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât timp rezistă fațetele dentare?</h3>
+                        <p className="text-text-custom text-sm">Cu igienă bună și controale regulate, fațetele pot rezista mulți ani, însă durata depinde de obiceiurile tale (bruxism, fumat, alimentație).</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Bijuterii dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">O bijuterie dentară îmi poate strica smalțul?</h3>
+                        <p className="text-text-custom text-sm">Aplicată corect, cu materiale stomatologice, bijuteria nu deteriorează smalțul și poate fi îndepărtată fără a lăsa urme.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât durează să-mi pun o bijuterie dentară?</h3>
+                        <p className="text-text-custom text-sm">Procedura este rapidă, de obicei 15–20 de minute, nedureroasă și fără anestezie.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Dacă mă răzgândesc, pot să o scot?</h3>
+                        <p className="text-text-custom text-sm">Da, medicul o poate îndepărta ușor și poate lustrui dintele pentru a reveni la aspectul inițial.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tratamentul cariilor</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cum îmi dau seama dacă am o carie?</h3>
+                        <p className="text-text-custom text-sm">Uneori apar dureri la rece sau dulce, alteori nu ai niciun simptom; doar controlul periodic și radiografiile pot depista cariile ascunse.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce se întâmplă dacă amân tratamentul unei carii?</h3>
+                        <p className="text-text-custom text-sm">Caria avansează, ajunge la nerv, poate necesita tratament de canal sau chiar extracție, crescând costurile și timpul de tratament.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Tratamentul cariei doare?</h3>
+                        <p className="text-text-custom text-sm">În majoritatea cazurilor, tratamentul se face cu anestezie locală și este confortabil, fără durere propriu-zisă.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Plombe (obturații)</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce este o plombă dentară?</h3>
+                        <p className="text-text-custom text-sm">Plomba este materialul cu care medicul reface dintele după ce a îndepărtat țesutul cariat, redându-i forma și funcția.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât timp rezistă o plombă?</h3>
+                        <p className="text-text-custom text-sm">Durata depinde de dimensiune, poziție, material și modul în care muști, dar poate fi de la câțiva ani la peste 10 ani.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">După plombă pot mânca imediat?</h3>
+                        <p className="text-text-custom text-sm">În cazul plombelor fotopolimerizabile poți mânca relativ repede, dar este recomandat să aștepți puțin și să eviți masticația intensă pe dintele tratat în primele ore.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tratament de canal (endodonție)</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce înseamnă tratamentul de canal pentru dintele meu?</h3>
+                        <p className="text-text-custom text-sm">Înseamnă curățarea, dezinfectarea și obturarea canalelor din rădăcina dintelui atunci când nervul este inflamat sau necrozat, pentru a salva dintele de la extracție.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Tratamentul de canal doare?</h3>
+                        <p className="text-text-custom text-sm">Se face sub anestezie, iar scopul lui este tocmai să elimine durerea; poți simți un disconfort ușor câteva zile după, dar acesta este temporar.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Câte ședințe sunt necesare pentru un tratament de canal?</h3>
+                        <p className="text-text-custom text-sm">Depinde de complexitatea cazului; uneori este suficientă o ședință, alteori pot fi necesare 2–3 vizite.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Proteze dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Când am nevoie de o proteză dentară?</h3>
+                        <p className="text-text-custom text-sm">Când lipsesc mai mulți dinți și nu se pot înlocui cu punți sau implanturi, proteza dentară te ajută să mănânci și să zâmbești din nou.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât durează până mă obișnuiesc cu proteza?</h3>
+                        <p className="text-text-custom text-sm">Perioada de adaptare diferă de la o persoană la alta, dar în general câteva săptămâni; în acest timp pot fi necesare mici ajustări.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cum îngrijesc corect o proteză dentară?</h3>
+                        <p className="text-text-custom text-sm">Se curăță zilnic, separat de dinții naturali, cu perie și produse speciale pentru proteze, și se păstrează în mediu umed când nu este purtată.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Adiție de os</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De ce am nevoie de adiție de os înainte de implant?</h3>
+                        <p className="text-text-custom text-sm">Când osul este prea subțire sau prea puțin, adiția de os reconstruiește volumul necesar pentru a susține un implant stabil.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Este dureroasă intervenția de adiție de os?</h3>
+                        <p className="text-text-custom text-sm">Se efectuează sub anestezie locală, astfel încât pe moment nu simți durere; ulterior poți avea disconfort și ușoară umflătură, controlate cu medicația recomandată.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât durează vindecarea după adiția de os?</h3>
+                        <p className="text-text-custom text-sm">În general, între câteva luni și 6–9 luni, în funcție de tipul de material folosit și zona tratată.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Extracții dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Când este absolut necesară extracția unui dinte?</h3>
+                        <p className="text-text-custom text-sm">Atunci când dintele este irecuperabil (cariată profund, fracturată, mobilă sever) și nu mai poate fi salvat prin alte tratamente.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Extracția doare?</h3>
+                        <p className="text-text-custom text-sm">Nu, se face sub anestezie locală; poți simți doar presiune, iar durerea de după se controlează cu medicamente prescrise de medic.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce nu am voie să fac după o extracție?</h3>
+                        <p className="text-text-custom text-sm">În primele 24 de ore trebuie evitate fumatul, băuturile fierbinți, clătirea energică și efortul fizic intens, pentru a nu desprinde cheagul de sânge.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tratamentul gingivitei</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cum îmi dau seama că am gingivită?</h3>
+                        <p className="text-text-custom text-sm">Gingivita se manifestă prin gingii roșii, umflate, sensibile, care sângerează la periaj sau spontan.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cum se tratează gingivita?</h3>
+                        <p className="text-text-custom text-sm">Prin igienizare profesională (detartraj, periaj, eventual Air-flow), periaj corect acasă și folosirea mijloacelor auxiliare (ață, duș bucal, apă de gură).</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Gingivita poate reveni?</h3>
+                        <p className="text-text-custom text-sm">Da, dacă igiena orală este necorespunzătoare; controalele regulate ajută la prevenirea recidivei.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Aparate dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De la ce vârstă se poate pune aparat dentar?</h3>
+                        <p className="text-text-custom text-sm">Aparatele mobile se pot folosi la copii, iar cele fixe de regulă după erupția majorității dinților permanenți; medicul ortodont stabilește momentul potrivit.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Doare purtarea aparatului dentar?</h3>
+                        <p className="text-text-custom text-sm">Poți simți disconfort sau sensibilitate câteva zile după aplicare și activări, dar acestea se diminuează în timp.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât durează, în general, tratamentul ortodontic?</h3>
+                        <p className="text-text-custom text-sm">De la aproximativ 12 luni până la 2–3 ani, în funcție de gravitatea cazului și de cooperarea pacientului.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Invisalign</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce este Invisalign?</h3>
+                        <p className="text-text-custom text-sm">Invisalign este un sistem de aliniatori transparenți, personalizați, care îndreaptă treptat dinții fără bracketurile metalice clasice.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Este Invisalign la fel de eficient ca aparatul dentar clasic?</h3>
+                        <p className="text-text-custom text-sm">Pentru multe cazuri, da; totuși, doar ortodontul poate spune dacă malpoziția ta poate fi corectată suficient cu Invisalign.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Câte ore pe zi trebuie purtați aliniatorii Invisalign?</h3>
+                        <p className="text-text-custom text-sm">De obicei 20–22 de ore pe zi, fiind îndepărtați doar pentru mese și periaj.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Pedodonție (stomatologie pentru copii)</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De la ce vârstă ar trebui să duc copilul la dentist?</h3>
+                        <p className="text-text-custom text-sm">Ideal, primul control se face la apariția primilor dinți sau cel târziu în jurul vârstei de 1 an.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De ce trebuie tratați dinții de lapte, dacă oricum cad?</h3>
+                        <p className="text-text-custom text-sm">Pentru că dinții de lapte cariați dau dureri, infecții și pot afecta dinții permanenți și dezvoltarea armonioasă a maxilarelor.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Copilului meu îi va fi frică și va simți durere?</h3>
+                        <p className="text-text-custom text-sm">Se folosesc tehnici blânde de acomodare și, la nevoie, anestezie locală; scopul este ca vizita la dentist să fie o experiență cât mai plăcută.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Radiografii panoramice (ORT)</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce este radiografia panoramică (ORT)?</h3>
+                        <p className="text-text-custom text-sm">Este o imagine largă, 2D, a maxilarelor, dinților și articulațiilor, care ajută medicul să vadă structurile „din interior".</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Sunt radiațiile periculoase?</h3>
+                        <p className="text-text-custom text-sm">Doza de radiații este redusă și se folosesc măsuri de protecție; radiografia se indică doar când este cu adevărat necesară.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De ce am nevoie de panoramă înainte de tratament?</h3>
+                        <p className="text-text-custom text-sm">Pentru a depista probleme ascunse (rădăcini, chisturi, dinți incluși) și pentru a planifica corect tratamentul.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tomografie Computerizată (CBCT)</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce este tomografia computerizată dentară (CBCT)?</h3>
+                        <p className="text-text-custom text-sm">CBCT oferă imagini 3D detaliate ale dinților și oaselor maxilare, mult mai precise decât o radiografie clasică.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De ce este necesară CBCT înainte de implant?</h3>
+                        <p className="text-text-custom text-sm">Pentru a măsura cu exactitate grosimea și înălțimea osului, poziția nervilor și a sinusurilor, reducând riscurile intervenției.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">CBCT este dureroasă sau incomodă?</h3>
+                        <p className="text-text-custom text-sm">Nu, nu doare; trebuie doar să stai nemișcat câteva secunde în timpul scanării.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tratamentul aftelor bucale</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">De ce apar aftele în gură?</h3>
+                        <p className="text-text-custom text-sm">Cauzele pot fi multiple: mici traumatisme, stres, carențe nutritive sau factori imunologici; uneori nu se găsește o singură cauză clară.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cum se tratează aftele bucale?</h3>
+                        <p className="text-text-custom text-sm">Prin geluri și soluții locale care reduc durerea și inflamația, ajustarea factorilor favorizanți și, la nevoie, investigații suplimentare recomandate de medic.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Când trebuie să vin la dentist pentru afte?</h3>
+                        <p className="text-text-custom text-sm">Dacă aftele sunt foarte dureroase, recidivează des sau nu se vindecă în 10–14 zile, este indicat un consult.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tratament urgențe dentare</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce se consideră urgență dentară?</h3>
+                        <p className="text-text-custom text-sm">Durerea intensă, umflăturile, abcesele, hemoragiile sau traumatismele (dinți fracturați sau scoși din alveolă) sunt situații de urgență.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce pot face acasă până ajung la dentist?</h3>
+                        <p className="text-text-custom text-sm">Poți lua un analgezic uzual (dacă nu ai contraindicații) și poți aplica comprese reci extern; nu pune pe dinte medicamente sau alcool și nu încerca „leacuri" agresive.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Pot veni fără programare în caz de urgență?</h3>
+                        <p className="text-text-custom text-sm">În caz de urgențe acute, clinicile au de obicei intervale dedicate; este ideal să suni înainte pentru a fi preluat cât mai rapid.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Diagnostic precoce al cancerului oral</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce semne în gură ar trebui să mă îngrijoreze?</h3>
+                        <p className="text-text-custom text-sm">Leziuni care nu se vindecă, pete roșii sau albe persistente, noduli, sângerări, durere sau senzație de corp străin care durează mai mult de două săptămâni.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce înseamnă screening pentru cancerul oral?</h3>
+                        <p className="text-text-custom text-sm">Este examinarea cavității orale de către medic, uneori cu ajutorul unor lumini speciale sau teste suplimentare, pentru a identifica leziuni suspecte cât mai devreme.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Cât de des ar trebui să fac un control pentru prevenție?</h3>
+                        <p className="text-text-custom text-sm">De regulă, o dată pe an, iar dacă fumezi sau consumi frecvent alcool, controalele ar trebui să fie și mai regulate, la recomandarea medicului.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <Card className="h-full border-primary/20">
+                  <CardContent className="p-6">
+                    <h2 className="text-2xl font-bold mb-6 text-heading">Tratament parodontoză</h2>
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce este parodontoza și cum mă afectează?</h3>
+                        <p className="text-text-custom text-sm">Parodontoza este o boală a țesuturilor care susțin dintele (gingie și os), ducând la mobilitatea și, în timp, pierderea dinților dacă nu este tratată.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Se poate vindeca parodontoza?</h3>
+                        <p className="text-text-custom text-sm">Nu se „vindecă" complet, dar poate fi controlată; tratamentul reduce inflamația și încetinește sau oprește evoluția bolii.</p>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-2 text-heading">Ce pot face eu ca pacient pentru a preveni sau controla parodontoza?</h3>
+                        <p className="text-text-custom text-sm">Igienă riguroasă acasă, renunțarea la fumat, controale și igienizări profesionale regulate și respectarea indicațiilor medicului parodontolog.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
