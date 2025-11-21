@@ -8,8 +8,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/service-tratament-carii.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const TratamentCarii = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Tratament Carii Dentare Piatra Neamț - Plombe Estetice | Medstom",
+    description: "Tratament carii dentare modern în Piatra Neamț. Obturații estetice din compozit, nedureros. Salvăm dinții afectați de carii. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/tratament-carii"
+  });
   const pricingData = [
     { service: "Obturație simplă (compozit)", price: "250-350 lei" },
     { service: "Obturație complexă (2-3 suprafețe)", price: "350-500 lei" },
@@ -83,6 +90,7 @@ const TratamentCarii = () => {
   ];
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[
