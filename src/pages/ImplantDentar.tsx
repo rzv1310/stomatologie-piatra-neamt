@@ -94,7 +94,7 @@ const ImplantDentar = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+40333630005">
                 <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Programează consultație gratuită
+                  Sună pentru consultație gratuită
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
