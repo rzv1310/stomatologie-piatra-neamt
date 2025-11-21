@@ -36,7 +36,7 @@ const Tarife = () => {
       ]
     },
     {
-      title: "Ortodonție – aparate dentare",
+      title: "Ortodonție - aparate dentare",
       prices: [
         { service: "Aparat fix brackeți metalici arcadă", price: "1800 lei" },
         { service: "Aparat fix brackeți safir arcadă", price: "2800 lei" },
@@ -59,10 +59,10 @@ const Tarife = () => {
       ]
     },
     {
-      title: "Pedodonție – stomatologie copii",
+      title: "Pedodonție - stomatologie copii",
       prices: [
-        { service: "Extracție dinte temporar mobil – fără anestezie", price: "100 lei" },
-        { service: "Extracție dinte temporar mobil – cu anestezie", price: "150 lei" },
+        { service: "Extracție dinte temporar mobil - fără anestezie", price: "100 lei" },
+        { service: "Extracție dinte temporar mobil - cu anestezie", price: "150 lei" },
         { service: "Sigilare dinte permanent", price: "150 lei" },
         { service: "Obturație dinte temporar (compozit)", price: "100-200 lei" }
       ]

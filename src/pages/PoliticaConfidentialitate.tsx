@@ -267,7 +267,7 @@ const PoliticaConfidentialitate = () => {
                     <li>dreptul de a solicita restricționarea prelucrării</li>
                     <li>dreptul de portare</li>
                     <li>dreptul de a nu fi supus unei decizii individuale</li>
-                    <li>dreptul de a se adresa cu plângere către ANSPDCP – Autoritatea de Supraveghere.</li>
+                    <li>dreptul de a se adresa cu plângere către ANSPDCP - Autoritatea de Supraveghere.</li>
                   </ul>
                 </CardContent>
               </Card>

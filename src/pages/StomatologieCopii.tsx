@@ -11,8 +11,8 @@ import copiiHero from "@/assets/service-copii.jpg";
 
 const StomatologieCopii = () => {
   const pricingData = [
-    { service: "Extracție dinte temporar mobil – fără anestezie", price: "100 lei" },
-    { service: "Extracție dinte temporar mobil – cu anestezie", price: "150 lei" },
+    { service: "Extracție dinte temporar mobil - fără anestezie", price: "100 lei" },
+    { service: "Extracție dinte temporar mobil - cu anestezie", price: "150 lei" },
     { service: "Sigilare dinte permanent", price: "150 lei" },
     { service: "Obturație dinte temporar (compozit)", price: "100-200 lei" }
   ];
@@ -217,7 +217,7 @@ const StomatologieCopii = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center text-heading">
-              Prețuri pedodonție – stomatologie copii
+              Prețuri pedodonție - stomatologie copii
             </h2>
             <Card className="border-primary/20">
               <CardContent className="p-0">

@@ -99,7 +99,7 @@ const Index = () => {
   const whyChooseUs = [
     "Scapi de grija \"Oare iese bine?\" - tratamentele tale sunt planificate digital.",
     "Nu mai pierzi timp și bani pe drumuri - Radiografii, CT dentar, planul și lucrările se rezolvă în același loc, într-un flux rapid, gândit pentru confortul tău.",
-    "Ai rezultate rapide – în loc să aștepți săptămâni, în 24-48 de ore poți să mănânci și să zâmbești din nou fără jenă.",
+    "Ai rezultate rapide - în loc să aștepți săptămâni, în 24-48 de ore poți să mănânci și să zâmbești din nou fără jenă.",
     "Spui \"adio\" durerii - tehnologie de ultimă generație pentru tratamente fără durere.",
     "Știi mereu pe mâna cui este zâmbetul tău - ai acces la o echipă completă de specialiști și nu vei fi plimbat dintr-o parte în alta pentru fiecare problemă.",
     "La Medstom NU ești „doar încă un pacient\" - Ești sprijinit pas cu pas și vei avea claritate încă de la prima vizită!"
@@ -377,7 +377,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              Programări rapide – online sau telefonic
+              Programări rapide - online sau telefonic
             </h2>
             <p className="text-xl mb-8 text-white">
               Dacă ai citit până aici și nu acționezi, peste 6 luni vei fi în același loc. Garantat.
@@ -464,7 +464,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Cât de des este recomandat detartrajul?</h3>
-                        <p className="text-text-custom text-sm">În general, la 6–12 luni, în funcție de cât de repede se depune tartrul și de recomandarea medicului dentist.</p>
+                        <p className="text-text-custom text-sm">În general, la 6-12 luni, în funcție de cât de repede se depune tartrul și de recomandarea medicului dentist.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Detartrajul doare sau zgârie dinții?</h3>
@@ -508,7 +508,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">La ce vârstă se fac sigilările?</h3>
-                        <p className="text-text-custom text-sm">De obicei, după erupția măselelor definitive (în jur de 6–7 ani și apoi 11–13 ani), dar medicul stabilește momentul ideal.</p>
+                        <p className="text-text-custom text-sm">De obicei, după erupția măselelor definitive (în jur de 6-7 ani și apoi 11-13 ani), dar medicul stabilește momentul ideal.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Sigilările dor sau necesită anestezie?</h3>
@@ -552,7 +552,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Cât durează să-mi pun o bijuterie dentară?</h3>
-                        <p className="text-text-custom text-sm">Procedura este rapidă, de obicei 15–20 de minute, nedureroasă și fără anestezie.</p>
+                        <p className="text-text-custom text-sm">Procedura este rapidă, de obicei 15-20 de minute, nedureroasă și fără anestezie.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Dacă mă răzgândesc, pot să o scot?</h3>
@@ -622,7 +622,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Câte ședințe sunt necesare pentru un tratament de canal?</h3>
-                        <p className="text-text-custom text-sm">Depinde de complexitatea cazului; uneori este suficientă o ședință, alteori pot fi necesare 2–3 vizite.</p>
+                        <p className="text-text-custom text-sm">Depinde de complexitatea cazului; uneori este suficientă o ședință, alteori pot fi necesare 2-3 vizite.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -666,7 +666,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Cât durează vindecarea după adiția de os?</h3>
-                        <p className="text-text-custom text-sm">În general, între câteva luni și 6–9 luni, în funcție de tipul de material folosit și zona tratată.</p>
+                        <p className="text-text-custom text-sm">În general, între câteva luni și 6-9 luni, în funcție de tipul de material folosit și zona tratată.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -732,7 +732,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Cât durează, în general, tratamentul ortodontic?</h3>
-                        <p className="text-text-custom text-sm">De la aproximativ 12 luni până la 2–3 ani, în funcție de gravitatea cazului și de cooperarea pacientului.</p>
+                        <p className="text-text-custom text-sm">De la aproximativ 12 luni până la 2-3 ani, în funcție de gravitatea cazului și de cooperarea pacientului.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -754,7 +754,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Câte ore pe zi trebuie purtați aliniatorii Invisalign?</h3>
-                        <p className="text-text-custom text-sm">De obicei 20–22 de ore pe zi, fiind îndepărtați doar pentru mese și periaj.</p>
+                        <p className="text-text-custom text-sm">De obicei 20-22 de ore pe zi, fiind îndepărtați doar pentru mese și periaj.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -842,7 +842,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Când trebuie să vin la dentist pentru afte?</h3>
-                        <p className="text-text-custom text-sm">Dacă aftele sunt foarte dureroase, recidivează des sau nu se vindecă în 10–14 zile, este indicat un consult.</p>
+                        <p className="text-text-custom text-sm">Dacă aftele sunt foarte dureroase, recidivează des sau nu se vindecă în 10-14 zile, este indicat un consult.</p>
                       </div>
                     </div>
                   </CardContent>

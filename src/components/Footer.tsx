@@ -161,7 +161,7 @@ const Footer = () => {
               rel="nofollow noopener noreferrer"
               className="hover:text-accent transition-colors"
             >
-              ANPC – SAL
+              ANPC - SAL
             </a>
             <a 
               href="https://consumer-redress.ec.europa.eu/index_ro" 
@@ -169,7 +169,7 @@ const Footer = () => {
               rel="nofollow noopener noreferrer"
               className="hover:text-accent transition-colors"
             >
-              ANPC – SOL
+              ANPC - SOL
             </a>
           </div>
         </div>
