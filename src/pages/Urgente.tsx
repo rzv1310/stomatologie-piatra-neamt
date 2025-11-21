@@ -8,6 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Phone, AlertCircle, Clock, CheckCircle } from "lucide-react";
 import urgenteHero from "@/assets/service-urgente.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Urgente = () => {
   const ServiceMeta = useServiceMeta({
@@ -16,6 +17,7 @@ const Urgente = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/urgente"
   });
+
   const pricingData = [
     { service: "Extracție dinte parodontotic", price: "100 lei" },
     { service: "Extracție monoradicular", price: "150 lei" },
@@ -165,9 +167,27 @@ const Urgente = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/urgente',
+    medicalProcedure: {
+      name: 'Urgențe Stomatologice',
+      description: 'Durerea de dinți nu așteaptă. Nici noi. Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.',
+      procedureType: 'Dental Emergency'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/urgente',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

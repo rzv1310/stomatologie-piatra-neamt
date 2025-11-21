@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/service-tratament-carii.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const TratamentCarii = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const TratamentCarii = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/tratament-carii"
   });
+
   const pricingData = [
     { service: "Obturație simplă (compozit)", price: "250-350 lei" },
     { service: "Obturație complexă (2-3 suprafețe)", price: "350-500 lei" },
@@ -88,9 +90,28 @@ const TratamentCarii = () => {
       answer: "Obturația se folosește pentru cariile mici și medii, când mai mult de 50% din țesutul dentar este intact. Coroana dentară este recomandată când distrucția dentară este mare și dintele necesită protecție completă pentru a rezista forțelor masticatorii."
     }
   ];
+
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/tratament-carii',
+    medicalProcedure: {
+      name: 'Tratament Carii Dentare',
+      description: 'Tratamentul profesional al cariilor dentare pentru un zâmbet sănătos. Obturații estetice din compozit de ultimă generație.',
+      procedureType: 'Dental Cavity Treatment'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/tratament-carii',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

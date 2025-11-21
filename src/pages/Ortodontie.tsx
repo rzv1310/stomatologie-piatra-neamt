@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import ortodontieHero from "@/assets/service-ortodontie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Ortodontie = () => {
   const pricingData = [
@@ -173,9 +174,27 @@ const Ortodontie = () => {
     path: "/servicii/ortodontie-piatra-neamt"
   });
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/ortodontie-piatra-neamt',
+    medicalProcedure: {
+      name: 'Ortodonție',
+      description: 'Aparate dentare fixe, estetice și alignere transparente pentru un zâmbet perfect aliniat. Ortodonție pentru copii, adolescenți și adulți.',
+      procedureType: 'Orthodontic Treatment'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/ortodontie-piatra-neamt',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

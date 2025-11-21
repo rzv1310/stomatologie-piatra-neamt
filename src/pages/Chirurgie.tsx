@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import chirurgieHero from "@/assets/service-chirurgie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Chirurgie = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const Chirurgie = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/chirurgie-orala"
   });
+
   const pricingData = [
     { service: "Extracție dinte parodontotic", price: "100 lei" },
     { service: "Extracție monoradicular", price: "150 lei" },
@@ -146,9 +148,27 @@ const Chirurgie = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/chirurgie-orala',
+    medicalProcedure: {
+      name: 'Chirurgie Orală',
+      description: 'Intervenții chirurgicale dentare cu tehnologie modernă și anestezie eficientă. De la extracții simple până la chirurgie complexă - în mâini sigure.',
+      procedureType: 'Oral Surgery'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/chirurgie-orala',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

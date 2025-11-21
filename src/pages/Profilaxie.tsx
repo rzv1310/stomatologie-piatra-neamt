@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import profilaxieHero from "@/assets/service-profilaxie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Profilaxie = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const Profilaxie = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/profilaxie"
   });
+
   const pricingData = [
     { service: "Detartraj și periaj profesional", price: "300 lei" },
     { service: "Igienizare profesională (detartraj + periaj + air flow)", price: "400 lei" }
@@ -88,9 +90,27 @@ const Profilaxie = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/profilaxie',
+    medicalProcedure: {
+      name: 'Profilaxie și Igienizare Dentară',
+      description: 'Prevenția este cheia unui zâmbet sănătos. Igienizarea profesională regulată te ajută să eviți problemele dentare și să păstrezi dinții sănătoși pe termen lung.',
+      procedureType: 'Dental Prophylaxis'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/profilaxie',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[
