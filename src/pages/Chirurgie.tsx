@@ -8,8 +8,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import chirurgieHero from "@/assets/service-chirurgie.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const Chirurgie = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Chirurgie Orală Piatra Neamț - Extracții, Adiție Osoasă | Medstom",
+    description: "Chirurgie orală specializată în Piatra Neamț. Extracții molari de minte, adiție osoasă, sinus lift. Proceduri nedureroase. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/chirurgie-orala"
+  });
   const pricingData = [
     { service: "Extracție dinte parodontotic", price: "100 lei" },
     { service: "Extracție monoradicular", price: "150 lei" },
@@ -141,6 +148,7 @@ const Chirurgie = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[

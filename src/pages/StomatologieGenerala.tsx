@@ -8,8 +8,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import stomatologieHero from "@/assets/service-stomatologie-generala.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const StomatologieGenerala = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Stomatologie Generală Piatra Neamț - Cabinet Stomatologic | Medstom",
+    description: "Cabinet stomatologic complet în Piatra Neamț. Tratamente generale, endodonție la microscop, restaurări dentare. Consultație gratuită. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/stomatologie-generala"
+  });
   const pricingData = [
     { category: "Terapie dentară", items: [
       { service: "Obturație colet", price: "150-200 lei" },
@@ -125,6 +132,7 @@ const StomatologieGenerala = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[

@@ -7,8 +7,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Phone, AlertCircle, Clock, CheckCircle } from "lucide-react";
 import urgenteHero from "@/assets/service-urgente.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const Urgente = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Urgențe Stomatologice Piatra Neamț - Cabinet Deschis 24/7 | Medstom",
+    description: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/urgente"
+  });
   const pricingData = [
     { service: "Extracție dinte parodontotic", price: "100 lei" },
     { service: "Extracție monoradicular", price: "150 lei" },
@@ -160,6 +167,7 @@ const Urgente = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[

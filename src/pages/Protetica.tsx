@@ -8,8 +8,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import proteticaHero from "@/assets/service-protetica.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const Protetica = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Protetică Dentară Piatra Neamț - Coroane, Punți, Proteze | Medstom",
+    description: "Lucrări protetice de calitate în Piatra Neamț. Coroane zirconiu, EMAX, proteze dentare, lucrări pe implanturi. Laborator propriu. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/protetica-piatra-neamt"
+  });
   const pricingData = [
     { service: "Coroană Weiser ceramică", price: "800 lei" },
     { service: "Coroană Metalo-ceramică", price: "1000 lei" },
@@ -125,6 +132,7 @@ const Protetica = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[

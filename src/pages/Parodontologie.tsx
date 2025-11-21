@@ -8,8 +8,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import parodontologieHero from "@/assets/service-parodontologie.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const Parodontologie = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Parodontologie Piatra Neamț - Tratament Parodontoză | Medstom",
+    description: "Tratament parodontal specializat în Piatra Neamț. Chiuretaj, detartraj subgingival, regenerare osoasă. Prevenim pierderea dinților. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/parodontologie-piatra-neamt"
+  });
   const pricingData = [
     { service: "Chiuretaj parodontal în câmp închis (+- laser)", price: "60 lei / dinte" },
     { service: "Chiuretaj parodontal în câmp deschis (+- laser)", price: "250 lei / dinte" },
@@ -130,6 +137,7 @@ const Parodontologie = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[

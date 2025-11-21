@@ -8,8 +8,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import profilaxieHero from "@/assets/service-profilaxie.jpg";
+import { useServiceMeta } from "@/hooks/use-service-meta";
 
 const Profilaxie = () => {
+  const ServiceMeta = useServiceMeta({
+    title: "Profilaxie Dentară Piatra Neamț - Detartraj și Igienizare | Medstom",
+    description: "Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși. ☎ 0333 630 005",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+    path: "/servicii/profilaxie"
+  });
   const pricingData = [
     { service: "Detartraj și periaj profesional", price: "300 lei" },
     { service: "Igienizare profesională (detartraj + periaj + air flow)", price: "400 lei" }
@@ -83,6 +90,7 @@ const Profilaxie = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {ServiceMeta}
       <Navigation />
       <Breadcrumbs
         items={[
