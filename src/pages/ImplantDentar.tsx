@@ -107,7 +107,7 @@ const ImplantDentar = () => {
             <p className="text-xl lg:text-2xl mb-8 text-white">
               Dinți ficși în 24h - Tehnologie digitală avansată pentru rezultate perfecte și durabile
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-[30px]">
               <a href="tel:+40333630005">
                 <Button size="lg" className="bg-accent hover:bg-accent/90">
                   Sună pentru consultație gratuită
