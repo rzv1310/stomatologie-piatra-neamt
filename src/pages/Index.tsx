@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useCounter } from "@/hooks/use-counter";
 import { useState, useEffect, useRef } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 import teamHero from "@/assets/team-hero.webp";
 import serviceImplant from "@/assets/service-implant.jpg";
 import serviceEstetica from "@/assets/service-estetica.jpg";
@@ -24,6 +25,28 @@ const Index = () => {
 
   const yearsCount = useCounter(20, 5000, isStatsVisible);
   const patientsCount = useCounter(10000, 5000, isStatsVisible);
+
+  // FAQ data for schema
+  const faqData = [
+    { question: "De ce am nevoie de detartraj, dacă mă spăl zilnic pe dinți?", answer: "Periajul de acasă nu reușește să îndepărteze complet tartrul și placa bacteriană întărită; detartrajul cu ultrasunete curăță zonele greu accesibile și previne gingivita și parodontoza." },
+    { question: "Cât de des este recomandat detartrajul?", answer: "În general, la 6-12 luni, în funcție de cât de repede se depune tartrul și de recomandarea medicului dentist." },
+    { question: "Ce este tratamentul Air-flow și la ce mă ajută?", answer: "Air-flow folosește un jet de apă, aer și particule fine de pulbere pentru a curăța petele superficiale și placa moale, lăsând dinții mai curați și mai netezi." },
+    { question: "Ce sunt sigilările dentare și de ce ar avea nevoie copilul meu de ele?", answer: "Sigilările sunt straturi subțiri de material aplicate pe suprafața măselelor pentru a împiedica resturile alimentare și bacteriile să se depună în șanțuri, reducând riscul de carii." },
+    { question: "Ce sunt fațetele dentare și ce probleme pot corecta pentru mine?", answer: "Fațetele sunt foițe subțiri aplicate pe fața vizibilă a dinților, care pot corecta culoarea, forma, mici spații sau ușoare aliniamente inestetice." },
+    { question: "Cum îmi dau seama dacă am o carie?", answer: "Uneori apar dureri la rece sau dulce, alteori nu ai niciun simptom; doar controlul periodic și radiografiile pot depista cariile ascunse." },
+    { question: "Ce înseamnă tratamentul de canal pentru dintele meu?", answer: "Înseamnă curățarea, dezinfectarea și obturarea canalelor din rădăcina dintelui atunci când nervul este inflamat sau necrozat, pentru a salva dintele de la extracție." },
+    { question: "Când am nevoie de o proteză dentară?", answer: "Când lipsesc mai mulți dinți și nu se pot înlocui cu punți sau implanturi, proteza dentară te ajută să mănânci și să zâmbești din nou." },
+    { question: "De ce am nevoie de adiție de os înainte de implant?", answer: "Când osul este prea subțire sau prea puțin, adiția de os reconstruiește volumul necesar pentru a susține un implant stabil." },
+    { question: "Când este absolut necesară extracția unui dinte?", answer: "Atunci când dintele este irecuperabil (cariată profund, fracturată, mobilă sever) și nu mai poate fi salvat prin alte tratamente." },
+    { question: "Ce se consideră urgență dentară?", answer: "Durerea intensă, umflăturile, abcesele, hemoragiile sau traumatismele (dinți fracturați sau scoși din alveolă) sunt situații de urgență." },
+    { question: "Ce este parodontoza și cum mă afectează?", answer: "Parodontoza este o boală a țesuturilor care susțin dintele (gingie și os), ducând la mobilitatea și, în timp, pierderea dinților dacă nu este tratată." }
+  ];
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/',
+    faqs: faqData
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -120,6 +143,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {FAQSchema}
       <Navigation />
 
       <main className="flex-1">

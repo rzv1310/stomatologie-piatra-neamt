@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const AlbireDentara = () => {
   const faqs = [
@@ -32,8 +33,28 @@ const AlbireDentara = () => {
     }
   ];
 
+  const ArticleSchema = useSEOSchema({
+    type: 'BlogPosting',
+    canonical: '/blog/albire-dentara',
+    article: {
+      headline: "Albire dentară profesională în Piatra Neamț | Opțiuni, prețuri și rezultate",
+      description: "Ghid complet despre albirea dentară în Piatra Neamț: metode profesionale, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
+      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      datePublished: "2025-01-20",
+      dateModified: "2025-01-20"
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/blog/albire-dentara',
+    faqs: faqs
+  });
+
   return (
     <>
+      {ArticleSchema}
+      {FAQSchema}
       <Helmet>
         <title>Albire Dentară Profesională Piatra Neamț | Opțiuni, Prețuri și Rezultate</title>
         <meta name="description" content="Ghid complet despre albirea dentară în Piatra Neamț: metode profesionale, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." />

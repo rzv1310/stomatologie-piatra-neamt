@@ -16,6 +16,9 @@ export const useServiceMeta = ({ title, description, image, path, type = "websit
 
   return (
     <Helmet>
+      {/* Canonical URL */}
+      <link rel="canonical" href={fullUrl} />
+      
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

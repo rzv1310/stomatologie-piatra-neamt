@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 import profilaxieImg from "@/assets/service-profilaxie.jpg";
 import esteticaImg from "@/assets/service-estetica.jpg";
 import endodontieImg from "@/assets/service-endodontie.jpg";
@@ -70,6 +71,12 @@ const Servicii = () => {
       answer: "Sunați la 0333 630 005. Avem servicii de urgență pentru dureri acute, traumatisme dentare, abcese și alte situații care necesită intervenție imediată."
     }
   ];
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii',
+    faqs: faqs
+  });
 
   const services = [
     {
@@ -214,6 +221,7 @@ const Servicii = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[
