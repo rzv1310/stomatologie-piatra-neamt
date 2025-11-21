@@ -150,14 +150,14 @@ const Footer = () => {
           <p className="text-white">
             © {new Date().getFullYear()} Medstom Clinic. Toate drepturile rezervate.
           </p>
-          <div className="mt-2 space-x-4 text-white">
+          <div className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2 text-white">
             <Link to="/politica-cookies" className="hover:text-accent transition-colors">
               Politica cookies
             </Link>
             <Link to="/termeni-conditii" className="hover:text-accent transition-colors">
               Termeni și condiții
             </Link>
-            <Link to="/politica-confidentialitate" className="hover:text-accent transition-colors">
+            <Link to="/politica-confidentialitate" className="hover:text-accent transition-colors w-full text-center md:w-auto md:text-left">
               Politica de confidențialitate
             </Link>
             <a 
