@@ -357,7 +357,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              Cauți 'Dentist Piatra Neamț' ?
+              Cauți <em>'Dentist Piatra Neamț'</em> ?
             </h2>
             <p className="text-lg text-text-custom mb-8">
               15 specialiști cu formare în Europa și Emiratele Arabe Unite
