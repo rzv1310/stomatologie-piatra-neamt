@@ -106,7 +106,7 @@ const Protetica = () => {
       answer: "Zirconiul este extrem de rezistent și recomandat pentru dinții din spate (molari) unde presiunea de mestecat este mare. Ceramica integrală (fără metal) oferă estetica superioară și este ideală pentru dinții din față. Ambele sunt biocompatibile."
     },
     {
-      question: "Pot avea coroane pe implantați?",
+      question: "Pot avea coroane pe implanturi?",
       answer: "Da, coroanele pe implanturi sunt una dintre cele mai bune soluții pentru înlocuirea dinților lipsă. Oferă stabilitate maximă și arată identic cu dinții naturali."
     },
     {
