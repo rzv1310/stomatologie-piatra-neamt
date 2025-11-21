@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import proteticaHero from "@/assets/service-protetica.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Protetica = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const Protetica = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/protetica-piatra-neamt"
   });
+
   const pricingData = [
     { service: "Coroană Weiser ceramică", price: "800 lei" },
     { service: "Coroană Metalo-ceramică", price: "1000 lei" },
@@ -130,9 +132,27 @@ const Protetica = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/protetica-piatra-neamt',
+    medicalProcedure: {
+      name: 'Protetică Dentară',
+      description: 'Înlocuim dinții lipsă sau deteriorați cu lucrări protetice de cea mai înaltă calitate. De la coroane individuale până la proteze complete - soluții durabile și estetice.',
+      procedureType: 'Dental Prosthetics'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/protetica-piatra-neamt',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

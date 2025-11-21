@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import esteticaHero from "@/assets/service-estetica.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const EsteticaDentara = () => {
   const pricingData = [
@@ -118,9 +119,27 @@ const EsteticaDentara = () => {
     path: "/servicii/estetica-dentara"
   });
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/estetica-dentara',
+    medicalProcedure: {
+      name: 'Estetică Dentară',
+      description: 'Transformă-ți zâmbetul cu servicii de estetică dentară premium. De la albirea dinților până la fațete ceramice - realizăm zâmbetul pe care ți l-ai dorit mereu.',
+      procedureType: 'Cosmetic Dental Procedure'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/estetica-dentara',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

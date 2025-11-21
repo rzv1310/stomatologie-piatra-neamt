@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import radiologieHero from "@/assets/cbct-green-x-radiologie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Radiologie = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const Radiologie = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/radiologie-dentara-piatra-neamt"
   });
+
   const pricingData = [
     { service: "Radiografie dentară panoramică (OPG) digitală", price: "100 lei" },
     { service: "Tomografie / CT dentar parțial digital", price: "200 lei" },
@@ -121,9 +123,27 @@ const Radiologie = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/radiologie-dentara-piatra-neamt',
+    medicalProcedure: {
+      name: 'Radiologie Dentară și Imagistică 3D',
+      description: 'CBCT Vatech Green X16 pentru diagnostic de precizie și planificare digitală. Vedem exact ce nu se poate vedea cu ochiul liber.',
+      procedureType: 'Dental Radiology'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/radiologie-dentara-piatra-neamt',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

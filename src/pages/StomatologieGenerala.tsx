@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import stomatologieHero from "@/assets/service-stomatologie-generala.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const StomatologieGenerala = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const StomatologieGenerala = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/stomatologie-generala"
   });
+
   const pricingData = [
     { category: "Terapie dentară", items: [
       { service: "Obturație colet", price: "150-200 lei" },
@@ -130,9 +132,27 @@ const StomatologieGenerala = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/stomatologie-generala',
+    medicalProcedure: {
+      name: 'Stomatologie Generală și Endodonție',
+      description: 'Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Salvăm dinții tăi cu tehnologie de ultimă generație.',
+      procedureType: 'General Dentistry and Endodontics'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/stomatologie-generala',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[

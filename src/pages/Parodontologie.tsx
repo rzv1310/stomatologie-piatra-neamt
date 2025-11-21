@@ -9,6 +9,7 @@ import { CheckCircle, ArrowRight, Phone, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import parodontologieHero from "@/assets/service-parodontologie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useSEOSchema } from "@/hooks/use-seo-schema";
 
 const Parodontologie = () => {
   const ServiceMeta = useServiceMeta({
@@ -17,6 +18,7 @@ const Parodontologie = () => {
     image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/parodontologie-piatra-neamt"
   });
+
   const pricingData = [
     { service: "Chiuretaj parodontal în câmp închis (+- laser)", price: "60 lei / dinte" },
     { service: "Chiuretaj parodontal în câmp deschis (+- laser)", price: "250 lei / dinte" },
@@ -135,9 +137,27 @@ const Parodontologie = () => {
     }
   ];
 
+  const MedicalProcedureSchema = useSEOSchema({
+    type: 'MedicalProcedure',
+    canonical: '/servicii/parodontologie-piatra-neamt',
+    medicalProcedure: {
+      name: 'Parodontologie',
+      description: 'Tratament specializat pentru sănătatea gingiilor și a osului care susține dinții. Salvăm dinții amenințați de boala parodontală prin tratamente moderne și eficiente.',
+      procedureType: 'Periodontal Treatment'
+    }
+  });
+
+  const FAQSchema = useSEOSchema({
+    type: 'FAQPage',
+    canonical: '/servicii/parodontologie-piatra-neamt',
+    faqs: faqs
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
+      {MedicalProcedureSchema}
+      {FAQSchema}
       <Navigation />
       <Breadcrumbs
         items={[
