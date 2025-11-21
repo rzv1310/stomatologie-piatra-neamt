@@ -63,7 +63,7 @@ const Index = () => {
     },
     {
       title: "Stomatologie copii",
-      description: "Tratamente gentle pentru cei mici, în siguranță și confort",
+      description: "Tratamente delicate pentru cei mici, în siguranță și confort",
       link: "/servicii/stomatologie-copii-piatra-neamt",
       image: serviceCopii
     },
