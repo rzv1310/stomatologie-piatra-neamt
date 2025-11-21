@@ -68,19 +68,8 @@ const Blog = () => {
         <Navigation />
         
         {/* Hero Section */}
-        <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div 
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage: "url('/src/assets/team-hero.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
-          </div>
-          
-          <div className="container mx-auto px-4 relative z-10">
+        <section className="bg-accent py-20 lg:py-32">
+          <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                 Blog Stomatologie - Sfaturi și Ghiduri Utile
