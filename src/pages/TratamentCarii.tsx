@@ -294,10 +294,10 @@ const TratamentCarii = () => {
       <section className="py-20 bg-accent text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
               Nu ignora cariile dentare!
             </h2>
-            <p className="text-xl mb-8">
+            <p className="text-xl mb-8 text-white">
               Un tratament la timp salvează dintele și previne complicațiile
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
