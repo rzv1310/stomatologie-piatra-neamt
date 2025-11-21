@@ -11,12 +11,8 @@ import profilaxieHero from "@/assets/service-profilaxie.jpg";
 
 const Profilaxie = () => {
   const pricingData = [
-    { service: "Consultație și plan de tratament", price: "Gratuită" },
-    { service: "Detartraj cu ultrasunete + periaj profesional", price: "200 - 300 lei" },
-    { service: "Air-flow (Prophy-jet)", price: "150 - 250 lei" },
-    { service: "Detartraj complet + Air-flow + fluorizare", price: "350 - 450 lei" },
-    { service: "Sigilare șanțuri (per dinte)", price: "80 - 120 lei" },
-    { service: "Fluorizare profesională", price: "50 - 100 lei" }
+    { service: "Detartraj și periaj profesional", price: "300 lei" },
+    { service: "Igienizare profesională (detartraj + periaj + air flow)", price: "400 lei" }
   ];
 
   const benefits = [

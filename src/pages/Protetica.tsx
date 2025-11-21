@@ -4,11 +4,23 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import proteticaHero from "@/assets/service-protetica.jpg";
 
 const Protetica = () => {
+  const pricingData = [
+    { service: "Coroană Weiser ceramică", price: "800 lei" },
+    { service: "Coroană Metalo-ceramică", price: "1000 lei" },
+    { service: "Coroană Zirconiu", price: "1400 lei" },
+    { service: "Coroană Ceramică Integrală EMAX", price: "1500 lei" },
+    { service: "Proteză dentară CANDULOR", price: "2500 lei" },
+    { service: "Lucrare înfiletată pe implanturi SUPERIOR", price: "25000 lei" },
+    { service: "Lucrare înfiletată pe implanturi PREMIUM", price: "14500-17000 lei" },
+    { service: "Lucrare înfiletată pe implanturi CLASSIC", price: "10000 lei" }
+  ];
+
   const prosthesisTypes = [
     {
       title: "Coroane dentare",
@@ -155,8 +167,42 @@ const Protetica = () => {
         </div>
       </section>
 
+      {/* Pricing Table */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-heading">
+              Prețuri coroane dentare și protetică
+            </h2>
+            <Card className="border-primary/20">
+              <CardContent className="p-0">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="text-heading font-semibold">Serviciu</TableHead>
+                      <TableHead className="text-right text-heading font-semibold">Preț</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pricingData.map((item, index) => (
+                      <TableRow key={index}>
+                        <TableCell className="text-text-custom">{item.service}</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
+            <p className="text-center text-text-custom mt-4 text-sm">
+              *Prețurile sunt orientative și pot varia în funcție de complexitatea cazului
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Prosthesis Types */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
