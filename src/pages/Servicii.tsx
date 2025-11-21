@@ -4,12 +4,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import profilaxieImg from "@/assets/service-profilaxie.jpg";
+import esteticaImg from "@/assets/service-estetica.jpg";
+import endodontieImg from "@/assets/service-endodontie.jpg";
+import proteticaImg from "@/assets/service-protetica.jpg";
+import implantImg from "@/assets/service-implant.jpg";
+import chirurgieImg from "@/assets/service-chirurgie.jpg";
+import parodontologieImg from "@/assets/service-parodontologie.jpg";
+import ortodontieImg from "@/assets/service-ortodontie.jpg";
+import copiiImg from "@/assets/service-copii.jpg";
+import radiologieImg from "@/assets/service-radiologie.jpg";
+import urgenteImg from "@/assets/service-urgente.jpg";
+import stomatologieGeneralaImg from "@/assets/service-stomatologie-generala.jpg";
 
 const Servicii = () => {
   const services = [
     {
       title: "Profilaxie și Igienizare",
-      icon: "🧼",
+      image: profilaxieImg,
       services: [
         "Consultație și plan de tratament",
         "Detartraj cu ultrasunete și periaj profesional",
@@ -22,7 +34,7 @@ const Servicii = () => {
     },
     {
       title: "Estetică Dentară",
-      icon: "✨",
+      image: esteticaImg,
       services: [
         "Albire dentară profesională",
         "Fațete dentare (ceramică sau compozit)",
@@ -34,7 +46,7 @@ const Servicii = () => {
     },
     {
       title: "Odontoterapie (Tratamentul Cariilor)",
-      icon: "🦷",
+      image: stomatologieGeneralaImg,
       services: [
         "Obturații (plombe) fizionomice (compozit)",
         "Inlay/Onlay/Overlay din ceramică sau compozit",
@@ -44,7 +56,7 @@ const Servicii = () => {
     },
     {
       title: "Endodonție",
-      icon: "🔬",
+      image: endodontieImg,
       services: [
         "Tratament de canal la microscop",
         "Retratament endodontic",
@@ -54,7 +66,7 @@ const Servicii = () => {
     },
     {
       title: "Protetică Dentară",
-      icon: "👄",
+      image: proteticaImg,
       services: [
         "Coroane și punți dentare (metal-ceramică, zirconiu)",
         "Proteze dentare mobile (totale sau parțiale)",
@@ -66,7 +78,7 @@ const Servicii = () => {
     },
     {
       title: "Implantologie",
-      icon: "🦴",
+      image: implantImg,
       services: [
         "Inserare implant dentar",
         "Adiție de os",
@@ -77,7 +89,7 @@ const Servicii = () => {
     },
     {
       title: "Chirurgie Orală",
-      icon: "🏥",
+      image: chirurgieImg,
       services: [
         "Extracții dentare simple și complexe",
         "Molari de minte incluși",
@@ -90,7 +102,7 @@ const Servicii = () => {
     },
     {
       title: "Parodontologie",
-      icon: "🌿",
+      image: parodontologieImg,
       services: [
         "Tratamentul gingivitei și al bolii parodontale",
         "Chiuretaj subgingival în câmp deschis/închis",
@@ -101,7 +113,7 @@ const Servicii = () => {
     },
     {
       title: "Ortodonție și Ortopedie Dento-Facială",
-      icon: "📐",
+      image: ortodontieImg,
       services: [
         "Aparate dentare fixe (metalice, ceramice, safir)",
         "Aparate dentare mobile",
@@ -113,7 +125,7 @@ const Servicii = () => {
     },
     {
       title: "Stomatologie Copii (Pedodonție)",
-      icon: "👶",
+      image: copiiImg,
       services: [
         "Tratamente specifice pentru copii",
         "Sigilări",
@@ -124,7 +136,7 @@ const Servicii = () => {
     },
     {
       title: "Radiologie Dentară și Imagistică",
-      icon: "📸",
+      image: radiologieImg,
       services: [
         "Radiografii retroalveolare",
         "Radiografii bitewing",
@@ -136,7 +148,7 @@ const Servicii = () => {
     },
     {
       title: "Urgențe Stomatologice",
-      icon: "🚨",
+      image: urgenteImg,
       services: [
         "Tratament urgențe dentare (abcese, traumatisme)",
         "Tratamentul aftelor bucale și al infecțiilor orale",
@@ -170,21 +182,28 @@ const Servicii = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-primary/20 hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="text-5xl mb-4">{service.icon}</div>
-                  <h2 className="text-2xl font-bold mb-4 text-heading">{service.title}</h2>
+              <Card 
+                key={index} 
+                className="border-primary/20 hover:shadow-lg transition-shadow overflow-hidden relative group"
+              >
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style={{ backgroundImage: `url(${service.image})` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
+                <CardContent className="p-6 relative z-10">
+                  <h2 className="text-2xl font-bold mb-4 text-white">{service.title}</h2>
                   <ul className="space-y-2 mb-6">
                     {service.services.map((item, idx) => (
-                      <li key={idx} className="text-sm text-text-custom flex items-start">
+                      <li key={idx} className="text-sm text-white/90 flex items-start">
                         <span className="text-accent mr-2">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                   <Link to={service.link}>
-                    <Button variant="outline" className="w-full">
-                      Află mai mult
+                    <Button variant="outline" className="w-full bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary">
+                      Vezi Prețuri
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
