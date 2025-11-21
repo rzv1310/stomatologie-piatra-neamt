@@ -360,7 +360,7 @@ const Index = () => {
               Cauți <em>'Dentist Piatra Neamț'</em> ?
             </h2>
             <p className="text-lg text-text-custom mb-8">
-              15 specialiști cu formare în Europa și Emiratele Arabe Unite
+              La Medstom ai 15+ specialiști dedicați (medici, tehnicieni, asistenți), cu formare în UE și EAU
             </p>
             <Link to="/despre">
               <Button size="lg" className="bg-accent hover:bg-accent/90">
