@@ -17,6 +17,7 @@ import Radiologie from "./pages/Radiologie";
 import Ortodontie from "./pages/Ortodontie";
 import StomatologieCopii from "./pages/StomatologieCopii";
 import Urgente from "./pages/Urgente";
+import TratamentCarii from "./pages/TratamentCarii";
 import Tarife from "./pages/Tarife";
 import Despre from "./pages/Despre";
 import Contact from "./pages/Contact";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/servicii/implant-dentar" element={<ImplantDentar />} />
           <Route path="/servicii/profilaxie" element={<Profilaxie />} />
           <Route path="/servicii/estetica-dentara" element={<EsteticaDentara />} />
+          <Route path="/servicii/tratament-carii" element={<TratamentCarii />} />
           <Route path="/servicii/endodontie-piatra-neamt" element={<StomatologieGenerala />} />
           <Route path="/servicii/protetica-piatra-neamt" element={<Protetica />} />
           <Route path="/servicii/ortodontie-piatra-neamt" element={<Ortodontie />} />
