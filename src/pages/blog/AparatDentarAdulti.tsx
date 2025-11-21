@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Phone } from "lucide-react";
+import { Phone, Clock, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -52,14 +52,46 @@ const AparatDentarAdulti = () => {
         
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white max-w-4xl">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white max-w-4xl mb-4">
               Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?
             </h1>
+            <div className="flex items-center gap-2 text-white/80">
+              <Clock className="h-5 w-5" />
+              <span>15 min de citit</span>
+            </div>
           </div>
         </section>
 
         <article className="py-16 lg:py-24">
           <div className="container mx-auto px-4 max-w-4xl">
+            {/* Social Share Buttons */}
+            <div className="flex gap-3 mb-8">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  const url = encodeURIComponent(window.location.href);
+                  const text = encodeURIComponent("Aparat dentar pentru adulți în Piatra Neamț");
+                  window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+                }}
+              >
+                <Share2 className="h-4 w-4 mr-2" />
+                Facebook
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  const url = encodeURIComponent(window.location.href);
+                  const text = encodeURIComponent("Aparat dentar pentru adulți în Piatra Neamț");
+                  window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+                }}
+              >
+                <Share2 className="h-4 w-4 mr-2" />
+                WhatsApp
+              </Button>
+            </div>
+
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-muted-foreground mb-8">
                 Tot mai mulți adulți aleg să își corecteze dinții, fie din motive estetice, fie pentru 
