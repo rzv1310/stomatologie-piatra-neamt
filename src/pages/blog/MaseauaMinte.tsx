@@ -299,7 +299,7 @@ const MaseauaMinte = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-3">Primele 24 de ore:</h4>
                   <ul className="list-disc pl-6 text-foreground">
-                    <li>Mușcă tamponul de tifon timp de 30-60 minute pentru a opri sângerarea</li>
+                    <li>Mușcă tamponul steril timp de 30-60 minute pentru a opri sângerarea</li>
                     <li>Aplică gheață pe obraz (15 minute aplici, 15 minute pauză)</li>
                     <li>Evită clătitul, scuipatul sau sugerea cu paiul</li>
                     <li>Nu fuma și nu consuma alcool</li>
