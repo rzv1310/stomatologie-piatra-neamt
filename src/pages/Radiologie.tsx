@@ -125,7 +125,8 @@ const Radiologie = () => {
         ]}
       />
 
-      {/* Hero Section */}
+      <main className="flex-1">
+        {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -428,6 +429,7 @@ const Radiologie = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

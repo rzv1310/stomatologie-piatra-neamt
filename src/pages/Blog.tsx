@@ -75,7 +75,8 @@ const Blog = () => {
           ]}
         />
         
-        {/* Hero Section */}
+        <main className="flex-1">
+          {/* Hero Section */}
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
@@ -118,6 +119,7 @@ const Blog = () => {
             </div>
           </div>
         </section>
+        </main>
 
         <Footer />
       </div>

@@ -122,7 +122,8 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      {/* Hero Section */}
+      <main className="flex-1">
+        {/* Hero Section */}
       <section className="bg-hero py-20 lg:py-32">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
@@ -936,6 +937,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
