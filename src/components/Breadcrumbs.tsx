@@ -8,11 +8,12 @@ interface BreadcrumbItem {
 
 interface BreadcrumbsProps {
   items: BreadcrumbItem[];
+  className?: string;
 }
 
 const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
   return (
-    <nav className="bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className={`bg-background/95 backdrop-blur-sm border-b border-border ${className || ''}`}>
       <div className="container mx-auto px-4 py-3">
         <ol className="flex items-center space-x-2 text-sm">
           {items.map((item, index) => (
