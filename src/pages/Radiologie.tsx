@@ -7,7 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import radiologieHero from "@/assets/service-radiologie.jpg";
+import radiologieHero from "@/assets/cbct-green-x-radiologie.jpg";
 
 const Radiologie = () => {
   const pricingData = [
