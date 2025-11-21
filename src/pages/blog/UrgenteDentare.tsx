@@ -44,7 +44,7 @@ const UrgenteDentare = () => {
         
         <Breadcrumbs 
           items={[
-            { label: "Acasă", href: "/" },
+            { label: "Stomatologie Piatra Neamț", href: "/" },
             { label: "Blog", href: "/blog" },
             { label: "Urgențe Dentare" }
           ]}

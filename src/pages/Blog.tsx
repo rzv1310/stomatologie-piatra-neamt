@@ -70,7 +70,7 @@ const Blog = () => {
         
         <Breadcrumbs 
           items={[
-            { label: "Acasă", href: "/" },
+            { label: "Stomatologie Piatra Neamț", href: "/" },
             { label: "Blog" }
           ]}
         />
