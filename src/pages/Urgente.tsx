@@ -142,7 +142,7 @@ const Urgente = () => {
     },
     {
       question: "Primiți urgențe în weekend sau seara târziu?",
-      answer: "În timpul programului nostru de lucru (Luni-Vineri 8:00-20:00, Sâmbătă 9:00-14:00), primim urgențe fără programare sau cu programare rapidă. Pentru urgențe în afara programului, sunați la 0333 630 005 și veți fi direcționat către serviciul de urgență."
+      answer: "În timpul programului nostru de lucru (Luni-Vineri 8:00-20:00), primim urgențe fără programare sau cu programare rapidă. Pentru urgențe în afara programului, sunați la 0333 630 005 și veți fi direcționat către serviciul de urgență."
     },
     {
       question: "Pot veni direct la cabinet fără să sun înainte?",
@@ -443,7 +443,7 @@ const Urgente = () => {
               </Button>
             </a>
             <p className="mt-6 text-lg opacity-90">
-              Disponibili Luni-Vineri 8:00-20:00 | Sâmbătă 9:00-14:00
+              Disponibili Luni-Vineri 8:00-20:00
             </p>
           </div>
         </div>
