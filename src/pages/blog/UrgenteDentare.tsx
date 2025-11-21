@@ -405,8 +405,8 @@ const UrgenteDentare = () => {
                   Urgențe dentare în Piatra Neamț - Suntem aici pentru tine!
                 </h3>
                 <p className="text-foreground mb-6">
-                  Oferim servicii de urgențe stomatologice cu program extins și în weekend. Avem echipamentul 
-                  și experiența necesare pentru a gestiona orice urgență dentară. Nu amâna - contactează-ne imediat!
+                  Oferim servicii de urgențe stomatologice cu echipamentul și experiența necesare pentru a 
+                  gestiona orice urgență dentară. Suntem pregătiți să te ajutăm rapid. Nu amâna - contactează-ne imediat!
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button asChild size="lg" className="bg-red-600 hover:bg-red-700">
