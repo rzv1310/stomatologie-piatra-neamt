@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Legături rapide</h3>
+            <h2 className="text-lg font-semibold mb-4 text-white">Legături rapide</h2>
             <ul className="space-y-2 text-sm text-white">
               <li>
                 <Link to="/" className="hover:text-accent transition-colors">
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Servicii</h3>
+            <h2 className="text-lg font-semibold mb-4 text-white">Servicii</h2>
             <ul className="space-y-2 text-sm text-white">
               <li>
                 <Link to="/servicii/endodontie-piatra-neamt" className="hover:text-accent transition-colors">
