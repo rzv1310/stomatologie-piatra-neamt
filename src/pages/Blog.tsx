@@ -95,22 +95,25 @@ const Blog = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {articles.map((article) => (
-                <Card key={article.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <h2 className="text-xl font-bold text-foreground mb-3 line-clamp-2">
-                      {article.title}
-                    </h2>
-                    <p className="text-muted-foreground mb-4 line-clamp-3">
-                      {article.excerpt}
-                    </p>
-                    <Link 
-                      to={`/blog/${article.slug}`}
-                      className="inline-flex items-center text-accent font-semibold hover:text-accent/80 transition-colors"
-                    >
-                      Citește articolul →
-                    </Link>
-                  </CardContent>
-                </Card>
+                <Link 
+                  key={article.id}
+                  to={`/blog/${article.slug}`}
+                  className="block"
+                >
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
+                    <CardContent className="p-6">
+                      <h2 className="text-xl font-bold text-foreground mb-3 line-clamp-2">
+                        {article.title}
+                      </h2>
+                      <p className="text-muted-foreground mb-4 line-clamp-3">
+                        {article.excerpt}
+                      </p>
+                      <span className="inline-flex items-center text-accent font-semibold transition-colors">
+                        Citește articolul →
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
