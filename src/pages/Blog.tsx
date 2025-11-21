@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -66,6 +67,13 @@ const Blog = () => {
 
       <div className="min-h-screen bg-background">
         <Navigation />
+        
+        <Breadcrumbs 
+          items={[
+            { label: "Acasă", href: "/" },
+            { label: "Blog" }
+          ]}
+        />
         
         {/* Hero Section */}
         <section className="bg-accent py-20 lg:py-32">
