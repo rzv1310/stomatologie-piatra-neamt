@@ -77,16 +77,14 @@ const ImplantDentar = () => {
       />
 
       {/* Hero */}
-      <section className="relative bg-hero py-16 lg:py-24">
-        <div className="absolute inset-0 overflow-hidden">
-          <img 
-            src={heroImage} 
-            alt="Implant dentar - Clinica Medstom Piatra Neamț" 
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
+      <section className="relative h-[60vh] min-h-[500px] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Implant dentar în Piatra Neamț
             </h1>
@@ -101,7 +99,7 @@ const ImplantDentar = () => {
                 </Button>
               </Link>
               <Link to="/tarife">
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
                   Vezi prețuri
                 </Button>
               </Link>
