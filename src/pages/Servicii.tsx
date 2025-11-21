@@ -105,7 +105,7 @@ const Servicii = () => {
         "Inlay/Onlay/Overlay din ceramică sau compozit",
         "Restaurări complexe"
       ],
-      link: "/servicii/endodontie-piatra-neamt"
+      link: "/servicii/tratament-carii"
     },
     {
       title: "Endodonție",
