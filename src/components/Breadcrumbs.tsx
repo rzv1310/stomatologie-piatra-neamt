@@ -10,7 +10,7 @@ interface BreadcrumbsProps {
   items: BreadcrumbItem[];
 }
 
-const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
+const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
   return (
     <nav className="bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-3">

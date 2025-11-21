@@ -25,6 +25,13 @@ import PoliticaCookies from "./pages/PoliticaCookies";
 import TermeniConditii from "./pages/TermeniConditii";
 import PoliticaConfidentialitate from "./pages/PoliticaConfidentialitate";
 import NotFound from "./pages/NotFound";
+import Blog from "./pages/Blog";
+import AlbireDentara from "./pages/blog/AlbireDentara";
+import AparatDentarAdulti from "./pages/blog/AparatDentarAdulti";
+import PrimaVizitaCopil from "./pages/blog/PrimaVizitaCopil";
+import MaseauaMinte from "./pages/blog/MaseauaMinte";
+import UrgenteDentare from "./pages/blog/UrgenteDentare";
+import Parodontoza from "./pages/blog/Parodontoza";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +63,13 @@ const App = () => (
           <Route path="/politica-cookies" element={<PoliticaCookies />} />
           <Route path="/termeni-conditii" element={<TermeniConditii />} />
           <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/albire-dentara-piatra-neamt" element={<AlbireDentara />} />
+          <Route path="/blog/aparat-dentar-adulti-piatra-neamt" element={<AparatDentarAdulti />} />
+          <Route path="/blog/prima-vizita-copil-dentist" element={<PrimaVizitaCopil />} />
+          <Route path="/blog/maseaua-de-minte" element={<MaseauaMinte />} />
+          <Route path="/blog/urgente-dentare-dinte-rupt" element={<UrgenteDentare />} />
+          <Route path="/blog/parodontoza-tratament" element={<Parodontoza />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
