@@ -13,6 +13,7 @@ import {
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const services = [
     { name: "Urgențe stomatologice", href: "/servicii/urgente" },
@@ -39,7 +40,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <NavigationMenu>
+            <NavigationMenu value={servicesOpen ? "servicii" : ""}>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link to="/" className="px-4 py-2 text-foreground hover:text-primary transition-colors">
@@ -47,9 +48,18 @@ const Navigation = () => {
                   </Link>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>Servicii</NavigationMenuTrigger>
-                  <NavigationMenuContent>
+                <NavigationMenuItem value="servicii">
+                  <NavigationMenuTrigger 
+                    onClick={() => setServicesOpen(!servicesOpen)}
+                    onPointerEnter={(e) => e.preventDefault()}
+                    onPointerMove={(e) => e.preventDefault()}
+                  >
+                    Servicii
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent 
+                    onPointerEnter={(e) => e.preventDefault()}
+                    onPointerLeave={(e) => e.preventDefault()}
+                  >
                     <ul className="grid w-[400px] gap-3 p-4 max-h-[70vh] overflow-y-auto">
                       {services.map((service) => (
                         <li key={service.href}>
@@ -57,6 +67,7 @@ const Navigation = () => {
                             <Link
                               to={service.href}
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              onClick={() => setServicesOpen(false)}
                             >
                               <div className="text-sm font-medium leading-none">{service.name}</div>
                             </Link>
