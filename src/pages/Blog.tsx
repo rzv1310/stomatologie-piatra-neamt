@@ -97,7 +97,7 @@ const Blog = () => {
                     </p>
                     <Link 
                       to={`/blog/${article.slug}`}
-                      className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors"
+                      className="inline-flex items-center text-accent font-semibold hover:text-accent/80 transition-colors"
                     >
                       Citește articolul →
                     </Link>
