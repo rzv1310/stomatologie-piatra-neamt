@@ -91,12 +91,6 @@ const Navigation = () => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link to="/blog" className="px-4 py-2 text-foreground hover:text-primary transition-colors">
-                    Blog
-                  </Link>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
                   <Link to="/contact" className="px-4 py-2 text-foreground hover:text-primary transition-colors">
                     Contact
                   </Link>
@@ -161,13 +155,6 @@ const Navigation = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Tarife
-              </Link>
-              <Link
-                to="/blog"
-                className="px-4 py-2 hover:bg-muted rounded-md transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Blog
               </Link>
               <Link
                 to="/contact"
