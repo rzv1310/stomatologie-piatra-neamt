@@ -28,7 +28,7 @@ const UrgenteDentare = () => {
     },
     {
       question: "Ce fac dacă am o urgență dentară în weekend?",
-      answer: "Contactează serviciul nostru de urgențe dentare disponibil non-stop la 0333 630 005. Avem program special pentru urgențe și în weekend pentru situații care nu pot aștepta."
+      answer: "Contactează serviciul nostru de urgențe dentare disponibil non-stop la <a href='tel:0333630005' className='text-accent hover:underline font-semibold'>0333 630 005</a>. Avem program special pentru urgențe și în weekend pentru situații care nu pot aștepta."
     }
   ];
 
@@ -105,7 +105,7 @@ const UrgenteDentare = () => {
                   <AlertTriangle className="h-6 w-6 text-red-600 dark:text-red-400 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-bold text-red-900 dark:text-red-100 mt-0 mb-3">
-                      Când este o urgență REALĂ (sună imediat la 0333 630 005):
+                      Când este o urgență REALĂ (sună imediat la <a href="tel:0333630005" className="text-red-900 dark:text-red-100 underline font-bold hover:text-red-700 dark:hover:text-red-200">0333 630 005</a>):
                     </h3>
                     <ul className="list-disc pl-6 text-red-900 dark:text-red-100 mb-0">
                       <li>Dinte complet rupt cu rădăcina expusă</li>
@@ -283,7 +283,7 @@ const UrgenteDentare = () => {
                   <strong>Oprește sângerarea:</strong> Aplică o compresă sterilă cu presiune pe locul gol.
                 </li>
                 <li>
-                  <strong>SUNĂ IMEDIAT la 0333 630 005 și anunță că vii cu urgență maximă cu dinte luxat!</strong>
+                  <strong>SUNĂ IMEDIAT la <a href="tel:0333630005" className="text-accent hover:underline">0333 630 005</a> și anunță că vii cu urgență maximă cu dinte luxat!</strong>
                 </li>
                 <li>
                   <strong>Ajunge la cabinet în MAXIM 30 minute!</strong> Fiecare minut întârziat reduce șansele de salvare.
@@ -379,7 +379,7 @@ const UrgenteDentare = () => {
                 <li>Ceară dentară ortodontică</li>
                 <li>Analgezice (paracetamol, ibuprofen)</li>
                 <li>Container mic pentru păstrarea dinților/fragmentelor</li>
-                <li>Numărul de urgență al dentistului (0333 630 005)</li>
+                <li>Numărul de urgență al dentistului (<a href="tel:0333630005" className="text-accent hover:underline font-semibold">0333 630 005</a>)</li>
                 <li>Mănuși medicale de unică folosință</li>
                 <li>Oglindă dentară mică</li>
               </ul>
