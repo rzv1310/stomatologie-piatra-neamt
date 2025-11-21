@@ -69,7 +69,7 @@ const Index = () => {
     },
     {
       title: "Radiologie Dentară",
-      description: "Radiografii digitale și CT dentar CBCT pentru diagnosticare precisă",
+      description: "Radiografii digitale și CT dentar pentru diagnosticare precisă",
       link: "/servicii/radiologie-dentara-piatra-neamt",
       image: serviceRadiologie
     },
