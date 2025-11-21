@@ -28,7 +28,7 @@ const Footer = () => {
               </li>
             </ul>
             <a
-              href="https://www.facebook.com/photo?fbid=1874234763393412&set=a.1043628356454061"
+              href="https://www.facebook.com/profile.php?id=100024207206327"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm text-white hover:text-accent transition-colors mb-4"
