@@ -251,4 +251,4 @@ export const routes: RouteConfig[] = [
   }
 ];
 
-export const SITE_URL = "https://medstomclinic.ro";
+export const SITE_URL = "https://stomatologiepiatraneamt.ro";

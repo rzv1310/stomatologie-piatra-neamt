@@ -10,7 +10,7 @@ interface RouteConfig {
   excludeFromSitemap?: boolean;
 }
 
-const SITE_URL = "https://medstomclinic.ro";
+const SITE_URL = "https://stomatologiepiatraneamt.ro";
 
 // Route configuration - matches src/config/routes.ts
 const routes: RouteConfig[] = [
