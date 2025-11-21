@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Clock, Award } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/service-implant.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -76,8 +77,15 @@ const ImplantDentar = () => {
       />
 
       {/* Hero */}
-      <section className="bg-hero py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-hero py-16 lg:py-24">
+        <div className="absolute inset-0 overflow-hidden">
+          <img 
+            src={heroImage} 
+            alt="Implant dentar - Clinica Medstom Piatra Neamț" 
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Implant dentar în Piatra Neamț
@@ -155,9 +163,9 @@ const ImplantDentar = () => {
                 <Card key={index} className="border-primary/20">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
-                        {index + 1}
-                      </div>
+                  <div className="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                    {index + 1}
+                  </div>
                       <div>
                         <h3 className="text-xl font-semibold mb-2 text-heading">{step.title}</h3>
                         <p className="text-text-custom">{step.description}</p>
@@ -237,13 +245,13 @@ const ImplantDentar = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-16 bg-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4 text-white">
               Gata să îți transformi zâmbetul?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8 text-white">
               Programează o consultație gratuită și află exact de ce ai nevoie. Cost transparent, zero surprize.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -254,7 +262,7 @@ const ImplantDentar = () => {
                 </Button>
               </Link>
               <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
                   0333 630 005
                 </Button>
               </a>
