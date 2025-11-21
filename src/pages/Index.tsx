@@ -408,7 +408,7 @@ const Index = () => {
               Localizare clinică stomatologică în Piatra Neamț
             </h2>
             <p className="text-lg text-text-custom">
-              Strada 1 Decembrie 1918 58A, Piatra Neamț 615200
+              Strada Ana Ipătescu 9, Piatra Neamț 610120
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
