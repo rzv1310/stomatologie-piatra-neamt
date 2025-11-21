@@ -266,7 +266,7 @@ const UrgenteDentare = () => {
                   <ul className="list-disc pl-6 mt-2">
                     <li>Asigură-te că este în poziția corectă</li>
                     <li>Apasă ferm dar blând</li>
-                    <li>Mușcă o tifla sterilă pentru a-l menține în poziție</li>
+                    <li>Mușcă o compresă sterilă pentru a-l menține în poziție</li>
                     <li>Mergi IMEDIAT la dentist</li>
                   </ul>
                 </li>
