@@ -138,7 +138,7 @@ const UrgenteDentare = () => {
                   resturi și pentru a putea evalua gravitatea.
                 </li>
                 <li>
-                  <strong>Oprește sângerarea:</strong> Dacă sângerează, aplică o tifla de gaze sterilă cu presiune ușoară timp de 10-15 minute.
+                  <strong>Oprește sângerarea:</strong> Dacă sângerează, aplică o compresă sterilă cu presiune ușoară timp de 10-15 minute.
                 </li>
                 <li>
                   <strong>Reduce umflarea:</strong> Aplică gheață pe obraz (15 minute cu pauză, 15 minute cu gheață) pentru a reduce inflamația și durerea.
@@ -280,7 +280,7 @@ const UrgenteDentare = () => {
                   </ul>
                 </li>
                 <li>
-                  <strong>Oprește sângerarea:</strong> Aplică o tifla de gaze ste cu presiune pe locul gol.
+                  <strong>Oprește sângerarea:</strong> Aplică o compresă sterilă cu presiune pe locul gol.
                 </li>
                 <li>
                   <strong>SUNĂ IMEDIAT la 0333 630 005 și anunță că vii cu urgență maximă cu dinte luxat!</strong>
@@ -374,7 +374,7 @@ const UrgenteDentare = () => {
                 Pregătește o trusă mică cu:
               </p>
               <ul className="list-disc pl-6 mb-8 text-foreground">
-                <li>Tifle de gaze sterilă</li>
+                <li>Comprese sterile</li>
                 <li>Ciment dentar temporar (farmacie)</li>
                 <li>Ceară dentară ortodontică</li>
                 <li>Analgezice (paracetamol, ibuprofen)</li>
