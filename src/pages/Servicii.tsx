@@ -15,7 +15,7 @@ import chirurgieImg from "@/assets/service-chirurgie.jpg";
 import parodontologieImg from "@/assets/service-parodontologie.jpg";
 import ortodontieImg from "@/assets/service-ortodontie.jpg";
 import copiiImg from "@/assets/service-copii.jpg";
-import radiologieImg from "@/assets/service-radiologie.jpg";
+import radiologieImg from "@/assets/cbct-green-x-radiologie.jpg";
 import urgenteImg from "@/assets/service-urgente.jpg";
 import stomatologieGeneralaImg from "@/assets/service-stomatologie-generala.jpg";
 
@@ -188,7 +188,7 @@ const Servicii = () => {
       link: "/servicii/stomatologie-copii-piatra-neamt"
     },
     {
-      title: "Radiologie Dentară și Imagistică",
+      title: "Radiologie Dentară",
       image: radiologieImg,
       services: [
         "Radiografii retroalveolare",
