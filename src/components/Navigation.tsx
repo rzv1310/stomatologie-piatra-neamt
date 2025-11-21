@@ -15,6 +15,8 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const services = [
+    { name: "Urgențe stomatologice", href: "/servicii/urgente" },
+    { name: "Stomatologie copii", href: "/servicii/stomatologie-copii-piatra-neamt" },
     { name: "Endodonție", href: "/servicii/endodontie-piatra-neamt" },
     { name: "Estetică dentară", href: "/servicii/estetica-dentara" },
     { name: "Ortodonție", href: "/servicii/ortodontie-piatra-neamt" },
@@ -23,8 +25,6 @@ const Navigation = () => {
     { name: "Chirurgie orală", href: "/servicii/chirurgie-orala" },
     { name: "Parodontologie", href: "/servicii/parodontologie-piatra-neamt" },
     { name: "Radiologie dentară", href: "/servicii/radiologie-dentara-piatra-neamt" },
-    { name: "Stomatologie copii", href: "/servicii/stomatologie-copii-piatra-neamt" },
-    { name: "Urgențe stomatologice", href: "/servicii/urgente" },
     { name: "Implant dentar", href: "/servicii/implant-dentar" },
   ];
 
