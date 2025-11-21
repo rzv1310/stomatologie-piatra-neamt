@@ -388,9 +388,9 @@ const Parodontoza = () => {
                     <Link to="/contact">Programează evaluare parodontală</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="tel:0233222222">
+                    <a href="tel:0333630005">
                       <Phone className="mr-2 h-5 w-5" />
-                      0233 222 222
+                      0333 630 005
                     </a>
                   </Button>
                 </div>
