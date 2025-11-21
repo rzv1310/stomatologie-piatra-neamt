@@ -157,7 +157,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-2 text-accent" />
-                  <span>Str. 1 Decembrie 1918 58A</span>
+                  <span>Strada Ana Ipătescu 9, Piatra Neamț 610120</span>
                 </div>
               </div>
             </div>
