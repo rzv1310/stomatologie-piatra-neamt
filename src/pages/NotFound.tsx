@@ -48,11 +48,6 @@ const NotFound = () => {
                   Servicii Stomatologice
                 </Button>
               </Link>
-              <Link to="/servicii/implant-dentar">
-                <Button variant="outline" className="hover-scale">
-                  Implanturi Dentare
-                </Button>
-              </Link>
               <Link to="/tarife">
                 <Button variant="outline" className="hover-scale">
                   Prețuri
@@ -60,7 +55,7 @@ const NotFound = () => {
               </Link>
               <Link to="/blog">
                 <Button variant="outline" className="hover-scale">
-                  Blog
+                  Articole interesante
                 </Button>
               </Link>
             </div>
