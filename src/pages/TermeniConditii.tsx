@@ -203,6 +203,30 @@ const TermeniConditii = () => {
             </div>
           </div>
         </section>
+
+        {/* Documente conexe */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <FileText className="h-5 w-5 text-primary" />
+                    Documente conexe
+                  </h3>
+                  <div className="space-y-2">
+                    <Link to="/politica-confidentialitate" className="block text-primary hover:underline">
+                      → Politica de Confidențialitate
+                    </Link>
+                    <Link to="/politica-cookies" className="block text-primary hover:underline">
+                      → Politica Cookies
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
