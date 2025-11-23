@@ -992,7 +992,7 @@ const Index = () => {
                       {article.excerpt}
                     </p>
                     <div className="flex items-center text-accent font-medium">
-                      Citește articolul
+                      {article.anchorText || 'Citește articolul'}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                   </CardContent>
