@@ -12,6 +12,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import RelatedArticles from "@/components/RelatedArticles";
+import { relatedArticles } from "@/config/related-content";
 
 const AparatDentarAdulti = () => {
   const faqs = [
@@ -347,6 +349,9 @@ const AparatDentarAdulti = () => {
             </div>
           </div>
         </article>
+
+        {/* Related Articles */}
+        <RelatedArticles articles={relatedArticles['aparat-dentar-adulti']} />
 
         <Footer />
       </div>
