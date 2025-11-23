@@ -32,8 +32,8 @@ const NotFound = () => {
           </h2>
           
           <p className="text-xl text-text-custom mb-8 max-w-lg mx-auto">
-            Pagina pe care o cauți a fost extrasă din site-ul nostru. 
-            Dar nu-ți face griji, restul dinților... err... paginilor sunt perfect sănătoși!
+            Pagina pe care o cauți a fost extrasă cu cleștele din site-ul nostru. 
+            Dar nu-ți face griji, restul dinților (... err... paginilor) sunt perfect sănătoși!
           </p>
 
           {/* Search Suggestions */}
