@@ -122,7 +122,7 @@ const Index = () => {
       description: "Tratăm și salvăm dintele fără durere",
       link: "/servicii/endodontie-piatra-neamt",
       image: serviceEndodontie,
-      anchorText: "Tratamente canal pentru salvarea dintelui fără durere"
+      anchorText: "Tratăm și salvăm dintele fără durere"
     }
   ];
 
