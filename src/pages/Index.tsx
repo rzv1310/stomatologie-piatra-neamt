@@ -98,7 +98,7 @@ const Index = () => {
     },
     {
       title: "Ortodonție",
-      description: "Aparate dentare fixe și Spark pentru alinierea dinților",
+      description: "Aparate dentare fixe și Spark pentru alinierea perfectă a dinților",
       link: "/servicii/ortodontie-piatra-neamt",
       image: serviceOrtodontie,
       anchorText: "Vino la ortodont pentru dinți perfect aliniați"
