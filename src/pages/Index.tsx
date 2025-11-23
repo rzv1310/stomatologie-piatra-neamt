@@ -84,7 +84,7 @@ const Index = () => {
   const services = [
     {
       title: "Implant dentar",
-      description: "Implanturi 'All on 4' si 'All on 6' ",
+      description: "Implanturi 'All on 4' si 'All on 6' , reabilitări orale full-arch",
       link: "/servicii/implant-dentar",
       image: serviceImplant,
       anchorText: "Detalii pentru dinti ficsi in 24 ore"
