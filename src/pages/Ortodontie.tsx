@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import ortodontieHero from "@/assets/service-ortodontie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/config/related-content";
 
 const Ortodontie = () => {
   const pricingData = [
@@ -445,6 +447,9 @@ const Ortodontie = () => {
           </div>
         </div>
       </section>
+
+      {/* Related Services */}
+      <RelatedServices services={relatedServices['ortodontie']} />
 
       {/* FAQ */}
       <section className="py-20 bg-background">
