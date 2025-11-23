@@ -8,7 +8,7 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Profilaxie dentară",
-      link: "/servicii/profilaxie-dentara",
+      link: "/servicii/profilaxie",
       description: "Detartraj și igienizare profesională pentru menținerea sănătății dinților aliniați"
     },
     {
@@ -25,12 +25,12 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Profilaxie dentară",
-      link: "/servicii/profilaxie-dentara",
+      link: "/servicii/profilaxie",
       description: "Albire dentară și detartraj pentru întreținerea zâmbetului strălucitor"
     },
     {
       title: "Protetica dentară",
-      link: "/servicii/protetica-dentara",
+      link: "/servicii/protetica-piatra-neamt",
       description: "Coroane și fațete ceramice pentru restaurări estetice"
     }
   ],
@@ -47,7 +47,7 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Protetica dentară",
-      link: "/servicii/protetica-dentara",
+      link: "/servicii/protetica-piatra-neamt",
       description: "Coroane pe implanturi pentru finalizarea tratamentului"
     }
   ],
@@ -64,11 +64,11 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Urgențe stomatologice",
-      link: "/servicii/urgente-stomatologice",
+      link: "/servicii/urgente",
       description: "Intervenții de urgență pentru abcese și fracturi dentare"
     }
   ],
-  'profilaxie-dentara': [
+  'profilaxie': [
     {
       title: "Parodontologie",
       link: "/servicii/parodontologie-piatra-neamt",
@@ -88,7 +88,7 @@ export const relatedServices: Record<string, { title: string; link: string; desc
   'parodontologie': [
     {
       title: "Profilaxie dentară",
-      link: "/servicii/profilaxie-dentara",
+      link: "/servicii/profilaxie",
       description: "Detartraj și igienizare pentru prevenirea bolilor parodontale"
     },
     {
@@ -102,7 +102,7 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       description: "Grefe gingivale și intervenții parodontale complexe"
     }
   ],
-  'protetica-dentara': [
+  'protetica': [
     {
       title: "Implant dentar",
       link: "/servicii/implant-dentar",
@@ -144,7 +144,7 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Profilaxie dentară",
-      link: "/servicii/profilaxie-dentara",
+      link: "/servicii/profilaxie",
       description: "Sigilări, fluorizări și educație pentru igiena orală"
     },
     {
@@ -161,12 +161,12 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Profilaxie dentară",
-      link: "/servicii/profilaxie-dentara",
+      link: "/servicii/profilaxie",
       description: "Controale regulate și detartraj profesional"
     },
     {
       title: "Urgențe stomatologice",
-      link: "/servicii/urgente-stomatologice",
+      link: "/servicii/urgente",
       description: "Asistență rapidă pentru dureri și probleme acute"
     }
   ],
@@ -178,16 +178,16 @@ export const relatedServices: Record<string, { title: string; link: string; desc
     },
     {
       title: "Profilaxie dentară",
-      link: "/servicii/profilaxie-dentara",
+      link: "/servicii/profilaxie",
       description: "Prevenția cariilor prin detartraj și sigilări"
     },
     {
       title: "Protetica dentară",
-      link: "/servicii/protetica-dentara",
+      link: "/servicii/protetica-piatra-neamt",
       description: "Coroane și onlay-uri pentru restaurări extinse"
     }
   ],
-  'urgente-stomatologice': [
+  'urgente': [
     {
       title: "Chirurgie orală",
       link: "/servicii/chirurgie-orala",

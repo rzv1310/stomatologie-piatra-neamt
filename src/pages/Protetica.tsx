@@ -422,7 +422,7 @@ const Protetica = () => {
         </div>
       </section>
 
-      <RelatedServices services={relatedServices['protetica-dentara']} />
+      <RelatedServices services={relatedServices['protetica']} />
       </main>
 
       <Footer />
