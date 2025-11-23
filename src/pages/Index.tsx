@@ -273,7 +273,7 @@ const Index = () => {
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                     style={{ backgroundImage: `url(${service.image})` }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
                   <CardContent className="p-6 relative z-10">
                     <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
                     <p className="text-white/90 mb-4">{service.description}</p>
