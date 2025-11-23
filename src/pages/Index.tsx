@@ -87,42 +87,42 @@ const Index = () => {
       description: "Dinți ficși în 24h cu tehnologie digitală avansată",
       link: "/servicii/implant-dentar",
       image: serviceImplant,
-      anchorText: "Detalii implant dentar pentru dinți ficși în 24-48h"
+      anchorText: "Detalii pentru dinti ficsi in 24 ore"
     },
     {
       title: "Estetică dentară",
       description: "Fațete ceramice și albire profesională pentru zâmbetul perfect",
       link: "/servicii/estetica-dentara",
       image: serviceEstetica,
-      anchorText: "Detalii estetică dentară pentru zâmbet perfect strălucitor"
+      anchorText: "Estetică dentară pentru zâmbet strălucitor"
     },
     {
       title: "Ortodonție",
       description: "Aparate dentare fixe și Spark pentru alinierea dinților",
       link: "/servicii/ortodontie-piatra-neamt",
       image: serviceOrtodontie,
-      anchorText: "Detalii ortodonție pentru dinți perfect aliniați"
+      anchorText: "Vino la ortodont pentru dinți perfect aliniați"
     },
     {
       title: "Stomatologie copii",
       description: "Tratamente delicate pentru cei mici, în siguranță și confort",
       link: "/servicii/stomatologie-copii-piatra-neamt",
       image: serviceCopii,
-      anchorText: "Detalii stomatologie copii pentru tratamente fără frică"
+      anchorText: "Pedodonție pentru tratamente fără frică"
     },
     {
       title: "Radiologie Dentară",
       description: "Radiografii digitale și CT dentar pentru diagnosticare precisă",
       link: "/servicii/radiologie-dentara-piatra-neamt",
       image: serviceRadiologie,
-      anchorText: "Detalii radiologie 3D pentru diagnostic precis fără erori"
+      anchorText: "Computer tomografie pentru diagnostic precis"
     },
     {
       title: "Endodonție sub microscop",
       description: "Tratamente de canal precise cu tehnologie avansată",
       link: "/servicii/endodontie-piatra-neamt",
       image: serviceEndodontie,
-      anchorText: "Detalii tratament canal pentru salvare dinte fără durere"
+      anchorText: "Tratamente canal pentru salvarea dintelui fără durere"
     }
   ];
 
