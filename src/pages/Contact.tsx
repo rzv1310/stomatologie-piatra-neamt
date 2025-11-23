@@ -7,8 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, MapPin, Clock, Mail } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -18,6 +20,7 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const [acceptedPrivacy, setAcceptedPrivacy] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,6 +30,16 @@ const Contact = () => {
       toast({
         title: "Eroare",
         description: "Te rugăm să completezi numele și numărul de telefon.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Privacy policy validation
+    if (!acceptedPrivacy) {
+      toast({
+        title: "Eroare",
+        description: "Trebuie să accepți Politica de confidențialitate pentru a continua.",
         variant: "destructive",
       });
       return;
@@ -45,6 +58,7 @@ const Contact = () => {
       email: "",
       message: ""
     });
+    setAcceptedPrivacy(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -197,6 +211,31 @@ const Contact = () => {
                         placeholder="Descrie motivul programării sau întrebările tale..."
                         rows={5}
                       />
+                    </div>
+
+                    {/* Privacy Policy Checkbox */}
+                    <div className="flex items-start space-x-3 py-4">
+                      <Checkbox 
+                        id="privacy-policy" 
+                        checked={acceptedPrivacy}
+                        onCheckedChange={(checked) => setAcceptedPrivacy(checked === true)}
+                        className="mt-1"
+                      />
+                      <Label 
+                        htmlFor="privacy-policy" 
+                        className="text-sm text-text-custom leading-relaxed cursor-pointer"
+                      >
+                        De acord cu{" "}
+                        <Link 
+                          to="/politica-confidentialitate" 
+                          className="text-primary hover:underline font-medium"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Politica de confidențialitate
+                        </Link>
+                        {" "}*
+                      </Label>
                     </div>
 
                     <Button type="submit" className="w-full bg-accent hover:bg-accent/90">

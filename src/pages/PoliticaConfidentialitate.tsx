@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Database, Lock, UserCheck, FileText, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PoliticaConfidentialitate = () => {
   return (
@@ -285,6 +286,30 @@ const PoliticaConfidentialitate = () => {
                   <p className="text-foreground leading-relaxed">
                     Societatea noastră îşi rezervă dreptul de a schimba, modifica sau actualiza politica de confidenţialitate în orice moment, dar nu vă reduce nivelul de protecţie din cadrul acesteia. Acordăm cea mai mare importanță aspectelor legate de confidenţialitate şi intenţionăm să rămânem pe deplin conformați prevederilor legale în ceea ce priveşte politica de confidenţialitate şi protecţia datelor cu caracter personal. Vom actualiza periodic politica de confidenţialitate şi vom afişa noutăţile pe această pagină.
                   </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Documente conexe */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <FileText className="h-5 w-5 text-primary" />
+                    Documente conexe
+                  </h3>
+                  <div className="space-y-2">
+                    <Link to="/termeni-conditii" className="block text-primary hover:underline">
+                      → Termeni și Condiții
+                    </Link>
+                    <Link to="/politica-cookies" className="block text-primary hover:underline">
+                      → Politica Cookies
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </div>

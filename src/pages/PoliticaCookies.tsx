@@ -2,7 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Cookie, Shield, Settings, BarChart3, Palette, ExternalLink } from "lucide-react";
+import { Cookie, Shield, Settings, BarChart3, Palette, ExternalLink, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PoliticaCookies = () => {
   return (
@@ -205,6 +206,30 @@ const PoliticaCookies = () => {
                   <p className="text-muted-foreground italic">
                     Ultima actualizare: 20.11.2025
                   </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Documente conexe */}
+        <section className="py-12 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <FileText className="h-5 w-5 text-primary" />
+                    Documente conexe
+                  </h3>
+                  <div className="space-y-2">
+                    <Link to="/termeni-conditii" className="block text-primary hover:underline">
+                      → Termeni și Condiții
+                    </Link>
+                    <Link to="/politica-confidentialitate" className="block text-primary hover:underline">
+                      → Politica de Confidențialitate
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </div>
