@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Clock, Award } from "lucide-react";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/config/related-content";
 import {
   Table,
   TableBody,
@@ -488,6 +490,8 @@ const ImplantDentar = () => {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices['implant-dentar']} />
       </main>
 
       <Footer />

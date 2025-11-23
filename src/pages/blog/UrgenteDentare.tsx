@@ -5,6 +5,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Phone, AlertTriangle, Clock, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import RelatedArticles from "@/components/RelatedArticles";
+import { relatedArticles } from "@/config/related-content";
 import {
   Accordion,
   AccordionContent,
@@ -444,6 +446,8 @@ const UrgenteDentare = () => {
             </div>
           </div>
         </article>
+
+        <RelatedArticles articles={relatedArticles['urgente-dentare-dinte-rupt']} />
 
         <Footer />
       </div>

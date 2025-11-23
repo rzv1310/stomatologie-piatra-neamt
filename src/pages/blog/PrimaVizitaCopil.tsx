@@ -5,6 +5,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Phone, Clock, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import RelatedArticles from "@/components/RelatedArticles";
+import { relatedArticles } from "@/config/related-content";
 import {
   Accordion,
   AccordionContent,
@@ -352,6 +354,8 @@ const PrimaVizitaCopil = () => {
             </div>
           </div>
         </article>
+
+        <RelatedArticles articles={relatedArticles['prima-vizita-copil-dentist']} />
 
         <Footer />
       </div>
