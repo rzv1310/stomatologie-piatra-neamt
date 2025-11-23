@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import esteticaHero from "@/assets/service-estetica.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/config/related-content";
 
 const EsteticaDentara = () => {
   const pricingData = [
@@ -399,6 +401,8 @@ const EsteticaDentara = () => {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices['estetica-dentara']} />
       </main>
 
       <Footer />

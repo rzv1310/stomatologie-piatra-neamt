@@ -9,6 +9,8 @@ import { Phone, AlertCircle, Clock, CheckCircle } from "lucide-react";
 import urgenteHero from "@/assets/service-urgente.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/config/related-content";
 
 const Urgente = () => {
   const ServiceMeta = useServiceMeta({
@@ -477,6 +479,8 @@ const Urgente = () => {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices['urgente-stomatologice']} />
       </main>
 
       <Footer />

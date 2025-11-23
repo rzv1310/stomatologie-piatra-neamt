@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import radiologieHero from "@/assets/cbct-green-x-radiologie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/config/related-content";
 
 const Radiologie = () => {
   const ServiceMeta = useServiceMeta({
@@ -457,6 +459,8 @@ const Radiologie = () => {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices['radiologie-dentara']} />
       </main>
 
       <Footer />

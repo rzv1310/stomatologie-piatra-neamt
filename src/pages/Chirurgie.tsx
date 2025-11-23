@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import chirurgieHero from "@/assets/service-chirurgie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/config/related-content";
 
 const Chirurgie = () => {
   const ServiceMeta = useServiceMeta({
@@ -471,6 +473,8 @@ const Chirurgie = () => {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices['chirurgie-orala']} />
       </main>
 
       <Footer />
