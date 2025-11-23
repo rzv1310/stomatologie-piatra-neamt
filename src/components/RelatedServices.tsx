@@ -6,6 +6,7 @@ interface RelatedService {
   title: string;
   link: string;
   description: string;
+  anchorText?: string;
 }
 
 interface RelatedServicesProps {
@@ -32,7 +33,7 @@ const RelatedServices = ({ services }: RelatedServicesProps) => {
                       {service.description}
                     </p>
                     <div className="flex items-center text-accent font-medium">
-                      Află mai mult
+                      {service.anchorText || `Detalii ${service.title.toLowerCase()}`}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                   </CardContent>

@@ -86,37 +86,43 @@ const Index = () => {
       title: "Implant dentar",
       description: "Dinți ficși în 24h cu tehnologie digitală avansată",
       link: "/servicii/implant-dentar",
-      image: serviceImplant
+      image: serviceImplant,
+      anchorText: "Detalii implant dentar pentru dinți ficși în 24-48h"
     },
     {
       title: "Estetică dentară",
       description: "Fațete ceramice și albire profesională pentru zâmbetul perfect",
       link: "/servicii/estetica-dentara",
-      image: serviceEstetica
+      image: serviceEstetica,
+      anchorText: "Detalii estetică dentară pentru zâmbet perfect strălucitor"
     },
     {
       title: "Ortodonție",
       description: "Aparate dentare fixe și Spark pentru alinierea dinților",
       link: "/servicii/ortodontie-piatra-neamt",
-      image: serviceOrtodontie
+      image: serviceOrtodontie,
+      anchorText: "Detalii ortodonție pentru dinți perfect aliniați"
     },
     {
       title: "Stomatologie copii",
       description: "Tratamente delicate pentru cei mici, în siguranță și confort",
       link: "/servicii/stomatologie-copii-piatra-neamt",
-      image: serviceCopii
+      image: serviceCopii,
+      anchorText: "Detalii stomatologie copii pentru tratamente fără frică"
     },
     {
       title: "Radiologie Dentară",
       description: "Radiografii digitale și CT dentar pentru diagnosticare precisă",
       link: "/servicii/radiologie-dentara-piatra-neamt",
-      image: serviceRadiologie
+      image: serviceRadiologie,
+      anchorText: "Detalii radiologie 3D pentru diagnostic precis fără erori"
     },
     {
       title: "Endodonție sub microscop",
       description: "Tratamente de canal precise cu tehnologie avansată",
       link: "/servicii/endodontie-piatra-neamt",
-      image: serviceEndodontie
+      image: serviceEndodontie,
+      anchorText: "Detalii tratament canal pentru salvare dinte fără durere"
     }
   ];
 
@@ -272,7 +278,7 @@ const Index = () => {
                     <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
                     <p className="text-white/90 mb-4">{service.description}</p>
                     <div className="flex items-center text-accent font-medium">
-                      Află mai mult
+                      {service.anchorText || `Detalii ${service.title.toLowerCase()}`}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                   </CardContent>
