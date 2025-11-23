@@ -6,6 +6,7 @@ interface RelatedArticle {
   title: string;
   link: string;
   excerpt: string;
+  anchorText?: string;
 }
 
 interface RelatedArticlesProps {
@@ -32,7 +33,7 @@ const RelatedArticles = ({ articles }: RelatedArticlesProps) => {
                       {article.excerpt}
                     </p>
                     <div className="flex items-center text-accent font-medium">
-                      Citește articolul
+                      {article.anchorText || `Citește despre ${article.title.toLowerCase()}`}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                   </CardContent>
