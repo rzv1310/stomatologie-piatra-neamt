@@ -355,20 +355,20 @@ export const recentArticles = [
     link: "/blog/albire-dentara-piatra-neamt",
     excerpt: "Descoperă metodele de albire dentară disponibile, prețurile orientative și rezultatele pentru un zâmbet strălucitor.",
     date: "15 Noiembrie 2025",
-    anchorText: "Citește despre albire dentară pentru zâmbet alb strălucitor"
+    anchorText: "Citește despre albirea dentară pentru un zâmbet strălucitor"
   },
   {
     title: "Aparat dentar pentru adulți: metalic, ceramic sau Invisalign?",
     link: "/blog/aparat-dentar-adulti-piatra-neamt",
     excerpt: "Comparație detaliată între aparatele dentare metalice, ceramice și Invisalign pentru adulți.",
     date: "10 Noiembrie 2025",
-    anchorText: "Citește despre aparat dentar adulți pentru alegere perfectă"
+    anchorText: "De ce un aparat dentar poate fi alegerea perfectă chiar și pentru adulți"
   },
   {
     title: "Cum pregătești copilul pentru prima vizită la dentist",
     link: "/blog/prima-vizita-copil-dentist",
     excerpt: "Sfaturi practice pentru părinți despre cum să reducă anxietatea și să creeze o experiență pozitivă.",
     date: "5 Noiembrie 2025",
-    anchorText: "Citește despre prima vizită copil fără frică și stres"
+    anchorText: "Citește despre prima vizită la dentist fără frică și stress"
   }
 ];
