@@ -119,7 +119,7 @@ const Index = () => {
     },
     {
       title: "Endodonție sub microscop",
-      description: "Tratăm și salvăm dintele fără durere",
+      description: "Tratamente de canal precise, cu rată de succes de peste 95%",
       link: "/servicii/endodontie-piatra-neamt",
       image: serviceEndodontie,
       anchorText: "Tratăm și salvăm dintele fără durere"
