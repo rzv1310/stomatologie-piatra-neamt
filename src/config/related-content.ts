@@ -85,19 +85,19 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       title: "Parodontologie",
       link: "/servicii/parodontologie-piatra-neamt",
       description: "Tratament pentru gingivită și parodontoză",
-      anchorText: "Detalii parodontologie pentru gingii sănătoase fără sângerare"
+      anchorText: "Detalii pentru gingii sănătoase, fără sângerare"
     },
     {
       title: "Estetică dentară",
       link: "/servicii/estetica-dentara",
       description: "Albire profesională pentru un zâmbet strălucitor",
-      anchorText: "Detalii albire dentară pentru zâmbet alb strălucitor"
+      anchorText: "Fațete dentare ceramice pentru Hollywood smile"
     },
     {
       title: "Stomatologie copii",
       link: "/servicii/stomatologie-copii-piatra-neamt",
       description: "Sigilări și fluorizări pentru prevenția cariilor la copii",
-      anchorText: "Detalii stomatologie copii pentru dinți sănătoși fără carii"
+      anchorText: "Stomatologie pediatrică pentru dinți sănătoși fără carii"
     }
   ],
   'parodontologie': [
