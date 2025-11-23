@@ -350,7 +350,7 @@ const Profilaxie = () => {
       </main>
 
       {/* Related Services */}
-      <RelatedServices services={relatedServices['profilaxie-dentara']} />
+      <RelatedServices services={relatedServices['profilaxie']} />
 
       <Footer />
     </div>

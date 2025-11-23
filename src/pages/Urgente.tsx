@@ -480,7 +480,7 @@ const Urgente = () => {
         </div>
       </section>
 
-      <RelatedServices services={relatedServices['urgente-stomatologice']} />
+      <RelatedServices services={relatedServices['urgente']} />
       </main>
 
       <Footer />
