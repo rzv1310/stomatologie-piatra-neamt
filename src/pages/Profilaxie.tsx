@@ -213,19 +213,19 @@ const Profilaxie = () => {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-hero">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
               Beneficiile igienizării profesionale
             </h2>
-            <p className="text-lg text-text-custom max-w-2xl mx-auto">
+            <p className="text-lg text-white max-w-2xl mx-auto">
               Investiția în prevenție te scutește de probleme și cheltuieli viitoare
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="border-primary/20">
+              <Card key={index} className="border-primary/20 bg-white">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
