@@ -252,9 +252,6 @@ const PrimaVizitaCopil = () => {
                   <strong>Sfaturi pentru părinți:</strong> Informații despre igiena orală, alimentație și 
                   dezvoltarea normală a dinților
                 </li>
-                <li>
-                  <strong>Laude:</strong> <strong>Copilul primește foarte multe laude pentru curaj</strong> și un mic cadou
-                </li>
               </ol>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
