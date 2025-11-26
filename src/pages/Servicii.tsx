@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 import profilaxieImg from "@/assets/service-profilaxie.jpg";
 import esteticaImg from "@/assets/service-estetica.jpg";
 import endodontieImg from "@/assets/service-endodontie.jpg";
@@ -232,9 +233,14 @@ const Servicii = () => {
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
               Servicii stomatologice complete în Piatra Neamț
             </h1>
-            <p className="text-xl text-text-custom">
+            <p className="text-xl mb-8 text-text-custom">
               De la prevenție și igienă dentară până la reabilitări complexe pe implanturi - toate serviciile într-o singură clinică modernă
             </p>
+            <CTAWithTrust
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Echipament modern · Medici cu experiență · Confort maxim"
+              align="center"
+            />
           </div>
         </div>
       </section>
