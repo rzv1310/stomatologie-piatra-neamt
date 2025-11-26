@@ -155,7 +155,11 @@ const StomatologieCopii = () => {
   const faqs = [
     {
       question: "La ce vârstă trebuie să aduc copilul la prima vizită?",
-      answer: "Primul control la dentist se recomandă la apariția primului dinte sau cel târziu la vârsta de 1 an. Această <Link to=\"/blog/prima-vizita-copil-dentist\" className=\"text-primary hover:underline font-medium\">prima vizită</Link> timpurie ajută copilul să se obișnuiască cu cabinetul dentar și permite depistarea precoce a problemelor."
+      answer: (
+        <>
+          Primul control la dentist se recomandă la apariția primului dinte sau cel târziu la vârsta de 1 an. Această <Link to="/blog/prima-vizita-copil-dentist" className="text-primary hover:underline font-medium">prima vizită</Link> timpurie ajută copilul să se obișnuiască cu cabinetul dentar și permite depistarea precoce a problemelor.
+        </>
+      )
     },
     {
       question: "De ce sunt importanți dinții de lapte dacă vor cădea oricum?",

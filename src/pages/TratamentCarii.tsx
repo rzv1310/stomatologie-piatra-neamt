@@ -89,7 +89,11 @@ const TratamentCarii = () => {
     },
     {
       question: "Care este diferența între o obturație și o coroană?",
-      answer: "Obturația se folosește pentru cariile mici și medii, când mai mult de 50% din țesutul dentar este intact. <Link to=\"/servicii/protetica-piatra-neamt\" className=\"text-primary hover:underline font-medium\">Coroane sau fațete</Link> sunt recomandate când distrucția dentară este mare și dintele necesită protecție completă pentru a rezista forțelor masticatorii."
+      answer: (
+        <>
+          Obturația se folosește pentru cariile mici și medii, când mai mult de 50% din țesutul dentar este intact. <Link to="/servicii/protetica-piatra-neamt" className="text-primary hover:underline font-medium">Coroane sau fațete</Link> sunt recomandate când distrucția dentară este mare și dintele necesită protecție completă pentru a rezista forțelor masticatorii.
+        </>
+      )
     }
   ];
 

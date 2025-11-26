@@ -76,7 +76,11 @@ const Profilaxie = () => {
   const faqs = [
     {
       question: "Cât de des ar trebui să fac o igienizare profesională?",
-      answer: "Recomandăm o igienizare profesională la fiecare 6 luni pentru menținerea unei sănătăți orale optime. Pacienții cu risc crescut de boli parodontale sau acumulare rapidă de tartru pot necesita controale la 3-4 luni. Dacă este nevoie de <Link to=\"/servicii/stomatologie-generala\" className=\"text-primary hover:underline font-medium\">tratament de canal</Link>, îl recomandăm înainte de igienizare."
+      answer: (
+        <>
+          Recomandăm o igienizare profesională la fiecare 6 luni pentru menținerea unei sănătăți orale optime. Pacienții cu risc crescut de boli parodontale sau acumulare rapidă de tartru pot necesita controale la 3-4 luni. Dacă este nevoie de <Link to="/servicii/stomatologie-generala" className="text-primary hover:underline font-medium">tratament de canal</Link>, îl recomandăm înainte de igienizare.
+        </>
+      )
     },
     {
       question: "Este dureroasă procedura de detartraj?",
@@ -84,8 +88,12 @@ const Profilaxie = () => {
     },
      {
        question: "Cât durează o ședință de igienizare?",
-       answer: "O ședință completă de igienizare profesională durează între 45-60 de minute, în funcție de cantitatea de tartru acumulat și de starea generală a dinților. Pentru copii, vezi serviciul de <Link to=\"/servicii/stomatologie-copii-piatra-neamt\" className=\"text-primary hover:underline font-medium\">stomatologie pediatrică</Link>."
-    },
+       answer: (
+         <>
+           O ședință completă de igienizare profesională durează între 45-60 de minute, în funcție de cantitatea de tartru acumulat și de starea generală a dinților. Pentru copii, vezi serviciul de <Link to="/servicii/stomatologie-copii-piatra-neamt" className="text-primary hover:underline font-medium">stomatologie pediatrică</Link>.
+         </>
+       )
+     },
     {
       question: "Pot mânca imediat după igienizare?",
       answer: "Da, puteți mânca imediat după procedură. Totuși, recomandăm să evitați alimentele foarte colorate (cafea, ceai, vin roșu) în primele 24 de ore pentru a menține rezultatele curățării."
