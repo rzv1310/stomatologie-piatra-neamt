@@ -85,7 +85,7 @@ const PrimaVizitaCopil = () => {
               </div>
             </div>
             <div className="mt-6">
-              <Button asChild size="lg" variant="secondary">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white border border-white">
                 <Link to="/tarife#pedodontie">
                   Vezi prețurile pentru copii
                 </Link>
