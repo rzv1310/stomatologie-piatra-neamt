@@ -184,7 +184,7 @@ const Servicii = () => {
       link: "/servicii/ortodontie-piatra-neamt"
     },
     {
-      title: "Stomatologie Copii (Pedodonție)",
+      title: "Stomatologie Copii Piatra Neamț (Pedodonție)",
       image: copiiImg,
       services: [
         "Tratamente specifice pentru copii",
