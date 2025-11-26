@@ -21,7 +21,7 @@ const PrimaVizitaCopil = () => {
     answer: "Pentru copiii mici (sub 3-4 ani), părintele rămâne în cabinet. Pentru cei mai mari, depinde de preferința copilului - unii se simt mai curajoși singuri, alții preferă prezența părintelui."
   }, {
     question: "Cât durează prima vizită?",
-    answer: "Prima vizită durează de obicei 20-30 de minute. Includere consultație, examinare blândă, eventual curățare ușoară și aplicare fluor. Păstrăm totul scurt și plăcut pentru a nu obosi copilul."
+    answer: "Prima vizită durează de obicei 15-20 minute. Include consultație, examinare blândă, eventual curățare ușoară și aplicare fluor. Păstrăm totul scurt și plăcut pentru a nu obosi copilul."
   }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
