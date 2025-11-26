@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 import profilaxieImg from "@/assets/service-profilaxie.jpg";
 import esteticaImg from "@/assets/service-estetica.jpg";
 import endodontieImg from "@/assets/service-endodontie.jpg";
@@ -223,18 +224,15 @@ const Servicii = () => {
         {/* Hero */}
       <section className="bg-accent py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Servicii stomatologice complete în Piatra Neamț
             </h1>
             <p className="text-xl mb-8 text-white">
               De la prevenție și igienă dentară până la reabilitări complexe pe implanturi - toate serviciile într-o singură clinică modernă
             </p>
-            <CTAWithTrust
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+            <HeroContactBox
               microcopy="✓ Echipament modern · Medici cu experiență · Confort maxim"
-              align="center"
-              variant="dark"
             />
           </div>
         </div>
