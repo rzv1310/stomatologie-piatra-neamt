@@ -129,6 +129,7 @@ const PrimaVizitaCopil = () => {
               <p className="text-xl text-muted-foreground mb-6">
                 Prima vizită la dentist poate părea intimidantă atât pentru copil, cât și pentru părinte.
                 <br />
+                <br />
                 Dar, cu pregătirea potrivită, poți transforma această experiență într-un moment pozitiv care va stabili baza pentru o relație sănătoasă cu medicina dentară pe tot parcursul vieții copilului.
                 <br />
                 Iată tot ce trebuie să știi pentru a pregăti copilul pentru prima vizită la dentist.
@@ -136,6 +137,7 @@ const PrimaVizitaCopil = () => {
 
               <p className="text-xl text-muted-foreground mb-8">
                 Prima vizită la dentist nu este doar despre verificarea dinților - este despre crearea unei experiențe pozitive care va influența atitudinea copilului față de sănătatea orală pentru întreaga viață.
+                <br />
                 <br />
                 Copiii care au vizite plăcute la dentist devin adulți care nu își neglijează sănătatea dentară.
               </p>
