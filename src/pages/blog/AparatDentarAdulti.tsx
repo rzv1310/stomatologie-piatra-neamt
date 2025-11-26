@@ -134,7 +134,7 @@ const AparatDentarAdulti = () => {
                 <ul className="list-disc pl-6 text-foreground">
                   <li>Cel mai vizibil tip de aparat</li>
                   <li>Poate cauza iritații ușoare ale obrajilor</li>
-                  <li>Unii adulți consideră că nu este estetic</li>
+                  <li>Unele persoane consideră că nu este suficient de estetic</li>
                 </ul>
               </div>
 
