@@ -239,7 +239,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                   <li>Dorești un tratament complet invizibil</li>
                   <li>Ai un caz ușor sau moderat</li>
                   <li>Ești disciplinat să porți gutierele 20-22 ore/zi</li>
-                  <li>Estetica este prioritatea numărul unu</li>
+                  <li>Estetica este prioritatea ta numărul unu</li>
                   <li>Îți permiți un buget mai mare</li>
                 </ul>
               </div>
