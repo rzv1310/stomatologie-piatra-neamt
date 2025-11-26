@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Clock, Award } from "lucide-react";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 import {
   Table,
   TableBody,
@@ -483,19 +484,23 @@ const ImplantDentar = () => {
             <p className="text-xl mb-8 text-white">
               Programează o consultație gratuită și află exact de ce ai nevoie. Cost transparent, zero surprize.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Programare online
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{
+                text: "Programează Consultație",
+                href: "/contact"
+              }}
+              secondaryButton={{
+                text: "Sună Acum",
+                href: "tel:+40333630005"
+              }}
+              microcopy="✓ Consultație gratuită · Răspuns în 30 min · Plată în rate"
+              badges={[
+                { icon: "🏆", text: "Garanție 10 ani pe implanturi" },
+                { icon: "🦷", text: "500+ implanturi realizate" },
+                { icon: "🔬", text: "Tehnologie CBCT 3D" },
+                { icon: "💳", text: "Rate fără dobândă" }
+              ]}
+            />
           </div>
         </div>
       </section>

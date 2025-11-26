@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const Ortodontie = () => {
   const pricingData = [
@@ -222,20 +223,23 @@ const Ortodontie = () => {
             <p className="text-xl mb-8 text-white">
               Aparate dentare fixe, estetice și alignere transparente pentru un zâmbet perfect aliniat. Ortodonție pentru copii, adolescenți și adulți.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Consultație gratuită
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{
+                text: "Programează Evaluare Gratuită",
+                href: "/contact"
+              }}
+              secondaryButton={{
+                text: "0333 630 005",
+                href: "tel:+40333630005"
+              }}
+              microcopy="✓ Evaluare gratuită · Simulare digitală · Plată în rate"
+              badges={[
+                { icon: "😊", text: "Ortodont specialist" },
+                { icon: "📸", text: "Scanare digitală 3D" },
+                { icon: "👨‍👩‍👧", text: "Soluții pt. adulți & copii" },
+                { icon: "💳", text: "Rate flexibile" }
+              ]}
+            />
           </div>
         </div>
       </section>
