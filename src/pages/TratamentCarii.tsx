@@ -50,7 +50,7 @@ const TratamentCarii = () => {
     {
       number: "01",
       title: "Consultația inițială",
-      description: "Examinare dentară completă și identificarea cariilor prin inspecție vizuală și radiografii dentare"
+      description: "Examinare dentară completă și identificarea cariilor prin inspecție vizuală și radiografii dentare, precedată de <Link to=\"/servicii/profilaxie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">profilaxie profesională</Link>"
     },
     {
       number: "02",
@@ -89,7 +89,7 @@ const TratamentCarii = () => {
     },
     {
       question: "Care este diferența între o obturație și o coroană?",
-      answer: "Obturația se folosește pentru cariile mici și medii, când mai mult de 50% din țesutul dentar este intact. Coroana dentară este recomandată când distrucția dentară este mare și dintele necesită protecție completă pentru a rezista forțelor masticatorii."
+      answer: "Obturația se folosește pentru cariile mici și medii, când mai mult de 50% din țesutul dentar este intact. <Link to=\"/servicii/protetica-piatra-neamt\" className=\"text-primary hover:underline font-medium\">Coroane sau fațete</Link> sunt recomandate când distrucția dentară este mare și dintele necesită protecție completă pentru a rezista forțelor masticatorii."
     }
   ];
 
@@ -202,8 +202,8 @@ const TratamentCarii = () => {
               <p>
                 Odontoterapia restauratorie (tratamentul cariilor dentare) este procedura prin care se îndepărtează țesutul dentar afectat de carie și se restaurează structura dintelui cu materiale moderne, biocompatibile. Tratamentul prompt al cariilor previne complicații grave și păstrează integritatea dinților naturali.
               </p>
-              <p>
-                Cariile dentare sunt una dintre cele mai comune afecțiuni ale cavității orale și pot apărea la orice vârstă. Dacă nu sunt tratate la timp, cariile pot progresa, afectând stratul profund al dintelui (dentina) și chiar pulpa dentară, cauzând durere intensă și necesitând tratamente mai complexe.
+               <p>
+                 Cariile dentare sunt una dintre cele mai comune afecțiuni ale cavității orale și pot apărea la orice vârstă. Dacă nu sunt tratate la timp, cariile pot progresa, afectând stratul profund al dintelui (dentina) și chiar pulpa dentară, cauzând durere intensă și necesitând <Link to="/servicii/stomatologie-generala" className="text-primary hover:underline font-medium">tratament de canal (endodonție)</Link>.
               </p>
               <p>
                 La Medstom folosim materiale compozite foto-polimerizabile de ultimă generație care oferă un aspect natural, rezistență superioară și durabilitate pe termen lung.

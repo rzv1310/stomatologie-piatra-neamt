@@ -46,11 +46,11 @@ const ImplantDentar = () => {
   const steps = [
     {
       title: "Consultația și planificarea",
-      description: "Evaluare completă cu radiografie 3D (CBCT) și plan de tratament personalizat"
+      description: "Evaluare completă cu <Link to=\"/servicii/radiologie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">radiografie 3D (CBCT)</Link> și plan de tratament personalizat"
     },
     {
       title: "Inserarea implantului",
-      description: "Procedură precisă cu tehnologie digitală, în condiții sterile și cu anestezie modernă"
+      description: "Procedură precisă cu tehnologie digitală, în <Link to=\"/servicii/chirurgie-orala-piatra-neamt\" className=\"text-primary hover:underline font-medium\">chirurgie orală minim invazivă</Link>, în condiții sterile și cu anestezie modernă"
     },
     {
       title: "Încărcare imediată (opțional)",

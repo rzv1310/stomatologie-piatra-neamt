@@ -76,7 +76,7 @@ const Ortodontie = () => {
     {
       number: "01",
       title: "Consultație și diagnostic",
-      description: "Evaluare completă cu fotografii, amprente digitale și radiografii (panoramică și teleradiografie)"
+      description: "Evaluare completă cu fotografii, amprente digitale și <Link to=\"/servicii/radiologie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">radiografii panoramice și cefalometrice</Link>"
     },
     {
       number: "02",
@@ -86,7 +86,7 @@ const Ortodontie = () => {
     {
       number: "03",
       title: "Pregătire",
-      description: "Igienizare profesională și tratarea eventualelor carii înainte de aplicarea aparatului"
+      description: "<Link to=\"/servicii/profilaxie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">Igienizare profesională</Link> și tratarea eventualelor carii înainte de aplicarea aparatului"
     },
     {
       number: "04",
@@ -307,8 +307,8 @@ const Ortodontie = () => {
               Ce este ortodonția?
             </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4">
-              <p>
-                Ortodonția este specialitatea stomatologiei care se ocupă cu diagnosticul, prevenția și tratamentul anomaliilor dento-maxilare - adică poziționarea incorectă a dinților și relațiile anormale între maxilare.
+               <p>
+                 Ortodonția este specialitatea stomatologiei care se ocupă cu diagnosticul, prevenția și tratamentul anomaliilor dento-maxilare - adică poziționarea incorectă a dinților și relațiile anormale între maxilare. Tratamentul ortodontic îmbunătățește și <Link to="/servicii/estetica-dentara" className="text-primary hover:underline font-medium">estetica zâmbetului</Link>.
               </p>
               <p>
                 <strong>Când este nevoie de tratament ortodontic?</strong>

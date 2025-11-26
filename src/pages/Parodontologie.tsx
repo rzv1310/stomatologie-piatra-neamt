@@ -30,7 +30,7 @@ const Parodontologie = () => {
   const parodontalServices = [
     {
       title: "Detartraj subgingival",
-      description: "Curățarea în profunzime a depunerilor de tartru sub gingie",
+      description: "Curățarea în profunzime a depunerilor de tartru sub gingie, parte din <Link to=\"/servicii/profilaxie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">igienizare profesională</Link>",
       icon: "🧹"
     },
     {
@@ -45,7 +45,7 @@ const Parodontologie = () => {
     },
     {
       title: "Regenerare osoasă",
-      description: "Reconstrucția osului pierdut prin grefe și membrane speciale",
+      description: "Reconstrucția osului pierdut prin grefe și membrane speciale, esențial pentru <Link to=\"/servicii/implant-dentar-piatra-neamt\" className=\"text-primary hover:underline font-medium\">implanturi dentare</Link>",
       icon: "🦴"
     }
   ];
@@ -115,7 +115,7 @@ const Parodontologie = () => {
   const faqs = [
     {
       question: "Ce este boala parodontală (parodontita)?",
-      answer: "Boala parodontală este o infecție bacteriană a gingiei, ligamentului parodontal și osului care susține dinții. Începe cu gingivita (inflamația gingiei) și poate progresa până la pierderea dinților dacă nu este tratată. Este cauzată de acumularea de placă bacteriană și tartru."
+      answer: "Boala parodontală (<Link to=\"/blog/parodontoza\" className=\"text-primary hover:underline font-medium\">parodontoză</Link>) este o infecție bacteriană a gingiei, ligamentului parodontal și osului care susține dinții. Începe cu gingivita (inflamația gingiei) și poate progresa până la pierderea dinților dacă nu este tratată. Este cauzată de acumularea de placă bacteriană și tartru."
     },
     {
       question: "Este dureros tratamentul parodontal?",
