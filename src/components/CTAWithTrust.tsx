@@ -20,6 +20,7 @@ interface CTAWithTrustProps {
   badges?: Badge[];
   className?: string;
   align?: 'left' | 'center';
+  variant?: 'light' | 'dark';
 }
 
 export const CTAWithTrust = ({
@@ -28,7 +29,8 @@ export const CTAWithTrust = ({
   microcopy,
   badges = [],
   className = "",
-  align = 'center'
+  align = 'center',
+  variant = 'dark'
 }: CTAWithTrustProps) => {
   return (
     <div className={`flex flex-col gap-6 ${align === 'left' ? 'items-start' : 'items-center'} ${className}`}>
@@ -40,7 +42,12 @@ export const CTAWithTrust = ({
           </Button>
         )}
         {secondaryButton && (
-          <Button asChild size="lg" variant="outline" className="text-lg bg-white/10 hover:bg-white/20 border-accent text-white hover:text-white">
+          <Button 
+            asChild 
+            size="lg" 
+            variant="outline" 
+            className={`text-lg ${variant === 'dark' ? 'bg-white/10 hover:bg-white/20 border-accent text-white hover:text-white' : 'border-primary'}`}
+          >
             <a href={secondaryButton.href}>
               <Phone className="mr-2 h-5 w-5" />
               {secondaryButton.text}
@@ -50,7 +57,7 @@ export const CTAWithTrust = ({
       </div>
 
       {/* Microcopy */}
-      <p className={`text-sm text-white opacity-90 ${align === 'left' ? 'text-left' : 'text-center'}`}>
+      <p className={`text-sm opacity-90 ${align === 'left' ? 'text-left' : 'text-center'} ${variant === 'dark' ? 'text-white' : 'text-text-custom'}`}>
         {microcopy}
       </p>
 
