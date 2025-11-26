@@ -104,7 +104,7 @@ const Blog = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Blog Stomatologie - Sfaturi și Ghiduri Utile
+                Blog Stomatologie - Sfaturi Utile
               </h1>
               <p className="text-xl text-white/90">
                 Descoperă articole informative despre tratamentele dentare, îngrijirea dinților și 

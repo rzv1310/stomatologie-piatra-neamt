@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/blog" className="hover:text-accent transition-colors">
-                  Blog
+                  Articole Medicale
                 </Link>
               </li>
               <li>
