@@ -200,7 +200,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
               <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">Dezavantaje:</h4>
                 <ul className="list-disc pl-6 text-foreground">
-                  <li>Cel mai scump</li>
+                  <li>Cel mai scump dintre cele 3 tipuri</li>
                   <li>Nu este potrivit pentru toate cazurile complexe</li>
                   <li>Necesită disciplină (trebuie purtat 20-22 ore pe zi)</li>
                   <li>Poate fi pierdut sau deteriorat</li>
