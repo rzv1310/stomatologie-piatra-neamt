@@ -321,7 +321,7 @@ const PrimaVizitaCopil = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-6 mb-12">
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
+                  <p className="text-orange-500 mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
                     Maria avea 3 ani la prima vizită și era foarte speriată. Doamna dr Ines a fost extraordinar de răbdătoare. 
                     A transformat totul într-un joc și acum, la 5 ani, ea chiar întreabă când mergem din nou la dentist! 
@@ -339,7 +339,7 @@ const PrimaVizitaCopil = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
+                  <p className="text-orange-500 mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
                     Am un copil cu autism și ne era teamă că nu va coopera deloc. Medicul a fost extrem de înțelegător, 
                     ne-a lăsat să facem mai multe vizite scurte doar pentru acomodare și a folosit tehnici senzoriale adaptate. 
@@ -357,7 +357,7 @@ const PrimaVizitaCopil = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
+                  <p className="text-orange-500 mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
                     Am mers cu fetița mea de 18 luni la Medstom. Am invățat cum să îi periăm dinții corect 
                     și ce alimente să evităm. Recomand cu drag
@@ -374,7 +374,7 @@ const PrimaVizitaCopil = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
+                  <p className="text-orange-500 mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
                     Am avut deja o experiență proastă la alt cabinet. Era traumatizat și refuza să mai meargă. 
                     Doctorița a avut o abordare atât de blândă și jucăușă încât după doar 2 vizite, frica lui Andrei a dispărut complet. 
