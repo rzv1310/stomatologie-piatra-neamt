@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Phone, Clock, Share2 } from "lucide-react";
+import { Phone, Clock, Share2, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -180,12 +180,17 @@ const AlbireDentara = () => {
                       </TableRow>
                     </TableBody>
                   </Table>
+                  <div className="mt-6 flex items-start gap-3 p-4 bg-muted/50 rounded-lg">
+                    <Info className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                    <div className="text-sm text-muted-foreground">
+                      <p className="mb-2">Prețurile sunt orientative. La consultație vei primi un plan de tratament detaliat cu costul exact pentru situația ta.</p>
+                      <Link to="/tarife" className="text-primary hover:underline font-medium">
+                        Vezi lista completă de prețuri →
+                      </Link>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
-
-              <p className="text-sm text-muted-foreground italic mb-8">
-                *Prețurile afișate sunt orientative. La consultație vei primi un plan de tratament detaliat cu costul exact pentru situația ta.
-              </p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Ești candidat potrivit pentru albirea dentară?</h2>
               <p className="text-foreground mb-4">
