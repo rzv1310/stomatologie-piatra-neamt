@@ -260,7 +260,6 @@ const PrimaVizitaCopil = () => {
               <ul className="list-disc pl-6 mb-8 text-foreground">
                 <li>Laudă copilul pentru curaj, indiferent cum a decurs vizita</li>
                 <li>Povestiți împreună despre experiență și ce i-a plăcut cel mai mult</li>
-                <li>Fă fotografii cu cadoul sau cu "diploma de curaj"</li>
                 <li>Nu folosi vizita la dentist ca amenințare niciodată ("Dacă nu te speli o să mergem la dentist")</li>
                 <li>Continuă să vorbești pozitiv despre dentist în conversațiile zilnice</li>
               </ul>
