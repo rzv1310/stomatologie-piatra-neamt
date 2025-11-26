@@ -138,14 +138,23 @@ const ImplantDentar = () => {
             <p className="text-xl lg:text-2xl mb-8 text-white">
               Dinți ficși în 24h - Tehnologie digitală avansată pentru rezultate perfecte și durabile
             </p>
-            <div className="flex justify-center mt-[30px]">
-              <a href="tel:+40333630005">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Sună pentru consultație gratuită
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{
+                text: "Programează Consultație Gratuită",
+                href: "/contact"
+              }}
+              secondaryButton={{
+                text: "0333 630 005",
+                href: "tel:+40333630005"
+              }}
+              microcopy="✓ Consultație gratuită · Răspuns în 30 min · Plată în rate"
+              badges={[
+                { icon: "🏆", text: "Garanție 10 ani pe implanturi" },
+                { icon: "🦷", text: "500+ implanturi realizate" },
+                { icon: "🔬", text: "Tehnologie CBCT 3D" },
+                { icon: "💳", text: "Rate fără dobândă" }
+              ]}
+            />
           </div>
         </div>
       </section>
