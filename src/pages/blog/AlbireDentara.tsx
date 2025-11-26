@@ -39,8 +39,8 @@ const AlbireDentara = () => {
     type: 'BlogPosting',
     canonical: '/blog/albire-dentara',
     article: {
-      headline: "Albire dentară profesională în Piatra Neamț | Opțiuni, prețuri și rezultate",
-      description: "Ghid complet despre albirea dentară în Piatra Neamț: metode profesionale, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
+      headline: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
+      description: "Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
       image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
       datePublished: "2025-01-20",
       dateModified: "2025-01-20"
@@ -58,8 +58,8 @@ const AlbireDentara = () => {
       {ArticleSchema}
       {FAQSchema}
       <Helmet>
-        <title>Albire Dentară Profesională Piatra Neamț | Opțiuni, Prețuri și Rezultate</title>
-        <meta name="description" content="Ghid complet despre albirea dentară în Piatra Neamț: metode profesionale, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." />
+        <title>Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț</title>
+        <meta name="description" content="Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -76,7 +76,7 @@ const AlbireDentara = () => {
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl lg:text-5xl font-bold text-white max-w-4xl mb-4">
-              Albire dentară profesională în Piatra Neamț | Opțiuni, prețuri și rezultate
+              Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț
             </h1>
             <div className="flex items-center gap-2 text-white/80">
               <Clock className="h-5 w-5" />

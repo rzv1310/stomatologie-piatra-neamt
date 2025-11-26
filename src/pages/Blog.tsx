@@ -22,7 +22,7 @@ const Blog = () => {
   const articles = [
     {
       id: 1,
-      title: "Albire dentară profesională în Piatra Neamț | Opțiuni, prețuri și rezultate",
+      title: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
       slug: "albire-dentara-piatra-neamt",
       excerpt: "Descoperă metodele de albire dentară disponibile în Piatra Neamț, prețurile orientative și rezultatele pe care le poți obține pentru un zâmbet strălucitor.",
       image: "/src/assets/service-estetica.jpg",
