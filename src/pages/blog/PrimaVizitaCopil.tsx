@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Phone, Clock, Share2, Play, Quote } from "lucide-react";
+import { Phone, Clock, Share2, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
@@ -306,37 +306,6 @@ const PrimaVizitaCopil = () => {
                 <li>Fii un model - arată-i că și tu te speli pe dinți și mergi la dentist</li>
                 <li>Celebrează fiecare vizită reușită, nu doar rezultatul</li>
               </ul>
-
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Video Tutorial: Pregătește copilul pentru prima vizită
-              </h2>
-              <div className="mb-12">
-                <div className="relative aspect-video rounded-lg overflow-hidden bg-muted group cursor-pointer">
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-all duration-300">
-                    <div className="flex flex-col items-center gap-4 text-center px-4">
-                      <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <Play className="w-10 h-10 text-primary ml-1" />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-foreground mb-2">
-                          Ghid video pentru părinți
-                        </h3>
-                        <p className="text-muted-foreground max-w-md">
-                          Urmărește acest tutorial detaliat cu sfaturi practice de la medicii noștri pedodonți despre cum să pregătești copilul pentru prima vizită la dentist
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" 
-                    alt="Video tutorial prima vizita copil dentist"
-                    className="w-full h-full object-cover opacity-50"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground mt-4 text-center italic">
-                  Video tutorial disponibil în curând - abonează-te la canalul nostru pentru a primi o notificare
-                </p>
-              </div>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Ce spun părinții despre experiența la cabinetul nostru
