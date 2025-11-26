@@ -173,13 +173,6 @@ const Chirurgie = () => {
       {MedicalProcedureSchema}
       {FAQSchema}
       <Navigation />
-      <Breadcrumbs
-        items={[
-          { label: "Stomatologie Piatra Neamț", href: "/" },
-          { label: "Servicii", href: "/servicii" },
-          { label: "Chirurgie Orală" }
-        ]}
-      />
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -208,6 +201,14 @@ const Chirurgie = () => {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs
+        items={[
+          { label: "Stomatologie Piatra Neamț", href: "/" },
+          { label: "Servicii", href: "/servicii" },
+          { label: "Chirurgie Orală" }
+        ]}
+      />
 
       {/* Pricing Table */}
       <section className="py-16 bg-background">

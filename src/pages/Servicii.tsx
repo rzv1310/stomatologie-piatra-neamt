@@ -218,12 +218,6 @@ const Servicii = () => {
     <div className="min-h-screen flex flex-col">
       {FAQSchema}
       <Navigation />
-      <Breadcrumbs
-        items={[
-          { label: "Stomatologie Piatra Neamț", href: "/" },
-          { label: "Servicii" }
-        ]}
-      />
 
       <main className="flex-1">
         {/* Hero */}
@@ -245,6 +239,13 @@ const Servicii = () => {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs
+        items={[
+          { label: "Stomatologie Piatra Neamț", href: "/" },
+          { label: "Servicii" }
+        ]}
+      />
 
       {/* Services Grid */}
       <section className="py-20">
