@@ -169,7 +169,6 @@ const EsteticaDentara = () => {
               Transformă-ți zâmbetul cu servicii de estetică dentară de top. De la albirea dinților până la fațete ceramice - realizăm zâmbetul pe care ți l-ai dorit mereu.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Consultație gratuită", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
               badges={[

@@ -231,7 +231,6 @@ const StomatologieCopii = () => {
               Pedodonție cu dragoste și răbdare. Transformăm vizita la dentist într-o aventură plăcută pentru cei mici. Prima vizită fără frică, zâmbete sănătoase pe viață.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Programează-ți copilul", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Cabinet prietenos · Fără durere · Diplomă de curaj"
               badges={[

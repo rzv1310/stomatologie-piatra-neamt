@@ -140,10 +140,6 @@ const ImplantDentar = () => {
               Dinți ficși în 24h - Tehnologie digitală avansată pentru rezultate perfecte și durabile
             </p>
             <CTAWithTrust
-              primaryButton={{
-                text: "Programează Consultație Gratuită",
-                href: "/contact"
-              }}
               secondaryButton={{
                 text: "0333 630 005",
                 href: "tel:+40333630005"

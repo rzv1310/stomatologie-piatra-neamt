@@ -11,7 +11,7 @@ interface CTAWithTrustProps {
   primaryButton?: {
     text: string;
     href: string;
-  };
+  } | null;
   secondaryButton?: {
     text: string;
     href: string;
@@ -22,10 +22,7 @@ interface CTAWithTrustProps {
 }
 
 export const CTAWithTrust = ({
-  primaryButton = {
-    text: "Programează Consultație",
-    href: "/contact"
-  },
+  primaryButton = null,
   secondaryButton,
   microcopy,
   badges,
@@ -35,11 +32,13 @@ export const CTAWithTrust = ({
     <div className={`flex flex-col items-center gap-6 ${className}`}>
       {/* Butoane CTA */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button asChild size="lg" className="text-lg">
-          <Link to={primaryButton.href}>{primaryButton.text}</Link>
-        </Button>
+        {primaryButton && (
+          <Button asChild size="lg" className="text-lg">
+            <Link to={primaryButton.href}>{primaryButton.text}</Link>
+          </Button>
+        )}
         {secondaryButton && (
-          <Button asChild size="lg" variant="outline" className="text-lg bg-white/10 hover:bg-white/20 border-white/30 text-white hover:text-white">
+          <Button asChild size="lg" variant="outline" className="text-lg bg-white/10 hover:bg-white/20 border-accent text-white hover:text-white">
             <a href={secondaryButton.href}>
               <Phone className="mr-2 h-5 w-5" />
               {secondaryButton.text}

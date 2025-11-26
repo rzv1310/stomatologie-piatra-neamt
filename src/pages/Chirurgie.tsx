@@ -198,10 +198,6 @@ const Chirurgie = () => {
               Intervenții chirurgicale dentare cu tehnologie modernă și anestezie eficientă. De la extracții simple până la chirurgie complexă - în mâini sigure.
             </p>
             <CTAWithTrust
-              primaryButton={{
-                text: "Programează Consultație",
-                href: "/contact"
-              }}
               secondaryButton={{
                 text: "0333 630 005",
                 href: "tel:+40333630005"

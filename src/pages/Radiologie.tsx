@@ -173,7 +173,6 @@ const Radiologie = () => {
               CBCT Vatech Green X16 pentru diagnostic de precizie și planificare digitală. Vedem exact ce nu se poate vedea cu ochiul liber.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Programează investigație", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · CBCT 3D disponibil · Radiații minime"
               badges={[

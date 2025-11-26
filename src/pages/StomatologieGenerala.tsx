@@ -182,7 +182,6 @@ const StomatologieGenerala = () => {
               Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Salvăm dinții tăi cu tehnologie de ultimă generație.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Programează-te acum", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
               badges={[

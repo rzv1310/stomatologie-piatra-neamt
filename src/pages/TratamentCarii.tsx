@@ -145,7 +145,6 @@ const TratamentCarii = () => {
               Tratamentul profesional al cariilor dentare pentru un zâmbet sănătos
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Programează-te acum", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Plombe estetice · Fără durere"
               badges={[

@@ -182,7 +182,6 @@ const Protetica = () => {
               Înlocuim dinții lipsă sau deteriorați cu lucrări protetice de cea mai înaltă calitate. De la coroane individuale până la proteze complete - soluții durabile și estetice.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Programează consultație", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Laborator propriu · Garanție extinsă"
               badges={[
