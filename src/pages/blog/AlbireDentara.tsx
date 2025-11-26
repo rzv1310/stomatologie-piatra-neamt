@@ -14,7 +14,7 @@ import { relatedArticles } from "@/config/related-content";
 const AlbireDentara = () => {
   const faqs = [{
     question: "Cât durează efectul albirii dentare?",
-    answer: "Cu îngrijire corespunzătoare, rezultatele albirii profesionale pot dura între 1-3 ani. Durata depinde de obiceiurile alimentare, igiena dentară și consumul de substanțe colorante precum cafeaua, ceaiul sau vinul roșu."
+    answer: "Cu îngrijire corespunzătoare, rezultatele albirii profesionale pot dura 1-3 ani. Durata depinde de obiceiurile alimentare, igiena dentară și consumul de substanțe colorante (cafea, ceai negru sau vin roșu)."
   }, {
     question: "Albirea dăunează smalțului?",
     answer: "Albirea profesională făcută sub supraveghere medicală este sigură și nu dăunează smalțului. Folosim concentrații controlate de agent de albire și tehnici aprobate medical care protejează structura dinților."
@@ -23,7 +23,7 @@ const AlbireDentara = () => {
     answer: "Da, însă este important să discutăm despre sensibilitatea ta înainte de tratament. Putem adapta protocolul de albire și putem folosi produse desensibilizante pentru a minimiza disconfortul."
   }, {
     question: "Toți dinții se albesc la fel?",
-    answer: "Nu, decolorările de pe dinții naturali răspund foarte bine la albire, dar coroana dentară, plombele și fațetele nu își schimbă culoarea. De aceea, evaluăm întâi situația și discutăm așteptările realiste."
+    answer: "Nu, decolorările de pe dinții naturali răspund foarte bine la albire, dar coroana dentară, plombele și fațetele nu își schimbă culoarea. De aceea, evaluăm întâi situația și discutăm despre așteptări realiste."
   }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
