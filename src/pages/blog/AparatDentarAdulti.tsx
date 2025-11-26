@@ -124,7 +124,7 @@ const AparatDentarAdulti = () => {
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
                 <ul className="list-disc pl-6 text-foreground">
                   <li>Cel mai eficient pentru cazuri complexe</li>
-                  <li>Cel mai accesibil ca preț (5000-8000 lei)</li>
+                  <li>Cel mai accesibil ca preț</li>
                   <li>Foarte durabil și rezistent</li>
                   <li>Tratament mai rapid în unele cazuri</li>
                   <li>Nu se decolorează în timp</li>
