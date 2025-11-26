@@ -136,7 +136,7 @@ const PrimaVizitaCopil = () => {
               </p>
 
               <p className="text-xl text-muted-foreground mb-8">
-                Prima vizită la dentist nu este doar despre verificarea dinților - este despre crearea unei experiențe pozitive care va influența atitudinea copilului față de sănătatea orală pentru întreaga viață.
+                Prima vizită la stomatolog nu este doar despre verificarea dinților - este despre crearea unei experiențe pozitive care va influența atitudinea copilului față de sănătatea orală pentru întreaga viață.
                 <br />
                 <br />
                 Copiii care au vizite plăcute la dentist devin adulți care nu își neglijează sănătatea dentară.
