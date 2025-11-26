@@ -116,11 +116,7 @@ const AparatDentarAdulti = () => {
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
                 1. Aparat dentar metalic (clasic)
               </h3>
-              <p className="text-foreground mb-4">
-                Aparatul dentar metalic este varianta tradițională, fabricată din metal de înaltă calitate. 
-                Deși este cel mai vizibil tip de aparat, rămâne o opțiune excelentă pentru adulți datorită 
-                eficienței și prețului accesibil.
-              </p>
+              <p className="text-foreground mb-4">Aparatul dentar metalic este varianta tradițională, fabricată din metal de înaltă calitate. Deși este cel mai vizibil tip de aparat, rămâne o opțiune excelentă pentru adulți, datorită eficienței și prețului accesibil.</p>
               
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
