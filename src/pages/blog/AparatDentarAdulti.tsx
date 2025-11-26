@@ -248,7 +248,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
 
               <Card className="my-12 border-primary/20">
                 <CardHeader className="bg-section-alt">
-                  <CardTitle className="text-2xl">Prețuri Ortodonție - Aparate Dentare</CardTitle>
+                  <h2 className="text-3xl font-bold text-foreground">Prețuri Ortodonție - Aparate Dentare</h2>
                 </CardHeader>
                 <CardContent className="pt-6">
                   <Table>
