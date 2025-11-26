@@ -19,6 +19,7 @@ interface CTAWithTrustProps {
   microcopy: string;
   badges?: Badge[];
   className?: string;
+  align?: 'left' | 'center';
 }
 
 export const CTAWithTrust = ({
@@ -26,12 +27,13 @@ export const CTAWithTrust = ({
   secondaryButton,
   microcopy,
   badges = [],
-  className = ""
+  className = "",
+  align = 'center'
 }: CTAWithTrustProps) => {
   return (
-    <div className={`flex flex-col items-center gap-6 ${className}`}>
+    <div className={`flex flex-col gap-6 ${align === 'left' ? 'items-start' : 'items-center'} ${className}`}>
       {/* Butoane CTA */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <div className={`flex flex-col sm:flex-row gap-4 ${align === 'left' ? 'justify-start' : 'justify-center'}`}>
         {primaryButton && (
           <Button asChild size="lg" className="text-lg">
             <Link to={primaryButton.href}>{primaryButton.text}</Link>
@@ -48,7 +50,7 @@ export const CTAWithTrust = ({
       </div>
 
       {/* Microcopy */}
-      <p className="text-sm text-center text-white opacity-90">
+      <p className={`text-sm text-white opacity-90 ${align === 'left' ? 'text-left' : 'text-center'}`}>
         {microcopy}
       </p>
 

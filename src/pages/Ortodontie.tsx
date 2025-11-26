@@ -229,6 +229,7 @@ const Ortodontie = () => {
                 href: "tel:+40333630005"
               }}
               microcopy="✓ Evaluare gratuită · Simulare digitală · Plată în rate"
+              align="left"
             />
           </div>
         </div>

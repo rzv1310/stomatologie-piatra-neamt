@@ -172,6 +172,7 @@ const EsteticaDentara = () => {
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
               className="text-white"
+              align="left"
             />
           </div>
         </div>

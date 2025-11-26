@@ -203,6 +203,7 @@ const Chirurgie = () => {
                 href: "tel:+40333630005"
               }}
               microcopy="✓ Consultație gratuită · Răspuns rapid · Sedare disponibilă"
+              align="left"
             />
           </div>
         </div>

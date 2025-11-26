@@ -148,6 +148,7 @@ const TratamentCarii = () => {
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Plombe estetice · Fără durere"
               className="text-white"
+              align="left"
             />
           </div>
         </div>

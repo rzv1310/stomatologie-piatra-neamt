@@ -185,6 +185,7 @@ const StomatologieGenerala = () => {
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
               className="text-white"
+              align="left"
             />
           </div>
         </div>
