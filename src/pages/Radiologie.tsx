@@ -47,7 +47,7 @@ const Radiologie = () => {
     },
     {
       title: "Radiografii bitewing",
-      description: "Detectarea cariilor interdentare și evaluarea osului alveolar, util pentru <Link to=\"/servicii/chirurgie-orala-piatra-neamt\" className=\"text-primary hover:underline font-medium\">chirurgie orală</Link>",
+      description: <>Detectarea cariilor interdentare și evaluarea osului alveolar, util pentru <Link to="/servicii/chirurgie-orala-piatra-neamt" className="text-primary hover:underline font-medium">chirurgie orală</Link></>,
       icon: "📐"
     }
   ];
@@ -67,7 +67,7 @@ const Radiologie = () => {
     },
     {
        title: "Evaluare sinusuri",
-       description: "Diagnostic precis al sinuzitelor maxilare și patologiei sinusurilor, important pentru <Link to=\"/servicii/ortodontie-piatra-neamt\" className=\"text-primary hover:underline font-medium\">ortodonție</Link>"
+       description: <>Diagnostic precis al sinuzitelor maxilare și patologiei sinusurilor, important pentru <Link to="/servicii/ortodontie-piatra-neamt" className="text-primary hover:underline font-medium">ortodonție</Link></>
     },
     {
       title: "Patologie osoasă",

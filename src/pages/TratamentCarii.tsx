@@ -50,7 +50,7 @@ const TratamentCarii = () => {
     {
       number: "01",
       title: "Consultația inițială",
-      description: "Examinare dentară completă și identificarea cariilor prin inspecție vizuală și radiografii dentare, precedată de <Link to=\"/servicii/profilaxie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">profilaxie profesională</Link>"
+      description: <>Examinare dentară completă și identificarea cariilor prin inspecție vizuală și radiografii dentare, precedată de <Link to="/servicii/profilaxie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">profilaxie profesională</Link></>
     },
     {
       number: "02",
