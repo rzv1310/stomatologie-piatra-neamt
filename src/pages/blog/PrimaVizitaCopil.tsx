@@ -410,7 +410,9 @@ const PrimaVizitaCopil = () => {
 
               <div className="bg-primary/5 rounded-lg p-8 mt-12">
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Cabinet prietenos cu copiii în Piatra Neamț
+                  <Link to="/servicii/stomatologie-copii-piatra-neamt" className="hover:text-primary transition-colors">
+                    Cabinet prietenos cu copiii în Piatra Neamț
+                  </Link>
                 </h3>
                 <p className="text-foreground mb-6">
                   Avem experiență vastă în tratarea copiilor și știm cum să transformăm vizita la dentist 
