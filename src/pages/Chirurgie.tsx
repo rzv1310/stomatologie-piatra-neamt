@@ -461,19 +461,17 @@ const Chirurgie = () => {
             <p className="text-xl mb-8">
               Programează o consultație și beneficiază de expertiză și tehnologie modernă
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Programare online
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programare online", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Răspuns rapid · Sedare disponibilă"
+              badges={[
+                { icon: "🏥", text: "Chirurg specialist cu experiență" },
+                { icon: "💉", text: "Anestezie locală modernă" },
+                { icon: "🔬", text: "CBCT pentru precizie maximă" },
+                { icon: "⚡", text: "Recuperare rapidă" }
+              ]}
+            />
           </div>
         </div>
       </section>
