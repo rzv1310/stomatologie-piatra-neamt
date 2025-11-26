@@ -184,12 +184,6 @@ const StomatologieGenerala = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
-              badges={[
-                { icon: "🔬", text: "Tratamente sub microscop" },
-                { icon: "🦷", text: "Salvăm dinții tăi" },
-                { icon: "💉", text: "Anestezie fără durere" },
-                { icon: "⭐", text: "Tehnologie modernă" }
-              ]}
               className="text-white"
             />
           </div>

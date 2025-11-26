@@ -150,12 +150,6 @@ const Profilaxie = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Fără durere · Aparatură modernă · Preț fix"
-              badges={[
-                { icon: "🦷", text: "Tehnologie Air-Flow" },
-                { icon: "⚡", text: "Ședință 45 min" },
-                { icon: "✨", text: "Dinți mai albi" },
-                { icon: "💚", text: "Prevenție eficientă" }
-              ]}
               className="text-white"
             />
           </div>

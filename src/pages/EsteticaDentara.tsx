@@ -171,12 +171,6 @@ const EsteticaDentara = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
-              badges={[
-                { icon: "✨", text: "Fațete EMAX & ceramică" },
-                { icon: "💎", text: "Albire profesională" },
-                { icon: "📸", text: "Smile Design digital" },
-                { icon: "🎨", text: "Zâmbet personalizat" }
-              ]}
               className="text-white"
             />
           </div>

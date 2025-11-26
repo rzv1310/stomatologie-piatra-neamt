@@ -184,12 +184,6 @@ const Protetica = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Laborator propriu · Garanție extinsă"
-              badges={[
-                { icon: "👑", text: "Coroane Zirconiu & EMAX" },
-                { icon: "⚡", text: "Execuție rapidă" },
-                { icon: "🔬", text: "Tehnologie CAD/CAM" },
-                { icon: "🏆", text: "Garanție pe viață" }
-              ]}
               className="text-white"
             />
           </div>

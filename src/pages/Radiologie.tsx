@@ -175,12 +175,6 @@ const Radiologie = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · CBCT 3D disponibil · Radiații minime"
-              badges={[
-                { icon: "🔬", text: "CBCT Vatech Green X16" },
-                { icon: "📸", text: "Imagistică 3D" },
-                { icon: "⚡", text: "Rezultate instant" },
-                { icon: "🛡️", text: "Radiații 90% mai mici" }
-              ]}
               className="text-white"
             />
           </div>

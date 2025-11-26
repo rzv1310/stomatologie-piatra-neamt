@@ -229,12 +229,6 @@ const Ortodontie = () => {
                 href: "tel:+40333630005"
               }}
               microcopy="✓ Evaluare gratuită · Simulare digitală · Plată în rate"
-              badges={[
-                { icon: "😊", text: "Ortodont specialist" },
-                { icon: "📸", text: "Scanare digitală 3D" },
-                { icon: "👨‍👩‍👧", text: "Soluții pt. adulți & copii" },
-                { icon: "💳", text: "Rate flexibile" }
-              ]}
             />
           </div>
         </div>

@@ -233,12 +233,6 @@ const StomatologieCopii = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Cabinet prietenos · Fără durere · Diplomă de curaj"
-              badges={[
-                { icon: "❤️", text: "Medic pedodont" },
-                { icon: "🎮", text: "Experiență plăcută" },
-                { icon: "🦷", text: "Prevenție de la 1 an" },
-                { icon: "🎁", text: "Cadouri pentru copii" }
-              ]}
               className="text-white"
             />
           </div>

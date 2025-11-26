@@ -193,12 +193,6 @@ const Parodontologie = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Tratament laser · Plan personalizat"
-              badges={[
-                { icon: "🔬", text: "Tratament cu laser diodă" },
-                { icon: "🦷", text: "Salvăm dinții" },
-                { icon: "📊", text: "Monitoring parodontal" },
-                { icon: "💚", text: "Fără durere" }
-              ]}
               className="text-white"
             />
           </div>
