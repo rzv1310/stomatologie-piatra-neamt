@@ -130,9 +130,8 @@ const Servicii = () => {
       services: [
         "Coroane și punți dentare (metal-ceramică, zirconiu)",
         "Proteze dentare mobile (totale sau parțiale)",
-        "Proteze scheletate",
-        "Lucrări pe implanturi",
-        "Proteze fixe și hibride"
+        "Proteze scheletate, fixe, hibride",
+        "Lucrări pe implanturi"
       ],
       link: "/servicii/protetica-piatra-neamt"
     },
