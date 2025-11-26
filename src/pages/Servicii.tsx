@@ -153,10 +153,8 @@ const Servicii = () => {
       services: [
         "Extracții dentare simple și complexe",
         "Molari de minte incluși",
-        "Rezecții apicale",
-        "Chistectomii",
-        "Frenectomie",
-        "Gingivectomie"
+        "Rezecții apicale, Chistectomii",
+        "Frenectomie, Gingivectomie"
       ],
       link: "/servicii/chirurgie-orala"
     },
