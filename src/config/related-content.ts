@@ -42,10 +42,10 @@ export const relatedServices: Record<string, { title: string; link: string; desc
   ],
   'implant-dentar': [
     {
-      title: "Chirurgie orală",
-      link: "/servicii/chirurgie-orala",
-      description: "Extracții și preparare pentru implant dentar",
-      anchorText: "Detalii extracții dentare pentru pregătire implant sigur"
+      title: "Parodontologie",
+      link: "/servicii/parodontologie-piatra-neamt",
+      description: "Tratament gingii sănătoase - esențial înainte de implant",
+      anchorText: "Detalii parodontologie pentru gingii sănătoase pre-implant"
     },
     {
       title: "Radiologie dentară",
@@ -148,10 +148,10 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       anchorText: "Detalii implant dentar cu planificare 3D precisă"
     },
     {
-      title: "Chirurgie orală",
-      link: "/servicii/chirurgie-orala",
-      description: "Imagistică pentru extracții complexe și măsele de minte",
-      anchorText: "Detalii extracții complexe cu imagistică 3D sigură"
+      title: "Endodonție",
+      link: "/servicii/endodontie-piatra-neamt",
+      description: "Radiografii pentru diagnosticarea precisă a canalelor radiculare",
+      anchorText: "Detalii tratament canal cu diagnostic radiologic precis"
     },
     {
       title: "Ortodonție",
@@ -188,16 +188,16 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       anchorText: "Detalii plombe pentru carii stop durere rapid"
     },
     {
-      title: "Profilaxie dentară",
-      link: "/servicii/profilaxie",
-      description: "Controale regulate și detartraj profesional",
-      anchorText: "Detalii detartraj pentru dinți curați sănătoși"
+      title: "Endodonție",
+      link: "/servicii/endodontie-piatra-neamt",
+      description: "Tratament de canal pentru carii profunde și infecții",
+      anchorText: "Detalii tratament canal pentru salvare dinte infectat"
     },
     {
-      title: "Urgențe stomatologice",
-      link: "/servicii/urgente",
-      description: "Asistență rapidă pentru dureri și probleme acute",
-      anchorText: "Detalii urgențe dentare pentru durere stop acum"
+      title: "Parodontologie",
+      link: "/servicii/parodontologie-piatra-neamt",
+      description: "Tratament pentru gingii inflamate și sângerânde",
+      anchorText: "Detalii parodontologie pentru gingii fără sângerare"
     }
   ],
   'tratament-carii': [
@@ -208,10 +208,10 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       anchorText: "Detalii tratament canal pentru salvare dinte cariat"
     },
     {
-      title: "Profilaxie dentară",
-      link: "/servicii/profilaxie",
-      description: "Prevenția cariilor prin detartraj și sigilări",
-      anchorText: "Detalii detartraj pentru prevenție carii viitoare"
+      title: "Parodontologie",
+      link: "/servicii/parodontologie-piatra-neamt",
+      description: "Sănătatea gingiilor complementară tratamentului cariilor",
+      anchorText: "Detalii parodontologie pentru sănătate orală completă"
     },
     {
       title: "Protetica dentară",
@@ -228,10 +228,10 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       anchorText: "Detalii extracție urgență pentru durere stop rapid"
     },
     {
-      title: "Tratament carii",
-      link: "/servicii/tratament-carii",
-      description: "Tratarea cariilor dureroase",
-      anchorText: "Detalii plombe urgență pentru carie dureroasă"
+      title: "Endodonție",
+      link: "/servicii/endodontie-piatra-neamt",
+      description: "Tratament de canal pentru salvarea dinților cu infecții severe",
+      anchorText: "Detalii tratament canal pentru durere stop definitiv"
     },
     {
       title: "Radiologie dentară",
