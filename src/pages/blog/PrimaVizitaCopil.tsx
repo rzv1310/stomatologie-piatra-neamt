@@ -159,7 +159,7 @@ const PrimaVizitaCopil = () => {
               </div>
 
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
-                2. Folosește jocul de rol
+                2. Folosește jocul pe roluri
               </h3>
               <p className="text-foreground mb-4">
                 Copiii învață cel mai bine prin joacă. Iată câteva idei:
@@ -167,7 +167,7 @@ const PrimaVizitaCopil = () => {
               <ul className="list-disc pl-6 mb-8 text-foreground">
                 <li>
                   <strong>Joacă-te de-a dentistul:</strong> Folosește o periuță de dinți ca să "verifici" 
-                  dinții jucăriilor sau ai părintelui
+                  dinții tăi (ai părintelui)
                 </li>
                 <li>
                   <strong>Cărți despre dentist:</strong> Citește povești cu personaje care merg la dentist 
@@ -178,7 +178,7 @@ const PrimaVizitaCopil = () => {
                   vizita la dentist
                 </li>
                 <li>
-                  <strong>Exercițiu "deschide gura mare":</strong> Fă-l un joc să vadă cine poate deschide 
+                  <strong>Exercițiu "deschide gura mare":</strong> Joacă un joc cine poate deschide 
                   gura mai mare sau mai mult timp
                 </li>
               </ul>
