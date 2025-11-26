@@ -97,24 +97,12 @@ const AlbireDentara = () => {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-muted-foreground mb-8">
-                Un zâmbet strălucitor te poate face să te simți mai încrezător și mai tânăr. Albirea dentară 
-                profesională este una dintre cele mai populare proceduri estetice dentare, oferind rezultate 
-                rapide și sigure. În acest ghid, îți prezentăm tot ce trebuie să știi despre albirea dentară 
-                în Piatra Neamț.
-              </p>
+              <p className="text-xl text-muted-foreground mb-8">Un zâmbet strălucitor te poate face să te simți mai încrezător și mai tânăr.
+Albirea dinților este una dintre cele mai populare proceduri estetice dentare, oferind rezultate rapide și sigure. În continuare îți prezentăm tot ce trebuie să știi despre albirea dentară în Piatra Neamț.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Ce este albirea dentară?</h2>
-              <p className="text-foreground mb-6">
-                Albirea dentară profesională este un tratament care folosește agenți de albire cu concentrație 
-                controlată pentru a elimina petele și decolorările de pe suprafața dinților. Spre deosebire de 
-                produsele casnice, tratamentele profesionale sunt mai puternice, mai rapide și se fac sub 
-                supravegherea medicului dentist.
-              </p>
-              <p className="text-foreground mb-6">
-                Procedura este sigură, eficientă și poate îmbunătăți culoarea dinților cu 6-8 nuanțe în funcție 
-                de culoarea inițială și de tipul de decolorare.
-              </p>
+              <p className="text-foreground mb-6">Albirea dentară profesională este un tratament care folosește agenți de albire cu concentrație controlată pentru a elimina petele și decolorările de pe suprafața dinților. Spre deosebire de produsele casnice, tratamentele profesionale sunt mai puternice, mai rapide și se fac sub supravegherea medicului stomatolog.</p>
+              <p className="text-foreground mb-6">Procedura este sigură, eficientă și poate îmbunătăți culoarea dinților cu 6-8 nuanțe, în funcție de culoarea inițială și de tipul de decolorare.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Metode disponibile</h2>
               
@@ -126,10 +114,10 @@ const AlbireDentara = () => {
                 ridicată direct pe dinți, iar procesul poate fi accelerat cu lumină LED sau laser.
               </p>
               <ul className="list-disc pl-6 mb-6 text-foreground">
-                <li>Durată: 60-90 minute</li>
+                <li>Durată: aprox. 60 minute</li>
                 <li>Rezultate: imediate, vizibile după o singură ședință</li>
-                <li>Ideal pentru: persoane care doresc rezultate rapide pentru un eveniment special</li>
-                <li>Preț orientativ: 800-1500 lei</li>
+                <li>Ideal pentru persoanele care doresc rezultate rapide, pentru un eveniment special</li>
+                <li>Preț orientativ: 700-1000 lei</li>
               </ul>
 
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
@@ -142,7 +130,7 @@ const AlbireDentara = () => {
               <ul className="list-disc pl-6 mb-6 text-foreground">
                 <li>Durată tratament: 1-2 săptămâni</li>
                 <li>Rezultate: graduale, dar de lungă durată</li>
-                <li>Ideal pentru: persoane care preferă tratament în ritmul lor</li>
+                <li>Ideal pentru persoane care preferă tratament în ritmul lor</li>
                 <li>Preț orientativ: 600-1200 lei (include gutierele și gelul)</li>
               </ul>
 
@@ -198,9 +186,7 @@ const AlbireDentara = () => {
                 *Prețurile afișate sunt orientative. La consultație vei primi un plan de tratament detaliat cu costul exact pentru situația ta.
               </p>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Cine este candidat potrivit pentru albirea dentară?
-              </h2>
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Ești candidat potrivit pentru albirea dentară?</h2>
               <p className="text-foreground mb-4">
                 Albirea dentară este potrivită pentru majoritatea adulților cu dinți și gingii sănătoase. 
                 Răspunde cel mai bine la:
@@ -210,10 +196,7 @@ const AlbireDentara = () => {
                 <li>Pete de la cafea, ceai, vin roșu sau tutun</li>
                 <li>Decolorări superficiale sau moderate</li>
               </ul>
-              <p className="text-foreground mb-6">
-                Nu este recomandată pentru femei însărcinate sau care alăptează, persoane cu carii netratate, 
-                bolnavii parodontale active sau sensibilitate dentară severă.
-              </p>
+              <p className="text-foreground mb-6">Nu este recomandată pentru femei însărcinate sau care alăptează, persoane cu carii netratate, cu boli parodontale active sau cu sensibilitate dentară severă.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Cum te pregătești pentru albirea dinților?</h2>
               <ol className="list-decimal pl-6 mb-6 text-foreground">
@@ -229,8 +212,7 @@ const AlbireDentara = () => {
                   <strong>Tratarea problemelor existente:</strong> Orice carie sau problemă gingivală trebuie 
                   rezolvată înainte de albire.
                 </li>
-                <li className="mb-3">
-                  <strong>Înțelegerea procesului:</strong> Îți explicăm ce să te aștepți, cât durează și cum 
+                <li className="mb-3">Procedura: Îți explicăm cât durează și cum să îți întreții rezultatele.<strong>Procedura:</strong> Îți explicăm ce să te aștepți, cât durează și cum 
                   să îți întreții rezultatele.
                 </li>
               </ol>
@@ -244,12 +226,12 @@ const AlbireDentara = () => {
                 Pentru a menține rezultatele cât mai mult timp:
               </p>
               <ul className="list-disc pl-6 mb-6 text-foreground">
-                <li>Evită alimentele și băuturile colorante în primele 48 de ore</li>
+                <li>Evită alimentele și băuturile colorate în primele 48 de ore</li>
                 <li>Limitează consumul de cafea, ceai și vin roșu</li>
-                <li>Nu fuma (sau cel puțin încearcă să reduci)</li>
+                <li>Nu fuma (sau cel puțin încearcă să reduci fumatul)</li>
                 <li>Menține o igienă orală riguroasă</li>
                 <li>Fă detartraj profesional la 6 luni</li>
-                <li>Vino pentru</li>
+                <li>Vino pentru retușuri periodice (la 1-2 ani)</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Întrebări frecvente</h2>
