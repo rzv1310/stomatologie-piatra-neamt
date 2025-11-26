@@ -145,6 +145,7 @@ const ImplantDentar = () => {
                 href: "tel:+40333630005"
               }}
               microcopy="✓ Consultație gratuită · Răspuns în 30 min · Plată în rate"
+              align="left"
             />
           </div>
         </div>

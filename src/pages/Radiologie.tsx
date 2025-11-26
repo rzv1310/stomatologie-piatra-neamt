@@ -176,6 +176,7 @@ const Radiologie = () => {
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · CBCT 3D disponibil · Radiații minime"
               className="text-white"
+              align="left"
             />
           </div>
         </div>
