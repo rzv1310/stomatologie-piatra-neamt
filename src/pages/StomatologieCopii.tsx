@@ -13,6 +13,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 
 const StomatologieCopii = () => {
   const ServiceMeta = useServiceMeta({
@@ -223,11 +224,8 @@ const StomatologieCopii = () => {
             <p className="text-xl mb-8 text-white">
               Pedodonție cu dragoste și răbdare. Transformăm vizita la dentist într-o aventură plăcută pentru cei mici. Prima vizită fără frică, zâmbete sănătoase pe viață.
             </p>
-            <CTAWithTrust
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+            <HeroContactBox
               microcopy="✓ Cabinet prietenos · Fără durere · Diplomă de curaj"
-              className="text-white"
-              align="left"
             />
           </div>
         </div>

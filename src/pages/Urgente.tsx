@@ -13,6 +13,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Urgente = () => {
   const ServiceMeta = useServiceMeta({
@@ -218,19 +219,11 @@ const Urgente = () => {
             <p className="text-xl mb-8 text-white">
               Durerea de dinți nu așteaptă. Nici noi. Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8">
-              <div className="flex items-center gap-3 mb-3">
-                <Clock className="h-6 w-6 text-accent" />
-                <span className="text-lg font-semibold">Program urgențe</span>
-              </div>
-              <p className="text-lg mb-4 text-white">Luni-Vineri: 8:00 - 20:00</p>
-              <a href="tel:+40333630005">
-                <Button size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90">
-                  <Phone className="mr-2 h-6 w-6" />
-                  Sună ACUM - 0333 630 005
-                </Button>
-              </a>
-            </div>
+            <HeroContactBox
+              title="Program urgențe"
+              subtitle="Luni-Vineri: 8:00 - 20:00"
+              microcopy="✓ Răspuns rapid · Disponibili acum · Urgențe stomatologice"
+            />
           </div>
         </div>
       </section>

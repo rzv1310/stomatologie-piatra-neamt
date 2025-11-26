@@ -13,6 +13,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Chirurgie = () => {
   const ServiceMeta = useServiceMeta({
@@ -190,13 +191,8 @@ const Chirurgie = () => {
             <p className="text-xl mb-8 text-white">
               Intervenții chirurgicale dentare cu tehnologie modernă și anestezie eficientă. De la extracții simple până la chirurgie complexă - în mâini sigure.
             </p>
-            <CTAWithTrust
-              secondaryButton={{
-                text: "0333 630 005",
-                href: "tel:+40333630005"
-              }}
+            <HeroContactBox
               microcopy="✓ Consultație gratuită · Răspuns rapid · Sedare disponibilă"
-              align="left"
             />
           </div>
         </div>

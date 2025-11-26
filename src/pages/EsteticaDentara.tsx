@@ -13,6 +13,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 
 const EsteticaDentara = () => {
   const pricingData = [
@@ -161,11 +162,8 @@ const EsteticaDentara = () => {
             <p className="text-xl mb-8 text-white">
               Transformă-ți zâmbetul cu servicii de estetică dentară de top. De la albirea dinților până la fațete ceramice - realizăm zâmbetul pe care ți l-ai dorit mereu.
             </p>
-            <CTAWithTrust
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
-              microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
-              className="text-white"
-              align="left"
+            <HeroContactBox
+              microcopy="✓ Consultație gratuită · Simulare digitală · Plată în rate"
             />
           </div>
         </div>

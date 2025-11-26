@@ -7,6 +7,7 @@ import { ArrowRight, CheckCircle, Clock, Award } from "lucide-react";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 import {
   Table,
   TableBody,
@@ -132,13 +133,8 @@ const ImplantDentar = () => {
             <p className="text-xl lg:text-2xl mb-8 text-white">
               Dinți ficși în 24h - Tehnologie digitală avansată pentru rezultate perfecte și durabile
             </p>
-            <CTAWithTrust
-              secondaryButton={{
-                text: "0333 630 005",
-                href: "tel:+40333630005"
-              }}
+            <HeroContactBox
               microcopy="✓ Consultație gratuită · Răspuns în 30 min · Plată în rate"
-              align="left"
             />
           </div>
         </div>

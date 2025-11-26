@@ -13,6 +13,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Ortodontie = () => {
   const pricingData = [
@@ -216,13 +217,8 @@ const Ortodontie = () => {
             <p className="text-xl mb-8 text-white">
               Aparate dentare fixe, estetice și alignere transparente pentru un zâmbet perfect aliniat. Ortodonție pentru copii, adolescenți și adulți.
             </p>
-            <CTAWithTrust
-              secondaryButton={{
-                text: "0333 630 005",
-                href: "tel:+40333630005"
-              }}
+            <HeroContactBox
               microcopy="✓ Evaluare gratuită · Simulare digitală · Plată în rate"
-              align="left"
             />
           </div>
         </div>
