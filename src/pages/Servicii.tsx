@@ -178,7 +178,6 @@ const Servicii = () => {
         "Aparate dentare fixe (metalice, ceramice, safir)",
         "Aparate dentare mobile",
         "Invisalign / Spark / Gutieră de contenție",
-        "Gutieră de contenție",
         "Tratament ortodontic interceptiv la copii"
       ],
       link: "/servicii/ortodontie-piatra-neamt"
