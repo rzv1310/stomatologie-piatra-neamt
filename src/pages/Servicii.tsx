@@ -193,8 +193,7 @@ const Servicii = () => {
       title: "Radiologie Dentară",
       image: radiologieImg,
       services: [
-        "Radiografii retroalveolare",
-        "Radiografii bitewing",
+        "Radiografii retroalveolare / bitewing",
         "Radiografii panoramice (ORT)",
         "Tomografie Computerizată (CBCT)",
         "Imagistică digitală 3D"
