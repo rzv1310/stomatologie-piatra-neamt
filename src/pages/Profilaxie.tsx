@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const Profilaxie = () => {
   const ServiceMeta = useServiceMeta({
@@ -146,20 +147,18 @@ const Profilaxie = () => {
             <p className="text-xl mb-8 text-white">
               Prevenția este cheia unui zâmbet sănătos. Igienizarea profesională regulată te ajută să eviți problemele dentare și să păstrezi dinții sănătoși pe termen lung.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Programează-te acum
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programează-te acum", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Fără durere · Aparatură modernă · Preț fix"
+              badges={[
+                { icon: "🦷", text: "Tehnologie Air-Flow" },
+                { icon: "⚡", text: "Ședință 45 min" },
+                { icon: "✨", text: "Dinți mai albi" },
+                { icon: "💚", text: "Prevenție eficientă" }
+              ]}
+              className="text-white"
+            />
           </div>
         </div>
       </section>
@@ -311,19 +310,17 @@ const Profilaxie = () => {
             <p className="text-xl mb-8">
               Investește în sănătatea dinților tăi astăzi și evită problemele de mâine
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Programare online
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programare online", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Fără durere · Aparatură modernă · Preț fix"
+              badges={[
+                { icon: "🦷", text: "Tehnologie Air-Flow" },
+                { icon: "⚡", text: "Ședință 45 min" },
+                { icon: "✨", text: "Dinți mai albi" },
+                { icon: "💚", text: "Prevenție eficientă" }
+              ]}
+            />
           </div>
         </div>
       </section>
