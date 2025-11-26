@@ -197,7 +197,7 @@ const AlbireDentara = () => {
               </div>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Prețuri albire dentară în Piatra Neamț
+                Prețuri albire dinți în Piatra Neamț
               </h2>
               
               <Card className="border-primary/20 my-8">
