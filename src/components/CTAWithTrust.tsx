@@ -17,7 +17,7 @@ interface CTAWithTrustProps {
     href: string;
   };
   microcopy: string;
-  badges: Badge[];
+  badges?: Badge[];
   className?: string;
 }
 
@@ -25,7 +25,7 @@ export const CTAWithTrust = ({
   primaryButton = null,
   secondaryButton,
   microcopy,
-  badges,
+  badges = [],
   className = ""
 }: CTAWithTrustProps) => {
   return (
@@ -53,17 +53,19 @@ export const CTAWithTrust = ({
       </p>
 
       {/* Trust Badges */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl mt-2">
-        {badges.map((badge, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-2 justify-center text-center p-3 rounded-lg bg-background/10 backdrop-blur-sm border border-current/20"
-          >
-            <span className="text-2xl">{badge.icon}</span>
-            <span className="text-sm font-medium">{badge.text}</span>
-          </div>
-        ))}
-      </div>
+      {badges && badges.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl mt-2">
+          {badges.map((badge, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 justify-center text-center p-3 rounded-lg bg-background/10 backdrop-blur-sm border border-current/20"
+            >
+              <span className="text-2xl">{badge.icon}</span>
+              <span className="text-sm font-medium">{badge.text}</span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

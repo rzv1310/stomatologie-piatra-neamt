@@ -145,12 +145,6 @@ const ImplantDentar = () => {
                 href: "tel:+40333630005"
               }}
               microcopy="✓ Consultație gratuită · Răspuns în 30 min · Plată în rate"
-              badges={[
-                { icon: "🏆", text: "Garanție 10 ani pe implanturi" },
-                { icon: "🦷", text: "500+ implanturi realizate" },
-                { icon: "🔬", text: "Tehnologie CBCT 3D" },
-                { icon: "💳", text: "Rate fără dobândă" }
-              ]}
             />
           </div>
         </div>

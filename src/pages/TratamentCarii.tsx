@@ -147,12 +147,6 @@ const TratamentCarii = () => {
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Plombe estetice · Fără durere"
-              badges={[
-                { icon: "🦷", text: "Plombe estetice" },
-                { icon: "💉", text: "Fără durere" },
-                { icon: "⚡", text: "O ședință" },
-                { icon: "✨", text: "Rezultat natural" }
-              ]}
               className="text-white"
             />
           </div>

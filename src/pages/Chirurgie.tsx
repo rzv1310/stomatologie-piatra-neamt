@@ -203,12 +203,6 @@ const Chirurgie = () => {
                 href: "tel:+40333630005"
               }}
               microcopy="✓ Consultație gratuită · Răspuns rapid · Sedare disponibilă"
-              badges={[
-                { icon: "🏥", text: "Chirurg specialist cu experiență" },
-                { icon: "💉", text: "Anestezie locală modernă" },
-                { icon: "🔬", text: "CBCT pentru precizie maximă" },
-                { icon: "⚡", text: "Recuperare rapidă" }
-              ]}
             />
           </div>
         </div>
