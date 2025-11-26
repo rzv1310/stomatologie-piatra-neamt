@@ -5,36 +5,24 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Phone, Clock, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
-
 const AparatDentarAdulti = () => {
-  const faqs = [
-    {
-      question: "Cât durează tratamentul ortodontic la adulți?",
-      answer: "Durata medie este între 18-24 luni, dar poate varia între 12-36 luni în funcție de complexitatea cazului, tipul aparatului ales și colaborarea pacientului."
-    },
-    {
-      question: "Este dureros să porți aparat dentar la vârsta adultă?",
-      answer: "Nu este dureros, dar este posibil să simți disconfort timp de 2-3 zile după montare sau după ajustările lunare. Disconfortul este minim și poate fi gestionat cu analgezice ușoare."
-    },
-    {
-      question: "Pot să port aparat dentar dacă am lucrări protetice?",
-      answer: "Da, în majoritatea cazurilor. Evaluăm situația individual și adaptăm planul de tratament. Uneori este necesar să refacem lucrările protetice după terminarea tratamentului ortodontic."
-    },
-    {
-      question: "Cât costă un aparat dentar pentru adulți?",
-      answer: "Prețul variază în funcție de tipul aparatului: metalic (5000-8000 lei), ceramic (7000-12000 lei), Invisalign (12000-20000 lei). Costul include montarea, ajustările lunare și aparatul de menținere."
-    }
-  ];
-
+  const faqs = [{
+    question: "Cât durează tratamentul ortodontic la adulți?",
+    answer: "Durata medie este între 18-24 luni, dar poate varia între 12-36 luni în funcție de complexitatea cazului, tipul aparatului ales și colaborarea pacientului."
+  }, {
+    question: "Este dureros să porți aparat dentar la vârsta adultă?",
+    answer: "Nu este dureros, dar este posibil să simți disconfort timp de 2-3 zile după montare sau după ajustările lunare. Disconfortul este minim și poate fi gestionat cu analgezice ușoare."
+  }, {
+    question: "Pot să port aparat dentar dacă am lucrări protetice?",
+    answer: "Da, în majoritatea cazurilor. Evaluăm situația individual și adaptăm planul de tratament. Uneori este necesar să refacem lucrările protetice după terminarea tratamentului ortodontic."
+  }, {
+    question: "Cât costă un aparat dentar pentru adulți?",
+    answer: "Prețul variază în funcție de tipul aparatului: metalic (5000-8000 lei), ceramic (7000-12000 lei), Invisalign (12000-20000 lei). Costul include montarea, ajustările lunare și aparatul de menținere."
+  }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
     canonical: '/blog/aparat-dentar-adulti',
@@ -46,15 +34,12 @@ const AparatDentarAdulti = () => {
       dateModified: "2025-01-20"
     }
   });
-
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
     canonical: '/blog/aparat-dentar-adulti',
     faqs: faqs
   });
-
-  return (
-    <>
+  return <>
       {ArticleSchema}
       {FAQSchema}
       <Helmet>
@@ -65,13 +50,15 @@ const AparatDentarAdulti = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         
-        <Breadcrumbs 
-          items={[
-            { label: "Stomatologie Piatra Neamț", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Aparat Dentar Adulți" }
-          ]}
-        />
+        <Breadcrumbs items={[{
+        label: "Stomatologie Piatra Neamț",
+        href: "/"
+      }, {
+        label: "Blog",
+        href: "/blog"
+      }, {
+        label: "Aparat Dentar Adulți"
+      }]} />
         
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
@@ -89,51 +76,34 @@ const AparatDentarAdulti = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             {/* Social Share Buttons */}
             <div className="flex gap-3 mb-8">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  const url = encodeURIComponent(window.location.href);
-                  const text = encodeURIComponent("Aparat dentar pentru adulți în Piatra Neamț");
-                  window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-                }}
-              >
+              <Button variant="outline" size="sm" onClick={() => {
+              const url = encodeURIComponent(window.location.href);
+              const text = encodeURIComponent("Aparat dentar pentru adulți în Piatra Neamț");
+              window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+            }}>
                 <Share2 className="h-4 w-4 mr-2" />
                 Facebook
               </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  const url = encodeURIComponent(window.location.href);
-                  const text = encodeURIComponent("Aparat dentar pentru adulți în Piatra Neamț");
-                  window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
-                }}
-              >
+              <Button variant="outline" size="sm" onClick={() => {
+              const url = encodeURIComponent(window.location.href);
+              const text = encodeURIComponent("Aparat dentar pentru adulți în Piatra Neamț");
+              window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+            }}>
                 <Share2 className="h-4 w-4 mr-2" />
                 WhatsApp
               </Button>
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-muted-foreground mb-8">
-                Tot mai mulți adulți aleg să își corecteze dinții, fie din motive estetice, fie pentru 
-                îmbunătățirea sănătății orale. Vestea bună este că tehnologia modernă oferă multiple opțiuni 
-                de tratament ortodontic, fiecare cu avantajele ei. În acest ghid, îți prezentăm cele trei 
-                tipuri principale de aparate dentare pentru adulți și te ajutăm să alegi varianta potrivită.
-              </p>
+              <p className="text-xl text-muted-foreground mb-8">Tot mai mulți adulți aleg să își corecteze dinții, fie din motive estetice, fie pentru îmbunătățirea sănătății orale. Vestea bună este că tehnologia modernă oferă multiple opțiuni de tratament ortodontic, fiecare cu avantajele ei. În acest ghid, îți prezentăm cele 3 tipuri principale de aparate dentare pentru adulți și te ajutăm să alegi varianta potrivită.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 De ce să porți aparat dentar ca adult?
               </h2>
-              <p className="text-foreground mb-6">
-                Multe persoane cred că aparatul dentar este doar pentru copii și adolescenți, dar realitatea 
-                este că nu există o limită de vârstă pentru tratamentul ortodontic. Iată câteva motive pentru 
-                care adulții aleg să își corecteze dinții:
-              </p>
+              <p className="text-foreground mb-6">Multe persoane cred că aparatul dentar este doar pentru copii și adolescenți, dar realitatea e că nu există o limită de vârstă pentru tratamentul ortodontic. Iată câteva motive pentru care adulții aleg să își corecteze dinții:</p>
               <ul className="list-disc pl-6 mb-8 text-foreground">
                 <li>Îmbunătățirea esteticii zâmbetului și creșterea încrederii în sine</li>
-                <li>Corectarea problemelor de muscare care pot cauza dureri de cap sau probleme TMJ</li>
+                <li>Corectarea problemelor de mușcare ce pot cauza dureri de cap</li>
                 <li>Facilitarea igienei orale (dinții aliniați sunt mai ușor de curățat)</li>
                 <li>Prevenirea uzurii anormale a dinților</li>
                 <li>Pregătirea pentru tratamente protetice (implanturi, coroane)</li>
@@ -313,16 +283,14 @@ const AparatDentarAdulti = () => {
                 Întrebări frecvente despre aparatul dentar la adulți
               </h2>
               <Accordion type="single" collapsible className="mb-12">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`}>
+                {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className="text-left">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
                       {faq.answer}
                     </AccordionContent>
-                  </AccordionItem>
-                ))}
+                  </AccordionItem>)}
               </Accordion>
 
               <div className="bg-primary/5 rounded-lg p-8 mt-12">
@@ -355,8 +323,6 @@ const AparatDentarAdulti = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default AparatDentarAdulti;
