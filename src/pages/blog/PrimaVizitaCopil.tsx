@@ -321,11 +321,11 @@ const PrimaVizitaCopil = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-6 mb-12">
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <Quote className="w-8 h-8 text-primary mb-4" />
+                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
-                    "Maria avea 3 ani la prima vizită și era foarte speriată. Doamna dr Ines a fost extraordinar de răbdătoare. 
+                    Maria avea 3 ani la prima vizită și era foarte speriată. Doamna dr Ines a fost extraordinar de răbdătoare. 
                     A transformat totul într-un joc și acum, la 5 ani, ea chiar întreabă când mergem din nou la dentist! 
-                    Nu pot crede cât de mult s-a schimbat atitudinea ei."
+                    Nu pot crede cât de mult s-a schimbat atitudinea ei.
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -339,11 +339,11 @@ const PrimaVizitaCopil = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <Quote className="w-8 h-8 text-primary mb-4" />
+                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
-                    "Am un copil cu autism și ne era teamă că nu va coopera deloc. Medicul a fost extrem de înțelegător, 
+                    Am un copil cu autism și ne era teamă că nu va coopera deloc. Medicul a fost extrem de înțelegător, 
                     ne-a lăsat să facem mai multe vizite scurte doar pentru acomodare și a folosit tehnici senzoriale adaptate. 
-                    Acum merge fără probleme la control!"
+                    Acum merge fără probleme la control!
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -357,10 +357,10 @@ const PrimaVizitaCopil = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <Quote className="w-8 h-8 text-primary mb-4" />
+                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
-                    "Am mers cu fetița mea de 18 luni la Medstom. Am invățat cum să îi periăm dinții corect 
-                    și ce alimente să evităm. Recomand cu drag"
+                    Am mers cu fetița mea de 18 luni la Medstom. Am invățat cum să îi periăm dinții corect 
+                    și ce alimente să evităm. Recomand cu drag
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -374,11 +374,11 @@ const PrimaVizitaCopil = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <Quote className="w-8 h-8 text-primary mb-4" />
+                  <p className="text-primary mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
-                    "Am avut deja o experiență proastă la alt cabinet. Era traumatizat și refuza să mai meargă. 
+                    Am avut deja o experiență proastă la alt cabinet. Era traumatizat și refuza să mai meargă. 
                     Doctorița a avut o abordare atât de blândă și jucăușă încât după doar 2 vizite, frica lui Andrei a dispărut complet. 
-                    Sunt recunoscătoare pentru răbdarea lor, Mulțumesc!"
+                    Sunt recunoscătoare pentru răbdarea lor, Mulțumesc!
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
