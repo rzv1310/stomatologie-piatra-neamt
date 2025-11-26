@@ -180,11 +180,8 @@ const AparatDentarAdulti = () => {
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
                 3. Invisalign (gutiere transparente)
               </h3>
-              <p className="text-foreground mb-4">
-                Invisalign folosește gutiere transparente personalizate care se schimbă la fiecare 1-2 săptămâni. 
-                Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care doresc un 
-                tratament discret.
-              </p>
+              <p className="text-foreground mb-4">Invisalign presupune folosirea de gutiere transparente personalizate, care se schimbă la fiecare 1-2 săptămâni.
+Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care doresc un tratament discret.</p>
 
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
