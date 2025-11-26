@@ -115,7 +115,13 @@ const Servicii = () => {
       link: "/servicii/tratament-carii"
     },
     {
-      title: "Endodonție (Tratament de Canal)",
+      title: (
+        <>
+          Endodonție
+          <br />
+          <span className="text-lg font-normal">(Tratament de Canal)</span>
+        </>
+      ),
       image: endodontieImg,
       services: [
         "Tratament de canal la microscop",
