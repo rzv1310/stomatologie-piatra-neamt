@@ -116,7 +116,7 @@ const PrimaVizitaCopil = () => {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-muted-foreground mb-4">
+              <p className="text-xl text-muted-foreground mb-6">
                 Prima vizită la dentist poate părea intimidantă atât pentru copil, cât și pentru părinte. 
                 Dar, cu pregătirea potrivită, poți transforma această experiență într-un moment pozitiv care va stabili baza pentru o relație sănătoasă cu medicina dentară pe tot parcursul vieții copilului. 
                 Iată tot ce trebuie să știi pentru a pregăti copilul pentru prima vizită la dentist.
