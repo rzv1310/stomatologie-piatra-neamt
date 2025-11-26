@@ -54,7 +54,7 @@ const StomatologieGenerala = () => {
     },
     {
       title: "Tratament urgențe",
-      description: "Rezolvăm rapid durerea și problemele dentare acute - vezi <Link to=\"/servicii/urgente-dentare-piatra-neamt\" className=\"text-primary hover:underline font-medium\">urgențe dentare</Link>",
+      description: <>Rezolvăm rapid durerea și problemele dentare acute - vezi <Link to="/servicii/urgente-dentare-piatra-neamt" className="text-primary hover:underline font-medium">urgențe dentare</Link></>,
       icon: "🚨"
     }
   ];
@@ -97,7 +97,7 @@ const StomatologieGenerala = () => {
     {
       number: "04",
       title: "Curățarea sub microscop",
-      description: "Îndepărtăm țesutul infectat și curățăm canalele cu precizie sub magnificare, cu ajutor de <Link to=\"/servicii/radiologie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">radiografie dentară</Link>"
+      description: <>Îndepărtăm țesutul infectat și curățăm canalele cu precizie sub magnificare, cu ajutor de <Link to="/servicii/radiologie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">radiografie dentară</Link></>
     },
     {
       number: "05",
