@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Phone, Clock, Share2, Quote } from "lucide-react";
+import { Phone, Clock, Share2, Quote, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
@@ -85,9 +85,10 @@ const PrimaVizitaCopil = () => {
               </div>
             </div>
             <div className="mt-6">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white border border-white">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white border border-white text-lg">
                 <Link to="/tarife#pedodontie">
                   Vezi prețurile pentru copii
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
