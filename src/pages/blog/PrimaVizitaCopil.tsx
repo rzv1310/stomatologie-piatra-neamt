@@ -377,7 +377,7 @@ const PrimaVizitaCopil = () => {
                   <Quote className="w-8 h-8 text-primary mb-4" />
                   <p className="text-foreground mb-4 italic">
                     "Am avut deja o experiență proastă la alt cabinet. Era traumatizat și refuza să mai meargă. 
-                    Doctorița a avut o abordare atât de blândă și jucăușă încât după doar 2 vizite, frica lui a dispărut complet. 
+                    Doctorița a avut o abordare atât de blândă și jucăușă încât după doar 2 vizite, frica lui Andrei a dispărut complet. 
                     Sunt recunoscătoare pentru răbdarea lor, Mulțumesc!"
                   </p>
                   <div className="flex items-center gap-3">
