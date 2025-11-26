@@ -197,13 +197,6 @@ const Urgente = () => {
       {MedicalProcedureSchema}
       {FAQSchema}
       <Navigation />
-      <Breadcrumbs
-        items={[
-          { label: "Stomatologie Piatra Neamț", href: "/" },
-          { label: "Servicii", href: "/servicii" },
-          { label: "Urgențe Stomatologice" }
-        ]}
-      />
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -241,6 +234,14 @@ const Urgente = () => {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs
+        items={[
+          { label: "Stomatologie Piatra Neamț", href: "/" },
+          { label: "Servicii", href: "/servicii" },
+          { label: "Urgențe Stomatologice" }
+        ]}
+      />
 
       {/* Pricing Table */}
       <section className="py-16 bg-background">

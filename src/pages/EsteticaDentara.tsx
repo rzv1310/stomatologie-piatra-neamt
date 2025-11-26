@@ -144,13 +144,6 @@ const EsteticaDentara = () => {
       {MedicalProcedureSchema}
       {FAQSchema}
       <Navigation />
-      <Breadcrumbs
-        items={[
-          { label: "Stomatologie Piatra Neamț", href: "/" },
-          { label: "Servicii", href: "/servicii" },
-          { label: "Estetică Dentară" }
-        ]}
-      />
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -177,6 +170,14 @@ const EsteticaDentara = () => {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs
+        items={[
+          { label: "Stomatologie Piatra Neamț", href: "/" },
+          { label: "Servicii", href: "/servicii" },
+          { label: "Estetică Dentară" }
+        ]}
+      />
 
       {/* Pricing Table */}
       <section className="py-16 bg-background">

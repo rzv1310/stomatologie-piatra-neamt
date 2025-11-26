@@ -115,13 +115,6 @@ const ImplantDentar = () => {
       {MedicalProcedureSchema}
       {FAQSchema}
       <Navigation />
-      <Breadcrumbs
-        items={[
-          { label: "Stomatologie Piatra Neamț", href: "/" },
-          { label: "Servicii", href: "/servicii" },
-          { label: "Implant Dentar" }
-        ]}
-      />
 
       <main className="flex-1">
         {/* Hero */}
@@ -150,6 +143,14 @@ const ImplantDentar = () => {
           </div>
         </div>
       </section>
+
+      <Breadcrumbs
+        items={[
+          { label: "Stomatologie Piatra Neamț", href: "/" },
+          { label: "Servicii", href: "/servicii" },
+          { label: "Implant Dentar" }
+        ]}
+      />
 
       {/* Pricing Tables */}
       <section 
