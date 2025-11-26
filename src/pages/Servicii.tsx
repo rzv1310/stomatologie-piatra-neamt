@@ -240,6 +240,7 @@ const Servicii = () => {
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Echipament modern · Medici cu experiență · Confort maxim"
               align="center"
+              variant="light"
             />
           </div>
         </div>
