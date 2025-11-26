@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const EsteticaDentara = () => {
   const pricingData = [
@@ -167,20 +168,18 @@ const EsteticaDentara = () => {
             <p className="text-xl mb-8 text-white">
               Transformă-ți zâmbetul cu servicii de estetică dentară de top. De la albirea dinților până la fațete ceramice - realizăm zâmbetul pe care ți l-ai dorit mereu.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Consultație gratuită
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Consultație gratuită", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
+              badges={[
+                { icon: "✨", text: "Fațete EMAX & ceramică" },
+                { icon: "💎", text: "Albire profesională" },
+                { icon: "📸", text: "Smile Design digital" },
+                { icon: "🎨", text: "Zâmbet personalizat" }
+              ]}
+              className="text-white"
+            />
           </div>
         </div>
       </section>
@@ -385,19 +384,17 @@ const EsteticaDentara = () => {
             <p className="text-xl mb-8">
               Programează o consultație gratuită și descoperă cum putem transforma zâmbetul tău
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Consultație gratuită
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Consultație gratuită", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
+              badges={[
+                { icon: "✨", text: "Fațete EMAX & ceramică" },
+                { icon: "💎", text: "Albire profesională" },
+                { icon: "📸", text: "Smile Design digital" },
+                { icon: "🎨", text: "Zâmbet personalizat" }
+              ]}
+            />
           </div>
         </div>
       </section>

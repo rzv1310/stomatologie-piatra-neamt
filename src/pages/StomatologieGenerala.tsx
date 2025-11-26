@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const StomatologieGenerala = () => {
   const ServiceMeta = useServiceMeta({
@@ -180,20 +181,18 @@ const StomatologieGenerala = () => {
             <p className="text-xl mb-8 text-white">
               Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Salvăm dinții tăi cu tehnologie de ultimă generație.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Programează-te acum
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programează-te acum", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
+              badges={[
+                { icon: "🔬", text: "Tratamente sub microscop" },
+                { icon: "🦷", text: "Salvăm dinții tăi" },
+                { icon: "💉", text: "Anestezie fără durere" },
+                { icon: "⭐", text: "Tehnologie modernă" }
+              ]}
+              className="text-white"
+            />
           </div>
         </div>
       </section>
@@ -410,19 +409,17 @@ const StomatologieGenerala = () => {
             <p className="text-xl mb-8">
               Programează-te astăzi și beneficiază de tratamente moderne, fără durere
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Programare online
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programare online", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
+              badges={[
+                { icon: "🔬", text: "Tratamente sub microscop" },
+                { icon: "🦷", text: "Salvăm dinții tăi" },
+                { icon: "💉", text: "Anestezie fără durere" },
+                { icon: "⭐", text: "Tehnologie modernă" }
+              ]}
+            />
           </div>
         </div>
       </section>

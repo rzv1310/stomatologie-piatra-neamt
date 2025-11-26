@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const Urgente = () => {
   const ServiceMeta = useServiceMeta({
@@ -472,12 +473,16 @@ const Urgente = () => {
             <p className="text-xl mb-8">
               Nu mai suporta durerea - sună acum și te primim rapid!
             </p>
-            <a href="tel:+40333630005">
-              <Button size="lg" variant="secondary" className="text-xl px-8 py-6">
-                <Phone className="mr-3 h-7 w-7" />
-                Sună URGENT - 0333 630 005
-              </Button>
-            </a>
+            <CTAWithTrust
+              primaryButton={{ text: "Sună URGENT", href: "tel:+40333630005" }}
+              microcopy="✓ Primire rapidă · Luni-Vineri 8:00-20:00 · Durere oprită imediat"
+              badges={[
+                { icon: "🚨", text: "Urgențe non-stop" },
+                { icon: "⚡", text: "Rezolvare rapidă" },
+                { icon: "💉", text: "Anestezie eficientă" },
+                { icon: "📞", text: "Răspuns imediat" }
+              ]}
+            />
             <p className="mt-6 text-lg opacity-90">
               Disponibili Luni-Vineri 8:00-20:00
             </p>

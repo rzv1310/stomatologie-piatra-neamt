@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const Parodontologie = () => {
   const ServiceMeta = useServiceMeta({
@@ -189,20 +190,18 @@ const Parodontologie = () => {
             <p className="text-xl mb-8 text-white">
               Tratament specializat pentru sănătatea gingiilor și a osului care susține dinții. Salvăm dinții amenințați de boala parodontală prin tratamente moderne și eficiente.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Evaluare parodontală
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Evaluare parodontală", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Tratament laser · Plan personalizat"
+              badges={[
+                { icon: "🔬", text: "Tratament cu laser diodă" },
+                { icon: "🦷", text: "Salvăm dinții" },
+                { icon: "📊", text: "Monitoring parodontal" },
+                { icon: "💚", text: "Fără durere" }
+              ]}
+              className="text-white"
+            />
           </div>
         </div>
       </section>
@@ -447,19 +446,17 @@ const Parodontologie = () => {
             <p className="text-xl mb-8">
               Boala parodontală tratată timpuriu poate fi oprită. Programează o evaluare astăzi!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Evaluare parodontală
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Evaluare parodontală", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · Tratament laser · Plan personalizat"
+              badges={[
+                { icon: "🔬", text: "Tratament cu laser diodă" },
+                { icon: "🦷", text: "Salvăm dinții" },
+                { icon: "📊", text: "Monitoring parodontal" },
+                { icon: "💚", text: "Fără durere" }
+              ]}
+            />
           </div>
         </div>
       </section>

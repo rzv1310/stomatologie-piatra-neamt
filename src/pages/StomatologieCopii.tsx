@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const StomatologieCopii = () => {
   const ServiceMeta = useServiceMeta({
@@ -229,20 +230,18 @@ const StomatologieCopii = () => {
             <p className="text-xl mb-8 text-white">
               Pedodonție cu dragoste și răbdare. Transformăm vizita la dentist într-o aventură plăcută pentru cei mici. Prima vizită fără frică, zâmbete sănătoase pe viață.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Programează-ți copilul
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programează-ți copilul", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Cabinet prietenos · Fără durere · Diplomă de curaj"
+              badges={[
+                { icon: "❤️", text: "Medic pedodont" },
+                { icon: "🎮", text: "Experiență plăcută" },
+                { icon: "🦷", text: "Prevenție de la 1 an" },
+                { icon: "🎁", text: "Cadouri pentru copii" }
+              ]}
+              className="text-white"
+            />
           </div>
         </div>
       </section>
@@ -522,19 +521,17 @@ const StomatologieCopii = () => {
             <p className="text-xl mb-8">
               Programează copilul tău pentru o experiență plăcută la dentist
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Programare online
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programare online", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Cabinet prietenos · Fără durere · Diplomă de curaj"
+              badges={[
+                { icon: "❤️", text: "Medic pedodont" },
+                { icon: "🎮", text: "Experiență plăcută" },
+                { icon: "🦷", text: "Prevenție de la 1 an" },
+                { icon: "🎁", text: "Cadouri pentru copii" }
+              ]}
+            />
           </div>
         </div>
       </section>

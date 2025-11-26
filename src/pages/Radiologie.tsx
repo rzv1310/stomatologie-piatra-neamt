@@ -12,6 +12,7 @@ import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
+import { CTAWithTrust } from "@/components/CTAWithTrust";
 
 const Radiologie = () => {
   const ServiceMeta = useServiceMeta({
@@ -171,20 +172,18 @@ const Radiologie = () => {
             <p className="text-xl mb-8 text-white">
               CBCT Vatech Green X16 pentru diagnostic de precizie și planificare digitală. Vedem exact ce nu se poate vedea cu ochiul liber.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Programează investigație
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programează investigație", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · CBCT 3D disponibil · Radiații minime"
+              badges={[
+                { icon: "🔬", text: "CBCT Vatech Green X16" },
+                { icon: "📸", text: "Imagistică 3D" },
+                { icon: "⚡", text: "Rezultate instant" },
+                { icon: "🛡️", text: "Radiații 90% mai mici" }
+              ]}
+              className="text-white"
+            />
           </div>
         </div>
       </section>
@@ -443,19 +442,17 @@ const Radiologie = () => {
             <p className="text-xl mb-8">
               CBCT 3D și radiologie digitală pentru planificarea optimă a tratamentului tău
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Programare investigație
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <a href="tel:+40333630005">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                  0333 630 005
-                </Button>
-              </a>
-            </div>
+            <CTAWithTrust
+              primaryButton={{ text: "Programare investigație", href: "/contact" }}
+              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              microcopy="✓ Consultație gratuită · CBCT 3D disponibil · Radiații minime"
+              badges={[
+                { icon: "🔬", text: "CBCT Vatech Green X16" },
+                { icon: "📸", text: "Imagistică 3D" },
+                { icon: "⚡", text: "Rezultate instant" },
+                { icon: "🛡️", text: "Radiații 90% mai mici" }
+              ]}
+            />
           </div>
         </div>
       </section>
