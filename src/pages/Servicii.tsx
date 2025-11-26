@@ -227,20 +227,20 @@ const Servicii = () => {
 
       <main className="flex-1">
         {/* Hero */}
-      <section className="bg-hero py-16 lg:py-24">
+      <section className="bg-accent py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Servicii stomatologice complete în Piatra Neamț
             </h1>
-            <p className="text-xl mb-8 text-text-custom">
+            <p className="text-xl mb-8 text-white">
               De la prevenție și igienă dentară până la reabilitări complexe pe implanturi - toate serviciile într-o singură clinică modernă
             </p>
             <CTAWithTrust
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Echipament modern · Medici cu experiență · Confort maxim"
               align="center"
-              variant="light"
+              variant="dark"
             />
           </div>
         </div>
