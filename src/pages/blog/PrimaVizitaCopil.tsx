@@ -116,25 +116,15 @@ const PrimaVizitaCopil = () => {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-muted-foreground mb-4">
                 Prima vizită la dentist poate părea intimidantă atât pentru copil, cât și pentru părinte. 
-                Dar cu pregătirea potrivită, poți transforma această experiență într-un moment pozitiv care 
-                va stabili baza pentru o relație sănătoasă cu medicina dentară pe tot parcursul vieții copilului. 
+                Dar, cu pregătirea potrivită, poți transforma această experiență într-un moment pozitiv care va stabili baza pentru o relație sănătoasă cu medicina dentară pe tot parcursul vieții copilului. 
                 Iată tot ce trebuie să știi pentru a pregăti copilul pentru prima vizită la dentist.
               </p>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                De ce este importantă prima vizită la dentist?
-              </h2>
-              <p className="text-foreground mb-6">
-                Prima vizită la dentist nu este doar despre verificarea dinților - este despre crearea unei 
-                experiențe pozitive care va influența atitudinea copilului față de sănătatea orală pentru 
-                întreaga viață. Copiii care au vizite plăcute la dentist devin adulți care nu își neglijează 
-                sănătatea dentară.
-              </p>
-              <p className="text-foreground mb-8">
-                Mai mult, vizitele timpurii permit identificarea și prevenirea problemelor înainte ca acestea 
-                să devină severe și dureroase.
+              <p className="text-xl text-muted-foreground mb-8">
+                Prima vizită la dentist nu este doar despre verificarea dinților - este despre crearea unei experiențe pozitive care va influența atitudinea copilului față de sănătatea orală pentru întreaga viață. 
+                Copiii care au vizite plăcute la dentist devin adulți care nu își neglijează sănătatea dentară.
               </p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
