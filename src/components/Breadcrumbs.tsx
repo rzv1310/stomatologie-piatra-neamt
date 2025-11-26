@@ -23,7 +23,7 @@ const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
           {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
-      <nav className={`bg-background/90 backdrop-blur-md border-b border-border shadow-sm ${className || ''}`}>
+      <nav className={`bg-background/90 backdrop-blur-md border-b border-border shadow-sm animate-fade-in ${className || ''}`}>
         <div className="container mx-auto px-4 py-4">
           <ol className="flex items-center space-x-2 text-sm">
             {items.map((item, index) => (
