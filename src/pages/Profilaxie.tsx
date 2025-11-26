@@ -13,6 +13,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
+import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Profilaxie = () => {
   const ServiceMeta = useServiceMeta({
@@ -140,11 +141,8 @@ const Profilaxie = () => {
             <p className="text-xl mb-8 text-white">
               Prevenția este cheia unui zâmbet sănătos. Igienizarea profesională regulată te ajută să eviți problemele dentare și să păstrezi dinții sănătoși pe termen lung.
             </p>
-            <CTAWithTrust
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+            <HeroContactBox
               microcopy="✓ Fără durere · Aparatură modernă · Preț fix"
-              className="text-white"
-              align="left"
             />
           </div>
         </div>
