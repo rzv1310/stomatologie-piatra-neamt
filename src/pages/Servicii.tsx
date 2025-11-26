@@ -86,8 +86,7 @@ const Servicii = () => {
         "Consultație și plan de tratament",
         "Detartraj cu ultrasunete și periaj profesional",
         "Air-flow (prophy-jet)",
-        "Sigilări dentare",
-        "Fluorizare",
+        "Sigilări dentare, Fluorizare",
         "Educație și consiliere în igiena orală"
       ],
       link: "/servicii/profilaxie"
