@@ -11,6 +11,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
@@ -186,6 +195,40 @@ const AlbireDentara = () => {
                   </a>
                 </Button>
               </div>
+
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
+                Prețuri albire dentară în Piatra Neamț
+              </h2>
+              
+              <Card className="border-primary/20 my-8">
+                <CardHeader className="bg-primary/5">
+                  <CardTitle className="text-xl">Albire dentară profesională</CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="w-2/3 font-bold">Serviciu</TableHead>
+                        <TableHead className="text-right font-bold">Preț</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell>Albire dentară premium cu LAMPĂ BEYOND® POLUS® Advanced, nr. 1 în lume</TableCell>
+                        <TableCell className="text-right font-semibold text-primary">1000 lei</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell>Albire endodontică per dinte / ședință</TableCell>
+                        <TableCell className="text-right font-semibold text-primary">250 lei</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+
+              <p className="text-sm text-muted-foreground italic mb-8">
+                *Prețurile afișate sunt orientative. La consultație vei primi un plan de tratament detaliat cu costul exact pentru situația ta.
+              </p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Cine este candidat potrivit pentru albirea dentară?
