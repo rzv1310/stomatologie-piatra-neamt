@@ -25,7 +25,7 @@ const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
       </Helmet>
       <nav className={`bg-background/90 backdrop-blur-md shadow-sm ${className || ''}`}>
         <div className="container mx-auto px-4 py-4">
-          <ol className="flex items-center space-x-2 text-sm">
+          <ol className="flex items-center space-x-2 text-xs md:text-sm">
             {items.map((item, index) => (
               <li key={index} className="flex items-center">
                 {index > 0 && (
@@ -39,7 +39,7 @@ const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
                     {item.label}
                   </Link>
                 ) : (
-                  <span className="text-foreground font-medium">{item.label}</span>
+                  <span className="text-muted-foreground font-medium">{item.label}</span>
                 )}
               </li>
             ))}
