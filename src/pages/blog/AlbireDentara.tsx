@@ -99,7 +99,7 @@ const AlbireDentara = () => {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-muted-foreground mb-8">Un zâmbet strălucitor te poate face să te simți mai încrezător și mai tânăr.</p>
               
-              <p className="text-xl text-muted-foreground mb-8">Albirea dinților este una dintre cele mai populare proceduri estetice dentare, oferind rezultate rapide și sigure. În continuare îți prezentăm tot ce trebuie să știi despre albirea dentară în Piatra Neamț.</p>
+              <p className="text-xl text-muted-foreground mb-8">Albirea dinților este una dintre cele mai populare <Link to="/servicii/estetica-dentara" className="text-primary hover:underline font-medium">proceduri estetice dentare</Link>, oferind rezultate rapide și sigure. În continuare îți prezentăm tot ce trebuie să știi despre albirea dentară în Piatra Neamț.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Ce este albirea dentară?</h2>
               <p className="text-foreground mb-6">Albirea dentară profesională este un tratament care folosește agenți de albire cu concentrație controlată pentru a elimina petele și decolorările de pe suprafața dinților. Spre deosebire de produsele casnice, tratamentele profesionale sunt mai puternice, mai rapide și se fac sub supravegherea medicului stomatolog.</p>
