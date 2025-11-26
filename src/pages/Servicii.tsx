@@ -177,7 +177,7 @@ const Servicii = () => {
       services: [
         "Aparate dentare fixe (metalice, ceramice, safir)",
         "Aparate dentare mobile",
-        "Invisalign sau alte tipuri de alignere transparente",
+        "Invisalign / Spark / Gutieră de contenție",
         "Gutieră de contenție",
         "Tratament ortodontic interceptiv la copii"
       ],
