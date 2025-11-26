@@ -217,7 +217,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                 <h4 className="font-bold text-foreground mb-4">Alege aparatul metalic dacă:</h4>
                 <ul className="list-disc pl-6 text-foreground">
                   <li>Ai un caz ortodontic complex</li>
-                  <li>Bugetul este o prioritate</li>
+                  <li>Prețul este o prioritate</li>
                   <li>Dorești rezultate cât mai rapide</li>
                   <li>Nu te deranjează vizibilitatea</li>
                 </ul>
