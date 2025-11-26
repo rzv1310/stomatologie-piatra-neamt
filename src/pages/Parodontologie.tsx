@@ -191,7 +191,6 @@ const Parodontologie = () => {
               Tratament specializat pentru sănătatea gingiilor și a osului care susține dinții. Salvăm dinții amenințați de boala parodontală prin tratamente moderne și eficiente.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Evaluare parodontală", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Consultație gratuită · Tratament laser · Plan personalizat"
               badges={[

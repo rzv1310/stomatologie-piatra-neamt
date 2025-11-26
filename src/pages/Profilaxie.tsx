@@ -148,7 +148,6 @@ const Profilaxie = () => {
               Prevenția este cheia unui zâmbet sănătos. Igienizarea profesională regulată te ajută să eviți problemele dentare și să păstrezi dinții sănătoși pe termen lung.
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Programează-te acum", href: "/contact" }}
               secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
               microcopy="✓ Fără durere · Aparatură modernă · Preț fix"
               badges={[

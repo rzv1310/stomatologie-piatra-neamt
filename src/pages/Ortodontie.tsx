@@ -224,10 +224,6 @@ const Ortodontie = () => {
               Aparate dentare fixe, estetice și alignere transparente pentru un zâmbet perfect aliniat. Ortodonție pentru copii, adolescenți și adulți.
             </p>
             <CTAWithTrust
-              primaryButton={{
-                text: "Programează Evaluare Gratuită",
-                href: "/contact"
-              }}
               secondaryButton={{
                 text: "0333 630 005",
                 href: "tel:+40333630005"
