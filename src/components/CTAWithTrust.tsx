@@ -49,7 +49,7 @@ export const CTAWithTrust = ({
       </div>
 
       {/* Microcopy */}
-      <p className="text-sm text-muted-foreground text-center">
+      <p className="text-sm text-center opacity-90">
         {microcopy}
       </p>
 
@@ -58,7 +58,7 @@ export const CTAWithTrust = ({
         {badges.map((badge, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 justify-center text-center p-3 rounded-lg bg-accent/50"
+            className="flex items-center gap-2 justify-center text-center p-3 rounded-lg bg-background/10 backdrop-blur-sm border border-current/20"
           >
             <span className="text-2xl">{badge.icon}</span>
             <span className="text-sm font-medium">{badge.text}</span>
