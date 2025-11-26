@@ -78,9 +78,18 @@ const PrimaVizitaCopil = () => {
             <h1 className="text-4xl lg:text-5xl font-bold text-white max-w-4xl mb-4">
               Cum pregătești copilul pentru prima vizită la dentist
             </h1>
-            <div className="flex items-center gap-2 text-white/80">
-              <Clock className="h-5 w-5" />
-              <span>10 min de citit</span>
+            <div className="flex items-center gap-4 text-white/80">
+              <div className="flex items-center gap-2">
+                <Clock className="h-5 w-5" />
+                <span>10 min de citit</span>
+              </div>
+            </div>
+            <div className="mt-6">
+              <Button asChild size="lg" variant="secondary">
+                <Link to="/tarife#pedodontie">
+                  Vezi prețurile pentru copii
+                </Link>
+              </Button>
             </div>
           </div>
         </section>

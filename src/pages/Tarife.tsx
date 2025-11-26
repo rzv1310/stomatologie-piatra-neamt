@@ -162,7 +162,11 @@ const Tarife = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto space-y-12">
             {priceCategories.map((category, index) => (
-              <Card key={index} className="border-primary/20">
+              <Card 
+                key={index} 
+                className="border-primary/20"
+                id={category.title === "Pedodonție - stomatologie copii" ? "pedodontie" : undefined}
+              >
                 <CardHeader className="bg-section-alt">
                   <CardTitle className="text-2xl text-heading">{category.title}</CardTitle>
                 </CardHeader>
