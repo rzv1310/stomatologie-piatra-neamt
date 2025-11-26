@@ -5,45 +5,26 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Phone, Clock, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
-
 const AlbireDentara = () => {
-  const faqs = [
-    {
-      question: "Cât durează efectul albirii dentare?",
-      answer: "Cu îngrijire corespunzătoare, rezultatele albirii profesionale pot dura între 1-3 ani. Durata depinde de obiceiurile alimentare, igiena dentară și consumul de substanțe colorante precum cafeaua, ceaiul sau vinul roșu."
-    },
-    {
-      question: "Albirea dăunează smalțului?",
-      answer: "Albirea profesională făcută sub supraveghere medicală este sigură și nu dăunează smalțului. Folosim concentrații controlate de agent de albire și tehnici aprobate medical care protejează structura dinților."
-    },
-    {
-      question: "Pot albi dinții dacă am sensibilitate dentară?",
-      answer: "Da, însă este important să discutăm despre sensibilitatea ta înainte de tratament. Putem adapta protocolul de albire și putem folosi produse desensibilizante pentru a minimiza disconfortul."
-    },
-    {
-      question: "Toți dinții se albesc la fel?",
-      answer: "Nu, decolorările de pe dinții naturali răspund foarte bine la albire, dar coroana dentară, plombele și fațetele nu își schimbă culoarea. De aceea, evaluăm întâi situația și discutăm așteptările realiste."
-    }
-  ];
-
+  const faqs = [{
+    question: "Cât durează efectul albirii dentare?",
+    answer: "Cu îngrijire corespunzătoare, rezultatele albirii profesionale pot dura între 1-3 ani. Durata depinde de obiceiurile alimentare, igiena dentară și consumul de substanțe colorante precum cafeaua, ceaiul sau vinul roșu."
+  }, {
+    question: "Albirea dăunează smalțului?",
+    answer: "Albirea profesională făcută sub supraveghere medicală este sigură și nu dăunează smalțului. Folosim concentrații controlate de agent de albire și tehnici aprobate medical care protejează structura dinților."
+  }, {
+    question: "Pot albi dinții dacă am sensibilitate dentară?",
+    answer: "Da, însă este important să discutăm despre sensibilitatea ta înainte de tratament. Putem adapta protocolul de albire și putem folosi produse desensibilizante pentru a minimiza disconfortul."
+  }, {
+    question: "Toți dinții se albesc la fel?",
+    answer: "Nu, decolorările de pe dinții naturali răspund foarte bine la albire, dar coroana dentară, plombele și fațetele nu își schimbă culoarea. De aceea, evaluăm întâi situația și discutăm așteptările realiste."
+  }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
     canonical: '/blog/albire-dentara',
@@ -55,15 +36,12 @@ const AlbireDentara = () => {
       dateModified: "2025-01-20"
     }
   });
-
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
     canonical: '/blog/albire-dentara',
     faqs: faqs
   });
-
-  return (
-    <>
+  return <>
       {ArticleSchema}
       {FAQSchema}
       <Helmet>
@@ -74,13 +52,15 @@ const AlbireDentara = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         
-        <Breadcrumbs 
-          items={[
-            { label: "Stomatologie Piatra Neamț", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Albire Dentară" }
-          ]}
-        />
+        <Breadcrumbs items={[{
+        label: "Stomatologie Piatra Neamț",
+        href: "/"
+      }, {
+        label: "Blog",
+        href: "/blog"
+      }, {
+        label: "Albire Dentară"
+      }]} />
         
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
@@ -98,27 +78,19 @@ const AlbireDentara = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             {/* Social Share Buttons */}
             <div className="flex gap-3 mb-8">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  const url = encodeURIComponent(window.location.href);
-                  const text = encodeURIComponent("Albire dentară profesională în Piatra Neamț");
-                  window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-                }}
-              >
+              <Button variant="outline" size="sm" onClick={() => {
+              const url = encodeURIComponent(window.location.href);
+              const text = encodeURIComponent("Albire dentară profesională în Piatra Neamț");
+              window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+            }}>
                 <Share2 className="h-4 w-4 mr-2" />
                 Facebook
               </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  const url = encodeURIComponent(window.location.href);
-                  const text = encodeURIComponent("Albire dentară profesională în Piatra Neamț");
-                  window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
-                }}
-              >
+              <Button variant="outline" size="sm" onClick={() => {
+              const url = encodeURIComponent(window.location.href);
+              const text = encodeURIComponent("Albire dentară profesională în Piatra Neamț");
+              window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+            }}>
                 <Share2 className="h-4 w-4 mr-2" />
                 WhatsApp
               </Button>
@@ -132,9 +104,7 @@ const AlbireDentara = () => {
                 în Piatra Neamț.
               </p>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Ce este albirea dentară profesională?
-              </h2>
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Ce este albirea dentară?</h2>
               <p className="text-foreground mb-6">
                 Albirea dentară profesională este un tratament care folosește agenți de albire cu concentrație 
                 controlată pentru a elimina petele și decolorările de pe suprafața dinților. Spre deosebire de 
@@ -146,9 +116,7 @@ const AlbireDentara = () => {
                 de culoarea inițială și de tipul de decolorare.
               </p>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Metode de albire dentară disponibile
-              </h2>
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Metode disponibile</h2>
               
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
                 1. Albire în cabinet (chairside bleaching)
@@ -247,9 +215,7 @@ const AlbireDentara = () => {
                 bolnavii parodontale active sau sensibilitate dentară severă.
               </p>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Cum te pregătești pentru albirea dentară?
-              </h2>
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Cum te pregătești pentru albirea dinților?</h2>
               <ol className="list-decimal pl-6 mb-6 text-foreground">
                 <li className="mb-3">
                   <strong>Consultație inițială:</strong> Evaluăm starea dinților și a gingiilor, discutăm 
@@ -269,9 +235,7 @@ const AlbireDentara = () => {
                 </li>
               </ol>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Ce să te aștepți după tratament?
-              </h2>
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">La ce să te aștepți după tratament?</h2>
               <p className="text-foreground mb-4">
                 După albire, este normal să experimentezi o ușoară sensibilitate dentară timp de 24-48 de ore. 
                 Aceasta dispare de obicei rapid și poate fi gestionată cu pastă de dinți pentru sensibilitate.
@@ -288,20 +252,16 @@ const AlbireDentara = () => {
                 <li>Consideră retușuri periodice (la 1-2 ani)</li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-                Întrebări frecvente despre albirea dentară
-              </h2>
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Întrebări frecvente</h2>
               <Accordion type="single" collapsible className="mb-12">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`}>
+                {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className="text-left">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
                       {faq.answer}
                     </AccordionContent>
-                  </AccordionItem>
-                ))}
+                  </AccordionItem>)}
               </Accordion>
 
               <div className="bg-primary/5 rounded-lg p-8 mt-12">
@@ -334,8 +294,6 @@ const AlbireDentara = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default AlbireDentara;
