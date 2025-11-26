@@ -213,8 +213,7 @@ Albirea dinților este una dintre cele mai populare proceduri estetice dentare, 
                   rezolvată înainte de albire.
                 </li>
                 <li className="mb-3">
-                  <strong>Procedura:</strong> Îți explicăm ce să te aștepți, cât durează și cum 
-                  să îți întreții rezultatele.
+                  <strong>Procedura:</strong> Îți explicăm cât durează și cum să îți întreții rezultatele.
                 </li>
               </ol>
 
