@@ -43,7 +43,7 @@ const Urgente = () => {
     },
     {
       title: "Infecții și abcese",
-      description: "Umflături faciale, febră, infecții care se răspândesc",
+      description: "Umflături faciale, febră, infecții care se răspândesc, necesită <Link to=\"/servicii/chirurgie-orala-piatra-neamt\" className=\"text-primary hover:underline font-medium\">chirurgie orală</Link>",
       icon: "🔴",
       severity: "Foarte urgent"
     },
@@ -80,14 +80,14 @@ const Urgente = () => {
     },
     {
       problem: "Durere acută de dinți",
-      steps: [
-        "Luați un analgezic (ibuprofen 400mg sau paracetamol)",
-        "Clătiți gura cu apă călduță sărată",
-        "Aplicați o compresă rece pe obraz dacă e umflat",
-        "Evitați alimentele foarte calde, reci sau dulci",
-        "Nu puneți aspirină direct pe gingie - arde țesuturile!",
-        "Sunați urgent pentru programare"
-      ]
+       steps: [
+         "Luați un analgezic (ibuprofen 400mg sau paracetamol)",
+         "Clătiți gura cu apă călduță sărată",
+         "Aplicați o compresă rece pe obraz dacă e umflat",
+         "Evitați alimentele foarte calde, reci sau dulci",
+         "Nu puneți aspirină direct pe gingie - arde țesuturile!",
+         "Sunați urgent pentru programare - poate fi nevoie de <Link to=\"/servicii/stomatologie-generala\" className=\"text-primary hover:underline font-medium\">tratament de canal</Link>"
+       ]
     },
     {
       problem: "Dinte spart sau fracturat",
@@ -145,7 +145,7 @@ const Urgente = () => {
   const faqs = [
     {
       question: "Ce fac dacă am durere de dinți noaptea?",
-      answer: "Pentru durere acută nocturnă: luați un analgezic (ibuprofen 400mg), clătiți cu apă călduță sărată, stați cu capul ridicat pe 2 perne. Aplicați compresă rece pe obraz 15 minute. Sunați-ne dimineață pentru programare de urgență în aceeași zi."
+      answer: "Pentru durere acută nocturnă: luați un analgezic (ibuprofen 400mg), clătiți cu apă călduță sărată, stați cu capul ridicat pe 2 perne. Aplicați compresă rece pe obraz 15 minute. Sunați-ne dimineață pentru programare de urgență în aceeași zi. Dacă durerea persistă, poate fi necesară <Link to=\"/servicii/radiologie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">radiografie CBCT</Link>."
     },
     {
       question: "Cât costă o vizită de urgență?",

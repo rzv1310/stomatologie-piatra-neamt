@@ -36,7 +36,7 @@ const Chirurgie = () => {
   const surgicalServices = [
     {
       title: "Extracții dentare",
-      description: "Extracții simple și complexe, inclusiv molari de minte incluși",
+      description: "Extracții simple și complexe, inclusiv molari de minte incluși. Pentru cazuri complexe vezi <Link to=\"/servicii/implant-dentar-piatra-neamt\" className=\"text-primary hover:underline font-medium\">implanturi dentare</Link>",
       icon: "🦷"
     },
     {
@@ -289,7 +289,7 @@ const Chirurgie = () => {
               </p>
               <ul className="list-disc list-inside space-y-2">
                 <li>Sală de chirurgie dedicată cu protocoale stricte de sterilizare</li>
-                <li>Radiografie 3D CBCT pentru planificare precisă a intervențiilor</li>
+                <li><Link to="/servicii/radiologie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">Radiografii 3D CBCT</Link> pentru planificare precisă a intervențiilor</li>
                 <li>Anestezie modernă pentru proceduri complet nedureroase</li>
                 <li>Tehnici minim invazive pentru recuperare rapidă</li>
                 <li>Echipă de chirurgi cu experiență vastă în chirurgie orală</li>
@@ -369,7 +369,7 @@ const Chirurgie = () => {
             </h2>
             <div className="mb-8 text-center">
               <p className="text-lg text-text-custom">
-                Molarii de minte (al treilea molar) sunt ultimii dinți care erup, de obicei între 17-25 de ani. În multe cazuri, aceștia cauzează probleme și necesită extracție.
+                Molarii de minte (al treilea molar) sunt ultimii dinți care erup, de obicei între 17-25 de ani. În multe cazuri, aceștia cauzează probleme și necesită extracție. Citește mai multe despre <Link to="/blog/maseaua-de-minte" className="text-primary hover:underline font-medium">măselei de minte</Link>.
               </p>
             </div>
             {wisdomTeethInfo.map((info, index) => (

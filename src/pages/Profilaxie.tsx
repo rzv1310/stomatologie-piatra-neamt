@@ -76,15 +76,15 @@ const Profilaxie = () => {
   const faqs = [
     {
       question: "Cât de des ar trebui să fac o igienizare profesională?",
-      answer: "Recomandăm o igienizare profesională la fiecare 6 luni pentru menținerea unei sănătăți orale optime. Pacienții cu risc crescut de boli parodontale sau acumulare rapidă de tartru pot necesita controale la 3-4 luni."
+      answer: "Recomandăm o igienizare profesională la fiecare 6 luni pentru menținerea unei sănătăți orale optime. Pacienții cu risc crescut de boli parodontale sau acumulare rapidă de tartru pot necesita controale la 3-4 luni. Dacă este nevoie de <Link to=\"/servicii/stomatologie-generala\" className=\"text-primary hover:underline font-medium\">tratament de canal</Link>, îl recomandăm înainte de igienizare."
     },
     {
       question: "Este dureroasă procedura de detartraj?",
       answer: "Detartrajul cu ultrasunete este în general nedureros. Dacă aveți gingii sensibile sau inflamate, puteți simți un ușor disconfort, dar procedura este bine tolerată de majoritatea pacienților."
     },
-    {
-      question: "Cât durează o ședință de igienizare?",
-      answer: "O ședință completă de igienizare profesională durează între 45-60 de minute, în funcție de cantitatea de tartru acumulat și de starea generală a dinților."
+     {
+       question: "Cât durează o ședință de igienizare?",
+       answer: "O ședință completă de igienizare profesională durează între 45-60 de minute, în funcție de cantitatea de tartru acumulat și de starea generală a dinților. Pentru copii, vezi serviciul de <Link to=\"/servicii/stomatologie-copii-piatra-neamt\" className=\"text-primary hover:underline font-medium\">stomatologie pediatrică</Link>."
     },
     {
       question: "Pot mânca imediat după igienizare?",
@@ -201,8 +201,8 @@ const Profilaxie = () => {
               <p>
                 Profilaxia dentară reprezintă ansamblul măsurilor preventive destinate menținerii sănătății cavității orale și prevenirii apariției afecțiunilor dentare. Aceasta include igienizarea profesională, detartrajul, fluorizarea și educația pentru igiena orală corespunzătoare.
               </p>
-              <p>
-                Chiar dacă îți perezi dinții zilnic și folosești ață dentară, există zone greu accesibile unde se poate acumula placa bacteriană și tartrul. Igienizarea profesională îndepărtează aceste depozite și previne dezvoltarea cariilor și a bolilor parodontale.
+               <p>
+                 Chiar dacă îți perezi dinții zilnic și folosești ață dentară, există zone greu accesibile unde se poate acumula placa bacteriană și tartrul. Igienizarea profesională îndepărtează aceste depozite și previne dezvoltarea cariilor și a <Link to="/servicii/parodontologie-piatra-neamt" className="text-primary hover:underline font-medium">bolii parodontale</Link>.
               </p>
               <p>
                 La Medstom folosim tehnologie modernă, inclusiv ultrasunete și Air-Flow, pentru o curățare eficientă și delicată, care protejează smalțul dinților și asigură rezultate durabile.

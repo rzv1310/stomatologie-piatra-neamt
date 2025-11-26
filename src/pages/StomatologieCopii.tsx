@@ -40,13 +40,13 @@ const StomatologieCopii = () => {
       icon: "🛡️"
     },
     {
-      title: "Fluorizări",
-      description: "Tratamente preventive pentru întărirea smalțului și prevenirea cariilor",
+       title: "Fluorizări",
+       description: "Tratamente preventive pentru întărirea smalțului și prevenirea cariilor, parte din <Link to=\"/servicii/profilaxie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">profilaxie profesională</Link>",
       icon: "💧"
     },
     {
       title: "Tratarea cariilor",
-      description: "Plombe delicate și nedureroase pentru dinții de lapte și permanenți",
+      description: "Plombe delicate și nedureroase pentru <Link to=\"/servicii/tratament-carii-piatra-neamt\" className=\"text-primary hover:underline font-medium\">tratamentul cariilor</Link> la dinții de lapte și permanenți",
       icon: "🦷"
     },
     {
@@ -155,7 +155,7 @@ const StomatologieCopii = () => {
   const faqs = [
     {
       question: "La ce vârstă trebuie să aduc copilul la prima vizită?",
-      answer: "Primul control la dentist se recomandă la apariția primului dinte sau cel târziu la vârsta de 1 an. Această vizită timpurie ajută copilul să se obișnuiască cu cabinetul dentar și permite depistarea precoce a problemelor."
+      answer: "Primul control la dentist se recomandă la apariția primului dinte sau cel târziu la vârsta de 1 an. Această <Link to=\"/blog/prima-vizita-copil-dentist\" className=\"text-primary hover:underline font-medium\">prima vizită</Link> timpurie ajută copilul să se obișnuiască cu cabinetul dentar și permite depistarea precoce a problemelor."
     },
     {
       question: "De ce sunt importanți dinții de lapte dacă vor cădea oricum?",

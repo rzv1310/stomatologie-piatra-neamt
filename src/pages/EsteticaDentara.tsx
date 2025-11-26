@@ -43,7 +43,7 @@ const EsteticaDentara = () => {
   const treatments = [
     {
       title: "Albire dentară profesională",
-      description: "Albirea dinților cu până la 8 nuanțe mai deschis într-o singură ședință",
+      description: "<Link to=\"/blog/albire-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">Albire dentară</Link> profesională cu până la 8 nuanțe mai deschis într-o singură ședință",
       icon: "✨"
     },
     {
@@ -52,8 +52,8 @@ const EsteticaDentara = () => {
       icon: "💎"
     },
     {
-      title: "Coroane ceramice",
-      description: "Restaurări integrale din zirconiu sau ceramică pentru un aspect impecabil",
+       title: "Coroane ceramice",
+       description: "Restaurări integrale din zirconiu sau ceramică pentru un aspect impecabil, perfecte și pentru <Link to=\"/servicii/ortodontie-piatra-neamt\" className=\"text-primary hover:underline font-medium\">ortodonție invizibilă</Link>",
       icon: "👑"
     },
     {

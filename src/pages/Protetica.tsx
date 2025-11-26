@@ -49,8 +49,8 @@ const Protetica = () => {
       icon: "🦷"
     },
     {
-      title: "Lucrări pe implanturi",
-      description: "Coroane, punți și proteze fixate pe implanturi dentare",
+       title: "Lucrări pe implanturi",
+       description: "Coroane, punți și proteze fixate pe <Link to=\"/servicii/implant-dentar-piatra-neamt\" className=\"text-primary hover:underline font-medium\">implanturi dentare</Link>",
       icon: "🔩"
     }
   ];
@@ -62,7 +62,7 @@ const Protetica = () => {
     },
     {
       title: "Aspect natural",
-      description: "Lucrări protetice care imită perfect dinții naturali"
+      description: "Lucrări protetice care imită perfect dinții naturali, cu rezultate superioare pentru <Link to=\"/servicii/estetica-dentara\" className=\"text-primary hover:underline font-medium\">estetică dentară</Link>"
     },
     {
       title: "Confort maxim",
@@ -88,7 +88,7 @@ const Protetica = () => {
     {
       number: "03",
       title: "Scanare digitală 3D",
-      description: "Realizăm amprente digitale precise pentru fabricarea coroanei în laborator"
+      description: "Realizăm amprente digitale precise cu <Link to=\"/servicii/radiologie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">radiografie 3D</Link> pentru fabricarea coroanei în laborator"
     },
     {
       number: "04",
