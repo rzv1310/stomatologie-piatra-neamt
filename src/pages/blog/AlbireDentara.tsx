@@ -249,7 +249,7 @@ const AlbireDentara = () => {
                 <li>Nu fuma (sau cel puțin încearcă să reduci)</li>
                 <li>Menține o igienă orală riguroasă</li>
                 <li>Fă detartraj profesional la 6 luni</li>
-                <li>Consideră retușuri periodice (la 1-2 ani)</li>
+                <li>Vino pentru</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Întrebări frecvente</h2>
