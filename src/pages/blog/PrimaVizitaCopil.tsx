@@ -207,7 +207,7 @@ const PrimaVizitaCopil = () => {
                 <li>Asigură-te că cel mic este odihnit și hrănit (dar nu imediat înainte)</li>
                 <li>Mergi la baie înainte de a pleca</li>
                 <li>Îmbracă copilul confortabil - evită hainele strâmte sau incomode</li>
-                <li>Ia jucăria sau păturița preferată pentru confort</li>
+                <li>Ia jucăria preferată, pentru confort</li>
                 <li>Planifică să ajungi cu 10-15 minute înainte pentru a vă acomoda</li>
               </ul>
 
