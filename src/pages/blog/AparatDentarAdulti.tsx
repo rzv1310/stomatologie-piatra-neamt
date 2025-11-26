@@ -3,9 +3,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Phone, Clock, Share2 } from "lucide-react";
+import { Phone, Clock, Share2, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
@@ -243,6 +245,52 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                   <li>Îți permiți un buget mai mare</li>
                 </ul>
               </div>
+
+              <Card className="my-12 border-primary/20">
+                <CardHeader className="bg-section-alt">
+                  <CardTitle className="text-2xl">Prețuri Ortodonție - Aparate Dentare</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="text-accent font-bold">Serviciu</TableHead>
+                        <TableHead className="text-right text-accent font-bold">Preț</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell>Aparat fix brackeți metalici (per arcadă)</TableCell>
+                        <TableCell className="text-right">
+                          <span className="text-primary font-semibold">1800 lei</span>
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell>Aparat fix brackeți safir/ceramici (per arcadă)</TableCell>
+                        <TableCell className="text-right">
+                          <span className="text-primary font-semibold">2800 lei</span>
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell>Aparat Spark Advanced / Invisalign (ambele arcade)</TableCell>
+                        <TableCell className="text-right">
+                          <span className="text-primary font-semibold">22500 lei</span>
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                  <div className="mt-6 flex items-start gap-3 p-4 bg-muted/50 rounded-lg">
+                    <Info className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                    <div className="text-sm text-muted-foreground">
+                      <p className="mb-2">Prețurile sunt orientative și pot varia în funcție de complexitatea cazului. 
+                      Costul total al tratamentului include și ajustările lunare pe durata întregului tratament.</p>
+                      <Link to="/tarife" className="text-primary hover:underline font-medium">
+                        Vezi lista completă de prețuri →
+                      </Link>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 La ce să te aștepți în timpul tratamentului?
