@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Phone, AlertCircle, Clock, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import urgenteHero from "@/assets/service-urgente.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
@@ -145,7 +146,11 @@ const Urgente = () => {
   const faqs = [
     {
       question: "Ce fac dacă am durere de dinți noaptea?",
-      answer: "Pentru durere acută nocturnă: luați un analgezic (ibuprofen 400mg), clătiți cu apă călduță sărată, stați cu capul ridicat pe 2 perne. Aplicați compresă rece pe obraz 15 minute. Sunați-ne dimineață pentru programare de urgență în aceeași zi. Dacă durerea persistă, poate fi necesară <Link to=\"/servicii/radiologie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">radiografie CBCT</Link>."
+      answer: (
+        <>
+          Pentru durere acută nocturnă: luați un analgezic (ibuprofen 400mg), clătiți cu apă călduță sărată, stați cu capul ridicat pe 2 perne. Aplicați compresă rece pe obraz 15 minute. Sunați-ne dimineață pentru programare de urgență în aceeași zi. Dacă durerea persistă, poate fi necesară <Link to="/servicii/radiologie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">radiografie CBCT</Link>.
+        </>
+      )
     },
     {
       question: "Cât costă o vizită de urgență?",

@@ -1,10 +1,30 @@
 import { Helmet } from "react-helmet";
 import { SITE_URL } from "@/config/routes";
+import { ReactNode } from "react";
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: string | ReactNode;
 }
+
+// Helper function to extract text from JSX for SEO schema
+const extractTextFromNode = (node: string | ReactNode): string => {
+  if (typeof node === 'string') return node;
+  if (typeof node === 'number') return String(node);
+  if (!node) return '';
+  
+  // For React elements, we extract the text content
+  if (typeof node === 'object' && 'props' in node) {
+    const { children } = node.props || {};
+    if (!children) return '';
+    if (Array.isArray(children)) {
+      return children.map(extractTextFromNode).join(' ');
+    }
+    return extractTextFromNode(children);
+  }
+  
+  return '';
+};
 
 interface SEOSchemaProps {
   type: 'FAQPage' | 'BlogPosting' | 'MedicalProcedure' | 'WebPage';
@@ -39,7 +59,7 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
         "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.answer
+          "text": extractTextFromNode(faq.answer)
         }
       }))
     };
