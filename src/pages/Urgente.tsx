@@ -223,7 +223,7 @@ const Urgente = () => {
                 <Clock className="h-6 w-6 text-accent" />
                 <span className="text-lg font-semibold">Program urgențe</span>
               </div>
-              <p className="text-lg mb-4">Luni-Vineri: 8:00 - 20:00</p>
+              <p className="text-lg mb-4 text-white">Luni-Vineri: 8:00 - 20:00</p>
               <a href="tel:+40333630005">
                 <Button size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90">
                   <Phone className="mr-2 h-6 w-6" />
