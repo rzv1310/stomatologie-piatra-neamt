@@ -202,7 +202,7 @@ const AlbireDentara = () => {
               
               <Card className="border-primary/20 my-8">
                 <CardHeader className="bg-primary/5">
-                  <CardTitle className="text-xl">Albire dentară profesională</CardTitle>
+                  <h3 className="text-xl font-semibold">Albire dentară profesională</h3>
                 </CardHeader>
                 <CardContent className="p-0">
                   <Table>
