@@ -281,8 +281,8 @@ const PrimaVizitaCopil = () => {
                 ai eșuat ca părinte. Iată ce poți face:
               </p>
               <ul className="list-disc pl-6 mb-8 text-foreground">
-                <li>Nu certa sau pedepsește copilul - ar asocia dentistul cu ceva rău</li>
-                <li>Rămâi calm și îți arată suportul</li>
+                <li>Nu certa sau pedepsi copilul - ar asocia dentistul cu ceva rău</li>
+                <li>Rămâi calm și arată-ți suportul</li>
                 <li>Colaborează cu medicul pentru o nouă vizită de obișnuire</li>
                 <li>Continuă pregătirea acasă prin joc și povești</li>
                 <li>Fii răbdător - unii copii au nevoie de 2-3 vizite scurte pentru a se acomoda</li>
