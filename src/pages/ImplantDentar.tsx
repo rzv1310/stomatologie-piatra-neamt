@@ -130,7 +130,7 @@ const ImplantDentar = () => {
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Implant dentar în Piatra Neamț
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-white">
+            <p className="text-xl mb-8 text-white">
               Dinți ficși în 24h - Tehnologie digitală avansată pentru rezultate perfecte și durabile
             </p>
             <HeroContactBox
