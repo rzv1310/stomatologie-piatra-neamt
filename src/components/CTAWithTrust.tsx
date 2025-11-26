@@ -39,7 +39,7 @@ export const CTAWithTrust = ({
           <Link to={primaryButton.href}>{primaryButton.text}</Link>
         </Button>
         {secondaryButton && (
-          <Button asChild size="lg" variant="outline" className="text-lg">
+          <Button asChild size="lg" variant="outline" className="text-lg bg-white/10 hover:bg-white/20 border-white/30 text-white hover:text-white">
             <a href={secondaryButton.href}>
               <Phone className="mr-2 h-5 w-5" />
               {secondaryButton.text}
@@ -49,7 +49,7 @@ export const CTAWithTrust = ({
       </div>
 
       {/* Microcopy */}
-      <p className="text-sm text-center opacity-90">
+      <p className="text-sm text-center text-white opacity-90">
         {microcopy}
       </p>
 
