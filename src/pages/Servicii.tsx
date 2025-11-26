@@ -105,13 +105,7 @@ const Servicii = () => {
       link: "/servicii/estetica-dentara"
     },
     {
-      title: (
-        <>
-          Odontoterapie
-          <br />
-          <span className="text-lg font-normal">(Tratament Carii)</span>
-        </>
-      ),
+      title: "Odontoterapie (Tratament Carii)",
       image: stomatologieGeneralaImg,
       services: [
         "Obturații (plombe) fizionomice (compozit)",
@@ -121,13 +115,7 @@ const Servicii = () => {
       link: "/servicii/tratament-carii"
     },
     {
-      title: (
-        <>
-          Endodonție
-          <br />
-          <span className="text-lg font-normal">(Tratament de Canal)</span>
-        </>
-      ),
+      title: "Endodonție (Tratament de Canal)",
       image: endodontieImg,
       services: [
         "Tratament de canal la microscop",
