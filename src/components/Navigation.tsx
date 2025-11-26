@@ -19,6 +19,7 @@ const Navigation = () => {
     { name: "Urgențe stomatologice", href: "/servicii/urgente" },
     { name: "Stomatologie copii", href: "/servicii/stomatologie-copii-piatra-neamt" },
     { name: "Endodonție", href: "/servicii/endodontie-piatra-neamt" },
+    { name: "Tratament Carii", href: "/servicii/tratament-carii" },
     { name: "Estetică dentară", href: "/servicii/estetica-dentara" },
     { name: "Ortodonție", href: "/servicii/ortodontie-piatra-neamt" },
     { name: "Profilaxie", href: "/servicii/profilaxie" },
