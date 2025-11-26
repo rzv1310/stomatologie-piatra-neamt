@@ -251,8 +251,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                 Indiferent de tipul de aparat ales, tratamentul ortodontic pentru adulți urmează acești pași:
               </p>
               <ol className="list-decimal pl-6 mb-8 text-foreground space-y-3">
-                <li>
-                  <strong>Consultație și diagnostic:</strong> Evaluare completă, fotografii, radiografii și 
+                <li>Consultație și diagnostic: Evaluare completă, fotografii, radiografii și mulaje dentare pentru plan de tratament personalizat<strong>Consultație și diagnostic:</strong> Evaluare completă, fotografii, radiografii și 
                   impresii dentare pentru plan de tratament personalizat
                 </li>
                 <li>
