@@ -7,34 +7,22 @@ import { Phone, Clock, Share2, Quote, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
-
 const PrimaVizitaCopil = () => {
-  const faqs = [
-    {
-      question: "La ce vârstă ar trebui să duc copilul pentru prima dată la dentist?",
-      answer: "Recomandăm prima vizită la dentist în jurul vârstei de 1 an sau când apare primul dințișor. Controalele timpurii ajută la prevenirea problemelor și obișnuiesc copilul cu mediul cabinetului stomatologic."
-    },
-    {
-      question: "Ce se întâmplă dacă copilul plânge sau refuză să coopereze?",
-      answer: "Este perfect normal! Nu forțăm niciodată copilul. Avem răbdare, folosim tehnici de distragere a atenției și transformăm vizita într-o experiență pozitivă. Uneori sunt necesare mai multe vizite scurte pentru a câștiga încrederea."
-    },
-    {
-      question: "Trebuie să rămân cu copilul în cabinet?",
-      answer: "Pentru copiii mici (sub 3-4 ani), părintele rămâne în cabinet. Pentru cei mai mari, depinde de preferința copilului - unii se simt mai curajoși singuri, alții preferă prezența părintelui."
-    },
-    {
-      question: "Cât durează prima vizită?",
-      answer: "Prima vizită durează de obicei 20-30 de minute. Includere consultație, examinare blândă, eventual curățare ușoară și aplicare fluor. Păstrăm totul scurt și plăcut pentru a nu obosi copilul."
-    }
-  ];
-
+  const faqs = [{
+    question: "La ce vârstă ar trebui să duc copilul pentru prima dată la dentist?",
+    answer: "Recomandăm prima vizită la dentist în jurul vârstei de 1 an sau când apare primul dințișor. Controalele timpurii ajută la prevenirea problemelor și obișnuiesc copilul cu mediul cabinetului stomatologic."
+  }, {
+    question: "Ce se întâmplă dacă copilul plânge sau refuză să coopereze?",
+    answer: "Este perfect normal! Nu forțăm niciodată copilul. Avem răbdare, folosim tehnici de distragere a atenției și transformăm vizita într-o experiență pozitivă. Uneori sunt necesare mai multe vizite scurte pentru a câștiga încrederea."
+  }, {
+    question: "Trebuie să rămân cu copilul în cabinet?",
+    answer: "Pentru copiii mici (sub 3-4 ani), părintele rămâne în cabinet. Pentru cei mai mari, depinde de preferința copilului - unii se simt mai curajoși singuri, alții preferă prezența părintelui."
+  }, {
+    question: "Cât durează prima vizită?",
+    answer: "Prima vizită durează de obicei 20-30 de minute. Includere consultație, examinare blândă, eventual curățare ușoară și aplicare fluor. Păstrăm totul scurt și plăcut pentru a nu obosi copilul."
+  }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
     canonical: '/blog/prima-vizita-copil-dentist',
@@ -46,15 +34,12 @@ const PrimaVizitaCopil = () => {
       dateModified: "2025-01-20"
     }
   });
-
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
     canonical: '/blog/prima-vizita-copil-dentist',
     faqs: faqs
   });
-
-  return (
-    <>
+  return <>
       {ArticleSchema}
       {FAQSchema}
       <Helmet>
@@ -65,13 +50,15 @@ const PrimaVizitaCopil = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         
-        <Breadcrumbs 
-          items={[
-            { label: "Stomatologie Piatra Neamț", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Prima Vizită Copil" }
-          ]}
-        />
+        <Breadcrumbs items={[{
+        label: "Stomatologie Piatra Neamț",
+        href: "/"
+      }, {
+        label: "Blog",
+        href: "/blog"
+      }, {
+        label: "Prima Vizită Copil"
+      }]} />
         
         <section className="bg-accent py-20 lg:py-32">
           <div className="container mx-auto px-4">
@@ -99,27 +86,19 @@ const PrimaVizitaCopil = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             {/* Social Share Buttons */}
             <div className="flex gap-3 mb-8">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  const url = encodeURIComponent(window.location.href);
-                  const text = encodeURIComponent("Cum pregătești copilul pentru prima vizită la dentist");
-                  window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-                }}
-              >
+              <Button variant="outline" size="sm" onClick={() => {
+              const url = encodeURIComponent(window.location.href);
+              const text = encodeURIComponent("Cum pregătești copilul pentru prima vizită la dentist");
+              window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+            }}>
                 <Share2 className="h-4 w-4 mr-2" />
                 Facebook
               </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  const url = encodeURIComponent(window.location.href);
-                  const text = encodeURIComponent("Cum pregătești copilul pentru prima vizită la dentist");
-                  window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
-                }}
-              >
+              <Button variant="outline" size="sm" onClick={() => {
+              const url = encodeURIComponent(window.location.href);
+              const text = encodeURIComponent("Cum pregătești copilul pentru prima vizită la dentist");
+              window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+            }}>
                 <Share2 className="h-4 w-4 mr-2" />
                 WhatsApp
               </Button>
@@ -225,7 +204,7 @@ const PrimaVizitaCopil = () => {
                 Înainte de a pleca de acasă
               </h3>
               <ul className="list-disc pl-6 mb-8 text-foreground">
-                <li>Asigură-te că copilul este odihnit și hrănit (dar nu imediat înainte)</li>
+                <li>Asigură-te că cel mic este odihnit și hrănit (dar nu imediat înainte)</li>
                 <li>Mergi la baie înainte de a pleca</li>
                 <li>Îmbracă copilul confortabil - evită hainele strâmte sau incomode</li>
                 <li>Ia jucăria sau păturița preferată pentru confort</li>
@@ -408,16 +387,14 @@ const PrimaVizitaCopil = () => {
                 Întrebări frecvente
               </h2>
               <Accordion type="single" collapsible className="mb-12">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`}>
+                {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className="text-left">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
                       {faq.answer}
                     </AccordionContent>
-                  </AccordionItem>
-                ))}
+                  </AccordionItem>)}
               </Accordion>
 
               <div className="bg-primary/5 rounded-lg p-8 mt-12">
@@ -451,8 +428,6 @@ const PrimaVizitaCopil = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default PrimaVizitaCopil;
