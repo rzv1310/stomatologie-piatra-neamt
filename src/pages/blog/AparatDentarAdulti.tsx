@@ -187,8 +187,8 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
                 <ul className="list-disc pl-6 text-foreground">
                   <li>Practic invizibil - nimeni nu observă că porți aparat</li>
-                  <li>Removibil - poți să îl scoți când mănânci sau te speli pe dinți</li>
-                  <li>Confort maxim - fără metal, fără iritații</li>
+                  <li>Poți să îl scoți când mănânci sau te speli pe dinți</li>
+                  <li>Confort maxim, fără metal, fără iritații</li>
                   <li>Igiena orală simplificată</li>
                   <li>Poți vizualiza rezultatul final înainte de a începe tratamentul</li>
                   <li>Mai puține vizite la cabinet</li>
@@ -200,7 +200,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                 <ul className="list-disc pl-6 text-foreground">
                   <li>Cel mai scump (12000-20000 lei)</li>
                   <li>Nu este potrivit pentru toate cazurile complexe</li>
-                  <li>Necesită disciplină (trebuie purtat 20-22 ore/zi)</li>
+                  <li>Necesită disciplină (trebuie purtat 20-22 ore pe zi)</li>
                   <li>Poate fi pierdut sau deteriorat</li>
                   <li>Poate prelungi ușor durata tratamentului dacă nu este purtat corect</li>
                 </ul>
