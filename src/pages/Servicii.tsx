@@ -105,7 +105,13 @@ const Servicii = () => {
       link: "/servicii/estetica-dentara"
     },
     {
-      title: "Odontoterapie (Tratamentul Cariilor)",
+      title: (
+        <>
+          Odontoterapie
+          <br />
+          <span className="text-lg font-normal">(Tratament Carii)</span>
+        </>
+      ),
       image: stomatologieGeneralaImg,
       services: [
         "Obturații (plombe) fizionomice (compozit)",
