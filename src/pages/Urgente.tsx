@@ -396,8 +396,8 @@ const Urgente = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
               Prevenirea urgențelor dentare
             </h2>
-            <p className="text-lg text-text-custom max-w-2xl mx-auto">
-              Cea mai bună urgență este cea evitată
+            <p className="text-lg text-text-custom max-w-2xl mx-auto font-['Caveat',_cursive] text-2xl italic">
+              „Cel mai bun tratament de urgență e cel de care n-ai nevoie." - dr. Dolganiuc
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
