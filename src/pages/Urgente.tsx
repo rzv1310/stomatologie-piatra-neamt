@@ -210,7 +210,7 @@ const Urgente = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center pt-[60px] md:pt-0">
+      <section className="relative h-[60vh] min-h-[500px] flex items-center pt-[60px]">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${urgenteHero})` }}
