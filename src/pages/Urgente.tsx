@@ -293,7 +293,7 @@ const Urgente = () => {
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div className="text-4xl flex items-center justify-center w-12 h-12">{emergency.icon}</div>
-                    <span className={`px-3 py-1 rounded-full text-sm font-semibold text-white ${
+                    <span className={`px-3 py-1 rounded-full text-sm font-semibold text-white shadow-md ${
                       emergency.severity === 'Foarte urgent' 
                         ? 'bg-red-500' 
                         : emergency.severity === 'Urgent'
