@@ -38,7 +38,7 @@ const Index = () => {
     { question: "Ce înseamnă tratamentul de canal pentru dintele meu?", answer: "Înseamnă curățarea, dezinfectarea și obturarea canalelor din rădăcina dintelui atunci când nervul este inflamat sau necrozat, pentru a salva dintele de la extracție." },
     { question: "Când am nevoie de o proteză dentară?", answer: "Când lipsesc mai mulți dinți și nu se pot înlocui cu punți sau implanturi, proteza dentară te ajută să mănânci și să zâmbești din nou." },
     { question: "De ce am nevoie de adiție de os înainte de implant?", answer: "Când osul este prea subțire sau prea puțin, adiția de os reconstruiește volumul necesar pentru a susține un implant stabil." },
-    { question: "Când este absolut necesară extracția unui dinte?", answer: "Atunci când dintele este irecuperabil (cariată profund, fracturată, mobilă sever) și nu mai poate fi salvat prin alte tratamente." },
+    { question: "Când este absolut necesară extracția unui dinte?", answer: "Atunci când dintele este irecuperabil (cariată profund, fracturat, mobil sever) și nu mai poate fi salvat prin alte tratamente." },
     { question: "Ce se consideră urgență dentară?", answer: "Durerea intensă, umflăturile, abcesele, hemoragiile sau traumatismele (dinți fracturați sau scoși din alveolă) sunt situații de urgență." },
     { question: "Ce este parodontoza și cum mă afectează?", answer: "Parodontoza este o boală a țesuturilor care susțin dintele (gingie și os), ducând la mobilitatea și, în timp, pierderea dinților dacă nu este tratată." }
   ];
@@ -714,7 +714,7 @@ const Index = () => {
                     <div className="space-y-4">
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Când este absolut necesară extracția unui dinte?</h3>
-                        <p className="text-text-custom text-sm">Atunci când dintele este irecuperabil (cariată profund, fracturată, mobilă sever) și nu mai poate fi salvat prin alte tratamente.</p>
+                        <p className="text-text-custom text-sm">Atunci când dintele este irecuperabil (cariată profund, fracturat, mobil sever) și nu mai poate fi salvat prin alte tratamente.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-heading">Extracția doare?</h3>
