@@ -486,10 +486,10 @@ const Urgente = () => {
               primaryButton={{ text: "Sună URGENT", href: "tel:+40333630005" }}
               microcopy="✓ Primire rapidă · Luni-Vineri 8:00-20:00 · Durere oprită imediat"
               badges={[
-                { icon: "🚨", text: "Urgențe non-stop" },
-                { icon: "⚡", text: "Rezolvare rapidă" },
-                { icon: "💉", text: "Anestezie eficientă" },
-                { icon: "📞", text: "Răspuns imediat" }
+                { icon: "", text: "Urgențe non-stop" },
+                { icon: "", text: "Rezolvare rapidă" },
+                { icon: "", text: "Anestezie eficientă" },
+                { icon: "", text: "Răspuns imediat" }
               ]}
             />
             <p className="mt-6 text-lg text-white">
