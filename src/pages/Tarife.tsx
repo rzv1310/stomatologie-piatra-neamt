@@ -181,8 +181,8 @@ const Tarife = () => {
                     <TableBody>
                       {category.prices.map((item, idx) => (
                         <TableRow key={idx}>
-                          <TableCell className="text-text-custom">{item.service}</TableCell>
-                          <TableCell className="text-right font-semibold text-primary">{item.price}</TableCell>
+                          <TableCell className="text-foreground">{item.service}</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
                         </TableRow>
                       ))}
                     </TableBody>

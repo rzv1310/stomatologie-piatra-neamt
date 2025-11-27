@@ -172,7 +172,7 @@ const TratamentCarii = () => {
                   <TableBody>
                     {pricingData.map((item, index) => (
                       <TableRow key={index}>
-                        <TableCell className="text-text-custom">{item.service}</TableCell>
+                        <TableCell className="text-foreground">{item.service}</TableCell>
                         <TableCell className="text-right font-semibold text-accent">{item.price}</TableCell>
                       </TableRow>
                     ))}
