@@ -257,7 +257,7 @@ const Urgente = () => {
             </h2>
             <Card className="border-primary/20">
               <CardContent className="p-0">
-                <Table className="[&_td]:text-[17px] md:[&_td]:text-sm [&_th]:text-[17px] md:[&_th]:text-sm">
+                <Table className="[&_td]:text-base md:[&_td]:text-sm [&_th]:text-base md:[&_th]:text-sm">
                   <TableHeader>
                     <TableRow>
                       <TableHead className="text-heading font-semibold">Serviciu</TableHead>
