@@ -231,7 +231,7 @@ const Urgente = () => {
             <HeroContactBox
               title="Program urgențe"
               subtitle="Luni-Vineri: 8:00 - 20:00"
-              microcopy="✓ Răspuns rapid · Disponibili acum · Urgențe stomatologice"
+              microcopy="✓ Durere oprită imediat"
             />
           </div>
         </div>
