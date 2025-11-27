@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useCounter } from "@/hooks/use-counter";
 import { useState, useEffect, useRef } from "react";
@@ -489,7 +489,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Street View Image */}
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden relative group">
                 <a 
                   href="https://www.google.com/maps/@46.9336581,26.3743251,3a,75y,250.35h,91.35t/data=!3m7!1e1!3m5!1sloUopwjl8115BKiTa6d1JQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-1.3454420591669844%26panoid%3DloUopwjl8115BKiTa6d1JQ%26yaw%3D250.3481182970364!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
@@ -499,8 +499,13 @@ const Index = () => {
                   <img 
                     src={clinicLocationStreetView} 
                     alt="Vedere din stradă a Clinicii Medstom pe Strada Ana Ipătescu 9, Piatra Neamț"
-                    className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-cover"
                   />
+                  {/* Overlay indicator */}
+                  <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
+                    <Eye className="w-4 h-4" />
+                    <span>Deschide Street View</span>
+                  </div>
                 </a>
               </div>
               
