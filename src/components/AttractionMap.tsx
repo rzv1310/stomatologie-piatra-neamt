@@ -49,7 +49,7 @@ const locations = {
     coords: [46.93333, 26.36806] as [number, number],
     name: "Turnul lui Ștefan cel Mare",
     description: "Monument istoric - Face parte din Curtea Domnească",
-    distance: "~8 min de mers",
+    distance: "~8 min de mers\n~2 min cu mașina",
     googleMapsUrl: "https://maps.app.goo.gl/udGY8igXWrfXzL2G8",
     image: turnulStefanCelMare
   }
