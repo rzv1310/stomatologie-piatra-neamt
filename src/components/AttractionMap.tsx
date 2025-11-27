@@ -226,11 +226,12 @@ export const AttractionMap = () => {
               href="${location.googleMapsUrl}"
               target="_blank"
               rel="noopener noreferrer"
-              style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; margin-top: 12px; transition: transform 0.2s; min-height: 44px;"
+              style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; margin-top: 12px; transition: transform 0.2s; min-height: 44px;"
               onmouseover="this.style.transform='translateY(-2px)'"
               onmouseout="this.style.transform='translateY(0)'"
             >
-              📍 Navigare
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+              Navigare
             </a>
           </div>
         </div>
