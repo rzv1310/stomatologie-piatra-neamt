@@ -9,6 +9,7 @@ import { Phone, AlertCircle, Clock, CheckCircle, AlertTriangle } from "lucide-re
 import { Link } from "react-router-dom";
 import urgenteHero from "@/assets/service-urgente.jpg";
 import toothBrokenIcon from "@/assets/icon-tooth-broken.png";
+import toothInfectionIcon from "@/assets/icon-tooth-infection.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -48,7 +49,7 @@ const Urgente = () => {
     {
       title: "Infecții și abcese",
       description: <>Umflături faciale, febră, infecții care se răspândesc, necesită <Link to="/servicii/chirurgie-orala-piatra-neamt" className="text-primary hover:underline font-medium">chirurgie orală</Link></>,
-      icon: "🔴",
+      icon: <img src={toothInfectionIcon} alt="Infecție dentară" className="h-12 w-12" />,
       severity: "Foarte urgent"
     },
     {
