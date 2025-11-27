@@ -17,6 +17,7 @@ import serviceOrtodontie from "@/assets/service-ortodontie.jpg";
 import serviceCopii from "@/assets/service-copii.jpg";
 import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg";
 import clinicLocationStreetView from "@/assets/clinic-location-street-view.png";
+import telegondolaPiatraNeamt from "@/assets/telegondola-piatra-neamt.jpg";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
@@ -536,6 +537,21 @@ const Index = () => {
                   <MapPin className="mr-2 h-5 w-5" />
                   Deschide în Google Maps
                 </Button>
+              </a>
+            </div>
+            
+            <div className="mt-8 max-w-4xl mx-auto">
+              <a 
+                href="https://maps.app.goo.gl/8eYsT1brcL1PDwvh9" 
+                target="_blank" 
+                rel="dofollow noopener noreferrer"
+                className="block rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
+              >
+                <img 
+                  src={telegondolaPiatraNeamt} 
+                  alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii Medstom"
+                  className="w-full h-auto object-cover"
+                />
               </a>
             </div>
           </div>
