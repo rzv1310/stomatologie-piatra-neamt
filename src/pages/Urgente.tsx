@@ -376,9 +376,9 @@ const Urgente = () => {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-6 p-4 bg-primary text-white rounded-lg">
-                    <p className="font-bold text-lg mb-2 text-white">În caz de urgență severă:</p>
-                    <a href="tel:+40333630005" className="text-2xl font-bold hover:underline text-white">
+                  <div className="mt-6 p-4 bg-white rounded-lg shadow-md">
+                    <p className="font-bold text-lg mb-2 text-red-600">În caz de urgență severă:</p>
+                    <a href="tel:+40333630005" className="text-2xl font-bold hover:underline text-red-600">
                       0333 630 005
                     </a>
                   </div>
