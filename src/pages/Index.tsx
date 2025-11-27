@@ -16,6 +16,7 @@ import serviceEstetica from "@/assets/service-estetica.jpg";
 import serviceOrtodontie from "@/assets/service-ortodontie.jpg";
 import serviceCopii from "@/assets/service-copii.jpg";
 import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg";
+import clinicLocationStreetView from "@/assets/clinic-location-street-view.png";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
@@ -485,19 +486,32 @@ const Index = () => {
               Suntem la 15 minute de mers de <a href="https://ro.wikipedia.org/wiki/Gara_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Gara Piatra Neamț</a> și stația Telegondolei, precum și la 7 minute de <a href="https://ro.wikipedia.org/wiki/Turnul_clopotni%C8%9B%C4%83_al_cur%C8%9Bii_domne%C8%99ti_din_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Curtea Domnească și Turnul lui Ștefan cel Mare</a>.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localizare Medstom Clinic Piatra Neamț"
-              />
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Street View Image */}
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                <img 
+                  src={clinicLocationStreetView} 
+                  alt="Vedere din stradă a Clinicii Medstom pe Strada Ana Ipătescu 9, Piatra Neamț"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              {/* Google Maps */}
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localizare Medstom Clinic Piatra Neamț"
+                />
+              </div>
             </div>
+            
             <div className="text-center mt-6">
               <a 
                 href="https://maps.app.goo.gl/bdybD18DhPFw35fi7" 
