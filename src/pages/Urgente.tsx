@@ -295,12 +295,12 @@ const Urgente = () => {
                     <div className="text-4xl flex items-center justify-center w-12 h-12">{emergency.icon}</div>
                     <div className="flex items-center gap-2">
                       <span 
-                        className={`w-3 h-3 rounded-full border-2 ${
+                        className={`w-2 h-2 rounded-full ${
                           emergency.severity === 'Foarte urgent' 
-                            ? 'border-red-500' 
+                            ? 'bg-red-500' 
                             : emergency.severity === 'Urgent'
-                            ? 'border-orange-500'
-                            : 'border-amber-400'
+                            ? 'bg-orange-500'
+                            : 'bg-amber-400'
                         }`}
                       />
                       <span className={`text-sm font-medium ${
