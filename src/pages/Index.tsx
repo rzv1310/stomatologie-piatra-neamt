@@ -18,6 +18,7 @@ import serviceCopii from "@/assets/service-copii.jpg";
 import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg";
 import clinicLocationStreetView from "@/assets/clinic-location-street-view.png";
 import telegondolaPiatraNeamt from "@/assets/telegondola-piatra-neamt.jpg";
+import turnulStefanCelMare from "@/assets/turnul-stefan-cel-mare-piatra-neamt.webp";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
@@ -540,7 +541,7 @@ const Index = () => {
               </a>
             </div>
             
-            <div className="mt-8 max-w-4xl mx-auto">
+            <div className="mt-8 max-w-4xl mx-auto space-y-6">
               <a 
                 href="https://maps.app.goo.gl/8eYsT1brcL1PDwvh9" 
                 target="_blank" 
@@ -550,6 +551,19 @@ const Index = () => {
                 <img 
                   src={telegondolaPiatraNeamt} 
                   alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii Medstom"
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+              
+              <a 
+                href="https://maps.app.goo.gl/aR1BQTax727fJ9BV8" 
+                target="_blank" 
+                rel="dofollow noopener noreferrer"
+                className="block rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
+              >
+                <img 
+                  src={turnulStefanCelMare} 
+                  alt="Turnul lui Ștefan cel Mare din Piatra Neamț - monument istoric în apropierea clinicii Medstom"
                   className="w-full h-auto object-cover"
                 />
               </a>
