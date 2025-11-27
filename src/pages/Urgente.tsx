@@ -8,6 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Phone, AlertCircle, Clock, CheckCircle, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import urgenteHero from "@/assets/service-urgente.jpg";
+import toothBrokenIcon from "@/assets/icon-tooth-broken.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -41,7 +42,7 @@ const Urgente = () => {
     {
       title: "Traumatisme dentare",
       description: "Dinte spart, rupt, luxat sau complet ieșit din alveolă",
-      icon: <AlertTriangle className="h-8 w-8 text-red-600" />,
+      icon: <img src={toothBrokenIcon} alt="Dinte fracturat" className="h-12 w-12" />,
       severity: "Foarte urgent"
     },
     {
