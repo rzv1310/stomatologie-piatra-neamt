@@ -22,7 +22,7 @@ const locations = {
     image: clinicLocation
   },
   gara: {
-    coords: [46.9274, 26.3615] as [number, number],
+    coords: [46.92752, 26.36079] as [number, number],
     name: "Gara Piatra Neamț",
     description: "Stație de tren",
     distance: "~4 min cu mașina",
