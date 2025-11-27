@@ -6,6 +6,7 @@ import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg';
 import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.webp';
 import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png';
 import garaPiatraNeamt from '@/assets/gara-piatra-neamt.png';
+import muzeuIstorie from '@/assets/muzeu-istorie-piatra-neamt.jpg';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -54,6 +55,14 @@ const locations = {
     distance: "~8 min de mers\n~2 min cu mașina",
     googleMapsUrl: "https://maps.app.goo.gl/udGY8igXWrfXzL2G8",
     image: turnulStefanCelMare
+  },
+  muzeu: {
+    coords: [46.9324, 26.3678] as [number, number],
+    name: "Muzeul de Istorie și Arheologie Piatra-Neamț",
+    description: "Muzeu istoric",
+    distance: "~3 min cu mașina",
+    googleMapsUrl: "https://maps.app.goo.gl/msDyGD73KMtg5JJKA",
+    image: muzeuIstorie
   }
 };
 
