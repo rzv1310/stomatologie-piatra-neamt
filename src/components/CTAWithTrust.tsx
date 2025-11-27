@@ -11,6 +11,8 @@ interface CTAWithTrustProps {
   primaryButton?: {
     text: string;
     href: string;
+    className?: string;
+    showIcon?: boolean;
   } | null;
   secondaryButton?: {
     text: string;
@@ -37,8 +39,11 @@ export const CTAWithTrust = ({
       {/* Butoane CTA */}
       <div className={`flex flex-col sm:flex-row gap-4 ${align === 'left' ? 'justify-start' : 'justify-center'}`}>
         {primaryButton && (
-          <Button asChild size="lg" className="text-lg">
-            <Link to={primaryButton.href}>{primaryButton.text}</Link>
+          <Button asChild size="lg" className={`text-lg ${primaryButton.className || ''}`}>
+            <Link to={primaryButton.href}>
+              {primaryButton.showIcon && <Phone className="mr-2 h-5 w-5" />}
+              {primaryButton.text}
+            </Link>
           </Button>
         )}
         {secondaryButton && (

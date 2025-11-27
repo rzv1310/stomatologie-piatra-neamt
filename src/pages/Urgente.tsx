@@ -483,7 +483,12 @@ const Urgente = () => {
               Nu mai suporta durerea - sună acum și te primim rapid!
             </p>
             <CTAWithTrust
-              primaryButton={{ text: "Sună URGENT", href: "tel:+40333630005" }}
+              primaryButton={{ 
+                text: "Sună URGENT", 
+                href: "tel:+40333630005",
+                className: "bg-white hover:bg-white/90 text-accent font-bold",
+                showIcon: true
+              }}
               microcopy="✓ Primire rapidă · Luni-Vineri 8:00-20:00 · Durere oprită imediat"
               badges={[
                 { icon: "", text: "Urgențe non-stop" },
