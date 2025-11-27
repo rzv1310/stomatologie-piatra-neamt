@@ -84,7 +84,7 @@ const Index = () => {
       description: "Fațete ceramice și albire profesională pentru zâmbetul perfect",
       link: "/servicii/estetica-dentara",
       image: serviceEstetica,
-      anchorText: "Estetică dentară pentru zâmbet strălucitor"
+      anchorText: "Cum poți avea un zâmbet strălucitor"
     },
     {
       title: "Ortodonție",
