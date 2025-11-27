@@ -327,7 +327,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                     <AccordionTrigger className="text-left">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
+                    <AccordionContent>
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>)}

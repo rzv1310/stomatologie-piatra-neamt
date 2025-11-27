@@ -456,7 +456,7 @@ const Ortodontie = () => {
                   <AccordionTrigger className="text-left text-lg font-semibold hover:text-accent">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-text-custom pt-2">
+                  <AccordionContent className="pt-2">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

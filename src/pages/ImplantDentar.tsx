@@ -452,7 +452,7 @@ const ImplantDentar = () => {
                   <AccordionTrigger className="text-left text-heading hover:text-primary">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-text-custom">
+                  <AccordionContent>
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
