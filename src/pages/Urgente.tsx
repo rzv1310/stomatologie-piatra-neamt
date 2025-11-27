@@ -444,7 +444,7 @@ const Urgente = () => {
                 <div className="mb-4 flex justify-center">
                   <img src={painManagementIcon} alt="Management al durerii" className="h-16 w-16 brightness-0 invert" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-white">Management al durerii</h3>
+                <h3 className="text-xl font-semibold mb-3 text-white">Managementul durerii</h3>
                 <p className="opacity-90 text-white">Îți administrăm analgezice eficiente și tratament nedureros</p>
               </div>
             </div>
