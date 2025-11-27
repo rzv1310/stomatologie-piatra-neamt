@@ -159,7 +159,7 @@ const Urgente = () => {
       question: "Ce fac dacă am durere de dinți noaptea?",
       answer: (
         <>
-          Pentru durere acută nocturnă: luați un analgezic (ibuprofen 400mg), clătiți cu apă călduță sărată, stați cu capul ridicat pe 2 perne. Aplicați compresă rece pe obraz 15 minute. Sunați-ne dimineață pentru programare de urgență în aceeași zi. Dacă durerea persistă, poate fi necesară <Link to="/servicii/radiologie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">radiografie CBCT</Link>.
+          Pentru durere acută nocturnă: luați un analgezic (ibuprofen 400mg), clătiți cu apă călduță sărată, stați cu capul ridicat pe 2 perne. Aplicați compresă rece pe obraz 15 minute. Sunați-ne dimineață pentru programare de urgență în aceeași zi. Dacă durerea persistă, poate fi necesară radiografie / CBCT.
         </>
       )
     },
