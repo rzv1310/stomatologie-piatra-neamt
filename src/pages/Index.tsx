@@ -546,12 +546,12 @@ const Index = () => {
                 href="https://maps.app.goo.gl/8eYsT1brcL1PDwvh9" 
                 target="_blank" 
                 rel="dofollow noopener noreferrer"
-                className="relative block rounded-lg overflow-hidden group"
+                className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
               >
                 <img 
                   src={telegondolaPiatraNeamt} 
                   alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii Medstom"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
                   <Eye className="w-4 h-4" />
@@ -563,12 +563,12 @@ const Index = () => {
                 href="https://maps.app.goo.gl/aR1BQTax727fJ9BV8" 
                 target="_blank" 
                 rel="dofollow noopener noreferrer"
-                className="relative block rounded-lg overflow-hidden group"
+                className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
               >
                 <img 
                   src={turnulStefanCelMare} 
                   alt="Turnul lui Ștefan cel Mare din Piatra Neamț - monument istoric în apropierea clinicii Medstom"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
                   <Eye className="w-4 h-4" />
