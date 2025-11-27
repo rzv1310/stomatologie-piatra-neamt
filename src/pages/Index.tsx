@@ -446,7 +446,7 @@ const Index = () => {
                         {category.questions.map((faq, qIndex) => (
                           <div key={qIndex}>
                             <h3 className="font-semibold mb-2 text-heading">{faq.question}</h3>
-                            <p className="text-text-custom text-sm">{faq.answer}</p>
+                            <p className="text-text-custom text-base">{faq.answer}</p>
                           </div>
                         ))}
                       </div>
