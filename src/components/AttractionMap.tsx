@@ -201,7 +201,7 @@ export const AttractionMap = () => {
           onClick={centerOnClinic}
           size="icon"
           variant="secondary"
-          className="absolute top-4 left-4 z-[1000] shadow-lg"
+          className="absolute top-4 left-16 z-[1000] shadow-lg"
           title="Centrează la clinică"
         >
           <Home className="h-4 w-4" />
