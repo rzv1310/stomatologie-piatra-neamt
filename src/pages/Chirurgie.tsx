@@ -279,7 +279,7 @@ const Chirurgie = () => {
               <p>
                 La Medstom, intervențiile chirurgicale se realizează în condiții optime:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Sală de chirurgie dedicată cu protocoale stricte de sterilizare</li>
                 <li><Link to="/servicii/radiologie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">Radiografii 3D CBCT</Link> pentru planificare precisă a intervențiilor</li>
                 <li>Anestezie modernă pentru proceduri complet nedureroase</li>

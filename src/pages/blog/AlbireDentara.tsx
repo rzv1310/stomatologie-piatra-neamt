@@ -114,7 +114,7 @@ const AlbireDentara = () => {
                 Aceasta este cea mai rapidă metodă de albire dentară. Se aplică un gel de albire cu concentrație 
                 ridicată direct pe dinți, iar procesul poate fi accelerat cu lumină LED sau laser.
               </p>
-              <ul className="list-disc pl-6 mb-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Durată: aprox. 60 minute</li>
                 <li>Rezultate: imediate, vizibile după o singură ședință</li>
                 <li>Ideal pentru persoanele care doresc rezultate rapide, pentru un eveniment special</li>
@@ -128,7 +128,7 @@ const AlbireDentara = () => {
                 Medicul creează gutiere dentare personalizate pe baza amprentelor tale. Tu aplici gelul de albire 
                 acasă, purtând gutierele câteva ore pe zi sau peste noapte.
               </p>
-              <ul className="list-disc pl-6 mb-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Durată tratament: 1-2 săptămâni</li>
                 <li>Rezultate: graduale, dar de lungă durată</li>
                 <li>Ideal pentru persoane care preferă tratament în ritmul lor</li>
@@ -197,7 +197,7 @@ const AlbireDentara = () => {
                 Albirea dentară este potrivită pentru majoritatea adulților cu dinți și gingii sănătoase. 
                 Răspunde cel mai bine la:
               </p>
-              <ul className="list-disc pl-6 mb-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Decolorări datorate vârstei (dinți îngălbeniți în timp)</li>
                 <li>Pete de la cafea, ceai, vin roșu sau tutun</li>
                 <li>Decolorări superficiale sau moderate</li>
@@ -205,7 +205,7 @@ const AlbireDentara = () => {
               <p className="text-foreground mb-6">Nu este recomandată pentru femei însărcinate sau care alăptează, persoane cu carii netratate, cu boli parodontale active sau cu sensibilitate dentară severă.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Cum te pregătești pentru albirea dinților?</h2>
-              <ol className="list-decimal pl-6 mb-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ol className="list-decimal pl-6 mb-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li className="mb-3">
                   <strong>Consultație inițială:</strong> Evaluăm starea dinților și a gingiilor, discutăm 
                   așteptările și alegem metoda potrivită.
@@ -231,7 +231,7 @@ const AlbireDentara = () => {
               <p className="text-foreground mb-6">
                 Pentru a menține rezultatele cât mai mult timp:
               </p>
-              <ul className="list-disc pl-6 mb-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Evită alimentele și băuturile colorate în primele 48 de ore</li>
                 <li>Limitează consumul de cafea, ceai și vin roșu</li>
                 <li>Nu fuma (sau cel puțin încearcă să reduci fumatul)</li>

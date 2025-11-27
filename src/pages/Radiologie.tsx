@@ -254,7 +254,7 @@ const Radiologie = () => {
               <p>
                 La Medstom avem <strong>CBCT Vatech Green X16</strong>, unul dintre cele mai performante aparate din categoria sa:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Rezoluție foarte înaltă pentru detalii anatomice precise</li>
                 <li>Câmp mare de scanare - de la un singur dinte la craniul complet</li>
                 <li>Tehnologie de reducere a dozei de radiații (Green Technology)</li>
