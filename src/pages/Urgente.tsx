@@ -484,7 +484,7 @@ const Urgente = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ 
-                text: "Sună URGENT", 
+                text: "Sună acum", 
                 href: "tel:+40333630005",
                 className: "bg-white hover:bg-white/90 text-accent font-bold",
                 showIcon: true
