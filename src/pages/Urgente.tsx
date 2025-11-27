@@ -115,7 +115,7 @@ const Urgente = () => {
     {
       problem: "Sângerare după extracție",
       steps: [
-        "Mușcați ferm un tifon sau o compresă de tifon timp de 30 minute",
+        "Mușcați ferm o compresă de tifon timp de 30 minute",
         "Stați cu capul ridicat (nu vă întindeți)",
         "Evitați să clătiți, să scuipați sau să folosiți pai",
         "Nu fumați și nu consumați alcool",
