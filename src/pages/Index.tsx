@@ -468,7 +468,7 @@ const Index = () => {
               Întrebări frecvente
             </h2>
             <p className="text-lg text-text-custom">
-              Răspundem pacienților noștri
+              Răspundem pacienților noștri din Piatra Neamț
             </p>
           </div>
           <Carousel setApi={setCarouselApi} className="max-w-5xl mx-auto">
