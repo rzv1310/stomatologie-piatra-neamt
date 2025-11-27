@@ -420,47 +420,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Location */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              Localizare clinică stomatologică în Piatra Neamț
-            </h2>
-            <p className="text-lg text-text-custom">
-              Clinica este situată ultracentral, pe Strada Ana Ipătescu 9, Piatra Neamț 610120, în spate la Magazinul UNIC,  Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
-              Suntem la 15 minute de mers de Gara Piatra Neamț și stația Telegondolei, precum și la 7 minute de <a href="https://ro.wikipedia.org/wiki/Turnul_clopotni%C8%9B%C4%83_al_cur%C8%9Bii_domne%C8%99ti_din_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Curtea Domnească și Turnul lui Ștefan cel Mare</a>.
-            </p>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localizare Medstom Clinic Piatra Neamț"
-              />
-            </div>
-            <div className="text-center mt-6">
-              <a 
-                href="https://maps.app.goo.gl/bdybD18DhPFw35fi7" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <MapPin className="mr-2 h-5 w-5" />
-                  Deschide în Google Maps
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQs Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -510,6 +469,47 @@ const Index = () => {
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Location */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              Localizare clinică stomatologică în Piatra Neamț
+            </h2>
+            <p className="text-lg text-text-custom">
+              Clinica este situată ultracentral, pe Strada Ana Ipătescu 9, Piatra Neamț 610120, în spate la Magazinul UNIC,  Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
+              Suntem la 15 minute de mers de Gara Piatra Neamț și stația Telegondolei, precum și la 7 minute de <a href="https://ro.wikipedia.org/wiki/Turnul_clopotni%C8%9B%C4%83_al_cur%C8%9Bii_domne%C8%99ti_din_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Curtea Domnească și Turnul lui Ștefan cel Mare</a>.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localizare Medstom Clinic Piatra Neamț"
+              />
+            </div>
+            <div className="text-center mt-6">
+              <a 
+                href="https://maps.app.goo.gl/bdybD18DhPFw35fi7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <MapPin className="mr-2 h-5 w-5" />
+                  Deschide în Google Maps
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
