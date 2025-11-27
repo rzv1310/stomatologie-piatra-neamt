@@ -159,8 +159,18 @@ export const AttractionMap = () => {
 
     mapRef.current = map;
 
+    // Închide popup-urile când se dă click în afara hărții
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mapContainerRef.current && !mapContainerRef.current.contains(event.target as Node)) {
+        map.closePopup();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
     // Cleanup
     return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
       if (mapRef.current) {
         mapRef.current.remove();
         mapRef.current = null;
