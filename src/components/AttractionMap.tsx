@@ -83,56 +83,58 @@ export const AttractionMap = () => {
           style={{ height: '100%', width: '100%' }}
           scrollWheelZoom={false}
         >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          
-          {/* Marker pentru clinică */}
-          <Marker position={locations.clinic.coords} icon={clinicIcon}>
-            <Popup>
-              <div className="p-2">
-                <h4 className="font-bold text-lg mb-1">{locations.clinic.name}</h4>
-                <p className="text-sm text-muted-foreground mb-2">{locations.clinic.description}</p>
-                <a 
-                  href={locations.clinic.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary hover:underline text-sm"
-                >
-                  <Navigation className="w-3 h-3" />
-                  Navigare Google Maps
-                </a>
-              </div>
-            </Popup>
-          </Marker>
+          <>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            
+            {/* Marker pentru clinică */}
+            <Marker position={locations.clinic.coords} icon={clinicIcon}>
+              <Popup>
+                <div className="p-2">
+                  <h4 className="font-bold text-lg mb-1">{locations.clinic.name}</h4>
+                  <p className="text-sm text-muted-foreground mb-2">{locations.clinic.description}</p>
+                  <a 
+                    href={locations.clinic.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-primary hover:underline text-sm"
+                  >
+                    <Navigation className="w-3 h-3" />
+                    Navigare Google Maps
+                  </a>
+                </div>
+              </Popup>
+            </Marker>
 
-          {/* Markere pentru atracții */}
-          {Object.entries(locations).map(([key, location]) => {
-            if (key === 'clinic') return null;
-            return (
-              <Marker key={key} position={location.coords} icon={attractionIcon}>
-                <Popup>
-                  <div className="p-2">
-                    <h4 className="font-bold text-base mb-1">{location.name}</h4>
-                    <p className="text-sm text-muted-foreground">{location.description}</p>
-                    {location.distance && (
-                      <p className="text-sm font-medium text-primary mt-1">{location.distance}</p>
-                    )}
-                    <a 
-                      href={location.googleMapsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2"
-                    >
-                      <Navigation className="w-3 h-3" />
-                      Navigare Google Maps
-                    </a>
-                  </div>
-                </Popup>
-              </Marker>
-            );
-          })}
+            {/* Markere pentru atracții */}
+            {Object.entries(locations).map(([key, location]) => {
+              if (key === 'clinic') return null;
+              return (
+                <Marker key={key} position={location.coords} icon={attractionIcon}>
+                  <Popup>
+                    <div className="p-2">
+                      <h4 className="font-bold text-base mb-1">{location.name}</h4>
+                      <p className="text-sm text-muted-foreground">{location.description}</p>
+                      {location.distance && (
+                        <p className="text-sm font-medium text-primary mt-1">{location.distance}</p>
+                      )}
+                      <a 
+                        href={location.googleMapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2"
+                      >
+                        <Navigation className="w-3 h-3" />
+                        Navigare Google Maps
+                      </a>
+                    </div>
+                  </Popup>
+                </Marker>
+              );
+            })}
+          </>
         </MapContainer>
       </div>
 
