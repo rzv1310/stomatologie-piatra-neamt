@@ -169,7 +169,7 @@ const Urgente = () => {
     },
     {
       question: "Primiți urgențe în weekend sau seara târziu?",
-      answer: "În timpul programului nostru de lucru (Luni-Vineri 8:00-20:00), primim urgențe fără programare sau cu programare rapidă. Pentru urgențe în afara programului, sunați la 0333 630 005 și veți fi direcționat către serviciul de urgență."
+      answer: "În timpul programului nostru de lucru (Luni-Vineri 8:00-20:00), primim urgențe fără programare sau cu programare rapidă."
     },
     {
       question: "Pot veni direct la cabinet fără să sun înainte?",
@@ -177,7 +177,7 @@ const Urgente = () => {
     },
     {
       question: "Ce analgezice pot lua pentru durerea de dinți?",
-      answer: "Pentru adulți: Ibuprofen 400mg la 6-8 ore (maxim 1200mg/zi) sau Paracetamol 500mg la 6 ore. Pentru dureri severe, se pot combina (ibuprofen + paracetamol). Evitați aspirina direct pe gingie. Nu luați analgezice cu stomacul gol dacă aveți probleme gastrice."
+      answer: "Pentru adulți: Ibuprofen 400mg la 6-8 ore (maxim 1200mg/zi) sau Paracetamol 500mg la 6 ore. Pentru dureri severe, se pot combina (ibuprofen + paracetamol). Evitați aspirina direct pe gingie. Nu luați analgezice pe stomacul gol dacă aveți probleme gastrice."
     },
     {
       question: "Dacă mi-a căzut o plombă, este urgență?",
