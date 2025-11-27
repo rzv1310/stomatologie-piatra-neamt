@@ -218,17 +218,17 @@ const Urgente = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
-            <div className="inline-flex items-center bg-accent px-4 py-2 rounded-full mb-4">
-              <AlertCircle className="mr-2 h-5 w-5" />
-              <span className="font-semibold">Urgențe Stomatologice</span>
+            <div className="inline-flex items-center bg-accent px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-3 md:mb-4">
+              <AlertCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+              <span className="font-semibold text-sm md:text-base">Urgențe Stomatologice</span>
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-white">
               Urgențe Dentare în Piatra Neamț
             </h1>
-            <p className="text-xl mb-2 text-white">
+            <p className="text-lg md:text-xl mb-2 text-white">
               Durerea de dinți nu așteaptă. Nici noi.
             </p>
-            <p className="text-xl mb-8 text-white">
+            <p className="text-lg md:text-xl mb-6 md:mb-8 text-white">
               Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.
             </p>
             <HeroContactBox
