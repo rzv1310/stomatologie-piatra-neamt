@@ -225,8 +225,11 @@ const Urgente = () => {
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Urgențe Dentare în Piatra Neamț
             </h1>
+            <p className="text-xl mb-2 text-white">
+              Durerea de dinți nu așteaptă. Nici noi.
+            </p>
             <p className="text-xl mb-8 text-white">
-              Durerea de dinți nu așteaptă. Nici noi. Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.
+              Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.
             </p>
             <HeroContactBox
               title="Program urgențe"
