@@ -135,30 +135,8 @@ export const AttractionMap = () => {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }).addTo(map);
 
-    // Adăugare marker pentru clinică cu animații
+    // Adăugare marker pentru clinică
     const clinicMarker = L.marker(locations.clinic.coords, { icon: clinicIcon }).addTo(map);
-    
-    // Adăugare animație drop pentru clinică
-    const clinicElement = clinicMarker.getElement();
-    if (clinicElement) {
-      clinicElement.classList.add('marker-drop');
-      
-      // Adăugare pulse ring
-      const pulseRing = document.createElement('div');
-      pulseRing.className = 'pulse-ring';
-      pulseRing.style.position = 'absolute';
-      pulseRing.style.top = '50%';
-      pulseRing.style.left = '50%';
-      pulseRing.style.transform = 'translate(-50%, -50%)';
-      pulseRing.style.width = '30px';
-      pulseRing.style.height = '30px';
-      pulseRing.style.borderRadius = '50%';
-      pulseRing.style.background = '#ff6b35';
-      pulseRing.style.pointerEvents = 'none';
-      pulseRing.style.zIndex = '-1';
-      clinicElement.style.position = 'relative';
-      clinicElement.insertBefore(pulseRing, clinicElement.firstChild);
-    }
     
       const clinicImageHtml = (locations.clinic as any).image 
         ? `
@@ -197,17 +175,10 @@ export const AttractionMap = () => {
     });
 
     // Adăugare markere pentru atracții
-    Object.entries(locations).forEach(([key, location], index) => {
+    Object.entries(locations).forEach(([key, location]) => {
       if (key === 'clinic') return;
       
       const marker = L.marker(location.coords, { icon: attractionIcon }).addTo(map);
-      
-      // Adăugare animație drop cu delay crescător
-      const markerElement = marker.getElement();
-      if (markerElement) {
-        markerElement.classList.add('marker-drop');
-        markerElement.style.animationDelay = `${(index + 1) * 0.15}s`;
-      }
       
       const getCategoryBadge = (desc: string) => {
         if (desc.includes('Monument')) return { icon: '🏛️', text: 'Monument istoric' };
