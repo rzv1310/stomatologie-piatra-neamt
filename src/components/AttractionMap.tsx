@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { MapPin, Navigation } from 'lucide-react';
+import { MapPin, Home } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg';
@@ -90,6 +91,15 @@ const attractionIcon = L.icon({
 export const AttractionMap = () => {
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
+
+  const centerOnClinic = () => {
+    if (mapRef.current) {
+      mapRef.current.setView(locations.clinic.coords, 14, {
+        animate: true,
+        duration: 1
+      });
+    }
+  };
 
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
@@ -185,8 +195,17 @@ export const AttractionMap = () => {
         <h3 className="text-2xl font-bold text-heading">Locații în apropierea clinicii</h3>
       </div>
       
-      <div className="rounded-lg overflow-hidden shadow-lg border border-border h-[400px] md:h-[500px]">
+      <div className="rounded-lg overflow-hidden shadow-lg border border-border h-[400px] md:h-[500px] relative">
         <div ref={mapContainerRef} style={{ height: '100%', width: '100%' }} />
+        <Button
+          onClick={centerOnClinic}
+          size="icon"
+          variant="secondary"
+          className="absolute top-4 left-4 z-[1000] shadow-lg"
+          title="Centrează la clinică"
+        >
+          <Home className="h-4 w-4" />
+        </Button>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-4 text-sm">
