@@ -80,7 +80,7 @@ const locations = {
 
 // Iconuri personalizate pentru markere
 const clinicIcon = L.icon({
-  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
@@ -267,8 +267,7 @@ export const AttractionMap = () => {
         <Button
           onClick={centerOnClinic}
           size="icon"
-          variant="secondary"
-          className="absolute top-4 left-16 z-[1000] shadow-lg"
+          className="absolute top-4 left-16 z-[1000] shadow-lg bg-orange-500 hover:bg-orange-600 text-white"
           title="Centrează la clinică"
         >
           <Home className="h-4 w-4" />
@@ -277,7 +276,7 @@ export const AttractionMap = () => {
 
       <div className="mt-4 flex flex-wrap gap-4 text-sm">
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+          <div className="w-4 h-4 bg-orange-500 rounded-full"></div>
           <span className="text-muted-foreground">Clinica Medstom</span>
         </div>
         <div className="flex items-center gap-2">
