@@ -57,7 +57,7 @@ const locations = {
     image: turnulStefanCelMare
   },
   muzeu: {
-    coords: [46.9324, 26.3678] as [number, number],
+    coords: [46.9283, 26.3694] as [number, number],
     name: "Muzeul de Istorie și Arheologie Piatra-Neamț",
     description: "Muzeu istoric",
     distance: "~3 min cu mașina",
