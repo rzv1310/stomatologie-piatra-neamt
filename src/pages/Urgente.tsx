@@ -150,7 +150,7 @@ const Urgente = () => {
     },
     {
       title: "Evitați alimentele tari",
-      description: "Nu spargeți oase, gheață, bomboane tari, nuci cu dinții"
+      description: "Nu spargeți cu dinții oase, gheață, bomboane tari, nuci etc."
     }
   ];
 
