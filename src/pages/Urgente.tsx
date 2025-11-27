@@ -73,7 +73,7 @@ const Urgente = () => {
     },
     {
       title: "Complicații post-operatorii",
-      description: "Dureri severe, umflături anormale după tratamente",
+      description: "Dureri severe, umflături care nu scad după tratament",
       icon: <img src={surgeryIcon} alt="Complicații chirurgicale" className="h-12 w-12" />,
       severity: "Urgent"
     }
