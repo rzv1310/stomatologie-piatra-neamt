@@ -260,21 +260,21 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                     </TableHeader>
                     <TableBody>
                       <TableRow>
-                        <TableCell>Aparat fix brackeți metalici (per arcadă)</TableCell>
+                        <TableCell className="text-foreground">Aparat fix brackeți metalici (per arcadă)</TableCell>
                         <TableCell className="text-right">
-                          <span className="text-primary font-semibold">1800 lei</span>
+                          <span className="text-accent font-semibold">1800 lei</span>
                         </TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell>Aparat fix brackeți safir/ceramici (per arcadă)</TableCell>
+                        <TableCell className="text-foreground">Aparat fix brackeți safir/ceramici (per arcadă)</TableCell>
                         <TableCell className="text-right">
-                          <span className="text-primary font-semibold">2800 lei</span>
+                          <span className="text-accent font-semibold">2800 lei</span>
                         </TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell>Aparat Spark Advanced / Invisalign (ambele arcade)</TableCell>
+                        <TableCell className="text-foreground">Aparat Spark Advanced / Invisalign (ambele arcade)</TableCell>
                         <TableCell className="text-right">
-                          <span className="text-primary font-semibold">22500 lei</span>
+                          <span className="text-accent font-semibold">22500 lei</span>
                         </TableCell>
                       </TableRow>
                     </TableBody>

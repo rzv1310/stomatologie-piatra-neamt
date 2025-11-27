@@ -176,19 +176,19 @@ const ImplantDentar = () => {
                     </TableHeader>
                     <TableBody>
                       <TableRow>
-                        <TableCell className="font-medium text-text-custom">Implant dentar</TableCell>
-                        <TableCell className="text-text-custom">Bredent</TableCell>
-                        <TableCell className="text-right font-semibold text-text-custom">3.000 lei</TableCell>
+                        <TableCell className="font-medium text-foreground">Implant dentar</TableCell>
+                        <TableCell className="text-foreground">Bredent</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">3.000 lei</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell className="font-medium text-text-custom">Implant dentar</TableCell>
-                        <TableCell className="text-text-custom">MegaGen</TableCell>
-                        <TableCell className="text-right font-semibold text-text-custom">2.500 lei</TableCell>
+                        <TableCell className="font-medium text-foreground">Implant dentar</TableCell>
+                        <TableCell className="text-foreground">MegaGen</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">2.500 lei</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell className="font-medium text-text-custom">Implant dentar</TableCell>
-                        <TableCell className="text-text-custom">JD Dental Implants</TableCell>
-                        <TableCell className="text-right font-semibold text-text-custom">2.000 lei</TableCell>
+                        <TableCell className="font-medium text-foreground">Implant dentar</TableCell>
+                        <TableCell className="text-foreground">JD Dental Implants</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">2.000 lei</TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
@@ -214,16 +214,16 @@ const ImplantDentar = () => {
                       </TableHeader>
                       <TableBody>
                         <TableRow>
-                          <TableCell className="text-text-custom">4 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">17.500 lei</TableCell>
+                          <TableCell className="text-foreground">4 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">17.500 lei</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="text-text-custom">6 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">23.000 lei</TableCell>
+                          <TableCell className="text-foreground">6 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">23.000 lei</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="text-text-custom">8 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">29.500 lei</TableCell>
+                          <TableCell className="text-foreground">8 implanturi premium Bredent și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">29.500 lei</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
@@ -245,16 +245,16 @@ const ImplantDentar = () => {
                       </TableHeader>
                       <TableBody>
                         <TableRow>
-                          <TableCell className="text-text-custom">4 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">13.000 lei</TableCell>
+                          <TableCell className="text-foreground">4 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">13.000 lei</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="text-text-custom">6 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">19.500 lei</TableCell>
+                          <TableCell className="text-foreground">6 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">19.500 lei</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="text-text-custom">8 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">26.000 lei</TableCell>
+                          <TableCell className="text-foreground">8 implanturi premium MegaGen și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">26.000 lei</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
@@ -276,16 +276,16 @@ const ImplantDentar = () => {
                       </TableHeader>
                       <TableBody>
                         <TableRow>
-                          <TableCell className="text-text-custom">4 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">9.900 lei</TableCell>
+                          <TableCell className="text-foreground">4 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">9.900 lei</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="text-text-custom">6 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">14.900 lei</TableCell>
+                          <TableCell className="text-foreground">6 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">14.900 lei</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="text-text-custom">8 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
-                          <TableCell className="text-right font-semibold text-text-custom">19.900 lei</TableCell>
+                          <TableCell className="text-foreground">8 implanturi premium JD și lucrare fixă provizorie GRATUITĂ în 24 ore</TableCell>
+                          <TableCell className="text-right font-semibold text-accent">19.900 lei</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>

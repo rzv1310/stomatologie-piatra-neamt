@@ -171,12 +171,12 @@ const AlbireDentara = () => {
                     </TableHeader>
                     <TableBody>
                       <TableRow>
-                        <TableCell>Albire dentară premium cu LAMPĂ BEYOND® POLUS® Advanced, nr. 1 în lume</TableCell>
-                        <TableCell className="text-right font-semibold text-primary">1000 lei</TableCell>
+                        <TableCell className="text-foreground">Albire dentară premium cu LAMPĂ BEYOND® POLUS® Advanced, nr. 1 în lume</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">1000 lei</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell>Albire endodontică per dinte / ședință</TableCell>
-                        <TableCell className="text-right font-semibold text-primary">250 lei</TableCell>
+                        <TableCell className="text-foreground">Albire endodontică per dinte / ședință</TableCell>
+                        <TableCell className="text-right font-semibold text-accent">250 lei</TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
