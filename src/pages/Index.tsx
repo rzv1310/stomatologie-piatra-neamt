@@ -19,6 +19,7 @@ import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
 
 const Index = () => {
+  // State management for stats animation and carousel
   const [isStatsVisible, setIsStatsVisible] = useState(false);
   const statsRef = useRef<HTMLDivElement>(null);
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
