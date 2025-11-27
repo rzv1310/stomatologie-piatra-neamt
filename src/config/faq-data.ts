@@ -184,7 +184,7 @@ export const faqCategories: FAQCategory[] = [
     questions: [
       {
         question: "Când este absolut necesară extracția unui dinte?",
-        answer: "Atunci când dintele este irecuperabil (cariată profund, fracturat, mobil sever) și nu mai poate fi salvat prin alte tratamente."
+        answer: "Atunci când dintele este irecuperabil (cariat profund, fracturat, mobil sever) și nu mai poate fi salvat prin alte tratamente."
       },
       {
         question: "Extracția doare?",
