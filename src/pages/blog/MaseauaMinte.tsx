@@ -145,7 +145,7 @@ const MaseauaMinte = () => {
 
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-4">Condiții pentru a păstra măseaua de minte:</h4>
-                <ul className="list-disc pl-6 text-foreground space-y-2">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm space-y-2 [&_a]:text-primary [&_a]:hover:underline">
                   <li>
                     <strong>Erup complet și corect:</strong> Dinții sunt complet ieșiți în arcadă, în poziție normală
                   </li>
@@ -259,7 +259,7 @@ const MaseauaMinte = () => {
               <p className="text-foreground mb-6">
                 Nu poți decide singur dacă măseaua de minte trebuie scoasă! Este nevoie de:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>
                   <strong>Examinare clinică:</strong> Medicul verifică poziția, gradul de erupție și sănătatea gingivală
                 </li>
@@ -287,7 +287,7 @@ const MaseauaMinte = () => {
                   <p className="text-foreground mb-3">
                     Când măseaua de minte a erupt complet și este vizibilă în gură.
                   </p>
-                  <ul className="list-disc pl-6 text-foreground text-sm">
+                  <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                     <li>Durată: 15-20 minute</li>
                     <li>Anestezie locală</li>
                     <li>Recuperare rapidă (2-4 zile)</li>
@@ -300,7 +300,7 @@ const MaseauaMinte = () => {
                   <p className="text-foreground mb-3">
                     Când măseaua de minte este parțial sau total acoperită de gingie sau os.
                   </p>
-                  <ul className="list-disc pl-6 text-foreground text-sm">
+                  <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                     <li>Durată: 30-60 minute</li>
                     <li>Anestezie locală (opțional sedare)</li>
                     <li>Se face incizie în gingie și eventual se îndepărtează os</li>
@@ -321,7 +321,7 @@ const MaseauaMinte = () => {
               <div className="space-y-6 mb-8">
                 <div>
                   <h4 className="font-semibold text-foreground mb-3">Primele 24 de ore:</h4>
-                  <ul className="list-disc pl-6 text-foreground">
+                  <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                     <li>Mușcă tamponul steril timp de 30-60 minute pentru a opri sângerarea</li>
                     <li>Aplică gheață pe obraz (15 minute aplici, 15 minute pauză)</li>
                     <li>Evită clătitul, scuipatul sau sugerea cu paiul</li>
@@ -334,7 +334,7 @@ const MaseauaMinte = () => {
 
                 <div>
                   <h4 className="font-semibold text-foreground mb-3">Următoarele 2-7 zile:</h4>
-                  <ul className="list-disc pl-6 text-foreground">
+                  <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                     <li>Clătește blând cu apă sărată după 24 de ore</li>
                     <li>Ia medicația prescrisă (antibiotice, analgezice)</li>
                     <li>Continuă cu alimente moi (piureuri, supe, iaurt)</li>
@@ -347,7 +347,7 @@ const MaseauaMinte = () => {
 
               <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-600 dark:border-yellow-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">Semnele care impun vizită urgentă:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Sângerare abundentă care nu se oprește</li>
                   <li>Durere severă care nu răspunde la analgezice</li>
                   <li>Umflare care crește după 3 zile</li>
@@ -367,7 +367,7 @@ const MaseauaMinte = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
                   <h4 className="font-bold text-foreground mb-3">Pro extracție preventivă:</h4>
-                  <ul className="list-disc pl-6 text-foreground text-sm">
+                  <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                     <li>Recuperare mai ușoară la vârstă tânără</li>
                     <li>Previne complicațiile viitoare</li>
                     <li>Evită infecțiile și durerile</li>
@@ -377,7 +377,7 @@ const MaseauaMinte = () => {
 
                 <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6">
                   <h4 className="font-bold text-foreground mb-3">Contra extracție preventivă:</h4>
-                  <ul className="list-disc pl-6 text-foreground text-sm">
+                  <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                     <li>Risc inutil dacă dinții sunt sănătoși</li>
                     <li>Procedură invazivă fără beneficiu imediat</li>
                     <li>Cost și timp de recuperare</li>

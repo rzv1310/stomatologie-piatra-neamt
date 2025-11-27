@@ -268,7 +268,7 @@ const StomatologieGenerala = () => {
               <p>
                 Avantajele microscopului dentar includ:
               </p>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>Identificarea și tratarea tuturor canalelor radiculare, inclusiv celor ascunse</li>
                 <li>Îndepărtarea precisă a țesutului infectat</li>
                 <li>Păstrarea maximă a structurii dentare sănătoase</li>

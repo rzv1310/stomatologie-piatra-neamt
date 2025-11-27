@@ -312,7 +312,7 @@ const StomatologieCopii = () => {
               <p>
                 <strong>De ce este diferită stomatologia pentru copii?</strong>
               </p>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>Copiii au dinți de lapte care necesită abordare specifică</li>
                 <li>Psihologia copilului cere tehnici speciale de comunicare</li>
                 <li>Creșterea și dezvoltarea necesită monitorizare atentă</li>
