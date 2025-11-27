@@ -66,7 +66,7 @@ const Urgente = () => {
       severity: "Urgent"
     },
     {
-      title: "Plombe sau coroane căzute",
+      title: "Plombe / Coroane căzute",
       description: "Restaurări pierdute care lasă dintele expus și sensibil",
       icon: <img src={toothDamagedIcon} alt="Dinte deteriorat" className="h-12 w-12" />,
       severity: "Mediu"
