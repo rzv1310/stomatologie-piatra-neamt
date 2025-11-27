@@ -401,7 +401,7 @@ const MaseauaMinte = () => {
                     <AccordionTrigger className="text-left">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
+                    <AccordionContent>
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
