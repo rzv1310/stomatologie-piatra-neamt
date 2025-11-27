@@ -7,6 +7,7 @@ import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.we
 import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png';
 import garaPiatraNeamt from '@/assets/gara-piatra-neamt.png';
 import muzeuIstorie from '@/assets/muzeu-istorie-piatra-neamt.jpg';
+import clinicLocation from '@/assets/clinic-location-street-view.png';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -15,7 +16,8 @@ const locations = {
     name: "Clinica Medstom",
     description: "Clinica dentară",
     distance: "",
-    googleMapsUrl: "https://maps.app.goo.gl/gVUQRZTgJe7eAo9m7"
+    googleMapsUrl: "https://maps.app.goo.gl/gVUQRZTgJe7eAo9m7",
+    image: clinicLocation
   },
   gara: {
     coords: [46.9274, 26.3615] as [number, number],
@@ -104,8 +106,14 @@ export const AttractionMap = () => {
 
     // Adăugare marker pentru clinică
     const clinicMarker = L.marker(locations.clinic.coords, { icon: clinicIcon }).addTo(map);
+    
+    const clinicImageHtml = (locations.clinic as any).image 
+      ? `<img src="${(locations.clinic as any).image}" alt="${locations.clinic.name}" class="w-full h-32 object-cover rounded-md mb-2" />`
+      : '';
+    
     clinicMarker.bindPopup(`
-      <div class="p-2">
+      <div class="p-2 min-w-[200px]">
+        ${clinicImageHtml}
         <h4 class="font-bold text-lg mb-1">${locations.clinic.name}</h4>
         <p class="text-sm text-gray-600 mb-2">${locations.clinic.description}</p>
         <a 
