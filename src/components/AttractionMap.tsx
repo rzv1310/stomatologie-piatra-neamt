@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg';
 import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.webp';
 import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png';
+import garaPiatraNeamt from '@/assets/gara-piatra-neamt.png';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -20,7 +21,8 @@ const locations = {
     name: "Gara Piatra Neamț",
     description: "Stație de tren",
     distance: "~4 min cu mașina",
-    googleMapsUrl: "https://maps.app.goo.gl/WKbsjG9kXRmetVoc8"
+    googleMapsUrl: "https://maps.app.goo.gl/WKbsjG9kXRmetVoc8",
+    image: garaPiatraNeamt
   },
   telegondola: {
     coords: [46.9264, 26.3613] as [number, number],
