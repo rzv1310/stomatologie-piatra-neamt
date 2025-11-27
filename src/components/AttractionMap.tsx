@@ -148,9 +148,6 @@ export const AttractionMap = () => {
     
     clinicMarker.bindPopup(`
       <div style="overflow: hidden;">
-        <div style="background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%); padding: 8px 16px; color: white; font-weight: 600; font-size: 13px; display: flex; align-items: center; gap: 6px;">
-          🦷 Clinica noastră
-        </div>
         ${clinicImageHtml}
         <div style="padding: 16px;">
           <h4 style="font-weight: 700; font-size: 18px; margin: 0 0 8px 0; color: hsl(var(--heading-color));">${locations.clinic.name}</h4>
@@ -159,11 +156,12 @@ export const AttractionMap = () => {
             href="${locations.clinic.googleMapsUrl}"
             target="_blank"
             rel="noopener noreferrer"
-            style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; transition: transform 0.2s; min-height: 44px;"
+            style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; transition: transform 0.2s; min-height: 44px;"
             onmouseover="this.style.transform='translateY(-2px)'"
             onmouseout="this.style.transform='translateY(0)'"
           >
-            📍 Navigare
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Navigare
           </a>
         </div>
       </div>
