@@ -13,8 +13,8 @@ import clinicLocation from '@/assets/clinic-location-street-view.png';
 const locations = {
   clinic: {
     coords: [46.9310, 26.3697] as [number, number],
-    name: "Clinica Medstom",
-    description: "Clinica dentară",
+    name: "MedStom",
+    description: "Clinică de stomatologie în Piatra Neamț",
     distance: "",
     googleMapsUrl: "https://maps.app.goo.gl/gVUQRZTgJe7eAo9m7",
     image: clinicLocation
