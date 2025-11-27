@@ -20,6 +20,7 @@ import clinicLocationStreetView from "@/assets/clinic-location-street-view.png";
 import telegondolaPiatraNeamt from "@/assets/telegondola-piatra-neamt.jpg";
 import turnulStefanCelMare from "@/assets/turnul-stefan-cel-mare-piatra-neamt.webp";
 import serviceEndodontie from "@/assets/service-endodontie.jpg";
+import { AttractionMap } from "@/components/AttractionMap";
 
 const Index = () => {
   // State management for stats animation and carousel
@@ -575,6 +576,11 @@ const Index = () => {
                   <span>Deschide link</span>
                 </div>
               </a>
+            </div>
+            
+            {/* Hartă interactivă cu atracții turistice */}
+            <div className="mt-12 max-w-4xl mx-auto">
+              <AttractionMap />
             </div>
           </div>
         </div>
