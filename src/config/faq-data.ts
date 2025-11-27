@@ -328,7 +328,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Pot veni fără programare în caz de urgență?",
-        answer: "În caz de urgențe acute, clinicile au de obicei intervale dedicate; este ideal să suni înainte pentru a fi preluat cât mai rapid."
+        answer: "În caz de urgențe acute, clinicile din Piatra Neamț au de obicei intervale dedicate; este ideal să suni înainte pentru a fi preluat cât mai rapid."
       }
     ]
   },
