@@ -86,13 +86,19 @@ const orangeSvg = `
 </svg>
 `;
 
-const clinicIcon = L.icon({
-  iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(orangeSvg),
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+const clinicIcon = L.divIcon({
+  html: `
+    <div class="marker-clinic-wrapper">
+      <div class="pulse-ring"></div>
+      <div class="marker-icon-content">
+        ${orangeSvg}
+      </div>
+    </div>
+  `,
+  className: 'marker-drop',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
+  popupAnchor: [1, -34]
 });
 
 const attractionIcon = L.icon({
@@ -175,10 +181,17 @@ export const AttractionMap = () => {
     });
 
     // Adăugare markere pentru atracții
-    Object.entries(locations).forEach(([key, location]) => {
+    Object.entries(locations).forEach(([key, location], index) => {
       if (key === 'clinic') return;
       
       const marker = L.marker(location.coords, { icon: attractionIcon }).addTo(map);
+      
+      // Adăugare animație drop cu delay crescător
+      const markerElement = marker.getElement();
+      if (markerElement) {
+        markerElement.classList.add('marker-drop');
+        markerElement.style.animationDelay = `${(index + 1) * 0.15}s`;
+      }
       
       const getCategoryBadge = (desc: string) => {
         if (desc.includes('Monument')) return { icon: '🏛️', text: 'Monument istoric' };
