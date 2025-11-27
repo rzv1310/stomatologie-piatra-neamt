@@ -425,21 +425,21 @@ const Urgente = () => {
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
                 <div className="mb-4 flex justify-center">
-                  <img src={rapidResponseIcon} alt="Răspuns rapid" className="h-16 w-16" />
+                  <img src={rapidResponseIcon} alt="Răspuns rapid" className="h-16 w-16 brightness-0 invert" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Răspuns rapid</h3>
                 <p className="opacity-90 text-white">Te primim în aceeași zi pentru urgențe</p>
               </div>
               <div>
                 <div className="mb-4 flex justify-center">
-                  <img src={equipmentIcon} alt="Echipament complet" className="h-16 w-16" />
+                  <img src={equipmentIcon} alt="Echipament complet" className="h-16 w-16 brightness-0 invert" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Echipament complet</h3>
                 <p className="opacity-90 text-white">Toate instrumentele pentru orice urgență</p>
               </div>
               <div>
                 <div className="mb-4 flex justify-center">
-                  <img src={painManagementIcon} alt="Management al durerii" className="h-16 w-16" />
+                  <img src={painManagementIcon} alt="Management al durerii" className="h-16 w-16 brightness-0 invert" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Management al durerii</h3>
                 <p className="opacity-90 text-white">Analgezii eficiente și tratament nedureros</p>
