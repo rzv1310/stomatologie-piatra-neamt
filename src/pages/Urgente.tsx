@@ -360,7 +360,7 @@ const Urgente = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-red-50 border-l-4 border-red-600 p-8 rounded-lg">
               <div className="flex items-start space-x-4">
-                <Phone className="h-8 w-8 text-red-600 flex-shrink-0 mt-1" />
+                <Phone className="h-8 w-8 text-red-600 flex-shrink-0 mt-1 animate-pulse" />
                 <div>
                   <h2 className="text-2xl font-bold mb-4 text-heading">
                     Când să suni?
