@@ -497,9 +497,6 @@ const Urgente = () => {
                 { icon: "", text: "Răspuns imediat" }
               ]}
             />
-            <p className="mt-6 text-lg text-white">
-              Disponibili Luni-Vineri 8:00-20:00
-            </p>
           </div>
         </div>
       </section>
