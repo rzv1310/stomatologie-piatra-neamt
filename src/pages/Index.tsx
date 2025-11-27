@@ -428,7 +428,8 @@ const Index = () => {
               Localizare clinică stomatologică în Piatra Neamț
             </h2>
             <p className="text-lg text-text-custom">
-              Strada Ana Ipătescu 9, Piatra Neamț 610120
+              Clinica este situată ultracentral, pe Strada Ana Ipătescu 9, Piatra Neamț 610120, în spate la Magazinul UNIC,  Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
+              Suntem la 15 minute de mers de Gara Piatra Neamț și stația Telegondolei, precum și la 7 minute de Curtea Domnească și Turnul lui Ștefan cel Mare.
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
