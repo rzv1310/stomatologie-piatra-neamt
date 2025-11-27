@@ -228,7 +228,7 @@ const Urgente = () => {
             <p className="text-lg md:text-xl mb-2 text-white">
               Durerea de dinți nu așteaptă. Nici noi.
             </p>
-            <p className="text-lg md:text-xl mb-6 md:mb-8 text-white">
+            <p className="text-lg md:text-xl mb-4 md:mb-6 text-white">
               Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.
             </p>
             <HeroContactBox
