@@ -27,24 +27,24 @@ const locations = {
     googleMapsUrl: "https://maps.app.goo.gl/8eYsT1brcL1PDwvh9"
   },
   teatru: {
-    coords: [46.9275, 26.3714] as [number, number],
+    coords: [46.9322, 26.368] as [number, number],
     name: "Teatrul Tineretului",
     description: "Teatru",
     distance: "~7 min de mers",
     googleMapsUrl: "https://maps.app.goo.gl/yZzQRZTgJe7eAo9m7"
   },
   curtea: {
-    coords: [46.9283, 26.3732] as [number, number],
+    coords: [46.93333, 26.36806] as [number, number],
     name: "Curtea Domnească",
     description: "Monument istoric",
-    distance: "~7 min de mers",
+    distance: "~8 min de mers",
     googleMapsUrl: "https://maps.app.goo.gl/zZzQRZTgJe7eAo9m7"
   },
   turn: {
-    coords: [46.9289, 26.3741] as [number, number],
+    coords: [46.93333, 26.36806] as [number, number],
     name: "Turnul lui Ștefan cel Mare",
-    description: "Monument istoric",
-    distance: "~7 min de mers",
+    description: "Monument istoric - Face parte din Curtea Domnească",
+    distance: "~8 min de mers",
     googleMapsUrl: "https://maps.app.goo.gl/aR1BQTax727fJ9BV8"
   }
 };
