@@ -423,7 +423,7 @@ const Urgente = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce să alegi Medstom pentru urgențe?
+              De ce să alegi Medstom pentru urgențe stomatologice în Piatra Neamț?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
@@ -431,21 +431,21 @@ const Urgente = () => {
                   <img src={rapidResponseIcon} alt="Răspuns rapid" className="h-16 w-16 brightness-0 invert" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Răspuns rapid</h3>
-                <p className="opacity-90 text-white">Te primim în aceeași zi pentru urgențe</p>
+                <p className="opacity-90 text-white">Facem tot posibilul să te primim în aceeași zi</p>
               </div>
               <div>
                 <div className="mb-4 flex justify-center">
                   <img src={equipmentIcon} alt="Echipament complet" className="h-16 w-16 brightness-0 invert" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Echipament complet</h3>
-                <p className="opacity-90 text-white">Toate instrumentele pentru orice urgență</p>
+                <p className="opacity-90 text-white">Dispunem de toate instrumentele pentru orice intervenție</p>
               </div>
               <div>
                 <div className="mb-4 flex justify-center">
                   <img src={painManagementIcon} alt="Management al durerii" className="h-16 w-16 brightness-0 invert" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Management al durerii</h3>
-                <p className="opacity-90 text-white">Analgezii eficiente și tratament nedureros</p>
+                <p className="opacity-90 text-white">Îți administrăm analgezice eficiente și tratament nedureros</p>
               </div>
             </div>
           </div>
