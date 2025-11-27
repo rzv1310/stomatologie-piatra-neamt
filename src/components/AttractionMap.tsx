@@ -4,6 +4,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg';
 import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.webp';
+import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -34,7 +35,8 @@ const locations = {
     name: "Teatrul Tineretului",
     description: "Teatru",
     distance: "~7 min de mers",
-    googleMapsUrl: "https://maps.app.goo.gl/cuaVP9FMH3YdoN7B9"
+    googleMapsUrl: "https://maps.app.goo.gl/cuaVP9FMH3YdoN7B9",
+    image: teatrulTineretului
   },
   curtea: {
     coords: [46.93333, 26.36806] as [number, number],
