@@ -492,7 +492,7 @@ const Urgente = () => {
                 className: "bg-white hover:bg-white/90 text-accent font-bold",
                 showIcon: true
               }}
-              microcopy="✓ Primire rapidă · Luni-Vineri 8:00-20:00 · Durere oprită imediat"
+              microcopy="✓ Luni-Vineri 8:00-20:00"
               badges={[
                 { icon: "", text: "Durerea oprită chiar la prima vizită" },
                 { icon: "", text: "Plan clar și costuri transparente, înainte să începem" },
