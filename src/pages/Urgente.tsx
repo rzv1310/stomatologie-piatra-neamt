@@ -333,8 +333,7 @@ const Urgente = () => {
             {immediateSteps.map((item, index) => (
               <Card key={index} className="border-primary/20">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-heading flex items-center">
-                    <AlertCircle className="h-6 w-6 text-accent mr-3" />
+                  <h3 className="text-2xl font-semibold mb-4 text-heading">
                     {item.problem}
                   </h3>
                   <ol className="space-y-3">
