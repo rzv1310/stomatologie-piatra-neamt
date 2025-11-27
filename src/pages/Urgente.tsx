@@ -13,6 +13,7 @@ import toothInfectionIcon from "@/assets/icon-tooth-infection.png";
 import toothPainIcon from "@/assets/icon-tooth-pain.png";
 import toothDamagedIcon from "@/assets/icon-tooth-damaged.png";
 import bleedingIcon from "@/assets/icon-bleeding.png";
+import surgeryIcon from "@/assets/icon-surgery.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -70,7 +71,7 @@ const Urgente = () => {
     {
       title: "Complicații post-operatorii",
       description: "Dureri severe, umflături anormale după tratamente",
-      icon: "⚠️",
+      icon: <img src={surgeryIcon} alt="Complicații chirurgicale" className="h-12 w-12" />,
       severity: "Urgent"
     }
   ];
