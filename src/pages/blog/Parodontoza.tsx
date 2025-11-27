@@ -217,7 +217,7 @@ const Parodontoza = () => {
 
               <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-4">🚨 Mergi URGENT la dentist dacă ai:</h4>
-                <ul className="list-disc pl-6 text-foreground space-y-2">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm space-y-2 [&_a]:text-primary [&_a]:hover:underline">
                   <li>Gingii care sângerează spontan sau la cel mai ușor atingere</li>
                   <li>Gingii roșii închis, violacee sau strălucitoare (nu roz pal sănătos)</li>
                   <li>Gingii umflate, sensibile sau dureroase</li>
@@ -234,7 +234,7 @@ const Parodontoza = () => {
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Cine este la risc? Factori care favorizează parodontoza
               </h2>
-              <ul className="list-disc pl-6 mb-8 text-foreground">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>
                   <strong>Igiena orală deficitară:</strong> Cel mai important factor! Periaj insuficient sau 
                   nefolosirea aței dentare
@@ -268,7 +268,7 @@ const Parodontoza = () => {
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Diagnostic - cum se depistează parodontoza?
               </h2>
-              <ol className="list-decimal pl-6 mb-8 text-foreground space-y-3">
+              <ol className="list-decimal pl-6 mb-8 text-foreground text-base md:text-sm space-y-3 [&_a]:text-primary [&_a]:hover:underline">
                 <li>
                   <strong>Examen clinic:</strong> Medicul verifică culoarea, textura și sângerarea gingiilor
                 </li>
@@ -300,7 +300,7 @@ const Parodontoza = () => {
                 Faza 1: Tratament parodontal inițial (non-chirurgical)
               </h3>
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
-                <ol className="list-decimal pl-6 text-foreground space-y-3">
+                <ol className="list-decimal pl-6 text-foreground text-base md:text-sm space-y-3 [&_a]:text-primary [&_a]:hover:underline">
                   <li>
                     <strong>Detartraj supragingival:</strong> Îndepărtarea plăcii și tartrului de deasupra gingiilor
                   </li>
@@ -332,7 +332,7 @@ const Parodontoza = () => {
                 Faza 2: Tratament parodontal chirurgical (cazuri moderate-severe)
               </h3>
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
-                <ul className="list-disc pl-6 text-foreground space-y-3">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm space-y-3 [&_a]:text-primary [&_a]:hover:underline">
                   <li>
                     <strong>Chirurgie cu lambou parodontal:</strong> Se ridică gingiile pentru acces direct 
                     la buzunare și rădăcini, se curăță complet, apoi se repoziționează
@@ -358,7 +358,7 @@ const Parodontoza = () => {
               <p className="text-foreground mb-4">
                 Aceasta este faza cea mai importantă! Parodontoza este o boală cronică care necesită monitorizare constantă:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>Controale regulate la 3-4 luni (nu la 6 luni ca pacienții fără parodontoză!)</li>
                 <li>Curățări profesionale periodice</li>
                 <li>Monitorizarea buzunarelor și a mobilității</li>
@@ -375,7 +375,7 @@ const Parodontoza = () => {
 
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-4">Rutina zilnică obligatorie:</h4>
-                <ul className="list-disc pl-6 text-foreground space-y-2">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm space-y-2 [&_a]:text-primary [&_a]:hover:underline">
                   <li>
                     <strong>Periaj de 2 ori pe zi, 2 minute:</strong> Folosește o periuță cu peri moi sau 
                     electrică, tehnică corectă (nu orizontal!)
@@ -399,7 +399,7 @@ const Parodontoza = () => {
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Prevenția - cum eviți parodontoza?
               </h2>
-              <ul className="list-disc pl-6 mb-8 text-foreground">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>Periază-te pe dinți de 2 ori pe zi și folosește ața dentară zilnic</li>
                 <li>Detartraj profesional la 6 luni</li>
                 <li>Alimentație echilibrată, bogată în vitamine (mai ales C)</li>
@@ -415,7 +415,7 @@ const Parodontoza = () => {
               <p className="text-foreground mb-6">
                 Cu tratament adecvat și igienă riguroasă:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li><strong>Gingivita:</strong> Vindecare completă în 1-2 săptămâni</li>
                 <li><strong>Parodontita ușoară:</strong> Stabilizare completă, fără alte pierderi</li>
                 <li><strong>Parodontita moderată:</strong> Oprirea progresiei, salvarea majorității dinților</li>

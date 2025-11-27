@@ -103,7 +103,7 @@ const AparatDentarAdulti = () => {
                 De ce să porți aparat dentar ca adult?
               </h2>
               <p className="text-foreground mb-6">Multe persoane cred că aparatul dentar este doar pentru copii și adolescenți, dar realitatea e că nu există o limită de vârstă pentru tratamentul ortodontic. Iată câteva motive pentru care adulții aleg să își corecteze dinții:</p>
-              <ul className="list-disc pl-6 mb-8 text-foreground">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>Îmbunătățirea esteticii zâmbetului și creșterea încrederii în sine</li>
                 <li>Corectarea problemelor de mușcare ce pot cauza dureri de cap</li>
                 <li>Facilitarea igienei orale (dinții aliniați sunt mai ușor de curățat)</li>
@@ -122,7 +122,7 @@ const AparatDentarAdulti = () => {
               
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Cel mai eficient pentru cazuri complexe</li>
                   <li>Cel mai accesibil ca preț</li>
                   <li>Foarte durabil și rezistent</li>
@@ -133,7 +133,7 @@ const AparatDentarAdulti = () => {
 
               <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">Dezavantaje:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Cel mai vizibil tip de aparat</li>
                   <li>Poate cauza iritații ușoare ale obrajilor</li>
                   <li>Unele persoane consideră că nu este suficient de estetic</li>
@@ -160,7 +160,7 @@ const AparatDentarAdulti = () => {
 
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Mult mai estetic decât aparatul metalic</li>
                   <li>La fel de eficient ca cel metalic</li>
                   <li>Bracket-urile se potrivesc cu culoarea dinților</li>
@@ -171,7 +171,7 @@ const AparatDentarAdulti = () => {
 
               <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">Dezavantaje:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Mai scump decât aparatul metalic</li>
                   <li>Bracket-urile ceramice sunt ușor mai mari</li>
                   <li>Pot apărea decolorări dacă igiena este neglijată</li>
@@ -187,7 +187,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
 
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-3">Avantaje:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Practic invizibil - nimeni nu observă că porți aparat</li>
                   <li>Poți să îl scoți când mănânci sau te speli pe dinți</li>
                   <li>Confort maxim, fără metal, fără iritații</li>
@@ -199,7 +199,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
 
               <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">Dezavantaje:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Cel mai scump dintre cele 3 tipuri</li>
                   <li>Nu este potrivit pentru toate cazurile complexe</li>
                   <li>Necesită disciplină (trebuie purtat 20-22 ore pe zi)</li>
@@ -217,7 +217,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
 
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-4">Alege aparatul metalic dacă:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Ai un caz ortodontic complex</li>
                   <li>Prețul este o prioritate</li>
                   <li>Dorești rezultate cât mai rapide</li>
@@ -227,7 +227,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
 
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-4">Alege aparatul ceramic dacă:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Dorești un echilibru între eficiență și estetică</li>
                   <li>Ai un caz ortodontic moderat sau complex</li>
                   <li>Îți permiți un buget mediu</li>
@@ -237,7 +237,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
 
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-4">Alege Invisalign dacă:</h4>
-                <ul className="list-disc pl-6 text-foreground">
+                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                   <li>Dorești un tratament complet invizibil</li>
                   <li>Ai un caz ușor sau moderat</li>
                   <li>Ești disciplinat să porți gutierele 20-22 ore/zi</li>
@@ -298,7 +298,7 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
               <p className="text-foreground mb-6">
                 Indiferent de tipul de aparat ales, tratamentul ortodontic pentru adulți urmează acești pași:
               </p>
-              <ol className="list-decimal pl-6 mb-8 text-foreground space-y-3">
+              <ol className="list-decimal pl-6 mb-8 text-foreground text-base md:text-sm space-y-3 [&_a]:text-primary [&_a]:hover:underline">
                 <li>Consultație și diagnostic: Evaluare completă, fotografii, radiografii și mulaje dentare pentru plan de tratament personalizat<strong>Consultație și diagnostic:</strong> Evaluare completă, fotografii, radiografii și 
                   impresii dentare pentru plan de tratament personalizat
                 </li>

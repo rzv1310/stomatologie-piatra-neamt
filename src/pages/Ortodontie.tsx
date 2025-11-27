@@ -305,7 +305,7 @@ const Ortodontie = () => {
               <p>
                 <strong>Când este nevoie de tratament ortodontic?</strong>
               </p>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
                 <li>Dinți înghețuiți sau suprapuși (aglomerație dentară)</li>
                 <li>Spații mari între dinți (diasteme)</li>
                 <li>Ocluzie incorectă - dinții superiori acoperă excesiv pe cei inferiori</li>
