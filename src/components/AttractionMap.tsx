@@ -69,7 +69,7 @@ const locations = {
     image: muzeuIstorie
   },
   shoppingCity: {
-    coords: [46.9415, 26.3479] as [number, number],
+    coords: [46.934774, 26.347928] as [number, number],
     name: "Shopping City Piatra-Neamț",
     description: "Mall / Centru comercial",
     distance: "~7 min cu mașina",
