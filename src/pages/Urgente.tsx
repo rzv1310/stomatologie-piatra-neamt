@@ -293,12 +293,12 @@ const Urgente = () => {
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div className="text-4xl flex items-center justify-center w-12 h-12">{emergency.icon}</div>
-                    <span className={`px-3 py-1 rounded-md text-sm font-semibold text-white shadow-lg ${
+                    <span className={`px-3 py-1 rounded-md text-sm font-semibold text-white shadow-lg backdrop-blur-md border ${
                       emergency.severity === 'Foarte urgent' 
-                        ? 'bg-gradient-to-b from-red-400 to-red-500 border-b-4 border-red-700' 
+                        ? 'bg-red-500/30 border-red-400/50 shadow-red-500/20' 
                         : emergency.severity === 'Urgent'
-                        ? 'bg-gradient-to-b from-orange-400 to-orange-500 border-b-4 border-orange-700'
-                        : 'bg-gradient-to-b from-amber-300 to-amber-400 border-b-4 border-amber-600'
+                        ? 'bg-orange-500/30 border-orange-400/50 shadow-orange-500/20'
+                        : 'bg-amber-500/30 border-amber-400/50 shadow-amber-500/20'
                     }`}>
                       {emergency.severity}
                     </span>
