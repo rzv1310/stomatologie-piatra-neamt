@@ -495,7 +495,7 @@ const Urgente = () => {
               microcopy="✓ Primire rapidă · Luni-Vineri 8:00-20:00 · Durere oprită imediat"
               badges={[
                 { icon: "", text: "Durerea oprită chiar la prima vizită" },
-                { icon: "", text: "Programare în aceeași zi, fără liste de așteptare" },
+                { icon: "", text: "Încercăm programare în aceeași zi, fără liste de așteptare" },
                 { icon: "", text: "Tratament blând, gândit pentru cei cu frică de dentist" },
                 { icon: "", text: "Plan clar și costuri transparente, înainte să începem" }
               ]}
