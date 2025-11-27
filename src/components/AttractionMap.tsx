@@ -151,7 +151,9 @@ export const AttractionMap = () => {
           </a>
         </div>
       </div>
-    `);
+    `, {
+      maxWidth: 280
+    });
 
     // Adăugare markere pentru atracții
     Object.entries(locations).forEach(([key, location]) => {
