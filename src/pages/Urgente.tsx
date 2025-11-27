@@ -293,15 +293,26 @@ const Urgente = () => {
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div className="text-4xl flex items-center justify-center w-12 h-12">{emergency.icon}</div>
-                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                      emergency.severity === 'Foarte urgent' 
-                        ? 'bg-red-100 text-red-700' 
-                        : emergency.severity === 'Urgent'
-                        ? 'bg-orange-100 text-orange-700'
-                        : 'bg-yellow-100 text-yellow-700'
-                    }`}>
-                      {emergency.severity}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span 
+                        className={`w-3 h-3 rounded-full border-2 ${
+                          emergency.severity === 'Foarte urgent' 
+                            ? 'border-red-500' 
+                            : emergency.severity === 'Urgent'
+                            ? 'border-orange-500'
+                            : 'border-amber-400'
+                        }`}
+                      />
+                      <span className={`text-sm font-medium ${
+                        emergency.severity === 'Foarte urgent' 
+                          ? 'text-red-600' 
+                          : emergency.severity === 'Urgent'
+                          ? 'text-orange-600'
+                          : 'text-amber-600'
+                      }`}>
+                        {emergency.severity}
+                      </span>
+                    </div>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-heading">{emergency.title}</h3>
                   <p className="text-text-custom">{emergency.description}</p>
