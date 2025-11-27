@@ -118,22 +118,38 @@ export const AttractionMap = () => {
     const clinicMarker = L.marker(locations.clinic.coords, { icon: clinicIcon }).addTo(map);
     
     const clinicImageHtml = (locations.clinic as any).image 
-      ? `<img src="${(locations.clinic as any).image}" alt="${locations.clinic.name}" class="w-full h-32 object-cover rounded-md mb-2" />`
-      : '';
+      ? `
+        <div style="position: relative; height: 180px; overflow: hidden;">
+          <img 
+            src="${(locations.clinic as any).image}" 
+            alt="${locations.clinic.name}" 
+            style="width: 100%; height: 100%; object-fit: cover;"
+          />
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);"></div>
+        </div>
+      `
+      : `<div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); height: 140px; display: flex; align-items: center; justify-content: center; font-size: 48px;">🦷</div>`;
     
     clinicMarker.bindPopup(`
-      <div class="p-2 min-w-[200px]">
+      <div style="overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 8px 16px; color: white; font-weight: 600; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+          🦷 Clinica noastră
+        </div>
         ${clinicImageHtml}
-        <h4 class="font-bold text-lg mb-1">${locations.clinic.name}</h4>
-        <p class="text-sm text-gray-600 mb-2">${locations.clinic.description}</p>
-        <a 
-          href="${locations.clinic.googleMapsUrl}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-1 text-primary hover:underline text-sm"
-        >
-          Navigare Google Maps
-        </a>
+        <div style="padding: 16px;">
+          <h4 style="font-weight: 700; font-size: 18px; margin: 0 0 8px 0; color: hsl(var(--heading-color));">${locations.clinic.name}</h4>
+          <p style="font-size: 14px; color: hsl(var(--text-color)); margin: 0 0 12px 0; line-height: 1.5;">${locations.clinic.description}</p>
+          <a 
+            href="${locations.clinic.googleMapsUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; transition: transform 0.2s; min-height: 44px;"
+            onmouseover="this.style.transform='translateY(-2px)'"
+            onmouseout="this.style.transform='translateY(0)'"
+          >
+            📍 Navigare
+          </a>
+        </div>
       </div>
     `);
 
@@ -143,27 +159,66 @@ export const AttractionMap = () => {
       
       const marker = L.marker(location.coords, { icon: attractionIcon }).addTo(map);
       
+      const getCategoryBadge = (desc: string) => {
+        if (desc.includes('Monument')) return { icon: '🏛️', text: 'Monument istoric' };
+        if (desc.includes('Muzeu')) return { icon: '🏛️', text: 'Muzeu' };
+        if (desc.includes('Teatru')) return { icon: '🎭', text: 'Cultură' };
+        if (desc.includes('Stație')) return { icon: '🚂', text: 'Transport' };
+        if (desc.includes('Atracție')) return { icon: '🎢', text: 'Atracție turistică' };
+        return { icon: '📍', text: 'Locație' };
+      };
+
+      const badge = getCategoryBadge(location.description);
+      
       const imageHtml = (location as any).image 
-        ? `<img src="${(location as any).image}" alt="${location.name}" class="w-full h-32 object-cover rounded-md mb-2" />`
+        ? `
+          <div style="position: relative; height: 160px; overflow: hidden;">
+            <img 
+              src="${(location as any).image}" 
+              alt="${location.name}" 
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+            <div style="position: absolute; top: 12px; right: 12px; background: rgba(59, 130, 246, 0.95); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; backdrop-filter: blur(8px); display: flex; align-items: center; gap: 4px;">
+              <span>${badge.icon}</span>
+              <span>${badge.text}</span>
+            </div>
+          </div>
+        `
+        : `<div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); height: 140px; display: flex; align-items: center; justify-content: center; font-size: 48px;">${badge.icon}</div>`;
+      
+      const distanceIcon = location.distance.includes('mers') ? '🚶' : '🚗';
+      const distanceHtml = location.distance 
+        ? `
+          <div style="border-top: 1px solid hsl(var(--border)); padding-top: 12px; margin-top: 12px;">
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: hsl(var(--primary)); font-weight: 600;">
+              <span style="font-size: 16px;">${distanceIcon}</span>
+              <span>${location.distance}</span>
+            </div>
+          </div>
+        `
         : '';
       
       marker.bindPopup(`
-        <div class="p-2 min-w-[200px]">
+        <div style="overflow: hidden;">
           ${imageHtml}
-          <h4 class="font-bold text-base mb-1">${location.name}</h4>
-          <p class="text-sm text-gray-600">${location.description}</p>
-          ${location.distance ? `<p class="text-sm font-medium text-primary mt-1">${location.distance}</p>` : ''}
-          <a 
-            href="${location.googleMapsUrl}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2 block"
-          >
-            Navigare Google Maps
-          </a>
+          <div style="padding: 16px;">
+            <h4 style="font-weight: 700; font-size: 16px; margin: 0 0 6px 0; color: hsl(var(--heading-color)); line-height: 1.3;">${location.name}</h4>
+            <p style="font-size: 13px; color: hsl(var(--muted-foreground)); margin: 0; line-height: 1.5;">${location.description}</p>
+            ${distanceHtml}
+            <a 
+              href="${location.googleMapsUrl}"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; margin-top: 12px; transition: transform 0.2s; min-height: 44px;"
+              onmouseover="this.style.transform='translateY(-2px)'"
+              onmouseout="this.style.transform='translateY(0)'"
+            >
+              📍 Navigare
+            </a>
+          </div>
         </div>
       `, {
-        maxWidth: 250
+        maxWidth: 280
       });
     });
 
