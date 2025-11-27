@@ -20,7 +20,7 @@ export const HeroContactBox = ({
   icon = <Clock className="h-6 w-6 text-accent" />
 }: HeroContactBoxProps) => {
   return (
-    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8">
+    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 md:p-6 mb-8">
       {title && (
         <div className="flex items-center gap-3 mb-3">
           {icon}
