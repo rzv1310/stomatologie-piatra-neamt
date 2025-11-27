@@ -478,7 +478,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              Localizare clinică stomatologică în Piatra Neamț
+              Localizare clinică stomatologică în <a href="https://ro.wikipedia.org/wiki/Piatra-Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Piatra Neamț</a>
             </h2>
             <p className="text-lg text-text-custom">
               Clinica este situată ultracentral, pe Strada Ana Ipătescu 9, <a href="https://ro.wikipedia.org/wiki/Piatra-Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Piatra Neamț</a> 610120, în spate la Magazinul UNIC,  Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
