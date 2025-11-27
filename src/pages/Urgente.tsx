@@ -127,7 +127,7 @@ const Urgente = () => {
 
   const whenToCall = [
     "Durere severă care nu răspunde la analgezice",
-    "Umflătură facială care se extinde rapid",
+    "Edem - Umflătură facială, care se extinde rapid",
     "Dificultăți la înghițire sau respirație",
     "Febră peste 38°C asociată cu probleme dentare",
     "Sângerare care nu se oprește după 2 ore",
@@ -363,7 +363,7 @@ const Urgente = () => {
                 <Phone className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h2 className="text-2xl font-bold mb-4 text-heading">
-                    Când să suni urgent?
+                    Când să suni?
                   </h2>
                   <p className="text-lg text-text-custom mb-4">
                     Contactează-ne imediat dacă experimentezi:
@@ -376,9 +376,9 @@ const Urgente = () => {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-6 p-4 bg-accent text-white rounded-lg">
-                    <p className="font-bold text-lg mb-2">În caz de urgență severă:</p>
-                    <a href="tel:+40333630005" className="text-2xl font-bold hover:underline">
+                  <div className="mt-6 p-4 bg-primary text-white rounded-lg">
+                    <p className="font-bold text-lg mb-2 text-white">În caz de urgență severă:</p>
+                    <a href="tel:+40333630005" className="text-2xl font-bold hover:underline text-white">
                       0333 630 005
                     </a>
                   </div>
