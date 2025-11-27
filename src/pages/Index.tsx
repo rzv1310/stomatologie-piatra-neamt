@@ -429,7 +429,7 @@ const Index = () => {
             </h2>
             <p className="text-lg text-text-custom">
               Clinica este situată ultracentral, pe Strada Ana Ipătescu 9, Piatra Neamț 610120, în spate la Magazinul UNIC,  Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
-              Suntem la 15 minute de mers de Gara Piatra Neamț și stația Telegondolei, precum și la 7 minute de Curtea Domnească și Turnul lui Ștefan cel Mare.
+              Suntem la 15 minute de mers de Gara Piatra Neamț și stația Telegondolei, precum și la 7 minute de <a href="https://ro.wikipedia.org/wiki/Turnul_clopotni%C8%9B%C4%83_al_cur%C8%9Bii_domne%C8%99ti_din_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Curtea Domnească și Turnul lui Ștefan cel Mare</a>.
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
