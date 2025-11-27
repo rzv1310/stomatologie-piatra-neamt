@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import urgenteHero from "@/assets/service-urgente.jpg";
 import toothBrokenIcon from "@/assets/icon-tooth-broken.png";
 import toothInfectionIcon from "@/assets/icon-tooth-infection.png";
+import toothPainIcon from "@/assets/icon-tooth-pain.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -37,7 +38,7 @@ const Urgente = () => {
     {
       title: "Durere acută de dinți",
       description: "Pulpită, abces dentar, dureri severe care te țin treaz noaptea",
-      icon: "⚡",
+      icon: <img src={toothPainIcon} alt="Durere de dinți" className="h-12 w-12" />,
       severity: "Urgent"
     },
     {
