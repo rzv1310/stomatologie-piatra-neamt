@@ -86,19 +86,13 @@ const orangeSvg = `
 </svg>
 `;
 
-const clinicIcon = L.divIcon({
-  html: `
-    <div class="marker-clinic-wrapper">
-      <div class="pulse-ring"></div>
-      <div class="marker-icon-content">
-        ${orangeSvg}
-      </div>
-    </div>
-  `,
-  className: 'marker-drop',
+const clinicIcon = L.icon({
+  iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(orangeSvg),
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [1, -34]
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
 });
 
 const attractionIcon = L.icon({
@@ -141,8 +135,30 @@ export const AttractionMap = () => {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }).addTo(map);
 
-    // Adăugare marker pentru clinică
+    // Adăugare marker pentru clinică cu animații
     const clinicMarker = L.marker(locations.clinic.coords, { icon: clinicIcon }).addTo(map);
+    
+    // Adăugare animație drop pentru clinică
+    const clinicElement = clinicMarker.getElement();
+    if (clinicElement) {
+      clinicElement.classList.add('marker-drop');
+      
+      // Adăugare pulse ring
+      const pulseRing = document.createElement('div');
+      pulseRing.className = 'pulse-ring';
+      pulseRing.style.position = 'absolute';
+      pulseRing.style.top = '50%';
+      pulseRing.style.left = '50%';
+      pulseRing.style.transform = 'translate(-50%, -50%)';
+      pulseRing.style.width = '30px';
+      pulseRing.style.height = '30px';
+      pulseRing.style.borderRadius = '50%';
+      pulseRing.style.background = '#ff6b35';
+      pulseRing.style.pointerEvents = 'none';
+      pulseRing.style.zIndex = '-1';
+      clinicElement.style.position = 'relative';
+      clinicElement.insertBefore(pulseRing, clinicElement.firstChild);
+    }
     
       const clinicImageHtml = (locations.clinic as any).image 
         ? `
