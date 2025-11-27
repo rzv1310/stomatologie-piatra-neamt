@@ -81,7 +81,7 @@ const Urgente = () => {
 
   const immediateSteps = [
     {
-      problem: "Dinte complet ieșit din alveolă (avulsie dentară)",
+      problem: "Dinte ieșit din alveolă (avulsie dentară)",
       steps: [
         "Găsiți dintele și țineți-l de coroană (partea de sus), NU de rădăcină",
         "Clătiți ușor cu apă (nu frecați și nu curățați excesiv)",
