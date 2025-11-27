@@ -18,14 +18,14 @@ const locations = {
     coords: [46.9274, 26.3615] as [number, number],
     name: "Gara Piatra Neamț",
     description: "Stație de tren",
-    distance: "~15 min de mers",
+    distance: "~4 min cu mașina",
     googleMapsUrl: "https://maps.app.goo.gl/xYzQRZTgJe7eAo9m7"
   },
   telegondola: {
     coords: [46.9264, 26.3613] as [number, number],
     name: "Stația Telegondolei",
     description: "Atracție turistică",
-    distance: "~15 min de mers",
+    distance: "~20 min de mers",
     googleMapsUrl: "https://maps.app.goo.gl/8eYsT1brcL1PDwvh9",
     image: telegondolaPiatraNeamt
   },
