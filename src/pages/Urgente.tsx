@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Phone, AlertCircle, Clock, CheckCircle } from "lucide-react";
+import { Phone, AlertCircle, Clock, CheckCircle, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import urgenteHero from "@/assets/service-urgente.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
@@ -41,7 +41,7 @@ const Urgente = () => {
     {
       title: "Traumatisme dentare",
       description: "Dinte spart, rupt, luxat sau complet ieșit din alveolă",
-      icon: "🚨",
+      icon: <AlertTriangle className="h-8 w-8 text-red-600" />,
       severity: "Foarte urgent"
     },
     {
@@ -286,7 +286,7 @@ const Urgente = () => {
               <Card key={index} className="border-primary/20 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <div className="text-4xl">{emergency.icon}</div>
+                    <div className="text-4xl flex items-center justify-center w-12 h-12">{emergency.icon}</div>
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                       emergency.severity === 'Foarte urgent' 
                         ? 'bg-red-100 text-red-700' 
