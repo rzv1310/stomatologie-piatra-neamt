@@ -19,14 +19,14 @@ const locations = {
     name: "Gara Piatra Neamț",
     description: "Stație de tren",
     distance: "~4 min cu mașina",
-    googleMapsUrl: "https://maps.app.goo.gl/xYzQRZTgJe7eAo9m7"
+    googleMapsUrl: "https://maps.app.goo.gl/WKbsjG9kXRmetVoc8"
   },
   telegondola: {
     coords: [46.9264, 26.3613] as [number, number],
     name: "Stația Telegondolei",
     description: "Atracție turistică",
     distance: "~20 min de mers",
-    googleMapsUrl: "https://maps.app.goo.gl/8eYsT1brcL1PDwvh9",
+    googleMapsUrl: "https://maps.app.goo.gl/PDLWsWxuW16u7NHf8",
     image: telegondolaPiatraNeamt
   },
   teatru: {
@@ -34,7 +34,7 @@ const locations = {
     name: "Teatrul Tineretului",
     description: "Teatru",
     distance: "~7 min de mers",
-    googleMapsUrl: "https://maps.app.goo.gl/yZzQRZTgJe7eAo9m7"
+    googleMapsUrl: "https://maps.app.goo.gl/cuaVP9FMH3YdoN7B9"
   },
   curtea: {
     coords: [46.93333, 26.36806] as [number, number],
@@ -48,7 +48,7 @@ const locations = {
     name: "Turnul lui Ștefan cel Mare",
     description: "Monument istoric - Face parte din Curtea Domnească",
     distance: "~8 min de mers",
-    googleMapsUrl: "https://maps.app.goo.gl/aR1BQTax727fJ9BV8",
+    googleMapsUrl: "https://maps.app.goo.gl/udGY8igXWrfXzL2G8",
     image: turnulStefanCelMare
   }
 };
