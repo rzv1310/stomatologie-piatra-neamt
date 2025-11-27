@@ -358,9 +358,9 @@ const Urgente = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-accent/10 border-l-4 border-accent p-8 rounded-lg">
+            <div className="bg-red-50 border-l-4 border-red-600 p-8 rounded-lg">
               <div className="flex items-start space-x-4">
-                <Phone className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
+                <Phone className="h-8 w-8 text-red-600 flex-shrink-0 mt-1" />
                 <div>
                   <h2 className="text-2xl font-bold mb-4 text-heading">
                     Când să suni?
@@ -371,7 +371,7 @@ const Urgente = () => {
                   <ul className="space-y-3">
                     {whenToCall.map((situation, index) => (
                       <li key={index} className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1 mr-3" />
+                        <CheckCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-1 mr-3" />
                         <span className="text-text-custom font-medium">{situation}</span>
                       </li>
                     ))}
