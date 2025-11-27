@@ -15,6 +15,7 @@ import toothDamagedIcon from "@/assets/icon-tooth-damaged.png";
 import bleedingIcon from "@/assets/icon-bleeding.png";
 import surgeryIcon from "@/assets/icon-surgery.png";
 import rapidResponseIcon from "@/assets/icon-rapid-response.png";
+import equipmentIcon from "@/assets/icon-equipment.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -429,7 +430,9 @@ const Urgente = () => {
                 <p className="opacity-90 text-white">Te primim în aceeași zi pentru urgențe</p>
               </div>
               <div>
-                <div className="text-5xl mb-4">🏥</div>
+                <div className="mb-4 flex justify-center">
+                  <img src={equipmentIcon} alt="Echipament complet" className="h-16 w-16" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">Echipament complet</h3>
                 <p className="opacity-90 text-white">Toate instrumentele pentru orice urgență</p>
               </div>
