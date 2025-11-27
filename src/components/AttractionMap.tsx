@@ -1,7 +1,7 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Icon } from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import { useEffect, useRef } from 'react';
 import { MapPin, Navigation } from 'lucide-react';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -50,7 +50,7 @@ const locations = {
 };
 
 // Iconuri personalizate pentru markere
-const clinicIcon = new Icon({
+const clinicIcon = L.icon({
   iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
@@ -59,7 +59,7 @@ const clinicIcon = new Icon({
   shadowSize: [41, 41]
 });
 
-const attractionIcon = new Icon({
+const attractionIcon = L.icon({
   iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
@@ -69,6 +69,72 @@ const attractionIcon = new Icon({
 });
 
 export const AttractionMap = () => {
+  const mapRef = useRef<L.Map | null>(null);
+  const mapContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!mapContainerRef.current || mapRef.current) return;
+
+    // Inițializare hartă
+    const map = L.map(mapContainerRef.current, {
+      scrollWheelZoom: false
+    }).setView(locations.clinic.coords, 14);
+
+    // Adăugare TileLayer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Adăugare marker pentru clinică
+    const clinicMarker = L.marker(locations.clinic.coords, { icon: clinicIcon }).addTo(map);
+    clinicMarker.bindPopup(`
+      <div class="p-2">
+        <h4 class="font-bold text-lg mb-1">${locations.clinic.name}</h4>
+        <p class="text-sm text-gray-600 mb-2">${locations.clinic.description}</p>
+        <a 
+          href="${locations.clinic.googleMapsUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 text-primary hover:underline text-sm"
+        >
+          Navigare Google Maps
+        </a>
+      </div>
+    `);
+
+    // Adăugare markere pentru atracții
+    Object.entries(locations).forEach(([key, location]) => {
+      if (key === 'clinic') return;
+      
+      const marker = L.marker(location.coords, { icon: attractionIcon }).addTo(map);
+      marker.bindPopup(`
+        <div class="p-2">
+          <h4 class="font-bold text-base mb-1">${location.name}</h4>
+          <p class="text-sm text-gray-600">${location.description}</p>
+          ${location.distance ? `<p class="text-sm font-medium text-primary mt-1">${location.distance}</p>` : ''}
+          <a 
+            href="${location.googleMapsUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2"
+          >
+            Navigare Google Maps
+          </a>
+        </div>
+      `);
+    });
+
+    mapRef.current = map;
+
+    // Cleanup
+    return () => {
+      if (mapRef.current) {
+        mapRef.current.remove();
+        mapRef.current = null;
+      }
+    };
+  }, []);
+
   return (
     <div className="w-full">
       <div className="flex items-center gap-2 mb-4">
@@ -77,61 +143,7 @@ export const AttractionMap = () => {
       </div>
       
       <div className="rounded-lg overflow-hidden shadow-lg border border-border h-[400px] md:h-[500px]">
-        <MapContainer 
-          center={locations.clinic.coords} 
-          zoom={14} 
-          style={{ height: '100%', width: '100%' }}
-          scrollWheelZoom={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          
-          <Marker position={locations.clinic.coords} icon={clinicIcon}>
-            <Popup>
-              <div className="p-2">
-                <h4 className="font-bold text-lg mb-1">{locations.clinic.name}</h4>
-                <p className="text-sm text-muted-foreground mb-2">{locations.clinic.description}</p>
-                <a 
-                  href={locations.clinic.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary hover:underline text-sm"
-                >
-                  <Navigation className="w-3 h-3" />
-                  Navigare Google Maps
-                </a>
-              </div>
-            </Popup>
-          </Marker>
-
-          {Object.entries(locations).map(([key, location]) => {
-            if (key === 'clinic') return null;
-            return (
-              <Marker key={key} position={location.coords} icon={attractionIcon}>
-                <Popup>
-                  <div className="p-2">
-                    <h4 className="font-bold text-base mb-1">{location.name}</h4>
-                    <p className="text-sm text-muted-foreground">{location.description}</p>
-                    {location.distance && (
-                      <p className="text-sm font-medium text-primary mt-1">{location.distance}</p>
-                    )}
-                    <a 
-                      href={location.googleMapsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2"
-                    >
-                      <Navigation className="w-3 h-3" />
-                      Navigare Google Maps
-                    </a>
-                  </div>
-                </Popup>
-              </Marker>
-            );
-          })}
-        </MapContainer>
+        <div ref={mapContainerRef} style={{ height: '100%', width: '100%' }} />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-4 text-sm">
