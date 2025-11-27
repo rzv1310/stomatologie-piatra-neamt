@@ -295,10 +295,10 @@ const Urgente = () => {
                     <div className="text-4xl flex items-center justify-center w-12 h-12">{emergency.icon}</div>
                     <span className={`px-3 py-1 rounded-md text-sm font-semibold text-white shadow-lg ${
                       emergency.severity === 'Foarte urgent' 
-                        ? 'bg-gradient-to-b from-red-400 to-red-600 border-b-2 border-red-700' 
+                        ? 'bg-gradient-to-b from-red-400 to-red-500 border-b-4 border-red-700' 
                         : emergency.severity === 'Urgent'
-                        ? 'bg-gradient-to-b from-orange-400 to-orange-600 border-b-2 border-orange-700'
-                        : 'bg-gradient-to-b from-amber-300 to-amber-500 border-b-2 border-amber-600'
+                        ? 'bg-gradient-to-b from-orange-400 to-orange-500 border-b-4 border-orange-700'
+                        : 'bg-gradient-to-b from-amber-300 to-amber-400 border-b-4 border-amber-600'
                     }`}>
                       {emergency.severity}
                     </span>
