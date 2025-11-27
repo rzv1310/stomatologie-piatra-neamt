@@ -11,6 +11,7 @@ import urgenteHero from "@/assets/service-urgente.jpg";
 import toothBrokenIcon from "@/assets/icon-tooth-broken.png";
 import toothInfectionIcon from "@/assets/icon-tooth-infection.png";
 import toothPainIcon from "@/assets/icon-tooth-pain.png";
+import toothDamagedIcon from "@/assets/icon-tooth-damaged.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -62,7 +63,7 @@ const Urgente = () => {
     {
       title: "Plombe sau coroane căzute",
       description: "Restaurări pierdute care lasă dintele expus și sensibil",
-      icon: "👑",
+      icon: <img src={toothDamagedIcon} alt="Dinte deteriorat" className="h-12 w-12" />,
       severity: "Mediu"
     },
     {
