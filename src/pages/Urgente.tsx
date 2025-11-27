@@ -138,19 +138,19 @@ const Urgente = () => {
   const preventionTips = [
     {
       title: "Controale regulate",
-      description: "Vizite la dentist din 6 în 6 luni previne urgențele"
+      description: "Vizita la dentist din 6 în 6 luni previne urgențele"
     },
     {
       title: "Igienă corespunzătoare",
       description: "Periaj de 2 ori pe zi și ață dentară zilnic"
     },
     {
-      title: "Protecție sportivă",
+      title: "Protecție",
       description: "Folosiți proteze dentare (gutiere) la sporturi de contact"
     },
     {
-      title: "Evitați alimente tari",
-      description: "Nu mușcați ghețari, bomboane tari sau coajă de nuci cu dinții"
+      title: "Evitați alimentele tari",
+      description: "Nu spargeți oase, gheață, bomboane tari, nuci cu dinții"
     }
   ];
 
