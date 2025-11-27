@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { MapPin, Navigation } from 'lucide-react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg';
+import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.webp';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -24,7 +26,8 @@ const locations = {
     name: "Stația Telegondolei",
     description: "Atracție turistică",
     distance: "~15 min de mers",
-    googleMapsUrl: "https://maps.app.goo.gl/8eYsT1brcL1PDwvh9"
+    googleMapsUrl: "https://maps.app.goo.gl/8eYsT1brcL1PDwvh9",
+    image: telegondolaPiatraNeamt
   },
   teatru: {
     coords: [46.9322, 26.368] as [number, number],
@@ -45,7 +48,8 @@ const locations = {
     name: "Turnul lui Ștefan cel Mare",
     description: "Monument istoric - Face parte din Curtea Domnească",
     distance: "~8 min de mers",
-    googleMapsUrl: "https://maps.app.goo.gl/aR1BQTax727fJ9BV8"
+    googleMapsUrl: "https://maps.app.goo.gl/aR1BQTax727fJ9BV8",
+    image: turnulStefanCelMare
   }
 };
 
@@ -107,8 +111,14 @@ export const AttractionMap = () => {
       if (key === 'clinic') return;
       
       const marker = L.marker(location.coords, { icon: attractionIcon }).addTo(map);
+      
+      const imageHtml = (location as any).image 
+        ? `<img src="${(location as any).image}" alt="${location.name}" class="w-full h-32 object-cover rounded-md mb-2" />`
+        : '';
+      
       marker.bindPopup(`
-        <div class="p-2">
+        <div class="p-2 min-w-[200px]">
+          ${imageHtml}
           <h4 class="font-bold text-base mb-1">${location.name}</h4>
           <p class="text-sm text-gray-600">${location.description}</p>
           ${location.distance ? `<p class="text-sm font-medium text-primary mt-1">${location.distance}</p>` : ''}
@@ -116,12 +126,14 @@ export const AttractionMap = () => {
             href="${location.googleMapsUrl}"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2"
+            class="inline-flex items-center gap-1 text-primary hover:underline text-sm mt-2 block"
           >
             Navigare Google Maps
           </a>
         </div>
-      `);
+      `, {
+        maxWidth: 250
+      });
     });
 
     mapRef.current = map;
