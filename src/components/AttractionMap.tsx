@@ -15,7 +15,7 @@ const locations = {
     googleMapsUrl: "https://maps.app.goo.gl/gVUQRZTgJe7eAo9m7"
   },
   gara: {
-    coords: [46.9354, 26.3719] as [number, number],
+    coords: [46.9274, 26.3615] as [number, number],
     name: "Gara Piatra Neamț",
     description: "Stație de tren",
     distance: "~15 min de mers",
