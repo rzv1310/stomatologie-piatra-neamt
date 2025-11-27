@@ -304,7 +304,7 @@ const Parodontologie = () => {
               <p>
                 La Medstom, tratamentul parodontal include:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Evaluare parodontală detaliată cu măsurarea buzunarelor</li>
                 <li>Detartraj subgingival cu ultrasunete</li>
                 <li>Chiuretaj și netezire radiculară (scaling și root planing)</li>

@@ -130,7 +130,7 @@ const PrimaVizitaCopil = () => {
               </h3>
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-3">Ce SĂ spui:</h4>
-                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+                <ul className="list-disc pl-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                   <li>"Mergem să vedem pe doctorul care se ocupă de dinții să fie sănătoși"</li>
                   <li>"Doctorul o să-ți numere dinții și o să-i facă să strălucească"</li>
                   <li>"O să vezi un scaun special care se urcă și se coboară"</li>
@@ -140,7 +140,7 @@ const PrimaVizitaCopil = () => {
 
               <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8">
                 <h4 className="font-bold text-foreground mb-3">Ce să NU spui:</h4>
-                <ul className="list-disc pl-6 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+                <ul className="list-disc pl-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                   <li>"Nu o să doară deloc" (plantează ideea că ar putea durea)</li>
                   <li>"Nu fi copil fricos" (invalidează emoțiile copilului)</li>
                   <li>"Dacă ești cuminte primești cadou" (implică că e ceva neplăcut)</li>
@@ -155,7 +155,7 @@ const PrimaVizitaCopil = () => {
               <p className="text-foreground mb-4">
                 Copiii învață cel mai bine prin joacă. Iată câteva idei:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>
                   <strong>Joacă-te de-a dentistul:</strong> Folosește o periuță de dinți ca să "verifici" 
                   dinții tăi (ai părintelui)
@@ -180,7 +180,7 @@ const PrimaVizitaCopil = () => {
               <p className="text-foreground mb-4">
                 Programează vizita:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Dimineața, când copilul este odihnit și cooperant</li>
                 <li>Nu după un eveniment stresant sau schimbări majore în viața copilului</li>
                 <li>Nu imediat după masa (unii copii au reflexul de vărsătură când li se atinge gura)</li>
@@ -203,7 +203,7 @@ const PrimaVizitaCopil = () => {
               <h3 className="text-2xl font-bold text-foreground mt-8 mb-4">
                 Înainte de a pleca de acasă
               </h3>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Asigură-te că cel mic este odihnit și hrănit (dar nu imediat înainte)</li>
                 <li>Mergi la baie înainte de a pleca</li>
                 <li>Îmbracă copilul confortabil - evită hainele strâmte sau incomode</li>
@@ -217,7 +217,7 @@ const PrimaVizitaCopil = () => {
               <p className="text-foreground mb-4">
                 Atitudinea ta contează enorm! Copiii simt anxietatea părinților, așa că:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Fii calm și zâmbitor - transmite încredere</li>
                 <li>Lasă-l să exploreze sala de așteptare și jucăriile</li>
                 <li>Nu-i spune "nu fi fricos" sau "comportă-te frumos" (creează presiune)</li>
@@ -232,7 +232,7 @@ const PrimaVizitaCopil = () => {
                 Prima vizită este scurtă, blândă și concepută pentru a face cunoștință. Iată ce va include:
               </p>
 
-              <ol className="list-decimal pl-6 mb-8 text-foreground text-base md:text-sm space-y-4 [&_a]:text-primary [&_a]:hover:underline">
+              <ol className="list-decimal pl-6 mb-8 text-foreground text-base space-y-4 [&_a]:text-primary [&_a]:hover:underline">
                 <li>
                   <strong>Turul cabinetului:</strong> Copilul explorează scaunul dentar, vede instrumentele, 
                   se urcă și se coboară cu scaunul magic
@@ -257,7 +257,7 @@ const PrimaVizitaCopil = () => {
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 După vizită - întărește experiența pozitivă
               </h2>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Laudă copilul pentru curaj, indiferent cum a decurs vizita</li>
                 <li>Povestiți împreună despre experiență și ce i-a plăcut cel mai mult</li>
                 <li>Nu folosi vizita la dentist ca amenințare niciodată ("Dacă nu te speli o să mergem la dentist")</li>
@@ -280,7 +280,7 @@ const PrimaVizitaCopil = () => {
                 Uneori, în ciuda pregătirii, copiii nu cooperează. Este absolut normal și nu înseamnă că 
                 ai eșuat ca părinte. Iată ce poți face:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Nu certa sau pedepsi copilul - ar asocia dentistul cu ceva rău</li>
                 <li>Rămâi calm și arată-ți suportul</li>
                 <li>Colaborează cu medicul pentru o nouă vizită de obișnuire</li>
@@ -294,7 +294,7 @@ const PrimaVizitaCopil = () => {
               <p className="text-foreground mb-4">
                 Pentru a menține atitudinea pozitivă pe termen lung:
               </p>
-              <ul className="list-disc pl-6 mb-8 text-foreground text-base md:text-sm [&_a]:text-primary [&_a]:hover:underline">
+              <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Programează controale regulate la 6 luni</li>
                 <li>Nu folosi vizita la dentist ca pedeapsă sau amenințare</li>
                 <li>Întărește importanța periajului zilnic acasă</li>
