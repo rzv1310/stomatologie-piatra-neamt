@@ -397,7 +397,7 @@ const Urgente = () => {
               Prevenirea urgențelor dentare
             </h2>
             <p className="text-lg text-text-custom max-w-2xl mx-auto font-['Caveat',_cursive] text-2xl italic">
-              „Cel mai bun tratament în urgență e cel de care n-ai nevoie" - dr. Dolganiuc, Medstom Clinic
+              „Cel mai bun tratament în urgență e cel de care n-ai nevoie" - dr. Dolganiuc, Medstom
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
