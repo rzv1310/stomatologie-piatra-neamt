@@ -133,22 +133,22 @@ export const AttractionMap = () => {
     // Adăugare marker pentru clinică
     const clinicMarker = L.marker(locations.clinic.coords, { icon: clinicIcon }).addTo(map);
     
-    const clinicImageHtml = (locations.clinic as any).image 
-      ? `
-        <div style="position: relative; height: 180px; overflow: hidden;">
-          <img 
-            src="${(locations.clinic as any).image}" 
-            alt="${locations.clinic.name}" 
-            style="width: 100%; height: 100%; object-fit: cover;"
-          />
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);"></div>
-        </div>
-      `
-      : `<div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); height: 140px; display: flex; align-items: center; justify-content: center; font-size: 48px;">🦷</div>`;
+      const clinicImageHtml = (locations.clinic as any).image 
+        ? `
+          <div style="position: relative; height: 180px; overflow: hidden;">
+            <img 
+              src="${(locations.clinic as any).image}" 
+              alt="${locations.clinic.name}" 
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to top, rgba(255,107,53,0.6), transparent);"></div>
+          </div>
+        `
+        : `<div style="background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%); height: 140px; display: flex; align-items: center; justify-content: center; font-size: 48px;">🦷</div>`;
     
     clinicMarker.bindPopup(`
       <div style="overflow: hidden;">
-        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 8px 16px; color: white; font-weight: 600; font-size: 13px; display: flex; align-items: center; gap: 6px;">
+        <div style="background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%); padding: 8px 16px; color: white; font-weight: 600; font-size: 13px; display: flex; align-items: center; gap: 6px;">
           🦷 Clinica noastră
         </div>
         ${clinicImageHtml}
@@ -159,7 +159,7 @@ export const AttractionMap = () => {
             href="${locations.clinic.googleMapsUrl}"
             target="_blank"
             rel="noopener noreferrer"
-            style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; transition: transform 0.2s; min-height: 44px;"
+            style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; width: 100%; transition: transform 0.2s; min-height: 44px;"
             onmouseover="this.style.transform='translateY(-2px)'"
             onmouseout="this.style.transform='translateY(0)'"
           >
