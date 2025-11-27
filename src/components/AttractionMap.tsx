@@ -9,6 +9,7 @@ import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png';
 import garaPiatraNeamt from '@/assets/gara-piatra-neamt.png';
 import muzeuIstorie from '@/assets/muzeu-istorie-piatra-neamt.jpg';
 import clinicLocation from '@/assets/clinic-location-street-view.png';
+import shoppingCityPiatraNeamt from '@/assets/shopping-city-piatra-neamt.png';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -66,6 +67,14 @@ const locations = {
     distance: "~3 min cu mașina",
     googleMapsUrl: "https://maps.app.goo.gl/msDyGD73KMtg5JJKA",
     image: muzeuIstorie
+  },
+  shoppingCity: {
+    coords: [46.9179, 26.3731] as [number, number],
+    name: "Shopping City Piatra-Neamț",
+    description: "Mall / Centru comercial",
+    distance: "~7 min cu mașina",
+    googleMapsUrl: "https://maps.app.goo.gl/UeDDP7eGr3AipPSR6",
+    image: shoppingCityPiatraNeamt
   }
 };
 
@@ -167,6 +176,7 @@ export const AttractionMap = () => {
         if (desc.includes('Teatru')) return { icon: '🎭', text: 'Cultură' };
         if (desc.includes('Stație')) return { icon: '🚂', text: 'Transport' };
         if (desc.includes('Atracție')) return { icon: '🎢', text: 'Atracție turistică' };
+        if (desc.includes('Mall') || desc.includes('Centru comercial')) return { icon: '🛒', text: 'Shopping' };
         return { icon: '📍', text: 'Locație' };
       };
 
