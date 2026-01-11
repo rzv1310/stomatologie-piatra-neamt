@@ -198,4 +198,25 @@ All colors MUST be HSL.
       padding: 10px 14px !important;
     }
   }
+
+  /* Accessibility Styles */
+  .high-contrast {
+    filter: contrast(1.25);
+  }
+
+  .high-contrast * {
+    border-color: currentColor !important;
+  }
+
+  .large-text {
+    font-size: 120% !important;
+  }
+
+  .large-text p,
+  .large-text span,
+  .large-text li,
+  .large-text a {
+    font-size: 1.1em !important;
+    line-height: 1.6 !important;
+  }
 }

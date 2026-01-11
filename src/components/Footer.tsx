@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Facebook } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,6 +21,10 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
                 <span>Telefon: <a href="tel:+40333630005" className="hover:text-accent transition-colors">0333 630 005</a></span>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
+                <span>Email: <a href="mailto:hello@stomatologiepiatraneamt.ro" className="hover:text-accent transition-colors">hello@stomatologiepiatraneamt.ro</a></span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
