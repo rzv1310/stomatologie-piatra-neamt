@@ -109,14 +109,19 @@ const Navigation = () => {
             </a>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Mobile phone icon + menu button */}
+          <div className="lg:hidden flex items-center gap-2">
+            <a href="tel:+40333630005" className="p-2" aria-label="Sună acum">
+              <Phone className="h-6 w-6 text-accent animate-pulse" />
+            </a>
+            <button
+              className="p-2"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
