@@ -109,11 +109,8 @@ const Navigation = () => {
             </a>
           </div>
 
-          {/* Mobile phone icon + menu button */}
+          {/* Mobile menu button + phone icon */}
           <div className="lg:hidden flex items-center gap-2">
-            <a href="tel:+40333630005" className="p-2" aria-label="Sună acum">
-              <Phone className="h-6 w-6 text-accent animate-pulse" />
-            </a>
             <button
               className="p-2"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -121,6 +118,9 @@ const Navigation = () => {
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
+            <a href="tel:+40333630005" className="p-2" aria-label="Sună acum">
+              <Phone className="h-6 w-6 text-accent animate-pulse" />
+            </a>
           </div>
         </div>
 
