@@ -582,6 +582,71 @@ const Index = () => {
             <div className="mt-12 max-w-4xl mx-auto">
               <AttractionMap />
             </div>
+            
+            {/* Zone deservite */}
+            <div className="mt-12 max-w-4xl mx-auto bg-card rounded-xl p-6 md:p-8 border border-primary/20">
+              <p className="text-lg text-text-custom mb-6">
+                Deservim pacienți din toate cartierele municipiului Piatra Neamț, precum și din localitățile adiacente.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-heading mb-3">Cartiere deservite în Piatra Neamț:</h3>
+                  <ul className="grid grid-cols-2 gap-2 text-text-custom">
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Centru</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Precista</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Dărmănești</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Mărăței</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Dacia</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Sărata</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Valea Viei</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Ștefan cel Mare</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-heading mb-3">Localități din apropiere:</h3>
+                  <ul className="space-y-2 text-text-custom">
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Doamna</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Văleni</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span>Ciritei</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
