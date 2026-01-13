@@ -112,7 +112,14 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Adresa clinicii</h3>
-                      <p className="text-text-custom">Strada Ana Ipătescu 9, Piatra Neamț 610120</p>
+                      <a 
+                        href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
+                        target="_blank" 
+                        rel="dofollow noopener noreferrer"
+                        className="text-text-custom hover:text-primary transition-colors"
+                      >
+                        Strada Ana Ipătescu 9, Piatra Neamț 610120
+                      </a>
                     </div>
                   </div>
 
@@ -271,15 +278,20 @@ const Contact = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4 text-heading">Cum ajungi la clinică</h2>
-              <p className="text-lg text-text-custom">
+              <a 
+                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
+                target="_blank" 
+                rel="dofollow noopener noreferrer"
+                className="text-lg text-text-custom hover:text-primary transition-colors"
+              >
                 Strada Ana Ipătescu 9, Piatra Neamț 610120
-              </p>
+              </a>
             </div>
             <Card className="border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <div className="aspect-video w-full">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -293,9 +305,9 @@ const Contact = () => {
             </Card>
             <div className="text-center mt-6">
               <a
-                href="https://maps.app.goo.gl/bdybD18DhPFw35fi7"
+                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="dofollow noopener noreferrer"
               >
                 <Button variant="outline" size="lg" className="gap-2">
                   <MapPin className="h-5 w-5" />

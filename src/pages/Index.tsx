@@ -179,7 +179,14 @@ const Index = () => {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-2 text-accent" />
-                  <span>Strada Ana Ipătescu 9, Piatra Neamț 610120</span>
+                  <a 
+                    href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
+                    target="_blank" 
+                    rel="dofollow noopener noreferrer"
+                    className="hover:text-accent transition-colors"
+                  >
+                    Strada Ana Ipătescu 9, Piatra Neamț 610120
+                  </a>
                 </div>
               </div>
             </div>
@@ -517,7 +524,7 @@ const Index = () => {
               {/* Google Maps */}
               <div className="aspect-video bg-muted rounded-lg overflow-hidden">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38928.582512702225!2d26.384864!3d46.944676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473555b4963f433b%3A0xef353338e857b1d2!2sImplant%20Dentar%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1763672431638!5m2!1sro!2sro" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }}
@@ -531,9 +538,9 @@ const Index = () => {
             
             <div className="text-center mt-6">
               <a 
-                href="https://maps.app.goo.gl/bdybD18DhPFw35fi7" 
+                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="dofollow noopener noreferrer"
               >
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                   <MapPin className="mr-2 h-5 w-5" />
@@ -544,7 +551,7 @@ const Index = () => {
             
             <div className="mt-8 max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
               <a 
-                href="https://maps.app.goo.gl/8eYsT1brcL1PDwvh9" 
+                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
                 target="_blank" 
                 rel="dofollow noopener noreferrer"
                 className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
@@ -561,7 +568,7 @@ const Index = () => {
               </a>
               
               <a 
-                href="https://maps.app.goo.gl/aR1BQTax727fJ9BV8" 
+                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
                 target="_blank" 
                 rel="dofollow noopener noreferrer"
                 className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
