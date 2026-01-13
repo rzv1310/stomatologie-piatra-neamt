@@ -18,7 +18,7 @@ const locations = {
     name: "MedStom",
     description: "Clinică de stomatologie în Piatra Neamț",
     distance: "",
-    googleMapsUrl: "https://maps.app.goo.gl/gVUQRZTgJe7eAo9m7",
+    googleMapsUrl: "https://maps.app.goo.gl/KxdWvszC7MCPTLsb9",
     image: clinicLocation
   },
   gara: {

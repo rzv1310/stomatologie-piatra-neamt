@@ -16,7 +16,14 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-white mb-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
-                <span>Strada Ana Ipătescu 9, Piatra Neamț 610120</span>
+                <a 
+                  href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
+                  target="_blank" 
+                  rel="dofollow noopener noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  Strada Ana Ipătescu 9, Piatra Neamț 610120
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
