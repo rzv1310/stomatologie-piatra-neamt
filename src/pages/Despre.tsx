@@ -86,7 +86,7 @@ const Despre = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
-              Despre clinica stomatologică Medstom Piatra Neamț
+              Despre Clinica de Stomatologie MedStom Piatra Neamț
             </h1>
             <p className="text-xl text-white italic">
               Suntem dedicați transformării zâmbetelor și vieților pacienților noștri

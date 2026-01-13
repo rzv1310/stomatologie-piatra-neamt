@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">
               <Link to="/" className="hover:text-accent transition-colors">
-                Stomatologie Piatra Neamț
+                Stomatologie MedStom Piatra Neamt
               </Link>
             </h2>
             <ul className="space-y-3 text-sm text-white mb-4">
@@ -167,7 +167,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm">
           <p className="text-white">
-            © {new Date().getFullYear()} Medstom Clinic. Toate drepturile rezervate.
+            © {new Date().getFullYear()} Stomatologie MedStom Piatra Neamt. Toate drepturile rezervate.
           </p>
           <div className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2 text-white">
             <Link to="/politica-cookies" className="hover:text-accent transition-colors">
