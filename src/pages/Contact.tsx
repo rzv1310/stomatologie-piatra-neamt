@@ -84,7 +84,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
-              Contact & Programări Dentist Piatra Neamț
+              Contact & Programări Stomatologie MedStom Piatra Neamt
             </h1>
             <p className="text-xl text-text-custom">
               Apelează-ne pentru orice întrebare. Dacă suntem foarte ocupați, te sunăm noi inapoi în câteva minute!

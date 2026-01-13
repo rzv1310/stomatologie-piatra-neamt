@@ -136,7 +136,7 @@ const Tarife = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
-              Prețuri Stomatologie Piatra Neamț
+              Prețuri Stomatologie MedStom Piatra Neamț
             </h1>
             <p className="text-xl text-text-custom">
               Tarife transparente și corecte pentru servicii stomatologice premium

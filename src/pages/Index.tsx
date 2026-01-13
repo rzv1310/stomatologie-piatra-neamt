@@ -503,7 +503,7 @@ const Index = () => {
               {/* Street View Image */}
               <div className="aspect-video bg-muted rounded-lg overflow-hidden relative group">
                 <a 
-                  href="https://www.google.com/maps/@46.9336581,26.3743251,3a,75y,250.35h,91.35t/data=!3m7!1e1!3m5!1sloUopwjl8115BKiTa6d1JQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-1.3454420591669844%26panoid%3DloUopwjl8115BKiTa6d1JQ%26yaw%3D250.3481182970364!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/@46.9337515,26.374023,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhCpJBiw2CvFIAjjV5Kys8n-!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAG0ilSz4QcmInu6_O2cnWuot4Xv75suE37bMrIfvFtz9QiEf-5iik3y7j0TVhpOpz0VDs-Ju9UVkF9EFZHKkNmiL7GmV9WNc2F6eJS97Or26fAywzn8pe10yRxGA9MkaGdqAFSoD88WYW676ZbM9%3Dw163-h86-k-no!7i2580!8i1353?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full h-full"
