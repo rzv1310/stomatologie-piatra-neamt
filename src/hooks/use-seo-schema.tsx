@@ -78,12 +78,12 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
       "dateModified": article.dateModified || article.datePublished,
       "author": {
         "@type": "Organization",
-        "name": "Medstom Clinic",
+        "name": "Stomatologie MedStom Piatra Neamț",
         "url": SITE_URL
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Medstom Clinic",
+        "name": "Stomatologie MedStom Piatra Neamț",
         "url": SITE_URL,
         "logo": {
           "@type": "ImageObject",
@@ -119,7 +119,7 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
       "url": fullUrl,
       "isPartOf": {
         "@type": "WebSite",
-        "name": "Medstom Clinic - Stomatologie Piatra Neamț",
+        "name": "Stomatologie MedStom Piatra Neamț",
         "url": SITE_URL
       }
     };
