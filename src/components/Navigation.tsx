@@ -38,7 +38,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img src={logo} alt="Stomatologie MedStom Piatra Neamt Logo" className="h-10 w-10 rounded-lg" />
-            <div className="text-2xl lg:text-2xl text-[19px] font-bold text-accent">Stomatologie MedStom Piatra Neamt</div>
+            <div className="text-[16px] lg:text-xl font-bold text-accent">Stomatologie MedStom Piatra Neamt</div>
           </Link>
 
           {/* Desktop Navigation */}
