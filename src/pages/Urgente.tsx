@@ -19,6 +19,7 @@ import equipmentIcon from "@/assets/icon-equipment.png";
 import painManagementIcon from "@/assets/icon-pain-management.png";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -201,11 +202,19 @@ const Urgente = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Urgențe Stomatologice",
+    serviceDescription: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe.",
+    path: "/servicii/urgente",
+    medicalSpecialty: "Urgențe Dentare"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

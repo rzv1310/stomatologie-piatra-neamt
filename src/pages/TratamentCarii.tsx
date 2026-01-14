@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/service-tratament-carii.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -115,11 +116,19 @@ const TratamentCarii = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Tratament Carii Dentare",
+    serviceDescription: "Tratament carii dentare modern în Piatra Neamț. Obturații estetice din compozit, nedureros. Salvăm dinții afectați de carii.",
+    path: "/servicii/tratament-carii",
+    medicalSpecialty: "Stomatologie Terapeutică"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
       
       <main className="flex-1">

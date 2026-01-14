@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import radiologieHero from "@/assets/cbct-green-x-radiologie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -143,11 +144,19 @@ const Radiologie = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Radiologie Dentară și Imagistică 3D",
+    serviceDescription: "Radiologie dentară digitală în Piatra Neamț. CBCT 3D, panoramică digitală, teleradiografie. Echipament Green X de ultimă generație.",
+    path: "/servicii/radiologie-dentara-piatra-neamt",
+    medicalSpecialty: "Radiologie Dentară"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

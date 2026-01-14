@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import parodontologieHero from "@/assets/service-parodontologie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -161,11 +162,19 @@ const Parodontologie = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Parodontologie",
+    serviceDescription: "Tratament parodontal specializat în Piatra Neamț. Chiuretaj, detartraj subgingival, regenerare osoasă. Prevenim pierderea dinților.",
+    path: "/servicii/parodontologie-piatra-neamt",
+    medicalSpecialty: "Parodontologie"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

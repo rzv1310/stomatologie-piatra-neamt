@@ -27,6 +27,7 @@ import {
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 
 const ImplantDentar = () => {
   const pricingSection = useIntersectionObserver();
@@ -110,11 +111,19 @@ const ImplantDentar = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Implant Dentar",
+    serviceDescription: "Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6.",
+    path: "/servicii/implant-dentar",
+    medicalSpecialty: "Implantologie Dentară"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

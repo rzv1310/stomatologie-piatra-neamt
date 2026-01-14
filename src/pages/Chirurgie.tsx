@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import chirurgieHero from "@/assets/service-chirurgie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -168,11 +169,19 @@ const Chirurgie = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Chirurgie Orală",
+    serviceDescription: "Chirurgie orală specializată în Piatra Neamț. Extracții molari de minte, adiție osoasă, sinus lift. Proceduri nedureroase.",
+    path: "/servicii/chirurgie-orala",
+    medicalSpecialty: "Chirurgie Orală și Maxilo-Facială"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

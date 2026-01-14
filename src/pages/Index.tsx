@@ -8,6 +8,7 @@ import { useCounter } from "@/hooks/use-counter";
 import { useState, useEffect, useRef } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useAggregateRatingSchema } from "@/hooks/use-aggregate-rating-schema";
 import { recentArticles } from "@/config/related-content";
 import { faqCategories, faqDataForSEO } from "@/config/faq-data";
 import teamHero from "@/assets/team-hero.webp";
@@ -37,6 +38,23 @@ const Index = () => {
     type: 'FAQPage',
     canonical: '/',
     faqs: faqDataForSEO
+  });
+
+  const AggregateRatingSchema = useAggregateRatingSchema({
+    ratingValue: "4.9",
+    reviewCount: "150",
+    reviews: [
+      {
+        author: "Nicolae Lazar",
+        reviewBody: "Profesionalism şi seriozitate, lucrări în siguranţă, personal calificat şi drăguț. Am găsit în sfârşit un cabinet unde același medic execută toate lucrările de la anestezie până la implant dentar. RECOMAND!!!!!!",
+        ratingValue: 5
+      },
+      {
+        author: "Irina",
+        reviewBody: "Servicii PROFESIONALE ca în București la preturi mai mici ca în Iași! Cel mai bun anestezic, NU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
+        ratingValue: 5
+      }
+    ]
   });
 
   useEffect(() => {
@@ -141,6 +159,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {FAQSchema}
+      {AggregateRatingSchema}
       <Navigation />
 
       <main className="flex-1">

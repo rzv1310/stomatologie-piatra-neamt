@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import profilaxieHero from "@/assets/service-profilaxie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -118,11 +119,19 @@ const Profilaxie = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Profilaxie și Igienizare Dentară",
+    serviceDescription: "Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși.",
+    path: "/servicii/profilaxie",
+    medicalSpecialty: "Stomatologie Preventivă"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">
