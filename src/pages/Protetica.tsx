@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import proteticaHero from "@/assets/service-protetica.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -152,11 +153,19 @@ const Protetica = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Protetică Dentară",
+    serviceDescription: "Lucrări protetice de calitate în Piatra Neamț. Coroane zirconiu, EMAX, proteze dentare, lucrări pe implanturi. Laborator propriu.",
+    path: "/servicii/protetica-piatra-neamt",
+    medicalSpecialty: "Protetică Dentară"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

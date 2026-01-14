@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import copiiHero from "@/assets/service-copii.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -201,11 +202,19 @@ const StomatologieCopii = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Stomatologie pentru Copii (Pedodonție)",
+    serviceDescription: "Pedodonție specializată în Piatra Neamț. Cabinet stomatologic pentru copii, tratamente nedureroase, preventie dentară pediatrică.",
+    path: "/servicii/stomatologie-copii-piatra-neamt",
+    medicalSpecialty: "Pedodonție"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">

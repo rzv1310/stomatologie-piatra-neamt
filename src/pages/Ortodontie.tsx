@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import ortodontieHero from "@/assets/service-ortodontie.jpg";
 import { useServiceMeta } from "@/hooks/use-service-meta";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
@@ -194,11 +195,19 @@ const Ortodontie = () => {
     faqs: faqs
   });
 
+  const LocalBusinessSchema = useLocalBusinessSchema({
+    serviceName: "Ortodonție",
+    serviceDescription: "Aparate dentare fixe, estetice și alignere transparente pentru copii, adolescenți și adulți în Piatra Neamț.",
+    path: "/servicii/ortodontie-piatra-neamt",
+    medicalSpecialty: "Ortodonție"
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       {ServiceMeta}
       {MedicalProcedureSchema}
       {FAQSchema}
+      {LocalBusinessSchema}
       <Navigation />
 
       <main className="flex-1">
