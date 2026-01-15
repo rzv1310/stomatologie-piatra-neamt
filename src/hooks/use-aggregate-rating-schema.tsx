@@ -56,3 +56,9 @@ export const useAggregateRatingSchema = ({
     </Helmet>
   );
 };
+
+// Default values for the clinic
+export const CLINIC_RATING = {
+  ratingValue: "5.0",
+  reviewCount: "10"
+};
