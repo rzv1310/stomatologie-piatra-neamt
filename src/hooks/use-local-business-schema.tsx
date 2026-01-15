@@ -22,6 +22,13 @@ export const useLocalBusinessSchema = ({
     "name": "Stomatologie MedStom Piatra Neamț",
     "description": serviceDescription,
     "url": fullUrl,
+    "image": "https://stomatologie-piatra-neamt.lovable.app/favicon.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://stomatologie-piatra-neamt.lovable.app/favicon.png",
+      "width": 512,
+      "height": 512
+    },
     "telephone": "+40333630005",
     "priceRange": "$$",
     "hasMap": {

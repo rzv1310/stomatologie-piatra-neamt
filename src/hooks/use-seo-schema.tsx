@@ -87,7 +87,9 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
         "url": SITE_URL,
         "logo": {
           "@type": "ImageObject",
-          "url": "https://lovable.dev/opengraph-image-p98pqg.png"
+          "url": "https://stomatologie-piatra-neamt.lovable.app/favicon.png",
+          "width": 512,
+          "height": 512
         }
       },
       "mainEntityOfPage": {
