@@ -23,6 +23,14 @@ export const useAggregateRatingSchema = ({
     "@type": "LocalBusiness",
     "name": "Stomatologie MedStom Piatra Neamț",
     "url": SITE_URL,
+    "telephone": "+40333630005",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strada Ana Ipătescu 9",
+      "addressLocality": "Piatra Neamț",
+      "postalCode": "610120",
+      "addressCountry": "RO"
+    },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": ratingValue,
