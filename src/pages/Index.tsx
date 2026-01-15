@@ -41,8 +41,8 @@ const Index = () => {
   });
 
   const AggregateRatingSchema = useAggregateRatingSchema({
-    ratingValue: "4.9",
-    reviewCount: "150",
+    ratingValue: "5.0",
+    reviewCount: "10",
     reviews: [
       {
         author: "Nicolae Lazar",
