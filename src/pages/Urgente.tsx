@@ -17,7 +17,7 @@ import surgeryIcon from "@/assets/icon-surgery.png";
 import rapidResponseIcon from "@/assets/icon-rapid-response.png";
 import equipmentIcon from "@/assets/icon-equipment.png";
 import painManagementIcon from "@/assets/icon-pain-management.png";
-import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -26,10 +26,9 @@ import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Urgente = () => {
-  const ServiceMeta = useServiceMeta({
+  const DynamicSEO = useDynamicSEO({
     title: "Urgențe Stomatologice Piatra Neamț - Cabinet Deschis 24/7 | Medstom",
     description: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe. ☎ 0333 630 005",
-    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/urgente"
   });
 
@@ -211,7 +210,7 @@ const Urgente = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {ServiceMeta}
+      {DynamicSEO}
       {MedicalProcedureSchema}
       {FAQSchema}
       {LocalBusinessSchema}

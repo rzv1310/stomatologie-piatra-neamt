@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import copiiHero from "@/assets/service-copii.jpg";
-import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -17,10 +17,9 @@ import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
 
 const StomatologieCopii = () => {
-  const ServiceMeta = useServiceMeta({
+  const DynamicSEO = useDynamicSEO({
     title: "Stomatologie Copii Piatra Neamț - Pedodonție | Medstom",
     description: "Pedodonție specializată în Piatra Neamț. Cabinet stomatologic pentru copii, tratamente nedureroase, preventie dentară pediatrică. ☎ 0333 630 005",
-    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/stomatologie-copii-piatra-neamt"
   });
 
@@ -211,7 +210,7 @@ const StomatologieCopii = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {ServiceMeta}
+      {DynamicSEO}
       {MedicalProcedureSchema}
       {FAQSchema}
       {LocalBusinessSchema}

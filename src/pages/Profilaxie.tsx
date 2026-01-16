@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import profilaxieHero from "@/assets/service-profilaxie.jpg";
-import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -17,10 +17,9 @@ import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Profilaxie = () => {
-  const ServiceMeta = useServiceMeta({
+  const DynamicSEO = useDynamicSEO({
     title: "Profilaxie Dentară Piatra Neamț - Detartraj și Igienizare | Medstom",
     description: "Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși. ☎ 0333 630 005",
-    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/profilaxie"
   });
 
@@ -128,7 +127,7 @@ const Profilaxie = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {ServiceMeta}
+      {DynamicSEO}
       {MedicalProcedureSchema}
       {FAQSchema}
       {LocalBusinessSchema}
