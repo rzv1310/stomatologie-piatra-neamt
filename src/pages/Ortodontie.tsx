@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import ortodontieHero from "@/assets/service-ortodontie.jpg";
-import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 import RelatedServices from "@/components/RelatedServices";
@@ -172,10 +172,9 @@ const Ortodontie = () => {
     }
   ];
 
-  const ServiceMeta = useServiceMeta({
+  const DynamicSEO = useDynamicSEO({
     title: "Ortodonție Piatra Neamț - Aparat Dentar Fix și Invisalign | Medstom",
     description: "Aparate dentare fixe, estetice și alignere transparente pentru copii, adolescenți și adulți în Piatra Neamț. Consultație ortodontică gratuită. ☎ 0333 630 005",
-    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/ortodontie-piatra-neamt"
   });
 
@@ -204,7 +203,7 @@ const Ortodontie = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {ServiceMeta}
+      {DynamicSEO}
       {MedicalProcedureSchema}
       {FAQSchema}
       {LocalBusinessSchema}

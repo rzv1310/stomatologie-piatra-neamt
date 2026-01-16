@@ -25,7 +25,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { useServiceMeta } from "@/hooks/use-service-meta";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
 
@@ -88,10 +88,9 @@ const ImplantDentar = () => {
     }
   ];
 
-  const ServiceMeta = useServiceMeta({
+  const DynamicSEO = useDynamicSEO({
     title: "Implant Dentar Piatra Neamț - Dinți Ficși în 24h | Medstom",
     description: "Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6. Consultație gratuită. ☎ 0333 630 005",
-    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
     path: "/servicii/implant-dentar"
   });
 
@@ -120,7 +119,7 @@ const ImplantDentar = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {ServiceMeta}
+      {DynamicSEO}
       {MedicalProcedureSchema}
       {FAQSchema}
       {LocalBusinessSchema}
