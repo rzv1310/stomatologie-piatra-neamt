@@ -4,10 +4,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileText, Scale, Shield, Link as LinkIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 
 const TermeniConditii = () => {
+  const DynamicSEO = useDynamicSEO({
+    title: "Termeni și Condiții | Stomatologie MedStom Piatra Neamț",
+    description: "Termenii și condițiile de utilizare ale site-ului stomatologiepiatraneamt.ro",
+    path: "/termeni-conditii",
+    noIndex: true
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
+      {DynamicSEO}
       <Navigation />
       <Breadcrumbs
         items={[

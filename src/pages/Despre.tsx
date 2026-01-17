@@ -5,8 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Award, Users, TrendingUp, Target } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 
 const Despre = () => {
+  const DynamicSEO = useDynamicSEO({
+    title: "Despre Clinica Stomatologică MedStom Piatra Neamț | 20 ani experiență",
+    description: "Clinica stomatologică MedStom Piatra Neamț - 20 ani de excelență, 15 specialiști dedicați, laborator propriu și tehnologie de ultimă generație.",
+    path: "/despre"
+  });
   const doctors = [
     {
       name: "Dr. Dolganiuc Inesa",
@@ -72,6 +78,7 @@ const Despre = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {DynamicSEO}
       <Navigation />
       <Breadcrumbs
         items={[

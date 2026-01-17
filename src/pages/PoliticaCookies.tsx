@@ -4,10 +4,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Cookie, Shield, Settings, BarChart3, Palette, ExternalLink, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 
 const PoliticaCookies = () => {
+  const DynamicSEO = useDynamicSEO({
+    title: "Politica Cookies | Stomatologie MedStom Piatra Neamț",
+    description: "Informații despre utilizarea cookie-urilor pe site-ul stomatologiepiatraneamt.ro",
+    path: "/politica-cookies",
+    noIndex: true
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
+      {DynamicSEO}
       <Navigation />
       <Breadcrumbs
         items={[

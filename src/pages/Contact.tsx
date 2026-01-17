@@ -11,8 +11,14 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 
 const Contact = () => {
+  const DynamicSEO = useDynamicSEO({
+    title: "Contact & Programări | Stomatologie MedStom Piatra Neamț",
+    description: "Programează-te la clinica stomatologică MedStom din Piatra Neamț. Adresă: Strada Ana Ipătescu 9. Program: Luni-Vineri 09:00-19:00. ☎ 0333 630 005",
+    path: "/contact"
+  });
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -70,6 +76,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {DynamicSEO}
       <Navigation />
       <Breadcrumbs
         items={[
