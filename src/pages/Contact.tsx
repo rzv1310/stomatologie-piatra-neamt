@@ -51,10 +51,23 @@ const Contact = () => {
       return;
     }
 
-    // In a real application, this would send the data to a backend
+    // Build email body
+    const emailBody = `Nume: ${formData.name}
+Telefon: ${formData.phone}
+Email: ${formData.email || 'Nespecificat'}
+
+Mesaj:
+${formData.message || 'Fără mesaj suplimentar'}`;
+
+    const subject = `Cerere programare de la ${formData.name}`;
+    
+    // Open mailto link
+    const mailtoLink = `mailto:hello@stomatologiepiatraneamt.ro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    window.open(mailtoLink, '_blank');
+
     toast({
-      title: "Cerere trimisă cu succes!",
-      description: "Te vom contacta în cel mai scurt timp posibil.",
+      title: "Se deschide aplicația de email",
+      description: "Trimite emailul pentru a finaliza cererea de programare.",
     });
 
     // Reset form
