@@ -58,6 +58,7 @@ const Contact = () => {
     try {
       const formDataToSend = new FormData();
       formDataToSend.append("form-name", "contact");
+      formDataToSend.append("bot-field", "");
       formDataToSend.append("name", formData.name);
       formDataToSend.append("phone", formData.phone);
       formDataToSend.append("email", formData.email);
