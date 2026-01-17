@@ -28,7 +28,9 @@ const Contact = () => {
   });
   const [acceptedPrivacy, setAcceptedPrivacy] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -51,33 +53,49 @@ const Contact = () => {
       return;
     }
 
-    // Build email body
-    const emailBody = `Nume: ${formData.name}
-Telefon: ${formData.phone}
-Email: ${formData.email || 'Nespecificat'}
+    setIsSubmitting(true);
 
-Mesaj:
-${formData.message || 'Fără mesaj suplimentar'}`;
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("form-name", "contact");
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("message", formData.message);
 
-    const subject = `Cerere programare de la ${formData.name}`;
-    
-    // Open mailto link
-    const mailtoLink = `mailto:hello@stomatologiepiatraneamt.ro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-    window.open(mailtoLink, '_blank');
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formDataToSend as any).toString()
+      });
 
-    toast({
-      title: "Se deschide aplicația de email",
-      description: "Trimite emailul pentru a finaliza cererea de programare.",
-    });
+      if (response.ok) {
+        toast({
+          title: "Cerere trimisă cu succes!",
+          description: "Te vom contacta în cel mai scurt timp posibil.",
+        });
 
-    // Reset form
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      message: ""
-    });
-    setAcceptedPrivacy(false);
+        // Reset form
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: ""
+        });
+        setAcceptedPrivacy(false);
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Eroare la trimitere",
+        description: "Te rugăm să încerci din nou sau să ne contactezi telefonic.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -190,6 +208,13 @@ ${formData.message || 'Fără mesaj suplimentar'}`;
               <Card className="border-primary/20">
                 <CardContent className="p-6">
                   <h2 className="text-2xl font-bold mb-6 text-heading">Formular de contact</h2>
+                  {/* Hidden form for Netlify detection */}
+                  <form name="contact" data-netlify="true" hidden>
+                    <input type="text" name="name" />
+                    <input type="tel" name="phone" />
+                    <input type="email" name="email" />
+                    <textarea name="message"></textarea>
+                  </form>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nume și prenume *</Label>
@@ -265,8 +290,12 @@ ${formData.message || 'Fără mesaj suplimentar'}`;
                       </Label>
                     </div>
 
-                    <Button type="submit" className="w-full bg-accent hover:bg-accent/90">
-                      Trimite cererea de programare
+                    <Button 
+                      type="submit" 
+                      className="w-full bg-accent hover:bg-accent/90"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Se trimite..." : "Trimite cererea de programare"}
                     </Button>
 
                     <p className="text-sm text-muted-foreground text-center">
