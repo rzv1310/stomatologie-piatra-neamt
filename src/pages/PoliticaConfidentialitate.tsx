@@ -4,10 +4,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Database, Lock, UserCheck, FileText, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 
 const PoliticaConfidentialitate = () => {
+  const DynamicSEO = useDynamicSEO({
+    title: "Politica de Confidențialitate | Stomatologie MedStom Piatra Neamț",
+    description: "Cum protejăm și utilizăm datele dumneavoastră personale pe site-ul stomatologiepiatraneamt.ro",
+    path: "/politica-confidentialitate",
+    noIndex: true
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
+      {DynamicSEO}
       <Navigation />
       <Breadcrumbs
         items={[

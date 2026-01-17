@@ -27,7 +27,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Urgente = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Urgențe Stomatologice Piatra Neamț - Cabinet Deschis 24/7 | Medstom",
+    title: "Urgențe Stomatologice Piatra Neamț | Medstom",
     description: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe. ☎ 0333 630 005",
     path: "/servicii/urgente"
   });
@@ -169,7 +169,7 @@ const Urgente = () => {
     },
     {
       question: "Primiți urgențe în weekend sau seara târziu?",
-      answer: "În timpul programului nostru de lucru (Luni-Vineri 8:00-20:00), primim urgențe fără programare sau cu programare rapidă."
+      answer: "În timpul programului nostru de lucru (Luni-Vineri 09:00-19:00), primim urgențe fără programare sau cu programare rapidă."
     },
     {
       question: "Pot veni direct la cabinet fără să sun înainte?",

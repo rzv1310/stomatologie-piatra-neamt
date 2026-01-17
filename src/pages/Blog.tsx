@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -14,8 +13,14 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 
 const Blog = () => {
+  const DynamicSEO = useDynamicSEO({
+    title: "Blog Stomatologie Piatra Neamț | Sfaturi și Ghiduri Utile",
+    description: "Ghiduri complete și sfaturi practice despre tratamentele dentare, îngrijirea dinților și sănătatea orală de la specialiștii noștri din Piatra Neamț.",
+    path: "/blog"
+  });
   const ARTICLES_PER_PAGE = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -83,10 +88,7 @@ const Blog = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Blog Stomatologie Piatra Neamț | Sfaturi și Ghiduri Utile</title>
-        <meta name="description" content="Ghiduri complete și sfaturi practice despre tratamentele dentare, îngrijirea dinților și sănătatea orală de la specialiștii noștri din Piatra Neamț." />
-      </Helmet>
+      {DynamicSEO}
 
       <div className="min-h-screen bg-background">
         <Navigation />
