@@ -31,7 +31,9 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
-                <span>Email: <a href="mailto:hello@stomatologiepiatraneamt.ro" className="hover:text-accent transition-colors">hello@stomatologiepiatraneamt.ro</a></span>
+                <a href="mailto:hello@stomatologiepiatraneamt.ro" className="hover:text-accent transition-colors">
+                  Email: hello@stomatologiepiatraneamt.ro
+                </a>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
