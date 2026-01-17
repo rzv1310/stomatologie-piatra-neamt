@@ -32,7 +32,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.phone) {
       toast({
@@ -150,9 +150,9 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Adresa clinicii</h3>
-                      <a 
-                        href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
-                        target="_blank" 
+                      <a
+                        href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9"
+                        target="_blank"
                         rel="dofollow noopener noreferrer"
                         className="text-text-custom hover:text-primary transition-colors"
                       >
@@ -208,13 +208,6 @@ const Contact = () => {
               <Card className="border-primary/20">
                 <CardContent className="p-6">
                   <h2 className="text-2xl font-bold mb-6 text-heading">Formular de contact</h2>
-                  {/* Hidden form for Netlify detection */}
-                  <form name="contact" data-netlify="true" hidden>
-                    <input type="text" name="name" />
-                    <input type="tel" name="phone" />
-                    <input type="email" name="email" />
-                    <textarea name="message"></textarea>
-                  </form>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nume și prenume *</Label>
@@ -267,19 +260,19 @@ const Contact = () => {
 
                     {/* Privacy Policy Checkbox */}
                     <div className="flex items-start space-x-3 py-4">
-                      <Checkbox 
-                        id="privacy-policy" 
+                      <Checkbox
+                        id="privacy-policy"
                         checked={acceptedPrivacy}
                         onCheckedChange={(checked) => setAcceptedPrivacy(checked === true)}
                         className="mt-1"
                       />
-                      <Label 
-                        htmlFor="privacy-policy" 
+                      <Label
+                        htmlFor="privacy-policy"
                         className="text-sm text-text-custom leading-relaxed cursor-pointer"
                       >
                         De acord cu{" "}
-                        <Link 
-                          to="/politica-confidentialitate" 
+                        <Link
+                          to="/politica-confidentialitate"
                           className="text-primary hover:underline font-medium"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -290,8 +283,8 @@ const Contact = () => {
                       </Label>
                     </div>
 
-                    <Button 
-                      type="submit" 
+                    <Button
+                      type="submit"
                       className="w-full bg-accent hover:bg-accent/90"
                       disabled={isSubmitting}
                     >
@@ -327,9 +320,9 @@ const Contact = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4 text-heading">Cum ajungi la clinică</h2>
-              <a 
-                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
-                target="_blank" 
+              <a
+                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9"
+                target="_blank"
                 rel="dofollow noopener noreferrer"
                 className="text-lg text-text-custom hover:text-primary transition-colors"
               >
