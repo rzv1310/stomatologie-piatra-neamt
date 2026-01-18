@@ -520,38 +520,44 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Street View Image */}
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden relative group">
+              <div className="bg-muted rounded-lg overflow-hidden relative group">
                 <a 
-                  href="https://google.com/maps/@46.9337515,26.374023,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhCpJBiw2CvFIAjjV5Kys8n-!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAG0ilSz4QcmInu6_O2cnWuot4Xv75suE37bMrIfvFtz9QiEf-5iik3y7j0TVhpOpz0VDs-Ju9UVkF9EFZHKkNmiL7GmV9WNc2F6eJS97Or26fAywzn8pe10yRxGA9MkaGdqAFSoD88WYW676ZbM9%3Dw163-h86-k-no!7i2580!8i1353"
+                  href="https://www.google.com/maps/@46.9336581,26.3743251,3a,75y,255.83h,93.38t/data=!3m7!1e1!3m5!1sloUopwjl8115BKiTa6d1JQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-3.3761188188514097%26panoid%3DloUopwjl8115BKiTa6d1JQ%26yaw%3D255.82701803033197!7i16384!8i8192?hl=ro&entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full h-full"
                 >
-                  <img 
-                    src={clinicLocationStreetView} 
-                    alt="Vedere din stradă a Clinicii Medstom pe Strada Ana Ipătescu 9, Piatra Neamț"
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="aspect-video">
+                    <img 
+                      src={clinicLocationStreetView} 
+                      alt="Vedere din stradă a Clinicii Medstom pe Strada Ana Ipătescu 9, Piatra Neamț"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   {/* Overlay indicator */}
                   <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
                     <Eye className="w-4 h-4" />
                     <span>Deschide Street View</span>
                   </div>
                 </a>
+                <p className="text-sm text-muted-foreground p-3 text-center">Clinica stomatologică MedStom, Strada Ana Ipătescu 9, Piatra Neamț</p>
               </div>
               
               {/* Google Maps */}
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }}
-                  allowFullScreen={true}
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localizare Medstom Clinic Piatra Neamț"
-                />
+              <div className="bg-muted rounded-lg overflow-hidden">
+                <div className="aspect-video">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Localizare Medstom Clinic Piatra Neamț"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground p-3 text-center">Hartă interactivă - localizare cabinet stomatologic MedStom</p>
               </div>
             </div>
             
@@ -569,39 +575,45 @@ const Index = () => {
             </div>
             
             <div className="mt-8 max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-              <a 
-                href="https://google.com/maps/dir/Telegondolă,+Piața+Gării,+Piatra+Neamț/Ana+Ipatescu,+Piatra+Neamț/@46.9303661,26.3627494,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x473555c641748c49:0x67376e9d1e54a160!2m2!1d26.3615745!2d46.9272262!1m5!1m1!1s0x473555b58723a50b:0xce65c1ea28efbea9!2m2!1d26.3742312!2d46.9335473!3e2?entry=tts&g_ep=EgoyMDI1MTEyMy4xKgBIAVAD&skid=196d8e97-a2ab-4e87-8773-1a4eb072a7b0" 
-                target="_blank" 
-                rel="dofollow noopener noreferrer"
-                className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
-              >
-                <img 
-                  src={telegondolaPiatraNeamt} 
-                  alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii Medstom"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
-                  <Eye className="w-4 h-4" />
-                  <span>Deschide link</span>
-                </div>
-              </a>
+              <div className="rounded-lg overflow-hidden bg-muted">
+                <a 
+                  href="https://google.com/maps/dir/Telegondolă,+Piața+Gării,+Piatra+Neamț/Ana+Ipatescu,+Piatra+Neamț/@46.9303661,26.3627494,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x473555c641748c49:0x67376e9d1e54a160!2m2!1d26.3615745!2d46.9272262!1m5!1m1!1s0x473555b58723a50b:0xce65c1ea28efbea9!2m2!1d26.3742312!2d46.9335473!3e2?entry=tts&g_ep=EgoyMDI1MTEyMy4xKgBIAVAD&skid=196d8e97-a2ab-4e87-8773-1a4eb072a7b0" 
+                  target="_blank" 
+                  rel="dofollow noopener noreferrer"
+                  className="relative block h-[300px] md:h-[400px] group"
+                >
+                  <img 
+                    src={telegondolaPiatraNeamt} 
+                    alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii Medstom"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
+                    <Eye className="w-4 h-4" />
+                    <span>Deschide link</span>
+                  </div>
+                </a>
+                <p className="text-sm text-muted-foreground p-3 text-center">Telegondola Piatra Neamț - la 20 minute de mers pe jos de clinică</p>
+              </div>
               
-              <a 
-                href="https://google.com/maps/dir/Turnul+lui+Ștefan+cel+Mare,+Piața+Libertății,+Piatra+Neamț/Ana+Ipatescu,+Piatra+Neamț/@46.9330914,26.3686079,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x473555ca215116a9:0x3f8d068c510eff52!2m2!1d26.3684632!2d46.9331526!1m5!1m1!1s0x473555b58723a50b:0xce65c1ea28efbea9!2m2!1d26.3742312!2d46.9335473!3e0?entry=tts&g_ep=EgoyMDI1MTEyMy4xKgBIAVAD&skid=76e94c82-524d-40fa-8107-94bc805c8356" 
-                target="_blank" 
-                rel="dofollow noopener noreferrer"
-                className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
-              >
-                <img 
-                  src={turnulStefanCelMare} 
-                  alt="Turnul lui Ștefan cel Mare din Piatra Neamț - monument istoric în apropierea clinicii Medstom"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
-                  <Eye className="w-4 h-4" />
-                  <span>Deschide link</span>
-                </div>
-              </a>
+              <div className="rounded-lg overflow-hidden bg-muted">
+                <a 
+                  href="https://google.com/maps/dir/Turnul+lui+Ștefan+cel+Mare,+Piața+Libertății,+Piatra+Neamț/Ana+Ipatescu,+Piatra+Neamț/@46.9330914,26.3686079,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x473555ca215116a9:0x3f8d068c510eff52!2m2!1d26.3684632!2d46.9331526!1m5!1m1!1s0x473555b58723a50b:0xce65c1ea28efbea9!2m2!1d26.3742312!2d46.9335473!3e0?entry=tts&g_ep=EgoyMDI1MTEyMy4xKgBIAVAD&skid=76e94c82-524d-40fa-8107-94bc805c8356" 
+                  target="_blank" 
+                  rel="dofollow noopener noreferrer"
+                  className="relative block h-[300px] md:h-[400px] group"
+                >
+                  <img 
+                    src={turnulStefanCelMare} 
+                    alt="Turnul lui Ștefan cel Mare din Piatra Neamț - monument istoric în apropierea clinicii Medstom"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
+                    <Eye className="w-4 h-4" />
+                    <span>Deschide link</span>
+                  </div>
+                </a>
+                <p className="text-sm text-muted-foreground p-3 text-center">Turnul lui Ștefan cel Mare - la 8 minute de mers pe jos de clinică</p>
+              </div>
             </div>
             
             {/* Hartă interactivă cu atracții turistice */}
