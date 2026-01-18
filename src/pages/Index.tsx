@@ -239,41 +239,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              De ce să alegi cabinetul stomatologic Medstom din Piatra Neamț
-            </h2>
-            <p className="text-lg text-text-custom">
-              Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată?<br />
-              <strong>Zâmbetul tău!</strong>
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {whyChooseUs.map((reason, index) => (
-              <Card key={index} className="border-accent shadow-md">
-                <CardContent className="p-6 flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-text-custom">{reason}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <a href="tel:+40333630005">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8">
-                <Phone className="mr-2 h-5 w-5" />
-                0333 630 005
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
-      <section className="py-20">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
@@ -317,6 +284,39 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+              De ce să alegi cabinetul stomatologic Medstom din Piatra Neamț
+            </h2>
+            <p className="text-lg text-text-custom">
+              Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată?<br />
+              <strong>Zâmbetul tău!</strong>
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {whyChooseUs.map((reason, index) => (
+              <Card key={index} className="border-accent shadow-md">
+                <CardContent className="p-6 flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-text-custom">{reason}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <a href="tel:+40333630005">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8">
+                <Phone className="mr-2 h-5 w-5" />
+                0333 630 005
+              </Button>
+            </a>
           </div>
         </div>
       </section>
