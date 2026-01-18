@@ -522,7 +522,7 @@ const Index = () => {
               {/* Street View Image */}
               <div className="aspect-video bg-muted rounded-lg overflow-hidden relative group">
                 <a 
-                  href="https://www.google.com/maps/@46.9337515,26.374023,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhCpJBiw2CvFIAjjV5Kys8n-!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAG0ilSz4QcmInu6_O2cnWuot4Xv75suE37bMrIfvFtz9QiEf-5iik3y7j0TVhpOpz0VDs-Ju9UVkF9EFZHKkNmiL7GmV9WNc2F6eJS97Or26fAywzn8pe10yRxGA9MkaGdqAFSoD88WYW676ZbM9%3Dw163-h86-k-no!7i2580!8i1353"
+                  href="https://google.com/maps/@46.9337515,26.374023,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhCpJBiw2CvFIAjjV5Kys8n-!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAG0ilSz4QcmInu6_O2cnWuot4Xv75suE37bMrIfvFtz9QiEf-5iik3y7j0TVhpOpz0VDs-Ju9UVkF9EFZHKkNmiL7GmV9WNc2F6eJS97Or26fAywzn8pe10yRxGA9MkaGdqAFSoD88WYW676ZbM9%3Dw163-h86-k-no!7i2580!8i1353"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full h-full"
@@ -570,7 +570,7 @@ const Index = () => {
             
             <div className="mt-8 max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
               <a 
-                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
+                href="https://google.com/maps/dir/Telegondolă,+Piața+Gării,+Piatra+Neamț/Ana+Ipatescu,+Piatra+Neamț/@46.9303661,26.3627494,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x473555c641748c49:0x67376e9d1e54a160!2m2!1d26.3615745!2d46.9272262!1m5!1m1!1s0x473555b58723a50b:0xce65c1ea28efbea9!2m2!1d26.3742312!2d46.9335473!3e2?entry=tts&g_ep=EgoyMDI1MTEyMy4xKgBIAVAD&skid=196d8e97-a2ab-4e87-8773-1a4eb072a7b0" 
                 target="_blank" 
                 rel="dofollow noopener noreferrer"
                 className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
@@ -587,7 +587,7 @@ const Index = () => {
               </a>
               
               <a 
-                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" 
+                href="https://google.com/maps/dir/Turnul+lui+Ștefan+cel+Mare,+Piața+Libertății,+Piatra+Neamț/Ana+Ipatescu,+Piatra+Neamț/@46.9330914,26.3686079,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x473555ca215116a9:0x3f8d068c510eff52!2m2!1d26.3684632!2d46.9331526!1m5!1m1!1s0x473555b58723a50b:0xce65c1ea28efbea9!2m2!1d26.3742312!2d46.9335473!3e0?entry=tts&g_ep=EgoyMDI1MTEyMy4xKgBIAVAD&skid=76e94c82-524d-40fa-8107-94bc805c8356" 
                 target="_blank" 
                 rel="dofollow noopener noreferrer"
                 className="relative block rounded-lg overflow-hidden group h-[300px] md:h-[400px]"
