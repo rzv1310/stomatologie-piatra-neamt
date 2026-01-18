@@ -176,9 +176,9 @@ const CookieConsent = () => {
           )}
 
           {/* Link to Cookie Policy */}
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-muted-foreground font-bold">
             Aflați mai multe în{" "}
-            <a href="/cookies" className="text-primary hover:underline">
+            <a href="/politica-cookies" className="text-primary hover:underline font-bold">
               Politica de Cookies
             </a>
             .

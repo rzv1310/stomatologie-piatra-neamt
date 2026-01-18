@@ -485,8 +485,8 @@ const Index = () => {
             <CarouselNext className="right-2 md:-right-12 bg-primary hover:bg-primary/90 text-white border-primary" />
           </Carousel>
           
-          {/* Carousel Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
+          {/* Carousel Indicators - hidden on mobile */}
+          <div className="hidden md:flex justify-center gap-2 mt-8">
             {Array.from({ length: slideCount }).map((_, index) => (
               <button
                 key={index}
