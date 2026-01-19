@@ -7,7 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
-import parodontologieHero from "@/assets/service-parodontologie.jpg";
+import parodontologieHero from "@/assets/service-parodontologie.jpg?w=1200&format=webp";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";

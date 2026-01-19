@@ -7,7 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import copiiHero from "@/assets/service-copii.jpg";
+import copiiHero from "@/assets/service-copii.jpg?w=1200&format=webp";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";

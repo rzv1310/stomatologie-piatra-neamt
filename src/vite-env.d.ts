@@ -16,7 +16,22 @@ declare module '*?w=80&format=webp' {
   export default src;
 }
 
+declare module '*?w=400&format=webp' {
+  const src: string;
+  export default src;
+}
+
+declare module '*?w=64&format=webp' {
+  const src: string;
+  export default src;
+}
+
 declare module '*?w=700&format=webp' {
+  const src: string;
+  export default src;
+}
+
+declare module '*?w=1200&format=webp' {
   const src: string;
   export default src;
 }

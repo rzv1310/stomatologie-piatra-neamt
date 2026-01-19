@@ -14,6 +14,12 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
+import esteticaImg from "@/assets/service-estetica.jpg?w=400&format=webp";
+import ortodontieImg from "@/assets/service-ortodontie.jpg?w=400&format=webp";
+import copiiImg from "@/assets/service-copii.jpg?w=400&format=webp";
+import chirurgieImg from "@/assets/service-chirurgie.jpg?w=400&format=webp";
+import urgenteImg from "@/assets/service-urgente.jpg?w=400&format=webp";
+import parodontologieImg from "@/assets/service-parodontologie.jpg?w=400&format=webp";
 
 const Blog = () => {
   const DynamicSEO = useDynamicSEO({
@@ -30,7 +36,7 @@ const Blog = () => {
       title: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
       slug: "albire-dentara-piatra-neamt",
       excerpt: "Descoperă metodele de albire dentară disponibile în Piatra Neamț, prețurile orientative și rezultatele pe care le poți obține pentru un zâmbet strălucitor.",
-      image: "/src/assets/service-estetica.jpg",
+      image: esteticaImg,
       date: "15 Noiembrie 2025"
     },
     {
@@ -38,7 +44,7 @@ const Blog = () => {
       title: "Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?",
       slug: "aparat-dentar-adulti-piatra-neamt",
       excerpt: "Comparație detaliată între aparatele dentare metalice, ceramice și Invisalign pentru adulți. Află care este cea mai bună opțiune pentru tine.",
-      image: "/src/assets/service-ortodontie.jpg",
+      image: ortodontieImg,
       date: "10 Noiembrie 2025"
     },
     {
@@ -46,7 +52,7 @@ const Blog = () => {
       title: "Cum pregătești copilul pentru prima vizită la dentist",
       slug: "prima-vizita-copil-dentist",
       excerpt: "Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist, reducând anxietatea și creând o experiență pozitivă.",
-      image: "/src/assets/service-copii.jpg",
+      image: copiiImg,
       date: "5 Noiembrie 2025"
     },
     {
@@ -54,7 +60,7 @@ const Blog = () => {
       title: "Măseaua de minte - când o lași în pace și când trebuie neapărat scoasă",
       slug: "maseaua-de-minte",
       excerpt: "Ghid complet despre măselele de minte: când este necesară extracția, care sunt semnalele de alarmă și cum decurge procesul de recuperare.",
-      image: "/src/assets/service-chirurgie.jpg",
+      image: chirurgieImg,
       date: "1 Noiembrie 2025"
     },
     {
@@ -62,7 +68,7 @@ const Blog = () => {
       title: "Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic",
       slug: "urgente-dentare-dinte-rupt",
       excerpt: "Primul ajutor dentar: ce măsuri să iei imediat când ai o urgență dentară, cum păstrezi fragmentul și când trebuie să mergi urgent la dentist.",
-      image: "/src/assets/service-urgente.jpg",
+      image: urgenteImg,
       date: "28 Octombrie 2025"
     },
     {
@@ -70,7 +76,7 @@ const Blog = () => {
       title: "Ai dinți care se mișcă? Cum recunoști și tratezi parodontoza, pas cu pas",
       slug: "parodontoza-tratament",
       excerpt: "Totul despre parodontoză: simptome timpurii, stadii de evoluție, opțiuni de tratament și cum poți preveni agravarea acestei afecțiuni comune.",
-      image: "/src/assets/service-parodontologie.jpg",
+      image: parodontologieImg,
       date: "25 Octombrie 2025"
     }
   ];
