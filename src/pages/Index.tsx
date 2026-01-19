@@ -172,6 +172,7 @@ const Index = () => {
                 src={teamHero} 
                 alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț" 
                 className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
+                fetchPriority="high"
               />
             </div>
             <div className="text-center lg:text-left order-1 lg:order-2">
