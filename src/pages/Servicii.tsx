@@ -9,18 +9,18 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
-import profilaxieImg from "@/assets/service-profilaxie.jpg";
-import esteticaImg from "@/assets/service-estetica.jpg";
-import endodontieImg from "@/assets/service-endodontie.jpg";
-import proteticaImg from "@/assets/service-protetica.jpg";
-import implantImg from "@/assets/service-implant.jpg";
-import chirurgieImg from "@/assets/service-chirurgie.jpg";
-import parodontologieImg from "@/assets/service-parodontologie.jpg";
-import ortodontieImg from "@/assets/service-ortodontie.jpg";
-import copiiImg from "@/assets/service-copii.jpg";
-import radiologieImg from "@/assets/cbct-green-x-radiologie.jpg";
-import urgenteImg from "@/assets/service-urgente.jpg";
-import stomatologieGeneralaImg from "@/assets/service-stomatologie-generala.jpg";
+import profilaxieImg from "@/assets/service-profilaxie.jpg?w=400&format=webp";
+import esteticaImg from "@/assets/service-estetica.jpg?w=400&format=webp";
+import endodontieImg from "@/assets/service-endodontie.jpg?w=400&format=webp";
+import proteticaImg from "@/assets/service-protetica.jpg?w=400&format=webp";
+import implantImg from "@/assets/service-implant.jpg?w=400&format=webp";
+import chirurgieImg from "@/assets/service-chirurgie.jpg?w=400&format=webp";
+import parodontologieImg from "@/assets/service-parodontologie.jpg?w=400&format=webp";
+import ortodontieImg from "@/assets/service-ortodontie.jpg?w=400&format=webp";
+import copiiImg from "@/assets/service-copii.jpg?w=400&format=webp";
+import radiologieImg from "@/assets/cbct-green-x-radiologie.jpg?w=400&format=webp";
+import urgenteImg from "@/assets/service-urgente.jpg?w=400&format=webp";
+import stomatologieGeneralaImg from "@/assets/service-stomatologie-generala.jpg?w=400&format=webp";
 
 const Servicii = () => {
   const faqs = [
