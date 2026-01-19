@@ -11,7 +11,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useAggregateRatingSchema } from "@/hooks/use-aggregate-rating-schema";
 import { recentArticles } from "@/config/related-content";
 import { faqCategories, faqDataForSEO } from "@/config/faq-data";
-import teamHero from "@/assets/team-hero.webp?format=webp";
+import teamHero from "@/assets/team-hero.webp?w=700&format=webp";
 import serviceImplant from "@/assets/service-implant.jpg?format=webp";
 import serviceEstetica from "@/assets/service-estetica.jpg?format=webp";
 import serviceOrtodontie from "@/assets/service-ortodontie.jpg?format=webp";
