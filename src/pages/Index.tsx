@@ -11,16 +11,16 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useAggregateRatingSchema } from "@/hooks/use-aggregate-rating-schema";
 import { recentArticles } from "@/config/related-content";
 import { faqCategories, faqDataForSEO } from "@/config/faq-data";
-import teamHero from "@/assets/team-hero.webp";
-import serviceImplant from "@/assets/service-implant.jpg";
-import serviceEstetica from "@/assets/service-estetica.jpg";
-import serviceOrtodontie from "@/assets/service-ortodontie.jpg";
-import serviceCopii from "@/assets/service-copii.jpg";
-import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg";
-import clinicLocationStreetView from "@/assets/clinic-location-street-view.png";
-import telegondolaPiatraNeamt from "@/assets/telegondola-piatra-neamt.jpg";
-import turnulStefanCelMare from "@/assets/turnul-stefan-cel-mare-piatra-neamt.webp";
-import serviceEndodontie from "@/assets/service-endodontie.jpg";
+import teamHero from "@/assets/team-hero.webp?format=webp";
+import serviceImplant from "@/assets/service-implant.jpg?format=webp";
+import serviceEstetica from "@/assets/service-estetica.jpg?format=webp";
+import serviceOrtodontie from "@/assets/service-ortodontie.jpg?format=webp";
+import serviceCopii from "@/assets/service-copii.jpg?format=webp";
+import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg?format=webp";
+import clinicLocationStreetView from "@/assets/clinic-location-street-view.png?format=webp";
+import telegondolaPiatraNeamt from "@/assets/telegondola-piatra-neamt.jpg?format=webp";
+import turnulStefanCelMare from "@/assets/turnul-stefan-cel-mare-piatra-neamt.webp?format=webp";
+import serviceEndodontie from "@/assets/service-endodontie.jpg?format=webp";
 import { AttractionMap } from "@/components/AttractionMap";
 
 const Index = () => {
