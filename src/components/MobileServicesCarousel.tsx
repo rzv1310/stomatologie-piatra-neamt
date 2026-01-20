@@ -22,6 +22,8 @@ interface MobileServicesCarouselProps {
 const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
+  const imagesRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -42,6 +44,13 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const gap = 16; // gap-4 = 16px
       const snapPoints = services.map((_, i) => (i * (cardWidth + gap)) / scrollDistance);
 
+      // Set initial scale for all cards except the first
+      cardsRef.current.forEach((card, index) => {
+        if (card && index !== 0) {
+          gsap.set(card, { scale: 0.85, opacity: 0.7 });
+        }
+      });
+
       const tween = gsap.to(track, {
         x: -scrollDistance,
         ease: "none",
@@ -59,6 +68,42 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             duration: { min: 0.3, max: 0.6 },
             delay: 0.15,
             ease: "power2.inOut"
+          },
+          onUpdate: (self) => {
+            const progress = self.progress;
+            const totalCards = services.length;
+            const activeIndex = Math.round(progress * (totalCards - 1));
+
+            // Scale effect on cards
+            cardsRef.current.forEach((card, index) => {
+              if (!card) return;
+              
+              const distance = Math.abs(index - activeIndex);
+              const scale = distance === 0 ? 1 : 0.85;
+              const opacity = distance === 0 ? 1 : 0.7;
+              
+              gsap.to(card, {
+                scale,
+                opacity,
+                duration: 0.3,
+                ease: "power2.out"
+              });
+            });
+
+            // Parallax effect on images
+            imagesRef.current.forEach((img, index) => {
+              if (!img) return;
+              
+              // Calculate how far this card is from center
+              const cardProgress = index / (totalCards - 1);
+              const offset = (progress - cardProgress) * 30; // 30px max parallax
+              
+              gsap.to(img, {
+                y: offset,
+                duration: 0.1,
+                ease: "none"
+              });
+            });
           }
         },
       });
@@ -82,19 +127,21 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
     <div ref={sectionRef} className="services-pin md:hidden relative overflow-hidden">
       <div
         ref={trackRef}
-        className="track flex gap-4 px-4 pt-8 pb-4"
+        className="track flex gap-4 px-4 pt-8 pb-4 items-center"
         style={{ width: "max-content" }}
       >
         {services.map((service, index) => (
           <Link
             key={index}
+            ref={(el) => (cardsRef.current[index] = el)}
             to={service.link}
-            className="service-card flex-shrink-0"
+            className="service-card flex-shrink-0 origin-center transition-transform"
             style={{ width: "80vw", maxWidth: "420px" }}
           >
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                ref={(el) => (imagesRef.current[index] = el)}
+                className="absolute inset-[-30px] bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 style={{ backgroundImage: `url(${service.image})` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
