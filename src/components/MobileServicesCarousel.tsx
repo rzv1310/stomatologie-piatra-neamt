@@ -3,8 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Eye } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,7 +24,6 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const imagesRef = useRef<(HTMLDivElement | null)[]>([]);
-  const ctaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -41,17 +39,16 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
-      // Calculate snap points for each card + CTA button at the end
+      // Calculate snap points for each card - last card gets more "weight"
       const totalCards = services.length;
-      const totalItems = totalCards + 1; // +1 for CTA button
-      const snapPoints = [...services.map((_, i) => {
+      const snapPoints = services.map((_, i) => {
         if (i === totalCards - 1) {
-          // Ultimul card - snap point pentru a sta mai mult
-          return 0.7;
+          // Ultimul card - snap point mai devreme pentru a sta mai mult
+          return 0.85;
         }
-        // Restul cardurilor - distribuție pe primii 70%
-        return (i / (totalCards - 1)) * 0.7;
-      }), 1]; // Ultimul snap point e pentru CTA button
+        // Restul cardurilor - distribuție pe primii 85%
+        return (i / (totalCards - 1)) * 0.85;
+      });
 
       // Set initial scale for all cards except the first
       cardsRef.current.forEach((card, index) => {
@@ -81,9 +78,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           onUpdate: (self) => {
             const progress = self.progress;
             const totalCards = services.length;
-            // Map progress to card index (cards occupy first 70% of scroll)
-            const cardProgress = Math.min(progress / 0.7, 1);
-            const activeIndex = progress > 0.85 ? totalCards : Math.round(cardProgress * (totalCards - 1));
+            const activeIndex = Math.round(progress * (totalCards - 1));
 
             // Scale effect on cards
             cardsRef.current.forEach((card, index) => {
@@ -101,23 +96,12 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               });
             });
 
-            // CTA button scale effect
-            if (ctaRef.current) {
-              const ctaActive = progress > 0.85;
-              gsap.to(ctaRef.current, {
-                scale: ctaActive ? 1 : 0.85,
-                opacity: ctaActive ? 1 : 0.7,
-                duration: 0.3,
-                ease: "power2.out"
-              });
-            }
-
             // Parallax effect on images
             imagesRef.current.forEach((img, index) => {
               if (!img) return;
               
-              const imgCardProgress = index / (totalCards - 1);
-              let offset = (cardProgress - imgCardProgress) * 30;
+              const cardProgress = index / (totalCards - 1);
+              let offset = (progress - cardProgress) * 30;
               
               // Clamp pentru a evita sărituri
               offset = Math.max(-30, Math.min(30, offset));
@@ -187,23 +171,6 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             </Card>
           </Link>
         ))}
-        
-        {/* CTA Button at the end */}
-        <div
-          ref={ctaRef}
-          className="flex-shrink-0 origin-center flex items-center justify-center"
-          style={{ width: "80vw", maxWidth: "420px" }}
-        >
-          <Link to="/servicii" className="w-full">
-            <Button 
-              size="lg" 
-              className="w-full h-16 text-lg font-semibold gap-3 bg-primary hover:bg-primary/90"
-            >
-              <Eye className="h-5 w-5" />
-              Vezi toate serviciile
-            </Button>
-          </Link>
-        </div>
       </div>
     </div>
   );
