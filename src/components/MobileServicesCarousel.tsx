@@ -64,10 +64,10 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       // Add last card snap point
       snapPoints[totalCards - 1] = 1;
 
-      // Set initial state for all cards except the first (opacity + y offset instead of scale)
+      // Set initial scale for all cards except the first
       cardsRef.current.forEach((card, index) => {
         if (card && index !== 0) {
-          gsap.set(card, { opacity: 0.7, y: 10 });
+          gsap.set(card, { scale: 0.85, opacity: 0.7 });
         }
       });
 
@@ -115,16 +115,16 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               ? 0 
               : Math.round(effectiveProgress * (totalCards - 1));
 
-            // Opacity + Y offset effect on cards (no scale to maintain consistent height)
+            // Scale effect on cards
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               
               const distance = Math.abs(index - activeIndex);
-              const yOffset = distance === 0 ? 0 : 10;
+              const scale = distance === 0 ? 1 : 0.85;
               const opacity = distance === 0 ? 1 : 0.7;
               
               gsap.to(card, {
-                y: yOffset,
+                scale,
                 opacity,
                 duration: 0.3,
                 ease: "power2.out"
@@ -170,7 +170,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               if (!card) return;
               const isActive = index === lastIndex;
               gsap.to(card, {
-                y: isActive ? 0 : 10,
+                scale: isActive ? 1 : 0.85,
                 opacity: isActive ? 1 : 0.7,
                 duration: 0.3,
                 ease: "power2.out"
@@ -183,7 +183,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               if (!card) return;
               const isActive = index === 0;
               gsap.to(card, {
-                y: isActive ? 0 : 10,
+                scale: isActive ? 1 : 0.85,
                 opacity: isActive ? 1 : 0.7,
                 duration: 0.3,
                 ease: "power2.out"
@@ -195,10 +195,10 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
 
       return () => {
         tween.kill();
-        // Resetare opacity și y la valori implicite
+        // Resetare scale și opacity la valori implicite
         cardsRef.current.forEach((card) => {
           if (card) {
-            gsap.set(card, { opacity: 1, y: 0 });
+            gsap.set(card, { scale: 1, opacity: 1 });
           }
         });
         imagesRef.current.forEach((img) => {
