@@ -130,13 +130,16 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       ScrollTrigger.normalizeScroll(false);
 
       // Schedule a refresh after the browser has finished any scroll restoration
-      // and the layout has fully settled. The 100ms delay ensures:
+      // and the layout has fully settled. The 200ms delay ensures:
       // 1. Browser scroll restoration (if any leaked through) is complete
       // 2. React has finished rendering
       // 3. Images and fonts have started loading (affecting layout)
+      // 4. Safari's delayed scroll restoration has completed
       const refreshTimeout = setTimeout(() => {
+        // Force scroll to top again for Safari which may restore scroll late
+        window.scrollTo(0, 0);
         ScrollTrigger.refresh(true);
-      }, 100);
+      }, 200);
 
       // =========================================================================
       // Calculate Scroll Distances

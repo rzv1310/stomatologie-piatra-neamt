@@ -225,11 +225,29 @@
       in elements appearing in wrong positions (e.g., carousel cards overlapping sections above).
 
       Solution: This inline script runs before any other JS, disabling scroll restoration and
-      resetting scroll to top. This ensures ScrollTrigger always initializes from a clean state.
+      resetting scroll to top. Safari requires additional handling via pageshow event.
 
       @see src/components/MobileServicesCarousel.tsx - The component this fix supports
     -->
-    <script>if(history.scrollRestoration)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
+    <script>
+      // Disable browser scroll restoration API
+      if (history.scrollRestoration) history.scrollRestoration = 'manual';
+      // Immediate scroll reset
+      window.scrollTo(0, 0);
+      // Safari fix: pageshow fires on back/forward navigation and refresh
+      // Safari often restores scroll AFTER the initial script runs
+      window.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+          // Page was restored from bfcache (back/forward cache)
+          window.scrollTo(0, 0);
+        }
+      });
+      // Additional Safari fix: reset scroll after a microtask
+      // This catches Safari's delayed scroll restoration
+      Promise.resolve().then(function() { window.scrollTo(0, 0); });
+      // Fallback: reset after DOMContentLoaded
+      document.addEventListener('DOMContentLoaded', function() { window.scrollTo(0, 0); });
+    </script>
     <meta property="og:title" content="Stomatologie MedStom Piatra Neamț | Dentist pentru Toată Familia">
   <meta name="twitter:title" content="Stomatologie MedStom Piatra Neamț | Dentist pentru Toată Familia">
   <meta property="og:description" content="Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. +40 333 630 005">
