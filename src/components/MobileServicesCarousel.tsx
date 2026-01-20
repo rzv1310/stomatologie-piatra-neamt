@@ -58,7 +58,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       // Set initial scale and rotation for all cards except the first
       cardsRef.current.forEach((card, index) => {
         if (card && index !== 0) {
-          gsap.set(card, { scale: 0.85, opacity: 0.7, rotateY: -8 });
+          gsap.set(card, { scale: 0.75, opacity: 0.7, rotateY: -12 });
         }
       });
 
@@ -108,23 +108,23 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               const distance = index - activeIndex;
               const absDistance = Math.abs(distance);
               
-              // Cards to the left rotate +8°, cards to the right rotate -8°
+              // Cards to the left rotate +12°, cards to the right rotate -12°
               let rotateY = 0;
               if (distance < 0) {
-                rotateY = 8;
+                rotateY = 12;
               } else if (distance > 0) {
-                rotateY = -8;
+                rotateY = -12;
               }
               
-              const scale = absDistance === 0 ? 1 : 0.85;
+              const scale = absDistance === 0 ? 1 : 0.75;
               const opacity = absDistance === 0 ? 1 : 0.7;
               
               gsap.to(card, {
                 scale,
                 opacity,
                 rotateY,
-                duration: 0.4,
-                ease: "power2.out"
+                duration: 0.5,
+                ease: "power3.out"
               });
             });
 
@@ -145,13 +145,13 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               const isActive = index === lastIndex;
-              const rotateY = isActive ? 0 : (index < lastIndex ? 8 : 0);
+              const rotateY = isActive ? 0 : (index < lastIndex ? 12 : 0);
               gsap.to(card, {
-                scale: isActive ? 1 : 0.85,
+                scale: isActive ? 1 : 0.75,
                 opacity: isActive ? 1 : 0.7,
                 rotateY,
-                duration: 0.3,
-                ease: "power2.out"
+                duration: 0.5,
+                ease: "power3.out"
               });
             });
           },
@@ -160,13 +160,13 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               const isActive = index === 0;
-              const rotateY = isActive ? 0 : -8;
+              const rotateY = isActive ? 0 : -12;
               gsap.to(card, {
-                scale: isActive ? 1 : 0.85,
+                scale: isActive ? 1 : 0.75,
                 opacity: isActive ? 1 : 0.7,
                 rotateY,
-                duration: 0.3,
-                ease: "power2.out"
+                duration: 0.5,
+                ease: "power3.out"
               });
             });
           }
