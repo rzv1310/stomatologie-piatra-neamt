@@ -37,18 +37,28 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
+      const cardWidth = window.innerWidth * 0.8 + 16; // 80vw + gap
+      const totalCards = services.length;
+      const snapPoints = Array.from({ length: totalCards }, (_, i) => i / (totalCards - 1));
+
       const tween = gsap.to(track, {
         x: -scrollDistance,
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 50px", // Start when section top reaches 50px below header
+          start: "top 50px",
           end: () => `+=${scrollDistance}`,
-          scrub: 0.5,
+          scrub: 0.3,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
+          snap: {
+            snapTo: snapPoints,
+            duration: { min: 0.2, max: 0.4 },
+            delay: 0,
+            ease: "power1.inOut",
+          },
         },
       });
 
