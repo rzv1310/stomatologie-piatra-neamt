@@ -134,7 +134,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
     <div ref={sectionRef} className="services-pin md:hidden relative overflow-hidden">
       <div
         ref={trackRef}
-        className="track flex gap-4 px-4 pt-8 pb-4 items-center"
+        className="track flex gap-4 px-4 pt-4 pb-8 items-center"
         style={{ width: "max-content" }}
       >
         {services.map((service, index) => (
