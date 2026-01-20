@@ -47,18 +47,18 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 50px",
+          start: "top 100px",
           end: () => `+=${scrollDistance}`,
-          scrub: 0.5,
+          scrub: 1.5,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
           snap: {
             snapTo: snapPoints,
-            duration: { min: 0.2, max: 0.4 },
-            delay: 0.1,
-            ease: "power1.inOut"
+            duration: { min: 0.3, max: 0.6 },
+            delay: 0.15,
+            ease: "power2.inOut"
           }
         },
       });
@@ -82,7 +82,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
     <div ref={sectionRef} className="services-pin md:hidden relative overflow-hidden">
       <div
         ref={trackRef}
-        className="track flex gap-4 px-4 pt-2 pb-4"
+        className="track flex gap-4 px-4 pt-8 pb-4"
         style={{ width: "max-content" }}
       >
         {services.map((service, index) => (
