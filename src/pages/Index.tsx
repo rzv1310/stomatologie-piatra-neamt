@@ -13,7 +13,7 @@ import { faqCategories, faqDataForSEO } from "@/config/faq-data";
 import teamHero from "@/assets/team-hero.webp?w=700&format=webp";
 import serviceImplant from "@/assets/service-implant.webp?format=webp";
 import serviceEstetica from "@/assets/service-estetica.webp?format=webp";
-import serviceOrtodontie from "@/assets/service-ortodontie.jpg?format=webp";
+import serviceOrtodontie from "@/assets/service-ortodontie.webp?format=webp";
 import serviceCopii from "@/assets/service-copii.jpg?format=webp";
 import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg?format=webp";
 import clinicLocationStreetView from "@/assets/clinic-location-street-view.png?format=webp";

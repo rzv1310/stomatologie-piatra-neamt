@@ -16,7 +16,7 @@ import proteticaImg from "@/assets/service-protetica.jpg?w=400&format=webp";
 import implantImg from "@/assets/service-implant.webp?w=400&format=webp";
 import chirurgieImg from "@/assets/service-chirurgie.jpg?w=400&format=webp";
 import parodontologieImg from "@/assets/service-parodontologie.jpg?w=400&format=webp";
-import ortodontieImg from "@/assets/service-ortodontie.jpg?w=400&format=webp";
+import ortodontieImg from "@/assets/service-ortodontie.webp?w=400&format=webp";
 import copiiImg from "@/assets/service-copii.jpg?w=400&format=webp";
 import radiologieImg from "@/assets/cbct-green-x-radiologie.jpg?w=400&format=webp";
 import urgenteImg from "@/assets/service-urgente.jpg?w=400&format=webp";
