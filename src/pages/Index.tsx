@@ -390,13 +390,13 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className={`text-4xl font-bold mb-2 transition-transform duration-300 ${yearsComplete ? 'animate-pulse scale-110' : ''}`}>
+              <div className={`text-4xl font-bold mb-2 ${yearsComplete ? 'animate-bounce-once' : ''}`}>
                 {yearsCount}+
               </div>
               <div className="text-sm opacity-90">ani de experiență</div>
             </div>
             <div>
-              <div className={`text-4xl font-bold mb-2 transition-transform duration-300 ${patientsComplete ? 'animate-pulse scale-110' : ''}`}>
+              <div className={`text-4xl font-bold mb-2 ${patientsComplete ? 'animate-bounce-once' : ''}`}>
                 {patientsCount.toLocaleString('ro-RO')}+
               </div>
               <div className="text-sm opacity-90">pacienți tratați</div>
