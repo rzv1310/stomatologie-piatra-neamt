@@ -40,29 +40,16 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
-      // Dead zone for first card (in scroll progress, not pixels)
-      const deadZonePixels = 150; // Extra scroll distance before first card moves
-      const totalScrollDistance = scrollDistance + deadZonePixels;
-      const deadZoneProgress = deadZonePixels / (scrollDistance * 2 + deadZonePixels);
-
       // Calculate exact snap points for each card (normalized 0-1)
       const cardWidth = viewportWidth * 0.8; // 80vw
       const gap = 16; // gap-4 = 16px
       const totalCards = services.length;
       
-      // Generate precise snap points with dead zone offset
+      // Generate precise snap points
       const snapPoints: number[] = [];
-      // First card snap point at 0 (within dead zone)
-      snapPoints.push(0);
-      
-      for (let i = 1; i < totalCards; i++) {
-        const cardPosition = (i - 1) * (cardWidth + gap);
-        const normalizedPosition = deadZoneProgress + (cardPosition / scrollDistance) * (1 - deadZoneProgress);
-        // Clamp to 0-1 range
-        snapPoints.push(Math.min(1, Math.max(0, normalizedPosition)));
+      for (let i = 0; i < totalCards; i++) {
+        snapPoints.push(i / (totalCards - 1));
       }
-      // Add last card snap point
-      snapPoints[totalCards - 1] = 1;
 
       // Set initial scale for all cards except the first
       cardsRef.current.forEach((card, index) => {
@@ -72,11 +59,12 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       });
 
       const tween = gsap.to(track, {
+        x: -scrollDistance,
         ease: "none",
         scrollTrigger: {
           trigger: section,
           start: "top 50px",
-          end: () => `+=${scrollDistance * 2 + deadZonePixels}`,
+          end: () => `+=${scrollDistance * 2}`,
           scrub: 1.5,
           pin: true,
           pinSpacing: true,
@@ -104,21 +92,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           },
           onUpdate: (self) => {
             const progress = self.progress;
-            
-            // Calculate effective progress (skip dead zone for movement calculation)
-            const effectiveProgress = progress <= deadZoneProgress 
-              ? 0 
-              : (progress - deadZoneProgress) / (1 - deadZoneProgress);
-            
-            // Controlul manual al poziției track-ului
-            // În dead zone: x = 0 (stă pe loc)
-            // După dead zone: x merge de la 0 la -scrollDistance
-            const xPosition = -scrollDistance * effectiveProgress;
-            gsap.set(track, { x: xPosition });
-            
-            const activeIndex = progress <= deadZoneProgress 
-              ? 0 
-              : Math.round(effectiveProgress * (totalCards - 1));
+            const activeIndex = Math.round(progress * (totalCards - 1));
 
             // Scale effect on cards
             cardsRef.current.forEach((card, index) => {
@@ -141,7 +115,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               if (!img) return;
               
               const cardProgress = index / (totalCards - 1);
-              let offset = (effectiveProgress - cardProgress) * 30;
+              let offset = (progress - cardProgress) * 30;
               
               // Clamp pentru a evita sărituri
               offset = Math.max(-30, Math.min(30, offset));
