@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Phone, Clock, MapPin, Star, Users, Award, TrendingUp, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useCounter } from "@/hooks/use-counter";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useAggregateRatingSchema } from "@/hooks/use-aggregate-rating-schema";
@@ -25,15 +24,10 @@ import { AttractionMap } from "@/components/AttractionMap";
 import MobileServicesCarousel from "@/components/MobileServicesCarousel";
 
 const Index = () => {
-  // State management for stats animation and carousel
-  const [isStatsVisible, setIsStatsVisible] = useState(false);
-  const statsRef = useRef<HTMLDivElement>(null);
+  // State management for carousel
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slideCount, setSlideCount] = useState(0);
-
-  const { count: yearsCount, isComplete: yearsComplete } = useCounter(20, 2000, isStatsVisible);
-  const { count: patientsCount, isComplete: patientsComplete } = useCounter(10000, 2000, isStatsVisible);
 
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
@@ -58,26 +52,6 @@ const Index = () => {
     ]
   });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsStatsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
-    }
-
-    return () => {
-      if (statsRef.current) {
-        observer.unobserve(statsRef.current);
-      }
-    };
-  }, []);
 
   useEffect(() => {
     if (!carouselApi) return;
@@ -173,7 +147,7 @@ const Index = () => {
                 src={teamHero}
                 alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț"
                 className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
-                fetchpriority="high"
+                fetchPriority="high"
               />
             </div>
             <div className="text-center lg:text-left order-1 lg:order-2">
@@ -388,17 +362,13 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-12 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
-          <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className={`text-4xl font-bold mb-2 ${yearsComplete ? 'animate-bounce-once' : ''}`}>
-                {yearsCount}+
-              </div>
+              <div className="text-4xl font-bold mb-2">20+</div>
               <div className="text-sm opacity-90">ani de experiență</div>
             </div>
             <div>
-              <div className={`text-4xl font-bold mb-2 ${patientsComplete ? 'animate-bounce-once' : ''}`}>
-                {patientsCount.toLocaleString('ro-RO')}+
-              </div>
+              <div className="text-4xl font-bold mb-2">10.000+</div>
               <div className="text-sm opacity-90">pacienți tratați</div>
             </div>
             <div>
