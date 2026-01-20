@@ -42,7 +42,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 20%", // Start earlier so card top edge is visible
+          start: "top 50px", // Start when section top reaches 50px below header
           end: () => `+=${scrollDistance}`,
           scrub: 0.5,
           pin: true,
