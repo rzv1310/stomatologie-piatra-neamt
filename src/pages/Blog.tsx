@@ -14,7 +14,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
-import esteticaImg from "@/assets/service-estetica.jpg?w=400&format=webp";
+import esteticaImg from "@/assets/service-estetica.webp?w=400&format=webp";
 import ortodontieImg from "@/assets/service-ortodontie.jpg?w=400&format=webp";
 import copiiImg from "@/assets/service-copii.jpg?w=400&format=webp";
 import chirurgieImg from "@/assets/service-chirurgie.jpg?w=400&format=webp";
