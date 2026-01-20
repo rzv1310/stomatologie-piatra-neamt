@@ -55,10 +55,10 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         snapPoints.push(Math.min(1, normalizedPosition));
       }
 
-      // Set initial scale for all cards except the first
+      // Set initial scale and rotation for all cards except the first
       cardsRef.current.forEach((card, index) => {
         if (card && index !== 0) {
-          gsap.set(card, { scale: 0.85, opacity: 0.7 });
+          gsap.set(card, { scale: 0.85, opacity: 0.7, rotateY: -8 });
         }
       });
 
@@ -101,18 +101,29 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
                 ? totalCards - 1 
                 : Math.round(effectiveProgress * (totalCards - 1));
 
-            // Scale effect on cards
+            // Scale and 3D rotation effect on cards (Coverflow)
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               
-              const distance = Math.abs(index - activeIndex);
-              const scale = distance === 0 ? 1 : 0.85;
-              const opacity = distance === 0 ? 1 : 0.7;
+              const distance = index - activeIndex;
+              const absDistance = Math.abs(distance);
+              
+              // Cards to the left rotate +8°, cards to the right rotate -8°
+              let rotateY = 0;
+              if (distance < 0) {
+                rotateY = 8;
+              } else if (distance > 0) {
+                rotateY = -8;
+              }
+              
+              const scale = absDistance === 0 ? 1 : 0.85;
+              const opacity = absDistance === 0 ? 1 : 0.7;
               
               gsap.to(card, {
                 scale,
                 opacity,
-                duration: 0.3,
+                rotateY,
+                duration: 0.4,
                 ease: "power2.out"
               });
             });
@@ -134,9 +145,11 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               const isActive = index === lastIndex;
+              const rotateY = isActive ? 0 : (index < lastIndex ? 8 : 0);
               gsap.to(card, {
                 scale: isActive ? 1 : 0.85,
                 opacity: isActive ? 1 : 0.7,
+                rotateY,
                 duration: 0.3,
                 ease: "power2.out"
               });
@@ -147,9 +160,11 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               const isActive = index === 0;
+              const rotateY = isActive ? 0 : -8;
               gsap.to(card, {
                 scale: isActive ? 1 : 0.85,
                 opacity: isActive ? 1 : 0.7,
+                rotateY,
                 duration: 0.3,
                 ease: "power2.out"
               });
@@ -160,10 +175,10 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
 
       return () => {
         tween.kill();
-        // Resetare scale și opacity la valori implicite
+        // Resetare scale, opacity și rotație la valori implicite
         cardsRef.current.forEach((card) => {
           if (card) {
-            gsap.set(card, { scale: 1, opacity: 1 });
+            gsap.set(card, { scale: 1, opacity: 1, rotateY: 0 });
           }
         });
         imagesRef.current.forEach((img) => {
@@ -189,15 +204,15 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       <div
         ref={trackRef}
         className="track flex gap-4 px-4 pt-4 pb-8 items-center"
-        style={{ width: "max-content" }}
+        style={{ width: "max-content", perspective: "1000px", perspectiveOrigin: "center center" }}
       >
         {services.map((service, index) => (
           <Link
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
             to={service.link}
-            className="service-card flex-shrink-0 origin-center transition-transform"
-            style={{ width: "80vw", maxWidth: "420px" }}
+            className="service-card flex-shrink-0 origin-center"
+            style={{ width: "80vw", maxWidth: "420px", transformStyle: "preserve-3d" }}
           >
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
                 <div
