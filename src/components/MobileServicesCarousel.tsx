@@ -63,6 +63,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
+          refreshPriority: 1,
           invalidateOnRefresh: true,
           snap: {
             snapTo: snapPoints,
@@ -122,12 +123,50 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
                 ease: "power2.out"
               });
             }
+          },
+          onEnterBack: () => {
+            // Resetare la ultima poziție când revenim în secțiune
+            const lastIndex = services.length - 1;
+            cardsRef.current.forEach((card, index) => {
+              if (!card) return;
+              const isActive = index === lastIndex;
+              gsap.to(card, {
+                scale: isActive ? 1 : 0.85,
+                opacity: isActive ? 1 : 0.7,
+                duration: 0.3,
+                ease: "power2.out"
+              });
+            });
+          },
+          onLeaveBack: () => {
+            // Resetare la prima poziție când ieșim înapoi din secțiune
+            cardsRef.current.forEach((card, index) => {
+              if (!card) return;
+              const isActive = index === 0;
+              gsap.to(card, {
+                scale: isActive ? 1 : 0.85,
+                opacity: isActive ? 1 : 0.7,
+                duration: 0.3,
+                ease: "power2.out"
+              });
+            });
           }
         },
       });
 
       return () => {
         tween.kill();
+        // Resetare scale și opacity la valori implicite
+        cardsRef.current.forEach((card) => {
+          if (card) {
+            gsap.set(card, { scale: 1, opacity: 1 });
+          }
+        });
+        imagesRef.current.forEach((img) => {
+          if (img) {
+            gsap.set(img, { y: 0 });
+          }
+        });
         ScrollTrigger.getAll().forEach((st) => {
           if (st.vars.trigger === section) {
             st.kill();
