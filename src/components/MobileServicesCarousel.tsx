@@ -101,30 +101,31 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
                 ? totalCards - 1 
                 : Math.round(effectiveProgress * (totalCards - 1));
 
-            // Scale and 3D rotation effect on cards (Coverflow)
+            // Scale and 3D rotation effect on cards (Coverflow) - progressive interpolation
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
               
-              const distance = index - activeIndex;
-              const absDistance = Math.abs(distance);
+              // Calculate continuous distance based on effectiveProgress
+              const cardProgress = index / (totalCards - 1);
+              const continuousDistance = (effectiveProgress - cardProgress) * (totalCards - 1);
+              const absDistance = Math.min(Math.abs(continuousDistance), 1);
               
-              // Cards to the left rotate +12°, cards to the right rotate -12°
-              let rotateY = 0;
-              if (distance < 0) {
-                rotateY = 12;
-              } else if (distance > 0) {
-                rotateY = -12;
-              }
+              // Progressive interpolation for rotation (-12° to +12°)
+              const rotateY = Math.max(-12, Math.min(12, continuousDistance * -12));
               
-              const scale = absDistance === 0 ? 1 : 0.75;
-              const opacity = absDistance === 0 ? 1 : 0.7;
+              // Progressive interpolation for scale (1 to 0.75)
+              const scale = 1 - absDistance * 0.25;
+              
+              // Progressive interpolation for opacity (1 to 0.7)
+              const opacity = 1 - absDistance * 0.3;
               
               gsap.to(card, {
                 scale,
                 opacity,
                 rotateY,
-                duration: 0.5,
-                ease: "power3.out"
+                duration: 0.3,
+                ease: "power2.out",
+                overwrite: "auto"
               });
             });
 
