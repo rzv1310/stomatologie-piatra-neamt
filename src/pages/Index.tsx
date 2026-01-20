@@ -169,11 +169,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-              <img 
-                src={teamHero} 
-                alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț" 
+              <img
+                src={teamHero}
+                alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț"
                 className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
-                fetchPriority="high"
+                fetchpriority="high"
               />
             </div>
             <div className="text-center lg:text-left order-1 lg:order-2">
