@@ -32,8 +32,8 @@ const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slideCount, setSlideCount] = useState(0);
 
-  const { count: yearsCount, isComplete: yearsComplete } = useCounter(20, 2500, isStatsVisible);
-  const { count: patientsCount, isComplete: patientsComplete } = useCounter(10000, 2500, isStatsVisible);
+  const { count: yearsCount, isComplete: yearsComplete } = useCounter(20, 2000, isStatsVisible);
+  const { count: patientsCount, isComplete: patientsComplete } = useCounter(10000, 2000, isStatsVisible);
 
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
