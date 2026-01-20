@@ -46,7 +46,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 50px",
+          start: "top 40px",
           end: () => `+=${scrollDistance}`,
           scrub: 0.3,
           pin: true,
@@ -91,7 +91,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             className="service-card flex-shrink-0"
             style={{ width: "80vw", maxWidth: "420px" }}
           >
-            <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
+            <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[70vh]">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 style={{ backgroundImage: `url(${service.image})` }}
