@@ -199,7 +199,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
   }, [services]);
 
   return (
-    <div ref={sectionRef} className="services-pin md:hidden relative">
+    <div ref={sectionRef} className="services-pin md:hidden relative overflow-x-hidden">
       <div
         ref={trackRef}
         className="track flex gap-4 px-4 pt-4 pb-8 items-center"
