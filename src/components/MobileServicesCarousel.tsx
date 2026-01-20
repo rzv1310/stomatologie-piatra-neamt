@@ -41,7 +41,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
       // Dead zone - extra scroll distance where first card stays visible
-      const deadZonePixels = 200;
+      const deadZonePixels = 300;
       const totalScrollDistance = scrollDistance + deadZonePixels;
       const deadZoneProgress = deadZonePixels / totalScrollDistance;
 
