@@ -118,9 +118,10 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
+  html, body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "kern" 1;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
