@@ -10,7 +10,7 @@ import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
 import profilaxieImg from "@/assets/service-profilaxie.jpg?w=400&format=webp";
-import esteticaImg from "@/assets/service-estetica.jpg?w=400&format=webp";
+import esteticaImg from "@/assets/service-estetica.webp?w=400&format=webp";
 import endodontieImg from "@/assets/service-endodontie.jpg?w=400&format=webp";
 import proteticaImg from "@/assets/service-protetica.jpg?w=400&format=webp";
 import implantImg from "@/assets/service-implant.jpg?w=400&format=webp";

@@ -12,7 +12,7 @@ import { recentArticles } from "@/config/related-content";
 import { faqCategories, faqDataForSEO } from "@/config/faq-data";
 import teamHero from "@/assets/team-hero.webp?w=700&format=webp";
 import serviceImplant from "@/assets/service-implant.jpg?format=webp";
-import serviceEstetica from "@/assets/service-estetica.jpg?format=webp";
+import serviceEstetica from "@/assets/service-estetica.webp?format=webp";
 import serviceOrtodontie from "@/assets/service-ortodontie.jpg?format=webp";
 import serviceCopii from "@/assets/service-copii.jpg?format=webp";
 import serviceRadiologie from "@/assets/cbct-green-x-radiologie.jpg?format=webp";
