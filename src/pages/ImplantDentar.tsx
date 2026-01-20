@@ -17,7 +17,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/service-implant.jpg?w=1200&format=webp";
+import heroImage from "@/assets/service-implant.webp?w=1200&format=webp";
 import {
   Accordion,
   AccordionContent,

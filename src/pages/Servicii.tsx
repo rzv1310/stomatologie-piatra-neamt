@@ -13,7 +13,7 @@ import profilaxieImg from "@/assets/service-profilaxie.jpg?w=400&format=webp";
 import esteticaImg from "@/assets/service-estetica.webp?w=400&format=webp";
 import endodontieImg from "@/assets/service-endodontie.jpg?w=400&format=webp";
 import proteticaImg from "@/assets/service-protetica.jpg?w=400&format=webp";
-import implantImg from "@/assets/service-implant.jpg?w=400&format=webp";
+import implantImg from "@/assets/service-implant.webp?w=400&format=webp";
 import chirurgieImg from "@/assets/service-chirurgie.jpg?w=400&format=webp";
 import parodontologieImg from "@/assets/service-parodontologie.jpg?w=400&format=webp";
 import ortodontieImg from "@/assets/service-ortodontie.jpg?w=400&format=webp";
