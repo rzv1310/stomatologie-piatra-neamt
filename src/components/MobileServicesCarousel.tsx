@@ -58,7 +58,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       // Set initial scale and rotation for all cards except the first
       cardsRef.current.forEach((card, index) => {
         if (card && index !== 0) {
-          gsap.set(card, { scale: 0.75, opacity: 0.7, rotateY: -12 });
+          gsap.set(card, { scale: 0.65, opacity: 0.7, rotateY: -12 });
         }
       });
 
@@ -114,7 +114,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               const rotateY = Math.max(-12, Math.min(12, continuousDistance * -12));
               
               // Progressive interpolation for scale (1 to 0.75)
-              const scale = 1 - absDistance * 0.25;
+              const scale = 1 - absDistance * 0.35;
               
               // Progressive interpolation for opacity (1 to 0.7)
               const opacity = 1 - absDistance * 0.3;
@@ -148,7 +148,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               const isActive = index === lastIndex;
               const rotateY = isActive ? 0 : (index < lastIndex ? 12 : 0);
               gsap.to(card, {
-                scale: isActive ? 1 : 0.75,
+                scale: isActive ? 1 : 0.65,
                 opacity: isActive ? 1 : 0.7,
                 rotateY,
                 duration: 0.5,
@@ -163,7 +163,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               const isActive = index === 0;
               const rotateY = isActive ? 0 : -12;
               gsap.to(card, {
-                scale: isActive ? 1 : 0.75,
+                scale: isActive ? 1 : 0.65,
                 opacity: isActive ? 1 : 0.7,
                 rotateY,
                 duration: 0.5,
