@@ -39,16 +39,10 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
-      // Calculate snap points for each card - last card gets more "weight"
-      const totalCards = services.length;
-      const snapPoints = services.map((_, i) => {
-        if (i === totalCards - 1) {
-          // Ultimul card - snap point mai devreme pentru a sta mai mult
-          return 0.85;
-        }
-        // Restul cardurilor - distribuție pe primii 85%
-        return (i / (totalCards - 1)) * 0.85;
-      });
+      // Calculate snap points for each card
+      const cardWidth = viewportWidth * 0.8; // 80vw
+      const gap = 16; // gap-4 = 16px
+      const snapPoints = services.map((_, i) => (i * (cardWidth + gap)) / scrollDistance);
 
       // Set initial scale for all cards except the first
       cardsRef.current.forEach((card, index) => {
