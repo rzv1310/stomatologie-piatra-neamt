@@ -260,13 +260,13 @@ const Index = () => {
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Link key={index} to={service.link}>
-                <Card className="h-full hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative">
+                <Card className="h-full min-h-[280px] hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative">
                   <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                     style={{ backgroundImage: `url(${service.image})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
-                  <CardContent className="p-6 relative z-10">
+                  <CardContent className="p-6 relative z-10 h-full flex flex-col justify-end">
                     <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
                     <p className="text-white/90 mb-4">{service.description}</p>
                     <div className="flex items-center text-accent font-medium">
