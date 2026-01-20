@@ -244,7 +244,8 @@ const Index = () => {
       {/* Services */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          {/* Desktop only header */}
+          <div className="text-center mb-12 hidden md:block">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
               Servicii stomatologice
             </h2>
@@ -253,8 +254,12 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Mobile: GSAP horizontal scroll carousel */}
-          <MobileServicesCarousel services={services} />
+          {/* Mobile: GSAP horizontal scroll carousel cu header inclus */}
+          <MobileServicesCarousel 
+            services={services}
+            title="Servicii stomatologice"
+            subtitle="Tratamente moderne complete, de la prevenție la reabilitări complexe"
+          />
           
           {/* Desktop: Grid layout */}
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
