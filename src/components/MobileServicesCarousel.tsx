@@ -72,7 +72,6 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       });
 
       const tween = gsap.to(track, {
-        x: -scrollDistance,
         ease: "none",
         scrollTrigger: {
           trigger: section,
@@ -110,6 +109,12 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             const effectiveProgress = progress <= deadZoneProgress 
               ? 0 
               : (progress - deadZoneProgress) / (1 - deadZoneProgress);
+            
+            // Controlul manual al poziției track-ului
+            // În dead zone: x = 0 (stă pe loc)
+            // După dead zone: x merge de la 0 la -scrollDistance
+            const xPosition = -scrollDistance * effectiveProgress;
+            gsap.set(track, { x: xPosition });
             
             const activeIndex = progress <= deadZoneProgress 
               ? 0 
