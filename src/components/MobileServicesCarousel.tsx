@@ -67,7 +67,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           trigger: section,
           start: "top 50px",
           end: () => `+=${totalScrollDistance * 2}`,
-          scrub: 1.5,
+          scrub: 0.5,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
@@ -116,12 +116,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               const scale = distance === 0 ? 1 : 0.85;
               const opacity = distance === 0 ? 1 : 0.7;
               
-              gsap.to(card, {
-                scale,
-                opacity,
-                duration: 0.3,
-                ease: "power2.out"
-              });
+              gsap.set(card, { scale, opacity });
             });
 
             // Parallax effect on images
@@ -139,11 +134,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
                 offset = offset * 0.3;
               }
               
-              gsap.to(img, {
-                y: offset,
-                duration: 0.2,
-                ease: "power1.out"
-              });
+              gsap.set(img, { y: offset });
             });
           },
           onLeave: () => {
@@ -217,14 +208,14 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       <div
         ref={trackRef}
         className="track flex gap-4 px-4 pt-4 pb-8 items-center"
-        style={{ width: "max-content" }}
+        style={{ width: "max-content", willChange: "transform" }}
       >
         {services.map((service, index) => (
           <Link
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
             to={service.link}
-            className="service-card flex-shrink-0 origin-center transition-transform"
+            className="service-card flex-shrink-0 origin-center will-change-transform"
             style={{ width: "80vw", maxWidth: "420px" }}
           >
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
