@@ -181,7 +181,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
   }, [services]);
 
   return (
-    <div ref={sectionRef} className="services-pin md:hidden relative overflow-hidden">
+    <div ref={sectionRef} className="services-pin md:hidden relative">
       <div
         ref={trackRef}
         className="track flex gap-4 px-4 pt-4 pb-8 items-center"
@@ -198,7 +198,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
               <div
                 ref={(el) => (imagesRef.current[index] = el)}
-                className="absolute inset-[-30px] bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 style={{ backgroundImage: `url(${service.image})` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
