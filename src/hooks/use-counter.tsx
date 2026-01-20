@@ -2,16 +2,19 @@ import { useState, useEffect, useRef } from "react";
 
 export const useCounter = (end: number, duration: number = 5000, shouldStart: boolean = true) => {
   const [count, setCount] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
   const startTimeRef = useRef<number | null>(null);
   const animationFrameRef = useRef<number>();
 
   useEffect(() => {
     if (!shouldStart) {
       setCount(0);
+      setIsComplete(false);
       return;
     }
 
     startTimeRef.current = null;
+    setIsComplete(false);
 
     const animate = (currentTime: number) => {
       if (!startTimeRef.current) {
@@ -31,6 +34,7 @@ export const useCounter = (end: number, duration: number = 5000, shouldStart: bo
         animationFrameRef.current = requestAnimationFrame(animate);
       } else {
         setCount(end);
+        setIsComplete(true);
       }
     };
 
@@ -43,5 +47,5 @@ export const useCounter = (end: number, duration: number = 5000, shouldStart: bo
     };
   }, [end, duration, shouldStart]);
 
-  return count;
+  return { count, isComplete };
 };

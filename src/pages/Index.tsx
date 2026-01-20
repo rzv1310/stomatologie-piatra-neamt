@@ -32,8 +32,8 @@ const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slideCount, setSlideCount] = useState(0);
 
-  const yearsCount = useCounter(20, 3000, isStatsVisible);
-  const patientsCount = useCounter(10000, 3000, isStatsVisible);
+  const { count: yearsCount, isComplete: yearsComplete } = useCounter(20, 2500, isStatsVisible);
+  const { count: patientsCount, isComplete: patientsComplete } = useCounter(10000, 2500, isStatsVisible);
 
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
@@ -390,11 +390,15 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">{yearsCount}+</div>
+              <div className={`text-4xl font-bold mb-2 transition-transform duration-300 ${yearsComplete ? 'animate-pulse scale-110' : ''}`}>
+                {yearsCount}+
+              </div>
               <div className="text-sm opacity-90">ani de experiență</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">{patientsCount.toLocaleString('ro-RO')}+</div>
+              <div className={`text-4xl font-bold mb-2 transition-transform duration-300 ${patientsComplete ? 'animate-pulse scale-110' : ''}`}>
+                {patientsCount.toLocaleString('ro-RO')}+
+              </div>
               <div className="text-sm opacity-90">pacienți tratați</div>
             </div>
             <div>
