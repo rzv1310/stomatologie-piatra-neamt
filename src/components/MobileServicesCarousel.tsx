@@ -64,10 +64,14 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       // Add last card snap point
       snapPoints[totalCards - 1] = 1;
 
-      // Set initial scale for all cards except the first
+      // Set initial scale for all cards - first card at full scale, others reduced
       cardsRef.current.forEach((card, index) => {
-        if (card && index !== 0) {
-          gsap.set(card, { scale: 0.85, opacity: 0.7 });
+        if (card) {
+          if (index === 0) {
+            gsap.set(card, { scale: 1, opacity: 1, transformOrigin: "center center" });
+          } else {
+            gsap.set(card, { scale: 0.85, opacity: 0.7, transformOrigin: "center center" });
+          }
         }
       });
 
@@ -178,13 +182,12 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             });
           },
           onLeaveBack: () => {
-            // Resetare la prima poziție când ieșim înapoi din secțiune
+            // Resetare la starea inițială când ieșim înapoi din secțiune
             cardsRef.current.forEach((card, index) => {
               if (!card) return;
-              const isActive = index === 0;
               gsap.to(card, {
-                scale: isActive ? 1 : 0.85,
-                opacity: isActive ? 1 : 0.7,
+                scale: index === 0 ? 1 : 0.85,
+                opacity: index === 0 ? 1 : 0.7,
                 duration: 0.3,
                 ease: "power2.out"
               });
@@ -231,8 +234,8 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
             to={service.link}
-            className="service-card flex-shrink-0 origin-center transition-transform"
-            style={{ width: "80vw", maxWidth: "420px" }}
+            className="service-card flex-shrink-0 transition-transform will-change-transform"
+            style={{ width: "80vw", maxWidth: "420px", transformOrigin: "center center" }}
           >
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
               <div
