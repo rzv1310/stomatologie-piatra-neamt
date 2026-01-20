@@ -18,9 +18,15 @@ interface Service {
 
 interface MobileServicesCarouselProps {
   services: Service[];
+  title?: string;
+  subtitle?: string;
 }
 
-const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
+const MobileServicesCarousel = ({ 
+  services,
+  title = "Servicii stomatologice",
+  subtitle = "Tratamente moderne complete, de la prevenție la reabilitări complexe"
+}: MobileServicesCarouselProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
@@ -214,6 +220,16 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
 
   return (
     <div ref={sectionRef} className="services-pin md:hidden relative overflow-x-hidden">
+      {/* Header - pinned cu cardurile în dead zone */}
+      <div className="text-center mb-8 px-4">
+        <h2 className="text-3xl font-bold mb-4 text-heading">
+          {title}
+        </h2>
+        <p className="text-lg text-text-custom max-w-2xl mx-auto">
+          {subtitle}
+        </p>
+      </div>
+      
       <div
         ref={trackRef}
         className="track flex gap-4 px-4 pt-4 pb-8 items-center"
