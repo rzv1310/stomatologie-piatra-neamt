@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 interface Service {
   title: string;
@@ -111,6 +112,16 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
                 ease: "power1.out"
               });
             });
+          },
+          onLeave: () => {
+            const nextSection = section.nextElementSibling as HTMLElement;
+            if (nextSection) {
+              gsap.to(window, {
+                scrollTo: { y: nextSection, offsetY: 50 },
+                duration: 0.8,
+                ease: "power2.out"
+              });
+            }
           }
         },
       });
