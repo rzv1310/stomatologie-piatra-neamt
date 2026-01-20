@@ -56,8 +56,8 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 100px",
-          end: () => `+=${scrollDistance}`,
+          start: "top 20%",
+          end: () => `+=${scrollDistance * 1.5}`,
           scrub: 1.5,
           pin: true,
           pinSpacing: true,
