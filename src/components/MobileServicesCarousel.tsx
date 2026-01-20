@@ -42,10 +42,11 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top top",
+          start: "top 80px", // Start when section top reaches below header
           end: () => `+=${scrollDistance}`,
           scrub: 0.5,
           pin: true,
+          pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
         },
