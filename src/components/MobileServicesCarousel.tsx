@@ -37,18 +37,29 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
+      // Calculate snap points for each card
+      const cardWidth = viewportWidth * 0.8; // 80vw
+      const gap = 16; // gap-4 = 16px
+      const snapPoints = services.map((_, i) => (i * (cardWidth + gap)) / scrollDistance);
+
       const tween = gsap.to(track, {
         x: -scrollDistance,
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 50px", // Start when section top reaches 50px below header
+          start: "top 50px",
           end: () => `+=${scrollDistance}`,
           scrub: 0.5,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
+          snap: {
+            snapTo: snapPoints,
+            duration: { min: 0.2, max: 0.4 },
+            delay: 0.1,
+            ease: "power1.inOut"
+          }
         },
       });
 
@@ -71,7 +82,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
     <div ref={sectionRef} className="services-pin md:hidden relative overflow-hidden">
       <div
         ref={trackRef}
-        className="track flex gap-4 px-4 py-4"
+        className="track flex gap-4 px-4 pt-2 pb-4"
         style={{ width: "max-content" }}
       >
         {services.map((service, index) => (
