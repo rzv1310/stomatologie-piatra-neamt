@@ -56,7 +56,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 20%",
+          start: "top top",
           end: () => `+=${scrollDistance * 1.5}`,
           scrub: 1.5,
           pin: true,
@@ -94,14 +94,21 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             imagesRef.current.forEach((img, index) => {
               if (!img) return;
               
-              // Calculate how far this card is from center
               const cardProgress = index / (totalCards - 1);
-              const offset = (progress - cardProgress) * 30; // 30px max parallax
+              let offset = (progress - cardProgress) * 30;
+              
+              // Clamp pentru a evita sărituri
+              offset = Math.max(-30, Math.min(30, offset));
+              
+              // Reduce când cardul e activ
+              if (index === activeIndex) {
+                offset = offset * 0.3;
+              }
               
               gsap.to(img, {
                 y: offset,
-                duration: 0.1,
-                ease: "none"
+                duration: 0.2,
+                ease: "power1.out"
               });
             });
           }
