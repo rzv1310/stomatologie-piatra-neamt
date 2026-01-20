@@ -40,10 +40,19 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
-      // Calculate snap points for each card
+      // Calculate exact snap points for each card (normalized 0-1)
       const cardWidth = viewportWidth * 0.8; // 80vw
       const gap = 16; // gap-4 = 16px
-      const snapPoints = services.map((_, i) => (i * (cardWidth + gap)) / scrollDistance);
+      const totalCards = services.length;
+      
+      // Generate precise snap points
+      const snapPoints: number[] = [];
+      for (let i = 0; i < totalCards; i++) {
+        const cardPosition = i * (cardWidth + gap);
+        const normalizedPosition = cardPosition / scrollDistance;
+        // Clamp to 0-1 range
+        snapPoints.push(Math.min(1, Math.max(0, normalizedPosition)));
+      }
 
       // Set initial scale for all cards except the first
       cardsRef.current.forEach((card, index) => {
@@ -59,17 +68,30 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           trigger: section,
           start: "top 50px",
           end: () => `+=${scrollDistance * 2}`,
-          scrub: 2.5,
+          scrub: 1.5,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           refreshPriority: 1,
           invalidateOnRefresh: true,
           snap: {
-            snapTo: snapPoints,
-            duration: { min: 0.3, max: 0.6 },
-            delay: 0.15,
-            ease: "power2.inOut"
+            snapTo: (progress) => {
+              // Find closest snap point
+              let closest = snapPoints[0];
+              let minDist = Math.abs(progress - closest);
+              
+              for (let i = 1; i < snapPoints.length; i++) {
+                const dist = Math.abs(progress - snapPoints[i]);
+                if (dist < minDist) {
+                  minDist = dist;
+                  closest = snapPoints[i];
+                }
+              }
+              return closest;
+            },
+            duration: { min: 0.2, max: 0.4 },
+            delay: 0.05,
+            ease: "power1.inOut"
           },
           onUpdate: (self) => {
             const progress = self.progress;
