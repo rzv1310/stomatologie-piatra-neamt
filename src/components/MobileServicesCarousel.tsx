@@ -73,25 +73,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           anticipatePin: 1,
           refreshPriority: 1,
           invalidateOnRefresh: true,
-          snap: {
-            snapTo: (progress) => {
-              // Find closest snap point
-              let closest = snapPoints[0];
-              let minDist = Math.abs(progress - closest);
-              
-              for (let i = 1; i < snapPoints.length; i++) {
-                const dist = Math.abs(progress - snapPoints[i]);
-                if (dist < minDist) {
-                  minDist = dist;
-                  closest = snapPoints[i];
-                }
-              }
-              return closest;
-            },
-            duration: { min: 0.2, max: 0.4 },
-            delay: 0.05,
-            ease: "power1.inOut"
-          },
+          // snap disabled
           onUpdate: (self) => {
             const progress = self.progress;
             
