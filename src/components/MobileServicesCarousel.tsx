@@ -117,27 +117,6 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
               });
             });
 
-            // Parallax effect on images
-            imagesRef.current.forEach((img, index) => {
-              if (!img) return;
-              
-              const cardProgress = index / (totalCards - 1);
-              let offset = (effectiveProgress - cardProgress) * 30;
-              
-              // Clamp pentru a evita sărituri
-              offset = Math.max(-30, Math.min(30, offset));
-              
-              // Reduce când cardul e activ
-              if (index === activeIndex) {
-                offset = offset * 0.3;
-              }
-              
-              gsap.to(img, {
-                y: offset,
-                duration: 0.2,
-                ease: "power1.out"
-              });
-            });
           },
           onLeave: () => {
             const nextSection = section.nextElementSibling as HTMLElement;
@@ -221,11 +200,10 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             style={{ width: "80vw", maxWidth: "420px" }}
           >
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
-              <div
-                ref={(el) => (imagesRef.current[index] = el)}
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                style={{ backgroundImage: `url(${service.image})` }}
-              />
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${service.image})` }}
+                />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
               <CardContent className="p-6 pb-[100px] relative z-10 h-full flex flex-col justify-end">
                 <h3 className="text-xl font-semibold mb-2 text-white">
