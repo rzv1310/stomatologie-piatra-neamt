@@ -128,8 +128,8 @@ const ImplantDentar = () => {
       <main className="flex-1">
         {/* Hero */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
+          <div
+            className="absolute inset-0 bg-cover bg-center lg:bg-top"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
