@@ -43,14 +43,15 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       // Dead zones - extra scroll distance at start and end
       const deadZonePixels = 300;
       const totalScrollDistance = scrollDistance + (deadZonePixels * 2); // Dead zone at both ends
-      const deadZoneProgress = deadZonePixels / totalScrollDistance;
+      const startDeadZoneProgress = deadZonePixels / totalScrollDistance;
+      const endDeadZoneProgress = 1 - (deadZonePixels / totalScrollDistance);
 
       const totalCards = services.length;
       
       // Generate precise snap points with dead zone offset
       const snapPoints: number[] = [0]; // First card at 0 (within dead zone)
       for (let i = 1; i < totalCards; i++) {
-        const normalizedPosition = deadZoneProgress + (i / (totalCards - 1)) * (1 - deadZoneProgress);
+        const normalizedPosition = startDeadZoneProgress + (i / (totalCards - 1)) * (endDeadZoneProgress - startDeadZoneProgress);
         snapPoints.push(Math.min(1, normalizedPosition));
       }
 
@@ -77,18 +78,28 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           onUpdate: (self) => {
             const progress = self.progress;
             
-            // Calculate effective progress (skip dead zone)
-            const effectiveProgress = progress <= deadZoneProgress 
-              ? 0 
-              : (progress - deadZoneProgress) / (1 - deadZoneProgress);
+            // Calculate effective progress with dead zones at start and end
+            let effectiveProgress: number;
+            if (progress <= startDeadZoneProgress) {
+              // Dead zone la început - rămâne pe primul card
+              effectiveProgress = 0;
+            } else if (progress >= endDeadZoneProgress) {
+              // Dead zone la final - rămâne pe ultimul card
+              effectiveProgress = 1;
+            } else {
+              // Zona activă - progres liniar între cele două dead zones
+              effectiveProgress = (progress - startDeadZoneProgress) / (endDeadZoneProgress - startDeadZoneProgress);
+            }
             
-            // Move track only after dead zone
+            // Move track based on effective progress
             const xPosition = -scrollDistance * effectiveProgress;
             gsap.set(track, { x: xPosition });
             
-            const activeIndex = progress <= deadZoneProgress 
+            const activeIndex = progress <= startDeadZoneProgress 
               ? 0 
-              : Math.round(effectiveProgress * (totalCards - 1));
+              : progress >= endDeadZoneProgress 
+                ? totalCards - 1 
+                : Math.round(effectiveProgress * (totalCards - 1));
 
             // Scale effect on cards
             cardsRef.current.forEach((card, index) => {
