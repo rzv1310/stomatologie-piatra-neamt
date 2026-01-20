@@ -37,28 +37,18 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
       const viewportWidth = window.innerWidth;
       const scrollDistance = scrollWidth - viewportWidth + 32; // 32px for padding
 
-      const cardWidth = window.innerWidth * 0.8 + 16; // 80vw + gap
-      const totalCards = services.length;
-      const snapPoints = Array.from({ length: totalCards }, (_, i) => i / (totalCards - 1));
-
       const tween = gsap.to(track, {
         x: -scrollDistance,
         ease: "none",
         scrollTrigger: {
           trigger: section,
-          start: "top 40px",
+          start: "top 50px", // Start when section top reaches 50px below header
           end: () => `+=${scrollDistance}`,
-          scrub: 0.3,
+          scrub: 0.5,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
-          snap: {
-            snapTo: snapPoints,
-            duration: { min: 0.2, max: 0.4 },
-            delay: 0,
-            ease: "power1.inOut",
-          },
         },
       });
 
@@ -91,7 +81,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
             className="service-card flex-shrink-0"
             style={{ width: "80vw", maxWidth: "420px" }}
           >
-            <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[70vh]">
+            <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 style={{ backgroundImage: `url(${service.image})` }}
