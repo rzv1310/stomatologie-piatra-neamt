@@ -163,7 +163,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
                 style={{ backgroundImage: `url(${service.image})` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
-              <CardContent className="p-6 pb-[38px] relative z-10 h-full flex flex-col justify-end">
+              <CardContent className="p-6 pb-[70px] relative z-10 h-full flex flex-col justify-end">
                 <h3 className="text-xl font-semibold mb-2 text-white">
                   {service.title}
                 </h3>
