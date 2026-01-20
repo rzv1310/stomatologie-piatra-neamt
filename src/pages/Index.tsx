@@ -22,6 +22,7 @@ import telegondolaPiatraNeamt from "@/assets/telegondola-piatra-neamt.jpg?format
 import turnulStefanCelMare from "@/assets/turnul-stefan-cel-mare-piatra-neamt.webp?format=webp";
 import serviceEndodontie from "@/assets/service-endodontie.jpg?format=webp";
 import { AttractionMap } from "@/components/AttractionMap";
+import MobileServicesCarousel from "@/components/MobileServicesCarousel";
 
 const Index = () => {
   // State management for stats animation and carousel
@@ -251,7 +252,12 @@ const Index = () => {
               Tratamente moderne complete, de la prevenție la reabilitări complexe
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          {/* Mobile: GSAP horizontal scroll carousel */}
+          <MobileServicesCarousel services={services} />
+          
+          {/* Desktop: Grid layout */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Link key={index} to={service.link}>
                 <Card className="h-full hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative">
