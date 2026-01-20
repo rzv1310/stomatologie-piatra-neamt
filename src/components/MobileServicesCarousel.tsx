@@ -63,20 +63,29 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
         scrollTrigger: {
           trigger: section,
           start: "top 20%",
-          end: () => `+=${scrollDistance * 2}`,
+          end: () => `+=${scrollDistance * 2.5}`, // 25% extra scroll "mort" la final
           scrub: 2.5,
           pin: true,
           pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
           snap: {
-            snapTo: snapPoints,
+            snapTo: (progress) => {
+              // După 0.8 (80%), snap la 0.8 pentru a menține ultima casetă
+              if (progress > 0.75) return 0.8;
+              // Pentru restul, snap normal pe carduri
+              const cardProgress = progress / 0.8; // normalizăm la 0-1
+              const cardIndex = Math.round(cardProgress * (totalCards - 1));
+              return (cardIndex / (totalCards - 1)) * 0.8;
+            },
             duration: { min: 0.3, max: 0.6 },
             delay: 0.15,
             ease: "power2.inOut"
           },
           onUpdate: (self) => {
-            const progress = self.progress;
+            // Normalizăm progress-ul - după 0.8 rămânem la ultimul card
+            const rawProgress = self.progress;
+            const progress = Math.min(rawProgress / 0.8, 1); // 0-0.8 devine 0-1
             const totalCards = services.length;
             const activeIndex = Math.round(progress * (totalCards - 1));
 
