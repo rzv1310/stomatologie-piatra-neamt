@@ -252,10 +252,10 @@ const Radiologie = () => {
       <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
-              CBCT - Tomografie computerizată Cone Beam
-            </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
+                CBCT - Tomografie computerizată Cone Beam
+              </h2>
               <p>
                 <strong>CBCT (Cone Beam Computed Tomography)</strong> este tehnologia de imagistică 3D de ultimă generație în stomatologie. Spre deosebire de radiografiile tradiționale care oferă imagini 2D, CBCT-ul creează o reconstrucție tridimensională completă a structurilor dentare, osoase și tisulare moi.
               </p>

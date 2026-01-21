@@ -299,10 +299,10 @@ const Parodontologie = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
-              Ce este parodontologia?
-            </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
+                Ce este parodontologia?
+              </h2>
               <p>
                 Parodontologia este specialitatea stomatologiei care se ocupă cu diagnosticul, prevenția și tratamentul bolilor parodontale - afecțiuni care atacă gingiile, ligamentul parodontal și osul alveolar care susține dinții.
               </p>

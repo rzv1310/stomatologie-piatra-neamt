@@ -223,10 +223,10 @@ const EsteticaDentara = () => {
       <section className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
-              Ce este estetica dentară?
-            </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
+                Ce este estetica dentară?
+              </h2>
               <p>
                 Estetica dentară reprezintă ansamblul tratamentelor și procedurilor care vizează îmbunătățirea aspectului zâmbetului tău. Nu este vorba doar despre dinți albi - este vorba despre armonie, proporții corecte și un zâmbet care să îți reflecte personalitatea.
               </p>
