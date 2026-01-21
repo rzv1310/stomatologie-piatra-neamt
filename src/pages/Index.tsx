@@ -29,11 +29,6 @@ const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slideCount, setSlideCount] = useState(0);
 
-  const FAQSchema = useSEOSchema({
-    type: 'FAQPage',
-    canonical: '/',
-    faqs: faqDataForSEO
-  });
 
   const AggregateRatingSchema = useAggregateRatingSchema({
     ratingValue: "5.0",
@@ -133,7 +128,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {FAQSchema}
+      {/* FAQPage schema is in index.html */}
       {AggregateRatingSchema}
       <Navigation />
 
