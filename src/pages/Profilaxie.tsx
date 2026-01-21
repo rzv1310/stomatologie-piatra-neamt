@@ -205,7 +205,7 @@ const Profilaxie = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
               Ce este profilaxia dentară?
             </h2>
-            <div className="prose prose-lg max-w-none text-text-custom space-y-4">
+            <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
               <p>
                 Profilaxia dentară reprezintă ansamblul măsurilor preventive destinate menținerii sănătății cavității orale și prevenirii apariției afecțiunilor dentare. Aceasta include igienizarea profesională, detartrajul, fluorizarea și educația pentru igiena orală corespunzătoare.
               </p>

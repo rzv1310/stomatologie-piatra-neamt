@@ -264,7 +264,7 @@ const Protetica = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
               Ce este protetica dentară?
             </h2>
-            <div className="prose prose-lg max-w-none text-text-custom space-y-4">
+            <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
               <p>
                 Protetica dentară este specialitatea stomatologiei care se ocupă cu înlocuirea dinților lipsă sau reconstruirea celor deteriorați prin diverse tipuri de proteze și restaurări.
               </p>
