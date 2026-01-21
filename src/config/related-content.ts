@@ -180,7 +180,7 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       anchorText: "Detalii plombe copii fără durere fără frică"
     }
   ],
-  'stomatologie-generala': [
+  'endodontie': [
     {
       title: "Tratament carii",
       link: "/servicii/tratament-carii",
@@ -188,10 +188,10 @@ export const relatedServices: Record<string, { title: string; link: string; desc
       anchorText: "Detalii plombe pentru carii stop durere rapid"
     },
     {
-      title: "Endodonție",
-      link: "/servicii/endodontie-piatra-neamt",
-      description: "Tratament de canal pentru carii profunde și infecții",
-      anchorText: "Detalii tratament canal pentru salvare dinte infectat"
+      title: "Radiologie dentară",
+      link: "/servicii/radiologie-dentara-piatra-neamt",
+      description: "Radiografii pentru diagnosticarea precisă a canalelor radiculare",
+      anchorText: "Detalii radiografie pentru diagnostic tratament canal"
     },
     {
       title: "Parodontologie",

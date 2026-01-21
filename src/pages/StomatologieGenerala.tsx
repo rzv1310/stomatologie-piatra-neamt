@@ -139,7 +139,7 @@ const StomatologieGenerala = () => {
 
   const MedicalProcedureSchema = useSEOSchema({
     type: 'MedicalProcedure',
-    canonical: '/servicii/stomatologie-generala',
+    canonical: '/servicii/endodontie-piatra-neamt',
     medicalProcedure: {
       name: 'Endodonție și Tratament de Canal',
       description: 'Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.',
@@ -149,14 +149,14 @@ const StomatologieGenerala = () => {
 
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
-    canonical: '/servicii/stomatologie-generala',
+    canonical: '/servicii/endodontie-piatra-neamt',
     faqs: faqs
   });
 
   const LocalBusinessSchema = useLocalBusinessSchema({
     serviceName: "Endodonție și Tratament de Canal",
     serviceDescription: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.",
-    path: "/servicii/stomatologie-generala",
+    path: "/servicii/endodontie-piatra-neamt",
     medicalSpecialty: "Endodonție"
   });
 
@@ -474,7 +474,7 @@ const StomatologieGenerala = () => {
         </div>
       </section>
 
-      <RelatedServices services={relatedServices['stomatologie-generala']} />
+      <RelatedServices services={relatedServices['endodontie']} />
       </main>
 
       <Footer />

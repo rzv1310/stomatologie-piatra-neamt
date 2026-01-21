@@ -80,7 +80,7 @@ const Profilaxie = () => {
       question: "Cât de des ar trebui să fac o igienizare profesională?",
       answer: (
         <>
-          Recomandăm o igienizare profesională la fiecare 6 luni pentru menținerea unei sănătăți orale optime. Pacienții cu risc crescut de boli parodontale sau acumulare rapidă de tartru pot necesita controale la 3-4 luni. Dacă este nevoie de <Link to="/servicii/stomatologie-generala" className="text-primary hover:underline font-medium">tratament de canal</Link>, îl recomandăm înainte de igienizare.
+          Recomandăm o igienizare profesională la fiecare 6 luni pentru menținerea unei sănătăți orale optime. Pacienții cu risc crescut de boli parodontale sau acumulare rapidă de tartru pot necesita controale la 3-4 luni. Dacă este nevoie de <Link to="/servicii/endodontie-piatra-neamt" className="text-primary hover:underline font-medium">tratament de canal</Link>, îl recomandăm înainte de igienizare.
         </>
       )
     },
