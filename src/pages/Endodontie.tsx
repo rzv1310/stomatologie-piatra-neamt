@@ -17,7 +17,7 @@ import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
 
-const StomatologieGenerala = () => {
+const Endodontie = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Endodonție Piatra Neamț - Tratament de Canal la Microscop | Medstom",
     description: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație. ☎ 0333 630 005",
@@ -482,4 +482,4 @@ const StomatologieGenerala = () => {
   );
 };
 
-export default StomatologieGenerala;
+export default Endodontie;
