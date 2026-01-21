@@ -12,14 +12,15 @@ import { Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
-
 const Contact = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Contact & Programări | Stomatologie MedStom Piatra Neamț",
     description: "Programează-te la clinica stomatologică MedStom din Piatra Neamț. Adresă: Strada Ana Ipătescu 9. Program: Luni-Vineri 09:00-19:00. ☎ 0333 630 005",
     path: "/contact"
   });
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -27,9 +28,7 @@ const Contact = () => {
     message: ""
   });
   const [acceptedPrivacy, setAcceptedPrivacy] = useState(false);
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -38,7 +37,7 @@ const Contact = () => {
       toast({
         title: "Eroare",
         description: "Te rugăm să completezi numele și numărul de telefon.",
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
@@ -48,13 +47,11 @@ const Contact = () => {
       toast({
         title: "Eroare",
         description: "Trebuie să accepți Politica de confidențialitate pentru a continua.",
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
-
     setIsSubmitting(true);
-
     try {
       const formDataToSend = new FormData();
       formDataToSend.append("form-name", "contact");
@@ -63,17 +60,17 @@ const Contact = () => {
       formDataToSend.append("phone", formData.phone);
       formDataToSend.append("email", formData.email);
       formDataToSend.append("message", formData.message);
-
       const response = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
         body: new URLSearchParams(formDataToSend as any).toString()
       });
-
       if (response.ok) {
         toast({
           title: "Cerere trimisă cu succes!",
-          description: "Te vom contacta în cel mai scurt timp posibil.",
+          description: "Te vom contacta în cel mai scurt timp posibil."
         });
 
         // Reset form
@@ -92,30 +89,27 @@ const Contact = () => {
       toast({
         title: "Eroare la trimitere",
         description: "Te rugăm să încerci din nou sau să ne contactezi telefonic.",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       {DynamicSEO}
       <Navigation />
-      <Breadcrumbs
-        items={[
-          { label: "Stomatologie Piatra Neamț", href: "/" },
-          { label: "Contact" }
-        ]}
-      />
+      <Breadcrumbs items={[{
+      label: "Stomatologie Piatra Neamț",
+      href: "/"
+    }, {
+      label: "Contact"
+    }]} />
 
       <main className="flex-1">
         {/* Hero */}
@@ -140,9 +134,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-heading">Informații de contact</h2>
-                <p className="text-lg text-text-custom mb-8">
-                  Dacă ești în căutarea unui medic dentist experimentat în Piatra Neamț, într-o clinică care oferă materiale de top și tratamente moderne — Medstom Clinic este soluția.
-                </p>
+                <p className="text-lg text-text-custom mb-8">Dacă ești în căutarea unui medic dentist experimentat în Piatra Neamț, într-o clinică care oferă materiale de top și tratamente moderne - Medstom Clinic este soluția.</p>
               </div>
 
               <Card className="border-primary/20">
@@ -151,12 +143,7 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Adresa clinicii</h3>
-                      <a
-                        href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9"
-                        target="_blank"
-                        rel="dofollow noopener noreferrer"
-                        className="text-text-custom hover:text-primary transition-colors"
-                      >
+                      <a href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" target="_blank" rel="dofollow noopener noreferrer" className="text-text-custom hover:text-primary transition-colors">
                         Strada Ana Ipătescu 9, Piatra Neamț 610120
                       </a>
                     </div>
@@ -212,83 +199,37 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nume și prenume *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Introdu numele tău"
-                        required
-                      />
+                      <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Introdu numele tău" required />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="phone">Telefon *</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="07xx xxx xxx"
-                        required
-                      />
+                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="07xx xxx xxx" required />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email">Email (opțional)</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="email@exemplu.ro"
-                      />
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="email@exemplu.ro" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="message">Mesaj (opțional)</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Descrie motivul programării sau întrebările tale..."
-                        rows={5}
-                      />
+                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Descrie motivul programării sau întrebările tale..." rows={5} />
                     </div>
 
                     {/* Privacy Policy Checkbox */}
                     <div className="flex items-start space-x-3 py-4">
-                      <Checkbox
-                        id="privacy-policy"
-                        checked={acceptedPrivacy}
-                        onCheckedChange={(checked) => setAcceptedPrivacy(checked === true)}
-                        className="mt-1"
-                      />
-                      <Label
-                        htmlFor="privacy-policy"
-                        className="text-sm text-text-custom leading-relaxed cursor-pointer"
-                      >
+                      <Checkbox id="privacy-policy" checked={acceptedPrivacy} onCheckedChange={checked => setAcceptedPrivacy(checked === true)} className="mt-1" />
+                      <Label htmlFor="privacy-policy" className="text-sm text-text-custom leading-relaxed cursor-pointer">
                         De acord cu{" "}
-                        <Link
-                          to="/politica-confidentialitate"
-                          className="text-primary hover:underline font-medium"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <Link to="/politica-confidentialitate" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
                           Politica de confidențialitate
                         </Link>
                         {" "}*
                       </Label>
                     </div>
 
-                    <Button
-                      type="submit"
-                      className="w-full bg-accent hover:bg-accent/90"
-                      disabled={isSubmitting}
-                    >
+                    <Button type="submit" className="w-full bg-accent hover:bg-accent/90" disabled={isSubmitting}>
                       {isSubmitting ? "Se trimite..." : "Trimite cererea de programare"}
                     </Button>
 
@@ -321,37 +262,21 @@ const Contact = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4 text-heading">Cum ajungi la clinică</h2>
-              <a
-                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9"
-                target="_blank"
-                rel="dofollow noopener noreferrer"
-                className="text-lg text-text-custom hover:text-primary transition-colors"
-              >
+              <a href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" target="_blank" rel="dofollow noopener noreferrer" className="text-lg text-text-custom hover:text-primary transition-colors">
                 Strada Ana Ipătescu 9, Piatra Neamț 610120
               </a>
             </div>
             <Card className="border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <div className="aspect-video w-full">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Locație Medstom Clinic"
-                  />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro" width="100%" height="100%" style={{
+                    border: 0
+                  }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Locație Medstom Clinic" />
                 </div>
               </CardContent>
             </Card>
             <div className="text-center mt-6">
-              <a
-                href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9"
-                target="_blank"
-                rel="dofollow noopener noreferrer"
-              >
+              <a href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" target="_blank" rel="dofollow noopener noreferrer">
                 <Button variant="outline" size="lg" className="gap-2">
                   <MapPin className="h-5 w-5" />
                   Deschide în Google Maps
@@ -364,8 +289,6 @@ const Contact = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
