@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const TratamentCarii = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Tratament Carii Dentare Piatra Neamț - Plombe Estetice | Medstom",
+    title: "Tratament Carii Dentare Piatra Neamț - Plombe Estetice | MedStom",
     description: "Tratament carii dentare modern în Piatra Neamț. Obturații estetice din compozit, nedureros. Salvăm dinții afectați de carii. ☎ 0333 630 005",
     path: "/servicii/tratament-carii"
   });
@@ -280,7 +280,7 @@ const TratamentCarii = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce să alegi Medstom pentru tratarea cariilor?
+              De ce să alegi MedStom pentru tratarea cariilor?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

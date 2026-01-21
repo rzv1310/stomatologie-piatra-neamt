@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Profilaxie = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Profilaxie Dentară Piatra Neamț - Detartraj și Igienizare | Medstom",
+    title: "Profilaxie Dentară Piatra Neamț - Detartraj și Igienizare | MedStom",
     description: "Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși. ☎ 0333 630 005",
     path: "/servicii/profilaxie"
   });
@@ -213,7 +213,7 @@ const Profilaxie = () => {
                  Chiar dacă îți perezi dinții zilnic și folosești ață dentară, există zone greu accesibile unde se poate acumula placa bacteriană și tartrul. Igienizarea profesională îndepărtează aceste depozite și previne dezvoltarea cariilor și a <Link to="/servicii/parodontologie-piatra-neamt" className="text-primary hover:underline font-medium">bolii parodontale</Link>.
               </p>
               <p>
-                La Medstom folosim tehnologie modernă, inclusiv ultrasunete și Air-Flow, pentru o curățare eficientă și delicată, care protejează smalțul dinților și asigură rezultate durabile.
+                La MedStom folosim tehnologie modernă, inclusiv ultrasunete și Air-Flow, pentru o curățare eficientă și delicată, care protejează smalțul dinților și asigură rezultate durabile.
               </p>
             </div>
           </div>

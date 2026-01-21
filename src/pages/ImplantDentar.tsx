@@ -75,7 +75,7 @@ const ImplantDentar = () => {
       answer: "Nu! Folosim cei mai buni anestezici și tehnici moderne care fac procedura complet nedureroasă. Majoritatea pacienților raportează un disconfort minim după procedură, comparabil cu o extracție simplă."
     },
     {
-      question: "Cât costă un implant dentar la Medstom?",
+      question: "Cât costă un implant dentar la MedStom?",
       answer: "Costul variază în funcție de complexitatea cazului și de tipul lucrării finale. Oferim consultație gratuită cu plan de tratament detaliat și cost total transparent. Avem și opțiuni de plată în rate."
     },
     {
@@ -89,7 +89,7 @@ const ImplantDentar = () => {
   ];
 
   const DynamicSEO = useDynamicSEO({
-    title: "Implant Dentar Piatra Neamț - Dinți Ficși în 24h | Medstom",
+    title: "Implant Dentar Piatra Neamț - Dinți Ficși în 24h | MedStom",
     description: "Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6. Consultație gratuită. ☎ 0333 630 005",
     path: "/servicii/implant-dentar"
   });
@@ -372,7 +372,7 @@ const ImplantDentar = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-heading">
-              Etapele tratamentului la clinica Medstom
+              Etapele tratamentului la clinica MedStom
             </h2>
             <div className="space-y-6">
               {steps.map((step, index) => (
@@ -395,7 +395,7 @@ const ImplantDentar = () => {
         </div>
       </section>
 
-      {/* Why Choose Medstom */}
+      {/* Why Choose MedStom */}
       <section 
         ref={whyChooseSection.ref}
         className={`py-20 bg-primary transition-all duration-700 ${
@@ -405,7 +405,7 @@ const ImplantDentar = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-white">
-              De ce să alegi implant dentar în Piatra Neamț la Medstom
+              De ce să alegi implant dentar în Piatra Neamț la MedStom
             </h2>
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="text-center border-primary/20 bg-white/10">

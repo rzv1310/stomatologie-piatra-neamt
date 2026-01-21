@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Radiologie = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Radiologie Dentară Piatra Neamț - CBCT, OPG Digital | Medstom",
+    title: "Radiologie Dentară Piatra Neamț - CBCT, OPG Digital | MedStom",
     description: "Radiologie dentară digitală în Piatra Neamț. CBCT 3D, panoramică digitală, teleradiografie. Echipament Green X de ultimă generație. ☎ 0333 630 005",
     path: "/servicii/radiologie-dentara-piatra-neamt"
   });
@@ -103,7 +103,7 @@ const Radiologie = () => {
   const faqs = [
     {
       question: "Este sigur CBCT-ul? Câte radiații primesc?",
-      answer: "CBCT-ul modern emite radiații semnificativ mai reduse decât tomografiile medicale clasice (CT). Doza este comparabilă cu 4-6 radiografii panoramice. La Medstom folosim aparatul CBCT Vatech Green X16 cu tehnologie de reducere a dozei, menținând calitatea imaginii la nivel înalt. Beneficiile diagnostice depășesc cu mult riscurile minime."
+      answer: "CBCT-ul modern emite radiații semnificativ mai reduse decât tomografiile medicale clasice (CT). Doza este comparabilă cu 4-6 radiografii panoramice. La MedStom folosim aparatul CBCT Vatech Green X16 cu tehnologie de reducere a dozei, menținând calitatea imaginii la nivel înalt. Beneficiile diagnostice depășesc cu mult riscurile minime."
     },
     {
       question: "Când este necesar un CBCT în loc de o radiografie normală?",
@@ -260,7 +260,7 @@ const Radiologie = () => {
                 <strong>CBCT (Cone Beam Computed Tomography)</strong> este tehnologia de imagistică 3D de ultimă generație în stomatologie. Spre deosebire de radiografiile tradiționale care oferă imagini 2D, CBCT-ul creează o reconstrucție tridimensională completă a structurilor dentare, osoase și tisulare moi.
               </p>
               <p>
-                La Medstom avem <strong>CBCT Vatech Green X16</strong>, unul dintre cele mai performante aparate din categoria sa:
+                La MedStom avem <strong>CBCT Vatech Green X16</strong>, unul dintre cele mai performante aparate din categoria sa:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Rezoluție foarte înaltă pentru detalii anatomice precise</li>
@@ -387,7 +387,7 @@ const Radiologie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce radiologie la Medstom?
+              De ce radiologie la MedStom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

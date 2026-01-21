@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Parodontologie = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Parodontologie Piatra Neamț - Tratament Parodontoză | Medstom",
+    title: "Parodontologie Piatra Neamț - Tratament Parodontoză | MedStom",
     description: "Tratament parodontal specializat în Piatra Neamț. Chiuretaj, detartraj subgingival, regenerare osoasă. Prevenim pierderea dinților. ☎ 0333 630 005",
     path: "/servicii/parodontologie-piatra-neamt"
   });
@@ -310,7 +310,7 @@ const Parodontologie = () => {
                 <strong>Boala parodontală</strong> este o infecție bacteriană cronică care, netratată, duce la distrugerea progresivă a țesuturilor de susținere ale dinților și, în final, la pierderea lor. Este extrem de răspândită - peste 50% dintre adulți prezintă o formă de boală parodontală.
               </p>
               <p>
-                La Medstom, tratamentul parodontal include:
+                La MedStom, tratamentul parodontal include:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Evaluare parodontală detaliată cu măsurarea buzunarelor</li>
@@ -391,7 +391,7 @@ const Parodontologie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce tratament parodontal la Medstom?
+              De ce tratament parodontal la MedStom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

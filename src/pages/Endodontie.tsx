@@ -19,7 +19,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Endodontie = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Endodonție Piatra Neamț - Tratament de Canal la Microscop | Medstom",
+    title: "Endodonție Piatra Neamț - Tratament de Canal la Microscop | MedStom",
     description: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație. ☎ 0333 630 005",
     path: "/servicii/endodontie-piatra-neamt"
   });
@@ -129,7 +129,7 @@ const Endodontie = () => {
     },
     {
       question: "Cât durează tratamentul de canal?",
-      answer: "Un tratament de canal standard durează 60-90 de minute la Medstom, datorită folosirii microscopului dentar. Cazurile complexe pot necesita 2 ședințe. Timpul investit asigură rate de succes foarte mari."
+      answer: "Un tratament de canal standard durează 60-90 de minute la MedStom, datorită folosirii microscopului dentar. Cazurile complexe pot necesita 2 ședințe. Timpul investit asigură rate de succes foarte mari."
     }
   ];
 
@@ -315,7 +315,7 @@ const Endodontie = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4">
               <p>
-                Tratamentul de canal (endodonția) este procedura prin care salvăm dinți cu nervul infectat sau inflamat. La Medstom, folosim microscop dentar pentru toate tratamentele de canal, ceea ce ne permite să vedem detalii imposibil de observat cu ochiul liber.
+                Tratamentul de canal (endodonția) este procedura prin care salvăm dinți cu nervul infectat sau inflamat. La MedStom, folosim microscop dentar pentru toate tratamentele de canal, ceea ce ne permite să vedem detalii imposibil de observat cu ochiul liber.
               </p>
               <p>
                 Avantajele microscopului dentar includ:
@@ -340,7 +340,7 @@ const Endodontie = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              De ce să alegi Medstom?
+              De ce să alegi MedStom?
             </h2>
             <p className="text-lg text-text-custom max-w-2xl mx-auto">
               Tehnologie avansată și experiență pentru rezultate optime

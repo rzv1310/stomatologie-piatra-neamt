@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Protetica = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Protetică Dentară Piatra Neamț - Coroane, Punți, Proteze | Medstom",
+    title: "Protetică Dentară Piatra Neamț - Coroane, Punți, Proteze | MedStom",
     description: "Lucrări protetice de calitate în Piatra Neamț. Coroane zirconiu, EMAX, proteze dentare, lucrări pe implanturi. Laborator propriu. ☎ 0333 630 005",
     path: "/servicii/protetica-piatra-neamt"
   });
@@ -269,7 +269,7 @@ const Protetica = () => {
                 Protetica dentară este specialitatea stomatologiei care se ocupă cu înlocuirea dinților lipsă sau reconstruirea celor deteriorați prin diverse tipuri de proteze și restaurări.
               </p>
               <p>
-                La Medstom avem propriul laborator de tehnică dentară digitală, ceea ce înseamnă:
+                La MedStom avem propriul laborator de tehnică dentară digitală, ceea ce înseamnă:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Control complet asupra calității lucrărilor protetice</li>
@@ -349,7 +349,7 @@ const Protetica = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce Medstom pentru protetica dentară?
+              De ce MedStom pentru protetica dentară?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
