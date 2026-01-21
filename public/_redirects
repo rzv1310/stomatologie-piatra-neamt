@@ -1,1 +1,5 @@
+# 301 Redirects
+/servicii/stomatologie-generala    /servicii/endodontie-piatra-neamt    301
+
+# SPA fallback
 /*    /index.html   200
