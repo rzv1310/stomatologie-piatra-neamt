@@ -16,7 +16,7 @@ const Servicii = lazy(() => import("@/pages/Servicii"));
 const ImplantDentar = lazy(() => import("@/pages/ImplantDentar"));
 const Profilaxie = lazy(() => import("@/pages/Profilaxie"));
 const EsteticaDentara = lazy(() => import("@/pages/EsteticaDentara"));
-const StomatologieGenerala = lazy(() => import("@/pages/StomatologieGenerala"));
+const Endodontie = lazy(() => import("@/pages/Endodontie"));
 const Protetica = lazy(() => import("@/pages/Protetica"));
 const Chirurgie = lazy(() => import("@/pages/Chirurgie"));
 const Parodontologie = lazy(() => import("@/pages/Parodontologie"));
@@ -118,7 +118,7 @@ export const routes: RouteConfig[] = [
   },
   {
     path: "/servicii/endodontie-piatra-neamt",
-    component: StomatologieGenerala,
+    component: Endodontie,
     priority: 0.8,
     changefreq: "monthly",
     title: "Endodontie"
