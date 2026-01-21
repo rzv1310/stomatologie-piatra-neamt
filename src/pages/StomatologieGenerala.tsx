@@ -19,9 +19,9 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const StomatologieGenerala = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Stomatologie Generală Piatra Neamț - Cabinet Stomatologic | Medstom",
-    description: "Cabinet stomatologic complet în Piatra Neamț. Tratamente generale, endodonție la microscop, restaurări dentare. Consultație gratuită. ☎ 0333 630 005",
-    path: "/servicii/stomatologie-generala"
+    title: "Endodonție Piatra Neamț - Tratament de Canal la Microscop | Medstom",
+    description: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație. ☎ 0333 630 005",
+    path: "/servicii/endodontie-piatra-neamt"
   });
 
   const pricingData = [
