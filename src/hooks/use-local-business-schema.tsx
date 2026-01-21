@@ -22,10 +22,10 @@ export const useLocalBusinessSchema = ({
     "name": "Stomatologie MedStom Piatra Neamț",
     "description": serviceDescription,
     "url": fullUrl,
-    "image": "https://stomatologie-piatra-neamt.lovable.app/favicon.png",
+    "image": "https://stomatologiepiatraneamt.ro/social-image.png",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://stomatologie-piatra-neamt.lovable.app/favicon.png",
+      "url": "https://stomatologiepiatraneamt.ro/favicon.png",
       "width": 512,
       "height": 512
     },

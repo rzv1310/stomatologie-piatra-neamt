@@ -87,7 +87,7 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
         "url": SITE_URL,
         "logo": {
           "@type": "ImageObject",
-          "url": "https://stomatologie-piatra-neamt.lovable.app/favicon.png",
+          "url": "https://stomatologiepiatraneamt.ro/favicon.png",
           "width": 512,
           "height": 512
         }
