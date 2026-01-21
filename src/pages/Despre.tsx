@@ -252,16 +252,16 @@ const Despre = () => {
         </section>
 
         {/* Difference Section */}
-        <section className="py-20 bg-section-alt">
+        <section className="py-20 bg-accent">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-6 text-center text-heading">
+              <h2 className="text-3xl font-bold mb-6 text-center text-white">
                 Diferența între MEDSTOM și restul?
               </h2>
-              <p className="text-xl text-center text-text-custom mb-8">
+              <p className="text-xl text-center text-white/90 mb-8">
                 O armată de specialiști obsedați de rezultate perfecte, nu un singur medic care face totul mediocru.
               </p>
-              <Card className="border-primary/20">
+              <Card className="border-primary/20 bg-white">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4 text-heading">CE PRIMEȘTI LA NOI:</h3>
                   <ul className="space-y-3 text-lg text-text-custom">
