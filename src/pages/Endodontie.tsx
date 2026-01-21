@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import stomatologieHero from "@/assets/service-stomatologie-generala.jpg?w=1200&format=webp";
+import endodontieHero from "@/assets/service-endodontie.jpg?w=1200&format=webp";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { useLocalBusinessSchema } from "@/hooks/use-local-business-schema";
@@ -221,7 +221,7 @@ const Endodontie = () => {
       <section className="relative h-[60vh] min-h-[500px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${stomatologieHero})` }}
+          style={{ backgroundImage: `url(${endodontieHero})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="container mx-auto px-4 relative z-10">

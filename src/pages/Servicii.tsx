@@ -20,7 +20,7 @@ import ortodontieImg from "@/assets/service-ortodontie.webp?w=400&format=webp";
 import copiiImg from "@/assets/service-copii.jpg?w=400&format=webp";
 import radiologieImg from "@/assets/cbct-green-x-radiologie.jpg?w=400&format=webp";
 import urgenteImg from "@/assets/service-urgente.jpg?w=400&format=webp";
-import stomatologieGeneralaImg from "@/assets/service-stomatologie-generala.jpg?w=400&format=webp";
+import endodontieCardImg from "@/assets/service-endodontie.jpg?w=400&format=webp";
 
 const Servicii = () => {
   const faqs = [
@@ -107,7 +107,7 @@ const Servicii = () => {
     },
     {
       title: "Odontoterapie (Tratament Carii)",
-      image: stomatologieGeneralaImg,
+      image: endodontieCardImg,
       services: [
         "Obturații (plombe) fizionomice (compozit)",
         "Inlay/Onlay/Overlay din ceramică sau compozit",
