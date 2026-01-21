@@ -42,23 +42,19 @@ const Endodontie = () => {
   const services = [
     {
       title: "Tratament carii dentare",
-      description: "Obturații fizionomice din compozit de ultimă generație",
-      icon: "🦷"
+      description: "Obturații fizionomice din compozit de ultimă generație"
     },
     {
       title: "Tratament de canal la microscop",
-      description: "Endodonție de precizie pentru salvarea dinților afectați",
-      icon: "🔬"
+      description: "Endodonție de precizie pentru salvarea dinților afectați"
     },
     {
       title: "Restaurări complexe",
-      description: "Inlay, onlay și overlay din ceramică sau compozit",
-      icon: "🔧"
+      description: "Inlay, onlay și overlay din ceramică sau compozit"
     },
     {
       title: "Tratament urgențe",
-      description: <>Rezolvăm rapid durerea și problemele dentare acute - vezi <Link to="/servicii/urgente-dentare-piatra-neamt" className="text-primary hover:underline font-medium">urgențe dentare</Link></>,
-      icon: "🚨"
+      description: <>Rezolvăm rapid durerea și problemele dentare acute - vezi <Link to="/servicii/urgente-dentare-piatra-neamt" className="text-primary hover:underline font-medium">urgențe dentare</Link></>
     }
   ];
 
@@ -287,21 +283,20 @@ const Endodontie = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-hero">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
               Servicii de stomatologie generală
             </h2>
-            <p className="text-lg text-text-custom max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Tratamente complete pentru sănătatea dinților tăi
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {services.map((service, index) => (
-              <Card key={index} className="border-primary/20">
+              <Card key={index} className="bg-white border-primary/20">
                 <CardContent className="p-6">
-                  <div className="text-4xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-semibold mb-2 text-heading">{service.title}</h3>
                   <p className="text-text-custom">{service.description}</p>
                 </CardContent>
