@@ -198,7 +198,7 @@ const TratamentCarii = () => {
       {/* What is it */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto border border-accent rounded-lg p-6 lg:p-8">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
               Ce este tratamentul cariilor dentare?
             </h2>
