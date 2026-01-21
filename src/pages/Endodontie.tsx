@@ -252,7 +252,7 @@ const Endodontie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center text-heading">
-              Prețuri stomatologie generală și endodonție
+              Prețuri endodonție
             </h2>
             {pricingData.map((category, idx) => (
               <div key={idx} className="mb-8">
