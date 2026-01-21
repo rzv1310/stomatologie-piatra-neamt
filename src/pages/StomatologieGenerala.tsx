@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import stomatologieHero from "@/assets/service-stomatologie-generala.jpg?w=1200&format=webp";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
@@ -140,9 +141,9 @@ const StomatologieGenerala = () => {
     type: 'MedicalProcedure',
     canonical: '/servicii/stomatologie-generala',
     medicalProcedure: {
-      name: 'Stomatologie Generală și Endodonție',
-      description: 'Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Salvăm dinții tăi cu tehnologie de ultimă generație.',
-      procedureType: 'General Dentistry and Endodontics'
+      name: 'Endodonție și Tratament de Canal',
+      description: 'Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.',
+      procedureType: 'Endodontics'
     }
   });
 
@@ -153,11 +154,54 @@ const StomatologieGenerala = () => {
   });
 
   const LocalBusinessSchema = useLocalBusinessSchema({
-    serviceName: "Stomatologie Generală și Endodonție",
-    serviceDescription: "Cabinet stomatologic complet în Piatra Neamț. Tratamente generale, endodonție la microscop, restaurări dentare.",
+    serviceName: "Endodonție și Tratament de Canal",
+    serviceDescription: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.",
     path: "/servicii/stomatologie-generala",
     medicalSpecialty: "Endodonție"
   });
+
+  const doctorsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Person",
+        "name": "Dr. Dolganiuc Inesa",
+        "jobTitle": "Medic stomatolog cu competențe în implantologie și protetică dentară",
+        "worksFor": {
+          "@type": "Dentist",
+          "name": "Stomatologie MedStom Piatra Neamț"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Dr. Iacomi Adelina",
+        "jobTitle": "Medic stomatolog specializat în implantologie și parodontologie",
+        "worksFor": {
+          "@type": "Dentist",
+          "name": "Stomatologie MedStom Piatra Neamț"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Dr. Bratu Diana Andreea",
+        "jobTitle": "Medic stomatolog specializat în endodonție",
+        "worksFor": {
+          "@type": "Dentist",
+          "name": "Stomatologie MedStom Piatra Neamț"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Dr. Bogulean Victoria",
+        "jobTitle": "Medic stomatolog specializat în ortodonție",
+        "worksFor": {
+          "@type": "Dentist",
+          "name": "Stomatologie MedStom Piatra Neamț"
+        }
+      }
+    ]
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -165,6 +209,11 @@ const StomatologieGenerala = () => {
       {MedicalProcedureSchema}
       {FAQSchema}
       {LocalBusinessSchema}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(doctorsSchema)}
+        </script>
+      </Helmet>
       <Navigation />
 
       <main className="flex-1">
