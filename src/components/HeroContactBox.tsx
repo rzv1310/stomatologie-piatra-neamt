@@ -9,6 +9,7 @@ interface HeroContactBoxProps {
   phoneNumber?: string;
   microcopy: string;
   icon?: ReactNode;
+  buttonClassName?: string;
 }
 
 export const HeroContactBox = ({
@@ -17,7 +18,8 @@ export const HeroContactBox = ({
   buttonText = "Sună ACUM - 0333 630 005",
   phoneNumber = "+40333630005",
   microcopy,
-  icon = <Clock className="h-6 w-6 text-accent" />
+  icon = <Clock className="h-6 w-6 text-accent" />,
+  buttonClassName
 }: HeroContactBoxProps) => {
   return (
     <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 md:p-6 mb-8">
@@ -31,7 +33,7 @@ export const HeroContactBox = ({
         <p className="text-lg mb-4 text-white">{subtitle}</p>
       )}
       <a href={`tel:${phoneNumber}`}>
-        <Button size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90 mb-4">
+        <Button size="lg" className={`w-full sm:w-auto mb-4 ${buttonClassName || "bg-accent hover:bg-accent/90"}`}>
           <Phone className="mr-2 h-6 w-6" />
           {buttonText}
         </Button>

@@ -25,7 +25,7 @@ import endodontieCardImg from "@/assets/service-endodontie.jpg?w=400&format=webp
 const Servicii = () => {
   const faqs = [
     {
-      question: "De ce este importantă profilaxia regulată?",
+      question: "De ce este importantă profilaxia ?",
       answer: "Profilaxia previne bolile dentare și reduce costurile viitoare. Controalele regulate detectează problemele în stadii incipiente când sunt mai ușor de tratat."
     },
     {
@@ -46,10 +46,10 @@ const Servicii = () => {
     },
     {
       question: "Cât durează vindecarea după inserarea unui implant?",
-      answer: "Osteointegrarea (fuziunea implantului cu osul) durează 2-6 luni, dar în majoritatea cazurilor ofertim dinți provizorii imediat sau în 24-48 ore."
+      answer: "Osteointegrarea (fuziunea implantului cu osul) durează 2-6 luni, dar în majoritatea cazurilor oferim dinți provizorii imediat sau în 24-48 ore."
     },
     {
-      question: "Extracția dintelui este singura soluție în chirurgie orală?",
+      question: "Extracția dintelui este singura soluție?",
       answer: "Nu! Chirurgia orală include și proceduri de salvare a dinților (rezecții apicale), pregătire pentru implanturi, îndepărtarea chisturilor și corectarea țesuturilor moi."
     },
     {
@@ -57,20 +57,16 @@ const Servicii = () => {
       answer: "Este inflamația gingiilor și a osului care susține dinții, cauzată de bacterii. Se tratează prin igienizare profesională profundă, chiuretaj și în cazuri severe, chirurgie parodontală."
     },
     {
-      question: "Pot face ortodonție și ca adult?",
+      question: "Pot merge la ortodont și ca adult?",
       answer: "Absolut! Nu există limită de vârstă pentru ortodonție. Adulții pot beneficia de aparate estetice sau alignere transparente pentru un tratament discret."
     },
     {
       question: "La ce vârstă trebuie adus copilul la dentist?",
-      answer: "Prima vizită se recomandă la 1 an sau când erupe primul dinț. Controalele regulate de la vârstă fragedă previn problemele și ajută copilul să se obișnuiască cu dentistul."
+      answer: "Prima vizită se recomandă la 1 an sau când erupe primul dinte. Controalele regulate de la vârstă fragedă previn problemele și ajută copilul să se obișnuiască cu dentistul."
     },
     {
       question: "De ce am nevoie de radiografie dentară?",
-      answer: "Radiografiile detectează probleme invizibile cu ochiul liber: carii între dinți, infecții la rădăcină, probleme osoase, dinți incluși. Sunt esențiale pentru diagnostic precis."
-    },
-    {
-      question: "Ce fac în caz de urgență stomatologică în afara programului?",
-      answer: "Sunați la 0333 630 005. Avem servicii de urgență pentru dureri acute, traumatisme dentare, abcese și alte situații care necesită intervenție imediată."
+      answer: "Radiografiile detectează probleme invizibile cu ochiul liber: carii între dinți, infecții la rădăcină, probleme osoase etc. Sunt esențiale pentru diagnostic precis."
     }
   ];
 
@@ -233,6 +229,7 @@ const Servicii = () => {
             </p>
             <HeroContactBox
               microcopy="✓ Echipament modern · Medici cu experiență · Confort maxim"
+              buttonClassName="bg-primary hover:bg-primary/90"
             />
           </div>
         </div>
