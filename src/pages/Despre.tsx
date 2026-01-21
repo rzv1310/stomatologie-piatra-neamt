@@ -131,13 +131,13 @@ const Despre = () => {
               <h2 className="text-3xl font-bold mb-6 text-heading">20 de ani de excelență</h2>
               <div className="space-y-4 text-lg text-text-custom">
                 <p>
-                  Fondată în 2005 de Dr. Valeriu Dolganiuc, clinica stomatologică Medstom a fost printre primele clinici din Piatra Neamț care au introdus reabilitări totale prin sistemul <strong>Fast and Fixed by Bredent</strong> și implanturi subperiostale.
+                  Fondată în 2005 de Dr. Valeriu Dolganiuc, clinica stomatologică MedStom a fost printre primele clinici din Piatra Neamț care au introdus reabilitări totale prin sistemul <strong>Fast and Fixed by Bredent</strong> și implanturi subperiostale.
                 </p>
                 <p>
                   De-a lungul celor 20 de ani, am tratat peste 10.000 de pacienți și am investit constant în tehnologie de ultimă generație, echipament modern și formarea continuă a echipei noastre. Am depășit 1 milion de euro investiți în tehnologie pentru a oferi tratamente de 3x mai rapide și mai precise.
                 </p>
                 <p>
-                  Astăzi, Medstom Clinic este lider regional în implantologie dentară, estetică dentară avansată și tratamente complexe, oferind pacienților soluții complete într-o singură locație.
+                  Astăzi, MedStom Clinic este lider regional în implantologie dentară, estetică dentară avansată și tratamente complexe, oferind pacienților soluții complete într-o singură locație.
                 </p>
               </div>
             </div>

@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const StomatologieCopii = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Stomatologie Copii Piatra Neamț - Pedodonție | Medstom",
+    title: "Stomatologie Copii Piatra Neamț - Pedodonție | MedStom",
     description: "Pedodonție specializată în Piatra Neamț. Cabinet stomatologic pentru copii, tratamente nedureroase, preventie dentară pediatrică. ☎ 0333 630 005",
     path: "/servicii/stomatologie-copii-piatra-neamt"
   });
@@ -169,7 +169,7 @@ const StomatologieCopii = () => {
     },
     {
       question: "Copilul meu are frică de dentist. Ce pot face?",
-      answer: "La Medstom folosim tehnici speciale de management comportamental pentru copii anxioși: tell-show-do (explicăm, arătăm, apoi facem), distragere prin joacă, întărire pozitivă. Vă rugăm să nu folosiți cuvinte ca 'durere', 'ac', 'freza' și să ne spuneți despre eventualele experiențe negative anterioare."
+      answer: "La MedStom folosim tehnici speciale de management comportamental pentru copii anxioși: tell-show-do (explicăm, arătăm, apoi facem), distragere prin joacă, întărire pozitivă. Vă rugăm să nu folosiți cuvinte ca 'durere', 'ac', 'freza' și să ne spuneți despre eventualele experiențe negative anterioare."
     },
     {
       question: "Ce sunt sigilările de șanțuri și când sunt necesare?",
@@ -328,7 +328,7 @@ const StomatologieCopii = () => {
                 <li>Educația copilului și a părinților este esențială</li>
               </ul>
               <p>
-                La Medstom, pedodontul nostru are experiență vastă în lucrul cu copii de toate vârstele și creează o atmosferă prietenoasă și relaxantă. Fiecare copil primește atenție personalizată și tratament adaptat vârstei și temperamentului său.
+                La MedStom, pedodontul nostru are experiență vastă în lucrul cu copii de toate vârstele și creează o atmosferă prietenoasă și relaxantă. Fiecare copil primește atenție personalizată și tratament adaptat vârstei și temperamentului său.
               </p>
             </div>
           </div>
@@ -340,7 +340,7 @@ const StomatologieCopii = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              De ce pedodonție la Medstom?
+              De ce pedodonție la MedStom?
             </h2>
             <p className="text-lg text-text-custom max-w-2xl mx-auto">
               Copilul tău merită cea mai bună îngrijire
@@ -466,7 +466,7 @@ const StomatologieCopii = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce copiii iubesc să vină la Medstom?
+              De ce copiii iubesc să vină la MedStom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

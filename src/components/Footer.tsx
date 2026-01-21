@@ -50,7 +50,7 @@ const Footer = () => {
               Urmărește-ne pe Facebook
             </a>
             <p className="text-sm text-white mt-4">
-              Clinica stomatologică Medstom din Piatra Neamț - 20 de ani de experiență în tratamente dentare premium.
+              Clinica stomatologică MedStom din Piatra Neamț - 20 de ani de experiență în tratamente dentare premium.
             </p>
             <p className="text-sm text-white mt-2">
               Deservim pacienți din Piatra Neamț și zonele învecinate.

@@ -145,7 +145,7 @@ const Index = () => {
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
               <img
                 src={teamHero}
-                alt="Echipa medicală Medstom - medici stomatologi Piatra Neamț"
+                alt="Echipa medicală MedStom - medici stomatologi Piatra Neamț"
                 className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
                 fetchPriority="high"
               />
@@ -274,7 +274,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              De ce să alegi cabinetul stomatologic Medstom din Piatra Neamț
+              De ce să alegi cabinetul stomatologic MedStom din Piatra Neamț
             </h2>
             <p className="text-lg text-text-custom">
               Oamenii te judecă în primele 3 secunde. Și ghici ce văd prima dată?<br />
@@ -391,7 +391,7 @@ const Index = () => {
               Cauți <em>'Dentist Piatra Neamț'</em> ?
             </h2>
             <p className="text-lg text-text-custom mb-8">
-              La Medstom ai 15+ specialiști dedicați (medici, tehnicieni, asistenți), cu formare în UE și EAU
+              La MedStom ai 15+ specialiști dedicați (medici, tehnicieni, asistenți), cu formare în UE și EAU
             </p>
             <Link to="/despre">
               <Button size="lg" className="bg-accent hover:bg-accent/90">
@@ -511,7 +511,7 @@ const Index = () => {
                   <div className="aspect-video">
                     <img 
                       src={clinicLocationStreetView} 
-                      alt="Vedere din stradă a Clinicii Medstom pe Strada Ana Ipătescu 9, Piatra Neamț"
+                      alt="Vedere din stradă a Clinicii MedStom pe Strada Ana Ipătescu 9, Piatra Neamț"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -535,7 +535,7 @@ const Index = () => {
                     allowFullScreen={true}
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Localizare Medstom Clinic Piatra Neamț"
+                    title="Localizare MedStom Clinic Piatra Neamț"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground p-3 text-center">Hartă interactivă - localizare cabinet stomatologic MedStom</p>
@@ -565,7 +565,7 @@ const Index = () => {
                 >
                   <img 
                     src={telegondolaPiatraNeamt} 
-                    alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii Medstom"
+                    alt="Telegondola din Piatra Neamț - atracție turistică în apropierea clinicii MedStom"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">
@@ -585,7 +585,7 @@ const Index = () => {
                 >
                   <img 
                     src={turnulStefanCelMare} 
-                    alt="Turnul lui Ștefan cel Mare din Piatra Neamț - monument istoric în apropierea clinicii Medstom"
+                    alt="Turnul lui Ștefan cel Mare din Piatra Neamț - monument istoric în apropierea clinicii MedStom"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-2 rounded-lg flex items-center gap-2 text-sm group-hover:bg-black/90 transition-colors">

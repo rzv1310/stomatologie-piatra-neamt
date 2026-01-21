@@ -118,7 +118,7 @@ const EsteticaDentara = () => {
   ];
 
   const DynamicSEO = useDynamicSEO({
-    title: "Estetică Dentară Piatra Neamț - Fațete, Albire Dentară | Medstom",
+    title: "Estetică Dentară Piatra Neamț - Fațete, Albire Dentară | MedStom",
     description: "Transformă-ți zâmbetul cu servicii de estetică dentară premium în Piatra Neamț. Fațete ceramice EMAX, albire dentară profesională. Consultație gratuită. ☎ 0333 630 005",
     path: "/servicii/estetica-dentara"
   });
@@ -231,7 +231,7 @@ const EsteticaDentara = () => {
                 Estetica dentară reprezintă ansamblul tratamentelor și procedurilor care vizează îmbunătățirea aspectului zâmbetului tău. Nu este vorba doar despre dinți albi - este vorba despre armonie, proporții corecte și un zâmbet care să îți reflecte personalitatea.
               </p>
               <p>
-                La Medstom combinăm arta cu știința pentru a crea zâmbete naturale și armonioase. Folosim tehnologie digitală avansată pentru a simula rezultatul final înainte de începerea tratamentului, astfel încât să știi exact cum va arăta zâmbetul tău nou.
+                La MedStom combinăm arta cu știința pentru a crea zâmbete naturale și armonioase. Folosim tehnologie digitală avansată pentru a simula rezultatul final înainte de începerea tratamentului, astfel încât să știi exact cum va arăta zâmbetul tău nou.
               </p>
               <p>
                 Fie că dorești să îți albești dinții, să corectezi forma sau mărimea lor, sau să realizezi o transformare completă cu fațete ceramice, echipa noastră te va ghida pas cu pas către zâmbetul perfect.
@@ -329,7 +329,7 @@ const EsteticaDentara = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce Medstom pentru estetica dentară?
+              De ce MedStom pentru estetica dentară?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

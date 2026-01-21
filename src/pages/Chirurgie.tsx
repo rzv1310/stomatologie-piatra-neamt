@@ -18,7 +18,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Chirurgie = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Chirurgie Orală Piatra Neamț - Extracții, Adiție Osoasă | Medstom",
+    title: "Chirurgie Orală Piatra Neamț - Extracții, Adiție Osoasă | MedStom",
     description: "Chirurgie orală specializată în Piatra Neamț. Extracții molari de minte, adiție osoasă, sinus lift. Proceduri nedureroase. ☎ 0333 630 005",
     path: "/servicii/chirurgie-orala"
   });
@@ -285,7 +285,7 @@ const Chirurgie = () => {
                 Chirurgia orală este specialitatea stomatologiei care se ocupă cu diagnosticul și tratamentul chirurgical al afecțiunilor dinților, maxilarelor și țesuturilor moi ale cavității orale.
               </p>
               <p>
-                La Medstom, intervențiile chirurgicale se realizează în condiții optime:
+                La MedStom, intervențiile chirurgicale se realizează în condiții optime:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Sală de chirurgie dedicată cu protocoale stricte de sterilizare</li>
@@ -307,7 +307,7 @@ const Chirurgie = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
-              De ce să alegi Medstom pentru chirurgie orală?
+              De ce să alegi MedStom pentru chirurgie orală?
             </h2>
             <p className="text-lg text-text-custom max-w-2xl mx-auto">
               Experiență, tehnologie și grijă pentru pacient
@@ -389,7 +389,7 @@ const Chirurgie = () => {
             ))}
             <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mt-6">
               <p className="text-lg text-text-custom">
-                <strong>Important:</strong> La Medstom, extracția molarilor de minte se realizează sub anestezie locală eficientă, cu radiografie 3D CBCT pentru planificare precisă. Majoritatea pacienților se întorc la activitățile normale în 2-3 zile.
+                <strong>Important:</strong> La MedStom, extracția molarilor de minte se realizează sub anestezie locală eficientă, cu radiografie 3D CBCT pentru planificare precisă. Majoritatea pacienților se întorc la activitățile normale în 2-3 zile.
               </p>
             </div>
           </div>
@@ -401,7 +401,7 @@ const Chirurgie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce chirurgie la Medstom?
+              De ce chirurgie la MedStom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

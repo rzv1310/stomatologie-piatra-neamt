@@ -27,7 +27,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 
 const Urgente = () => {
   const DynamicSEO = useDynamicSEO({
-    title: "Urgențe Stomatologice Piatra Neamț | Medstom",
+    title: "Urgențe Stomatologice Piatra Neamț | MedStom",
     description: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe. ☎ 0333 630 005",
     path: "/servicii/urgente"
   });
@@ -404,7 +404,7 @@ const Urgente = () => {
               Prevenirea urgențelor dentare
             </h2>
             <p className="text-lg text-text-custom max-w-2xl mx-auto font-['Caveat',_cursive] text-2xl italic">
-              „Cel mai bun tratament în urgență e cel de care n-ai nevoie" - dr. Dolganiuc, Medstom
+              „Cel mai bun tratament în urgență e cel de care n-ai nevoie" - dr. Dolganiuc, MedStom
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -430,7 +430,7 @@ const Urgente = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce să alegi Medstom pentru urgențe stomatologice în Piatra Neamț?
+              De ce să alegi MedStom pentru urgențe stomatologice în Piatra Neamț?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

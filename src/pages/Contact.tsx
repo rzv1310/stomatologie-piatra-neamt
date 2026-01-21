@@ -134,7 +134,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-heading">Informații de contact</h2>
-                <p className="text-lg text-text-custom mb-8">Dacă ești în căutarea unui medic dentist experimentat în Piatra Neamț, într-o clinică care oferă materiale de top și tratamente moderne - Medstom este soluția.</p>
+                <p className="text-lg text-text-custom mb-8">Dacă ești în căutarea unui medic dentist experimentat în Piatra Neamț, într-o clinică care oferă materiale de top și tratamente moderne - MedStom este soluția.</p>
               </div>
 
               <Card className="border-primary/20">
@@ -270,7 +270,7 @@ const Contact = () => {
                 <div className="aspect-video w-full">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19583.935789343344!2d26.351835853920782!3d46.92785704494117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355500267d647d%3A0x52595dde4c16837d!2sStomatologie%20MedStom%20Piatra%20Neamt!5e1!3m2!1sro!2sro!4v1768278894357!5m2!1sro!2sro" width="100%" height="100%" style={{
                     border: 0
-                  }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Locație Medstom Clinic" />
+                  }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Locație MedStom Clinic" />
                 </div>
               </CardContent>
             </Card>

@@ -168,12 +168,12 @@ const Ortodontie = () => {
     },
     {
       question: "Cât costă un tratament ortodontic?",
-      answer: "Costul variază în funcție de complexitatea cazului și tipul de aparat ales. La Medstom oferim consultație gratuită cu plan de tratament detaliat și opțiuni de plată în rate. Investiția într-un zâmbet perfect se amortizează pe toată viața."
+      answer: "Costul variază în funcție de complexitatea cazului și tipul de aparat ales. La MedStom oferim consultație gratuită cu plan de tratament detaliat și opțiuni de plată în rate. Investiția într-un zâmbet perfect se amortizează pe toată viața."
     }
   ];
 
   const DynamicSEO = useDynamicSEO({
-    title: "Ortodonție Piatra Neamț - Aparat Dentar Fix și Invisalign | Medstom",
+    title: "Ortodonție Piatra Neamț - Aparat Dentar Fix și Invisalign | MedStom",
     description: "Aparate dentare fixe, estetice și alignere transparente pentru copii, adolescenți și adulți în Piatra Neamț. Consultație ortodontică gratuită. ☎ 0333 630 005",
     path: "/servicii/ortodontie-piatra-neamt"
   });
@@ -323,7 +323,7 @@ const Ortodontie = () => {
                 <li>Dinți impactați sau incluși</li>
               </ul>
               <p>
-                La Medstom avem specialiști ortodonți cu experiență în tratarea cazurilor de la simple la complexe, pentru toate grupele de vârstă.
+                La MedStom avem specialiști ortodonți cu experiență în tratarea cazurilor de la simple la complexe, pentru toate grupele de vârstă.
               </p>
             </div>
           </div>
@@ -425,7 +425,7 @@ const Ortodontie = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-              De ce ortodonție la Medstom?
+              De ce ortodonție la MedStom?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>
