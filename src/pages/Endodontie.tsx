@@ -129,7 +129,7 @@ const Endodontie = () => {
     },
     {
       question: "Cât durează tratamentul de canal?",
-      answer: "Un tratament de canal standard durează 60-90 de minute la MedStom, datorită folosirii microscopului dentar. Cazurile complexe pot necesita 2 ședințe. Timpul investit asigură rate de succes foarte mari."
+      answer: (<>Un tratament de canal standard durează 60-90 de minute la <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>, datorită folosirii microscopului dentar. Cazurile complexe pot necesita 2 ședințe. Timpul investit asigură rate de succes foarte mari.</>)
     }
   ];
 
@@ -315,7 +315,7 @@ const Endodontie = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4">
               <p>
-                Tratamentul de canal (endodonția) este procedura prin care salvăm dinți cu nervul infectat sau inflamat. La MedStom, folosim microscop dentar pentru toate tratamentele de canal, ceea ce ne permite să vedem detalii imposibil de observat cu ochiul liber.
+                Tratamentul de canal (endodonția) este procedura prin care salvăm dinți cu nervul infectat sau inflamat. La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>, folosim microscop dentar pentru toate tratamentele de canal, ceea ce ne permite să vedem detalii imposibil de observat cu ochiul liber.
               </p>
               <p>
                 Avantajele microscopului dentar includ:

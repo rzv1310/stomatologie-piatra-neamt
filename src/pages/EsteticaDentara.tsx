@@ -231,7 +231,7 @@ const EsteticaDentara = () => {
                 Estetica dentară reprezintă ansamblul tratamentelor și procedurilor care vizează îmbunătățirea aspectului zâmbetului tău. Nu este vorba doar despre dinți albi - este vorba despre armonie, proporții corecte și un zâmbet care să îți reflecte personalitatea.
               </p>
               <p>
-                La MedStom combinăm arta cu știința pentru a crea zâmbete naturale și armonioase. Folosim tehnologie digitală avansată pentru a simula rezultatul final înainte de începerea tratamentului, astfel încât să știi exact cum va arăta zâmbetul tău nou.
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> combinăm arta cu știința pentru a crea zâmbete naturale și armonioase. Folosim tehnologie digitală avansată pentru a simula rezultatul final înainte de începerea tratamentului, astfel încât să știi exact cum va arăta zâmbetul tău nou.
               </p>
               <p>
                 Fie că dorești să îți albești dinții, să corectezi forma sau mărimea lor, sau să realizezi o transformare completă cu fațete ceramice, echipa noastră te va ghida pas cu pas către zâmbetul perfect.
