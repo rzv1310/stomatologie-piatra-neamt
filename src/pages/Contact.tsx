@@ -165,7 +165,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Program de lucru</h3>
                       <p className="text-text-custom">Luni - Vineri</p>
-                      <p className="text-text-custom font-medium">09:00 - 19:00</p>
+                      <p className="text-text-custom font-medium">Pentru urgențe dentare (dureri severe, abcese, traumatisme), sunați la numărul de mai jos. 
+Vom face tot posibilul să vă primim în aceeași zi.</p>
                       <p className="text-sm text-muted-foreground mt-2">Sâmbătă și Duminică: Închis</p>
                     </div>
                   </div>
