@@ -365,19 +365,19 @@ const Endodontie = () => {
       </section>
 
       {/* Treatment Steps */}
-      <section className="py-20 bg-hero">
+      <section className="py-20 bg-accent">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
               Cum decurge tratamentul de canal?
             </h2>
-            <p className="text-lg text-text-custom max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Proces pas cu pas pentru salvarea dintelui tău
             </p>
           </div>
           <div className="max-w-4xl mx-auto space-y-6">
             {endoSteps.map((step, index) => (
-              <Card key={index} className="border-primary/20 hover:shadow-md transition-shadow">
+              <Card key={index} className="border-primary/20 hover:shadow-md transition-shadow bg-white">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-6">
                     <div className="text-4xl font-bold text-accent">{step.number}</div>
