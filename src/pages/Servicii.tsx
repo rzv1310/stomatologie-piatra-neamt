@@ -34,7 +34,7 @@ const Servicii = () => {
     },
     {
       question: "Cum știu dacă am o carie care necesită tratament?",
-      answer: "Semnele includ sensibilitate la rece/cald/dulce, durere la mestec sau pete vizibile pe dinți. La consultație putem detecta cariile chiar și în stadii timpurii prin examinare și radiografii."
+      answer: "Semnele includ sensibilitate la rece/cald/dulce, durere la mestecat sau pete vizibile pe dinți. La consultație putem detecta cariile chiar și în stadii timpurii prin examinare și radiografii."
     },
     {
       question: "Când este necesar tratamentul de canal?",
