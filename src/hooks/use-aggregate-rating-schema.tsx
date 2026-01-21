@@ -23,6 +23,13 @@ export const useAggregateRatingSchema = ({
     "@type": "LocalBusiness",
     "name": "Stomatologie MedStom Piatra Neamț",
     "url": SITE_URL,
+    "image": "https://stomatologiepiatraneamt.ro/social-image.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://stomatologiepiatraneamt.ro/favicon.png",
+      "width": 512,
+      "height": 512
+    },
     "telephone": "+40333630005",
     "address": {
       "@type": "PostalAddress",
