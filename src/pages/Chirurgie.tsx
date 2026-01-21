@@ -280,7 +280,7 @@ const Chirurgie = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
               Ce este chirurgia orală?
             </h2>
-            <div className="prose prose-lg max-w-none text-text-custom space-y-4">
+            <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
               <p>
                 Chirurgia orală este specialitatea stomatologiei care se ocupă cu diagnosticul și tratamentul chirurgical al afecțiunilor dinților, maxilarelor și țesuturilor moi ale cavității orale.
               </p>
