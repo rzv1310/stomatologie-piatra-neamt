@@ -144,8 +144,94 @@ const Despre = () => {
           </div>
         </section>
 
-        {/* Values */}
+        {/* Doctors */}
         <section className="py-20 bg-section-alt">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-heading">Medici stomatologi</h2>
+              <p className="text-lg text-text-custom">
+                Echipă de specialiști cu experiență internațională și formare continuă
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {doctors.map((doctor, index) => (
+                <Card key={index} className="text-center border-primary/20">
+                  <CardContent className="p-6">
+                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                      <img 
+                        src={doctor.image} 
+                        alt={doctor.name}
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2 text-heading">{doctor.name}</h3>
+                    <p className="text-sm text-text-custom">{doctor.specialty}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Technicians */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-heading">Tehnicieni dentari</h2>
+              <p className="text-lg text-text-custom">
+                Specialiști în fabricarea lucrărilor dentare de înaltă calitate
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {technicians.map((tech, index) => (
+                <Card key={index} className="text-center border-primary/20">
+                  <CardContent className="p-6">
+                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                      <img 
+                        src={tech.image} 
+                        alt={tech.name}
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2 text-heading">{tech.name}</h3>
+                    <p className="text-sm text-text-custom">{tech.specialty}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Assistants */}
+        <section className="py-20 bg-section-alt">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-heading">Asistenți medicali</h2>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              {assistants.map((assistant, index) => (
+                <Card key={index} className="text-center border-primary/20">
+                  <CardContent className="p-6">
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                      <img 
+                        src={assistant.image} 
+                        alt={assistant.name}
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p className="text-heading font-medium">{assistant.name}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Values */}
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-heading">Valorile noastre</h2>
@@ -166,7 +252,7 @@ const Despre = () => {
         </section>
 
         {/* Difference Section */}
-        <section className="py-20">
+        <section className="py-20 bg-section-alt">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-6 text-center text-heading">
@@ -192,7 +278,7 @@ const Despre = () => {
                       <span><strong>Soluții permanente,</strong> nu reparații temporare.</span>
                     </li>
                   </ul>
-                  <div className="mt-6 p-4 bg-section-alt rounded-lg">
+                  <div className="mt-6 p-4 bg-background rounded-lg">
                     <p className="text-lg font-semibold text-heading">
                       LA FINAL: Economisești timp, bani și frustrare. Rezolvi problema O SINGURĂ DATĂ, definitiv.
                     </p>
@@ -204,7 +290,7 @@ const Despre = () => {
         </section>
 
         {/* Facilities */}
-        <section className="py-20 bg-section-alt">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-12 text-center text-heading">
@@ -244,92 +330,6 @@ const Despre = () => {
                   </CardContent>
                 </Card>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Doctors */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-heading">Medici stomatologi</h2>
-              <p className="text-lg text-text-custom">
-                Echipă de specialiști cu experiență internațională și formare continuă
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {doctors.map((doctor, index) => (
-                <Card key={index} className="text-center border-primary/20">
-                  <CardContent className="p-6">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                      <img 
-                        src={doctor.image} 
-                        alt={doctor.name}
-                        className="w-full h-full object-cover object-top"
-                        loading="lazy"
-                      />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2 text-heading">{doctor.name}</h3>
-                    <p className="text-sm text-text-custom">{doctor.specialty}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Technicians */}
-        <section className="py-20 bg-section-alt">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-heading">Tehnicieni dentari</h2>
-              <p className="text-lg text-text-custom">
-                Specialiști în fabricarea lucrărilor dentare de înaltă calitate
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {technicians.map((tech, index) => (
-                <Card key={index} className="text-center border-primary/20">
-                  <CardContent className="p-6">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                      <img 
-                        src={tech.image} 
-                        alt={tech.name}
-                        className="w-full h-full object-cover object-top"
-                        loading="lazy"
-                      />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2 text-heading">{tech.name}</h3>
-                    <p className="text-sm text-text-custom">{tech.specialty}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Assistants */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-heading">Asistenți medicali</h2>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              {assistants.map((assistant, index) => (
-                <Card key={index} className="text-center border-primary/20">
-                  <CardContent className="p-6">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-                      <img 
-                        src={assistant.image} 
-                        alt={assistant.name}
-                        className="w-full h-full object-cover object-top"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p className="text-heading font-medium">{assistant.name}</p>
-                  </CardContent>
-                </Card>
-              ))}
             </div>
           </div>
         </section>
