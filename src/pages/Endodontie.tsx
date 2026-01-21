@@ -307,7 +307,7 @@ const Endodontie = () => {
       </section>
 
       {/* About Endodontics */}
-      <section className="py-20 bg-hero">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto border border-accent rounded-lg p-8 bg-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
