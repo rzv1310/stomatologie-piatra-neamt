@@ -34,6 +34,11 @@ const Despre = () => {
       image: drDolganiucInesa
     },
     {
+      name: "Dr. Iacomi Adelina",
+      specialty: "Medic stomatolog specializat în implantologie și parodontologie",
+      image: drIacomiAdelina
+    },
+    {
       name: "Dr. Bratu Diana Andreea",
       specialty: "Medic stomatolog specializat în endodonție",
       image: drBratuDiana
@@ -42,11 +47,6 @@ const Despre = () => {
       name: "Dr. Bogulean Victoria",
       specialty: "Medic stomatolog specializat în ortodonție",
       image: drBoguleanVictoria
-    },
-    {
-      name: "Dr. Iacomi Adelina",
-      specialty: "Medic stomatolog specializat în implantologie și parodontologie",
-      image: drIacomiAdelina
     }
   ];
 
