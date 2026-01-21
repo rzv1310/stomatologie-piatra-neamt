@@ -132,13 +132,13 @@ const Tarife = () => {
 
       <main className="flex-1">
         {/* Hero */}
-      <section className="bg-hero py-16 lg:py-24">
+      <section className="bg-accent py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Prețuri Stomatologie MedStom Piatra Neamț
             </h1>
-            <p className="text-xl text-text-custom">
+            <p className="text-xl text-white/90">
               Tarife transparente și corecte pentru servicii stomatologice premium
             </p>
           </div>
@@ -148,7 +148,7 @@ const Tarife = () => {
       {/* Info Alert */}
       <section className="py-8 bg-section-alt">
         <div className="container mx-auto px-4">
-          <Alert className="max-w-4xl mx-auto border-primary/30">
+          <Alert className="max-w-4xl mx-auto border-primary/30 bg-white">
             <Info className="h-4 w-4" />
             <AlertDescription>
               <strong>Important:</strong> Prețurile afișate sunt orientative și pot varia în funcție de complexitatea cazului. La consultație vei primi un plan de tratament detaliat cu costul exact. Oferim și opțiuni de plată în rate pentru tratamente complexe.
