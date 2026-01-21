@@ -113,13 +113,13 @@ const Contact = () => {
 
       <main className="flex-1">
         {/* Hero */}
-      <section className="bg-hero py-16 lg:py-24">
+      <section className="bg-accent py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-heading">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Contact & Programări Stomatologie MedStom Piatra Neamt
             </h1>
-            <p className="text-xl text-text-custom">
+            <p className="text-xl text-white/90">
               Apelează-ne pentru orice întrebare. Dacă suntem foarte ocupați, te sunăm noi inapoi în câteva minute!
             </p>
           </div>
@@ -134,7 +134,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-heading">Informații de contact</h2>
-                <p className="text-lg text-text-custom mb-8">Dacă ești în căutarea unui medic dentist experimentat în Piatra Neamț, într-o clinică care oferă materiale de top și tratamente moderne - Medstom Clinic este soluția.</p>
+                <p className="text-lg text-text-custom mb-8">Dacă ești în căutarea unui medic dentist experimentat în Piatra Neamț, într-o clinică care oferă materiale de top și tratamente moderne - Medstom este soluția.</p>
               </div>
 
               <Card className="border-primary/20">
@@ -164,9 +164,7 @@ const Contact = () => {
                     <Clock className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Program de lucru</h3>
-                      <p className="text-text-custom">Luni - Vineri</p>
-                      <p className="text-text-custom font-medium">Pentru urgențe dentare (dureri severe, abcese, traumatisme), sunați la numărul de mai jos. 
-Vom face tot posibilul să vă primim în aceeași zi.</p>
+                      <p className="text-text-custom">Luni - Vineri: 09:00 - 19:00</p>
                       <p className="text-sm text-muted-foreground mt-2">Sâmbătă și Duminică: Închis</p>
                     </div>
                   </div>
