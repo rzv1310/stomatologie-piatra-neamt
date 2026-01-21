@@ -202,15 +202,15 @@ const Profilaxie = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
-              Ce este profilaxia dentară?
-            </h2>
             <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-heading">
+                Ce este profilaxia dentară?
+              </h2>
               <p>
                 Profilaxia dentară reprezintă ansamblul măsurilor preventive destinate menținerii sănătății cavității orale și prevenirii apariției afecțiunilor dentare. Aceasta include igienizarea profesională, detartrajul, fluorizarea și educația pentru igiena orală corespunzătoare.
               </p>
-               <p>
-                 Chiar dacă îți perezi dinții zilnic și folosești ață dentară, există zone greu accesibile unde se poate acumula placa bacteriană și tartrul. Igienizarea profesională îndepărtează aceste depozite și previne dezvoltarea cariilor și a <Link to="/servicii/parodontologie-piatra-neamt" className="text-primary hover:underline font-medium">bolii parodontale</Link>.
+              <p>
+                Chiar dacă îți perezi dinții zilnic și folosești ață dentară, există zone greu accesibile unde se poate acumula placa bacteriană și tartrul. Igienizarea profesională îndepărtează aceste depozite și previne dezvoltarea cariilor și a <Link to="/servicii/parodontologie-piatra-neamt" className="text-primary hover:underline font-medium">bolii parodontale</Link>.
               </p>
               <p>
                 La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> folosim tehnologie modernă, inclusiv ultrasunete și Air-Flow, pentru o curățare eficientă și delicată, care protejează smalțul dinților și asigură rezultate durabile.
