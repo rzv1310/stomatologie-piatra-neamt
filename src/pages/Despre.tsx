@@ -145,17 +145,17 @@ const Despre = () => {
         </section>
 
         {/* Doctors */}
-        <section className="py-20 bg-section-alt">
+        <section className="py-20 bg-accent">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-heading">Medici stomatologi</h2>
-              <p className="text-lg text-text-custom">
+              <h2 className="text-3xl font-bold mb-4 text-white">Medici stomatologi</h2>
+              <p className="text-lg text-white/90">
                 Echipă de specialiști cu experiență internațională și formare continuă
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {doctors.map((doctor, index) => (
-                <Card key={index} className="text-center border-primary/20">
+                <Card key={index} className="text-center border-primary/20 bg-white">
                   <CardContent className="p-6">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                       <img 
@@ -205,14 +205,14 @@ const Despre = () => {
         </section>
 
         {/* Assistants */}
-        <section className="py-20 bg-section-alt">
+        <section className="py-20 bg-accent">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-heading">Asistenți medicali</h2>
+              <h2 className="text-3xl font-bold mb-4 text-white">Asistenți medicali</h2>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {assistants.map((assistant, index) => (
-                <Card key={index} className="text-center border-primary/20">
+                <Card key={index} className="text-center border-primary/20 bg-white">
                   <CardContent className="p-6">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                       <img 
