@@ -31,7 +31,7 @@ const AlbireDentara = () => {
     article: {
       headline: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
       description: "Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
-      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      image: "https://stomatologiepiatraneamt.ro/social-image.png",
       datePublished: "2025-01-20",
       dateModified: "2025-01-20"
     }

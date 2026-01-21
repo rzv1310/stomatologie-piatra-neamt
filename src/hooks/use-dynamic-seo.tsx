@@ -1,44 +1,7 @@
 import { Helmet } from "react-helmet";
 
 const SITE_URL = "https://stomatologiepiatraneamt.ro";
-const DEFAULT_IMAGE = "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp";
-
-// Dedicated images for different page types
-const PAGE_IMAGES = {
-  // Service pages
-  '/servicii/implant-dentar': 'https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp',
-  '/servicii/profilaxie': DEFAULT_IMAGE,
-  '/servicii/estetica-dentara': DEFAULT_IMAGE,
-  '/servicii/tratament-carii': DEFAULT_IMAGE,
-  '/servicii/endodontie-piatra-neamt': DEFAULT_IMAGE,
-  '/servicii/protetica-piatra-neamt': DEFAULT_IMAGE,
-  '/servicii/ortodontie-piatra-neamt': DEFAULT_IMAGE,
-  '/servicii/stomatologie-copii-piatra-neamt': DEFAULT_IMAGE,
-  '/servicii/urgente': DEFAULT_IMAGE,
-  '/servicii/chirurgie-orala': DEFAULT_IMAGE,
-  '/servicii/parodontologie-piatra-neamt': DEFAULT_IMAGE,
-  '/servicii/radiologie-dentara-piatra-neamt': DEFAULT_IMAGE,
-  
-  // Main pages
-  '/servicii': DEFAULT_IMAGE,
-  '/despre': DEFAULT_IMAGE,
-  '/contact': DEFAULT_IMAGE,
-  '/tarife': DEFAULT_IMAGE,
-  '/blog': DEFAULT_IMAGE,
-  
-  // Blog pages
-  '/blog/albire-dentara-piatra-neamt': DEFAULT_IMAGE,
-  '/blog/aparat-dentar-adulti-piatra-neamt': DEFAULT_IMAGE,
-  '/blog/prima-vizita-copil-dentist': DEFAULT_IMAGE,
-  '/blog/maseaua-de-minte': DEFAULT_IMAGE,
-  '/blog/urgente-dentare-dinte-rupt': DEFAULT_IMAGE,
-  '/blog/parodontoza-tratament': DEFAULT_IMAGE,
-  
-  // Legal pages
-  '/politica-confidentialitate': DEFAULT_IMAGE,
-  '/termeni-conditii': DEFAULT_IMAGE,
-  '/politica-cookies': DEFAULT_IMAGE,
-} as const;
+const DEFAULT_IMAGE = "https://stomatologiepiatraneamt.ro/social-image.png";
 
 export interface DynamicSEOProps {
   title: string;
@@ -64,7 +27,7 @@ export const useDynamicSEO = ({
   noIndex = false
 }: DynamicSEOProps) => {
   const canonicalUrl = `${SITE_URL}${path}`;
-  const ogImage = image || PAGE_IMAGES[path as keyof typeof PAGE_IMAGES] || DEFAULT_IMAGE;
+  const ogImage = image || DEFAULT_IMAGE;
   
   // Ensure image is absolute URL
   const absoluteImageUrl = ogImage.startsWith('http') 
@@ -126,4 +89,4 @@ export const useDynamicSEO = ({
   );
 };
 
-export { PAGE_IMAGES, SITE_URL, DEFAULT_IMAGE };
+export { SITE_URL, DEFAULT_IMAGE };
