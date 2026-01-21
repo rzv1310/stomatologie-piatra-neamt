@@ -181,7 +181,7 @@ const StomatologieGenerala = () => {
               Endodonție în Piatra Neamț
             </h1>
             <p className="text-xl mb-8 text-white">
-              Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Salvăm dinții tăi cu tehnologie de ultimă generație.
+              Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.
             </p>
             <HeroContactBox
               microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
