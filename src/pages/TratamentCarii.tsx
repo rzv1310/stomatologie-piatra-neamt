@@ -210,7 +210,7 @@ const TratamentCarii = () => {
                  Cariile dentare sunt una dintre cele mai comune afecțiuni ale cavității orale și pot apărea la orice vârstă. Dacă nu sunt tratate la timp, cariile pot progresa, afectând stratul profund al dintelui (dentina) și chiar pulpa dentară, cauzând durere intensă și necesitând <Link to="/servicii/endodontie-piatra-neamt" className="text-primary hover:underline font-medium">tratament de canal (endodonție)</Link>.
               </p>
               <p>
-                La Medstom folosim materiale compozite foto-polimerizabile de ultimă generație care oferă un aspect natural, rezistență superioară și durabilitate pe termen lung.
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> folosim materiale compozite foto-polimerizabile de ultimă generație care oferă un aspect natural, rezistență superioară și durabilitate pe termen lung.
               </p>
             </div>
           </div>
