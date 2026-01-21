@@ -284,7 +284,7 @@ const Urgente = () => {
               </CardContent>
             </Card>
             <p className="text-center text-text-custom mt-4 text-sm">
-              *Consultația de urgență include evaluare și plan de tratament
+              *În clinica <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom Piatra Neamț</a> consultația de urgență include evaluare și plan de tratament
             </p>
           </div>
         </div>
