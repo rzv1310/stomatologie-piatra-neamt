@@ -115,7 +115,7 @@ const Index = () => {
     "Ai rezultate rapide - în loc să aștepți săptămâni, în 24-48 de ore poți să mănânci și să zâmbești din nou fără jenă.",
     "Spui \"adio\" durerii - tehnologie de ultimă generație pentru tratamente fără durere.",
     "Știi mereu pe mâna cui este zâmbetul tău - ai acces la o echipă completă de specialiști și nu vei fi plimbat dintr-o parte în alta pentru fiecare problemă.",
-    "La Medstom NU ești „doar încă un pacient\" - Ești sprijinit pas cu pas și vei avea claritate încă de la prima vizită!"
+    "La MedStom NU ești \"doar încă un pacient\" - Ești sprijinit pas cu pas și vei avea claritate încă de la prima vizită!"
   ];
 
   const testimonials = [
@@ -391,7 +391,7 @@ const Index = () => {
               Cauți <em>'Dentist Piatra Neamț'</em> ?
             </h2>
             <p className="text-lg text-text-custom mb-8">
-              La MedStom ai 15+ specialiști dedicați (medici, tehnicieni, asistenți), cu formare în UE și EAU
+              La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> ai 15+ specialiști dedicați (medici, tehnicieni, asistenți), cu formare în UE și EAU
             </p>
             <Link to="/despre">
               <Button size="lg" className="bg-accent hover:bg-accent/90">

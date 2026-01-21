@@ -285,7 +285,7 @@ const Chirurgie = () => {
                 Chirurgia orală este specialitatea stomatologiei care se ocupă cu diagnosticul și tratamentul chirurgical al afecțiunilor dinților, maxilarelor și țesuturilor moi ale cavității orale.
               </p>
               <p>
-                La MedStom, intervențiile chirurgicale se realizează în condiții optime:
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>, intervențiile chirurgicale se realizează în condiții optime:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Sală de chirurgie dedicată cu protocoale stricte de sterilizare</li>
@@ -389,7 +389,7 @@ const Chirurgie = () => {
             ))}
             <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mt-6">
               <p className="text-lg text-text-custom">
-                <strong>Important:</strong> La MedStom, extracția molarilor de minte se realizează sub anestezie locală eficientă, cu radiografie 3D CBCT pentru planificare precisă. Majoritatea pacienților se întorc la activitățile normale în 2-3 zile.
+                <strong>Important:</strong> La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>, extracția molarilor de minte se realizează sub anestezie locală eficientă, cu radiografie 3D CBCT pentru planificare precisă. Majoritatea pacienților se întorc la activitățile normale în 2-3 zile.
               </p>
             </div>
           </div>

@@ -169,7 +169,7 @@ const StomatologieCopii = () => {
     },
     {
       question: "Copilul meu are frică de dentist. Ce pot face?",
-      answer: "La MedStom folosim tehnici speciale de management comportamental pentru copii anxioși: tell-show-do (explicăm, arătăm, apoi facem), distragere prin joacă, întărire pozitivă. Vă rugăm să nu folosiți cuvinte ca 'durere', 'ac', 'freza' și să ne spuneți despre eventualele experiențe negative anterioare."
+      answer: (<>La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> folosim tehnici speciale de management comportamental pentru copii anxioși: tell-show-do (explicăm, arătăm, apoi facem), distragere prin joacă, întărire pozitivă. Vă rugăm să nu folosiți cuvinte ca 'durere', 'ac', 'freza' și să ne spuneți despre eventualele experiențe negative anterioare.</>)
     },
     {
       question: "Ce sunt sigilările de șanțuri și când sunt necesare?",
@@ -328,7 +328,7 @@ const StomatologieCopii = () => {
                 <li>Educația copilului și a părinților este esențială</li>
               </ul>
               <p>
-                La MedStom, pedodontul nostru are experiență vastă în lucrul cu copii de toate vârstele și creează o atmosferă prietenoasă și relaxantă. Fiecare copil primește atenție personalizată și tratament adaptat vârstei și temperamentului său.
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>, pedodontul nostru are experiență vastă în lucrul cu copii de toate vârstele și creează o atmosferă prietenoasă și relaxantă. Fiecare copil primește atenție personalizată și tratament adaptat vârstei și temperamentului său.
               </p>
             </div>
           </div>

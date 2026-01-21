@@ -345,7 +345,7 @@ const PrimaVizitaCopil = () => {
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-6 border border-border/50 hover:shadow-lg transition-shadow duration-300">
                   <p className="text-orange-500 mb-4 text-2xl font-bold">*****</p>
                   <p className="text-foreground mb-4 italic">
-                    Am mers cu fetița mea de 18 luni la MedStom. Am invățat cum să îi periăm dinții corect 
+                    Am mers cu fetița mea de 18 luni la <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>. Am invățat cum să îi periăm dinții corect 
                     și ce alimente să evităm. Recomand cu drag
                   </p>
                   <div className="flex items-center gap-3">

@@ -310,7 +310,7 @@ const Parodontologie = () => {
                 <strong>Boala parodontală</strong> este o infecție bacteriană cronică care, netratată, duce la distrugerea progresivă a țesuturilor de susținere ale dinților și, în final, la pierderea lor. Este extrem de răspândită - peste 50% dintre adulți prezintă o formă de boală parodontală.
               </p>
               <p>
-                La MedStom, tratamentul parodontal include:
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a>, tratamentul parodontal include:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Evaluare parodontală detaliată cu măsurarea buzunarelor</li>

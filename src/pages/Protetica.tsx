@@ -269,7 +269,7 @@ const Protetica = () => {
                 Protetica dentară este specialitatea stomatologiei care se ocupă cu înlocuirea dinților lipsă sau reconstruirea celor deteriorați prin diverse tipuri de proteze și restaurări.
               </p>
               <p>
-                La MedStom avem propriul laborator de tehnică dentară digitală, ceea ce înseamnă:
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> avem propriul laborator de tehnică dentară digitală, ceea ce înseamnă:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Control complet asupra calității lucrărilor protetice</li>

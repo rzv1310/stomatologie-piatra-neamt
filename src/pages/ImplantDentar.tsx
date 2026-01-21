@@ -76,7 +76,7 @@ const ImplantDentar = () => {
     },
     {
       question: "Cât costă un implant dentar la MedStom?",
-      answer: "Costul variază în funcție de complexitatea cazului și de tipul lucrării finale. Oferim consultație gratuită cu plan de tratament detaliat și cost total transparent. Avem și opțiuni de plată în rate."
+      answer: (<>Costul variază în funcție de complexitatea cazului și de tipul lucrării finale. Oferim consultație gratuită cu plan de tratament detaliat și cost total transparent. Avem și opțiuni de plată în rate. <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> oferă prețuri competitive.</>)
     },
     {
       question: "Sunt un candidat bun pentru implant dentar?",

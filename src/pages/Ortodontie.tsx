@@ -168,7 +168,7 @@ const Ortodontie = () => {
     },
     {
       question: "Cât costă un tratament ortodontic?",
-      answer: "Costul variază în funcție de complexitatea cazului și tipul de aparat ales. La MedStom oferim consultație gratuită cu plan de tratament detaliat și opțiuni de plată în rate. Investiția într-un zâmbet perfect se amortizează pe toată viața."
+      answer: (<>Costul variază în funcție de complexitatea cazului și tipul de aparat ales. La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> oferim consultație gratuită cu plan de tratament detaliat și opțiuni de plată în rate. Investiția într-un zâmbet perfect se amortizează pe toată viața.</>)
     }
   ];
 
@@ -323,7 +323,7 @@ const Ortodontie = () => {
                 <li>Dinți impactați sau incluși</li>
               </ul>
               <p>
-                La MedStom avem specialiști ortodonți cu experiență în tratarea cazurilor de la simple la complexe, pentru toate grupele de vârstă.
+                La <a href="/" target="_blank" rel="noopener" className="text-primary hover:underline font-medium">MedStom</a> avem specialiști ortodonți cu experiență în tratarea cazurilor de la simple la complexe, pentru toate grupele de vârstă.
               </p>
             </div>
           </div>
