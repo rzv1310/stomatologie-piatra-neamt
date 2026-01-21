@@ -98,7 +98,7 @@ const Urgente = () => {
          "Aplicați o compresă rece pe obraz dacă e umflat",
          "Evitați alimentele foarte calde, reci sau dulci",
          "Nu puneți aspirină direct pe gingie - arde țesuturile!",
-         <>Sunați urgent pentru programare - poate fi nevoie de <Link to="/servicii/stomatologie-generala" className="text-primary hover:underline font-medium">tratament de canal</Link></>
+         <>Sunați urgent pentru programare - poate fi nevoie de <Link to="/servicii/endodontie-piatra-neamt" className="text-primary hover:underline font-medium">tratament de canal</Link></>
        ]
     },
     {

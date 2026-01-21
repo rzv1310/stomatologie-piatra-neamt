@@ -18,7 +18,6 @@ const PAGE_IMAGES = {
   '/servicii/chirurgie-orala': DEFAULT_IMAGE,
   '/servicii/parodontologie-piatra-neamt': DEFAULT_IMAGE,
   '/servicii/radiologie-dentara-piatra-neamt': DEFAULT_IMAGE,
-  '/servicii/stomatologie-generala': DEFAULT_IMAGE,
   
   // Main pages
   '/servicii': DEFAULT_IMAGE,
