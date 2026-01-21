@@ -194,7 +194,7 @@ const Contact = () => {
             <div>
               <Card className="border-primary/20">
                 <CardContent className="p-6">
-                  <h2 className="text-2xl font-bold mb-6 text-heading">Formular de contact</h2>
+                  <h2 className="text-2xl font-bold mb-6 text-heading">Formular de Programare / Întrebări</h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nume și prenume *</Label>
@@ -233,7 +233,7 @@ const Contact = () => {
                     </Button>
 
                     <p className="text-sm text-muted-foreground text-center">
-                      Te vom contacta în cel mai scurt timp pentru a confirma programarea
+                      Te vom suna în cel mai scurt timp pentru a confirma programarea
                     </p>
                   </form>
                 </CardContent>
