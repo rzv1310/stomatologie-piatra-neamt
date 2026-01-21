@@ -41,7 +41,7 @@ const MaseauaMinte = () => {
     article: {
       headline: "Măseaua de minte - când o lași în pace și când trebuie neapărat scoasă",
       description: "Tot ce trebuie să știi despre măselele de minte: când este necesară extracția, semne de alarmă, procesul de extracție și recuperare. Sfaturi de la specialiști.",
-      image: "https://storage.googleapis.com/gpt-engineer-file-uploads/4JwdkPfG3Mgryfl0Byt7yN5KIf43/social-images/social-1763674029142-stomatologie piatra neamt - echipa medstom.webp",
+      image: "https://stomatologiepiatraneamt.ro/social-image.png",
       datePublished: "2025-01-20",
       dateModified: "2025-01-20"
     }
