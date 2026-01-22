@@ -169,7 +169,7 @@ const Parodontoza = () => {
                   <h4 className="font-bold text-foreground mb-2">Stadiul 3: Parodontita timpurie (parțial ireversibil)</h4>
                   <p className="text-foreground text-sm mb-2">
                     Infecția se extinde sub nivelul gingiilor, formând buzunare parodontale. Începe distrugerea 
-                    osului și a ligamentelor. <strong>Pagubele existente sunt permanente, dar progresia poate fi oprită.</strong>
+                    osului și a ligamentelor. <strong>Pagubele existente sunt permanente, dar progresia poate fi oprită cu <Link to="/servicii/parodontologie-piatra-neamt" className="text-primary hover:underline">tratament parodontal</Link>.</strong>
                   </p>
                   <p className="text-foreground text-sm">
                     <strong>Semne:</strong> Retracția gingivală (dinții par mai lungi), sensibilitate, mici spații între dinți
@@ -280,7 +280,7 @@ const Parodontoza = () => {
                   <strong>Evaluarea mobilității dentare:</strong> Se verifică gradul de clătinare al fiecărui dinte
                 </li>
                 <li>
-                  <strong>Radiografii dentare:</strong> Esențiale pentru a vedea gradul de pierdere osoasă și 
+                  <strong><Link to="/servicii/radiologie-dentara-piatra-neamt">Radiografii dentare</Link>:</strong> Esențiale pentru a vedea gradul de pierdere osoasă și 
                   a stabili prognosticul fiecărui dinte
                 </li>
                 <li>
@@ -302,7 +302,7 @@ const Parodontoza = () => {
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
                 <ol className="list-decimal pl-6 text-foreground text-base space-y-3 [&_a]:text-primary [&_a]:hover:underline">
                   <li>
-                    <strong>Detartraj supragingival:</strong> Îndepărtarea plăcii și tartrului de deasupra gingiilor
+                    <strong><Link to="/servicii/profilaxie">Detartraj supragingival</Link>:</strong> Îndepărtarea plăcii și tartrului de deasupra gingiilor
                   </li>
                   <li>
                     <strong>Curetaj și nivelare radiculară (detartraj subgingival):</strong> Curățarea 

@@ -229,7 +229,7 @@ const PrimaVizitaCopil = () => {
                 Ce se întâmplă la prima vizită?
               </h2>
               <p className="text-foreground mb-6">
-                Prima vizită este scurtă, blândă și concepută pentru a face cunoștință. Iată ce va include:
+                Prima vizită la <Link to="/servicii/stomatologie-copii-piatra-neamt" className="text-primary hover:underline font-medium">stomatologia pentru copii</Link> este scurtă, blândă și concepută pentru a face cunoștință. Iată ce va include:
               </p>
 
               <ol className="list-decimal pl-6 mb-8 text-foreground text-base space-y-4 [&_a]:text-primary [&_a]:hover:underline">
@@ -246,7 +246,7 @@ const PrimaVizitaCopil = () => {
                   periuță specială
                 </li>
                 <li>
-                  <strong>Aplicare fluor:</strong> Un gel cu gust plăcut care întărește smalțul
+                  <strong>Aplicare fluor:</strong> Un gel cu gust plăcut care întărește smalțul (<Link to="/servicii/profilaxie" className="text-primary hover:underline">parte din profilaxie</Link>)
                 </li>
                 <li>
                   <strong>Sfaturi pentru părinți:</strong> Informații despre igiena orală, alimentație și 

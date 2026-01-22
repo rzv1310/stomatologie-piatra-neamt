@@ -240,7 +240,7 @@ const MaseauaMinte = () => {
                   <div>
                     <h5 className="font-semibold text-foreground mb-2">7. Pregătire pentru tratament ortodontic</h5>
                     <p className="text-foreground text-sm">
-                      Ortodontul poate recomanda extracția pentru a crea spațiu și preveni recidivele după aparat.
+                      <Link to="/servicii/ortodontie-piatra-neamt" className="text-primary hover:underline">Ortodontul</Link> poate recomanda extracția pentru a crea spațiu și preveni recidivele după aparat.
                     </p>
                   </div>
 
@@ -264,12 +264,12 @@ const MaseauaMinte = () => {
                   <strong>Examinare clinică:</strong> Medicul verifică poziția, gradul de erupție și sănătatea gingivală
                 </li>
                 <li>
-                  <strong>Radiografie panoramică:</strong> Arată poziția exactă a măselelor de minte, relația cu 
+                  <strong><Link to="/servicii/radiologie-dentara-piatra-neamt">Radiografie panoramică</Link>:</strong> Arată poziția exactă a măselelor de minte, relația cu 
                   dinții vecini, nervii și sinusurile maxilare
                 </li>
                 <li>
-                  <strong>CT dentar (în cazuri complexe):</strong> Pentru vizualizare 3D exactă a poziției și 
-                  planificarea extracției chirurgicale
+                  <strong><Link to="/servicii/radiologie-dentara-piatra-neamt">CT dentar</Link> (în cazuri complexe):</strong> Pentru vizualizare 3D exactă a poziției și 
+                  planificarea <Link to="/servicii/chirurgie-orala">extracției chirurgicale</Link>
                 </li>
               </ul>
 

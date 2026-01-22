@@ -202,7 +202,7 @@ const AlbireDentara = () => {
                 <li>Pete de la cafea, ceai, vin roșu sau tutun</li>
                 <li>Decolorări superficiale sau moderate</li>
               </ul>
-              <p className="text-foreground mb-6">Nu este recomandată pentru femei însărcinate sau care alăptează, persoane cu carii netratate, cu boli parodontale active sau cu sensibilitate dentară severă.</p>
+              <p className="text-foreground mb-6">Nu este recomandată pentru femei însărcinate sau care alăptează, persoane cu <Link to="/servicii/tratament-carii" className="text-primary hover:underline font-medium">carii netratate</Link>, cu <Link to="/servicii/parodontologie-piatra-neamt" className="text-primary hover:underline font-medium">boli parodontale active</Link> sau cu sensibilitate dentară severă.</p>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Cum te pregătești pentru albirea dinților?</h2>
               <ol className="list-decimal pl-6 mb-6 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
@@ -211,7 +211,7 @@ const AlbireDentara = () => {
                   așteptările și alegem metoda potrivită.
                 </li>
                 <li className="mb-3">
-                  <strong>Detartraj profesional:</strong> Este esențial să ai dinții curățați înainte de albire 
+                  <strong><Link to="/servicii/profilaxie" className="text-primary hover:underline">Detartraj profesional</Link>:</strong> Este esențial să ai dinții curățați înainte de albire 
                   pentru rezultate uniforme.
                 </li>
                 <li className="mb-3">
