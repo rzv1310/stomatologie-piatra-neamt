@@ -117,7 +117,7 @@ const UrgenteDentare = () => {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-muted-foreground mb-8">
-                Urgențele dentare apar atunci când te aștepți mai puțin și pot fi înfricoșătoare. Știind 
+                <Link to="/servicii/urgente" className="text-primary hover:underline font-medium">Urgențele dentare</Link> apar atunci când te aștepți mai puțin și pot fi înfricoșătoare. Știind 
                 ce să faci în primele minute după accident sau la apariția problemei poate face diferența 
                 între salvarea și pierderea dintelui. În acest ghid complet, îți explicăm exact ce măsuri 
                 să iei pentru cele mai comune urgențe dentare.
@@ -334,7 +334,7 @@ const UrgenteDentare = () => {
                 </li>
                 <li>
                   <strong>Analgezice:</strong> Ibuprofen 400mg sau paracetamol 500-1000mg conform prospectului. 
-                  NU pune aspirina direct pe gingie - provoacă arsuri!
+                  NU pune aspirina direct pe gingie - provoacă arsuri! Durerea severă poate indica <Link to="/servicii/endodontie-piatra-neamt" className="text-primary hover:underline">necesitatea tratamentului de canal</Link>.
                 </li>
                 <li>
                   <strong>Poziție ridicată:</strong> Dormi cu capul ridicat pe 2-3 perne pentru a reduce presiunea.

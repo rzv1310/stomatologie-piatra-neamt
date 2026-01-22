@@ -102,13 +102,13 @@ const AparatDentarAdulti = () => {
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 De ce să porți aparat dentar ca adult?
               </h2>
-              <p className="text-foreground mb-6">Multe persoane cred că aparatul dentar este doar pentru copii și adolescenți, dar realitatea e că nu există o limită de vârstă pentru tratamentul ortodontic. Iată câteva motive pentru care adulții aleg să își corecteze dinții:</p>
+              <p className="text-foreground mb-6">Multe persoane cred că aparatul dentar este doar pentru copii și adolescenți, dar realitatea e că nu există o limită de vârstă pentru <Link to="/servicii/ortodontie-piatra-neamt" className="text-primary hover:underline font-medium">tratamentul ortodontic</Link>. Iată câteva motive pentru care adulții aleg să își corecteze dinții:</p>
               <ul className="list-disc pl-6 mb-8 text-foreground text-base [&_a]:text-primary [&_a]:hover:underline">
                 <li>Îmbunătățirea esteticii zâmbetului și creșterea încrederii în sine</li>
                 <li>Corectarea problemelor de mușcare ce pot cauza dureri de cap</li>
                 <li>Facilitarea igienei orale (dinții aliniați sunt mai ușor de curățat)</li>
                 <li>Prevenirea uzurii anormale a dinților</li>
-                <li>Pregătirea pentru tratamente protetice (implanturi, coroane)</li>
+                <li>Pregătirea pentru tratamente protetice (<Link to="/servicii/implant-dentar" className="text-primary hover:underline">implanturi</Link>, <Link to="/servicii/protetica-piatra-neamt" className="text-primary hover:underline">coroane</Link>)</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -299,11 +299,12 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                 Indiferent de tipul de aparat ales, tratamentul ortodontic pentru adulți urmează acești pași:
               </p>
               <ol className="list-decimal pl-6 mb-8 text-foreground text-base space-y-3 [&_a]:text-primary [&_a]:hover:underline">
-                <li>Consultație și diagnostic: Evaluare completă, fotografii, radiografii și mulaje dentare pentru plan de tratament personalizat<strong>Consultație și diagnostic:</strong> Evaluare completă, fotografii, radiografii și 
+                <li>
+                  <strong>Consultație și diagnostic:</strong> Evaluare completă, fotografii, <Link to="/servicii/radiologie-dentara-piatra-neamt">radiografii</Link> și 
                   impresii dentare pentru plan de tratament personalizat
                 </li>
                 <li>
-                  <strong>Pregătire:</strong> Detartraj, eventuale tratamente necesare (carii, extracții)
+                  <strong>Pregătire:</strong> <Link to="/servicii/profilaxie">Detartraj</Link>, eventuale tratamente necesare (<Link to="/servicii/tratament-carii">carii</Link>, <Link to="/servicii/chirurgie-orala">extracții</Link>)
                 </li>
                 <li>
                   <strong>Montare:</strong> Aplicarea aparatului (2-3 ore) sau primirea primelor gutiere Invisalign
