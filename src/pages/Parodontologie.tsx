@@ -119,7 +119,7 @@ const Parodontologie = () => {
       question: "Ce este boala parodontală (parodontita)?",
       answer: (
         <>
-          Boala parodontală (<Link to="/blog/parodontoza" className="text-primary hover:underline font-medium">parodontoză</Link>) este o infecție bacteriană a gingiei, ligamentului parodontal și osului care susține dinții. Începe cu gingivita (inflamația gingiei) și poate progresa până la pierderea dinților dacă nu este tratată. Este cauzată de acumularea de placă bacteriană și tartru.
+          Boala parodontală (<Link to="/blog/parodontoza-tratament" className="text-primary hover:underline font-medium">parodontoză</Link>) este o infecție bacteriană a gingiei, ligamentului parodontal și osului care susține dinții. Începe cu gingivita (inflamația gingiei) și poate progresa până la pierderea dinților dacă nu este tratată. Este cauzată de acumularea de placă bacteriană și tartru.
         </>
       )
     },
