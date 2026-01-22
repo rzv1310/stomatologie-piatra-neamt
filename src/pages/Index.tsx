@@ -41,7 +41,7 @@ const Index = () => {
       },
       {
         author: "Irina",
-        reviewBody: "Servicii PROFESIONALE ca în București la preturi mai mici ca în Iași! Cel mai bun anestezic, NU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
+        reviewBody: "Servicii TOP ca în București, la preturi mai mici ca în Iași! NU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
         ratingValue: 5
       }
     ]
@@ -121,7 +121,7 @@ const Index = () => {
     },
     {
       name: "Irina",
-      text: "Servicii PROFESIONALE ca în București la preturi mai mici ca în Iași! Cel mai bun anestezic, NU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
+      text: "Servicii TOP ca în București, la preturi mai mici ca în Iași!\nNU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
       rating: 5
     }
   ];
