@@ -121,7 +121,7 @@ const Endodontie = () => {
     },
     {
       question: "Când este necesar tratamentul de canal?",
-      answer: "Tratamentul de canal este necesar când pulpa dentară (nervul) este infectată sau inflamată ireversibil. Semnele includ: durere intensă, sensibilitate prelungită la cald/rece, umflături sau abcese."
+      answer: (<>Tratamentul de canal este necesar când pulpa dentară (nervul) este infectată sau inflamată ireversibil. Semnele includ: durere intensă, sensibilitate prelungită la cald/rece, umflături sau abcese. Consultă ghidul nostru despre <Link to="/blog/urgente-dentare-dinte-rupt" className="text-primary hover:underline font-medium">ce faci în caz de urgență dentară</Link>.</>)
     },
     {
       question: "Pot salva un dinte cu carie mare?",

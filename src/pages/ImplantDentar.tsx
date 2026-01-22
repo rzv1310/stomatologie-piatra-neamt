@@ -80,7 +80,7 @@ const ImplantDentar = () => {
     },
     {
       question: "Sunt un candidat bun pentru implant dentar?",
-      answer: "Majoritatea persoanelor care au pierdut unul sau mai mulți dinți sunt candidați buni. În cazurile cu deficit osos, oferim soluții de augmentare osoasă (adiție de os, sinus lift). Vom evalua cazul tău în detaliu la consultație."
+      answer: (<>Majoritatea persoanelor care au pierdut unul sau mai mulți dinți sunt candidați buni. În cazurile cu deficit osos, oferim soluții de augmentare osoasă (adiție de os, sinus lift). Este important să ai gingii sănătoase - citește despre <Link to="/blog/parodontoza-tratament" className="text-primary hover:underline font-medium">tratamentul parodontozei</Link> înainte de implant.</>)
     },
     {
       question: "Ce garanție oferă implanturile?",

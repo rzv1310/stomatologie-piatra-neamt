@@ -65,7 +65,7 @@ const Radiologie = () => {
     },
     {
       title: "Extracții dificile",
-      description: "Vizualizarea poziției dinților incluși și a structurilor anatomice importante"
+      description: <>Vizualizarea poziției dinților incluși și a structurilor anatomice importante. Află <Link to="/blog/maseaua-de-minte" className="text-primary hover:underline font-medium">când trebuie scoasă măseaua de minte</Link>.</>
     },
     {
        title: "Evaluare sinusuri",
