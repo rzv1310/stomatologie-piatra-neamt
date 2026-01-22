@@ -15,6 +15,17 @@ import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
+import SectionNav from "@/components/SectionNav";
+
+const sectionNavItems = [
+  { id: "preturi", label: "Prețuri" },
+  { id: "tratamente", label: "Tipuri tratamente" },
+  { id: "despre", label: "Ce este ortodonția" },
+  { id: "beneficii", label: "Beneficii" },
+  { id: "etape", label: "Etape tratament" },
+  { id: "varste", label: "Toate vârstele" },
+  { id: "faq", label: "Întrebări frecvente" },
+];
 
 const Ortodontie = () => {
   const pricingData = [
@@ -210,6 +221,7 @@ const Ortodontie = () => {
       <Navigation />
 
       <main className="flex-1">
+        <SectionNav sections={sectionNavItems} />
         {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center">
         <div 
@@ -241,7 +253,7 @@ const Ortodontie = () => {
       />
 
       {/* Pricing Table */}
-      <section className="py-16 bg-background">
+      <section id="preturi" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center text-heading">
@@ -275,7 +287,7 @@ const Ortodontie = () => {
       </section>
 
       {/* Orthodontic Treatments */}
-      <section className="py-20 bg-hero">
+      <section id="tratamente" className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
@@ -300,7 +312,7 @@ const Ortodontie = () => {
       </section>
 
       {/* What is Orthodontics */}
-      <section className="py-20 bg-hero">
+      <section id="despre" className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-text-custom space-y-4 border border-accent rounded-lg p-6">
@@ -331,7 +343,7 @@ const Ortodontie = () => {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-background">
+      <section id="beneficii" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
@@ -360,7 +372,7 @@ const Ortodontie = () => {
       </section>
 
       {/* Treatment Steps */}
-      <section className="py-20 bg-hero">
+      <section id="etape" className="py-20 bg-hero">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
@@ -389,7 +401,7 @@ const Ortodontie = () => {
       </section>
 
       {/* Age Groups */}
-      <section className="py-20 bg-background">
+      <section id="varste" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-heading">
@@ -452,7 +464,7 @@ const Ortodontie = () => {
       <RelatedServices services={relatedServices['ortodontie']} />
 
       {/* FAQ */}
-      <section className="py-20 bg-background">
+      <section id="faq" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center text-heading">
