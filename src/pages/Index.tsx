@@ -35,8 +35,8 @@ const Index = () => {
     reviewCount: "10",
     reviews: [
       {
-        author: "Nicolae Lazar",
-        reviewBody: "Profesionalism şi seriozitate, lucrări în siguranţă, personal calificat şi drăguț. Am găsit în sfârşit un cabinet unde același medic execută toate lucrările de la anestezie până la implant dentar. RECOMAND!!!!!!",
+        author: "Nicolae",
+        reviewBody: "Serioși si profi, lucrări f bune, personal drăguț. Am găsit în sfârşit un cabinet unde ai medici pentru toate etapele, de la anestezie până la implant dentar. RECOMAND!!!!!!",
         ratingValue: 5
       },
       {
@@ -115,8 +115,8 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Nicolae Lazar",
-      text: "Profesionalism şi seriozitate, lucrări în siguranţă, personal calificat şi drăguț. Am găsit în sfârşit un cabinet unde același medic execută toate lucrările de la anestezie până la implant dentar. RECOMAND!!!!!!",
+      name: "Nicolae",
+      text: "Serioși si profi, lucrări f bune, personal drăguț. Am găsit în sfârşit un cabinet unde ai medici pentru toate etapele, de la anestezie până la implant dentar. RECOMAND!!!!!!",
       rating: 5
     },
     {
