@@ -128,7 +128,7 @@ const Protetica = () => {
     },
     {
       question: "Sunt dureroase protezele mobile?",
-      answer: "Protezele moderne, bine realizate, nu ar trebui să cauzeze durere. Poate exista o perioadă scurtă de adaptare (1-2 săptămâni), dar cu ajustări corespunzătoare, ar trebui să fie confortabile."
+      answer: (<>Protezele moderne, bine realizate, nu ar trebui să cauzeze durere. Poate exista o perioadă scurtă de adaptare (1-2 săptămâni), dar cu ajustări corespunzătoare, ar trebui să fie confortabile. Pentru succes pe termen lung, gingiile trebuie să fie sănătoase - citește despre <Link to="/blog/parodontoza-tratament" className="text-primary hover:underline font-medium">cum să recunoști și să tratezi parodontoza</Link>.</>)
     },
     {
       question: "Ce este o proteză scheletată?",

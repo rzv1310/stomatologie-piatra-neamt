@@ -36,14 +36,14 @@ const Urgente = () => {
     { service: "Extracție dinte parodontotic", price: "100 lei" },
     { service: "Extracție monoradicular", price: "150 lei" },
     { service: "Extracție pluriradicular", price: "200-250 lei" },
-    { service: "Extracție molar de minte", price: "300-400 lei" },
+    { service: <>Extracție molar de minte - vezi <Link to="/blog/maseaua-de-minte" className="text-primary hover:underline font-medium">când trebuie scoasă</Link></>, price: "300-400 lei" },
     { service: "Extracție rest radicular", price: "200 lei" }
   ];
 
   const emergencyTypes = [
     {
       title: "Durere acută de dinți",
-      description: "Pulpită, abces dentar, dureri severe care te țin treaz noaptea",
+      description: <>Pulpită, abces dentar, dureri severe care te țin treaz noaptea. Vezi ghidul nostru despre <Link to="/blog/urgente-dentare-dinte-rupt" className="text-primary hover:underline font-medium">prim ajutor pentru urgențe dentare</Link>.</>,
       icon: <img src={toothPainIcon} alt="Durere de dinți" className="h-12 w-12" />,
       severity: "Urgent"
     },

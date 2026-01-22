@@ -36,7 +36,7 @@ const TratamentCarii = () => {
     },
     {
       title: "Materiale biocompatibile",
-      description: "Utilizăm doar materiale certificate, fără mercur, sigure pentru sănătatea ta"
+      description: <>Utilizăm doar materiale certificate, fără mercur, sigure pentru sănătatea ta. Pe lângă carii, și bolile gingiilor pot afecta sănătatea orală - citește despre <Link to="/blog/parodontoza-tratament" className="text-primary hover:underline font-medium">simptomele parodontozei</Link>.</>
     },
     {
       title: "Rezultate estetice",

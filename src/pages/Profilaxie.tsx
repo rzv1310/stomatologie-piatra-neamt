@@ -35,7 +35,7 @@ const Profilaxie = () => {
     },
     {
       title: "Zâmbet strălucitor",
-      description: "Îndepărtăm petele și decolorările, redând dinților strălucirea naturală"
+      description: <>Îndepărtăm petele și decolorările, redând dinților strălucirea naturală. După detartraj, poți considera și <Link to="/blog/albire-dentara-piatra-neamt" className="text-primary hover:underline font-medium">albirea dentară profesională</Link> pentru un zâmbet și mai strălucitor.</>
     },
     {
       title: "Economii pe termen lung",
@@ -43,7 +43,7 @@ const Profilaxie = () => {
     },
     {
       title: "Sănătate generală",
-      description: "Igiena orală corespunzătoare contribuie la sănătatea întregului organism"
+      description: <>Igiena orală corespunzătoare contribuie la sănătatea întregului organism. Pentru copii, profilaxia începe devreme - citește sfaturi pentru <Link to="/blog/prima-vizita-copil-dentist" className="text-primary hover:underline font-medium">prima vizită a copilului la dentist</Link>.</>
     }
   ];
 

@@ -131,7 +131,7 @@ const Ortodontie = () => {
     },
     {
       title: "Adulți (18+ ani)",
-      description: "Nu este niciodată prea târziu pentru un zâmbet perfect aliniat",
+      description: <>Nu este niciodată prea târziu pentru un zâmbet perfect aliniat. Citește mai multe despre <Link to="/blog/aparat-dentar-adulti-piatra-neamt" className="text-primary hover:underline font-medium">aparatul dentar pentru adulți</Link>.</>,
       points: [
         "Aparate estetice discrete",
         "Alignere transparente Invisalign",
