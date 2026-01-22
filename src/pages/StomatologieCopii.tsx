@@ -43,12 +43,12 @@ const StomatologieCopii = () => {
     },
     {
        title: "Fluorizări",
-       description: <>Tratamente preventive pentru întărirea smalțului și prevenirea cariilor, parte din <Link to="/servicii/profilaxie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">profilaxie profesională</Link></>,
+       description: <>Tratamente preventive pentru întărirea smalțului și prevenirea cariilor, parte din <Link to="/servicii/profilaxie" className="text-primary hover:underline font-medium">profilaxie profesională</Link></>,
       icon: "💧"
     },
     {
       title: "Tratarea cariilor",
-      description: <>Plombe delicate și nedureroase pentru <Link to="/servicii/tratament-carii-piatra-neamt" className="text-primary hover:underline font-medium">tratamentul cariilor</Link> la dinții de lapte și permanenți</>,
+      description: <>Plombe delicate și nedureroase pentru <Link to="/servicii/tratament-carii" className="text-primary hover:underline font-medium">tratamentul cariilor</Link> la dinții de lapte și permanenți</>,
       icon: "🦷"
     },
     {

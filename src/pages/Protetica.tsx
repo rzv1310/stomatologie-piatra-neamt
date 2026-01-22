@@ -52,7 +52,7 @@ const Protetica = () => {
     },
     {
        title: "Lucrări pe implanturi",
-       description: <>Coroane, punți și proteze fixate pe <Link to="/servicii/implant-dentar-piatra-neamt" className="text-primary hover:underline font-medium">implanturi dentare</Link></>,
+       description: <>Coroane, punți și proteze fixate pe <Link to="/servicii/implant-dentar" className="text-primary hover:underline font-medium">implanturi dentare</Link></>,
       icon: "🔩"
     }
   ];

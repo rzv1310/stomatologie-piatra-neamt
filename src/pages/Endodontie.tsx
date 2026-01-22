@@ -54,7 +54,7 @@ const Endodontie = () => {
     },
     {
       title: "Tratament urgențe",
-      description: <>Rezolvăm rapid durerea și problemele dentare acute - vezi <Link to="/servicii/urgente-dentare-piatra-neamt" className="text-primary hover:underline font-medium">urgențe dentare</Link></>
+      description: <>Rezolvăm rapid durerea și problemele dentare acute - vezi <Link to="/servicii/urgente" className="text-primary hover:underline font-medium">urgențe dentare</Link></>
     }
   ];
 
