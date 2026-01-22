@@ -85,7 +85,7 @@ const Chirurgie = () => {
     description: "Protocoale stricte de sterilizare și sală de chirurgie dedicată"
   }, {
     title: "Experiență vastă",
-    description: "Chirurgi cu peste 10 de ani de experiență"
+    description: "Chirurgi cu peste 20 de ani de experiență"
   }];
   const extractionSteps = [{
     number: "01",
