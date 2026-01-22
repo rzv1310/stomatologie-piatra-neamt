@@ -15,17 +15,8 @@ import RelatedServices from "@/components/RelatedServices";
 import { relatedServices } from "@/config/related-content";
 import { CTAWithTrust } from "@/components/CTAWithTrust";
 import { HeroContactBox } from "@/components/HeroContactBox";
-import SectionNav from "@/components/SectionNav";
 
-const sectionNavItems = [
-  { id: "preturi", label: "Prețuri" },
-  { id: "tratamente", label: "Tipuri tratamente" },
-  { id: "despre", label: "Ce este ortodonția" },
-  { id: "beneficii", label: "Beneficii" },
-  { id: "etape", label: "Etape tratament" },
-  { id: "varste", label: "Toate vârstele" },
-  { id: "faq", label: "Întrebări frecvente" },
-];
+
 
 const Ortodontie = () => {
   const pricingData = [
@@ -221,7 +212,6 @@ const Ortodontie = () => {
       <Navigation />
 
       <main className="flex-1">
-        <SectionNav sections={sectionNavItems} />
         {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center">
         <div 
