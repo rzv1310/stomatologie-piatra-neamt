@@ -89,7 +89,7 @@ const Ortodontie = () => {
     {
       number: "03",
       title: "Pregătire",
-      description: "<Link to=\"/servicii/profilaxie-dentara-piatra-neamt\" className=\"text-primary hover:underline font-medium\">Igienizare profesională</Link> și tratarea eventualelor carii înainte de aplicarea aparatului"
+      description: "<Link to=\"/servicii/profilaxie\" className=\"text-primary hover:underline font-medium\">Igienizare profesională</Link> și tratarea eventualelor carii înainte de aplicarea aparatului"
     },
     {
       number: "04",

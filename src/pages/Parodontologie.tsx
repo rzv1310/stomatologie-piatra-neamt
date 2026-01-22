@@ -32,7 +32,7 @@ const Parodontologie = () => {
   const parodontalServices = [
     {
       title: "Detartraj subgingival",
-      description: <>Curățarea în profunzime a depunerilor de tartru sub gingie, parte din <Link to="/servicii/profilaxie-dentara-piatra-neamt" className="text-primary hover:underline font-medium">igienizare profesională</Link></>,
+      description: <>Curățarea în profunzime a depunerilor de tartru sub gingie, parte din <Link to="/servicii/profilaxie" className="text-primary hover:underline font-medium">igienizare profesională</Link></>,
       icon: "🧹"
     },
     {
@@ -47,7 +47,7 @@ const Parodontologie = () => {
     },
     {
       title: "Regenerare osoasă",
-      description: <>Reconstrucția osului pierdut prin grefe și membrane speciale, esențial pentru <Link to="/servicii/implant-dentar-piatra-neamt" className="text-primary hover:underline font-medium">implanturi dentare</Link></>,
+      description: <>Reconstrucția osului pierdut prin grefe și membrane speciale, esențial pentru <Link to="/servicii/implant-dentar" className="text-primary hover:underline font-medium">implanturi dentare</Link></>,
       icon: "🦴"
     }
   ];

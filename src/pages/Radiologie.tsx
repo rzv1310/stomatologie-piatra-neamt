@@ -49,7 +49,7 @@ const Radiologie = () => {
     },
     {
       title: "Radiografii bitewing",
-      description: <>Detectarea cariilor interdentare și evaluarea osului alveolar, util pentru <Link to="/servicii/chirurgie-orala-piatra-neamt" className="text-primary hover:underline font-medium">chirurgie orală</Link></>,
+      description: <>Detectarea cariilor interdentare și evaluarea osului alveolar, util pentru <Link to="/servicii/chirurgie-orala" className="text-primary hover:underline font-medium">chirurgie orală</Link></>,
       icon: "📐"
     }
   ];
@@ -353,7 +353,7 @@ const Radiologie = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1 mr-3" />
-                      <span>Evaluăm densitatea și volumul osului disponibil pentru <Link to="/servicii/implant-dentar-piatra-neamt" className="text-primary hover:underline font-medium">implantologie</Link></span>
+                      <span>Evaluăm densitatea și volumul osului disponibil pentru <Link to="/servicii/implant-dentar" className="text-primary hover:underline font-medium">implantologie</Link></span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1 mr-3" />

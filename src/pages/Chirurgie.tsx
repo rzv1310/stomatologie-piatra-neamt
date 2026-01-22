@@ -38,7 +38,7 @@ const Chirurgie = () => {
   const surgicalServices = [
     {
       title: "Extracții dentare",
-      description: <>Extracții simple și complexe, inclusiv molari de minte incluși. Pentru cazuri complexe vezi <Link to="/servicii/implant-dentar-piatra-neamt" className="text-primary hover:underline font-medium">implanturi dentare</Link></>,
+      description: <>Extracții simple și complexe, inclusiv molari de minte incluși. Pentru cazuri complexe vezi <Link to="/servicii/implant-dentar" className="text-primary hover:underline font-medium">implanturi dentare</Link></>,
       icon: "🦷"
     },
     {

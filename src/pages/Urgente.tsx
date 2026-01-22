@@ -55,7 +55,7 @@ const Urgente = () => {
     },
     {
       title: "Infecții / Abcese",
-      description: <>Edeme faciale, febră, infecții care se răspândesc, necesită <Link to="/servicii/chirurgie-orala-piatra-neamt" className="text-primary hover:underline font-medium">chirurgie orală</Link></>,
+      description: <>Edeme faciale, febră, infecții care se răspândesc, necesită <Link to="/servicii/chirurgie-orala" className="text-primary hover:underline font-medium">chirurgie orală</Link></>,
       icon: <img src={toothInfectionIcon} alt="Infecție dentară" className="h-12 w-12" />,
       severity: "Foarte urgent"
     },
