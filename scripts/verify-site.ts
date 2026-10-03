@@ -64,6 +64,10 @@ async function checkRenderAndMeta(page: Page) {
     const title = (await page.title()).trim();
     const problems: string[] = [];
     if (canonical !== `${SITE_URL}${r.path}`) problems.push(`canonical=${canonical}`);
+    for (const sel of ['link[rel="canonical"]','meta[name="robots"]','meta[name="description"]','meta[property="og:url"]','meta[name="author"]','meta[name="publisher"]']) {
+      const n = await page.locator(sel).count();
+      if (n !== 1) problems.push(`${sel} x${n}`);
+    }
     if (!title) problems.push("empty title");
     else if (titles.has(title)) problems.push(`title duplicates ${titles.get(title)}`);
     else titles.set(title, r.path);
@@ -87,7 +91,9 @@ async function checkNotFound(page: Page) {
   const { res } = await open(page, path);
   const status = res?.status() ?? 0;
   const nf = await isNotFound(page);
-  const robots = (await page.locator('meta[name="robots"]').last().getAttribute("content").catch(() => "")) || "";
+  const robotsCount = await page.locator('meta[name="robots"]').count();
+  record("notfound", `${path} single robots`, robotsCount === 1 ? "PASS" : "FAIL", `count=${robotsCount}`);
+  const robots = (await page.locator('meta[name="robots"]').first().getAttribute("content").catch(() => "")) || "";
   record("notfound", `${path} screen`, nf ? "PASS" : "FAIL", nf ? undefined : "NotFound screen not shown");
   record("notfound", `${path} noindex`, robots.includes("noindex") ? "PASS" : "FAIL", `robots="${robots}"`);
   if (status === 404 || status === 410) record("notfound", `${path} HTTP status`, "PASS", `HTTP ${status}`);
