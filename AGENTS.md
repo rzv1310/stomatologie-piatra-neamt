@@ -7,3 +7,4 @@
 - Blog article dates live only in src/config/blog-articles.ts (ISO) and every display/meta/JSON-LD reads from it — prevents date drift between list, page and schema.
 - Schema enum values (MedicalSpecialty, procedure subtypes) are typed unions in src/config/schema-ids.ts; no free-text values in enum properties and no self-served rating/review markup — keeps markup valid and policy-compliant.
 - Routes live as plain data in src/config/route-registry.ts (no React, relative imports only); routes.ts maps them to components, and the Vite plugin emits sitemap.xml from it at build — one list for router, sitemap and scripts; `lastmod` only from real content dates, never build time.
+- Site verification (scripts/verify-site.ts) keeps fallback, render, metadata, redirects and not-found as separate checks; a 200 on an unknown URL is reported as SOFT-404 warning, never pass — SPA hosting cannot prove a real 404/301.

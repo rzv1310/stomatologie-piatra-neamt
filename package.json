@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "sitemap": "tsx scripts/generate-sitemap.ts",
     "check:sitemap": "tsx scripts/check-sitemap-urls.ts",
-    "test:spa": "tsx scripts/test-spa-fallback.ts"
+    "verify:site": "tsx scripts/verify-site.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

@@ -10,8 +10,14 @@ Sursa unică a rutelor este `src/config/route-registry.ts` (doar date, fără Re
 ## Comenzi
 ```bash
 npm run sitemap         # afișează sitemapul generat
-npm run check:sitemap   # după build: verifică fiecare URL din dist/sitemap.xml pe site-ul live
-npm run test:spa        # verifică fallbackul SPA pentru toate rutele (PREVIEW_URL opțional)
+npm run check:sitemap   # fiecare URL din sitemap trebuie să răspundă direct 2xx (orice 4xx/5xx sau redirect = eșec)
+npm run verify:site     # fallback, randare, metadata, redirecturi și pagina 404 (BASE_URL opțional)
 ```
 
 Pagină nouă: adaug-o în `route-registry.ts` (și componenta în `routes.ts`); sitemapul se actualizează singur.
+
+## verify:site
+Necesită o singură dată: `npx playwright install chromium`.
+
+Verificări separate: fallback (HTTP 200 + #root), randare (h1, fără erori, nu ecranul 404), metadata (canonical + titlu unic), redirecturi (client-side, nu HTTP 301) și URL inexistent.
+Pe hostingul Lovable un URL inexistent răspunde 200 și afișează ecranul 404 cu noindex: raportat ca **SOFT-404 (WARN)**, niciodată ca PASS.
