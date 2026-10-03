@@ -6,3 +6,4 @@
 - The full organization (Dentist) and WebSite JSON-LD live only in index.html with stable `@id`s from src/config/schema-ids.ts; page schema references them by `@id` and FAQ/ItemList appear only on the page whose content they describe — avoids duplicated or misplaced schema on SPA fallback routes.
 - Blog article dates live only in src/config/blog-articles.ts (ISO) and every display/meta/JSON-LD reads from it — prevents date drift between list, page and schema.
 - Schema enum values (MedicalSpecialty, procedure subtypes) are typed unions in src/config/schema-ids.ts; no free-text values in enum properties and no self-served rating/review markup — keeps markup valid and policy-compliant.
+- Routes live as plain data in src/config/route-registry.ts (no React, relative imports only); routes.ts maps them to components, and the Vite plugin emits sitemap.xml from it at build — one list for router, sitemap and scripts; `lastmod` only from real content dates, never build time.
