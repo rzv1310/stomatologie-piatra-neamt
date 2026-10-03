@@ -175,6 +175,13 @@ const Footer = () => {
             <Link to="/politica-cookies" className="hover:text-accent transition-colors">
               Politica cookies
             </Link>
+            <button
+              type="button"
+              onClick={openConsentSettings}
+              className="hover:text-accent transition-colors"
+            >
+              Setări cookies
+            </button>
             <Link to="/termeni-conditii" className="hover:text-accent transition-colors">
               Termeni și condiții
             </Link>
