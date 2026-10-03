@@ -10,3 +10,6 @@
 - Site verification (scripts/verify-site.ts) keeps fallback, render, metadata, redirects and not-found as separate checks; a 200 on an unknown URL is reported as SOFT-404 warning, never pass — SPA hosting cannot prove a real 404/301.
 - Declared image sizes (icons, og:image, schema logo) must equal the real file sizes; scripts/verify-images.ts fails on mismatch — avoids misleading crawlers and oversized downloads.
 - Business identity (name, NAP, geo, hours, domain, email) lives only in src/config/business.ts; pages import it, the Vite plugin injects it into index.html JSON-LD/meta and renders llms.txt/robots.txt from src/content templates, and scripts/verify-business.ts fails on hardcoded copies — prevents contradicting details. WhatsApp is a separate field on purpose.
+- Bun is the only package manager (bun.lockb, `packageManager` in package.json); never add package-lock.json — one lockfile keeps installs reproducible locally and in CI.
+- `bun run check` (typecheck + lint + vitest + build + verify:images + verify:business) is the quality gate run by .github/workflows/ci.yml; a successful Vite build alone is not a typecheck.
+- Animations (GSAP, CSS, smooth scroll) must be skipped under prefers-reduced-motion; global scroll-to-top on back/forward is intentional (owner decision).
