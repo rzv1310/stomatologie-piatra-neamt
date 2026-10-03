@@ -1,8 +1,8 @@
 import { BUSINESS } from "@/config/business";
 import { Helmet } from "react-helmet";
 
-const SITE_URL = {BUSINESS.url};
-const DEFAULT_IMAGE = {`${BUSINESS.url}/social-image.jpg`};
+const SITE_URL = BUSINESS.url;
+const DEFAULT_IMAGE = `${BUSINESS.url}/social-image.jpg`;
 
 export interface DynamicSEOProps {
   title: string;

@@ -7,7 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet";
 
-const SITE_URL = {BUSINESS.url};
+const SITE_URL = BUSINESS.url;
 
 // Recommended services for 404 page
 const recommendedServices = [

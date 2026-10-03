@@ -16,8 +16,8 @@ interface HeroContactBoxProps {
 export const HeroContactBox = ({
   title,
   subtitle,
-  buttonText = {`Sună ACUM - ${BUSINESS.phone.display}`},
-  phoneNumber = {BUSINESS.phone.e164},
+  buttonText = `Sună ACUM - ${BUSINESS.phone.display}`,
+  phoneNumber = BUSINESS.phone.e164,
   microcopy,
   icon = <Clock className="h-6 w-6 text-accent" />,
   buttonClassName
