@@ -218,10 +218,7 @@ const Index = () => {
             {services.map((service, index) => (
               <Link key={index} to={service.link}>
                 <Card className="h-full min-h-[280px] hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative">
-                  <div 
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${service.image})` }}
-                  />
+                  <img src={service.image} alt="" aria-hidden="true" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
                   <CardContent className="p-6 relative z-10 h-full flex flex-col justify-end">
                     <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>

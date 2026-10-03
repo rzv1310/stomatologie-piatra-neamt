@@ -383,10 +383,7 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
           >
             <Card className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40 overflow-hidden group relative h-[75vh]">
               {/* Background image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${service.image})` }}
-              />
+              <img src={service.image} alt="" aria-hidden="true" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
               {/* Gradient overlay for text readability */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/30" />
               {/* Card content */}

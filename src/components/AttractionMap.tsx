@@ -3,13 +3,13 @@ import { MapPin, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg';
-import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.webp';
-import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png';
-import garaPiatraNeamt from '@/assets/gara-piatra-neamt.png';
-import muzeuIstorie from '@/assets/muzeu-istorie-piatra-neamt.jpg';
-import clinicLocation from '@/assets/clinic-location-street-view.png';
-import shoppingCityPiatraNeamt from '@/assets/shopping-city-piatra-neamt.png';
+import telegondolaPiatraNeamt from '@/assets/telegondola-piatra-neamt.jpg?w=400&format=webp';
+import turnulStefanCelMare from '@/assets/turnul-stefan-cel-mare-piatra-neamt.webp?w=400&format=webp';
+import teatrulTineretului from '@/assets/teatrul-tineretului-piatra-neamt.png?w=400&format=webp';
+import garaPiatraNeamt from '@/assets/gara-piatra-neamt.png?w=400&format=webp';
+import muzeuIstorie from '@/assets/muzeu-istorie-piatra-neamt.jpg?w=400&format=webp';
+import clinicLocation from '@/assets/clinic-location-street-view.png?w=400&format=webp';
+import shoppingCityPiatraNeamt from '@/assets/shopping-city-piatra-neamt.png?w=400&format=webp';
 
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
@@ -142,7 +142,7 @@ export const AttractionMap = () => {
       const clinicImageHtml = (locations.clinic as any).image 
         ? `
           <div style="position: relative; height: 180px; overflow: hidden;">
-            <img 
+            <img loading="lazy" decoding="async" width="400" 
               src="${(locations.clinic as any).image}" 
               alt="${locations.clinic.name}" 
               style="width: 100%; height: 100%; object-fit: cover;"
@@ -196,7 +196,7 @@ export const AttractionMap = () => {
       const imageHtml = (location as any).image 
         ? `
           <div style="position: relative; height: 160px; overflow: hidden;">
-            <img 
+            <img loading="lazy" decoding="async" width="400" 
               src="${(location as any).image}" 
               alt="${location.name}" 
               style="width: 100%; height: 100%; object-fit: cover;"

@@ -44,7 +44,7 @@ const UrgenteDentare = () => {
     article: {
       headline: "Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic",
       description: "Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.png",
+      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }

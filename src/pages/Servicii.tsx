@@ -253,10 +253,7 @@ const Servicii = () => {
                 key={index} 
                 className="border-primary/20 hover:shadow-lg transition-shadow overflow-hidden relative group"
               >
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                  style={{ backgroundImage: `url(${service.image})` }}
-                />
+                <img src={service.image} alt="" aria-hidden="true" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
                 <CardContent className="p-6 relative z-10">
                   <h2 className="text-2xl font-bold mb-4 text-white">{service.title}</h2>
