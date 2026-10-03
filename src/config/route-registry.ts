@@ -67,6 +67,7 @@ export const ROUTE_REGISTRY: RouteEntry[] = [
   { path: "/servicii/chirurgie-orala", page: "Chirurgie", priority: 0.8, changefreq: "monthly", title: "Chirurgie Orala" },
   { path: "/servicii/parodontologie-piatra-neamt", page: "Parodontologie", priority: 0.8, changefreq: "monthly", title: "Parodontologie" },
   { path: "/servicii/radiologie-dentara-piatra-neamt", page: "Radiologie", priority: 0.8, changefreq: "monthly", title: "Radiologie" },
+  { path: "/servicii/stomatologie-generala", redirectTo: "/servicii/endodontie-piatra-neamt", priority: 0.1, changefreq: "never", title: "Redirect", excludeFromSitemap: true },
   { path: "/blog/albire-dentara", redirectTo: "/blog/albire-dentara-piatra-neamt", priority: 0.1, changefreq: "never", title: "Redirect", excludeFromSitemap: true },
   { path: "/blog/aparat-dentar-adulti", redirectTo: "/blog/aparat-dentar-adulti-piatra-neamt", priority: 0.1, changefreq: "never", title: "Redirect", excludeFromSitemap: true },
   { path: "/blog/parodontoza", redirectTo: "/blog/parodontoza-tratament", priority: 0.1, changefreq: "never", title: "Redirect", excludeFromSitemap: true },

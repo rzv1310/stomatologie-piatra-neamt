@@ -74,7 +74,7 @@ const NotFound = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" data-page="not-found">
       <Helmet>
         <title>Pagină Negăsită (404) | Stomatologie MedStom Piatra Neamț</title>
         <meta name="description" content="Pagina căutată nu a fost găsită. Descoperă serviciile noastre stomatologice în Piatra Neamț sau contactează-ne pentru programări." />
