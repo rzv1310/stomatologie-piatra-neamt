@@ -27,7 +27,7 @@ const AlbireDentara = () => {
   }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
-    canonical: '/blog/albire-dentara',
+    canonical: '/blog/albire-dentara-piatra-neamt',
     article: {
       headline: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
       description: "Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
@@ -38,7 +38,7 @@ const AlbireDentara = () => {
   });
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
-    canonical: '/blog/albire-dentara',
+    canonical: '/blog/albire-dentara-piatra-neamt',
     faqs: faqs
   });
   return <>

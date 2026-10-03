@@ -37,7 +37,7 @@ const UrgenteDentare = () => {
 
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
-    canonical: '/blog/urgente-dentare',
+    canonical: '/blog/urgente-dentare-dinte-rupt',
     article: {
       headline: "Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic",
       description: "Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist.",
@@ -49,7 +49,7 @@ const UrgenteDentare = () => {
 
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
-    canonical: '/blog/urgente-dentare',
+    canonical: '/blog/urgente-dentare-dinte-rupt',
     faqs: faqs
   });
 

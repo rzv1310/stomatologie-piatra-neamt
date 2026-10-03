@@ -27,7 +27,7 @@ const AparatDentarAdulti = () => {
   }];
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
-    canonical: '/blog/aparat-dentar-adulti',
+    canonical: '/blog/aparat-dentar-adulti-piatra-neamt',
     article: {
       headline: "Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?",
       description: "Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine.",
@@ -38,7 +38,7 @@ const AparatDentarAdulti = () => {
   });
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
-    canonical: '/blog/aparat-dentar-adulti',
+    canonical: '/blog/aparat-dentar-adulti-piatra-neamt',
     faqs: faqs
   });
   return <>
