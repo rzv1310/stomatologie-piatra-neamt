@@ -116,7 +116,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description="Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. +40 333 630 005" path="/" />
+      <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description={`Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. ${BUSINESS.phone.display}`} path="/" />
       {/* FAQPage schema is in index.html */}
       <JsonLd data={{ ...homeFaqSchema, "@id": `${SITE_URL}/#faq` }} />
       <Navigation />

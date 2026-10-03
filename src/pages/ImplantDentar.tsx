@@ -306,7 +306,7 @@ const ImplantDentar = () => {
 
             <div className="text-center mt-8">
               <a href={BUSINESS.phone.href} className="text-accent hover:text-accent/90 text-xl font-semibold">
-                +40 333 630 005
+                {BUSINESS.phone.display}
               </a>
             </div>
           </div>
