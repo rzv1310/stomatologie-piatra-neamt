@@ -105,7 +105,8 @@ const TratamentCarii = () => {
     medicalProcedure: {
       name: 'Tratament Carii Dentare',
       description: 'Tratamentul profesional al cariilor dentare pentru un zâmbet sănătos. Obturații estetice din compozit de ultimă generație.',
-      procedureType: 'Dental Cavity Treatment'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Dental Cavity Treatment'
     }
   });
 
@@ -119,7 +120,7 @@ const TratamentCarii = () => {
     serviceName: "Tratament Carii Dentare",
     serviceDescription: "Tratament carii dentare modern în Piatra Neamț. Obturații estetice din compozit, nedureros. Salvăm dinții afectați de carii.",
     path: "/servicii/tratament-carii",
-    medicalSpecialty: "Stomatologie Terapeutică"
+    specialties: ["Dentistry"]
   });
 
   return (

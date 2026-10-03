@@ -100,7 +100,8 @@ const ImplantDentar = () => {
     medicalProcedure: {
       name: "Implant Dentar",
       description: "Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6.",
-      procedureType: "Dental Implantology"
+      kind: 'SurgicalProcedure',
+      alternateName: "Dental Implantology"
     }
   });
 
@@ -114,7 +115,7 @@ const ImplantDentar = () => {
     serviceName: "Implant Dentar",
     serviceDescription: "Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6.",
     path: "/servicii/implant-dentar",
-    medicalSpecialty: "Implantologie Dentară"
+    specialties: ["Dentistry", "Surgical"]
   });
 
   return (

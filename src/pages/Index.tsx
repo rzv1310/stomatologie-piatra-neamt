@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
-import { useAggregateRatingSchema } from "@/hooks/use-aggregate-rating-schema";
 import { recentArticles } from "@/config/related-content";
 import { faqCategories, faqDataForSEO } from "@/config/faq-data";
 import teamHero from "@/assets/team-echipa-medstom.png?w=700&format=webp";
@@ -34,22 +33,6 @@ const Index = () => {
   const [slideCount, setSlideCount] = useState(0);
 
 
-  const AggregateRatingSchema = useAggregateRatingSchema({
-    ratingValue: "5.0",
-    reviewCount: "10",
-    reviews: [
-      {
-        author: "Nicolae",
-        reviewBody: "Serioși si profi, lucrări f bune, personal drăguț. Am găsit în sfârşit un cabinet unde ai medici pentru toate etapele, de la anestezie până la implant dentar. RECOMAND!!!!!!",
-        ratingValue: 5
-      },
-      {
-        author: "Irina",
-        reviewBody: "Servicii TOP ca în București, la preturi mai mici ca în Iași! NU SIMȚI DUREREA. Am avut 3 săptămâni, aproape zilnic, lucrări la toate cariile! Recomand cu încredere!!!",
-        ratingValue: 5
-      }
-    ]
-  });
 
 
   useEffect(() => {
@@ -134,7 +117,6 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description="Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. +40 333 630 005" path="/" />
       {/* FAQPage schema is in index.html */}
-      {AggregateRatingSchema}
       <JsonLd data={{ ...homeFaqSchema, "@id": `${SITE_URL}/#faq` }} />
       <Navigation />
 

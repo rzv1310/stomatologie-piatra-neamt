@@ -140,7 +140,8 @@ const Endodontie = () => {
     medicalProcedure: {
       name: 'Endodonție și Tratament de Canal',
       description: 'Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.',
-      procedureType: 'Endodontics'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Endodontics'
     }
   });
 
@@ -154,7 +155,7 @@ const Endodontie = () => {
     serviceName: "Endodonție și Tratament de Canal",
     serviceDescription: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație.",
     path: "/servicii/endodontie-piatra-neamt",
-    medicalSpecialty: "Endodonție"
+    specialties: ["Dentistry"]
   });
 
   const doctorsSchema = {

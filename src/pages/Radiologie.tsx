@@ -133,7 +133,8 @@ const Radiologie = () => {
     medicalProcedure: {
       name: 'Radiologie Dentară și Imagistică 3D',
       description: 'CBCT Vatech Green X16 pentru diagnostic de precizie și planificare digitală. Vedem exact ce nu se poate vedea cu ochiul liber.',
-      procedureType: 'Dental Radiology'
+      kind: 'DiagnosticProcedure',
+      alternateName: 'Dental Radiology'
     }
   });
 
@@ -147,7 +148,7 @@ const Radiologie = () => {
     serviceName: "Radiologie Dentară și Imagistică 3D",
     serviceDescription: "Radiologie dentară digitală în Piatra Neamț. CBCT 3D, panoramică digitală, teleradiografie. Echipament Green X de ultimă generație.",
     path: "/servicii/radiologie-dentara-piatra-neamt",
-    medicalSpecialty: "Radiologie Dentară"
+    specialties: ["Dentistry", "Radiography"]
   });
 
   return (
