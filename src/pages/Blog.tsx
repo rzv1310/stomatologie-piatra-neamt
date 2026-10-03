@@ -1,6 +1,7 @@
 import { articleDisplayDate } from "@/config/blog-articles";
 import JsonLd from "@/components/JsonLd";
-import blogListSchema from "@/data/schema/blog-list.json";
+import { getArticleMeta } from "@/config/blog-articles";
+import { ORG_ID } from "@/config/schema-ids";
 import { SITE_URL } from "@/config/routes";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -99,7 +100,25 @@ const Blog = () => {
   return (
     <>
       {DynamicSEO}
-      <JsonLd data={{ ...blogListSchema, "@id": `${SITE_URL}/blog#articles` }} />
+      <JsonLd data={{
+        "@type": "ItemList",
+        "@id": `${SITE_URL}/blog#articles`,
+        "name": "Blog Stomatologie MedStom Piatra Neamț",
+        "itemListElement": articles.map((a, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "item": {
+            "@type": "BlogPosting",
+            "@id": `${SITE_URL}/blog/${a.slug}#article`,
+            "headline": a.title,
+            "description": a.excerpt,
+            "url": `${SITE_URL}/blog/${a.slug}`,
+            "datePublished": getArticleMeta(a.slug).datePublished,
+            "dateModified": getArticleMeta(a.slug).dateModified,
+            "author": { "@id": ORG_ID }
+          }
+        }))
+      }} />
 
       <div className="min-h-screen bg-background">
         <Navigation />

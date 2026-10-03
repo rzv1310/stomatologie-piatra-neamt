@@ -355,7 +355,7 @@ export const recentArticles = [
     title: "Albire dentară profesională în Piatra Neamț | Opțiuni, prețuri și rezultate",
     link: "/blog/albire-dentara-piatra-neamt",
     excerpt: "Descoperă metodele de albire dentară disponibile, prețurile orientative și rezultatele pentru un zâmbet strălucitor.",
-    date: articleDisplayDate("prima-vizita-copil-dentist"),
+    date: articleDisplayDate("albire-dentara-piatra-neamt"),
     anchorText: "Citește despre albirea dentară pentru un zâmbet strălucitor"
   },
   {
