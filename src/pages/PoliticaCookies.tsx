@@ -103,6 +103,9 @@ const PoliticaCookies = () => {
                     <p className="text-muted-foreground leading-relaxed">
                       Aceste cookie-uri sunt esențiale pentru funcționarea corectă a site-ului și nu pot fi dezactivate. Ele permit navigarea pe site și accesul la funcționalități de bază.
                     </p>
+                    <p className="text-muted-foreground leading-relaxed mt-3">
+                      Tot în această categorie intră harta interactivă din pagina principală, care încarcă imagini de hartă de la OpenStreetMap pentru a afișa locația clinicii și punctele de interes din apropiere. OpenStreetMap nu plasează cookie-uri de urmărire prin aceste imagini.
+                    </p>
                   </CardContent>
                 </Card>
 

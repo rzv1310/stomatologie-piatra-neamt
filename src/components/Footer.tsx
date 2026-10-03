@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock, Facebook, Mail } from "lucide-react";
+import { openConsentSettings } from "@/lib/consent";
 
 const Footer = () => {
   return (
