@@ -9,6 +9,7 @@ import CookieConsent from "@/components/CookieConsent";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
 import { routes } from "./config/routes";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <ErrorBoundary>
         <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
           <Routes>
             {routes.map((route) => (
@@ -30,6 +32,7 @@ const App = () => (
             ))}
           </Routes>
         </Suspense>
+        </ErrorBoundary>
         <CookieConsent />
         <WhatsAppButton />
         <AccessibilityWidget />

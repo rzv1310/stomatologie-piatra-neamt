@@ -9,7 +9,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Pagination,
