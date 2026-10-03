@@ -86,11 +86,6 @@ const NotFound = () => {
         <meta property="og:description" content="Pagina căutată nu a fost găsită. Descoperă serviciile noastre stomatologice în Piatra Neamț." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}${currentPath}`} />
-        
-        {/* Schema.org BreadcrumbList */}
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
       </Helmet>
 
       <Navigation />

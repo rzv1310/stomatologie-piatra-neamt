@@ -1,3 +1,4 @@
+import { ORG_ID } from "@/config/schema-ids";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -162,39 +163,31 @@ const Endodontie = () => {
     "itemListElement": [
       {
         "@type": "Person",
+        "@id": "https://stomatologiepiatraneamt.ro/despre#dolganiuc-inesa",
         "name": "Dr. Dolganiuc Inesa",
         "jobTitle": "Medic stomatolog cu competențe în implantologie și protetică dentară",
-        "worksFor": {
-          "@type": "Dentist",
-          "name": "Stomatologie MedStom Piatra Neamț"
-        }
+        "worksFor": { "@id": ORG_ID }
       },
       {
         "@type": "Person",
+        "@id": "https://stomatologiepiatraneamt.ro/despre#iacomi-adelina",
         "name": "Dr. Iacomi Adelina",
         "jobTitle": "Medic stomatolog specializat în implantologie și parodontologie",
-        "worksFor": {
-          "@type": "Dentist",
-          "name": "Stomatologie MedStom Piatra Neamț"
-        }
+        "worksFor": { "@id": ORG_ID }
       },
       {
         "@type": "Person",
+        "@id": "https://stomatologiepiatraneamt.ro/despre#bratu-diana-andreea",
         "name": "Dr. Bratu Diana Andreea",
         "jobTitle": "Medic stomatolog specializat în endodonție",
-        "worksFor": {
-          "@type": "Dentist",
-          "name": "Stomatologie MedStom Piatra Neamț"
-        }
+        "worksFor": { "@id": ORG_ID }
       },
       {
         "@type": "Person",
+        "@id": "https://stomatologiepiatraneamt.ro/despre#bogulean-victoria",
         "name": "Dr. Bogulean Victoria",
         "jobTitle": "Medic stomatolog specializat în ortodonție",
-        "worksFor": {
-          "@type": "Dentist",
-          "name": "Stomatologie MedStom Piatra Neamț"
-        }
+        "worksFor": { "@id": ORG_ID }
       }
     ]
   };
