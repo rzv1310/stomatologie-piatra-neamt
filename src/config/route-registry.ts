@@ -2,7 +2,8 @@
 // so the router, the Vite sitemap plugin and Node scripts all read the same list.
 import { BLOG_ARTICLES } from "./blog-articles";
 
-export const SITE_URL = "https://stomatologiepiatraneamt.ro";
+import { BUSINESS } from "./business";
+export const SITE_URL = BUSINESS.url;
 
 export type ChangeFreq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 export type PageKey =
