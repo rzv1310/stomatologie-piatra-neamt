@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -44,10 +44,7 @@ const AlbireDentara = () => {
   return <>
       {ArticleSchema}
       {FAQSchema}
-      <Helmet>
-        <title>Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț</title>
-        <meta name="description" content="Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." />
-      </Helmet>
+      <PageSEO title="Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț" description="Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." path="/blog/albire-dentara-piatra-neamt" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
 
       <div className="min-h-screen bg-background">
         <Navigation />

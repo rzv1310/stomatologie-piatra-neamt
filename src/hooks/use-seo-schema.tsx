@@ -146,7 +146,6 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
 
   return (
     <Helmet>
-      <link rel="canonical" href={fullUrl} />
       {schema && (
         <script type="application/ld+json">
           {JSON.stringify(schema)}

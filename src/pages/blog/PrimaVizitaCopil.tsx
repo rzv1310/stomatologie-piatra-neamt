@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -42,10 +42,7 @@ const PrimaVizitaCopil = () => {
   return <>
       {ArticleSchema}
       {FAQSchema}
-      <Helmet>
-        <title>Cum Pregătești Copilul pentru Prima Vizită la Dentist | Ghid pentru Părinți</title>
-        <meta name="description" content="Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului." />
-      </Helmet>
+      <PageSEO title="Cum Pregătești Copilul pentru Prima Vizită la Dentist | Ghid pentru Părinți" description="Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului." path="/blog/prima-vizita-copil-dentist" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
 
       <div className="min-h-screen bg-background">
         <Navigation />

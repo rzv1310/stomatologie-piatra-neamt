@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -57,10 +57,7 @@ const UrgenteDentare = () => {
     <>
       {ArticleSchema}
       {FAQSchema}
-      <Helmet>
-        <title>Urgențe Dentare - Dinte Rupt, Plombă Căzută | Prim Ajutor Dentar</title>
-        <meta name="description" content="Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist." />
-      </Helmet>
+      <PageSEO title="Urgențe Dentare - Dinte Rupt, Plombă Căzută | Prim Ajutor Dentar" description="Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist." path="/blog/urgente-dentare-dinte-rupt" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
 
       <div className="min-h-screen bg-background">
         <Navigation />

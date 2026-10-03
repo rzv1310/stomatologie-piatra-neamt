@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -44,10 +44,7 @@ const AparatDentarAdulti = () => {
   return <>
       {ArticleSchema}
       {FAQSchema}
-      <Helmet>
-        <title>Aparat Dentar pentru Adulți Piatra Neamț | Metalic, Ceramic sau Invisalign</title>
-        <meta name="description" content="Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine." />
-      </Helmet>
+      <PageSEO title="Aparat Dentar pentru Adulți Piatra Neamț | Metalic, Ceramic sau Invisalign" description="Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine." path="/blog/aparat-dentar-adulti-piatra-neamt" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
 
       <div className="min-h-screen bg-background">
         <Navigation />
