@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy, createElement } from "react";
 import Redirect from "@/components/Redirect";
 
 // Route configuration with SEO metadata
