@@ -134,7 +134,8 @@ const Chirurgie = () => {
     medicalProcedure: {
       name: 'Chirurgie Orală',
       description: 'Intervenții chirurgicale dentare cu tehnologie modernă și anestezie eficientă. De la extracții simple până la chirurgie complexă - în mâini sigure.',
-      procedureType: 'Oral Surgery'
+      kind: 'SurgicalProcedure',
+      alternateName: 'Oral Surgery'
     }
   });
   const FAQSchema = useSEOSchema({
@@ -146,7 +147,7 @@ const Chirurgie = () => {
     serviceName: "Chirurgie Orală",
     serviceDescription: "Chirurgie orală specializată în Piatra Neamț. Extracții molari de minte, adiție osoasă, sinus lift. Proceduri nedureroase.",
     path: "/servicii/chirurgie-orala",
-    medicalSpecialty: "Chirurgie Orală și Maxilo-Facială"
+    specialties: ["Dentistry", "Surgical"]
   });
   return <div className="min-h-screen flex flex-col">
       {DynamicSEO}

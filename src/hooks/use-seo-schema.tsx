@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { SITE_URL } from "@/config/routes";
 import { ReactNode } from "react";
-import { ORG_ID, WEBSITE_ID } from "@/config/schema-ids";
+import { ORG_ID, WEBSITE_ID, type ProcedureKind } from "@/config/schema-ids";
 
 interface FAQItem {
   question: string;
@@ -9,23 +9,18 @@ interface FAQItem {
 }
 
 // Helper function to extract text from JSX for SEO schema
-const extractTextFromNode = (node: string | ReactNode): string => {
+const extractTextFromNode = (node: ReactNode): string => {
+  if (node === null || node === undefined || typeof node === 'boolean') return '';
   if (typeof node === 'string') return node;
-  if (typeof node === 'number') return String(node);
-  if (!node) return '';
-  
-  // For React elements, we extract the text content
+  if (typeof node === 'number' || typeof node === 'bigint') return String(node);
+  if (Array.isArray(node)) return node.map(extractTextFromNode).join(' ');
   if (typeof node === 'object' && 'props' in node) {
-    const { children } = node.props || {};
-    if (!children) return '';
-    if (Array.isArray(children)) {
-      return children.map(extractTextFromNode).join(' ');
-    }
-    return extractTextFromNode(children);
+    return extractTextFromNode((node.props as { children?: ReactNode } | null)?.children);
   }
-  
   return '';
 };
+
+const toPlainText = (node: ReactNode) => extractTextFromNode(node).replace(/\s+/g, ' ').replace(/\s+([.,;:!?])/g, '$1').trim();
 
 interface SEOSchemaProps {
   type: 'FAQPage' | 'BlogPosting' | 'MedicalProcedure' | 'WebPage';
@@ -41,7 +36,8 @@ interface SEOSchemaProps {
   medicalProcedure?: {
     name: string;
     description: string;
-    procedureType?: string;
+    kind: ProcedureKind;
+    alternateName?: string;
   };
 }
 
@@ -61,7 +57,7 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
         "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": extractTextFromNode(faq.answer)
+          "text": toPlainText(faq.answer)
         }
       }))
     };
@@ -93,13 +89,13 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
 
     return {
       "@context": "https://schema.org",
-      "@type": "MedicalProcedure",
+      "@type": medicalProcedure.kind,
       "@id": `${fullUrl}#procedure`,
       "url": fullUrl,
       "provider": { "@id": ORG_ID },
       "name": medicalProcedure.name,
       "description": medicalProcedure.description,
-      "procedureType": medicalProcedure.procedureType || "Dental",
+      ...(medicalProcedure.alternateName && { "alternateName": medicalProcedure.alternateName }),
       "bodyLocation": "Mouth"
     };
   };

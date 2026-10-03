@@ -191,7 +191,8 @@ const Urgente = () => {
     medicalProcedure: {
       name: 'Urgențe Stomatologice',
       description: 'Durerea de dinți nu așteaptă. Nici noi. Te primim rapid pentru urgențe stomatologice - dureri acute, traumatisme, infecții, abcese.',
-      procedureType: 'Dental Emergency'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Dental Emergency'
     }
   });
 
@@ -205,7 +206,7 @@ const Urgente = () => {
     serviceName: "Urgențe Stomatologice",
     serviceDescription: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe.",
     path: "/servicii/urgente",
-    medicalSpecialty: "Urgențe Dentare"
+    specialties: ["Dentistry", "Emergency"]
   });
 
   return (

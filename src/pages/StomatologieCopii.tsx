@@ -191,7 +191,8 @@ const StomatologieCopii = () => {
     medicalProcedure: {
       name: 'Stomatologie pentru Copii (Pedodonție)',
       description: 'Pedodonție cu dragoste și răbdare. Transformăm vizita la dentist într-o aventură plăcută pentru cei mici. Prima vizită fără frică, zâmbete sănătoase pe viață.',
-      procedureType: 'Pediatric Dentistry'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Pediatric Dentistry'
     }
   });
 
@@ -205,7 +206,7 @@ const StomatologieCopii = () => {
     serviceName: "Stomatologie pentru Copii (Pedodonție)",
     serviceDescription: "Pedodonție specializată în Piatra Neamț. Cabinet stomatologic pentru copii, tratamente nedureroase, preventie dentară pediatrică.",
     path: "/servicii/stomatologie-copii-piatra-neamt",
-    medicalSpecialty: "Pedodonție"
+    specialties: ["Dentistry", "Pediatric"]
   });
 
   return (

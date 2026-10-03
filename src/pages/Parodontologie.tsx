@@ -151,7 +151,8 @@ const Parodontologie = () => {
     medicalProcedure: {
       name: 'Parodontologie',
       description: 'Tratament specializat pentru sănătatea gingiilor și a osului care susține dinții. Salvăm dinții amenințați de boala parodontală prin tratamente moderne și eficiente.',
-      procedureType: 'Periodontal Treatment'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Periodontal Treatment'
     }
   });
 
@@ -165,7 +166,7 @@ const Parodontologie = () => {
     serviceName: "Parodontologie",
     serviceDescription: "Tratament parodontal specializat în Piatra Neamț. Chiuretaj, detartraj subgingival, regenerare osoasă. Prevenim pierderea dinților.",
     path: "/servicii/parodontologie-piatra-neamt",
-    medicalSpecialty: "Parodontologie"
+    specialties: ["Dentistry"]
   });
 
   return (

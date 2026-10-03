@@ -142,7 +142,8 @@ const Protetica = () => {
     medicalProcedure: {
       name: 'Protetică Dentară',
       description: 'Înlocuim dinții lipsă sau deteriorați cu lucrări protetice de cea mai înaltă calitate. De la coroane individuale până la proteze complete - soluții durabile și estetice.',
-      procedureType: 'Dental Prosthetics'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Dental Prosthetics'
     }
   });
 
@@ -156,7 +157,7 @@ const Protetica = () => {
     serviceName: "Protetică Dentară",
     serviceDescription: "Lucrări protetice de calitate în Piatra Neamț. Coroane zirconiu, EMAX, proteze dentare, lucrări pe implanturi. Laborator propriu.",
     path: "/servicii/protetica-piatra-neamt",
-    medicalSpecialty: "Protetică Dentară"
+    specialties: ["Dentistry"]
   });
 
   return (

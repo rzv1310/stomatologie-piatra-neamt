@@ -1,3 +1,4 @@
+import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -9,6 +10,8 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+const ARTICLE = getArticleMeta("prima-vizita-copil-dentist");
+
 const PrimaVizitaCopil = () => {
   const faqs = [{
     question: "La ce vârstă ar trebui să duc copilul pentru prima dată la dentist?",
@@ -30,8 +33,8 @@ const PrimaVizitaCopil = () => {
       headline: "Cum pregătești copilul pentru prima vizită la dentist",
       description: "Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului.",
       image: "https://stomatologiepiatraneamt.ro/social-image.png",
-      datePublished: "2025-01-20",
-      dateModified: "2025-01-20"
+      datePublished: ARTICLE.datePublished,
+      dateModified: ARTICLE.dateModified
     }
   });
   const FAQSchema = useSEOSchema({
@@ -42,7 +45,7 @@ const PrimaVizitaCopil = () => {
   return <>
       {ArticleSchema}
       {FAQSchema}
-      <PageSEO title="Cum Pregătești Copilul pentru Prima Vizită la Dentist | Ghid pentru Părinți" description="Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului." path="/blog/prima-vizita-copil-dentist" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
+      <PageSEO title="Cum Pregătești Copilul pentru Prima Vizită la Dentist | Ghid pentru Părinți" description="Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului." path="/blog/prima-vizita-copil-dentist" type="article" publishedTime={ARTICLE.datePublished} modifiedTime={ARTICLE.dateModified} />
 
       <div className="min-h-screen bg-background">
         <Navigation />

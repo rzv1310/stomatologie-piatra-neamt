@@ -1,3 +1,4 @@
+import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -11,6 +12,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
+const ARTICLE = getArticleMeta("albire-dentara-piatra-neamt");
+
 const AlbireDentara = () => {
   const faqs = [{
     question: "Cât durează efectul albirii dentare?",
@@ -32,8 +35,8 @@ const AlbireDentara = () => {
       headline: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
       description: "Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
       image: "https://stomatologiepiatraneamt.ro/social-image.png",
-      datePublished: "2025-01-20",
-      dateModified: "2025-01-20"
+      datePublished: ARTICLE.datePublished,
+      dateModified: ARTICLE.dateModified
     }
   });
   const FAQSchema = useSEOSchema({
@@ -44,7 +47,7 @@ const AlbireDentara = () => {
   return <>
       {ArticleSchema}
       {FAQSchema}
-      <PageSEO title="Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț" description="Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." path="/blog/albire-dentara-piatra-neamt" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
+      <PageSEO title="Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț" description="Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor." path="/blog/albire-dentara-piatra-neamt" type="article" publishedTime={ARTICLE.datePublished} modifiedTime={ARTICLE.dateModified} />
 
       <div className="min-h-screen bg-background">
         <Navigation />

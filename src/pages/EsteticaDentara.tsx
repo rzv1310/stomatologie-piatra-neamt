@@ -129,7 +129,8 @@ const EsteticaDentara = () => {
     medicalProcedure: {
       name: 'Estetică Dentară',
       description: 'Transformă-ți zâmbetul cu servicii de estetică dentară premium. De la albirea dinților până la fațete ceramice - realizăm zâmbetul pe care ți l-ai dorit mereu.',
-      procedureType: 'Cosmetic Dental Procedure'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Cosmetic Dental Procedure'
     }
   });
 
@@ -143,7 +144,7 @@ const EsteticaDentara = () => {
     serviceName: "Estetică Dentară",
     serviceDescription: "Transformă-ți zâmbetul cu servicii de estetică dentară premium în Piatra Neamț. Fațete ceramice EMAX, albire dentară profesională.",
     path: "/servicii/estetica-dentara",
-    medicalSpecialty: "Estetică Dentară"
+    specialties: ["Dentistry"]
   });
 
   return (

@@ -108,7 +108,8 @@ const Profilaxie = () => {
     medicalProcedure: {
       name: 'Profilaxie și Igienizare Dentară',
       description: 'Prevenția este cheia unui zâmbet sănătos. Igienizarea profesională regulată te ajută să eviți problemele dentare și să păstrezi dinții sănătoși pe termen lung.',
-      procedureType: 'Dental Prophylaxis'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Dental Prophylaxis'
     }
   });
 
@@ -122,7 +123,7 @@ const Profilaxie = () => {
     serviceName: "Profilaxie și Igienizare Dentară",
     serviceDescription: "Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși.",
     path: "/servicii/profilaxie",
-    medicalSpecialty: "Stomatologie Preventivă"
+    specialties: ["Dentistry"]
   });
 
   return (

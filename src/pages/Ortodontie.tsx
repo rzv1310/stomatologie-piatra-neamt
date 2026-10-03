@@ -186,7 +186,8 @@ const Ortodontie = () => {
     medicalProcedure: {
       name: 'Ortodonție',
       description: 'Aparate dentare fixe, estetice și alignere transparente pentru un zâmbet perfect aliniat. Ortodonție pentru copii, adolescenți și adulți.',
-      procedureType: 'Orthodontic Treatment'
+      kind: 'TherapeuticProcedure',
+      alternateName: 'Orthodontic Treatment'
     }
   });
 
@@ -200,7 +201,7 @@ const Ortodontie = () => {
     serviceName: "Ortodonție",
     serviceDescription: "Aparate dentare fixe, estetice și alignere transparente pentru copii, adolescenți și adulți în Piatra Neamț.",
     path: "/servicii/ortodontie-piatra-neamt",
-    medicalSpecialty: "Ortodonție"
+    specialties: ["Dentistry"]
   });
 
   return (

@@ -1,19 +1,19 @@
 import { Helmet } from "react-helmet";
 import { SITE_URL } from "@/config/routes";
-import { ORG_ID, WEBSITE_ID } from "@/config/schema-ids";
+import { ORG_ID, WEBSITE_ID, type MedicalSpecialtyValue } from "@/config/schema-ids";
 
 interface LocalBusinessSchemaProps {
   serviceName: string;
   serviceDescription: string;
   path: string;
-  medicalSpecialty?: string;
+  specialties?: MedicalSpecialtyValue[];
 }
 
 export const useLocalBusinessSchema = ({
   serviceName,
   serviceDescription,
   path,
-  medicalSpecialty
+  specialties = ["Dentistry"]
 }: LocalBusinessSchemaProps) => {
   const fullUrl = `${SITE_URL}${path}`;
 
@@ -27,7 +27,7 @@ export const useLocalBusinessSchema = ({
     "description": serviceDescription,
     "isPartOf": { "@id": WEBSITE_ID },
     "about": { "@id": ORG_ID },
-    ...(medicalSpecialty && { "specialty": { "@type": "MedicalSpecialty", "name": medicalSpecialty } }),
+    "specialty": specialties.map((s) => `https://schema.org/${s}`),
     "mainEntity": { "@id": `${fullUrl}#procedure` }
   };
 
