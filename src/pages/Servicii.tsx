@@ -1,3 +1,4 @@
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -213,6 +214,7 @@ const Servicii = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <PageSEO title="Servicii Stomatologice Piatra Neamț | Stomatologie MedStom" description="Toate serviciile stomatologice MedStom Piatra Neamț: implant dentar, ortodonție, estetică dentară, endodonție la microscop, protetică, chirurgie orală, stomatologie copii și urgențe." path="/servicii" />
       {FAQSchema}
       <Navigation />
 
