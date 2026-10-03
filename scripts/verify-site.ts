@@ -98,7 +98,7 @@ async function checkNotFound(page: Page) {
 export async function main(): Promise<number> {
   console.log(`Verifying ${BASE_URL}\n`);
   await checkFallback();
-  const browser = await chromium.launch();
+  const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
   const context = await browser.newContext();
   const page = await context.newPage();
   try {
