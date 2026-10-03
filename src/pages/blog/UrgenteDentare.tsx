@@ -35,7 +35,7 @@ const UrgenteDentare = () => {
     },
     {
       question: "Ce fac dacă am o urgență dentară în weekend?",
-      answer: `Contactează serviciul nostru de urgențe dentare disponibil non-stop la <a href='${BUSINESS.phone.href}' className='text-accent hover:underline font-semibold'>${BUSINESS.phone.display}</a>. Avem program special pentru urgențe și în weekend pentru situații care nu pot aștepta.`
+      answer: `Sună-ne la <a href='${BUSINESS.phone.href}' className='text-accent hover:underline font-semibold'>${BUSINESS.phone.display}</a> și te primim cât mai repede în programul de lucru (${BUSINESS.hours.label}). În weekend clinica este închisă; dacă situația nu poate aștepta până luni, adresează-te unei unități de urgență.`
     }
   ];
 
