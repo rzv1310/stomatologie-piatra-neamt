@@ -6,12 +6,13 @@
  * - Redirect chains
  * - Response time issues
  * 
- * Run: npx ts-node scripts/check-sitemap-urls.ts
+ * Run: npm run check:sitemap (after npm run build)
  * Or in browser console for quick check
  */
 
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { SITE_URL, sitemapRoutes } from '../src/config/route-registry';
 
 interface UrlCheckResult {
   url: string;
@@ -21,13 +22,12 @@ interface UrlCheckResult {
   error?: string;
 }
 
-const SITE_URL = "https://stomatologiepiatraneamt.ro";
 const TIMEOUT_MS = 10000;
 
 // Parse sitemap.xml and extract URLs
 function extractUrlsFromSitemap(): string[] {
   try {
-    const sitemapPath = join(process.cwd(), 'public', 'sitemap.xml');
+    const sitemapPath = join(process.cwd(), 'dist', 'sitemap.xml');
     const sitemapContent = readFileSync(sitemapPath, 'utf-8');
     
     const urlMatches = sitemapContent.match(/<loc>([^<]+)<\/loc>/g);
@@ -154,35 +154,7 @@ async function verifySitemapUrls(): Promise<void> {
 
 // Browser-compatible version for dev console
 export const browserCheckUrls = async (baseUrl: string = SITE_URL): Promise<void> => {
-  const routes = [
-    '/',
-    '/servicii',
-    '/despre',
-    '/contact',
-    '/tarife',
-    '/blog',
-    '/servicii/implant-dentar',
-    '/servicii/profilaxie',
-    '/servicii/estetica-dentara',
-    '/servicii/tratament-carii',
-    '/servicii/endodontie-piatra-neamt',
-    '/servicii/protetica-piatra-neamt',
-    '/servicii/ortodontie-piatra-neamt',
-    '/servicii/stomatologie-copii-piatra-neamt',
-    '/servicii/urgente',
-    '/servicii/chirurgie-orala',
-    '/servicii/parodontologie-piatra-neamt',
-    '/servicii/radiologie-dentara-piatra-neamt',
-    '/blog/albire-dentara-piatra-neamt',
-    '/blog/aparat-dentar-adulti-piatra-neamt',
-    '/blog/prima-vizita-copil-dentist',
-    '/blog/maseaua-de-minte',
-    '/blog/urgente-dentare-dinte-rupt',
-    '/blog/parodontoza-tratament',
-    '/politica-confidentialitate',
-    '/termeni-conditii',
-    '/politica-cookies'
-  ];
+  const routes = sitemapRoutes().map((r) => r.path);
   
   console.log('🔍 Checking URLs...');
   
