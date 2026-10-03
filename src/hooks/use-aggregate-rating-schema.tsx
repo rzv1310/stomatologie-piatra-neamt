@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { SITE_URL } from "@/config/routes";
+import { ORG_ID } from "@/config/schema-ids";
 
 interface Review {
   author: string;
@@ -20,24 +20,9 @@ export const useAggregateRatingSchema = ({
 }: AggregateRatingSchemaProps) => {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Stomatologie MedStom Piatra Neamț",
-    "url": SITE_URL,
-    "image": "https://stomatologiepiatraneamt.ro/social-image.png",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://stomatologiepiatraneamt.ro/favicon.png",
-      "width": 512,
-      "height": 512
-    },
-    "telephone": "+40333630005",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Strada Ana Ipătescu 9",
-      "addressLocality": "Piatra Neamț",
-      "postalCode": "610120",
-      "addressCountry": "RO"
-    },
+    "@type": ["Dentist", "MedicalBusiness"],
+    // Same @id as the organization in index.html, so parsers merge the ratings into it.
+    "@id": ORG_ID,
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": ratingValue,

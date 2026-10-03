@@ -1,3 +1,6 @@
+import JsonLd from "@/components/JsonLd";
+import blogListSchema from "@/data/schema/blog-list.json";
+import { SITE_URL } from "@/config/routes";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -95,6 +98,7 @@ const Blog = () => {
   return (
     <>
       {DynamicSEO}
+      <JsonLd data={{ ...blogListSchema, "@id": `${SITE_URL}/blog#articles` }} />
 
       <div className="min-h-screen bg-background">
         <Navigation />

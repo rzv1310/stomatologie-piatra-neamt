@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { SITE_URL } from "@/config/routes";
 import { ReactNode } from "react";
+import { ORG_ID, WEBSITE_ID } from "@/config/schema-ids";
 
 interface FAQItem {
   question: string;
@@ -54,6 +55,7 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
     return {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": `${fullUrl}#faq`,
       "mainEntity": faqs.map(faq => ({
         "@type": "Question",
         "name": faq.question,
@@ -71,27 +73,14 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
     return {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
+      "@id": `${fullUrl}#article`,
       "headline": article.headline,
       "description": article.description,
       "image": article.image.startsWith('http') ? article.image : `${SITE_URL}${article.image}`,
       "datePublished": article.datePublished,
       "dateModified": article.dateModified || article.datePublished,
-      "author": {
-        "@type": "Organization",
-        "name": "Stomatologie MedStom Piatra Neamț",
-        "url": SITE_URL
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Stomatologie MedStom Piatra Neamț",
-        "url": SITE_URL,
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://stomatologiepiatraneamt.ro/favicon.png",
-          "width": 512,
-          "height": 512
-        }
-      },
+      "author": { "@id": ORG_ID },
+      "publisher": { "@id": ORG_ID },
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": fullUrl
@@ -105,11 +94,13 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
     return {
       "@context": "https://schema.org",
       "@type": "MedicalProcedure",
+      "@id": `${fullUrl}#procedure`,
+      "url": fullUrl,
+      "provider": { "@id": ORG_ID },
       "name": medicalProcedure.name,
       "description": medicalProcedure.description,
       "procedureType": medicalProcedure.procedureType || "Dental",
-      "bodyLocation": "Mouth",
-      "medicineSystem": "https://schema.org/TraditionalChinese"
+      "bodyLocation": "Mouth"
     };
   };
 
@@ -119,11 +110,9 @@ export const useSEOSchema = (props: SEOSchemaProps) => {
       "@type": "WebPage",
       "name": document.title,
       "url": fullUrl,
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "Stomatologie MedStom Piatra Neamț",
-        "url": SITE_URL
-      }
+      "@id": `${fullUrl}#webpage`,
+      "isPartOf": { "@id": WEBSITE_ID },
+      "about": { "@id": ORG_ID }
     };
   };
 

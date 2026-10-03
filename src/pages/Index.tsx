@@ -1,4 +1,7 @@
 import PageSEO from "@/components/PageSEO";
+import JsonLd from "@/components/JsonLd";
+import homeFaqSchema from "@/data/schema/home-faq.json";
+import { SITE_URL } from "@/config/routes";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -132,6 +135,7 @@ const Index = () => {
       <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description="Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. +40 333 630 005" path="/" />
       {/* FAQPage schema is in index.html */}
       {AggregateRatingSchema}
+      <JsonLd data={{ ...homeFaqSchema, "@id": `${SITE_URL}/#faq` }} />
       <Navigation />
 
       <main className="flex-1">
