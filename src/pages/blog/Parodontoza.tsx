@@ -37,7 +37,7 @@ const Parodontoza = () => {
 
   const ArticleSchema = useSEOSchema({
     type: 'BlogPosting',
-    canonical: '/blog/parodontoza',
+    canonical: '/blog/parodontoza-tratament',
     article: {
       headline: "Ai dinți care se mișcă? Cum recunoști și tratezi parodontoza, pas cu pas",
       description: "Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp.",
@@ -49,7 +49,7 @@ const Parodontoza = () => {
 
   const FAQSchema = useSEOSchema({
     type: 'FAQPage',
-    canonical: '/blog/parodontoza',
+    canonical: '/blog/parodontoza-tratament',
     faqs: faqs
   });
 
