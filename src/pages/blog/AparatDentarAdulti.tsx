@@ -34,7 +34,7 @@ const AparatDentarAdulti = () => {
     article: {
       headline: "Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?",
       description: "Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.png",
+      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }

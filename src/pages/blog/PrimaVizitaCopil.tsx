@@ -32,7 +32,7 @@ const PrimaVizitaCopil = () => {
     article: {
       headline: "Cum pregătești copilul pentru prima vizită la dentist",
       description: "Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.png",
+      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }

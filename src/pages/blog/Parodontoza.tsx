@@ -44,7 +44,7 @@ const Parodontoza = () => {
     article: {
       headline: "Ai dinți care se mișcă? Cum recunoști și tratezi parodontoza, pas cu pas",
       description: "Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.png",
+      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }

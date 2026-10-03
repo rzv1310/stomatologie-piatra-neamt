@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 
 const SITE_URL = "https://stomatologiepiatraneamt.ro";
-const DEFAULT_IMAGE = "https://stomatologiepiatraneamt.ro/social-image.png";
+const DEFAULT_IMAGE = "https://stomatologiepiatraneamt.ro/social-image.jpg";
 
 export interface DynamicSEOProps {
   title: string;
