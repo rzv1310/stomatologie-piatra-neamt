@@ -1,54 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { applyA11y, DEFAULT_A11Y, loadA11y, saveA11y, type A11yPrefs } from "@/lib/a11y-prefs";
 import { Accessibility, X, ZoomIn, ZoomOut, Eye, Type } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const AccessibilityWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [fontSize, setFontSize] = useState(100);
-  const [highContrast, setHighContrast] = useState(false);
-  const [largeText, setLargeText] = useState(false);
+  const [prefs, setPrefs] = useState<A11yPrefs>(loadA11y);
+  const { fontSize, highContrast, largeText } = prefs;
+
+  useEffect(() => {
+    applyA11y(prefs);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const update = (next: A11yPrefs) => {
+    setPrefs(next);
+    saveA11y(next);
+  };
 
   const increaseFontSize = () => {
-    if (fontSize < 150) {
-      const newSize = fontSize + 10;
-      setFontSize(newSize);
-      document.documentElement.style.fontSize = `${newSize}%`;
-    }
+    if (fontSize < 150) update({ ...prefs, fontSize: fontSize + 10 });
   };
-
   const decreaseFontSize = () => {
-    if (fontSize > 80) {
-      const newSize = fontSize - 10;
-      setFontSize(newSize);
-      document.documentElement.style.fontSize = `${newSize}%`;
-    }
+    if (fontSize > 80) update({ ...prefs, fontSize: fontSize - 10 });
   };
-
-  const toggleHighContrast = () => {
-    setHighContrast(!highContrast);
-    if (!highContrast) {
-      document.documentElement.classList.add("high-contrast");
-    } else {
-      document.documentElement.classList.remove("high-contrast");
-    }
-  };
-
-  const toggleLargeText = () => {
-    setLargeText(!largeText);
-    if (!largeText) {
-      document.documentElement.classList.add("large-text");
-    } else {
-      document.documentElement.classList.remove("large-text");
-    }
-  };
-
-  const resetAll = () => {
-    setFontSize(100);
-    setHighContrast(false);
-    setLargeText(false);
-    document.documentElement.style.fontSize = "100%";
-    document.documentElement.classList.remove("high-contrast", "large-text");
-  };
+  const toggleHighContrast = () => update({ ...prefs, highContrast: !highContrast });
+  const toggleLargeText = () => update({ ...prefs, largeText: !largeText });
+  const resetAll = () => update({ ...DEFAULT_A11Y });
 
   return (
     <div className="fixed bottom-6 left-6 z-50">
