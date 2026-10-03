@@ -27,3 +27,20 @@ jobs:
         run: bun run verify:images
       - name: No hardcoded clinic details
         run: bun run verify:business
+
+  site:
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.3
+      - run: bun install --frozen-lockfile
+      - run: bunx playwright install --with-deps chromium
+      - run: bun run build
+      - name: Browser checks (fallback, render, metadata, redirects, 404)
+        run: |
+          bunx vite preview --port 4173 &
+          for i in $(seq 1 30); do curl -sf -o /dev/null http://localhost:4173/ && break; sleep 1; done
+          BASE_URL=http://localhost:4173 bun run verify:site
