@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -57,10 +57,7 @@ const Parodontoza = () => {
     <>
       {ArticleSchema}
       {FAQSchema}
-      <Helmet>
-        <title>Parodontoză - Simptome, Tratament și Prevenție | Dinți Care Se Mișcă</title>
-        <meta name="description" content="Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp." />
-      </Helmet>
+      <PageSEO title="Parodontoză - Simptome, Tratament și Prevenție | Dinți Care Se Mișcă" description="Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp." path="/blog/parodontoza-tratament" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
 
       <div className="min-h-screen bg-background">
         <Navigation />

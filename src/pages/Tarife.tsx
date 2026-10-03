@@ -1,3 +1,4 @@
+import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -122,6 +123,7 @@ const Tarife = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <PageSEO title="Prețuri Stomatologie MedStom Piatra Neamț | Tarife Tratamente Dentare" description="Lista de prețuri pentru tratamentele dentare la Stomatologie MedStom Piatra Neamț: consultații, tratament carii, endodonție, implanturi, protetică, ortodonție și profilaxie." path="/tarife" />
       <Navigation />
       <Breadcrumbs
         items={[
