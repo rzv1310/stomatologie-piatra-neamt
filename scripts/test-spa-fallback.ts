@@ -4,8 +4,10 @@
  * Tests that all routes properly handle browser refresh (SPA fallback)
  * by checking that each route returns HTML with the root element.
  * 
- * Run: npx ts-node scripts/test-spa-fallback.ts
+ * Run: npm run test:spa
  */
+
+import { ROUTE_REGISTRY } from "../src/config/route-registry";
 
 interface RouteTestResult {
   route: string;
@@ -20,46 +22,9 @@ const TIMEOUT_MS = 15000;
 
 // All routes to test
 const ALL_ROUTES = [
-  // Homepage
-  '/',
-  
-  // Main pages
-  '/servicii',
-  '/despre',
-  '/contact',
-  '/tarife',
-  '/blog',
-  
-  // Service pages
-  '/servicii/implant-dentar',
-  '/servicii/profilaxie',
-  '/servicii/estetica-dentara',
-  '/servicii/tratament-carii',
-  '/servicii/endodontie-piatra-neamt',
-  '/servicii/protetica-piatra-neamt',
-  '/servicii/ortodontie-piatra-neamt',
-  '/servicii/stomatologie-copii-piatra-neamt',
-  '/servicii/urgente',
-  '/servicii/chirurgie-orala',
-  '/servicii/parodontologie-piatra-neamt',
-  '/servicii/radiologie-dentara-piatra-neamt',
-  '/servicii/stomatologie-generala',
-  
-  // Blog pages
-  '/blog/albire-dentara-piatra-neamt',
-  '/blog/aparat-dentar-adulti-piatra-neamt',
-  '/blog/prima-vizita-copil-dentist',
-  '/blog/maseaua-de-minte',
-  '/blog/urgente-dentare-dinte-rupt',
-  '/blog/parodontoza-tratament',
-  
-  // Legal pages
-  '/politica-confidentialitate',
-  '/termeni-conditii',
-  '/politica-cookies',
-  
+  ...ROUTE_REGISTRY.filter((r) => r.path !== "*").map((r) => r.path),
   // 404 test
-  '/pagina-care-nu-exista-test-404'
+  "/pagina-care-nu-exista-test-404",
 ];
 
 async function testRoute(route: string, baseUrl: string): Promise<RouteTestResult> {
