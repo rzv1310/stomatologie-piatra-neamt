@@ -173,6 +173,40 @@ export const routes: RouteConfig[] = [
     title: "Radiologie"
   },
 
+  // Legacy blog URL redirects (301-equivalent, client-side)
+  {
+    path: "/blog/albire-dentara",
+    component: () => <Redirect to="/blog/albire-dentara-piatra-neamt" />,
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+  {
+    path: "/blog/aparat-dentar-adulti",
+    component: () => <Redirect to="/blog/aparat-dentar-adulti-piatra-neamt" />,
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+  {
+    path: "/blog/parodontoza",
+    component: () => <Redirect to="/blog/parodontoza-tratament" />,
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+  {
+    path: "/blog/urgente-dentare",
+    component: () => <Redirect to="/blog/urgente-dentare-dinte-rupt" />,
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+
   // Blog posts
   {
     path: "/blog/albire-dentara-piatra-neamt",
