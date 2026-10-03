@@ -6,11 +6,7 @@
 
 Stomatologie MedStom Piatra Neamț este o clinică stomatologică din Piatra Neamț, județul Neamț, România. Oferim servicii stomatologice de înaltă calitate într-un mediu modern și primitor.
 
-**Locație:** Strada Ana Ipătescu 9, Piatra Neamț 610120, Neamț, România
-**Telefon:** 0333 630 005
-**Email:** hello@stomatologiepiatraneamt.ro
-**Website:** https://stomatologiepiatraneamt.ro
-**Program:** Luni - Vineri: 09:00 - 19:00, Sâmbătă: 09:00 - 14:00
+{{CONTACT}}
 
 ## Servicii Principale
 
