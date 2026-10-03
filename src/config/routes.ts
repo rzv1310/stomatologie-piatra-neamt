@@ -177,7 +177,7 @@ export const routes: RouteConfig[] = [
   // Legacy blog URL redirects (301-equivalent, client-side)
   {
     path: "/blog/albire-dentara",
-    component: () => <Redirect to="/blog/albire-dentara-piatra-neamt" />,
+    component: () => createElement(Redirect, { to: "/blog/albire-dentara-piatra-neamt" }),
     priority: 0.1,
     changefreq: "never",
     title: "Redirect",
@@ -185,7 +185,7 @@ export const routes: RouteConfig[] = [
   },
   {
     path: "/blog/aparat-dentar-adulti",
-    component: () => <Redirect to="/blog/aparat-dentar-adulti-piatra-neamt" />,
+    component: () => createElement(Redirect, { to: "/blog/aparat-dentar-adulti-piatra-neamt" }),
     priority: 0.1,
     changefreq: "never",
     title: "Redirect",
@@ -193,7 +193,7 @@ export const routes: RouteConfig[] = [
   },
   {
     path: "/blog/parodontoza",
-    component: () => <Redirect to="/blog/parodontoza-tratament" />,
+    component: () => createElement(Redirect, { to: "/blog/parodontoza-tratament" }),
     priority: 0.1,
     changefreq: "never",
     title: "Redirect",
@@ -201,7 +201,7 @@ export const routes: RouteConfig[] = [
   },
   {
     path: "/blog/urgente-dentare",
-    component: () => <Redirect to="/blog/urgente-dentare-dinte-rupt" />,
+    component: () => createElement(Redirect, { to: "/blog/urgente-dentare-dinte-rupt" }),
     priority: 0.1,
     changefreq: "never",
     title: "Redirect",
