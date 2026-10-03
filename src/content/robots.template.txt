@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://stomatologiepiatraneamt.ro/sitemap.xml
+Sitemap: {{SITE_URL}}/sitemap.xml

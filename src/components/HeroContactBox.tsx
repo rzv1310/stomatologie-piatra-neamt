@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { Button } from "@/components/ui/button";
 import { Phone, Clock } from "lucide-react";
 import { ReactNode } from "react";
@@ -15,8 +16,8 @@ interface HeroContactBoxProps {
 export const HeroContactBox = ({
   title,
   subtitle,
-  buttonText = "Sună ACUM - 0333 630 005",
-  phoneNumber = "+40333630005",
+  buttonText = `Sună ACUM - ${BUSINESS.phone.display}`,
+  phoneNumber = BUSINESS.phone.e164,
   microcopy,
   icon = <Clock className="h-6 w-6 text-accent" />,
   buttonClassName

@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -19,7 +20,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Profilaxie = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Profilaxie Dentară Piatra Neamț - Detartraj și Igienizare | MedStom",
-    description: "Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși. ☎ 0333 630 005",
+    description: `Igienizare profesională și detartraj în Piatra Neamț. Prevenție dentară, air-flow, periaj profesional pentru dinți sănătoși. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/profilaxie"
   });
 
@@ -314,7 +315,7 @@ const Profilaxie = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare online", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Fără durere · Aparatură modernă · Preț fix"
               badges={[
                 { icon: "🦷", text: "Tehnologie Air-Flow" },

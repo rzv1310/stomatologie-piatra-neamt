@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -119,7 +120,7 @@ const EsteticaDentara = () => {
 
   const DynamicSEO = useDynamicSEO({
     title: "Estetică Dentară Piatra Neamț - Fațete, Albire Dentară | MedStom",
-    description: "Transformă-ți zâmbetul cu servicii de estetică dentară premium în Piatra Neamț. Fațete ceramice EMAX, albire dentară profesională. Consultație gratuită. ☎ 0333 630 005",
+    description: `Transformă-ți zâmbetul cu servicii de estetică dentară premium în Piatra Neamț. Fațete ceramice EMAX, albire dentară profesională. Consultație gratuită. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/estetica-dentara"
   });
 
@@ -388,7 +389,7 @@ const EsteticaDentara = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Consultație gratuită", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Consultație gratuită · Simulare digitală · Rezultate garantate"
               badges={[
                 { icon: "✨", text: "Fațete EMAX & ceramică" },

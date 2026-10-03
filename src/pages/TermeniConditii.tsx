@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -50,12 +51,12 @@ const TermeniConditii = () => {
                   <p className="text-foreground leading-relaxed">
                     Prezentul document conținând termenii și condițiile de utilizare ale site-ului{" "}
                     <a 
-                      href="https://stomatologiepiatraneamt.ro" 
+                      href={BUSINESS.url} 
                       className="font-semibold text-primary hover:text-primary/80 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      https://stomatologiepiatraneamt.ro/
+                      {BUSINESS.url}/
                     </a>
                     {" "}(denumit în continuare "Termeni și Condiții") stabilește care sunt condițiile în care orice persoană poate vizita ori accesa site-ul www.stomatologiepiatraneamt.ro, ori poate utiliza în orice mod serviciile oferite prin intermediul site-ului.
                   </p>

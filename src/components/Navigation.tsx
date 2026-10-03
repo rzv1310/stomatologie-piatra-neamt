@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -101,10 +102,10 @@ const Navigation = () => {
               </NavigationMenuList>
             </NavigationMenu>
 
-            <a href="tel:+40333630005">
+            <a href={BUSINESS.phone.href}>
               <Button variant="default" className="bg-accent hover:bg-accent/90">
                 <Phone className="mr-2 h-4 w-4" />
-                0333 630 005
+                {BUSINESS.phone.display}
               </Button>
             </a>
           </div>
@@ -118,7 +119,7 @@ const Navigation = () => {
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
-            <a href="tel:+40333630005" className="p-2" aria-label="Sună acum">
+            <a href={BUSINESS.phone.href} className="p-2" aria-label="Sună acum">
               <Phone className="h-6 w-6 text-accent animate-pulse" />
             </a>
           </div>
@@ -171,10 +172,10 @@ const Navigation = () => {
               >
                 Contact
               </Link>
-              <a href="tel:+40333630005" className="px-4">
+              <a href={BUSINESS.phone.href} className="px-4">
                 <Button variant="default" className="w-full bg-accent hover:bg-accent/90">
                   <Phone className="mr-2 h-4 w-4" />
-                  0333 630 005
+                  {BUSINESS.phone.display}
                 </Button>
               </a>
             </div>

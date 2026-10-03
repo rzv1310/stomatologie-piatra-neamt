@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { useEffect, useRef } from 'react';
 import { MapPin, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,7 +15,7 @@ import shoppingCityPiatraNeamt from '@/assets/shopping-city-piatra-neamt.png?w=4
 // Coordonatele pentru locații din Piatra Neamț
 const locations = {
   clinic: {
-    coords: [46.9310, 26.3697] as [number, number],
+    coords: [BUSINESS.geo.lat, BUSINESS.geo.lng] as [number, number],
     name: "MedStom",
     description: "Clinică de stomatologie în Piatra Neamț",
     distance: "",

@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -18,7 +19,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Chirurgie = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Chirurgie Orală Piatra Neamț - Extracții, Adiție Osoasă | MedStom",
-    description: "Chirurgie orală specializată în Piatra Neamț. Extracții molari de minte, adiție osoasă, sinus lift. Proceduri nedureroase. ☎ 0333 630 005",
+    description: `Chirurgie orală specializată în Piatra Neamț. Extracții molari de minte, adiție osoasă, sinus lift. Proceduri nedureroase. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/chirurgie-orala"
   });
   const pricingData = [{
@@ -419,8 +420,8 @@ const Chirurgie = () => {
               text: "Programare online",
               href: "/contact"
             }} secondaryButton={{
-              text: "0333 630 005",
-              href: "tel:+40333630005"
+              text: BUSINESS.phone.display,
+              href: BUSINESS.phone.href
             }} microcopy="✓ Consultație gratuită · Răspuns rapid · Sedare disponibilă" badges={[{
               icon: "🏥",
               text: "Chirurg specialist cu experiență"

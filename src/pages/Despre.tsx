@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -351,9 +352,9 @@ const Despre = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <a href="tel:+40333630005">
+                <a href={BUSINESS.phone.href}>
                   <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-accent">
-                    0333 630 005
+                    {BUSINESS.phone.display}
                   </Button>
                 </a>
               </div>

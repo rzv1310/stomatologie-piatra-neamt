@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
@@ -34,7 +35,7 @@ const AparatDentarAdulti = () => {
     article: {
       headline: "Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?",
       description: "Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
+      image: `${BUSINESS.url}/social-image.jpg`,
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }
@@ -142,9 +143,9 @@ const AparatDentarAdulti = () => {
 
               <div className="flex justify-center my-8">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                  <a href="tel:0333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Sună acum: 0333 630 005
+                    Sună acum: {BUSINESS.phone.display}
                   </a>
                 </Button>
               </div>
@@ -348,9 +349,9 @@ Este cel mai estetic sistem ortodontic și preferatul absolut al adulților care
                     <Link to="/contact">Programează consultație</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="tel:0333630005">
+                    <a href={BUSINESS.phone.href}>
                       <Phone className="mr-2 h-5 w-5" />
-                      0333 630 005
+                      {BUSINESS.phone.display}
                     </a>
                   </Button>
                 </div>

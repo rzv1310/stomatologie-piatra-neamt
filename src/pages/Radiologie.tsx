@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -19,7 +20,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Radiologie = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Radiologie Dentară Piatra Neamț - CBCT, OPG Digital | MedStom",
-    description: "Radiologie dentară digitală în Piatra Neamț. CBCT 3D, panoramică digitală, teleradiografie. Echipament Green X de ultimă generație. ☎ 0333 630 005",
+    description: `Radiologie dentară digitală în Piatra Neamț. CBCT 3D, panoramică digitală, teleradiografie. Echipament Green X de ultimă generație. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/radiologie-dentara-piatra-neamt"
   });
 
@@ -446,7 +447,7 @@ const Radiologie = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare investigație", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Consultație gratuită · CBCT 3D disponibil · Radiații minime"
               badges={[
                 { icon: "🔬", text: "CBCT Vatech Green X16" },

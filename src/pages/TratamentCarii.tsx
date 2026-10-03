@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -19,7 +20,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const TratamentCarii = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Tratament Carii Dentare Piatra Neamț - Plombe Estetice | MedStom",
-    description: "Tratament carii dentare modern în Piatra Neamț. Obturații estetice din compozit, nedureros. Salvăm dinții afectați de carii. ☎ 0333 630 005",
+    description: `Tratament carii dentare modern în Piatra Neamț. Obturații estetice din compozit, nedureros. Salvăm dinții afectați de carii. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/tratament-carii"
   });
 
@@ -339,7 +340,7 @@ const TratamentCarii = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare online", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Consultație gratuită · Plombe estetice · Fără durere"
               badges={[
                 { icon: "🦷", text: "Plombe estetice" },

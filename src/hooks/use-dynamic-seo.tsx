@@ -1,7 +1,8 @@
+import { BUSINESS } from "@/config/business";
 import { Helmet } from "react-helmet";
 
-const SITE_URL = "https://stomatologiepiatraneamt.ro";
-const DEFAULT_IMAGE = "https://stomatologiepiatraneamt.ro/social-image.jpg";
+const SITE_URL = BUSINESS.url;
+const DEFAULT_IMAGE = `${BUSINESS.url}/social-image.jpg`;
 
 export interface DynamicSEOProps {
   title: string;

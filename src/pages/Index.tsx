@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import PageSEO from "@/components/PageSEO";
 import JsonLd from "@/components/JsonLd";
 import homeFaqSchema from "@/data/schema/home-faq.json";
@@ -115,7 +116,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description="Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. +40 333 630 005" path="/" />
+      <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description={`Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. ${BUSINESS.phone.display}`} path="/" />
       {/* FAQPage schema is in index.html */}
       <JsonLd data={{ ...homeFaqSchema, "@id": `${SITE_URL}/#faq` }} />
       <Navigation />
@@ -143,17 +144,17 @@ const Index = () => {
                 Îți spunem exact ce ai nevoie. Nimic în plus.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <a href="tel:+40333630005">
+                <a href={BUSINESS.phone.href}>
                   <Button size="lg" className="bg-accent text-accent-foreground text-lg px-8 hover:bg-accent">
                     <Phone className="mr-2 h-5 w-5" />
-                    0333 630 005
+                    {BUSINESS.phone.display}
                   </Button>
                 </a>
               </div>
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 mr-2 text-accent" />
-                  <span>Luni-Vineri 09:00-19:00</span>
+                  <span>{BUSINESS.hours.short}</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-2 text-accent" />
@@ -163,7 +164,7 @@ const Index = () => {
                     rel="dofollow noopener noreferrer"
                     className="hover:text-accent transition-colors"
                   >
-                    Strada Ana Ipătescu 9, Piatra Neamț 610120
+                    {BUSINESS.address.full}
                   </a>
                 </div>
               </div>
@@ -188,7 +189,7 @@ const Index = () => {
             <p className="text-lg mb-8 text-white">
               În timp ce alte clinici îți dau programare peste 2 săptămâni, noi avem un singur răspuns:
             </p>
-            <a href="tel:+40333630005">
+            <a href={BUSINESS.phone.href}>
               <Button size="lg" variant="secondary" className="text-lg px-8">
                 <Phone className="mr-2 h-5 w-5" />
                 Sună Acum pentru Urgențe
@@ -272,10 +273,10 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <a href="tel:+40333630005">
+            <a href={BUSINESS.phone.href}>
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8">
                 <Phone className="mr-2 h-5 w-5" />
-                0333 630 005
+                {BUSINESS.phone.display}
               </Button>
             </a>
           </div>
@@ -400,10 +401,10 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <a href="tel:+40333630005">
+              <a href={BUSINESS.phone.href}>
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                   <Phone className="mr-2 h-5 w-5" />
-                  0333 630 005
+                  {BUSINESS.phone.display}
                 </Button>
               </a>
             </div>
@@ -472,7 +473,7 @@ const Index = () => {
               Localizare clinică stomatologică în <a href="https://ro.wikipedia.org/wiki/Piatra-Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Piatra Neamț</a>
             </h2>
             <p className="text-lg text-text-custom">
-              Clinica este situată ultracentral, pe Strada Ana Ipătescu 9, Piatra Neamț 610120, în spate la Magazinul UNIC, Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
+              Clinica este situată ultracentral, pe {BUSINESS.address.full}, în spate la Magazinul UNIC, Școala Gimnazială nr. 12 „Spiru Haret" și clinica Medlife Micromedica.
             </p>
             <p className="text-lg text-text-custom mt-4">
               Suntem la 15 minute de mers de <a href="https://ro.wikipedia.org/wiki/Gara_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Gara Piatra Neamț</a> și stația Telegondolei și la 7 minute de <a href="https://ro.wikipedia.org/wiki/Teatrul_Tineretului_din_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Teatrul Tineretului din Piatra Neamț</a>, <a href="https://ro.wikipedia.org/wiki/Turnul_clopotni%C8%9B%C4%83_al_cur%C8%9Bii_domne%C8%99ti_din_Piatra_Neam%C8%9B" target="_blank" rel="nofollow noopener noreferrer" className="text-accent hover:underline">Curtea Domnească și Turnul lui Ștefan cel Mare</a>.
@@ -491,7 +492,7 @@ const Index = () => {
                   <div className="aspect-video">
                     <img 
                       src={clinicLocationStreetView} 
-                      alt="Vedere din stradă a Clinicii MedStom pe Strada Ana Ipătescu 9, Piatra Neamț"
+                      alt={`Vedere din stradă a Clinicii MedStom pe ${BUSINESS.address.street}, Piatra Neamț`}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -501,7 +502,7 @@ const Index = () => {
                     <span>Deschide Street View</span>
                   </div>
                 </a>
-                <p className="text-sm text-muted-foreground p-3 text-center">Clinica stomatologică MedStom, Strada Ana Ipătescu 9, Piatra Neamț</p>
+                <p className="text-sm text-muted-foreground p-3 text-center">Clinica stomatologică MedStom, {BUSINESS.address.street}, Piatra Neamț</p>
               </div>
               
               {/* Google Maps */}

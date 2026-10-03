@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
@@ -34,7 +35,7 @@ const AlbireDentara = () => {
     article: {
       headline: "Albire Dentară | Vezi Preț Albire Dinți in Piatra Neamț",
       description: "Ghidul tău pentru albirea dentară în Piatra Neamț: metode, prețuri orientative, durata tratamentului și rezultate. Află cum obții un zâmbet strălucitor.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
+      image: `${BUSINESS.url}/social-image.jpg`,
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }
@@ -146,9 +147,9 @@ const AlbireDentara = () => {
 
               <div className="flex justify-center my-8">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                  <a href="tel:0333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Sună acum: 0333 630 005
+                    Sună acum: {BUSINESS.phone.display}
                   </a>
                 </Button>
               </div>
@@ -266,9 +267,9 @@ const AlbireDentara = () => {
                     <Link to="/contact">Programează consultație</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="tel:0333630005">
+                    <a href={BUSINESS.phone.href}>
                       <Phone className="mr-2 h-5 w-5" />
-                      0333 630 005
+                      {BUSINESS.phone.display}
                     </a>
                   </Button>
                 </div>

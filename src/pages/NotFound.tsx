@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { Link, useLocation } from "react-router-dom";
 import { Home, Search, Frown, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet";
 
-const SITE_URL = "https://stomatologiepiatraneamt.ro";
+const SITE_URL = BUSINESS.url;
 
 // Recommended services for 404 page
 const recommendedServices = [
@@ -127,10 +128,10 @@ const NotFound = () => {
                   Înapoi Acasă
                 </Button>
               </Link>
-              <a href="tel:+40333630005">
+              <a href={BUSINESS.phone.href}>
                 <Button size="lg" variant="outline" className="border-primary hover:bg-primary hover:text-white">
                   <Phone className="mr-2 h-5 w-5" />
-                  Sună-ne: 0333 630 005
+                  Sună-ne: {BUSINESS.phone.display}
                 </Button>
               </a>
             </div>
