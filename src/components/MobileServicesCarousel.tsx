@@ -108,6 +108,8 @@ const MobileServicesCarousel = ({ services }: MobileServicesCarouselProps) => {
     if (!section || !track) return;
 
     // Use GSAP's matchMedia for responsive behavior - only activate on mobile
+    // Respectă prefers-reduced-motion: fără pin/scrub/derulare animată.
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
     const mm = gsap.matchMedia();
 
     mm.add("(max-width: 767px)", () => {

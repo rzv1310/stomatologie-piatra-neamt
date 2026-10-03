@@ -11,7 +11,12 @@
     "preview": "vite preview",
     "sitemap": "tsx scripts/generate-sitemap.ts",
     "check:sitemap": "tsx scripts/check-sitemap-urls.ts",
-    "verify:site": "tsx scripts/verify-site.ts"
+    "verify:site": "tsx scripts/verify-site.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
+    "test": "vitest run",
+    "verify:images": "tsx scripts/verify-images.ts",
+    "verify:business": "tsx scripts/verify-business.ts",
+    "check": "bun run typecheck && bun run lint && bun run test && bun run build && bun run verify:images && bun run verify:business"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -59,7 +64,6 @@
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.61.1",
-    "react-leaflet": "^5.0.0",
     "react-resizable-panels": "^2.1.9",
     "react-router-dom": "^6.30.1",
     "recharts": "^2.15.4",
@@ -73,6 +77,8 @@
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@tailwindcss/typography": "^0.5.16",
+    "@testing-library/jest-dom": "^6.6",
+    "@testing-library/react": "^16",
     "@types/node": "^22.16.5",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
@@ -82,6 +88,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
+    "jsdom": "^25",
     "lovable-tagger": "^1.1.11",
     "playwright": "^1.63.0",
     "postcss": "^8.5.6",
@@ -89,6 +96,8 @@
     "tsx": "^4.23.15",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
-    "vite": "^5.4.19"
-  }
+    "vite": "^5.4.19",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "bun@1.3.3"
 }

@@ -1,3 +1,5 @@
+import { useSearchParams } from "react-router-dom";
+import { parseBlogPage } from "@/lib/pagination";
 import { articleDisplayDate } from "@/config/blog-articles";
 import JsonLd from "@/components/JsonLd";
 import { getArticleMeta } from "@/config/blog-articles";
@@ -7,7 +9,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Pagination,
@@ -33,7 +34,7 @@ const Blog = () => {
     path: "/blog"
   });
   const ARTICLES_PER_PAGE = 6;
-  const [currentPage, setCurrentPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const articles = [
     {
@@ -88,13 +89,15 @@ const Blog = () => {
 
   // Calculate pagination
   const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+  const currentPage = parseBlogPage(searchParams.get("pagina"), totalPages);
   const startIndex = (currentPage - 1) * ARTICLES_PER_PAGE;
   const endIndex = startIndex + ARTICLES_PER_PAGE;
   const currentArticles = articles.slice(startIndex, endIndex);
 
   const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setSearchParams(page === 1 ? {} : { pagina: String(page) });
+    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
   };
 
   return (
