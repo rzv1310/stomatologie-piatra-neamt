@@ -1,4 +1,5 @@
-import { lazy } from "react";
+import { lazy, createElement } from "react";
+import Redirect from "@/components/Redirect";
 
 // Route configuration with SEO metadata
 export interface RouteConfig {
@@ -171,6 +172,40 @@ export const routes: RouteConfig[] = [
     priority: 0.8,
     changefreq: "monthly",
     title: "Radiologie"
+  },
+
+  // Legacy blog URL redirects (301-equivalent, client-side)
+  {
+    path: "/blog/albire-dentara",
+    component: () => createElement(Redirect, { to: "/blog/albire-dentara-piatra-neamt" }),
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+  {
+    path: "/blog/aparat-dentar-adulti",
+    component: () => createElement(Redirect, { to: "/blog/aparat-dentar-adulti-piatra-neamt" }),
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+  {
+    path: "/blog/parodontoza",
+    component: () => createElement(Redirect, { to: "/blog/parodontoza-tratament" }),
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
+  },
+  {
+    path: "/blog/urgente-dentare",
+    component: () => createElement(Redirect, { to: "/blog/urgente-dentare-dinte-rupt" }),
+    priority: 0.1,
+    changefreq: "never",
+    title: "Redirect",
+    excludeFromSitemap: true
   },
 
   // Blog posts

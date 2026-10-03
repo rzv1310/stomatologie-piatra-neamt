@@ -1,5 +1,9 @@
 # 301 Redirects
 /servicii/stomatologie-generala    /servicii/endodontie-piatra-neamt    301
+/blog/albire-dentara    /blog/albire-dentara-piatra-neamt    301
+/blog/aparat-dentar-adulti    /blog/aparat-dentar-adulti-piatra-neamt    301
+/blog/parodontoza    /blog/parodontoza-tratament    301
+/blog/urgente-dentare    /blog/urgente-dentare-dinte-rupt    301
 
 # SPA fallback
 /*    /index.html   200
