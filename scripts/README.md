@@ -17,7 +17,7 @@ npm run verify:site     # fallback, randare, metadata, redirecturi și pagina 40
 Pagină nouă: adaug-o în `route-registry.ts` (și componenta în `routes.ts`); sitemapul se actualizează singur.
 
 ## verify:site
-Necesită o singură dată: `npx playwright install chromium`.
+Necesită o singură dată: `npx playwright install chromium` (sau `CHROMIUM_PATH` către un Chromium existent).
 
 Verificări separate: fallback (HTTP 200 + #root), randare (h1, fără erori, nu ecranul 404), metadata (canonical + titlu unic), redirecturi (client-side, nu HTTP 301) și URL inexistent.
 Pe hostingul Lovable un URL inexistent răspunde 200 și afișează ecranul 404 cu noindex: raportat ca **SOFT-404 (WARN)**, niciodată ca PASS.
