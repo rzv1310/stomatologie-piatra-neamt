@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -19,7 +20,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Protetica = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Protetică Dentară Piatra Neamț - Coroane, Punți, Proteze | MedStom",
-    description: "Lucrări protetice de calitate în Piatra Neamț. Coroane zirconiu, EMAX, proteze dentare, lucrări pe implanturi. Laborator propriu. ☎ 0333 630 005",
+    description: `Lucrări protetice de calitate în Piatra Neamț. Coroane zirconiu, EMAX, proteze dentare, lucrări pe implanturi. Laborator propriu. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/protetica-piatra-neamt"
   });
 
@@ -408,7 +409,7 @@ const Protetica = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare online", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Consultație gratuită · Laborator propriu · Garanție extinsă"
               badges={[
                 { icon: "👑", text: "Coroane Zirconiu & EMAX" },

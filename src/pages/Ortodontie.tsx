@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -176,7 +177,7 @@ const Ortodontie = () => {
 
   const DynamicSEO = useDynamicSEO({
     title: "Ortodonție Piatra Neamț - Aparat Dentar Fix și Invisalign | MedStom",
-    description: "Aparate dentare fixe, estetice și alignere transparente pentru copii, adolescenți și adulți în Piatra Neamț. Consultație ortodontică gratuită. ☎ 0333 630 005",
+    description: `Aparate dentare fixe, estetice și alignere transparente pentru copii, adolescenți și adulți în Piatra Neamț. Consultație ortodontică gratuită. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/ortodontie-piatra-neamt"
   });
 
@@ -489,7 +490,7 @@ const Ortodontie = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare online", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Evaluare gratuită · Simulare digitală · Plată în rate"
               badges={[
                 { icon: "😊", text: "Ortodont specialist" },

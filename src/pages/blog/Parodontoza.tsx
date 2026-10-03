@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
@@ -44,7 +45,7 @@ const Parodontoza = () => {
     article: {
       headline: "Ai dinți care se mișcă? Cum recunoști și tratezi parodontoza, pas cu pas",
       description: "Ghid complet despre parodontoză: cum o recunoști, stadii de evoluție, opțiuni de tratament pas cu pas și prevenție. Salvează-ți dinții la timp.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
+      image: `${BUSINESS.url}/social-image.jpg`,
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }
@@ -201,9 +202,9 @@ const Parodontoza = () => {
 
               <div className="flex justify-center my-8">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                  <a href="tel:0333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Sună acum: 0333 630 005
+                    Sună acum: {BUSINESS.phone.display}
                   </a>
                 </Button>
               </div>
@@ -452,9 +453,9 @@ const Parodontoza = () => {
                     <Link to="/contact">Programează evaluare parodontală</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="tel:0333630005">
+                    <a href={BUSINESS.phone.href}>
                       <Phone className="mr-2 h-5 w-5" />
-                      0333 630 005
+                      {BUSINESS.phone.display}
                     </a>
                   </Button>
                 </div>

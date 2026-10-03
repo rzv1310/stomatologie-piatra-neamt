@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -28,7 +29,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Urgente = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Urgențe Stomatologice Piatra Neamț | MedStom",
-    description: "Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe. ☎ 0333 630 005",
+    description: `Urgențe stomatologice în Piatra Neamț. Tratăm dureri acute, abcese, traumatisme dentare. Program prelungit pentru urgențe. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/urgente"
   });
 
@@ -169,7 +170,7 @@ const Urgente = () => {
     },
     {
       question: "Primiți urgențe în weekend sau seara târziu?",
-      answer: "În timpul programului nostru de lucru (Luni-Vineri 09:00-19:00), primim urgențe fără programare sau cu programare rapidă."
+      answer: `În timpul programului nostru de lucru (${BUSINESS.hours.short}), primim urgențe fără programare sau cu programare rapidă.`
     },
     {
       question: "Pot veni direct la cabinet fără să sun înainte?",
@@ -242,7 +243,7 @@ const Urgente = () => {
             </p>
             <HeroContactBox
               title="Program urgențe"
-              subtitle="Luni-Vineri: 8:00 - 20:00"
+              subtitle={BUSINESS.hours.label}
               microcopy="✓ Durere oprită imediat"
             />
           </div>
@@ -386,8 +387,8 @@ const Urgente = () => {
                   </ul>
                   <div className="mt-6 p-4 bg-white rounded-lg shadow-md">
                     <p className="font-bold text-lg mb-2 text-red-600">În caz de urgență severă:</p>
-                    <a href="tel:+40333630005" className="text-2xl font-bold hover:underline text-red-600">
-                      0333 630 005
+                    <a href={BUSINESS.phone.href} className="text-2xl font-bold hover:underline text-red-600">
+                      {BUSINESS.phone.display}
                     </a>
                   </div>
                 </div>
@@ -496,7 +497,7 @@ const Urgente = () => {
             <CTAWithTrust
               primaryButton={{ 
                 text: "Sună acum", 
-                href: "tel:+40333630005",
+                href: BUSINESS.phone.href,
                 className: "bg-white hover:bg-white/90 text-accent font-bold",
                 showIcon: true
               }}

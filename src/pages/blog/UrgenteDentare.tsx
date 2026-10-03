@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
@@ -34,7 +35,7 @@ const UrgenteDentare = () => {
     },
     {
       question: "Ce fac dacă am o urgență dentară în weekend?",
-      answer: "Contactează serviciul nostru de urgențe dentare disponibil non-stop la <a href='tel:0333630005' className='text-accent hover:underline font-semibold'>0333 630 005</a>. Avem program special pentru urgențe și în weekend pentru situații care nu pot aștepta."
+      answer: `Contactează serviciul nostru de urgențe dentare disponibil non-stop la <a href='${BUSINESS.phone.href}' className='text-accent hover:underline font-semibold'>${BUSINESS.phone.display}</a>. Avem program special pentru urgențe și în weekend pentru situații care nu pot aștepta.`
     }
   ];
 
@@ -44,7 +45,7 @@ const UrgenteDentare = () => {
     article: {
       headline: "Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic",
       description: "Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
+      image: `${BUSINESS.url}/social-image.jpg`,
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }
@@ -128,7 +129,7 @@ const UrgenteDentare = () => {
                   <AlertTriangle className="h-6 w-6 text-red-600 dark:text-red-400 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-bold text-red-900 dark:text-red-100 mt-0 mb-3">
-                      Când este o urgență REALĂ (sună imediat la <a href="tel:0333630005" className="text-red-900 dark:text-red-100 underline font-bold hover:text-red-700 dark:hover:text-red-200">0333 630 005</a>):
+                      Când este o urgență REALĂ (sună imediat la <a href={BUSINESS.phone.href} className="text-red-900 dark:text-red-100 underline font-bold hover:text-red-700 dark:hover:text-red-200">{BUSINESS.phone.display}</a>):
                     </h3>
                     <ul className="list-disc pl-6 text-red-900 dark:text-red-100 mb-0">
                       <li>Dinte complet rupt cu rădăcina expusă</li>
@@ -202,9 +203,9 @@ const UrgenteDentare = () => {
 
               <div className="flex justify-center my-8">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                  <a href="tel:0333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Sună acum: 0333 630 005
+                    Sună acum: {BUSINESS.phone.display}
                   </a>
                 </Button>
               </div>
@@ -306,7 +307,7 @@ const UrgenteDentare = () => {
                   <strong>Oprește sângerarea:</strong> Aplică o compresă sterilă cu presiune pe locul gol.
                 </li>
                 <li>
-                  <strong>SUNĂ IMEDIAT la <a href="tel:0333630005" className="text-accent hover:underline">0333 630 005</a> și anunță că vii cu urgență maximă cu dinte luxat!</strong>
+                  <strong>SUNĂ IMEDIAT la <a href={BUSINESS.phone.href} className="text-accent hover:underline">{BUSINESS.phone.display}</a> și anunță că vii cu urgență maximă cu dinte luxat!</strong>
                 </li>
                 <li>
                   <strong>Ajunge la cabinet în MAXIM 30 minute!</strong> Fiecare minut întârziat reduce șansele de salvare.
@@ -402,7 +403,7 @@ const UrgenteDentare = () => {
                 <li>Ceară dentară ortodontică</li>
                 <li>Analgezice (paracetamol, ibuprofen)</li>
                 <li>Container mic pentru păstrarea dinților/fragmentelor</li>
-                <li>Numărul de urgență al dentistului (<a href="tel:0333630005" className="text-accent hover:underline font-semibold">0333 630 005</a>)</li>
+                <li>Numărul de urgență al dentistului (<a href={BUSINESS.phone.href} className="text-accent hover:underline font-semibold">{BUSINESS.phone.display}</a>)</li>
                 <li>Mănuși medicale de unică folosință</li>
                 <li>Oglindă dentară mică</li>
               </ul>
@@ -433,9 +434,9 @@ const UrgenteDentare = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button asChild size="lg" className="bg-red-600 hover:bg-red-700">
-                    <a href="tel:0333630005">
+                    <a href={BUSINESS.phone.href}>
                       <Phone className="mr-2 h-5 w-5" />
-                      URGENȚE: 0333 630 005
+                      URGENȚE: {BUSINESS.phone.display}
                     </a>
                   </Button>
                   <Button asChild variant="outline" size="lg">

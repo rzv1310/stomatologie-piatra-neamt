@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock, Facebook, Mail } from "lucide-react";
 import { openConsentSettings } from "@/lib/consent";
@@ -23,22 +24,22 @@ const Footer = () => {
                   rel="dofollow noopener noreferrer"
                   className="hover:text-accent transition-colors"
                 >
-                  Strada Ana Ipătescu 9, Piatra Neamț 610120
+                  {BUSINESS.address.full}
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
-                <span>Telefon: <a href="tel:+40333630005" className="hover:text-accent transition-colors">0333 630 005</a></span>
+                <span>Telefon: <a href={BUSINESS.phone.href} className="hover:text-accent transition-colors">{BUSINESS.phone.display}</a></span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-white" />
-                <a href="mailto:hello@stomatologiepiatraneamt.ro" className="hover:text-accent transition-colors">
-                  Email: hello@stomatologiepiatraneamt.ro
+                <a href={`mailto:${BUSINESS.email}`} className="hover:text-accent transition-colors">
+                  Email: {BUSINESS.email}
                 </a>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-white" />
-                <span>Luni - Vineri: 09:00 - 19:00</span>
+                <span>{BUSINESS.hours.label}</span>
               </li>
             </ul>
             <a

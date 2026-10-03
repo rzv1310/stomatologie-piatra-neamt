@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -19,7 +20,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Parodontologie = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Parodontologie Piatra Neamț - Tratament Parodontoză | MedStom",
-    description: "Tratament parodontal specializat în Piatra Neamț. Chiuretaj, detartraj subgingival, regenerare osoasă. Prevenim pierderea dinților. ☎ 0333 630 005",
+    description: `Tratament parodontal specializat în Piatra Neamț. Chiuretaj, detartraj subgingival, regenerare osoasă. Prevenim pierderea dinților. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/parodontologie-piatra-neamt"
   });
 
@@ -450,7 +451,7 @@ const Parodontologie = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Evaluare parodontală", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Consultație gratuită · Tratament laser · Plan personalizat"
               badges={[
                 { icon: "🔬", text: "Tratament cu laser diodă" },

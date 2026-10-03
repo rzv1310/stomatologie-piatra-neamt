@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
@@ -32,7 +33,7 @@ const PrimaVizitaCopil = () => {
     article: {
       headline: "Cum pregătești copilul pentru prima vizită la dentist",
       description: "Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist. Creează o experiență pozitivă și reduce anxietatea copilului.",
-      image: "https://stomatologiepiatraneamt.ro/social-image.jpg",
+      image: `${BUSINESS.url}/social-image.jpg`,
       datePublished: ARTICLE.datePublished,
       dateModified: ARTICLE.dateModified
     }
@@ -189,9 +190,9 @@ const PrimaVizitaCopil = () => {
 
               <div className="flex justify-center my-8">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                  <a href="tel:0333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Sună acum: 0333 630 005
+                    Sună acum: {BUSINESS.phone.display}
                   </a>
                 </Button>
               </div>
@@ -266,9 +267,9 @@ const PrimaVizitaCopil = () => {
 
               <div className="flex justify-center my-8">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                  <a href="tel:0333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Programează următoarea vizită: 0333 630 005
+                    Programează următoarea vizită: {BUSINESS.phone.display}
                   </a>
                 </Button>
               </div>
@@ -408,9 +409,9 @@ const PrimaVizitaCopil = () => {
                     <Link to="/contact">Programează prima vizită</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="tel:0333630005">
+                    <a href={BUSINESS.phone.href}>
                       <Phone className="mr-2 h-5 w-5" />
-                      0333 630 005
+                      {BUSINESS.phone.display}
                     </a>
                   </Button>
                 </div>

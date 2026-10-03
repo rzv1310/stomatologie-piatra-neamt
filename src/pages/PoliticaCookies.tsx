@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -51,7 +52,7 @@ const PoliticaCookies = () => {
                   <p className="text-foreground leading-relaxed">
                     Această politică se referă la cookie-urile folosite pe site-ul{" "}
                     <a 
-                      href="https://stomatologiepiatraneamt.ro" 
+                      href={BUSINESS.url} 
                       className="font-semibold text-primary hover:text-primary/80 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"

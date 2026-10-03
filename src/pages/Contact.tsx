@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -15,7 +16,7 @@ import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
 const Contact = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Contact & Programări | Stomatologie MedStom Piatra Neamț",
-    description: "Programează-te la clinica stomatologică MedStom din Piatra Neamț. Adresă: Strada Ana Ipătescu 9. Program: Luni-Vineri 09:00-19:00. ☎ 0333 630 005",
+    description: `Programează-te la clinica stomatologică MedStom din Piatra Neamț. Adresă: ${BUSINESS.address.street}. Program: ${BUSINESS.hours.short}. ☎ ${BUSINESS.phone.display}`,
     path: "/contact"
   });
   const {
@@ -144,7 +145,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Adresa clinicii</h3>
                       <a href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" target="_blank" rel="dofollow noopener noreferrer" className="text-text-custom hover:text-primary transition-colors">
-                        Strada Ana Ipătescu 9, Piatra Neamț 610120
+                        {BUSINESS.address.full}
                       </a>
                     </div>
                   </div>
@@ -153,8 +154,8 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Telefon</h3>
-                      <a href="tel:+40333630005" className="text-primary hover:underline text-lg font-medium">
-                        0333 630 005
+                      <a href={BUSINESS.phone.href} className="text-primary hover:underline text-lg font-medium">
+                        {BUSINESS.phone.display}
                       </a>
                       <p className="text-sm text-text-custom mt-1">Pentru urgențe și programări</p>
                     </div>
@@ -164,8 +165,8 @@ const Contact = () => {
                     <Clock className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1 text-heading">Program de lucru</h3>
-                      <p className="text-text-custom">Luni - Vineri: 09:00 - 19:00</p>
-                      <p className="text-sm text-muted-foreground mt-2">Sâmbătă și Duminică: Închis</p>
+                      <p className="text-text-custom">{BUSINESS.hours.label}</p>
+                      <p className="text-sm text-muted-foreground mt-2">{BUSINESS.hours.closedLabel}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -180,7 +181,7 @@ const Contact = () => {
                   <p className="text-text-custom mb-4">
                     Pentru urgențe dentare (dureri severe, abcese, traumatisme), sunați la numărul de mai jos. Vom face tot posibilul să vă primim în aceeași zi.
                   </p>
-                  <a href="tel:+40333630005">
+                  <a href={BUSINESS.phone.href}>
                     <Button className="w-full bg-accent hover:bg-accent/90">
                       <Phone className="mr-2 h-4 w-4" />
                       Sună pentru urgențe
@@ -243,10 +244,10 @@ const Contact = () => {
                 <p className="text-sm text-muted-foreground">
                   Preferi să vorbești direct cu noi?
                 </p>
-                <a href="tel:+40333630005">
+                <a href={BUSINESS.phone.href}>
                   <Button variant="outline" className="mt-2">
                     <Phone className="mr-2 h-4 w-4" />
-                    0333 630 005
+                    {BUSINESS.phone.display}
                   </Button>
                 </a>
               </div>
@@ -262,7 +263,7 @@ const Contact = () => {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4 text-heading">Cum ajungi la clinică</h2>
               <a href="https://maps.app.goo.gl/KxdWvszC7MCPTLsb9" target="_blank" rel="dofollow noopener noreferrer" className="text-lg text-text-custom hover:text-primary transition-colors">
-                Strada Ana Ipătescu 9, Piatra Neamț 610120
+                {BUSINESS.address.full}
               </a>
             </div>
             <Card className="border-primary/20 overflow-hidden">

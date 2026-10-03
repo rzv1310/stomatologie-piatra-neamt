@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -19,7 +20,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const StomatologieCopii = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Stomatologie Copii Piatra Neamț - Pedodonție | MedStom",
-    description: "Pedodonție specializată în Piatra Neamț. Cabinet stomatologic pentru copii, tratamente nedureroase, preventie dentară pediatrică. ☎ 0333 630 005",
+    description: `Pedodonție specializată în Piatra Neamț. Cabinet stomatologic pentru copii, tratamente nedureroase, preventie dentară pediatrică. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/stomatologie-copii-piatra-neamt"
   });
 
@@ -525,7 +526,7 @@ const StomatologieCopii = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare online", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Cabinet prietenos · Fără durere · Diplomă de curaj"
               badges={[
                 { icon: "❤️", text: "Medic pedodont" },

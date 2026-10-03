@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import { ORG_ID } from "@/config/schema-ids";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -21,7 +22,7 @@ import { HeroContactBox } from "@/components/HeroContactBox";
 const Endodontie = () => {
   const DynamicSEO = useDynamicSEO({
     title: "Endodonție Piatra Neamț - Tratament de Canal la Microscop | MedStom",
-    description: "Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație. ☎ 0333 630 005",
+    description: `Tratamente dentare complete, de la obturații simple până la tratamente de canal sub microscop. Îți salvăm dinții cu tehnologie de ultimă generație. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/endodontie-piatra-neamt"
   });
 
@@ -164,28 +165,28 @@ const Endodontie = () => {
     "itemListElement": [
       {
         "@type": "Person",
-        "@id": "https://stomatologiepiatraneamt.ro/despre#dolganiuc-inesa",
+        "@id": `${BUSINESS.url}/despre#dolganiuc-inesa`,
         "name": "Dr. Dolganiuc Inesa",
         "jobTitle": "Medic stomatolog cu competențe în implantologie și protetică dentară",
         "worksFor": { "@id": ORG_ID }
       },
       {
         "@type": "Person",
-        "@id": "https://stomatologiepiatraneamt.ro/despre#iacomi-adelina",
+        "@id": `${BUSINESS.url}/despre#iacomi-adelina`,
         "name": "Dr. Iacomi Adelina",
         "jobTitle": "Medic stomatolog specializat în implantologie și parodontologie",
         "worksFor": { "@id": ORG_ID }
       },
       {
         "@type": "Person",
-        "@id": "https://stomatologiepiatraneamt.ro/despre#bratu-diana-andreea",
+        "@id": `${BUSINESS.url}/despre#bratu-diana-andreea`,
         "name": "Dr. Bratu Diana Andreea",
         "jobTitle": "Medic stomatolog specializat în endodonție",
         "worksFor": { "@id": ORG_ID }
       },
       {
         "@type": "Person",
-        "@id": "https://stomatologiepiatraneamt.ro/despre#bogulean-victoria",
+        "@id": `${BUSINESS.url}/despre#bogulean-victoria`,
         "name": "Dr. Bogulean Victoria",
         "jobTitle": "Medic stomatolog specializat în ortodonție",
         "worksFor": { "@id": ORG_ID }
@@ -450,7 +451,7 @@ const Endodontie = () => {
             </p>
             <CTAWithTrust
               primaryButton={{ text: "Programare online", href: "/contact" }}
-              secondaryButton={{ text: "0333 630 005", href: "tel:+40333630005" }}
+              secondaryButton={{ text: BUSINESS.phone.display, href: BUSINESS.phone.href }}
               microcopy="✓ Consultație gratuită · Tratament nedureros · Microscop dentar"
               badges={[
                 { icon: "🔬", text: "Tratamente sub microscop" },

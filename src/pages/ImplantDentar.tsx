@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/config/business";
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
@@ -90,7 +91,7 @@ const ImplantDentar = () => {
 
   const DynamicSEO = useDynamicSEO({
     title: "Implant Dentar Piatra Neamț - Dinți Ficși în 24h | MedStom",
-    description: "Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6. Consultație gratuită. ☎ 0333 630 005",
+    description: `Implant dentar în Piatra Neamț cu tehnologie digitală avansată. Dinți ficși în 24-48h, încărcare imediată, All-on-4 și All-on-6. Consultație gratuită. ☎ ${BUSINESS.phone.display}`,
     path: "/servicii/implant-dentar"
   });
 
@@ -304,7 +305,7 @@ const ImplantDentar = () => {
             </div>
 
             <div className="text-center mt-8">
-              <a href="tel:+40333630005" className="text-accent hover:text-accent/90 text-xl font-semibold">
+              <a href={BUSINESS.phone.href} className="text-accent hover:text-accent/90 text-xl font-semibold">
                 +40 333 630 005
               </a>
             </div>
@@ -488,7 +489,7 @@ const ImplantDentar = () => {
               }}
               secondaryButton={{
                 text: "Sună Acum",
-                href: "tel:+40333630005"
+                href: BUSINESS.phone.href
               }}
               microcopy="✓ Consultație gratuită · Răspuns în 30 min · Plată în rate"
               badges={[
