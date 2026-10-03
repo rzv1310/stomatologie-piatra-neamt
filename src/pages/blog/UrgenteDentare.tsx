@@ -1,3 +1,4 @@
+import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -14,6 +15,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+
+const ARTICLE = getArticleMeta("urgente-dentare-dinte-rupt");
 
 const UrgenteDentare = () => {
   const faqs = [
@@ -42,8 +45,8 @@ const UrgenteDentare = () => {
       headline: "Ți s-a rupt un dinte sau ți-a căzut o plombă? Ce faci înainte să ajungi la medic",
       description: "Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist.",
       image: "https://stomatologiepiatraneamt.ro/social-image.png",
-      datePublished: "2025-01-20",
-      dateModified: "2025-01-20"
+      datePublished: ARTICLE.datePublished,
+      dateModified: ARTICLE.dateModified
     }
   });
 
@@ -57,7 +60,7 @@ const UrgenteDentare = () => {
     <>
       {ArticleSchema}
       {FAQSchema}
-      <PageSEO title="Urgențe Dentare - Dinte Rupt, Plombă Căzută | Prim Ajutor Dentar" description="Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist." path="/blog/urgente-dentare-dinte-rupt" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
+      <PageSEO title="Urgențe Dentare - Dinte Rupt, Plombă Căzută | Prim Ajutor Dentar" description="Ghid de prim ajutor dentar: ce faci când ți se rupe un dinte, cade plomba sau ai dureri severe. Sfaturi practice până ajungi la dentist." path="/blog/urgente-dentare-dinte-rupt" type="article" publishedTime={ARTICLE.datePublished} modifiedTime={ARTICLE.dateModified} />
 
       <div className="min-h-screen bg-background">
         <Navigation />

@@ -1,3 +1,4 @@
+import { articleDisplayDate } from "@/config/blog-articles";
 import JsonLd from "@/components/JsonLd";
 import blogListSchema from "@/data/schema/blog-list.json";
 import { SITE_URL } from "@/config/routes";
@@ -40,7 +41,7 @@ const Blog = () => {
       slug: "albire-dentara-piatra-neamt",
       excerpt: "Descoperă metodele de albire dentară disponibile în Piatra Neamț, prețurile orientative și rezultatele pe care le poți obține pentru un zâmbet strălucitor.",
       image: esteticaImg,
-      date: "15 Noiembrie 2025"
+      date: articleDisplayDate("albire-dentara-piatra-neamt")
     },
     {
       id: 2,
@@ -48,7 +49,7 @@ const Blog = () => {
       slug: "aparat-dentar-adulti-piatra-neamt",
       excerpt: "Comparație detaliată între aparatele dentare metalice, ceramice și Invisalign pentru adulți. Află care este cea mai bună opțiune pentru tine.",
       image: ortodontieImg,
-      date: "10 Noiembrie 2025"
+      date: articleDisplayDate("aparat-dentar-adulti-piatra-neamt")
     },
     {
       id: 3,
@@ -56,7 +57,7 @@ const Blog = () => {
       slug: "prima-vizita-copil-dentist",
       excerpt: "Sfaturi practice pentru părinți despre cum să pregătească copilul pentru prima vizită la dentist, reducând anxietatea și creând o experiență pozitivă.",
       image: copiiImg,
-      date: "5 Noiembrie 2025"
+      date: articleDisplayDate("prima-vizita-copil-dentist")
     },
     {
       id: 4,
@@ -64,7 +65,7 @@ const Blog = () => {
       slug: "maseaua-de-minte",
       excerpt: "Ghid complet despre măselele de minte: când este necesară extracția, care sunt semnalele de alarmă și cum decurge procesul de recuperare.",
       image: chirurgieImg,
-      date: "1 Noiembrie 2025"
+      date: articleDisplayDate("maseaua-de-minte")
     },
     {
       id: 5,
@@ -72,7 +73,7 @@ const Blog = () => {
       slug: "urgente-dentare-dinte-rupt",
       excerpt: "Primul ajutor dentar: ce măsuri să iei imediat când ai o urgență dentară, cum păstrezi fragmentul și când trebuie să mergi urgent la dentist.",
       image: urgenteImg,
-      date: "28 Octombrie 2025"
+      date: articleDisplayDate("urgente-dentare-dinte-rupt")
     },
     {
       id: 6,
@@ -80,7 +81,7 @@ const Blog = () => {
       slug: "parodontoza-tratament",
       excerpt: "Totul despre parodontoză: simptome timpurii, stadii de evoluție, opțiuni de tratament și cum poți preveni agravarea acestei afecțiuni comune.",
       image: parodontologieImg,
-      date: "25 Octombrie 2025"
+      date: articleDisplayDate("parodontoza-tratament")
     }
   ];
 

@@ -1,3 +1,4 @@
+import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -14,6 +15,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
+
+const ARTICLE = getArticleMeta("maseaua-de-minte");
 
 const MaseauaMinte = () => {
   const faqs = [
@@ -42,8 +45,8 @@ const MaseauaMinte = () => {
       headline: "Măseaua de minte - când o lași în pace și când trebuie neapărat scoasă",
       description: "Tot ce trebuie să știi despre măselele de minte: când este necesară extracția, semne de alarmă, procesul de extracție și recuperare. Sfaturi de la specialiști.",
       image: "https://stomatologiepiatraneamt.ro/social-image.png",
-      datePublished: "2025-01-20",
-      dateModified: "2025-01-20"
+      datePublished: ARTICLE.datePublished,
+      dateModified: ARTICLE.dateModified
     }
   });
 
@@ -57,7 +60,7 @@ const MaseauaMinte = () => {
     <>
       {ArticleSchema}
       {FAQSchema}
-      <PageSEO title="Măseaua de Minte - Când Trebuie Scoasă și Când Poate Rămâne | Ghid Complet" description="Tot ce trebuie să știi despre măselele de minte: când este necesară extracția, semne de alarmă, procesul de extracție și recuperare. Sfaturi de la specialiști." path="/blog/maseaua-de-minte" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
+      <PageSEO title="Măseaua de Minte - Când Trebuie Scoasă și Când Poate Rămâne | Ghid Complet" description="Tot ce trebuie să știi despre măselele de minte: când este necesară extracția, semne de alarmă, procesul de extracție și recuperare. Sfaturi de la specialiști." path="/blog/maseaua-de-minte" type="article" publishedTime={ARTICLE.datePublished} modifiedTime={ARTICLE.dateModified} />
 
       <div className="min-h-screen bg-background">
         <Navigation />

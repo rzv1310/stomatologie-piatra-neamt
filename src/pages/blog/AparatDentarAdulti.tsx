@@ -1,3 +1,4 @@
+import { getArticleMeta } from "@/config/blog-articles";
 import PageSEO from "@/components/PageSEO";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -11,6 +12,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import RelatedArticles from "@/components/RelatedArticles";
 import { relatedArticles } from "@/config/related-content";
+const ARTICLE = getArticleMeta("aparat-dentar-adulti-piatra-neamt");
+
 const AparatDentarAdulti = () => {
   const faqs = [{
     question: "Cât durează tratamentul ortodontic la adulți?",
@@ -32,8 +35,8 @@ const AparatDentarAdulti = () => {
       headline: "Aparat dentar pentru adulți în Piatra Neamț: metalic, ceramic sau Invisalign?",
       description: "Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine.",
       image: "https://stomatologiepiatraneamt.ro/social-image.png",
-      datePublished: "2025-01-20",
-      dateModified: "2025-01-20"
+      datePublished: ARTICLE.datePublished,
+      dateModified: ARTICLE.dateModified
     }
   });
   const FAQSchema = useSEOSchema({
@@ -44,7 +47,7 @@ const AparatDentarAdulti = () => {
   return <>
       {ArticleSchema}
       {FAQSchema}
-      <PageSEO title="Aparat Dentar pentru Adulți Piatra Neamț | Metalic, Ceramic sau Invisalign" description="Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine." path="/blog/aparat-dentar-adulti-piatra-neamt" type="article" publishedTime="2025-01-20" modifiedTime="2025-01-20" />
+      <PageSEO title="Aparat Dentar pentru Adulți Piatra Neamț | Metalic, Ceramic sau Invisalign" description="Ghid complet despre aparatele dentare pentru adulți în Piatra Neamț. Compară tipurile de aparate, prețuri, durata tratamentului și află care este cea mai bună opțiune pentru tine." path="/blog/aparat-dentar-adulti-piatra-neamt" type="article" publishedTime={ARTICLE.datePublished} modifiedTime={ARTICLE.dateModified} />
 
       <div className="min-h-screen bg-background">
         <Navigation />
