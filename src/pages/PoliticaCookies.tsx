@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Cookie, Shield, Settings, BarChart3, Palette, ExternalLink, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useDynamicSEO } from "@/hooks/use-dynamic-seo";
+import { COOKIE_POLICY_VERSION } from "@/lib/consent";
 
 const PoliticaCookies = () => {
   const DynamicSEO = useDynamicSEO({
@@ -102,6 +103,9 @@ const PoliticaCookies = () => {
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
                       Aceste cookie-uri sunt esențiale pentru funcționarea corectă a site-ului și nu pot fi dezactivate. Ele permit navigarea pe site și accesul la funcționalități de bază.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mt-3">
+                      Tot în această categorie intră harta interactivă din pagina principală, care încarcă imagini de hartă de la OpenStreetMap pentru a afișa locația clinicii și punctele de interes din apropiere. OpenStreetMap nu plasează cookie-uri de urmărire prin aceste imagini.
                     </p>
                   </CardContent>
                 </Card>
@@ -213,7 +217,10 @@ const PoliticaCookies = () => {
                     Această politică poate fi actualizată periodic. Orice modificare va fi publicată pe această pagină, iar data ultimei actualizări va fi menționată mai jos.
                   </p>
                   <p className="text-muted-foreground italic">
-                    Ultima actualizare: 20.11.2025
+                    Ultima actualizare: 20.11.2025 · Versiunea politicii: {COOKIE_POLICY_VERSION}
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mt-3">
+                    La fiecare actualizare a acestei politici, bannerul de consimțământ va fi afișat din nou, pentru a-ți putea exprima preferințele față de noua versiune. Preferințele tale sunt păstrate maximum 12 luni, după care îți vom cere din nou acordul. Îți poți modifica oricând alegerea din linkul „Setări cookies" din subsolul site-ului.
                   </p>
                 </CardContent>
               </Card>

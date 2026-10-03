@@ -1,75 +1,54 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { X, Cookie, Shield, BarChart3, Megaphone } from "lucide-react";
-
-interface CookiePreferences {
-  necessary: boolean;
-  analytics: boolean;
-  marketing: boolean;
-}
-
-const COOKIE_CONSENT_KEY = "medstom_cookie_consent";
-const COOKIE_PREFERENCES_KEY = "medstom_cookie_preferences";
+import {
+  COOKIE_POLICY_VERSION,
+  CONSENT_OPEN_EVENT,
+  getPreferences,
+  hasValidConsent,
+  saveConsent,
+  type CookiePreferences,
+} from "@/lib/consent";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
-  const [preferences, setPreferences] = useState<CookiePreferences>({
-    necessary: true,
-    analytics: false,
-    marketing: false,
-  });
+  const [preferences, setPreferences] = useState<CookiePreferences>(getPreferences);
 
   useEffect(() => {
-    const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
-    if (!consent) {
-      // Show banner after a short delay for better UX
+    // Prima vizită, versiune schimbată sau consimțământ expirat → bannerul apare.
+    if (!hasValidConsent()) {
       const timer = setTimeout(() => setIsVisible(true), 1000);
       return () => clearTimeout(timer);
-    } else {
-      // Load saved preferences
-      const savedPreferences = localStorage.getItem(COOKIE_PREFERENCES_KEY);
-      if (savedPreferences) {
-        setPreferences(JSON.parse(savedPreferences));
-      }
     }
   }, []);
 
-  const saveConsent = (prefs: CookiePreferences) => {
-    localStorage.setItem(COOKIE_CONSENT_KEY, "true");
-    localStorage.setItem(COOKIE_PREFERENCES_KEY, JSON.stringify(prefs));
+  useEffect(() => {
+    // Redeschidere din footer („Setări cookies") cu preferințele curente precompletate.
+    const handleOpen = () => {
+      setPreferences(getPreferences());
+      setIsVisible(true);
+    };
+    window.addEventListener(CONSENT_OPEN_EVENT, handleOpen);
+    return () => window.removeEventListener(CONSENT_OPEN_EVENT, handleOpen);
+  }, []);
+
+  const persist = (prefs: CookiePreferences) => {
+    saveConsent(prefs);
     setPreferences(prefs);
     setIsVisible(false);
-
-    // Here you would initialize analytics/marketing scripts based on preferences
-    if (prefs.analytics) {
-      // Initialize GA4/GTM
-      console.log("Analytics cookies accepted");
-    }
-    if (prefs.marketing) {
-      // Initialize marketing scripts
-      console.log("Marketing cookies accepted");
-    }
   };
 
   const acceptAll = () => {
-    saveConsent({
-      necessary: true,
-      analytics: true,
-      marketing: true,
-    });
+    persist({ necessary: true, analytics: true, marketing: true });
   };
 
   const acceptNecessary = () => {
-    saveConsent({
-      necessary: true,
-      analytics: false,
-      marketing: false,
-    });
+    persist({ necessary: true, analytics: false, marketing: false });
   };
 
   const savePreferences = () => {
-    saveConsent(preferences);
+    persist(preferences);
   };
 
   if (!isVisible) return null;
@@ -182,6 +161,9 @@ const CookieConsent = () => {
               Politica de Cookies
             </a>
             .
+          </p>
+          <p className="text-xs text-muted-foreground mt-1">
+            Versiunea politicii: {COOKIE_POLICY_VERSION}
           </p>
         </div>
 
