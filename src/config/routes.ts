@@ -1,17 +1,13 @@
-import { lazy, createElement } from "react";
+import { lazy, createElement, type ComponentType, type LazyExoticComponent } from "react";
 import Redirect from "@/components/Redirect";
+import { ROUTE_REGISTRY, SITE_URL, type PageKey, type RouteEntry } from "./route-registry";
 
-// Route configuration with SEO metadata
-export interface RouteConfig {
-  path: string;
-  component: React.LazyExoticComponent<React.ComponentType<any>> | React.ComponentType<any>;
-  priority: number;
-  changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
-  title?: string;
-  excludeFromSitemap?: boolean;
+export { SITE_URL };
+
+export interface RouteConfig extends RouteEntry {
+  component: LazyExoticComponent<ComponentType<any>> | ComponentType<any>;
 }
 
-// Lazy load components for better performance
 const Index = lazy(() => import("@/pages/Index"));
 const Servicii = lazy(() => import("@/pages/Servicii"));
 const ImplantDentar = lazy(() => import("@/pages/ImplantDentar"));
@@ -41,249 +37,40 @@ const MaseauaMinte = lazy(() => import("@/pages/blog/MaseauaMinte"));
 const UrgenteDentare = lazy(() => import("@/pages/blog/UrgenteDentare"));
 const Parodontoza = lazy(() => import("@/pages/blog/Parodontoza"));
 
-export const routes: RouteConfig[] = [
-  // Homepage
-  {
-    path: "/",
-    component: Index,
-    priority: 1.0,
-    changefreq: "weekly",
-    title: "Home"
-  },
-  
-  // Main pages
-  {
-    path: "/servicii",
-    component: Servicii,
-    priority: 0.9,
-    changefreq: "monthly",
-    title: "Servicii"
-  },
-  {
-    path: "/despre",
-    component: Despre,
-    priority: 0.9,
-    changefreq: "monthly",
-    title: "Despre"
-  },
-  {
-    path: "/contact",
-    component: Contact,
-    priority: 0.9,
-    changefreq: "monthly",
-    title: "Contact"
-  },
-  {
-    path: "/tarife",
-    component: Tarife,
-    priority: 0.9,
-    changefreq: "monthly",
-    title: "Tarife"
-  },
-  {
-    path: "/blog",
-    component: Blog,
-    priority: 0.9,
-    changefreq: "weekly",
-    title: "Blog"
-  },
+const PAGES: Record<PageKey, LazyExoticComponent<ComponentType<any>>> = {
+  AlbireDentara,
+  AparatDentarAdulti,
+  Blog,
+  Chirurgie,
+  Contact,
+  Despre,
+  Endodontie,
+  EsteticaDentara,
+  ImplantDentar,
+  Index,
+  MaseauaMinte,
+  NotFound,
+  Ortodontie,
+  Parodontologie,
+  Parodontoza,
+  PoliticaConfidentialitate,
+  PoliticaCookies,
+  PrimaVizitaCopil,
+  Profilaxie,
+  Protetica,
+  Radiologie,
+  Servicii,
+  StomatologieCopii,
+  Tarife,
+  TermeniConditii,
+  TratamentCarii,
+  Urgente,
+  UrgenteDentare,
+};
 
-  // Service pages
-  {
-    path: "/servicii/implant-dentar",
-    component: ImplantDentar,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Implant Dentar"
-  },
-  {
-    path: "/servicii/profilaxie",
-    component: Profilaxie,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Profilaxie"
-  },
-  {
-    path: "/servicii/estetica-dentara",
-    component: EsteticaDentara,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Estetica Dentara"
-  },
-  {
-    path: "/servicii/tratament-carii",
-    component: TratamentCarii,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Tratament Carii"
-  },
-  {
-    path: "/servicii/endodontie-piatra-neamt",
-    component: Endodontie,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Endodontie"
-  },
-  {
-    path: "/servicii/protetica-piatra-neamt",
-    component: Protetica,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Protetica"
-  },
-  {
-    path: "/servicii/ortodontie-piatra-neamt",
-    component: Ortodontie,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Ortodontie"
-  },
-  {
-    path: "/servicii/stomatologie-copii-piatra-neamt",
-    component: StomatologieCopii,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Stomatologie Copii"
-  },
-  {
-    path: "/servicii/urgente",
-    component: Urgente,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Urgente"
-  },
-  {
-    path: "/servicii/chirurgie-orala",
-    component: Chirurgie,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Chirurgie Orala"
-  },
-  {
-    path: "/servicii/parodontologie-piatra-neamt",
-    component: Parodontologie,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Parodontologie"
-  },
-  {
-    path: "/servicii/radiologie-dentara-piatra-neamt",
-    component: Radiologie,
-    priority: 0.8,
-    changefreq: "monthly",
-    title: "Radiologie"
-  },
-
-  // Legacy blog URL redirects (301-equivalent, client-side)
-  {
-    path: "/blog/albire-dentara",
-    component: () => createElement(Redirect, { to: "/blog/albire-dentara-piatra-neamt" }),
-    priority: 0.1,
-    changefreq: "never",
-    title: "Redirect",
-    excludeFromSitemap: true
-  },
-  {
-    path: "/blog/aparat-dentar-adulti",
-    component: () => createElement(Redirect, { to: "/blog/aparat-dentar-adulti-piatra-neamt" }),
-    priority: 0.1,
-    changefreq: "never",
-    title: "Redirect",
-    excludeFromSitemap: true
-  },
-  {
-    path: "/blog/parodontoza",
-    component: () => createElement(Redirect, { to: "/blog/parodontoza-tratament" }),
-    priority: 0.1,
-    changefreq: "never",
-    title: "Redirect",
-    excludeFromSitemap: true
-  },
-  {
-    path: "/blog/urgente-dentare",
-    component: () => createElement(Redirect, { to: "/blog/urgente-dentare-dinte-rupt" }),
-    priority: 0.1,
-    changefreq: "never",
-    title: "Redirect",
-    excludeFromSitemap: true
-  },
-
-  // Blog posts
-  {
-    path: "/blog/albire-dentara-piatra-neamt",
-    component: AlbireDentara,
-    priority: 0.7,
-    changefreq: "weekly",
-    title: "Albire Dentara"
-  },
-  {
-    path: "/blog/aparat-dentar-adulti-piatra-neamt",
-    component: AparatDentarAdulti,
-    priority: 0.7,
-    changefreq: "weekly",
-    title: "Aparat Dentar Adulti"
-  },
-  {
-    path: "/blog/prima-vizita-copil-dentist",
-    component: PrimaVizitaCopil,
-    priority: 0.7,
-    changefreq: "weekly",
-    title: "Prima Vizita Copil"
-  },
-  {
-    path: "/blog/maseaua-de-minte",
-    component: MaseauaMinte,
-    priority: 0.7,
-    changefreq: "weekly",
-    title: "Maseaua de Minte"
-  },
-  {
-    path: "/blog/urgente-dentare-dinte-rupt",
-    component: UrgenteDentare,
-    priority: 0.7,
-    changefreq: "weekly",
-    title: "Urgente Dentare"
-  },
-  {
-    path: "/blog/parodontoza-tratament",
-    component: Parodontoza,
-    priority: 0.7,
-    changefreq: "weekly",
-    title: "Parodontoza"
-  },
-
-  // Legal pages
-  {
-    path: "/politica-confidentialitate",
-    component: PoliticaConfidentialitate,
-    priority: 0.5,
-    changefreq: "yearly",
-    title: "Politica Confidentialitate"
-  },
-  {
-    path: "/termeni-conditii",
-    component: TermeniConditii,
-    priority: 0.5,
-    changefreq: "yearly",
-    title: "Termeni si Conditii"
-  },
-  {
-    path: "/politica-cookies",
-    component: PoliticaCookies,
-    priority: 0.5,
-    changefreq: "yearly",
-    title: "Politica Cookies"
-  },
-
-  // 404 - exclude from sitemap
-  {
-    path: "*",
-    component: NotFound,
-    priority: 0,
-    changefreq: "never",
-    title: "404",
-    excludeFromSitemap: true
-  }
-];
-
-export const SITE_URL = "https://stomatologiepiatraneamt.ro";
+export const routes: RouteConfig[] = ROUTE_REGISTRY.map((r) => ({
+  ...r,
+  component: r.redirectTo
+    ? () => createElement(Redirect, { to: r.redirectTo! })
+    : PAGES[r.page!],
+}));
