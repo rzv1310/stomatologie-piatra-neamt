@@ -1,177 +1,70 @@
 /**
- * Sitemap URL Verification Script
- * 
- * This script checks all URLs in the sitemap.xml for:
- * - 404 errors
- * - Redirect chains
- * - Response time issues
- * 
- * Run: npm run check:sitemap (after npm run build)
- * Or in browser console for quick check
+ * Sitemap URL check: every sitemap URL must answer 2xx directly.
+ * Any 4xx/5xx, network error, timeout, redirect or redirect loop is a failure.
+ * The redirect chain is followed manually (up to MAX_HOPS) and printed.
+ * Run: npm run check:sitemap   (BASE_URL overrides the host, default SITE_URL)
  */
+import { pathToFileURL } from "node:url";
+import { SITE_URL, sitemapRoutes } from "../src/config/route-registry";
 
-import { readFileSync } from 'fs';
-import { join } from 'path';
-import { SITE_URL, sitemapRoutes } from '../src/config/route-registry';
-
-interface UrlCheckResult {
-  url: string;
-  status: number | 'error';
-  redirectTo?: string;
-  responseTime: number;
-  error?: string;
-}
-
+const BASE_URL = (process.env.BASE_URL || SITE_URL).replace(/\/$/, "");
 const TIMEOUT_MS = 10000;
+const MAX_HOPS = 10;
 
-// Parse sitemap.xml and extract URLs
-function extractUrlsFromSitemap(): string[] {
+interface Hop { url: string; status: number }
+interface Result { url: string; chain: Hop[]; ok: boolean; reason?: string }
+
+async function fetchOnce(url: string): Promise<Response> {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   try {
-    const sitemapPath = join(process.cwd(), 'dist', 'sitemap.xml');
-    const sitemapContent = readFileSync(sitemapPath, 'utf-8');
-    
-    const urlMatches = sitemapContent.match(/<loc>([^<]+)<\/loc>/g);
-    if (!urlMatches) {
-      console.error('❌ No URLs found in sitemap.xml');
-      return [];
-    }
-    
-    return urlMatches.map(match => match.replace(/<\/?loc>/g, ''));
-  } catch (error) {
-    console.error('❌ Error reading sitemap.xml:', error);
-    return [];
+    return await fetch(url, { redirect: "manual", signal: ctrl.signal, headers: { "User-Agent": "Sitemap-Check/2.0" } });
+  } finally {
+    clearTimeout(t);
   }
 }
 
-// Check a single URL
-async function checkUrl(url: string): Promise<UrlCheckResult> {
-  const startTime = Date.now();
-  
+export async function checkUrl(start: string): Promise<Result> {
+  const chain: Hop[] = [];
+  const seen = new Set<string>();
+  let url = start;
   try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
-    
-    const response = await fetch(url, {
-      method: 'HEAD',
-      redirect: 'manual',
-      signal: controller.signal
-    });
-    
-    clearTimeout(timeoutId);
-    const responseTime = Date.now() - startTime;
-    
-    const result: UrlCheckResult = {
-      url,
-      status: response.status,
-      responseTime
-    };
-    
-    // Check for redirects
-    if (response.status >= 300 && response.status < 400) {
-      result.redirectTo = response.headers.get('location') || undefined;
+    for (let i = 0; i <= MAX_HOPS; i++) {
+      if (seen.has(url)) return { url: start, chain, ok: false, reason: "redirect loop" };
+      seen.add(url);
+      const res = await fetchOnce(url);
+      chain.push({ url, status: res.status });
+      if (res.status >= 300 && res.status < 400) {
+        const loc = res.headers.get("location");
+        if (!loc) return { url: start, chain, ok: false, reason: "redirect without Location" };
+        url = new URL(loc, url).href;
+        continue;
+      }
+      if (chain.length > 1) return { url: start, chain, ok: false, reason: "sitemap URL redirects" };
+      if (res.status < 200 || res.status >= 300) return { url: start, chain, ok: false, reason: `HTTP ${res.status}` };
+      return { url: start, chain, ok: true };
     }
-    
-    return result;
-  } catch (error) {
-    return {
-      url,
-      status: 'error',
-      responseTime: Date.now() - startTime,
-      error: error instanceof Error ? error.message : 'Unknown error'
-    };
+    return { url: start, chain, ok: false, reason: `more than ${MAX_HOPS} redirects` };
+  } catch (e) {
+    return { url: start, chain, ok: false, reason: e instanceof Error ? (e.name === "AbortError" ? "timeout" : e.message) : String(e) };
   }
 }
 
-// Main verification function
-async function verifySitemapUrls(): Promise<void> {
-  console.log('🔍 Starting Sitemap URL Verification...\n');
-  console.log(`📍 Base URL: ${SITE_URL}`);
-  console.log('─'.repeat(60));
-  
-  const urls = extractUrlsFromSitemap();
-  
-  if (urls.length === 0) {
-    console.log('❌ No URLs to check');
-    return;
+export async function main(): Promise<number> {
+  const urls = sitemapRoutes().map((r) => `${BASE_URL}${r.path}`);
+  console.log(`Checking ${urls.length} sitemap URLs on ${BASE_URL}`);
+  const results: Result[] = [];
+  for (const u of urls) {
+    const r = await checkUrl(u);
+    results.push(r);
+    const chain = r.chain.map((h) => `${h.status} ${h.url}`).join(" -> ");
+    console.log(`${r.ok ? "PASS" : "FAIL"}  ${chain || u}${r.reason ? `  (${r.reason})` : ""}`);
   }
-  
-  console.log(`📋 Found ${urls.length} URLs to check\n`);
-  
-  const results: UrlCheckResult[] = [];
-  const errors: UrlCheckResult[] = [];
-  const redirects: UrlCheckResult[] = [];
-  const slowResponses: UrlCheckResult[] = [];
-  
-  for (const url of urls) {
-    const result = await checkUrl(url);
-    results.push(result);
-    
-    // Categorize results
-    if (result.status === 'error' || result.status === 404) {
-      errors.push(result);
-      console.log(`❌ ${result.status} - ${url}${result.error ? ` (${result.error})` : ''}`);
-    } else if (result.status >= 300 && result.status < 400) {
-      redirects.push(result);
-      console.log(`↪️ ${result.status} - ${url} → ${result.redirectTo}`);
-    } else if (result.responseTime > 3000) {
-      slowResponses.push(result);
-      console.log(`🐢 ${result.status} - ${url} (${result.responseTime}ms)`);
-    } else {
-      console.log(`✅ ${result.status} - ${url} (${result.responseTime}ms)`);
-    }
-  }
-  
-  // Summary
-  console.log('\n' + '═'.repeat(60));
-  console.log('📊 SUMMARY');
-  console.log('═'.repeat(60));
-  console.log(`✅ Successful: ${results.length - errors.length - redirects.length}`);
-  console.log(`❌ Errors/404s: ${errors.length}`);
-  console.log(`↪️ Redirects: ${redirects.length}`);
-  console.log(`🐢 Slow (>3s): ${slowResponses.length}`);
-  
-  if (errors.length > 0) {
-    console.log('\n🚨 ERRORS FOUND:');
-    errors.forEach(e => {
-      console.log(`   - ${e.url}: ${e.status}${e.error ? ` (${e.error})` : ''}`);
-    });
-  }
-  
-  if (redirects.length > 0) {
-    console.log('\n⚠️ REDIRECTS:');
-    redirects.forEach(r => {
-      console.log(`   - ${r.url} → ${r.redirectTo}`);
-    });
-  }
-  
-  console.log('\n' + '═'.repeat(60));
-  
-  // Exit with error code if issues found
-  if (errors.length > 0) {
-    process.exit(1);
-  }
+  const failed = results.filter((r) => !r.ok).length;
+  console.log(`\n${results.length - failed} passed, ${failed} failed`);
+  return failed ? 1 : 0;
 }
 
-// Browser-compatible version for dev console
-export const browserCheckUrls = async (baseUrl: string = SITE_URL): Promise<void> => {
-  const routes = sitemapRoutes().map((r) => r.path);
-  
-  console.log('🔍 Checking URLs...');
-  
-  for (const route of routes) {
-    try {
-      const response = await fetch(`${baseUrl}${route}`, { method: 'HEAD' });
-      const emoji = response.ok ? '✅' : '❌';
-      console.log(`${emoji} ${response.status} - ${route}`);
-    } catch (error) {
-      console.log(`❌ ERROR - ${route}`);
-    }
-  }
-};
-
-// Run if executed directly
-if (typeof require !== 'undefined' && require.main === module) {
-  verifySitemapUrls();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().then((code) => process.exit(code));
 }
-
-export { verifySitemapUrls, extractUrlsFromSitemap, checkUrl };
