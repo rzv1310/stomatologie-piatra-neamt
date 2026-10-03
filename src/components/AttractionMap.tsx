@@ -142,7 +142,7 @@ export const AttractionMap = () => {
       const clinicImageHtml = (locations.clinic as any).image 
         ? `
           <div style="position: relative; height: 180px; overflow: hidden;">
-            <img 
+            <img loading="lazy" decoding="async" width="400" 
               src="${(locations.clinic as any).image}" 
               alt="${locations.clinic.name}" 
               style="width: 100%; height: 100%; object-fit: cover;"
@@ -196,7 +196,7 @@ export const AttractionMap = () => {
       const imageHtml = (location as any).image 
         ? `
           <div style="position: relative; height: 160px; overflow: hidden;">
-            <img 
+            <img loading="lazy" decoding="async" width="400" 
               src="${(location as any).image}" 
               alt="${location.name}" 
               style="width: 100%; height: 100%; object-fit: cover;"
