@@ -1,7 +1,6 @@
 import { BUSINESS } from "@/config/business";
 import PageSEO from "@/components/PageSEO";
 import JsonLd from "@/components/JsonLd";
-import homeFaqSchema from "@/data/schema/home-faq.json";
 import { SITE_URL } from "@/config/routes";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -13,7 +12,7 @@ import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import { useSEOSchema } from "@/hooks/use-seo-schema";
 import { recentArticles } from "@/config/related-content";
-import { faqCategories, faqDataForSEO } from "@/config/faq-data";
+import { faqCategories } from "@/config/faq-data";
 import teamHero from "@/assets/team-echipa-medstom.png?w=700&format=webp";
 import serviceImplant from "@/assets/service-implant.webp?format=webp";
 import serviceEstetica from "@/assets/service-estetica.webp?format=webp";
@@ -119,8 +118,16 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <PageSEO title="Stomatologie Piatra Neamț - Clinica Medstom | Dentist pentru Toată Familia" description={`Medstom - Cabinet Stomatologic in Piatra Neamț - tratamente carii, abcese, tratament canal, estetica dentară, stomatologie copii și urgențe / chirurgie orală. ${BUSINESS.phone.display}`} path="/" />
-      {/* FAQPage schema is in index.html */}
-      <JsonLd data={{ ...homeFaqSchema, "@id": `${SITE_URL}/#faq` }} />
+      {/* FAQPage generat din întrebările afișate în secțiunea FAQ de mai jos */}
+      <JsonLd data={{
+        "@type": "FAQPage",
+        "@id": `${SITE_URL}/#faq`,
+        mainEntity: faqCategories.flatMap((c) => c.questions).map((q) => ({
+          "@type": "Question",
+          name: q.question,
+          acceptedAnswer: { "@type": "Answer", text: q.answer },
+        })),
+      }} />
       <Navigation />
 
       <main className="flex-1">

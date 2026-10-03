@@ -1,14 +1,12 @@
 // Verifică faptul că dimensiunile declarate în index.html (icons, OG, logo schema)
 // sunt egale cu dimensiunile reale ale fișierelor din public/. Rulare: npx tsx scripts/verify-images.ts
 import { readFileSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import sharp from "sharp";
 
 const html = readFileSync("index.html", "utf8");
-const real = (file: string) => {
-  const buf = readFileSync(`public/${file}`);
-  if (buf.readUInt32BE(0) === 0x89504e47) return [buf.readUInt32BE(16), buf.readUInt32BE(20)];
-  const out = execFileSync("magick", ["identify", "-format", "%w %h", `public/${file}`]).toString();
-  return out.split(" ").map(Number);
+const real = async (file: string) => {
+  const m = await sharp(`public/${file}`).metadata();
+  return [m.width ?? 0, m.height ?? 0];
 };
 const checks: [string, number, number][] = [];
 for (const m of html.matchAll(/<link[^>]*sizes="(\d+)x(\d+)"[^>]*href="\/([^"]+)"/g)) checks.push([m[3], +m[1], +m[2]]);
@@ -21,7 +19,7 @@ if (logo) checks.push([logo[1], +logo[2], +logo[3]]);
 
 let failed = 0;
 for (const [file, dw, dh] of checks) {
-  const [rw, rh] = real(file);
+  const [rw, rh] = await real(file);
   const ok = rw === dw && rh === dh;
   if (!ok) failed++;
   console.log(`${ok ? "OK  " : "FAIL"} ${file} declarat ${dw}x${dh}, real ${rw}x${rh}`);

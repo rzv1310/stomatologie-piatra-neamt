@@ -105,19 +105,35 @@ export const openConsentSettings = () => {
   window.dispatchEvent(new Event(CONSENT_OPEN_EVENT));
 };
 
-// Punct unic de pornire/oprire a scripturilor externe, în funcție de preferințe.
-// Aici se conectează ulterior Google Analytics / scripturi de marketing:
-// adaugi ID-ul în blocul corespunzător, fără alte modificări în restul aplicației.
-export const applyConsent = (preferences: CookiePreferences) => {
-  if (preferences.analytics) {
-    // TODO: inițializează aici Google Analytics 4 când există un ID de măsurare.
-  } else {
-    // Oprește/dezactivează scripturile de analiză la retragerea consimțământului.
+// Registru de scripturi externe controlate de consimțământ.
+// Pentru a activa GA4/marketing: registerConsentLoader({ category, start, stop }).
+export interface ConsentLoader {
+  category: "analytics" | "marketing";
+  start: () => void;
+  stop: () => void;
+}
+const loaders: ConsentLoader[] = [];
+const active = new Set<ConsentLoader>();
+
+export const registerConsentLoader = (loader: ConsentLoader) => {
+  loaders.push(loader);
+  if (hasValidConsent() && getPreferences()[loader.category]) {
+    loader.start();
+    active.add(loader);
   }
-  if (preferences.marketing) {
-    // TODO: inițializează aici scripturile de marketing.
-  } else {
-    // Oprește scripturile de marketing la retragere.
+  return () => {
+    if (active.has(loader)) loader.stop();
+    active.delete(loader);
+    loaders.splice(loaders.indexOf(loader), 1);
+  };
+};
+
+// Punct unic de pornire/oprire a scripturilor externe, în funcție de preferințe.
+export const applyConsent = (preferences: CookiePreferences) => {
+  for (const l of loaders) {
+    const allowed = preferences[l.category];
+    if (allowed && !active.has(l)) { l.start(); active.add(l); }
+    else if (!allowed && active.has(l)) { l.stop(); active.delete(l); }
   }
 };
 
